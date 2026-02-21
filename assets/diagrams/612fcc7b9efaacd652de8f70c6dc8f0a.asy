@@ -1,0 +1,1 @@
+import olympiad; unitsize(50); for (int i = 0; i < 3; ++i) { for (int j = 0; j < 4; ++j) { pair A = (j,i); dot(A);  } } for (int i = 0; i < 3; ++i) { for (int j = 0; j < 4; ++j) { if (j != 3) { draw((j,i)--(j+1,i)); } if (i != 2) { draw((j,i)--(j,i+1)); } } } label("$A$", (0,2), W); label("$L$", (3,0), E);

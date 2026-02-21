@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>rotblocker++ challenge</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/icon32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo/icon16.png" />
+  <link rel="shortcut icon" href="../assets/logo/icon32.png" />
+  <link rel="stylesheet" href="../challenge.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        macros: {
+          overarc: ['\\overset{\\frown}{#1}', 1]
+        }
+      },
+      chtml: {
+        displayAlign: "left",
+        displayIndent: "0"
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="../node_modules/mathjax/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <div class="app-layout">
+    <main class="panel">
+      <header class="hero">
+        <div class="hero-top">
+          <p class="eyebrow">rotblocker++</p>
+          <button id="theme-toggle" class="button-secondary theme-toggle" type="button">Dark mode</button>
+        </div>
+        <h1>Roll For Doomscroll Access</h1>
+        <p class="sub">Score 30 points from AMC/AIME problems to unlock X/Twitter and LinkedIn.</p>
+        <div class="chips">
+          <button type="button" class="chip pool-chip" data-pool="amc8" aria-pressed="true">AMC8: 5</button>
+          <button type="button" class="chip pool-chip" data-pool="amc10" aria-pressed="true">AMC10: 8</button>
+          <button type="button" class="chip pool-chip" data-pool="amc12" aria-pressed="true">AMC12: 12</button>
+          <button type="button" class="chip pool-chip" data-pool="aime" aria-pressed="true">AIME: 30</button>
+          <button type="button" class="chip pool-chip" data-pool="gre" aria-pressed="false">GRE: 5</button>
+          <button type="button" class="chip pool-chip" data-pool="calculus" aria-pressed="false">Calculus: 5</button>
+        </div>
+      </header>
+
+      <div class="live-row">
+        <div id="status" class="status"></div>
+        <button id="reroll-btn" class="timer reroll-btn" type="button">Reroll (Free)</button>
+        <div id="live-points" class="timer">Current Value: --</div>
+        <div id="global-timer" class="timer">Revalidation: required now</div>
+      </div>
+
+      <section id="quiz" class="quiz">
+        <div id="meta" class="meta"></div>
+        <div class="problem-wrap">
+          <div class="problem-label">Current Pull</div>
+          <div class="problem" id="problem">--</div>
+          <div id="diagram-wrap" class="diagram-wrap" style="display:none;">
+            <img id="diagram-img" class="diagram-img" alt="Problem diagram" />
+          </div>
+        </div>
+
+        <form id="answer-form" autocomplete="off">
+          <input id="answer" type="number" inputmode="numeric" placeholder="Type your answer" required />
+          <button type="submit">Submit</button>
+        </form>
+
+        <div id="choices" class="choices"></div>
+
+        <p id="feedback" class="feedback"></p>
+      </section>
+
+      <div class="actions">
+        <button id="unlock" disabled>Unlock Sites</button>
+        <button id="relock" class="button-secondary">Lock Again</button>
+      </div>
+    </main>
+
+    <div class="sidebar-stack">
+      <button id="ai-reopen" class="button-secondary ai-reopen-btn" type="button" style="display:none;">Show PoBot</button>
+      <aside id="tutor-panel" class="tutor-panel">
+        <div class="tutor-head">
+          <div class="pixel-strip mini" aria-hidden="true">
+            <span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span>
+          </div>
+          <div class="pixel-face" aria-hidden="true"></div>
+          <div>
+            <div class="tutor-title">PoBot</div>
+            <div class="tutor-sub">Strategy coach</div>
+          </div>
+          <button id="ai-close" class="button-secondary ai-close-btn" type="button" aria-label="Hide AI Tutor">×</button>
+        </div>
+
+        <div class="tutor-config">
+          <label class="cfg-label" for="ai-provider">Provider</label>
+          <select id="ai-provider" class="cfg-input">
+            <option value="openai">OpenAI</option>
+            <option value="openrouter">OpenRouter</option>
+          </select>
+
+          <label class="cfg-label" for="ai-model">Model</label>
+          <select id="ai-model" class="cfg-input">
+            <option value="gpt-4o-mini">gpt-4o-mini</option>
+          </select>
+          <button id="ai-refresh-models" type="button" class="button-secondary">Refresh Models</button>
+
+          <label class="cfg-label" for="ai-token">API Token</label>
+          <input id="ai-token" class="cfg-input" type="password" placeholder="sk-..." />
+
+          <button id="ai-save" type="button" class="button-secondary">Save API Settings</button>
+
+          <details class="prompt-accordion">
+            <summary class="cfg-label">System Prompt (locked)</summary>
+            <textarea id="ai-system" class="cfg-system" readonly></textarea>
+          </details>
+        </div>
+
+        <div id="ai-chat" class="ai-chat"></div>
+
+        <form id="ai-form" class="ai-form" autocomplete="off">
+          <input id="ai-input" type="text" class="cfg-input" placeholder="Ask for intuition, strategy, or a gentle nudge" required />
+          <button type="submit">Ask Tutor</button>
+        </form>
+      </aside>
+
+      <button id="xp-reopen" class="button-secondary xp-reopen-btn" type="button" style="display:none;">Show Level Panel</button>
+      <section id="xp-panel" class="xp-panel" aria-label="level progress">
+        <div class="xp-profile-head">
+          <div id="xp-avatar" class="xp-avatar" aria-hidden="true"></div>
+          <div class="xp-ident">
+            <div class="xp-name">Doomscroll Challenger</div>
+            <div id="xp-summary" class="xp-summary">Level -- • XP --</div>
+          </div>
+          <div class="xp-actions">
+            <div class="xp-badge">XP</div>
+            <button id="domain-settings-toggle" class="button-secondary xp-settings-btn" type="button" aria-label="Open settings" title="Settings">&#9881;</button>
+            <button id="xp-close" class="button-secondary xp-close-btn" type="button" aria-label="Hide level panel">×</button>
+          </div>
+        </div>
+        <div class="xp-bar"><span id="xp-fill" class="xp-fill" style="width:0%"></span></div>
+        <div id="xp-next" class="xp-next">Next level in -- XP</div>
+        <div id="prestige-summary" class="xp-next">Prestige 0 • XP gain x1.00</div>
+        <button id="prestige-btn" class="xp-prestige-btn" type="button" disabled>Prestige (Lv 10)</button>
+        <div class="sync-box" id="sync-box">
+          <div class="sync-head">Chrome Sync</div>
+          <div id="sync-status" class="sync-status">Sync: automatic (Chrome storage sync)</div>
+          <div id="sync-user" class="sync-user">Account: managed by your Chrome profile</div>
+          <div id="sync-last" class="sync-last">Last synced: waiting for first write</div>
+          <p id="sync-error" class="sync-error" hidden></p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="domain-settings-modal" class="domain-settings-modal" hidden>
+    <div id="domain-settings-backdrop" class="domain-settings-backdrop" aria-hidden="true"></div>
+    <section id="domain-settings-panel" class="domain-settings-panel" role="dialog" aria-modal="true" aria-labelledby="domain-settings-title">
+      <div class="domain-settings-head">
+        <span id="domain-settings-title">Settings</span>
+        <button id="domain-settings-close" class="domain-settings-close" type="button" aria-label="Close settings">×</button>
+      </div>
+      <div class="settings-section">
+        <label class="settings-label" for="lockout-cooldown-input">Lockout cooldown duration</label>
+        <form id="lockout-settings-form" class="lockout-settings-form" autocomplete="off">
+          <input id="lockout-cooldown-input" type="number" min="5" max="1440" step="1" />
+          <span class="lockout-settings-unit">minutes</span>
+          <button id="lockout-settings-save" type="submit">Save</button>
+        </form>
+        <p id="lockout-settings-feedback" class="domain-settings-feedback"></p>
+      </div>
+      <div class="settings-divider" role="presentation"></div>
+      <span class="domain-settings-section-title">Custom blocked domains</span>
+      <p class="domain-settings-sub">These domains are blocked while lock mode is active.</p>
+      <form id="domain-settings-form" class="domain-settings-form" autocomplete="off">
+        <input id="domain-settings-input" type="text" placeholder="example.com" />
+        <button id="domain-settings-add" type="submit">Add</button>
+      </form>
+      <p id="domain-settings-feedback" class="domain-settings-feedback"></p>
+      <ul id="domain-settings-list" class="domain-settings-list"></ul>
+    </section>
+  </div>
+
+  <script src="../scoring.js"></script>
+  <script src="../challenge.js"></script>
+</body>
+</html>

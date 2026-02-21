@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Unlock Challenge</title>
+  <link rel="stylesheet" href="challenge.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <main class="panel">
+    <header class="hero">
+      <p class="eyebrow">Focus Mode</p>
+      <h1>Earn Your Scroll Time</h1>
+      <p class="sub">Score 60 points from AMC-style questions to unlock X/Twitter and LinkedIn.</p>
+      <div class="chips">
+        <span class="chip">AMC8: 2-5</span>
+        <span class="chip">AMC10: 10</span>
+        <span class="chip">AMC12: 12</span>
+        <span class="chip">AIME: 60</span>
+      </div>
+    </header>
+
+    <div class="live-row">
+      <div id="status" class="status"></div>
+      <div id="timer" class="timer">Time: --</div>
+      <div id="live-points" class="timer">Current Value: --</div>
+      <div id="global-timer" class="timer">Revalidation: required now</div>
+    </div>
+
+    <section id="quiz" class="quiz">
+      <div id="meta" class="meta"></div>
+      <div class="problem-wrap">
+        <div class="problem-label">Current Problem</div>
+        <div class="problem" id="problem">--</div>
+      </div>
+
+      <form id="answer-form" autocomplete="off">
+        <input id="answer" type="number" inputmode="numeric" placeholder="Type your answer" required />
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="hint-row">
+        <button id="hint-btn" class="button-secondary" type="button">Use Hint (0 pts)</button>
+        <button id="skip" class="button-secondary" type="button" style="display:none;">Skip AIME</button>
+      </div>
+      <p id="hint-text" class="hint-text"></p>
+
+      <div id="choices" class="choices"></div>
+
+      <p id="feedback" class="feedback"></p>
+    </section>
+
+    <div class="actions">
+      <button id="unlock" disabled>Unlock Sites</button>
+      <button id="relock" class="button-secondary">Lock Again</button>
+    </div>
+  </main>
+
+  <script src="scoring.js"></script>
+  <script src="challenge.js"></script>
+</body>
+</html>

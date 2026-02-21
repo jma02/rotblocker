@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">rotblocker++ logo</title>
+  <desc id="desc">Shield crest with a brain heraldry mark, blocked ring, and prominent plus-plus badge.</desc>
+
+  <path d="M512 92L844 216V486c0 247-146 418-332 510C326 904 180 733 180 486V216l332-124z" fill="#758b55" stroke="#3f2d1d" stroke-width="32"/>
+  <path d="M512 164L778 262V486c0 199-113 338-266 414C359 824 246 685 246 486V262l266-98z" fill="#96b171"/>
+
+  <g transform="translate(512 500)">
+    <path d="M0 -116C-16 -142-54 -160-102 -160C-154 -160-196 -132-212 -88C-226 -50-216 -16-192 12C-206 42-202 76-178 104C-154 132-118 144-82 136C-58 158-28 170 0 170Z" fill="#f4a1b9" stroke="#8f4156" stroke-width="18" stroke-linejoin="round"/>
+    <path d="M0 -116C16 -142 54 -160 102 -160C154 -160 196 -132 212 -88C226 -50 216 -16 192 12C206 42 202 76 178 104C154 132 118 144 82 136C58 158 28 170 0 170Z" fill="#ee8da8" stroke="#8f4156" stroke-width="18" stroke-linejoin="round"/>
+    <path d="M-12 156C-12 188-7 214 0 226C7 214 12 188 12 156Z" fill="#de6f8d" stroke="#8f4156" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M0 -112V166" fill="none" stroke="#8f4156" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-172 -84C-142 -110-100 -112-68 -88" fill="none" stroke="#8f4156" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-178 -30C-140 -60-92 -62-54 -34" fill="none" stroke="#8f4156" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-166 24C-128 -2-84 -4-50 20" fill="none" stroke="#8f4156" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-144 78C-110 58-72 58-44 76" fill="none" stroke="#8f4156" stroke-width="12" stroke-linecap="round"/>
+    <path d="M172 -84C142 -110 100 -112 68 -88" fill="none" stroke="#8f4156" stroke-width="12" stroke-linecap="round"/>
+    <path d="M178 -30C140 -60 92 -62 54 -34" fill="none" stroke="#8f4156" stroke-width="12" stroke-linecap="round"/>
+    <path d="M166 24C128 -2 84 -4 50 20" fill="none" stroke="#8f4156" stroke-width="12" stroke-linecap="round"/>
+    <path d="M144 78C110 58 72 58 44 76" fill="none" stroke="#8f4156" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-104 -138C-84 -148-58 -146-44 -130" fill="none" stroke="#f9c0d0" stroke-width="10" stroke-linecap="round"/>
+    <path d="M104 -138C84 -148 58 -146 44 -130" fill="none" stroke="#f9c0d0" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <circle cx="512" cy="494" r="258" fill="none" stroke="#b83f2f" stroke-width="76"/>
+  <line x1="332" y1="674" x2="692" y2="314" stroke="#b83f2f" stroke-width="86" stroke-linecap="round"/>
+
+  <circle cx="744" cy="756" r="126" fill="#f5e9d7" stroke="#4d3623" stroke-width="18"/>
+  <g fill="#4d3623">
+    <rect x="676" y="742" width="58" height="22" rx="5"/>
+    <rect x="694" y="724" width="22" height="58" rx="5"/>
+    <rect x="754" y="742" width="58" height="22" rx="5"/>
+    <rect x="772" y="724" width="22" height="58" rx="5"/>
+  </g>
+</svg>

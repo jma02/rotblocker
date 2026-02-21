@@ -1,0 +1,24 @@
+{
+  "source_blocked_note": "mathematicsgre.com/viewtopic.php?t=4577 was Cloudflare-blocked (403); used public GRE-math practice PDFs.",
+  "practice_parsed": 63,
+  "practice_matched": 61,
+  "boot_sets_parsed": 10,
+  "boot_matched": 161,
+  "rutgers_sets_processed": 6,
+  "rutgers_q_parsed": 8,
+  "rutgers_ans_parsed": 246,
+  "rutgers_matched": 0,
+  "rutgers_skipped": 0,
+  "quality_dropped_total": 10,
+  "quality_dropped_rutgers": 3,
+  "quality_dropped_nonrutgers": 7,
+  "final_count": 222,
+  "topic_counts": {
+    "complex_analysis": 6,
+    "linalg": 23,
+    "algebra": 29,
+    "topology": 7,
+    "analysis": 28,
+    "other_upper_level": 129
+  }
+}

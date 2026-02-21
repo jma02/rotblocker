@@ -1,0 +1,4352 @@
+[
+  {
+    "id": "upper-gre-grebootcamp-s1-q1-36b1f495",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Evaluate \\int -1 -2 dx\u221a -x^2- 6x",
+    "choices": [
+      "\\arcsin(2/3)- \\arcsin(1/3)",
+      "\\arccos(2/3)- \\arccos(1/3)",
+      "\\arctan(2/3)- \\arctan(2/3)",
+      "\\arctan(2/3) + \\arctan(2/3)",
+      "\\arccos(2/3) + \\arccos(1/3)"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "\\arcsin(2/3)- \\arcsin(1/3)",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 1,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s1-q10-b8f45ee2",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Evaluate: \\int \\pi /2 0 1 1+tanxdx (TRICKS INVOLVED!)",
+    "choices": [
+      "\\pi 2",
+      "\\pi 3",
+      "\\pi 4",
+      "\\pi 2 2",
+      "\\pi 2 4"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "\\pi 4",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 1,
+      "question": 10
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s1-q2-10d8ed33",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Let f (x) = x^3 + 6x2- 32. Define Tc,f (x) =\\sum \\infty n=0an(x-c)n to be the Taylor series centered at c of f. For what values of c does a^0 = 0?",
+    "choices": [
+      "c = 3, 2",
+      "c =-3, 2,-2",
+      "c = 4, 2",
+      "c =-4, 2,-2",
+      "c =-4, 2"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "c =-4, 2",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 1,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s1-q6-860d4e3d",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "topology",
+    "weight": 12,
+    "prompt": "Which of the following graphs has two connected components?",
+    "choices": [
+      "x^2 5 +y^2- z^2 2 = 1",
+      "x^2 5 - y^2 5 - z^2 5 = 1",
+      "x^2- 2x +y^2 +z^2 = 1",
+      "x =y^2-z^2",
+      "z =x-y + 2"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "x^2 5 - y^2 5 - z^2 5 = 1",
+    "hint": "Reduce the claim to definitions of open/closed/compact/connected and test edge cases.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 1,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s1-q8-18404ec7",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Evaluate the limit: \\lim n\u2192\\infty (3n + 5n)2/n",
+    "choices": [
+      "0",
+      "1",
+      "9",
+      "16",
+      "25"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "25",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 1,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s1-q9-6539bf1c",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Let T be a linear operator on R^3 equipped with the standard inner product. Which of the following must be true? (I) If W is subspace such that T (W )\u2282 W , then W\u22a5 ={v\\in V | \u27e8w,v\u27e9 = 0, v\\in W} also has the property that T (W\u22a5)\u2282W\u22a5. (II) If T is self-adjoint, then T-1 exists and is diagonalizable. 2",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "III and IV",
+      "None are true"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "III only",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 1,
+      "question": 9
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-0af095b8",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Which of the following are true for square matrices A and B? (I) If AB is invertible, then A and B are. (II) If A has characteristic polynomial x^3-x- 1, then A is invertible. (III) If A has eigenvalue \\lambda , then 3A2-\\lambda A has eigenvalue 2\\lambda 2",
+    "choices": [
+      "I only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II, and III"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "I, II, and III",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-218f80e4",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "At how many points in the xy-plane do the graphs of y =x2012 and y = 5x intersect?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "4",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-56947df0",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "The plane y = 1 slices the surface z = \\arctan x+y 1-xy in a curve C. Find the slope of the tangent line to C at the point where x = 2",
+    "choices": [
+      "-3",
+      "-1",
+      "1 5",
+      "1 3",
+      "1 2"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "1 2",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-93321f27",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Two people play Russian Roullette with a six shooter spinning with one bullet in the chamber. They spin the chamber each time before they pull the trigger. The probability the first person dies is:",
+    "choices": [
+      "2 3",
+      "3 5",
+      "4 7",
+      "6 11 41",
+      "7 13"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "7 13",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-96debf38",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "How many generators does the group Z24 have?",
+    "choices": [
+      "2",
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "12",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-9f42b500",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Two subgroups H andK of a group G have orders 12 and 30 respectively. Which of the following could not be the order of the subgroup of G generated by H and K?",
+    "choices": [
+      "30",
+      "60",
+      "120",
+      "360",
+      "Countably infinite"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "Countably infinite",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-a5125241",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Sixteen players participated in a round-robin tennis tournament. Each of them won a di\ufb00erent number of games. How many games did the player finishing sixth win?",
+    "choices": [
+      "14",
+      "13",
+      "12",
+      "9",
+      "10"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "10",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-b175b927",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "How many topologies are possible on a set of 2 points?",
+    "choices": [
+      "5",
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "1",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-ea2fb6c4",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Find the family of all nonzero soultions to the equation: y\u2032\u2032 = (y\u2032)2",
+    "choices": [
+      "y = 1 x+C^1 +C^2",
+      "y =C^2 + \\log(C^1-x)",
+      "y =C^2- \\log(C^1-x^2)",
+      "y =C^2 + \\log(C^1 +x)",
+      "y =C^2- \\log(C^1 +x) 47"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "y =C^2- \\log(C^1 +x) 47",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-f4824339",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "topology",
+    "weight": 12,
+    "prompt": "Let K be a nonempty subset of Rn, where n >1. Which of the following statements must be true? (I) If K is compact, then every continuous real valued-function defined on K is bounded. (II) If every contionuous real valued function defined on K is bounded, then K is compact. (III) If K is compact, then K is connected",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I, II, and III only"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "I, II, and III only",
+    "hint": "Reduce the claim to definitions of open/closed/compact/connected and test edge cases.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q1-f962ca72",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "If the matrices \uf8eb \uf8ed 3 -2 -2 1 -1 -1 3 -1 -2 \uf8f6 \uf8f8 and \uf8eb \uf8ed 1 a 0 -1 b 1 2 c -1 \uf8f6 \uf8f8 are inverses of each other, what is the value of c?",
+    "choices": [
+      "-3",
+      "-2",
+      "0",
+      "2",
+      "3"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "3",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q10-45a01523",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "If S is a ring with the property that s =s^2 for each s\\in S, which of the following must be true? (I) s +s = 0 for each s\\in S (II) (s +t)2 =s^2 +t^2 for each s,t\\in S (III) S is commutative (i.e. multiplication is commutative)",
+    "choices": [
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II, and III 33"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "I, II, and III 33",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 10
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q10-546b239d",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "4 distinct positive integers are randomly chosen between 1 and 101, inclusive. What is the probability that some pair of these integers has a di\ufb00erence that is a multiple of 3?",
+    "choices": [
+      "1/5",
+      "1/4",
+      "1/2",
+      "3/4",
+      "1 Probability"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "1 Probability",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 10
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q10-5d52b66b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Let V be the set of polynomials p(x) with coe\ufb03cients in R. Define linear operators T and S by: T (p(x)) = xp(x) S(p(x)) = p\u2032(x) = d dx [p(x)] We denote ST and TS as the expected composition. Which of the following is true",
+    "choices": [
+      "ST = 0",
+      "ST =T",
+      "ST =TS",
+      "ST-TS is the idenity map of V",
+      "ST +TS is the identity map of V Linear Algebra #2"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "ST +TS is the identity map of V Linear Algebra #2",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 10
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q10-df2a0ce7",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "How many zeros does the function f (x) = 3 \\sin(100x) + 1 have on [0, 1]?",
+    "choices": [
+      "30",
+      "31",
+      "32",
+      "33",
+      "34 Linear Algebra #1"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "34 Linear Algebra #1",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 10
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q2-0a75d49b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "If A is a square matrix of order n\\ge 4, and aij =i +j represents the entry in row i and column j, then the rank of A is always",
+    "choices": [
+      "1 26",
+      "2",
+      "n- 2",
+      "n- 1",
+      "n"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "n- 2",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q2-266e319c",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Let A be a real 2\u00d7 2 matrix. Which of the following statements must be true? (I) All of the entries of A^2 are nonnegative (II) The determinant of A^2 is nonnegative (III) If A has two distinct eigenvalues, then A^2 has two distinct eigenvalues",
+    "choices": [
+      "I, II, and III",
+      "II and III only",
+      "III only",
+      "II only",
+      "I and II only"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "III only",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q2-33c0dc0a",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Let p and q be distinct primes. There is a proper subgroup J of the additive group of integers which contains exatly three elements of the set: {p,p +q,pq,p q,qp}. Which three elements are in J?",
+    "choices": [
+      "pq,pq,qp",
+      "p +q,pq,p q",
+      "p,p +q,pq",
+      "p,pq,qp",
+      "p,pq,p q"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "p,p +q,pq",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q2-4e331d98",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Find the volume of the solid in the first octant in R^3 bounded below by the cordinate axes and the unit circle, and bounded above by the surface z = 8xy",
+    "choices": [
+      "1 2",
+      "1",
+      "2",
+      "4",
+      "8 (f) 9 46"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "2",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q2-96a843a8",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Let Gn denote the cyclic group of order n. Which of the following are not cyclic? 31",
+    "choices": [
+      "G11\u00d7G^7",
+      "G24\u00d7G17",
+      "G11\u00d7G^3\u00d7G^8",
+      "G33\u00d7G11",
+      "G49\u00d7G121"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "G11\u00d7G^3\u00d7G^8",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q2-9e6b8e8b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Let G be the solutions to x^4- 1. G is a group. Which of the following is true? (I) z\u21a6\u2192z defines a homomorphism, where z is the complex conjugate (II) z\u21a6\u2192z^2 defines a homorphism (III) For every homomorphism, there is an integer k such that the homomorphism has the form z\u21a6\u2192zk",
+    "choices": [
+      "I only",
+      "I and II only",
+      "I , II, and III 43",
+      "II and III only",
+      "III only"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "I , II, and III 43",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q2-a2eafd85",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "If A = (t 1-t 1 2 t ) has 1 as an eigenvalue, then another eigenvalue could be:",
+    "choices": [
+      "-3",
+      "-2",
+      "2",
+      "3",
+      "4"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "2",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q2-b25bc524",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "For each positive integer n, let fn be the function defined on [0, 1] by fn(x) = xn 1 +xn. Which of the following statements are true? 35",
+    "choices": [
+      "I only",
+      "II only",
+      "I and II only",
+      "I and III only",
+      "II and III only"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "I and II only",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q2-f1a22fe0",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "topology",
+    "weight": 12,
+    "prompt": "Let X ={a,b,c}. Which of the following classes of subsets of X do not form a topology?",
+    "choices": [
+      "{X,\u2205}",
+      "{X,\u2205,{a}}",
+      "{X,\u2205,{a},{b},{a,b}}",
+      "{X,\u2205,{a,b},{a,c},{b,c}}",
+      "P (X), the power set of X"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "{X,\u2205,{a},{b},{a,b}}",
+    "hint": "Reduce the claim to definitions of open/closed/compact/connected and test edge cases.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q2-fff62759",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let y =f (x) be a solution of the di\ufb00erential equation xdy + (y-xex)dx = 0 such that y = 0 when x = 1. What is f (2)?",
+    "choices": [
+      "1 2e",
+      "1 e",
+      "e^2 2",
+      "2e",
+      "2e2"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "e^2 2",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q3-0cc76026",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Let H be the set of all group homomorphisms \\phi : Z^3\u2192 Z^6. How many functions does H contain?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "2",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q3-141c6cda",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "A group such that (ab)2 =a2b2:",
+    "choices": [
+      "Finite",
+      "Cyclic",
+      "of order",
+      "Abelian",
+      "None of the above"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "Cyclic",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q3-2f442fce",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let y =f (x) be a solution of the equation: y\u2032 + y x = sinx such that f (\\pi ) = 1 . What is the value f (\\pi /2)?",
+    "choices": [
+      "2 \\pi - 1",
+      "2 \\pi",
+      "2 \\pi + 1",
+      "\\pi 2",
+      "\\pi 2 + 1"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "2 \\pi",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q3-3c8feaf0",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "A fair coin is to be tossed 100 times, with each toss resulting in a head or a tail. If H is the number of heads and T is the number of tails, which of the following events has the greatest probability?",
+    "choices": [
+      "H = 50",
+      "T\\ge 60",
+      "51\\le H\\le 55",
+      "H\\ge 48 and T\\ge 48",
+      "H\\le 5 orH\\ge 95"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "T\\ge 60",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q3-6b9b74f2",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let \u20d7F be a constant unit force that is parallel to the vector (-1, 0, 1) in R^3 and let\\gamma (t) = (t,t 2,t 3) fort\\in [0, 1]. The work done by \u20d7F along \\gamma is:",
+    "choices": [
+      "- 1 4",
+      "- 1 4 \u221a 2",
+      "0",
+      "\u221a 2",
+      "3 \u221a 2"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "- 1 4 \u221a 2",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q3-8179c34b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Which of the following sets are dense in the set of square n\u00d7n square matrices over C? 29",
+    "choices": [
+      "I and II only",
+      "II and III only",
+      "I and IV only",
+      "III and IV only",
+      "IV only"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "II and III only",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q3-8bc9616c",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Let A be a 2 by 2 matrix with characteristic polynomial p(x) = x^2 + 2x + 1, which of the following must be true: (I) A has an eigenvalue. (II) If A is diagonalizable, then A is the identity matrix. (III) A is invertible",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "I and III only",
+      "I, II, III"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "II only",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q3-bd64fce7",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "The set of real numbers for which the series \\sum \\infty n=1 n!x2n nn(1+x2n) converges is:",
+    "choices": [
+      "{0}",
+      "{x :-1<x< 1}",
+      "{x :-1\\le x\\le 1}",
+      "{x : |x|\\le \u221ae}",
+      "R"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "{x :-1<x< 1}",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q3-be25fb8b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "From the set of integers {1, 2,..., 9}, how many nonempty subset sum to an even integer?",
+    "choices": [
+      "512",
+      "255",
+      "9! 2!\u00b77!",
+      "9! 2!",
+      "None of the above"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "255",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q4-4c0797b8",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "A square n\u00d7n matrix A is said to be skew symmetric if A = -AT . The vector space of antisymmetric matrices has dimension:",
+    "choices": [
+      "n(n+1) 2",
+      "n^2- 1",
+      "n^2 2",
+      "n^2+1 2",
+      "n(n-1) 2"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "n(n+1) 2",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q4-52e922c5",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "An ordinary polyhedron with 12 faces and 17 edges has how many vertices?",
+    "choices": [
+      "5",
+      "7 37",
+      "9",
+      "11",
+      "13"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "5",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q4-5f32abbf",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let x and y be positive integers such that 3x + 7y is divisible by 11. Which of the following is also divisible by 11?",
+    "choices": [
+      "4x + 6y",
+      "x +y + 5",
+      "9x + 4y",
+      "4x- 9y",
+      "x +y- 1"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "4x + 6y",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q4-77eb6a98",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Let G be a group and f :G\u2192G be given by f (x) = axa2. a is a homomorphism if and only if:",
+    "choices": [
+      "G is abelian",
+      "G ={e}",
+      "a =e",
+      "a^2 =a",
+      "a^3 =e"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "G is abelian",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q4-91f81ca8",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "What is the mininimum value of the expression x + 4z as a function defined on R^3 subject to the constraint x^2 +y^2 +z^2\\le 2?",
+    "choices": [
+      "0",
+      "-2",
+      "- \u221a 34",
+      "- \u221a 35",
+      "- 5 \u221a 2"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "0",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q4-a2d6bb40",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let n be an integer greater than 1. Which of the following guarantee that the equation xn =\\sum n-1 i=0 aixi has at least one root in the interval (0, 1)? (I) a^0> 0 and\\sum n-1 i=0 ai< 1 (II) a^0> 0 and\\sum n-1 i=0 ai> 1 (III) a^0< 0 and\\sum n-1 i=0 ai> 1",
+    "choices": [
+      "None",
+      "I only",
+      "II only",
+      "III only",
+      "I and III only"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "None",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q4-b776a88b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Let A be an n\u00d7n matrix all of whose diagonal entries are 1 and whose other entries are b, with b> 1. Which of the following are true: (I) A has eigenvalue nb-b- 1 (II) A has eigenvalue nb-b + 1 (III) A has an eigenvalue 1-b with multiplicity n- 1",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "II and III only"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "I only",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q4-c6c5b4c5",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Find the general solution of the di\ufb00erential equation: dy dx = x +y x",
+    "choices": [
+      "ey/x =cx",
+      "ey/x =cy",
+      "ex/y =cx",
+      "ex/y =cy",
+      "e-x/y =cx"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "ey/x =cx",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q4-d93b5168",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Evaluate: \\infty \\sum n=0 (-1)n\u00b7 22n (2n + 1)!",
+    "choices": [
+      "1 2 \\cos 2",
+      "sin2 1",
+      "1 2 \\sin 1",
+      "\\sin 2",
+      "\\cos 1 \\sin 1"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "1 2 \\cos 2",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-2901dad4",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Let f be a continuous, strictly decreasing, real valued function such that \\int +\\infty 0 f (x)dx is finite. In terms of f-1 (the inverse function of f), \\int \\infty 0 f (x)dx is:",
+    "choices": [
+      "Less than \\int \\infty 1 f-1(y)dy",
+      "Greater than \\int 1 0 f-1(y)dy",
+      "Equal to \\int \\infty 1 f-1(y)dy",
+      "Equal to \\int 1 0 f-1(y)dy",
+      "Euqal to \\int \\infty 0 f-1(y)dy 36"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "Euqal to \\int \\infty 0 f-1(y)dy 36",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-3c245229",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Let G be a group of order 9, and let e denote the identity of G. Which one of the statements about G cannot be true:",
+    "choices": [
+      "There exists an element x in G such that x\u0338=e and x-1 =x",
+      "There exists an element x in G such that x,y\u0338=e and\u27e8x\u27e9\u2229\u27e8 y\u27e9 ={e}",
+      "There exists an element x\\in G such that\u27e8x\u27e9 has order 3",
+      "G is cyclic",
+      "G is Abelian"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "G is Abelian",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-3c37ef6a",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "topology",
+    "weight": 12,
+    "prompt": "Suppose X is a compact and Y is Hausdor\ufb00 such that f : X\u2192 Y is a continuous bijection. Which of the following are true? (I) f is open. (II) f is a local homeomorphism. (III) f-1 is continuous",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "II and III only",
+      "All of them"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "All of them",
+    "hint": "Reduce the claim to definitions of open/closed/compact/connected and test edge cases.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-3c9292d0",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "In the figure above, as r ands increase the third side remains at 1 and the measure of the obtuse angle remains at 110 degrees. What is limr,s\u2192\\infty (s-r)?",
+    "choices": [
+      "0",
+      "A positive number less than 1",
+      "1",
+      "A finite number greater than 1",
+      "\\infty . Multivariable Calculus"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "\\infty . Multivariable Calculus",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-47905f84",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "What is the general solution to the di\ufb00erential equation: y\u2032\u2032- 2y\u2032 +y =tet",
+    "choices": [
+      "C1et +C2t2et",
+      "C1et +C2tet",
+      "C1et +C2tet +t3et",
+      "C1et +C2tet + t 2et",
+      "C1et +C2tet + t^2 2et References: 48"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "C1et +C2tet + t^2 2et References: 48",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-4c9c9f6c",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "What is the fractional transformation f : C\u2192 C such that f (0) = 1 , f (1) = 5 , f (\\infty ) = 3 ?",
+    "choices": [
+      "9z+1 3z+1",
+      "-6z+1 z-2",
+      "14z+1 z+2",
+      "9z+1 z+1",
+      "6z-1 2z-1 Euclidean Geometry and Miscellaneous Problems"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "6z-1 2z-1 Euclidean Geometry and Miscellaneous Problems",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-84cc3279",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Fow what value of x will the following matrix be non-invertible? \uf8eb \uf8ec\uf8ec\uf8ed 7 6 0 1 5 4 x 0 8 7 0 1 0 0 1 1 \uf8f6 \uf8f7\uf8f7\uf8f8",
+    "choices": [
+      "-1",
+      "0",
+      "1",
+      "3",
+      "9"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "9",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-8a682d91",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let X and Y be uniformly distributed random variables on [0, 1]. Find P (|X-Y|< 1 2 )",
+    "choices": [
+      "1 4",
+      "1 3",
+      "2 3",
+      "3 4 42",
+      "4 5"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "4 5",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-9e40c738",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let C^1,C 2 be the circles of radius 1 centered at (1, 0) and (0, 1) respectively. Find the area on which the interiors of the circles overlap",
+    "choices": [
+      "4- 2 \u221a 2",
+      "\\pi +1 2",
+      "2-\\pi 2",
+      "\\pi +8 2",
+      "\\pi +2 4"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "\\pi +2 4",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-a4e8823b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "What is the units digit in 725?",
+    "choices": [
+      "1",
+      "3",
+      "5",
+      "7 34",
+      "9"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "9",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-bbfd600b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "A city has square blocks formed by a grid of north-south and east-west streets. One possible way to get from City Hall to the Main Fire House is first travel 5 blocks east and then 7 blocks north. How many di\ufb00erent routes from City Hall to the main firehouse that travel exactly 12 city blocks?",
+    "choices": [
+      "5\u00b7 7",
+      "7! 5!",
+      "12! 7!5!",
+      "212",
+      "7!5!"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "7!5!",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q5-c38cdb09",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "If a is a positive number, what\u2019s the value of the following double integral? \\int 2a 0 \\int 0 - \u221a 2ay-y^2 \u221a x^2 +y2dxdy",
+    "choices": [
+      "16 9a3",
+      "32 9a3",
+      "\\pi 2a2",
+      "8\\pi 3 2",
+      "2a4 Di\ufb00erential Equations"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "2a4 Di\ufb00erential Equations",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q6-0911c637",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Which of the following subsets are subrings of the ring of real numbers? (I) {a +b \u221a 2 3| a,b\\in Q} (II) {a +b \u221a 2| a,b\\in Q} (III) { n 3m| n\\in Z and m\\in Z\\ge 0} (IV) {a +b \u221a 5| a,b\\in R such that a^2 +b^2\\le 1}",
+    "choices": [
+      "I only",
+      "I and II only",
+      "III , IV only",
+      "II, III, IV 32",
+      "I, II, III"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "I and II only",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q6-5a2656bb",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Consider a hemisphere of radius R. Consider the portion of sphere that lies height h above it\u2019s center. What is the surface area of this portion?",
+    "choices": [
+      "2\\pi R^1/2(R-h)3/2",
+      "2\\pi R(R-h)",
+      "2\\pi R ( R^2-h^2)1/2",
+      "3\\pi Rh",
+      "\\pi R(R-h)"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "2\\pi R(R-h)",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q6-64918e35",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "If f and g are real valued di\ufb00erentiable functions and if f\u2032(x)\\ge g\u2032(x) for all x\\in [0, 1], which of the following must be true?",
+    "choices": [
+      "f (0)\\ge g(0)",
+      "f (1)\\ge g(1)",
+      "f (1)-g(1)\\ge f (0)-g(0)",
+      "f-g has no maximum on [0, 1]",
+      "f g is a non-decreasing function on [0, 1] Topology"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "f (1)\\ge g(1)",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q6-a6208ebf",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose you answer quiz questions until you get one wrong. If you answer 99% of the questions correctly, how many questions on average do you expect to answer?",
+    "choices": [
+      "99",
+      "100",
+      "80",
+      "100/3",
+      "110"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "100",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q6-ca16f83b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Let P^1 be the set of all primes {2, 3, 5, 7,...} and for each n, define Pn to be the set of all prime multiples of n, i.e. {2n, 3n, 5n, 7n,... }. Which of the following interesections is non-empty?",
+    "choices": [
+      "P^1\u2229P23",
+      "P^7\u2229P21",
+      "P12\u2229P20",
+      "P20\u2229P24",
+      "P^5\u2229P25"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "P^7\u2229P21",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q6-e4d6fb77",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "If A is a subset of the real line R and A contains each rational number, which of the following must be true?",
+    "choices": [
+      "If A is open, then A = R",
+      "If A is closed, then A = R",
+      "If A is uncountable, then A = R",
+      "If A is uncountable, then A is open",
+      "If A is countable, then A is closed"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "If A is closed, then A = R",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q6-ec560e68",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "What is the Jordan form of the transformation T : C^2\u2192 C^2 given by (w,z )\u21a6\u2192 (-z,w )?",
+    "choices": [
+      "(i 1 0 -i ) 27",
+      "(i 1 0 i )",
+      "(i 0 0 -i )",
+      "(-i 1 0 -i )",
+      "(i 0 0 i )"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "(i 1 0 i )",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q7-015f81ba",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "How many trees are there with 5 vertices? A tree is a graph with no cycles",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9 40"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "6",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q7-3a449c92",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose you flip a coin until you get two consecutive heads. How many times to you expect to flip until you stop?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9 Complex Analysis"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "6",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q7-79e3a140",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "If the finite group G contains a subgroup of order seven but no element other than the identity is its own inverse, then the order of G could be:",
+    "choices": [
+      "27",
+      "28",
+      "35",
+      "37",
+      "42"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "28",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q7-9a06a930",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Let f : R\u2192 R be a continuous function such that f (ax) = af (x) for every a\\in R and x\\in R. Which of the following are true?",
+    "choices": [
+      "f is linear",
+      "f (x) = 0 if and only if x = 0",
+      "If f (m) +f (n) = f (m +n) form,n\\in Z, then f is surjective precisely when f is non-zero",
+      "All of the above",
+      "A and C"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "f (x) = 0 if and only if x = 0",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q7-a7170d3a",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "topology",
+    "weight": 12,
+    "prompt": "Let S be a compact topological space, let T be a topological space, and let f be a function from S ontoT . Which of the following conditions on f is the weakest su\ufb03cient condition to guarantee compactness of T",
+    "choices": [
+      "f is a homeomorphism",
+      "f is continuous and injective",
+      "f is continuous",
+      "f is injective",
+      "f is bounded"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "f is continuous and injective",
+    "hint": "Reduce the claim to definitions of open/closed/compact/connected and test edge cases.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q7-ad37fdf9",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "What is the Jordan form of the transformation T : C^2\u2192 C^2 given byT (x,y ) = (4x+y,-x+2y)?",
+    "choices": [
+      "(3 0 0 3 )",
+      "(3 0 0 2 )",
+      "(1 1 0 1 )",
+      "(3 1 0 3 )",
+      "(2 1 0 2 )"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "(3 0 0 2 )",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q7-c3572295",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "For how many positive integers k does the ordinary decimal representation of the integer k! end in exactly 99 zeros?",
+    "choices": [
+      "None",
+      "One",
+      "Four",
+      "Five",
+      "Twenty Four Real Analysis and Advanced Calculus"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "One",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q8-3e3227d2",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Which of the following are subspaces? (I) {(x^1,x 2,x 3)\\in C^3 : x^1 +ix2 + 3x3 = 0} (II) {(x^1,x 2,x 3)\\in C^3 : x^1 + 2x2 + 3x3 = 4- 5i} (III) {(x^1,x 2,x 3)\\in C^3 : x1x2x3 = 0} (IV) {(x^1,x 2,x 3)\\in C^3 : x^1 = 10x3}",
+    "choices": [
+      "All the above",
+      "I and IV only",
+      "I, III, and IV only",
+      "I, II, and III only",
+      "I, II, IV only Abstract Algebra"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "I, II, IV only Abstract Algebra",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q8-ac6041f4",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Let p and q be distinct primes. How many mutually non-isomorphic Abelian groups are there of orderp2q4?",
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "12",
+      "16"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "16",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q8-e11418c3",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Evaluate: limx\u21920+ (sinx x )1/x^2 . 25",
+    "choices": [
+      "Does not exist",
+      "1 3",
+      "e 2",
+      "e- 1 3",
+      "e- 1 6"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "e- 1 6",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q9-0d99ad9e",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "For each n\\in N, we let [n] denote the set {1,...,n }. How many injective functions are there from [n]\u2192 [n +k] where k\\ge 0?",
+    "choices": [
+      "( n k ) k!",
+      "( n +k k ) k!",
+      "( n +k n-k ) k!",
+      "(n-k)!",
+      "( n +k k ) n!"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "( n +k k ) n!",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 9
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q9-73de9116",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Which of the following are equivalent to continuity? (I) f-1(Ao) = (f-1(A))o where So denotes interior of a set S (II) f-1(A) = (f-1(A)) (III) f-1(Ac) = (f-1(A))c",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "II and III only",
+      "None Combinatorics"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "None Combinatorics",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 9
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s10-q9-e6a44217",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "The radius of convergence of \\sum \\infty n=0 n! 2n2xn is:",
+    "choices": [
+      "0",
+      "1",
+      "3",
+      "e^2",
+      "\\infty"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "\\infty",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 10,
+      "question": 9
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s2-q3-7236172b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let S be a set with |S|\\ge 3. How many non-surjective functions from S\u2192{ 1, 2, 3} are there?",
+    "choices": [
+      "3\u00b7 2|S|",
+      "3\u00b7 2|S|- 3",
+      "3|S|- 3",
+      "|S|3",
+      "2|S|2- 3"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "3\u00b7 2|S|- 3",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 2,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s2-q4-f0ab66fc",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let X and Y be random variables. Which of the following is always true? (I) E(X +Y ) = E(X) +E(Y ) (II) Var(X) = Var(-X) (III) P (max(X,Y )< 2) = P (X <2)P (Y < 2) (IV) var(X +Y )> Var(X) + Var(Y )",
+    "choices": [
+      "I only",
+      "I and II only",
+      "I, II, and III only",
+      "I and IV only",
+      "None are true"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "I and II only",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 2,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s2-q5-8ffdf5eb",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Which of the following exist: (I) f^1 : [0, 1]\u2192 (0, 1) continuous and surjective. (II) f^2 : (0, 1)\u2192 [0, 1] continuous and surjective (III) f^3 : (0, 1)\u2192 [0, 1] continuous and bijective",
+    "choices": [
+      "I only",
+      "II only",
+      "II and III only",
+      "III only",
+      "None exist"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "II only",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 2,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s2-q6-1ceab885",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "The angle between the tangent plane x^2 +y^2 + 2z2 = 4 at (1, 1, 1) and the xy-plane is:",
+    "choices": [
+      "\\arccos (\u221a 6 6 )",
+      "\\arccos (\u221a 6 2 )",
+      "\\arccos (\u221a 6 3 ) 4",
+      "\\pi 4",
+      "\\pi 2"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "\\arccos (\u221a 6 3 ) 4",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 2,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s2-q7-3fd7f086",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Which of the following are subrings of polynomials with coe\ufb03cients in Z? (I) Even degree polynomials. (II) Polynomials of degree less than or equal to 3. (III) Polynomials all of whose coe\ufb03cients are even",
+    "choices": [
+      "I, II, and III",
+      "I and III only",
+      "II only",
+      "III only",
+      "None of the above"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "None of the above",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 2,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s2-q8-3b660739",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Consider the graph y =ex. Rotating this graph about the x-axis for 1\\le x\\le 2, what is the area of this surface of revolution? (WARNING: pretty long computation)",
+    "choices": [
+      "\\pi \u00b7 [ e^2\u221a 1 +e^4-e \u221a 1 +e^2 + \\ln (\u221a e^4+1+e^2 \u221a e^2+1+e )]",
+      "\\pi \u00b7 [ e^2\u221a 1 +e^4-e \u221a 1 +e^2- \\ln (\u221a e^4+1+e^2 \u221a e^2+1+e )]",
+      "\\pi \u00b7 [ e \u221a 1 +e^2-\u221a1 +e- \\ln (\u221a e^2+1+e\u221a e^2+1+1 )]",
+      "2\\pi \u221a 2",
+      "\\pi \u00b7 [ e \u221a 1 +e^2-\u221a1 +e + \\ln (\u221a e^2+1+e\u221a e^2+1+1 )]"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "\\pi \u00b7 [ e^2\u221a 1 +e^4-e \u221a 1 +e^2 + \\ln (\u221a e^4+1+e^2 \u221a e^2+1+e )]",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 2,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s2-q9-7e9d8218",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "For how many values of the parameter k, will the following system have no solutions? kx +y +z = 1 x +ky +z =k x +y +kz =k^2",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "4",
+      "Infinitely many"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "1",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 2,
+      "question": 9
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s3-q1-62210f7a",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Which of the following are compact sets? (I) GL(2, R)\u2282 R^4, the set of invertible 2\u00d7 2 matrices over R. (II) SL(2, R)\u2282 R^4, the set of 2\u00d7 2 matrices over R with determinant 1. (III) O(2, R)\u2282 R^4, the set of orthonormal 2\u00d7 2 matrices over R",
+    "choices": [
+      "I, II, III",
+      "I only",
+      "II only",
+      "III only",
+      "II and III only"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "III only",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 3,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s3-q10-0fcebb18",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Suppose yn and xn satisfy: (xn yn ) = (2 1 1 1 )(xn-1 yn-1 ) with x^0 =y^0 = 1. What is limn\u2192\\infty xn yn assuming this limit exists?",
+    "choices": [
+      "\\infty",
+      "1- \u221a 2",
+      "1 + \u221a 2",
+      "1+ \u221a 5 2",
+      "1- \u221a 5 2"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "1+ \u221a 5 2",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 3,
+      "question": 10
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s3-q2-cd814883",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "For which values of a does\\sum \\infty n=1 (lnn)2014 na does the series converge?",
+    "choices": [
+      "a =-2014",
+      "1>a> 0",
+      "a> 1",
+      "a\u0338= 1 and a> 0",
+      "For no values of a does the series converge"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "a> 1",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 3,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s3-q3-ef6fa1bd",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Which set does not have the same cardinality as the others?",
+    "choices": [
+      "{f : N\u2192 N}",
+      "R",
+      "{f :{0, 1,..., 100}\u2192 R}",
+      "{ solutions to polynomial equations with coe\ufb03cients in Z}",
+      "{f : Z\u2192{ 0, 1}}"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "{ solutions to polynomial equations with coe\ufb03cients in Z}",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 3,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s3-q7-171f80c2",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let f (x) = x^5 + 3x3- 1. Which of the following is true?",
+    "choices": [
+      "f has two real zeros",
+      "limx\u2192\\infty (f-1)(x) =\\infty",
+      "f has only rational roots",
+      "f has a local minimum",
+      "All of the above"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "limx\u2192\\infty (f-1)(x) =\\infty",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 3,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s3-q8-72154489",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Evaluate the following limit: \\lim x\u21920 [ 1 x^2 \\int x 0 t +t^2 1 + sintdt ]",
+    "choices": [
+      "1",
+      "1 2",
+      "1 4",
+      "- 1 2",
+      "-1"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "1 2",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 3,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s4-q1-6e79f657",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Let G be a finite group. Which of the following never happen? (I) A subgroup of G with index 2 that is not normal. (II) All the conjugacy classes of G have size 1. (III) G has no proper subgroups other than the subgroup containing only the identity",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "I only",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 4,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s4-q2-067e0b63",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let (x(t),y (t)) be a parametric curve in R^2 be given by: x(t) = et y(t) = \\sin(t) What is d2y dx2 as a function of t?",
+    "choices": [
+      "- sint et",
+      "cost-et sint et",
+      "- sint-cost et",
+      "sint+cost e2t",
+      "- sint-cost e2t"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "- sint-cost e2t",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 4,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s4-q4-2af7bd4e",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose y(t) = y solves y\u2032 = (y^2- 1)e2012y-1 with initial condition y(0) = 0 , then which of the following are true?",
+    "choices": [
+      "limt\u2192\\infty y(t) =\\infty",
+      "limt\u2192\\infty y(t) = 1",
+      "limt\u2192\\infty y(t) =-1",
+      "-1<y (t)< 1 for all t",
+      "Both C and D"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "Both C and D",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 4,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s4-q5-ec9e258f",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Evaluate \\sum \\infty n=1 2 n^2+n converge:",
+    "choices": [
+      "1",
+      "3 2",
+      "2",
+      "5 2",
+      "3"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "3 2",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 4,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s4-q6-11cb1cd1",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose y^1 and y^2 are solutions to the di\ufb00erential equation y\u2032\u2032- 2y\u2032 +y =f (t) Which of the following is true: (I) If y^1(0) = y^2(0), then y^1\u2261y^2 (II) If a +b = 1, then ay1 +by2 is another solution to the di\ufb00erential equation. (III) If f (t) = 0 , then the general solutions is C1et +C2tet",
+    "choices": [
+      "I, II, III",
+      "III only",
+      "II only",
+      "II and III only",
+      "I and III only 9"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "II and III only",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 4,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s4-q8-3d0e2305",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Evaluate \\int 2\\pi 0 eei\\theta d\\theta",
+    "choices": [
+      "2\\pi i",
+      "2\\pi",
+      "4\\pi i",
+      "4\\pi e",
+      "-2\\pi i"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "2\\pi",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 4,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s5-q1-2159ef68",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let A = (1 1 0 1 ) and define||A||op := sup ||v||R^2 =1 {||Av||R^2}. There is a vector v such that||A||op = ||Av||R^2. Also, note that once we find one v that maximizes the norm||\u2217|| op,-v also does. Find the angle v makes with the positive x-axis assuming v is to the right of the y-axis:",
+    "choices": [
+      "Arctan2",
+      "\\arctan 2 2",
+      "3\\pi 4",
+      "\\pi 4",
+      "-\\pi 4"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "\\arctan 2 2",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 5,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s5-q10-f2d27f17",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "How many times do the hands of a analog clock (i.e. one with a hour and minute hand) form perpendicular angles in a 24 hour time cycle?",
+    "choices": [
+      "48",
+      "47",
+      "46",
+      "45",
+      "44"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "46",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 5,
+      "question": 10
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s5-q4-e8468490",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Which functions are entire: (I) f (z) = 2z2 (II) g(z) = z2z sinz (III) h(z) =\\sum \\infty i=0zi",
+    "choices": [
+      "I, II only",
+      "I only",
+      "I and III only",
+      "II only",
+      "II and III only"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "I only",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 5,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s5-q5-74cd1246",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "complex_analysis",
+    "weight": 12,
+    "prompt": "Which of the following holmorphic functions must be constant functions: (I) An entire function with positive real part. 11",
+    "choices": [
+      "I, II, III, IV only",
+      "II, III, IV only",
+      "I, II only",
+      "III only",
+      "I, II, III only"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "I, II, III only",
+    "hint": "Choose a representation (polar/analytic) that makes the target theorem directly applicable.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 5,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s5-q6-298ef97e",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "A basketball player decides to practice his free throws in a gym by promising to not stop until he makes 20 free throws (not necessarily consecutively). If his free-throw percentage is 80 percent. What\u2019s the probability that he needs exactly 50 tries to complete his goal?",
+    "choices": [
+      "( 50 20 ) (.8)20(.2)30",
+      "(.8)20(.2)30",
+      "( 50 20 ) (20\u00b7.8)(30\u00b7.2)",
+      "( 49 19 ) (.8)20(.2)30",
+      "(20\u00b7.8)(30\u00b7.2)"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "( 49 19 ) (.8)20(.2)30",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 5,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s5-q7-5ece872a",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Let R be a ring. Which of the following are always true? (I) The set of idempotents {x\\in R| x^2 =x} is a subring. (II) If x^2 =x for all x\\in R, then R is commutative. (III) The only idempotents of an integral domain R are 0 and 1",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "II and III only",
+      "None are ture"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "II and III only",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 5,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s5-q8-380d7003",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "What is the characteristic polynomial of an n\u00d7n matrix all of whose entries are 1?",
+    "choices": [
+      "x(x- 1)(x- 2)... (x-n)",
+      "xn-1(x-n)",
+      "xn-1(x- 1)",
+      "x(x + 1)(x + 2)... (x +n) 12",
+      "xn-2(x- 1)(x + 1)"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "xn-1(x-n)",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 5,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s6-q4-19f405c7",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Find the volume exclosed by (x^2 +y^2 +z^2)2 = 2z(x^2 +y^2)",
+    "choices": [
+      "\\pi 40",
+      "3\\pi 40",
+      "\\pi 15",
+      "2\\pi 15",
+      "\\pi 2 14"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "2\\pi 15",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 6,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s6-q5-1b0db2d5",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose you have two cards: one is painted black on both sides and the other is painted black on one side and orange on the other You select a card at random and view one side. You notice it is black. What is the probability the other side is orange?",
+    "choices": [
+      "1 2",
+      "1 3",
+      "1 4",
+      "1 5",
+      "1"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "1 3",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 6,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s6-q6-866ede8a",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Let A is an m\u00d7m matrix over C and m> 1. Suppose that An = Id for some n> 0 and Id is the m\u00d7m identity matrix. Which of the following are true: (I) A can be diagonilized (II) If \\lambda is an eigenvalue that is not real, then 1 +\\lambda +... +\\lambda n-1 = 0. (III) The characteristic polynomial has coe\ufb03cients in R",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I, II, and III"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "I and II only",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 6,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s6-q7-ba73674e",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "For a continuously di\ufb00erentiable vector field \u20d7F :D\u2282 R^2\u2192 R^2, which of the following are true?",
+    "choices": [
+      "curl \u20d7F = 0 implies \u20d7F is conservative",
+      "curl \u20d7F =\u20d70 and div F = 0 implies \u20d7F is conservative",
+      "curl \u20d7F =\u20d70 and D is simply connected imply \u20d7F is conservative",
+      "div \u20d7F =\u20d70 and D is simply connected imply \u20d7F is conservative",
+      "No statement is correct"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "curl \u20d7F =\u20d70 and D is simply connected imply \u20d7F is conservative",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 6,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s6-q9-ff39b971",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Assume b>a> 0. Calculate the integral: \\int \\infty 0 e-ax-e-bx x dx (Hint: Write the integrand as an integral from a to b)",
+    "choices": [
+      "lna- lnb2",
+      "lnb- lna2",
+      "lna2- lnb2",
+      "lna- lnb",
+      "lnb- lna"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "lnb- lna",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 6,
+      "question": 9
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s7-q2-8b400f7b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose you wish to make a boquet of 10 flowers and give them to Professor Bertozzi. You go to the flower store and there are 4 types of flowers you think fit would fit her personality. How many bouquets can you make using only these flowers?",
+    "choices": [
+      "410 16",
+      "40",
+      "( 9 4 )10",
+      "( 13 3 )",
+      "( 13 9 )"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "( 13 3 )",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 7,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s7-q3-6ebd09d8",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Which of the following matrices is not diagonlizable over C?",
+    "choices": [
+      "(0 -1 1 0 )",
+      "( 1 2 -2 1 )",
+      "(5 4 2 3 )",
+      "(4 1 0 4 )",
+      "(4 1 0 1 )"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "(4 1 0 1 )",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 7,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s7-q4-00981d19",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose that f : R\u2192 R is a smooth function and that u is related to t and x by the equation: u =f (x-ut) Which of the following di\ufb00erential equations does u satisfy?",
+    "choices": [
+      "ut-uux = 0",
+      "ux-u2ut = 0",
+      "ux +tut = 0",
+      "ut +ux(ut)2 = 0",
+      "ut +uux = 0"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "ut +uux = 0",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 7,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s7-q5-f223691f",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Find the point on the plane x + 2y + 3z = 14 closest to the origin",
+    "choices": [
+      "(7, 2, 1)",
+      "(2, 2, 8 3 )",
+      "(-3,-2, 7)",
+      "(14, 0, 0)",
+      "(1, 2, 3)"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "(1, 2, 3)",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 7,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s7-q6-64ba886a",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "A bead slides down the curve xy = 1 in the first quadrant. Find the bead\u2019s horizontal velocity at time t = 4 if its height at time t seconds is y = 18-t^2. 17",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "6",
+      "8"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "4",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 7,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s7-q8-0a801e51",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "What is the last digit of 12121212 ?",
+    "choices": [
+      "2",
+      "4",
+      "6",
+      "8",
+      "0"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "2",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 7,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s7-q9-b6aa6a01",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Evaluate the integral \\int 1 0 \\int 1 0 emax(x^2,y^2)dxdy where the \u201cmax\u201d of two real numbers is their maxi- mum",
+    "choices": [
+      "1 2 (e + 1)",
+      "e + 1",
+      "1-e",
+      "1 2 (e- 1) 18",
+      "e- 1"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "e- 1",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 7,
+      "question": 9
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s8-q1-e06383d0",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let u,v,w \\in R^3 such that: (i) u\u00d7v\u0338= 0 (ii) u\u00d7w\u0338= 0 (iii) (u\u00d7v)\u00b7 (u\u00d7w) = 0 Which of the following is true?",
+    "choices": [
+      "v\u22a5w",
+      "u\u22a5w and u\u22a5v",
+      "u,v , and w lie in the same plane",
+      "The plane spanned by u and v is orthogonal to the plane spanned by u and w",
+      "None of the above"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "The plane spanned by u and v is orthogonal to the plane spanned by u and w",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 8,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s8-q10-9de7888a",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "How many binary digits are between 101110 and 11 (inclusive of the endpoints)?",
+    "choices": [
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "44",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 8,
+      "question": 10
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s8-q3-ddd6dcea",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "d dx \u23d0\u23d0 x=e \\ln(lnxx2+x) = 19",
+    "choices": [
+      "3e-1 e^2+e",
+      "3e+2 e^2",
+      "2e+1 e^2+e",
+      "e+2 e^2+e",
+      "3e+2 e^2+e"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "3e+2 e^2+e",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 8,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s8-q4-979e4574",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "At how many points does the graph y =x^5 +x^3 +x- 2000 cross the x-axis",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "1",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 8,
+      "question": 4
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s8-q5-6e10e3ba",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let C be the circle in the yz-plane whose equation is (y- 3)2 +z^2 = 1. If C is revolved around the z-axis, the surface generated is a torus. What is the equation of the torus",
+    "choices": [
+      "x^2 +y^2 +z^2 = 6y",
+      "(x^2 +y^2 +z^2)2 = 8 + 36(x^2 +z^2)",
+      "(x^2 +y^2 +z^2 + 8)2 = 36(x^2 +z^2)",
+      "(x^2 +y^2 +z^2 + 8)2 = 36(x^2 +y^2)",
+      "(x^2 +y^2 +z^2 + 8)2 = 36(y^2 +z^2)"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "(x^2 +y^2 +z^2 + 8)2 = 36(x^2 +y^2)",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 8,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s8-q6-91b7e1ff",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "How many distinct abelian groups have order 96?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "8",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 8,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s8-q8-15b1fcb7",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "complex_analysis",
+    "weight": 12,
+    "prompt": "If C is the circle in the complex plane whose equation is |z| =\\pi , oriented counterclockwise, find the value of the integral: \u222e C ( cosz-z \\cos 1 z ) dz",
+    "choices": [
+      "-2\\pi i",
+      "-\\pi i",
+      "0",
+      "\\pi i",
+      "2\\pi i"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "\\pi i",
+    "hint": "Choose a representation (polar/analytic) that makes the target theorem directly applicable.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 8,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s8-q9-23824afc",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let R be the rectangle bounded by x-y = 0, x-y = 2, x +y = 0 and x +y = 3. Evaluate \\int \\int R (x +y)ex2-y^2 dA",
+    "choices": [
+      "e^6- 7",
+      "e^6 + 7",
+      "1 2 (e^6- 7)",
+      "1 4 (e^6- 7)",
+      "1 2 (e^6 + 7)"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "1 4 (e^6- 7)",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 8,
+      "question": 9
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s9-q1-db6efd4d",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "The function f (x,y ) = x^2 + 3xy +y^2 +y^4:",
+    "choices": [
+      "has a global minimum at (0, 0)",
+      "has a local minimum at (0, 0), but not a global minimum",
+      "has a local max at (0, 0)",
+      "has a saddle at (0, 0)",
+      "has countably many local minima 21"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "has a local max at (0, 0)",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 9,
+      "question": 1
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s9-q10-81590cc9",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Evaluate \\sum \\infty n=1 \\arctan ( 1 n^2+n+1 )",
+    "choices": [
+      "\\pi /4",
+      "\\pi /3",
+      "\\pi /2",
+      "3\\pi /3",
+      "\u221a 2 2 23"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "\\pi /4",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 9,
+      "question": 10
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s9-q2-c8601747",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Find the smallest degree polynomial p(x) such that: p(0) =-1 p(-1) =-2 p(1) = 4",
+    "choices": [
+      "p(x) = x- 1",
+      "p(x) = 3x + 1",
+      "p(x) = 2x2- 3x- 1",
+      "p(x) =-2x2 + 3x- 1",
+      "p(x) = 2x2 + 3x- 1"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "p(x) = 2x2 + 3x- 1",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 9,
+      "question": 2
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s9-q3-2795c240",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Let C be the boundary, oriented counterclowise, of the triangle in the (x,y )-plane whose vertices are (0, 1), (1, 1) and (1, 3). What is the value of the following integral? \u222e C ( \u221a 2x + 1-y)dx + ( 2x + \u221a y^2-y ) dy",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "2 \u221a 2- 3",
+      "2( \u221a 2- 1)"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "3",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 9,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s9-q5-98c258e1",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Find the smallest positive a\\in N such that there is a b\\in Z with 13a + 35b = 1",
+    "choices": [
+      "8",
+      "3",
+      "27",
+      "22 22",
+      "10"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "27",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 9,
+      "question": 5
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s9-q6-716c2296",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "If w =f (x,y ) is a solution of the partial di\ufb00erential equation: 2\u2202w \u2202x- 3\u2202w \u2202y = 0 then w could equal:",
+    "choices": [
+      "\\log(\\log(2x- 3y))6",
+      "\\sin(3x- 2y)",
+      "earctan(3x+2y)",
+      "(\\arccos(2y- 3x))2",
+      "\u221a2x + 3y"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "\\log(\\log(2x- 3y))6",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 9,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s9-q7-f2357b43",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Up to isomorphism, how many additive abelian groups G of order 16 have the property that x +x +x +x = 0 for each x\\in G?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "3",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 9,
+      "question": 7
+    }
+  },
+  {
+    "id": "upper-gre-grebootcamp-s9-q9-e9b25053",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose that f is di\ufb00erentiable function such that f (x)\\ge 0 and \\int \\infty 0 f (x) <\\infty . Which of the following statements must always be true?",
+    "choices": [
+      "limx\u2192\\infty f (x) = 0",
+      "limx\u2192\\infty f\u2032(x) = 0",
+      "For every \u03b5> 0, there is an M such that \\int x>Mf (x)dx<\u03b5",
+      "f is bounded",
+      "A, C, and D"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "For every \u03b5> 0, there is an M such that \\int x>Mf (x)dx<\u03b5",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREBootcamp",
+      "problemSet": 9,
+      "question": 9
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q10-36d64d61",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "If U and V are 3-dimensional subspaces of R^5, what are the possible dimensions of U\u2229V ?",
+    "choices": [
+      "0",
+      "1",
+      "0 or 1",
+      "1, 2, or 3",
+      "0, 1, 2, or 3"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "1, 2, or 3",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 10
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q16-5e0cc913",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose nZ ={0,n,-n, 2n,-2n,... } andIn =nZ\u2229 [1, 1000]. How many elements are contained in the set I^6\u222aI15\u222aI25 ?",
+    "choices": [
+      "200",
+      "226",
+      "257",
+      "266",
+      "272"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "226",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 16
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q18-fd376a2a",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose F is the set of functions such that f(x) = ax +b cx +d, where the coe\ufb03cients a, b, c,andd are real numbers and ad-bc = 1. Which of the following are TRUE? I. If f and g are inF, then f\u25e6g =g\u25e6f . II. There is a function i inF such that i\u25e6f =f\u25e6i for all f inF . III. If f, g, and h are inF, then f\u25e6 (g\u25e6h) = (f\u25e6g)\u25e6h",
+    "choices": [
+      "I only",
+      "II only",
+      "I and II only",
+      "II and III only",
+      "I, II, and III"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "II and III only",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 18
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q19-d554ee3f",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "The region contained between the Lemniscate curve r^2 = 4 \\sin 2\\theta and the circle r = \u221a 2 has area",
+    "choices": [
+      "\u221a 3- \\pi 3",
+      "2 \u221a 3- 2\\pi 3",
+      "2 \u221a 3- \\pi \u221a 2 3",
+      "2 \u221a 3- \\pi 3",
+      "2- \\pi 3 7 GO ON TO THE NEXT P AGE"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "2 \u221a 3- 2\\pi 3",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 19
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q20-e8ab14d6",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Let f be a di\ufb00erentiable real-valued function such that f(3) = 7 and f\u2032(x)\\ge x for all positive x. What is the maximum possible value of \u02c6 3 0 f(x) dx ?",
+    "choices": [
+      "0",
+      "9 2",
+      "12",
+      "25 2",
+      "21"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "12",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 20
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q23-e4c3d1b4",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "For which value of n are there exactly two abelian groups of order n up to isomorphism?",
+    "choices": [
+      "4",
+      "7",
+      "8",
+      "12",
+      "none of these 8 GO ON TO THE NEXT P AGE. x y 1 4 1 2 3 4 1 1 4 1 2 3 4 1 O"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "4",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 23
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q25-d98c839b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "The convergent sequence {xn} is defined by the recursive relationship x^1 = 1 and xn+1 =\u221a15- 2xn for all positive integers n. What is the value of \\lim n\u2192\\infty xn ?",
+    "choices": [
+      "-5",
+      "-3",
+      "0",
+      "3",
+      "5 9 GO ON TO THE NEXT P AGE. x f(x) f\u2032(x) g(x) -6 -5 1 -3 -2 -5 2 1 4 0 2 0 1 6 6 2 3 13 2"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "3",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 25
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q27-bed1e8aa",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "A circle of radius 1 is tangent to y =x^2 at two points. What is the area of the region bounded by the parabola and circle?",
+    "choices": [
+      "2 3- \\pi 6",
+      "\u221a 3- 11\\pi 24",
+      "3 \u221a 3 4 - \\pi 3",
+      "2 3- \\pi 12",
+      "11 6 - \\pi 6"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "3 \u221a 3 4 - \\pi 3",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 27
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q28-06168dd5",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "The arc length of the curve C from the point (8, 1) to the point (8e,e 2- 8), where C ={(x,y )\\in R^2 : x = 8et/2 andy =et- 4t} , is which of the following?",
+    "choices": [
+      "7-e^2",
+      "7-e",
+      "e^2- 7",
+      "e + 7",
+      "e^2 + 7 10 GO ON TO THE NEXT P AGE"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "e^2 + 7 10 GO ON TO THE NEXT P AGE",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 28
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q29-8cd0d973",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Consider a segment of length 10. Points A and B are chosen randomly such that A and B divide the segment into three smaller segments. What is the probability that the three smaller segments could form the sides of a triangle?",
+    "choices": [
+      "0",
+      "10%",
+      "25%",
+      "50%",
+      "80%"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "25%",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 29
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q3-d76efda3",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "Which of the following is an equation of a tangent line of f(x) =x^3- 3x2 + 4x- 3 at an inflection point of f ?",
+    "choices": [
+      "y =x- 2",
+      "y = 13x- 8",
+      "y =-x- 2",
+      "y =-13x + 4",
+      "y = 13x + 2"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "y =x- 2",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 3
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q30-ace8bb6b",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "A discrete graph is complete if there is an edge connecting any pair of vertices. How many edges does a complete graph with 10 vertices have?",
+    "choices": [
+      "10",
+      "20",
+      "25",
+      "45",
+      "90"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "45",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 30
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q31-57f1ef91",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Suppose P is the set of polynomials with coe\ufb03cients in Z^5 and degree less than or equal to 7. If the operator D sends p(x) in P to its derivative p\u2032(x), what are the dimensions of the null space n and range r of D ?",
+    "choices": [
+      "n = 1 and r = 6",
+      "n = 1 and r = 7",
+      "n = 2 and r = 5",
+      "n = 2 and r = 6",
+      "n = 3 and r = 5"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "n = 2 and r = 6",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 31
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q33-8c0f960d",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let \\phi (k) be a proposition which is either true or false depending on the integer k . Suppose that if \\phi (k) is false then so is \\phi (k- 1) . If there is some k^0 such that\\phi (k^0) is true, what is the strongest conclusion that can be drawn?",
+    "choices": [
+      "\\phi (k) is true for all k",
+      "\\phi (k^0 + 1) is true",
+      "\\phi (k^0- 1) is ture",
+      "\\phi (k) is true for k\\le k^0",
+      "\\phi (k) is true for k\\ge k^0"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "\\phi (k) is true for k\\ge k^0",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 33
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q34-77e99209",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "topology",
+    "weight": 12,
+    "prompt": "Define f(x) = \uf8f1 \uf8f2 \uf8f3 \\sin 1 x, if x\u0338= 0 0, if x = 0. Let I = {( x,f (x) ) \\in R^2 : -1\\le x\\le 1 } . Which of the following are TRUE? I. The set I is connected. II. The set I is path connected. III. The set I is compact",
+    "choices": [
+      "I only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "I, II, and III x y -4 -3 -2 -1 1 2 3 -2 -1 1 \u2022 \u2022"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "I only",
+    "hint": "Reduce the claim to definitions of open/closed/compact/connected and test edge cases.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 34
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q35-14448605",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "The figure above shows the graph of the function f . Suppose that g(x) = \u02c6 x 0 f(t) dt . The absolute maximum of g is",
+    "choices": [
+      "g(-4)",
+      "g(-3)",
+      "g(-1)",
+      "g(1)",
+      "g(3) 12 GO ON TO THE NEXT P AGE"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "g(-4)",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 35
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q36-45407744",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let f(x) = \u02c6 x^2 0 \u221a t \\sin 1 t dt, and let I = [-1, 0)\u222a (0, 1] . Which of the following are TRUE? I. f is bounded on the set I . II. f\u2032 is bounded on the set I . III. f\u2032\u2032 is bounded on the set I",
+    "choices": [
+      "I only",
+      "II only",
+      "I and II only",
+      "I and III only",
+      "I, II, and III"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "I and II only",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 36
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q37-4587c008",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose A = \uf8eb \uf8ed 1 0 -2 c -9 -c 0 c -1 \uf8f6 \uf8f8 . For what value(s) of c is A singular?",
+    "choices": [
+      "-3",
+      "-2",
+      "-3 and 2",
+      "-2 and 2",
+      "-3 and 3"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "-3 and 3",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 37
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q38-9138815c",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "The region bounded by the non-negative x-axis and the function f(x) = x 1 +x^3 is rotated about the x-axis. What is the volume of the solid generated?",
+    "choices": [
+      "\\pi 3",
+      "\\pi 4",
+      "\\pi",
+      "2\\pi",
+      "\\infty 13 GO ON TO THE NEXT P AGE"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "\\pi 3",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 38
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q40-5f81ea2c",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "analysis",
+    "weight": 12,
+    "prompt": "The radius of convergence of the series \\infty \\sum n=0 (nx)n 2\u00b7 4\u00b7 6\u00b7... \u00b7 2n is",
+    "choices": [
+      "0",
+      "2 e^2",
+      "2 e",
+      "e 2",
+      "\\infty 14 GO ON TO THE NEXT P AGE"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "2 e",
+    "hint": "Start from the relevant theorem and track hypotheses carefully before computing.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 40
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q42-7fd763c6",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "If the finite group G contains a subgroup of order five but no element of G other than the identity is its own inverse, then the order of G could be",
+    "choices": [
+      "8",
+      "20",
+      "30",
+      "35",
+      "42"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "35",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 42
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q44-274fad66",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "Suppose A is a 3\u00d7 3 matrix such that det (A-\\lambda I) =-\\lambda 3 + 3\\lambda 2 +\\lambda - 3, where I is the 3\u00d7 3 identity matrix. Which of the following are TRUE of A ? I. The trace of A is 3. II. The determinate of A is-3. III. The matrix A has eigenvalues-3 and 1",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I, II, and III 15 GO ON TO THE NEXT P AGE"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "I and II only",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 44
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q45-554fabfb",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "What is the general solution of 2d2y dx2 + 9dy dx- 35y = 0 ?",
+    "choices": [
+      "y =C1e-7x +C2e 5 2x",
+      "y =C1e- 5 2x +C2e7x",
+      "y =C1e-7x +C2e5x",
+      "y =C1e-5x +C2e7x",
+      "y =C^1 \\cos(5x) +C^2 \\cos(7x)"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "y =C1e-7x +C2e 5 2x",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 45
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q46-e43ed996",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let f(x,y ) =x^3-y^3 + 3x2y-x for all real x and y . Which of the following is TRUE of f ?",
+    "choices": [
+      "There is an absolute minimum at (1 3, 1 3 )",
+      "There is a relative maximum at ( -1 3,-1 3 )",
+      "There is a saddle point at (\u221a 3 3 ,- \u221a 3 3 )",
+      "There is an absolute maximum at ( - \u221a 3 3 , \u221a 3 3 )",
+      "All critical values are on the line y =x . 16 GO ON TO THE NEXT P AGE"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "All critical values are on the line y =x . 16 GO ON TO THE NEXT P AGE",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 46
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q47-3183a386",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "The di\ufb00erence \\log(1 .1)-p(1.1), where p(x) =x- 1- 1 2(x- 1)2 , is approximately",
+    "choices": [
+      "-1 3\u00d7 10-3",
+      "-1 4\u00d7 10-4",
+      "3 8\u00d7 10-5",
+      "1 4\u00d7 10-4",
+      "1 3\u00d7 10-3"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "1 3\u00d7 10-3",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 47
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q48-8157c15f",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose today is Wednesday. What day of the week will it be 10 1010 days from now?",
+    "choices": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "Sunday",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 48
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q51-6f32b633",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "A four-petaled rose curve has a group of symmetries which is isomorphic to the",
+    "choices": [
+      "symmetric group S^4",
+      "alternating group A^5",
+      "cyclic group of order 4",
+      "cyclic group of order 8",
+      "dihedral group of 8 elements"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "dihedral group of 8 elements",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 51
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q54-0f1aa3db",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "complex_analysis",
+    "weight": 12,
+    "prompt": "Suppose f is an analytic function of the complex variable z =x +iy wherex andy are real variables. If f(z) =g(x,y ) +eyi sinx and g(x,y ) is a real-valued function of x and y, what is the value of g (\\pi 2, 7 ) -g(0, 0) ?",
+    "choices": [
+      "1 +e^7",
+      "1-e^7",
+      "1",
+      "e^7- 1",
+      "2- 2e7"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "1",
+    "hint": "Choose a representation (polar/analytic) that makes the target theorem directly applicable.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 54
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q55-5f37d948",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Suppose A and B are n\u00d7n matrices with real entries. Which of the follow are TRUE? I. The trace of A^2 is nonnegative. II. If A^2 =A, then the trace of A is nonnegative. III. The trace of AB is the product of the traces of A and B",
+    "choices": [
+      "II only",
+      "III only",
+      "I and II only",
+      "II and III only",
+      "I, II, and III"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "II only",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 55
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q56-e2b44a5e",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Consider the independent random variables Xi such that either Xi = 0 or Xi = 1 and each event is equally as likely. Let X =X^1 +X^2 +... +X100 . Which of the following values is largest?",
+    "choices": [
+      "Var(X)",
+      "100P (|X- 50|> 25)",
+      "100\\sum k=0 k (100 k ) (1 2 )k",
+      "100P (X\\ge 60)",
+      "30"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "100\\sum k=0 k (100 k ) (1 2 )k",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 56
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q59-c3158185",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "The probability that a point ( x,y ) in R^2 is chosen follows a uniform random distribution within the region described by the inequality 0 <|x| +|y|< 1 . What is the probability that 2( x +y)> 1 ?",
+    "choices": [
+      "0",
+      "1 4",
+      "\u221a 2 4",
+      "1\u221a 2",
+      "3 4"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "1 4",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 59
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q6-8f75b97d",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "linalg",
+    "weight": 12,
+    "prompt": "The volume of the parallelepiped which has edges parallel to and the same lengths as the position vectors u =\u27e80, 2, 0\u27e9, v =\u27e81,-1, 0\u27e9, and w =\u27e8-2, 2, 1\u27e9 is",
+    "choices": [
+      "1 2",
+      "3 4",
+      "2",
+      "15",
+      "13 \u221a 6"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "2",
+    "hint": "Translate the question into matrix/subspace language first, then use structure.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 6
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q60-4dbde4a8",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "Let F = \u27e8 y,-x, 3 \\pi \u27e9 be a vector field in xyz-space. What is the work done by F on a particle that moves along the path described by r(t) = \u27e8 cost, sint,t 2\u27e9 where t goes from 0 to \\pi 2 ?",
+    "choices": [
+      "-\\pi 2",
+      "-\\pi 4",
+      "0",
+      "\\pi 4",
+      "\\pi 2"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "\\pi 4",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 60
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q61-35ed2097",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "There are 25 suitcases, 5 of which are damaged. Three suitcases are selected at random. What is the probability that exactly 2 are damaged?",
+    "choices": [
+      "2 69",
+      "1 30",
+      "2 23",
+      "12 125",
+      "3 25 20 GO ON TO THE NEXT P AGE. x y O (2, 0) (2, 2)"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "2 23",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 61
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q63-33df0591",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "The point on the plane 3 x- 2y +z = 4 closest to the origin is",
+    "choices": [
+      "(1, 2, 5)",
+      "(6 7,-2 7, 6 7 )",
+      "(5 6, 4 3, 25 6 )",
+      "(1,-3,-5)",
+      "(6 7,-4 7, 2 7 )"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "(6 7,-4 7, 2 7 )",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 63
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q65-06e4a3fd",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "The pattern in the figure above continues infinitely into the page. If the outer most square has sides of length 1, what is the total gray area of the figure?",
+    "choices": [
+      "1- \\pi 4",
+      "2- \\pi 3",
+      "2- \\pi 2",
+      "1 2",
+      "1 +\\pi 4 22 GO ON TO THE NEXT P AGE. \u00b7 1 i j k 1 1 i j k i i -1 k -j j j -k -1 i k k j -i -1"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "2- \\pi 2",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 65
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q66-769458af",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "algebra",
+    "weight": 12,
+    "prompt": "Suppose multiplication between 1, i, j, and k are as defined above. Which of the following are rings? I. {a +b 3\u221a 4 : a and b are rational} II. The set of functions f : R\u2192 R under the standard function addition and multiplication defined by composition III. {a +bi +cj +dk : a,b,c, and d are real}",
+    "choices": [
+      "I only",
+      "III only",
+      "I and III only",
+      "II and III only",
+      "I, II, and III STOP If you finished before time is called, you may check your work on this test"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "III only",
+    "hint": "Identify the algebraic object and use the right invariant (order, ideal, factorization).",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 66
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q8-e1752b21",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "The lateral surface area of a cone is 6 \\pi and its slant height is 6. What is the radius of the cone\u2019s base?",
+    "choices": [
+      "1 2",
+      "1",
+      "3 2",
+      "2",
+      "12 \\pi"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "1",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 8
+    }
+  },
+  {
+    "id": "upper-gre-grepractice-s-q9-4dcdb9dd",
+    "type": "mcq",
+    "contest": "upper_level_mcq",
+    "label": "GRE Mathematics Upper-Level MCQ",
+    "topic": "other_upper_level",
+    "weight": 12,
+    "prompt": "What is the measure of the angle between u =\u27e82, 0, 2\u27e9 and v =\u27e83 \u221a 2,-6 \u221a 3, 3 \u221a 2\u27e9 in xyz-space?",
+    "choices": [
+      "0\u25e6",
+      "30\u25e6",
+      "45\u25e6",
+      "60\u25e6",
+      "90\u25e6"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "60\u25e6",
+    "hint": "Break the problem into definitions, structure, and a targeted computation.",
+    "source": {
+      "dataset": "GREpractice",
+      "problemSet": null,
+      "question": 9
+    }
+  }
+]

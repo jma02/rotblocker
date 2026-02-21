@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "rotblocker++",
+  "version": "1.1.0",
+  "description": "Blocks X/Twitter and LinkedIn until you solve challenge problems.",
+  "permissions": [
+    "alarms",
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.twitter.com/*",
+    "*://*.x.com/*",
+    "*://*.linkedin.com/*",
+    "https://api.openai.com/*",
+    "https://openrouter.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "block_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "icons": {
+    "16": "assets/logo/icon16.png",
+    "32": "assets/logo/icon32.png",
+    "48": "assets/logo/icon48.png",
+    "128": "assets/logo/icon128.png"
+  },
+  "action": {
+    "default_title": "rotblocker++",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/logo/icon16.png",
+      "32": "assets/logo/icon32.png",
+      "48": "assets/logo/icon48.png"
+    }
+  }
+}

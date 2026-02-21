@@ -1,0 +1,17 @@
+{
+  "name": "rotblocker-plusplus",
+  "private": true,
+  "version": "1.1.0",
+  "scripts": {
+    "test": "node --test",
+    "audit:problems": "node scripts/audit_problem_markup.js",
+    "preview": "python3 -m http.server 4173",
+    "rewrite:gre": "node scripts/rewrite_upper_level_mcq_offline.js",
+    "generate:calculus": "python3 scripts/generate_calculus_synthetic.py --count 320 --seed 20260221",
+    "build:artifacts": "npm run generate:calculus && python3 scripts/generate_artifacts.py --version v3 --gre-source-policy all"
+  },
+  "dependencies": {
+    "katex": "^0.16.28",
+    "mathjax": "^3.2.2"
+  }
+}

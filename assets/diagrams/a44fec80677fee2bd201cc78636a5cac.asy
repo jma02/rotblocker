@@ -1,0 +1,1 @@
+import olympiad; size(180); real r = 3, s = 5, t = sqrt(r*r+s*s); defaultpen(linewidth(0.6) + fontsize(10)); pair A = (0,0), B = (r,s), C = (r+t,s), D = (t,0), P = (r,0); draw(A--B--C--D--A^^B--P^^rightanglemark(B,P,D)); label("$A$",A,SW); label("$B$", B, NW); label("$C$",C,NE); label("$D$",D,SE); label("$P$",P,S);

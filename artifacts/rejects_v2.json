@@ -1,0 +1,21 @@
+{
+  "version": "v2",
+  "calculus": {
+    "count": 0,
+    "reasons": {},
+    "sample": []
+  },
+  "upper_level_mcq": {
+    "count": 1,
+    "reasons": {
+      "choice_unbalanced_delimiters": 1
+    },
+    "sample": [
+      {
+        "id": "upper-gre-grebootcamp-s10-q3-33b8d3f4",
+        "pool": "upper_level_mcq",
+        "reason": "choice_unbalanced_delimiters"
+      }
+    ]
+  }
+}

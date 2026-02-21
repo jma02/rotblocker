@@ -1,0 +1,38 @@
+{
+  "source": "/Users/jma2/site-blocker++/data/calculus_mcq.json",
+  "input_count": 169,
+  "kept_count": 144,
+  "dropped_count": 25,
+  "drop_reasons": {
+    "non_scalar_numeric_choices": 6,
+    "cross_reference": 17,
+    "weird_char": 2
+  },
+  "dropped_id_sample": [
+    "calc-schaum-12-25-p85",
+    "calc-schaum-32-41-p271",
+    "calc-schaum-35-58-p303",
+    "calc-schaum-35-62-p304",
+    "calc-schaum-35-64-p304",
+    "calc-schaum-35-65-p304",
+    "calc-schaum-37-23-p321",
+    "calc-schaum-38-28-p336",
+    "calc-schaum-38-30-p336",
+    "calc-schaum-38-48-p338",
+    "calc-schaum-38-99-p345",
+    "calc-schaum-4-16-p27",
+    "calc-schaum-4-27-p29",
+    "calc-schaum-40-105-p366",
+    "calc-schaum-40-110-p367",
+    "calc-schaum-40-111-p367",
+    "calc-schaum-40-43-p358",
+    "calc-schaum-40-45-p358",
+    "calc-schaum-40-7-p354",
+    "calc-schaum-40-85-p363",
+    "calc-schaum-41-22-p372",
+    "calc-schaum-43-31-p402",
+    "calc-schaum-44-14-p413",
+    "calc-schaum-46-41-p443",
+    "calc-schaum-46-68-p447"
+  ]
+}

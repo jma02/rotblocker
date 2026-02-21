@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>rotblocker++</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="pop">
+    <h1>rotblocker++</h1>
+    <p class="sub">Doomscroll allowance tracker</p>
+    <div class="tabs">
+      <button id="tab-status" class="tab-btn active" type="button" data-tab="status">Status</button>
+      <button id="tab-settings" class="tab-btn" type="button" data-tab="settings">Settings</button>
+    </div>
+
+    <section id="panel-status" class="panel active">
+      <div class="meter" id="mode">Loading...</div>
+      <div class="stat" id="window">Window: --</div>
+      <div class="stat" id="remaining">Remaining: --</div>
+
+      <div class="stat" id="xp">XP: --</div>
+      <div class="stat" id="level">Level: --</div>
+      <div class="stat" id="prestige">Prestige: --</div>
+      <div class="stat" id="xp-multiplier">XP Gain: --</div>
+
+      <div class="pixel-row" aria-hidden="true">
+        <span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span>
+        <span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span>
+      </div>
+
+      <button id="open-app" type="button">Open Full Challenge</button>
+    </section>
+
+    <section id="panel-settings" class="panel">
+      <p class="settings-copy">Add extra domains to block while lock mode is active.</p>
+      <form id="domain-form" autocomplete="off">
+        <input id="domain-input" type="text" placeholder="example.com" />
+        <button id="domain-add" type="submit">Add</button>
+      </form>
+      <div id="domain-feedback" class="feedback" role="status" aria-live="polite"></div>
+      <ul id="domain-list" class="domain-list"></ul>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

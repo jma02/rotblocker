@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "artifact_version": "v1",
+  "generated_at_utc": "2026-02-21T14:02:46.312476+00:00",
+  "inputs": {
+    "calculus": {
+      "path": "data/calculus_mcq.json",
+      "sha256": "1c51a4adc95972e4c5cb4f3f5146db910b398b9bfd3e02a171d2aa9e18946f45",
+      "count": 144,
+      "source_credit": "Schaum's 3000 Solved Problems in Calculus (local extraction)"
+    },
+    "upper_level_mcq": {
+      "path": "data/upper_level_mcq.json",
+      "sha256": "5eb350e9f9d059aa4709cd686a53d00adf0cd0c8ac8ae46bd0b738b616d589e8",
+      "count": 175,
+      "source_credit": "GRE Mathematics practice materials in third_party/gre_math",
+      "source_policy": "all"
+    }
+  },
+  "outputs": {
+    "calculus": {
+      "path": "artifacts/calculus_mcq_v1.json",
+      "count": 144,
+      "sha256": "204c5a35dfb6e041fcbd79d01911115749492cc375eb5a33f60c4732a5b203e0"
+    },
+    "upper_level_mcq": {
+      "path": "artifacts/gre_math_mcq_v1.json",
+      "count": 174,
+      "sha256": "830bccd7b4796a0db1457b04b090113194e69b5eb98cc37557616a6eaed15f27"
+    },
+    "rejects": {
+      "path": "artifacts/rejects_v1.json",
+      "sha256": "b7f24e8c218108e1e5fa7b83f91231e76af7fdee78310a96a4b228f461af86c7"
+    }
+  },
+  "quality_gate": {
+    "checks": [
+      "mcq shape (5 choices, answerIndex)",
+      "duplicate choice rejection",
+      "text normalization for MathJax-oriented LaTeX symbols",
+      "unsupported latex pattern rejection",
+      "odd-dollar and unbalanced delimiter rejection",
+      "OCR garbage token rejection",
+      "prompt dedup for GRE set"
+    ]
+  }
+}

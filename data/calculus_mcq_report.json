@@ -1,0 +1,16 @@
+{
+  "source_pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
+  "segments_total": 3110,
+  "mcq_count": 169,
+  "drop_reasons": {
+    "no_prompt": 2783,
+    "no_answer": 158,
+    "no_choices": 0,
+    "dup_prompt": 0
+  },
+  "notes": [
+    "Parser keeps only high-confidence scalar-answer items.",
+    "Two-column OCR noise in source PDF limits recoverable coverage.",
+    "Generated distractors are heuristic; review before production use."
+  ]
+}
