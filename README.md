@@ -1,6 +1,7 @@
 # rotblocker++
 
 `rotblocker++` is a Chrome MV3 extension that blocks distracting sites until you earn enough points by solving contest-style math problems.
+<img width="1728" height="1083" alt="image" src="https://github.com/user-attachments/assets/d95e0fcf-6032-449e-88cf-151f8faa7968" />
 
 Default blocked domains:
 - `twitter.com`
