@@ -8,25 +8,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo/icon16.png" />
   <link rel="shortcut icon" href="../assets/logo/icon32.png" />
   <link rel="stylesheet" href="../challenge.css" />
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: true,
-        macros: {
-          overarc: ['\\overset{\\frown}{#1}', 1]
-        }
-      },
-      chtml: {
-        displayAlign: "left",
-        displayIndent: "0"
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    };
-  </script>
+  <script src="../mathjax-config.js"></script>
   <script defer src="../node_modules/mathjax/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
@@ -189,7 +171,7 @@
     </section>
   </div>
 
-  <script src="../scoring.js"></script>
-  <script src="../challenge.js"></script>
+  <script defer src="../scoring.js"></script>
+  <script defer src="../challenge.js"></script>
 </body>
 </html>

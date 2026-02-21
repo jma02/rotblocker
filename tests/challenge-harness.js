@@ -27,7 +27,8 @@ function loadChallengeFns(options = {}) {
     extensionRuntime = true,
     historyOverride = null,
     rotBlockerScoring = undefined,
-    siteBlockerScoring = undefined
+    siteBlockerScoring = undefined,
+    windowMathJax = { typesetPromise: () => Promise.resolve() }
   } = options;
   const source = fs.readFileSync("challenge.js", "utf8");
   const document = {
@@ -42,6 +43,7 @@ function loadChallengeFns(options = {}) {
     history: historyOverride || { state: null, replaceState() {} },
     addEventListener() {},
     removeEventListener() {},
+    MathJax: windowMathJax || undefined,
     matchMedia() {
       return { matches: false, addEventListener() {}, removeEventListener() {} };
     }
@@ -59,7 +61,7 @@ function loadChallengeFns(options = {}) {
     chrome,
     RotBlockerScoring: rotBlockerScoring,
     SiteBlockerScoring: siteBlockerScoring,
-    MathJax: { typesetPromise: () => Promise.resolve() },
+    MathJax: windowMathJax || undefined,
     setTimeout,
     clearTimeout,
     setInterval: () => 0,
@@ -68,10 +70,26 @@ function loadChallengeFns(options = {}) {
   vm.createContext(sandbox);
   vm.runInContext(
     `${source}
-;globalThis.__challengeFns = { sanitizeForMathJax, normalizeChoiceMath, hasRenderableMathSyntax, levelFromXp, avatarTierFromLevel, resolveAssetPath, resolveScoringApi };`,
+;globalThis.__challengeFns = {
+  sanitizeForMathJax,
+  normalizeChoiceMath,
+  hasRenderableMathSyntax,
+  levelFromXp,
+  avatarTierFromLevel,
+  resolveAssetPath,
+  resolveScoringApi,
+  renderMathText,
+  renderAssistantMarkdownText,
+  queueMathTypeset,
+  flushPendingMathTypeset,
+  bindMathJaxReadyRetry
+};`,
     sandbox
   );
-  return sandbox.__challengeFns;
+  return {
+    ...sandbox.__challengeFns,
+    __sandbox: sandbox
+  };
 }
 
 module.exports = { loadChallengeFns };

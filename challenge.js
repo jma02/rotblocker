@@ -267,11 +267,33 @@ let lastLockState = null;
 const RECENT_PROBLEM_LIMIT = 30;
 const recentProblemIds = [];
 let mathTypesetQueue = Promise.resolve();
+let mathPendingRetryTimer = null;
+
+function hasMathTypesetter() {
+  return Boolean(
+    typeof window !== "undefined" &&
+    window.MathJax &&
+    typeof window.MathJax.typesetPromise === "function"
+  );
+}
+
+function markMathPending(el) {
+  if (!el || !el.dataset) return;
+  el.dataset.mathPending = "1";
+}
+
+function clearMathPending(el) {
+  if (!el || !el.dataset) return;
+  delete el.dataset.mathPending;
+}
 
 function queueMathTypeset(el) {
-  if (!el || typeof window === "undefined") return;
+  if (!el || typeof window === "undefined") return false;
   const mj = window.MathJax;
-  if (!mj || typeof mj.typesetPromise !== "function") return;
+  if (!mj || typeof mj.typesetPromise !== "function") {
+    markMathPending(el);
+    return false;
+  }
   mathTypesetQueue = mathTypesetQueue
     .then(() => {
       if (typeof mj.typesetClear === "function") {
@@ -279,7 +301,51 @@ function queueMathTypeset(el) {
       }
       return mj.typesetPromise([el]);
     })
-    .catch(() => {});
+    .then(() => {
+      clearMathPending(el);
+    })
+    .catch(() => {
+      markMathPending(el);
+    });
+  return true;
+}
+
+async function flushPendingMathTypeset(elements = null) {
+  const list = Array.isArray(elements)
+    ? elements
+    : Array.from(document.querySelectorAll("[data-math-pending='1']"));
+  if (list.length === 0) return;
+  for (const el of list) {
+    queueMathTypeset(el);
+  }
+  await mathTypesetQueue;
+}
+
+function schedulePendingMathRetry() {
+  if (mathPendingRetryTimer) return;
+  mathPendingRetryTimer = setInterval(() => {
+    if (!hasMathTypesetter()) return;
+    clearInterval(mathPendingRetryTimer);
+    mathPendingRetryTimer = null;
+    void flushPendingMathTypeset();
+  }, 150);
+}
+
+function bindMathJaxReadyRetry() {
+  if (typeof window === "undefined") return;
+  if (hasMathTypesetter()) {
+    void flushPendingMathTypeset();
+    return;
+  }
+  schedulePendingMathRetry();
+  const startup = window.MathJax?.startup;
+  if (startup?.promise && typeof startup.promise.then === "function") {
+    startup.promise
+      .then(() => {
+        void flushPendingMathTypeset();
+      })
+      .catch(() => {});
+  }
 }
 
 function hasRenderableMathSyntax(text) {
@@ -358,7 +424,11 @@ function renderAssistantMarkdownText(el, text) {
   el.innerHTML = html;
   el.dataset.renderKey = renderKey;
   if (hasRenderableMathSyntax(sanitized)) {
-    queueMathTypeset(el);
+    if (!queueMathTypeset(el)) {
+      schedulePendingMathRetry();
+    }
+  } else {
+    clearMathPending(el);
   }
 }
 
@@ -373,8 +443,13 @@ function renderMathText(el, text, options = {}) {
   const renderPlain = !hasRenderableMathSyntax(nextText);
   el.textContent = renderPlain ? displayText.replace(/\\\$/g, "$") : displayText;
   el.dataset.renderKey = renderKey;
-  if (renderPlain) return;
-  queueMathTypeset(el);
+  if (renderPlain) {
+    clearMathPending(el);
+    return;
+  }
+  if (!queueMathTypeset(el)) {
+    schedulePendingMathRetry();
+  }
 }
 
 function normalizeChoiceMath(text) {
@@ -2909,6 +2984,7 @@ if (relockBtn) {
 }
 
 canonicalizeRotblockerPreviewPath();
+bindMathJaxReadyRetry();
 setInterval(tickUi, 250);
 
 (async function init() {

@@ -7,23 +7,38 @@ function readText(relPath) {
   return fs.readFileSync(path.join(process.cwd(), relPath), "utf8");
 }
 
-function assertScriptOrder(source, scoringSrc, challengeSrc) {
-  const scoringTag = `<script src="${scoringSrc}"></script>`;
-  const challengeTag = `<script src="${challengeSrc}"></script>`;
-  const scoringIdx = source.indexOf(scoringTag);
-  const challengeIdx = source.indexOf(challengeTag);
+function escapeRegex(s) {
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
 
-  assert.notEqual(scoringIdx, -1, `missing ${scoringTag}`);
-  assert.notEqual(challengeIdx, -1, `missing ${challengeTag}`);
-  assert.ok(scoringIdx < challengeIdx, `${scoringTag} must appear before ${challengeTag}`);
+function assertDeferredScriptPresent(source, scriptSrc) {
+  const pattern = new RegExp(`<script\\s+defer\\s+src="${escapeRegex(scriptSrc)}"\\s*><\\/script>`);
+  assert.match(source, pattern, `missing deferred script tag for ${scriptSrc}`);
+}
+
+function assertSourceOrder(source, firstSrc, secondSrc) {
+  const firstIdx = source.indexOf(`src="${firstSrc}"`);
+  const secondIdx = source.indexOf(`src="${secondSrc}"`);
+  assert.notEqual(firstIdx, -1, `missing ${firstSrc}`);
+  assert.notEqual(secondIdx, -1, `missing ${secondSrc}`);
+  assert.ok(firstIdx < secondIdx, `${firstSrc} must appear before ${secondSrc}`);
 }
 
 test("rotblocker entrypoint loads scoring.js before challenge.js", () => {
   const source = readText("rotblocker++/index.html");
-  assertScriptOrder(source, "../scoring.js", "../challenge.js");
+  assertDeferredScriptPresent(source, "../scoring.js");
+  assertDeferredScriptPresent(source, "../challenge.js");
+  assert.match(source, /<script\s+src="\.\.\/mathjax-config\.js"\s*><\/script>/);
+  assertDeferredScriptPresent(source, "../node_modules/mathjax/es5/tex-mml-chtml.js");
+  assert.doesNotMatch(source, /<script>\s*window\.MathJax\s*=/);
+  assertSourceOrder(source, "../mathjax-config.js", "../node_modules/mathjax/es5/tex-mml-chtml.js");
+  assertSourceOrder(source, "../node_modules/mathjax/es5/tex-mml-chtml.js", "../scoring.js");
+  assertSourceOrder(source, "../scoring.js", "../challenge.js");
 });
 
 test("legacy challenge entrypoint loads scoring.js before challenge.js", () => {
   const source = readText("challenge.html");
-  assertScriptOrder(source, "scoring.js", "challenge.js");
+  assertDeferredScriptPresent(source, "scoring.js");
+  assertDeferredScriptPresent(source, "challenge.js");
+  assertSourceOrder(source, "scoring.js", "challenge.js");
 });
