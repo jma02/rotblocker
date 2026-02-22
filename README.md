@@ -15,8 +15,8 @@ You can also add/remove custom blocked domains from:
 ## Installation Instructions
 I don't plan to add this to the web store as the problems are technically licensed, but the installation is more or less painless.
 
-### 1. Download this repo as a zip or clone the repo.
-<img width="395" height="246" alt="image" src="https://github.com/user-attachments/assets/1e5fed7d-7b3c-49f8-9750-b8bdf39127d4" />
+### 1. Download the latest release: [https://github.com/jma02/rotblocker/releases](here).
+There is a Firefox version of this app that I had Codex build but I think you need to use the Developer distribution of Firefox, which honestly isn't ideal.
 
 ### 2. After unzipping the project, press this button in Chrome:
 <img width="436" height="437" alt="image" src="https://github.com/user-attachments/assets/fa481aca-0744-440c-bbcb-9de32b91f134" />
