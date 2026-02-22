@@ -46,7 +46,7 @@ jobs:
         run: npm test
 
   build-artifact:
-    name: Build Release Zip
+    name: Build Release Zips
     runs-on: ubuntu-latest
     needs:
       - unit
@@ -77,14 +77,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build release artifact
-        run: bash scripts/build-release.sh
+      - name: Build release artifacts
+        run: |
+          npm run build:chrome
+          npm run build:firefox
 
-      - name: Upload release zip artifact
+      - name: Upload release zip artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: rotblocker-plusplus-release-zip
-          path: dist/rotblocker-plusplus-v*.zip
+          name: rotblocker-plusplus-release-zips
+          path: |
+            dist/rotblocker-plusplus-chrome-v*.zip
+            dist/rotblocker-plusplus-firefox-v*.zip
           if-no-files-found: error
           retention-days: 14
 

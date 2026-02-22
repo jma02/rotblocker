@@ -74,20 +74,30 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Build release artifact
-        run: bash scripts/build-release.sh
+      - name: Build release artifacts
+        run: |
+          npm run build:chrome
+          npm run build:firefox
 
-      - name: Capture artifact path
-        id: artifact
+      - name: Capture artifact paths
+        id: artifacts
         shell: bash
         run: |
           VERSION="$(node -p "require('./manifest.json').version")"
-          ZIP_PATH="dist/rotblocker-plusplus-v${VERSION}.zip"
-          if [[ ! -f "${ZIP_PATH}" ]]; then
-            echo "::error::Expected release artifact not found at ${ZIP_PATH}"
+          CHROME_ZIP_PATH="dist/rotblocker-plusplus-chrome-v${VERSION}.zip"
+          FIREFOX_ZIP_PATH="dist/rotblocker-plusplus-firefox-v${VERSION}.zip"
+
+          if [[ ! -f "${CHROME_ZIP_PATH}" ]]; then
+            echo "::error::Expected Chrome release artifact not found at ${CHROME_ZIP_PATH}"
             exit 1
           fi
-          echo "zip_path=${ZIP_PATH}" >> "$GITHUB_OUTPUT"
+          if [[ ! -f "${FIREFOX_ZIP_PATH}" ]]; then
+            echo "::error::Expected Firefox release artifact not found at ${FIREFOX_ZIP_PATH}"
+            exit 1
+          fi
+
+          echo "chrome_zip_path=${CHROME_ZIP_PATH}" >> "$GITHUB_OUTPUT"
+          echo "firefox_zip_path=${FIREFOX_ZIP_PATH}" >> "$GITHUB_OUTPUT"
 
       - name: Resolve release metadata
         id: release_meta
@@ -105,7 +115,7 @@ jobs:
               TAG="${INPUT_TAG}"
             else
               git fetch --tags --force
-              LAST_SEMVER_TAG="$(git tag --list 'v*' --sort=-v:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | head -n 1)"
+              LAST_SEMVER_TAG="$(git tag --list 'v*' --sort=-v:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | head -n 1 || true)"
 
               if [[ -z "${LAST_SEMVER_TAG}" ]]; then
                 MAJOR=0
@@ -170,11 +180,13 @@ jobs:
           git tag "${TAG}" "${GITHUB_SHA}"
           git push origin "${TAG}"
 
-      - name: Upload release zip artifact
+      - name: Upload release zip artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: rotblocker-plusplus-release-zip
-          path: ${{ steps.artifact.outputs.zip_path }}
+          name: rotblocker-plusplus-release-zips
+          path: |
+            ${{ steps.artifacts.outputs.chrome_zip_path }}
+            ${{ steps.artifacts.outputs.firefox_zip_path }}
           if-no-files-found: error
           retention-days: 30
 
@@ -183,6 +195,8 @@ jobs:
         with:
           tag_name: ${{ steps.release_meta.outputs.tag_name }}
           target_commitish: ${{ github.sha }}
-          files: ${{ steps.artifact.outputs.zip_path }}
+          files: |
+            ${{ steps.artifacts.outputs.chrome_zip_path }}
+            ${{ steps.artifacts.outputs.firefox_zip_path }}
           prerelease: ${{ steps.release_meta.outputs.prerelease == 'true' }}
           generate_release_notes: ${{ steps.release_meta.outputs.generate_notes == 'true' }}

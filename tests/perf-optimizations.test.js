@@ -115,6 +115,16 @@ test("release packaging whitelists only runtime data banks", () => {
   assert.doesNotMatch(script, /"data"\s*$/m);
 });
 
+test("release packaging supports browser targets and firefox manifest adjustments", () => {
+  const script = readText("scripts/build-release.sh");
+  assert.match(script, /--target chrome\|firefox/);
+  assert.match(script, /rotblocker-plusplus-\$\{TARGET\}-v\$\{VERSION\}\.zip/);
+  assert.match(script, /if \[\[ "\$TARGET" == "firefox" \]\]/);
+  assert.match(script, /manifest\.background = \{ scripts: \["background\.js"\] \}/);
+  assert.match(script, /browser_specific_settings/);
+  assert.match(script, /rotblockerplusplus@rotblocker\.app/);
+});
+
 test("background sync reconciliation avoids JSON stringify comparisons", () => {
   const source = readText("background.js");
   assert.match(source, /\bfunction syncPayloadEquals\(leftPayload,\s*rightPayload\)/);

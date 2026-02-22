@@ -26,6 +26,8 @@ test("manifest and package metadata use canonical rotblocker names", () => {
   assert.equal(pkg.dependencies?.katex, undefined);
   assert.equal(lock.packages?.[""]?.dependencies?.katex, undefined);
   assert.ok(pkg.dependencies?.mathjax);
+  assert.equal(pkg.scripts?.["build:chrome"], "bash scripts/build-release.sh --target chrome");
+  assert.equal(pkg.scripts?.["build:firefox"], "bash scripts/build-release.sh --target firefox");
 });
 
 test("manifest host permissions cover apex and wildcard blocked domains", () => {
@@ -57,10 +59,14 @@ test("release workflow provides an explicit tag to action-gh-release", () => {
   assert.match(source, /\n\s+bump:/);
   assert.match(source, /\n\s+tag_name:/);
   assert.match(source, /Initialize submodules \(if configured\)/);
-  assert.match(source, /Expected release artifact not found/);
+  assert.match(source, /npm run build:chrome/);
+  assert.match(source, /npm run build:firefox/);
+  assert.match(source, /Expected Chrome release artifact not found/);
+  assert.match(source, /Expected Firefox release artifact not found/);
   assert.match(source, /Create and push release tag/);
   assert.match(source, /uses:\s*softprops\/action-gh-release@v2/);
   assert.match(source, /tag_name:\s*\$\{\{\s*steps\.release_meta\.outputs\.tag_name\s*\}\}/);
+  assert.match(source, /rotblocker-plusplus-firefox-v/);
 });
 
 test("scoring browser global is RotBlockerScoring", () => {

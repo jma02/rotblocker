@@ -4,6 +4,9 @@
   "version": "1.1.0",
   "scripts": {
     "test": "node --test",
+    "build:chrome": "bash scripts/build-release.sh --target chrome",
+    "build:firefox": "bash scripts/build-release.sh --target firefox",
+    "build:release": "npm run build:chrome && npm run build:firefox",
     "audit:problems": "node scripts/audit_problem_markup.js",
     "preview": "python3 -m http.server 4173",
     "backfill:aime-diagrams": "python3 scripts/backfill_aime_diagrams.py",

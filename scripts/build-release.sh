@@ -4,9 +4,37 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 DIST_DIR="$ROOT_DIR/dist"
 VERSION="$(node -p "require('$ROOT_DIR/manifest.json').version")"
-ZIP_PATH="$DIST_DIR/rotblocker-plusplus-v${VERSION}.zip"
 MATHJAX_ENTRY="$ROOT_DIR/node_modules/mathjax/es5/tex-mml-chtml.js"
 STAGE_DIR="$(mktemp -d "${TMPDIR:-/tmp}/rotblocker-release.XXXXXX")"
+TARGET="chrome"
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --target)
+      if [[ $# -lt 2 ]]; then
+        echo "Missing value for --target (expected: chrome or firefox)"
+        exit 1
+      fi
+      TARGET="$2"
+      shift 2
+      ;;
+    *)
+      echo "Unknown argument: $1"
+      echo "Usage: bash scripts/build-release.sh [--target chrome|firefox]"
+      exit 1
+      ;;
+  esac
+done
+
+case "$TARGET" in
+  chrome|firefox) ;;
+  *)
+    echo "Unsupported target: $TARGET (expected: chrome or firefox)"
+    exit 1
+    ;;
+esac
+
+ZIP_PATH="$DIST_DIR/rotblocker-plusplus-${TARGET}-v${VERSION}.zip"
 
 cleanup() {
   rm -rf "$STAGE_DIR"
@@ -66,6 +94,24 @@ done
 for rel in "${DATA_FILES[@]}"; do
   copy_into_stage "$rel"
 done
+
+if [[ "$TARGET" == "firefox" ]]; then
+  node - "$STAGE_DIR/manifest.json" <<'NODE'
+const fs = require("node:fs");
+
+const manifestPath = process.argv[2];
+const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+
+manifest.background = { scripts: ["background.js"] };
+manifest.browser_specific_settings = manifest.browser_specific_settings || {};
+manifest.browser_specific_settings.gecko = manifest.browser_specific_settings.gecko || {};
+if (!manifest.browser_specific_settings.gecko.id) {
+  manifest.browser_specific_settings.gecko.id = "rotblockerplusplus@rotblocker.app";
+}
+
+fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+NODE
+fi
 
 mkdir -p "$STAGE_DIR/node_modules/mathjax"
 cp -R "$ROOT_DIR/node_modules/mathjax/es5" "$STAGE_DIR/node_modules/mathjax/es5"
