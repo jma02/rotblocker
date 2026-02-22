@@ -22,9 +22,10 @@ I don't plan to add this to the web store as the problems are technically licens
 <img width="436" height="437" alt="image" src="https://github.com/user-attachments/assets/fa481aca-0744-440c-bbcb-9de32b91f134" />
 3. You should be in this menu:
 <img width="1914" height="530" alt="image" src="https://github.com/user-attachments/assets/d330a074-659d-4ab5-97ea-eb0dbdae0364" />
-Enable Developer Mode
-4. Click **Load unpacked**, you'll be prompted to use your OS's file explorer to select a folder. Select the project we just unzipped.
-5. Done!
+Be sure to *enable Developer Mode*.
+
+5. Click **Load unpacked**, you'll be prompted to use your OS's file explorer to select a folder. Select the project we just unzipped.
+6. Done!
 
 ## Core Behavior
 - Locked mode redirects blocked domains to `rotblocker++/index.html`.
