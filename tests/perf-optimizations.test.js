@@ -123,6 +123,10 @@ test("release packaging supports browser targets and firefox manifest adjustment
   assert.match(script, /manifest\.background = \{ scripts: \["background\.js"\] \}/);
   assert.match(script, /browser_specific_settings/);
   assert.match(script, /rotblockerplusplus@rotblocker\.app/);
+  assert.match(script, /Chrome Sync/);
+  assert.match(script, /Firefox Sync/);
+  assert.match(script, /Chrome storage sync/);
+  assert.match(script, /Firefox Sync storage/);
 });
 
 test("background sync reconciliation avoids JSON stringify comparisons", () => {

@@ -111,6 +111,29 @@ if (!manifest.browser_specific_settings.gecko.id) {
 
 fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 NODE
+
+  node - \
+    "$STAGE_DIR/rotblocker++/index.html" \
+    "$STAGE_DIR/challenge-modules/sync.js" \
+    "$STAGE_DIR/challenge.js" <<'NODE'
+const fs = require("node:fs");
+
+const files = process.argv.slice(2);
+const replacements = [
+  ["Chrome Sync", "Firefox Sync"],
+  ["Chrome storage sync", "Firefox Sync storage"],
+  ["Chrome profile", "Firefox profile"],
+  ["Chrome sync", "Firefox sync"]
+];
+
+for (const file of files) {
+  let source = fs.readFileSync(file, "utf8");
+  for (const [before, after] of replacements) {
+    source = source.split(before).join(after);
+  }
+  fs.writeFileSync(file, source);
+}
+NODE
 fi
 
 mkdir -p "$STAGE_DIR/node_modules/mathjax"
