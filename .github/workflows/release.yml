@@ -5,6 +5,31 @@ on:
     tags:
       - "v*"
   workflow_dispatch:
+    inputs:
+      bump:
+        description: "Auto-increment level when tag_name is empty"
+        required: false
+        default: patch
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+      tag_name:
+        description: "Optional explicit release tag (example: v1.2.3). Leave empty to auto-increment."
+        required: false
+        default: ""
+        type: string
+      prerelease:
+        description: "Mark release as prerelease"
+        required: false
+        default: false
+        type: boolean
+      generate_notes:
+        description: "Auto-generate release notes"
+        required: false
+        default: true
+        type: boolean
 
 concurrency:
   group: release-${{ github.ref }}
@@ -22,6 +47,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Initialize submodules (if configured)
+        shell: bash
+        run: |
+          if [[ -f .gitmodules ]]; then
+            git submodule sync --recursive
+            git submodule update --init --recursive
+          elif git ls-files --stage | awk '$1 == "160000" { found=1 } END { exit found ? 0 : 1 }'; then
+            echo "::warning::Git submodule entries detected, but .gitmodules is missing. Skipping submodule initialization."
+          else
+            echo "No submodules configured."
+          fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -40,7 +79,96 @@ jobs:
 
       - name: Capture artifact path
         id: artifact
-        run: echo "zip_path=$(ls dist/rotblocker-plusplus-v*.zip | head -n 1)" >> "$GITHUB_OUTPUT"
+        shell: bash
+        run: |
+          VERSION="$(node -p "require('./manifest.json').version")"
+          ZIP_PATH="dist/rotblocker-plusplus-v${VERSION}.zip"
+          if [[ ! -f "${ZIP_PATH}" ]]; then
+            echo "::error::Expected release artifact not found at ${ZIP_PATH}"
+            exit 1
+          fi
+          echo "zip_path=${ZIP_PATH}" >> "$GITHUB_OUTPUT"
+
+      - name: Resolve release metadata
+        id: release_meta
+        shell: bash
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          CREATE_TAG="false"
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            INPUT_TAG="${{ github.event.inputs.tag_name }}"
+            BUMP_KIND="${{ github.event.inputs.bump }}"
+            CREATE_TAG="true"
+
+            if [[ -n "${INPUT_TAG}" ]]; then
+              TAG="${INPUT_TAG}"
+            else
+              git fetch --tags --force
+              LAST_SEMVER_TAG="$(git tag --list 'v*' --sort=-v:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | head -n 1)"
+
+              if [[ -z "${LAST_SEMVER_TAG}" ]]; then
+                MAJOR=0
+                MINOR=1
+                PATCH=0
+              else
+                if [[ ! "${LAST_SEMVER_TAG}" =~ ^v([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+                  echo "::error::Latest SemVer tag is malformed: ${LAST_SEMVER_TAG}"
+                  exit 1
+                fi
+                MAJOR="${BASH_REMATCH[1]}"
+                MINOR="${BASH_REMATCH[2]}"
+                PATCH="${BASH_REMATCH[3]}"
+              fi
+
+              case "${BUMP_KIND}" in
+                major)
+                  MAJOR=$((10#${MAJOR} + 1))
+                  MINOR=0
+                  PATCH=0
+                  ;;
+                minor)
+                  MINOR=$((10#${MINOR} + 1))
+                  PATCH=0
+                  ;;
+                patch|*)
+                  PATCH=$((10#${PATCH} + 1))
+                  ;;
+              esac
+              TAG="v${MAJOR}.${MINOR}.${PATCH}"
+            fi
+          fi
+
+          if [[ -z "${TAG}" ]]; then
+            echo "::error::No release tag available. Provide workflow_dispatch tag_name or use auto bump."
+            exit 1
+          fi
+
+          echo "tag_name=${TAG}" >> "$GITHUB_OUTPUT"
+          echo "create_tag=${CREATE_TAG}" >> "$GITHUB_OUTPUT"
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "prerelease=${{ github.event.inputs.prerelease == 'true' }}" >> "$GITHUB_OUTPUT"
+            echo "generate_notes=${{ github.event.inputs.generate_notes != 'false' }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "prerelease=false" >> "$GITHUB_OUTPUT"
+            echo "generate_notes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create and push release tag
+        if: ${{ steps.release_meta.outputs.create_tag == 'true' }}
+        shell: bash
+        run: |
+          TAG="${{ steps.release_meta.outputs.tag_name }}"
+          git fetch --tags --force
+          if git rev-parse -q --verify "refs/tags/${TAG}" >/dev/null; then
+            echo "Tag ${TAG} already exists."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "${TAG}" "${GITHUB_SHA}"
+          git push origin "${TAG}"
 
       - name: Upload release zip artifact
         uses: actions/upload-artifact@v4
@@ -53,5 +181,8 @@ jobs:
       - name: Publish GitHub release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ steps.release_meta.outputs.tag_name }}
+          target_commitish: ${{ github.sha }}
           files: ${{ steps.artifact.outputs.zip_path }}
-          generate_release_notes: true
+          prerelease: ${{ steps.release_meta.outputs.prerelease == 'true' }}
+          generate_release_notes: ${{ steps.release_meta.outputs.generate_notes == 'true' }}

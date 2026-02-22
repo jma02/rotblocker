@@ -12,7 +12,6 @@
     "build:artifacts": "npm run generate:calculus && python3 scripts/generate_artifacts.py --version v3 --gre-source-policy all"
   },
   "dependencies": {
-    "katex": "^0.16.28",
     "mathjax": "^3.2.2"
   }
 }

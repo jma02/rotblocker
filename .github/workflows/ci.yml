@@ -21,6 +21,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Initialize submodules (if configured)
+        shell: bash
+        run: |
+          if [[ -f .gitmodules ]]; then
+            git submodule sync --recursive
+            git submodule update --init --recursive
+          elif git ls-files --stage | awk '$1 == "160000" { found=1 } END { exit found ? 0 : 1 }'; then
+            echo "::warning::Git submodule entries detected, but .gitmodules is missing. Skipping submodule initialization."
+          else
+            echo "No submodules configured."
+          fi
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -43,6 +55,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Initialize submodules (if configured)
+        shell: bash
+        run: |
+          if [[ -f .gitmodules ]]; then
+            git submodule sync --recursive
+            git submodule update --init --recursive
+          elif git ls-files --stage | awk '$1 == "160000" { found=1 } END { exit found ? 0 : 1 }'; then
+            echo "::warning::Git submodule entries detected, but .gitmodules is missing. Skipping submodule initialization."
+          else
+            echo "No submodules configured."
+          fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -74,6 +98,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Initialize submodules (if configured)
+        shell: bash
+        run: |
+          if [[ -f .gitmodules ]]; then
+            git submodule sync --recursive
+            git submodule update --init --recursive
+          elif git ls-files --stage | awk '$1 == "160000" { found=1 } END { exit found ? 0 : 1 }'; then
+            echo "::warning::Git submodule entries detected, but .gitmodules is missing. Skipping submodule initialization."
+          else
+            echo "No submodules configured."
+          fi
 
       - name: Setup Node
         uses: actions/setup-node@v4

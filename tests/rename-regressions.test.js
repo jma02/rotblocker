@@ -23,6 +23,9 @@ test("manifest and package metadata use canonical rotblocker names", () => {
   assert.ok(!(manifest.host_permissions || []).includes("https://firestore.googleapis.com/*"));
   assert.equal(pkg.name, "rotblocker-plusplus");
   assert.equal(lock.name, "rotblocker-plusplus");
+  assert.equal(pkg.dependencies?.katex, undefined);
+  assert.equal(lock.packages?.[""]?.dependencies?.katex, undefined);
+  assert.ok(pkg.dependencies?.mathjax);
 });
 
 test("manifest host permissions cover apex and wildcard blocked domains", () => {
@@ -45,6 +48,19 @@ test("all redirect rules target the rotblocker challenge page", () => {
     assert.equal(rule.action?.type, "redirect");
     assert.equal(rule.action?.redirect?.extensionPath, "/rotblocker++/index.html");
   }
+});
+
+test("release workflow provides an explicit tag to action-gh-release", () => {
+  const source = fs.readFileSync(path.join(process.cwd(), ".github/workflows/release.yml"), "utf8");
+  assert.match(source, /workflow_dispatch:/);
+  assert.match(source, /inputs:/);
+  assert.match(source, /\n\s+bump:/);
+  assert.match(source, /\n\s+tag_name:/);
+  assert.match(source, /Initialize submodules \(if configured\)/);
+  assert.match(source, /Expected release artifact not found/);
+  assert.match(source, /Create and push release tag/);
+  assert.match(source, /uses:\s*softprops\/action-gh-release@v2/);
+  assert.match(source, /tag_name:\s*\$\{\{\s*steps\.release_meta\.outputs\.tag_name\s*\}\}/);
 });
 
 test("scoring browser global is RotBlockerScoring", () => {

@@ -100,6 +100,19 @@ test("release packaging excludes legacy entry html and asy sources", () => {
   const script = readText("scripts/build-release.sh");
   assert.doesNotMatch(script, /\schallenge\.html\s/);
   assert.match(script, /-x "\*\.DS_Store" "assets\/diagrams\/\*\.asy"/);
+  assert.doesNotMatch(script, /katex/i);
+});
+
+test("release packaging whitelists only runtime data banks", () => {
+  const script = readText("scripts/build-release.sh");
+  assert.match(script, /DATA_FILES=\(/);
+  assert.match(script, /"data\/amc8\.json"/);
+  assert.match(script, /"data\/amc10\.json"/);
+  assert.match(script, /"data\/amc12\.json"/);
+  assert.match(script, /"data\/aime\.json"/);
+  assert.match(script, /"data\/upper_level_mcq\.json"/);
+  assert.match(script, /"data\/calculus_mcq_synthetic\.json"/);
+  assert.doesNotMatch(script, /"data"\s*$/m);
 });
 
 test("background sync reconciliation avoids JSON stringify comparisons", () => {
