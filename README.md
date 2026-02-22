@@ -15,18 +15,18 @@ You can also add/remove custom blocked domains from:
 ## Installation Instructions
 I don't plan to add this to the web store as the problems are technically licensed, but the installation is more or less painless.
 
-1. Download this repo as a zip or clone the repo.
+### 1. Download this repo as a zip or clone the repo.
 <img width="395" height="246" alt="image" src="https://github.com/user-attachments/assets/1e5fed7d-7b3c-49f8-9750-b8bdf39127d4" />
 
-2. After unzipping the project, press this button in Chrome:
+### 2. After unzipping the project, press this button in Chrome:
 <img width="436" height="437" alt="image" src="https://github.com/user-attachments/assets/fa481aca-0744-440c-bbcb-9de32b91f134" />
 
-3. Now you should be in this menu:
+### 3. Now you should be in this menu:
 <img width="1914" height="530" alt="image" src="https://github.com/user-attachments/assets/d330a074-659d-4ab5-97ea-eb0dbdae0364" />
 Be sure to *enable Developer Mode*.
 
-4. Click **Load unpacked**, you'll be prompted to use your OS's file explorer to select a folder. Select the project we just unzipped.
-5. Done!
+### 4. Click **Load unpacked**, you'll be prompted to use your OS's file explorer to select a folder. Select the project we just unzipped.
+### 5. Done!
 
 ## Core Behavior
 - Locked mode redirects blocked domains to `rotblocker++/index.html`.
