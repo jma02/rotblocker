@@ -25,6 +25,17 @@ test("manifest and package metadata use canonical rotblocker names", () => {
   assert.equal(lock.name, "rotblocker-plusplus");
 });
 
+test("manifest host permissions cover apex and wildcard blocked domains", () => {
+  const manifest = readJson("manifest.json");
+  const hosts = new Set(manifest.host_permissions || []);
+  assert.ok(hosts.has("*://twitter.com/*"));
+  assert.ok(hosts.has("*://*.twitter.com/*"));
+  assert.ok(hosts.has("*://x.com/*"));
+  assert.ok(hosts.has("*://*.x.com/*"));
+  assert.ok(hosts.has("*://linkedin.com/*"));
+  assert.ok(hosts.has("*://*.linkedin.com/*"));
+});
+
 test("all redirect rules target the rotblocker challenge page", () => {
   const rules = readJson("rules.json");
   assert.ok(Array.isArray(rules));

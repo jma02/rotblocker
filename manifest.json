@@ -9,8 +9,11 @@
     "storage"
   ],
   "host_permissions": [
+    "*://twitter.com/*",
     "*://*.twitter.com/*",
+    "*://x.com/*",
     "*://*.x.com/*",
+    "*://linkedin.com/*",
     "*://*.linkedin.com/*",
     "https://api.openai.com/*",
     "https://openrouter.ai/*"
