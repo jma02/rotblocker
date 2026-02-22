@@ -20,7 +20,8 @@ I don't plan to add this to the web store as the problems are technically licens
 
 2. After unzipping the project, press this button in Chrome:
 <img width="436" height="437" alt="image" src="https://github.com/user-attachments/assets/fa481aca-0744-440c-bbcb-9de32b91f134" />
-3. You should be in this menu:
+
+3. Now you should be in this menu:
 <img width="1914" height="530" alt="image" src="https://github.com/user-attachments/assets/d330a074-659d-4ab5-97ea-eb0dbdae0364" />
 Be sure to *enable Developer Mode*.
 
