@@ -12,6 +12,10 @@ const CUSTOM_DOMAINS_UPDATED_AT_KEY = "customDomainsUpdatedAt";
 const CUSTOM_RULE_ID_BASE = 10000;
 const CUSTOM_RULE_ID_LIMIT = 500;
 const MAX_CUSTOM_DOMAINS = 200;
+const BASE_BLOCKED_DOMAINS = Object.freeze(["twitter.com", "x.com", "linkedin.com"]);
+const CHALLENGE_EXTENSION_PATH = "/rotblocker++/index.html";
+const LEGACY_CHALLENGE_EXTENSION_PATH = "/challenge.html";
+const TAB_REDIRECT_COOLDOWN_MS = 1200;
 const SYNC_WRITE_DEBOUNCE_MS = 10_000;
 const SYNC_KEYS = [
   "score",
@@ -29,6 +33,7 @@ let syncWriteScheduledFor = 0;
 let syncLastAttemptAt = 0;
 let syncLastSyncedAt = 0;
 let syncLastError = null;
+const tabLastForcedRedirectAt = new Map();
 
 function levelFromXp(totalXp) {
   const xpSafe = Math.max(0, Number(totalXp) || 0);
@@ -95,6 +100,55 @@ function sanitizeDomainList(list) {
     if (sanitized.length >= MAX_CUSTOM_DOMAINS) break;
   }
   return sanitized;
+}
+
+function normalizeHostname(hostname) {
+  return String(hostname || "").trim().toLowerCase().replace(/\.$/, "");
+}
+
+function hostMatchesDomain(hostname, domain) {
+  const host = normalizeHostname(hostname);
+  const target = normalizeHostname(domain);
+  if (!host || !target) return false;
+  return host === target || host.endsWith(`.${target}`);
+}
+
+function parseHttpUrl(rawUrl) {
+  try {
+    const parsed = new URL(String(rawUrl || ""));
+    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") return null;
+    return parsed;
+  } catch (_err) {
+    return null;
+  }
+}
+
+function isChallengePageUrl(rawUrl) {
+  const url = String(rawUrl || "");
+  if (!url) return false;
+  const challengeUrl = chrome.runtime.getURL(CHALLENGE_EXTENSION_PATH);
+  const legacyChallengeUrl = chrome.runtime.getURL(LEGACY_CHALLENGE_EXTENSION_PATH);
+  if (url.startsWith(challengeUrl) || url.startsWith(legacyChallengeUrl)) return true;
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== "chrome-extension:") return false;
+    const pathname = decodeURIComponent(parsed.pathname || "");
+    return pathname === CHALLENGE_EXTENSION_PATH || pathname === LEGACY_CHALLENGE_EXTENSION_PATH;
+  } catch (_err) {
+    return false;
+  }
+}
+
+function isBlockedMainFrameUrl(rawUrl, domains) {
+  if (isChallengePageUrl(rawUrl)) return false;
+  const parsed = parseHttpUrl(rawUrl);
+  if (!parsed) return false;
+  const host = normalizeHostname(parsed.hostname);
+  return domains.some((domain) => hostMatchesDomain(host, domain));
+}
+
+function listBlockedDomains(customDomains) {
+  return Array.from(new Set([...BASE_BLOCKED_DOMAINS, ...sanitizeDomainList(customDomains)]));
 }
 
 function normalizeStoredState(input) {
@@ -281,6 +335,33 @@ async function syncCustomDomainRules(locked) {
     addRules
   });
   return domains;
+}
+
+async function enforceLockedRedirectForTab(tabId, candidateUrl) {
+  if (!Number.isInteger(tabId) || tabId < 0) return;
+  if (!candidateUrl || typeof candidateUrl !== "string") return;
+
+  const now = Date.now();
+  const lastRedirectAt = tabLastForcedRedirectAt.get(tabId) || 0;
+  if (now - lastRedirectAt < TAB_REDIRECT_COOLDOWN_MS) return;
+
+  const stored = await getStorage(["unlockedUntil", CUSTOM_DOMAINS_KEY]);
+  const unlockedUntil = Math.floor(Number(stored.unlockedUntil));
+  if (Number.isFinite(unlockedUntil) && unlockedUntil > now) return;
+
+  const blockedDomains = listBlockedDomains(stored[CUSTOM_DOMAINS_KEY]);
+  if (!isBlockedMainFrameUrl(candidateUrl, blockedDomains)) return;
+
+  const targetUrl = chrome.runtime.getURL(CHALLENGE_EXTENSION_PATH);
+  tabLastForcedRedirectAt.set(tabId, now);
+  if (chrome?.tabs?.update) {
+    chrome.tabs.update(tabId, { url: targetUrl }, () => {
+      const err = chrome.runtime?.lastError;
+      if (err) {
+        tabLastForcedRedirectAt.delete(tabId);
+      }
+    });
+  }
 }
 
 function arraysEqual(left, right) {
@@ -489,6 +570,35 @@ chrome.alarms.onAlarm.addListener((alarm) => {
     });
   }
 });
+
+if (chrome?.tabs?.onUpdated?.addListener) {
+  chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    const candidateUrl = typeof changeInfo?.url === "string"
+      ? changeInfo.url
+      : (changeInfo?.status === "loading" ? (tab?.pendingUrl || tab?.url) : null);
+    if (!candidateUrl) return;
+    void enforceLockedRedirectForTab(tabId, candidateUrl);
+  });
+}
+
+if (chrome?.tabs?.onActivated?.addListener && chrome?.tabs?.get) {
+  chrome.tabs.onActivated.addListener((activeInfo) => {
+    if (!activeInfo || !Number.isInteger(activeInfo.tabId)) return;
+    chrome.tabs.get(activeInfo.tabId, (tab) => {
+      const err = chrome.runtime?.lastError;
+      if (err || !tab) return;
+      const candidateUrl = tab.pendingUrl || tab.url;
+      if (!candidateUrl) return;
+      void enforceLockedRedirectForTab(activeInfo.tabId, candidateUrl);
+    });
+  });
+}
+
+if (chrome?.tabs?.onRemoved?.addListener) {
+  chrome.tabs.onRemoved.addListener((tabId) => {
+    tabLastForcedRedirectAt.delete(tabId);
+  });
+}
 
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
   if (!message || typeof message !== "object") {

@@ -9,7 +9,7 @@
       }
     },
     "condition": {
-      "urlFilter": "||twitter.com",
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*twitter\\.com(/|$)",
       "resourceTypes": ["main_frame"]
     }
   },
@@ -23,7 +23,7 @@
       }
     },
     "condition": {
-      "urlFilter": "||x.com",
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*x\\.com(/|$)",
       "resourceTypes": ["main_frame"]
     }
   },
@@ -37,7 +37,7 @@
       }
     },
     "condition": {
-      "urlFilter": "||linkedin.com",
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*linkedin\\.com(/|$)",
       "resourceTypes": ["main_frame"]
     }
   }

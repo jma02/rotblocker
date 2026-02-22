@@ -6,7 +6,8 @@
   "permissions": [
     "alarms",
     "declarativeNetRequest",
-    "storage"
+    "storage",
+    "tabs"
   ],
   "host_permissions": [
     "*://twitter.com/*",

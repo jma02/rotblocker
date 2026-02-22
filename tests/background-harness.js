@@ -42,7 +42,8 @@ function createBackgroundHarness(options = {}) {
     initialSyncStorage = {},
     storageLatencyMs = 0,
     initialDynamicRules = [],
-    syncSetErrorMessage = null
+    syncSetErrorMessage = null,
+    initialTabs = []
   } = options;
 
   const nowRef = { value: Number(now) || 0 };
@@ -53,7 +54,10 @@ function createBackgroundHarness(options = {}) {
     onStartup: null,
     onSuspend: null,
     onAlarm: null,
-    onMessage: null
+    onMessage: null,
+    onTabUpdated: null,
+    onTabActivated: null,
+    onTabRemoved: null
   };
 
   const logs = {
@@ -67,9 +71,15 @@ function createBackgroundHarness(options = {}) {
     storageRemoves: [],
     storageSyncGets: [],
     storageSyncSets: [],
-    storageSyncRemoves: []
+    storageSyncRemoves: [],
+    tabUpdates: []
   };
   let dynamicRules = Array.isArray(initialDynamicRules) ? clone(initialDynamicRules) : [];
+  const tabs = new Map(
+    (Array.isArray(initialTabs) ? initialTabs : [])
+      .filter((tab) => tab && Number.isInteger(tab.id))
+      .map((tab) => [tab.id, clone(tab)])
+  );
 
   const asyncCb = (fn) => {
     if (storageLatencyMs > 0) {
@@ -82,6 +92,9 @@ function createBackgroundHarness(options = {}) {
   const chrome = {
     runtime: {
       lastError: null,
+      getURL(pathname = "") {
+        return `chrome-extension://test-extension/${String(pathname || "").replace(/^\/+/, "")}`;
+      },
       onInstalled: {
         addListener(fn) { listeners.onInstalled = fn; }
       },
@@ -172,6 +185,36 @@ function createBackgroundHarness(options = {}) {
           });
         }
       }
+    },
+    tabs: {
+      update(tabId, updateProperties, callback) {
+        logs.tabUpdates.push({ tabId, updateProperties: clone(updateProperties) });
+        const current = tabs.get(tabId) || { id: tabId };
+        const next = { ...current, ...clone(updateProperties) };
+        if (typeof updateProperties?.url === "string") {
+          next.url = updateProperties.url;
+          next.pendingUrl = updateProperties.url;
+        }
+        tabs.set(tabId, next);
+        asyncCb(() => {
+          if (callback) callback(clone(next));
+        });
+      },
+      get(tabId, callback) {
+        const tab = tabs.get(tabId);
+        asyncCb(() => {
+          callback(tab ? clone(tab) : undefined);
+        });
+      },
+      onUpdated: {
+        addListener(fn) { listeners.onTabUpdated = fn; }
+      },
+      onActivated: {
+        addListener(fn) { listeners.onTabActivated = fn; }
+      },
+      onRemoved: {
+        addListener(fn) { listeners.onTabRemoved = fn; }
+      }
     }
   };
 
@@ -193,6 +236,7 @@ function createBackgroundHarness(options = {}) {
     console,
     chrome,
     Date: FakeDate,
+    URL,
     setTimeout,
     clearTimeout,
     Promise
@@ -259,6 +303,34 @@ function createBackgroundHarness(options = {}) {
     await flush();
   }
 
+  async function triggerTabUpdated(tabId, changeInfo = {}, tab = null) {
+    if (tab && Number.isInteger(tab.id)) {
+      tabs.set(tab.id, clone(tab));
+    }
+    const known = tabs.get(tabId);
+    if (!known) tabs.set(tabId, { id: tabId });
+    const payloadTab = clone(tab || tabs.get(tabId));
+    if (typeof listeners.onTabUpdated === "function") {
+      listeners.onTabUpdated(tabId, clone(changeInfo), payloadTab);
+    }
+    await flush();
+  }
+
+  async function triggerTabActivated(tabId) {
+    if (typeof listeners.onTabActivated === "function") {
+      listeners.onTabActivated({ tabId });
+    }
+    await flush();
+  }
+
+  async function triggerTabRemoved(tabId) {
+    tabs.delete(tabId);
+    if (typeof listeners.onTabRemoved === "function") {
+      listeners.onTabRemoved(tabId, {});
+    }
+    await flush();
+  }
+
   function setNow(value) {
     nowRef.value = Number(value) || 0;
   }
@@ -296,6 +368,9 @@ function createBackgroundHarness(options = {}) {
     triggerStartup,
     triggerSuspend,
     triggerAlarm,
+    triggerTabUpdated,
+    triggerTabActivated,
+    triggerTabRemoved,
     flush
   };
 }
