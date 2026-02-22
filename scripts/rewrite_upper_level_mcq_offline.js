@@ -16,6 +16,9 @@ const ARTIFACT_PATTERNS = [
   /\\int\s*\$\\infty/i,
   /\$\\infty\$\s*[A-Za-z0-9]/i,
   /Euclidean Geometry and Miscellaneous Problems/i,
+  /\bSTOP If you finished before time is called\b/i,
+  /\bas defined above\b/i,
+  /\+b\s*3\$?\\sqrt\{?4\}?/i,
   /^\s*A positive number less than\s*$/i,
   /^\s*A finite number greater than\s*$/i
 ];
@@ -81,6 +84,7 @@ function loadChallengeFns() {
 ;globalThis.__rewriteFns = {
   sanitizeForMathJax,
   normalizeChoiceMath,
+  hasRenderableMathSyntax,
   problemLooksRenderable
 };`,
     sandbox
@@ -92,8 +96,65 @@ function clone(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
 
-function normalizeRow(row, fns) {
-  const { sanitizeForMathJax, normalizeChoiceMath, problemLooksRenderable } = fns;
+function extractMathSegments(text) {
+  const source = String(text || "");
+  const pattern = /\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$\$[\s\S]*?\$\$|\$(?:\\.|[^\\$\n])+\$/g;
+  const segments = [];
+  let match;
+  while ((match = pattern.exec(source)) !== null) {
+    segments.push(match[0]);
+  }
+  return segments;
+}
+
+function segmentToTex(segment) {
+  const source = String(segment || "");
+  if (source.startsWith("$$") && source.endsWith("$$")) {
+    return { tex: source.slice(2, -2), display: true };
+  }
+  if (source.startsWith("$") && source.endsWith("$")) {
+    return { tex: source.slice(1, -1), display: false };
+  }
+  if (source.startsWith("\\[") && source.endsWith("\\]")) {
+    return { tex: source.slice(2, -2), display: true };
+  }
+  if (source.startsWith("\\(") && source.endsWith("\\)")) {
+    return { tex: source.slice(2, -2), display: false };
+  }
+  return { tex: source, display: false };
+}
+
+function mathJaxRenderableText(text, hasRenderableMathSyntax, mathjaxApi, adaptor) {
+  const source = String(text || "").trim();
+  if (!source) return { ok: false, reason: "empty_text" };
+
+  const segments = extractMathSegments(source);
+  if (hasRenderableMathSyntax(source) && segments.length === 0) {
+    return { ok: false, reason: "math_without_delimiters" };
+  }
+
+  for (const segment of segments) {
+    const { tex, display } = segmentToTex(segment);
+    let html = "";
+    try {
+      html = adaptor.outerHTML(mathjaxApi.tex2svg(tex, { display }));
+    } catch (_err) {
+      return { ok: false, reason: "mathjax_throw" };
+    }
+    if (/data-mjx-error|mjx-merror/i.test(html)) {
+      return { ok: false, reason: "mathjax_merror" };
+    }
+  }
+  return { ok: true };
+}
+
+function normalizeRow(row, fns, mathjaxApi, adaptor) {
+  const {
+    sanitizeForMathJax,
+    normalizeChoiceMath,
+    hasRenderableMathSyntax,
+    problemLooksRenderable
+  } = fns;
   if (!row || typeof row !== "object") return { drop: "row_not_object" };
   if (!Array.isArray(row.choices) || row.choices.length !== 5) return { drop: "choices_shape" };
   if (!Number.isInteger(row.answerIndex) || row.answerIndex < 0 || row.answerIndex > 4) {
@@ -109,11 +170,6 @@ function normalizeRow(row, fns) {
 
   out.answerKey = "ABCDE"[out.answerIndex];
   out.answer = out.choices[out.answerIndex];
-  if (typeof out.hint !== "string" || !out.hint.trim()) {
-    out.hint = "Reduce the problem to definitions and compute carefully.";
-  } else {
-    out.hint = String(out.hint).trim();
-  }
 
   if (!problemLooksRenderable(out)) return { drop: "not_renderable" };
 
@@ -131,11 +187,33 @@ function normalizeRow(row, fns) {
   if (out.choices.some((c) => TOKENIZED_DENOMINATOR_RE.test(c) && !/(\\frac|\/)/.test(c))) {
     return { drop: "ambiguous_math_tokenization" };
   }
+
+  const promptRenderable = mathJaxRenderableText(
+    out.prompt,
+    hasRenderableMathSyntax,
+    mathjaxApi,
+    adaptor
+  );
+  if (!promptRenderable.ok) return { drop: promptRenderable.reason };
+  for (const choice of out.choices) {
+    const choiceRenderable = mathJaxRenderableText(
+      choice,
+      hasRenderableMathSyntax,
+      mathjaxApi,
+      adaptor
+    );
+    if (!choiceRenderable.ok) return { drop: choiceRenderable.reason };
+  }
+
   return { row: out };
 }
 
-function main() {
+async function main() {
   const fns = loadChallengeFns();
+  const mathjaxApi = await require("mathjax/es5/node-main.js").init({
+    loader: { load: ["input/tex", "output/svg"] }
+  });
+  const adaptor = mathjaxApi.startup.adaptor;
   const inputRows = JSON.parse(fs.readFileSync(INPUT, "utf8"));
   const reasons = new Map();
   const keep = [];
@@ -145,7 +223,7 @@ function main() {
   const bump = (reason) => reasons.set(reason, (reasons.get(reason) || 0) + 1);
 
   for (const row of inputRows) {
-    const result = normalizeRow(row, fns);
+    const result = normalizeRow(row, fns, mathjaxApi, adaptor);
     if (result.drop) {
       bump(result.drop);
       if (droppedExamples.length < 40) {
@@ -191,4 +269,7 @@ function main() {
   console.log("By source:", bySource);
 }
 
-main();
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

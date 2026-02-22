@@ -23,21 +23,8 @@ test('mcq points apply decay and guess penalty', () => {
     baseWeight: 12,
     elapsedMs: 0,
     durationMs: 90000,
-    hintUsed: false,
     isMcq: true,
     wrongGuesses: 1,
   });
   assert.equal(points, 3);
-});
-
-test('hint forces zero points', () => {
-  const points = scoring.pointsIfCorrectNow({
-    baseWeight: 60,
-    elapsedMs: 1000,
-    durationMs: 90000,
-    hintUsed: true,
-    isMcq: false,
-    wrongGuesses: 0,
-  });
-  assert.equal(points, 0);
 });

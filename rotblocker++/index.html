@@ -47,7 +47,7 @@
           <div class="problem-label">Current Pull</div>
           <div class="problem" id="problem">--</div>
           <div id="diagram-wrap" class="diagram-wrap" style="display:none;">
-            <img id="diagram-img" class="diagram-img" alt="Problem diagram" />
+            <img id="diagram-img" class="diagram-img" alt="Problem diagram" loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -172,6 +172,13 @@
   </div>
 
   <script defer src="../scoring.js"></script>
+  <script defer src="../challenge-modules/constants.js"></script>
+  <script defer src="../challenge-modules/dom.js"></script>
+  <script defer src="../challenge-modules/math.js"></script>
+  <script defer src="../challenge-modules/sync.js"></script>
+  <script defer src="../challenge-modules/tutor.js"></script>
   <script defer src="../challenge.js"></script>
+  <script defer src="../challenge-modules/gameplay.js"></script>
+  <script defer src="../challenge-modules/bootstrap.js"></script>
 </body>
 </html>

@@ -15,8 +15,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "127",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "127"
   },
   {
     "id": "amio-003826ff123b785c14464f1af00c7587",
@@ -34,8 +33,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "151",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "151"
   },
   {
     "id": "amio-00fb409c1a9952651965e1a1ed914303",
@@ -54,7 +52,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "12",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/00fb409c1a9952651965e1a1ed914303.png"
   },
   {
@@ -74,7 +71,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "24",
-    "hint": "Prime-factorize key numbers and use exponent logic.",
     "diagramPng": "assets/diagrams/0198b8fb1a229b2c172b52650826695c.png"
   },
   {
@@ -93,8 +89,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "58",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "58"
   },
   {
     "id": "amio-0451adb95a0a866e3ca6a9983276a060",
@@ -112,8 +107,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "2000",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "2000"
   },
   {
     "id": "amio-04fa84157a48ae907460ce977e966a64",
@@ -132,7 +126,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "150",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/04fa84157a48ae907460ce977e966a64.png"
   },
   {
@@ -151,8 +144,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "27",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "27"
   },
   {
     "id": "amio-07fa2fbd654d5ba5b18fafb4a0004be2",
@@ -171,7 +163,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "7.6",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/07fa2fbd654d5ba5b18fafb4a0004be2.png"
   },
   {
@@ -190,8 +181,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "23",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "23"
   },
   {
     "id": "amio-085955dda8dfb374689b3f216b54d785",
@@ -209,8 +199,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "6.54",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "6.54"
   },
   {
     "id": "amio-0a9a07e87f522ff1a5629b2c03c2e8a4",
@@ -228,8 +217,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "7",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "7"
   },
   {
     "id": "amio-0abc92b282031b086768da6717979226",
@@ -247,8 +235,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "60",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "60"
   },
   {
     "id": "amio-0c007fa9bf834dab5df14f5c176f6993",
@@ -266,8 +253,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "11",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "11"
   },
   {
     "id": "amio-0c1e231529af9f2fcf9875935cc774f1",
@@ -286,7 +272,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "7",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/0c1e231529af9f2fcf9875935cc774f1.png"
   },
   {
@@ -305,8 +290,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "100",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "100"
   },
   {
     "id": "amio-0c61235c3941cfe4c30980c467223e57",
@@ -325,7 +309,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "83",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/0c61235c3941cfe4c30980c467223e57.png"
   },
   {
@@ -344,8 +327,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "17",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "17"
   },
   {
     "id": "amio-0cefbfa35be60791e5afd27ffbfda03b",
@@ -363,8 +345,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "22",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "22"
   },
   {
     "id": "amio-0da863f2f80201b8fd30f4111ba0914c",
@@ -383,7 +364,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "52",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/0da863f2f80201b8fd30f4111ba0914c.png"
   },
   {
@@ -402,8 +382,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "42",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "42"
   },
   {
     "id": "amio-0fbabfbdfa4aea9e5bf719df3c6391da",
@@ -421,8 +400,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "13",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "13"
   },
   {
     "id": "amio-1012fac17ceea4a2d3ce80fa557cee0c",
@@ -441,7 +419,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "1150",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/1012fac17ceea4a2d3ce80fa557cee0c.png"
   },
   {
@@ -460,8 +437,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "2\\% \\text{ gain}",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "2\\% \\text{ gain}"
   },
   {
     "id": "amio-133105bc570c2300220ff71d55daed12",
@@ -479,8 +455,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "411",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "411"
   },
   {
     "id": "amio-1394219570afe5b386d2254e081954ea",
@@ -498,8 +473,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "1",
-    "hint": "Use modular arithmetic to keep computations small."
+    "answer": "1"
   },
   {
     "id": "amio-13b500a59072d95c1e9d001b1aea40df",
@@ -517,8 +491,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "21",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "21"
   },
   {
     "id": "amio-14b769020458d77a3e20a041876c60c8",
@@ -536,8 +509,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-15867152462f0e53f050035615f3f91a",
@@ -555,8 +527,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "456",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "456"
   },
   {
     "id": "amio-15cbb7bdf9a82576474b46734fb420aa",
@@ -574,8 +545,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "14",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "14"
   },
   {
     "id": "amio-161e30a9cc3ab2e932a43ae9319b5d2e",
@@ -593,8 +563,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "3127",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "3127"
   },
   {
     "id": "amio-16dffb75f3e15c4823f6db7d163398ed",
@@ -612,8 +581,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "24",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "24"
   },
   {
     "id": "amio-174456a04e1d0467eee87d396dfc3d26",
@@ -631,8 +599,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-17cab8f2b951b6238bb36bd9c03b563d",
@@ -650,8 +617,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "3",
-    "hint": "Use modular arithmetic to keep computations small."
+    "answer": "3"
   },
   {
     "id": "amio-17ee4984e12859589162d8bfc1d44e92",
@@ -669,8 +635,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "120",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "120"
   },
   {
     "id": "amio-18ce153fc812b0300c561a9fdaec6b3d",
@@ -688,8 +653,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "17",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "17"
   },
   {
     "id": "amio-1a0d033165a2eac9d1136bae69fd29bf",
@@ -708,7 +672,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "6",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/1a0d033165a2eac9d1136bae69fd29bf.png"
   },
   {
@@ -727,8 +690,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "130",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "130"
   },
   {
     "id": "amio-1b2683983dd57b0d675ffcb863aff1b1",
@@ -747,7 +709,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "3",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/1b2683983dd57b0d675ffcb863aff1b1.png"
   },
   {
@@ -766,8 +727,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "77",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "77"
   },
   {
     "id": "amio-1c65ce119de04d4e89fa470c2fef9d5e",
@@ -785,8 +745,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "83",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "83"
   },
   {
     "id": "amio-1ceac1a1da18955c253e99bbb45a2443",
@@ -804,8 +763,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "1",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "1"
   },
   {
     "id": "amio-1dcd594dbc0832613d30f8081fb44ff9",
@@ -824,7 +782,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "frac{2}{\\sqrt{\\pi}}",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/1dcd594dbc0832613d30f8081fb44ff9.png"
   },
   {
@@ -843,8 +800,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "60",
-    "hint": "Use modular arithmetic to keep computations small."
+    "answer": "60"
   },
   {
     "id": "amio-1f91a706953ad2b030972f2f75b3afc6",
@@ -862,8 +818,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "9",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "9"
   },
   {
     "id": "amio-1fb2fe29e045b8003a0854862002229b",
@@ -881,8 +836,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "1",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "1"
   },
   {
     "id": "amio-2069d49366b1b5b5e883a6f31192aa29",
@@ -900,8 +854,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "11",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "11"
   },
   {
     "id": "amio-20a2f302127a4849ca8aa2038fe6ffb7",
@@ -919,8 +872,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "48",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "48"
   },
   {
     "id": "amio-20e0908451c3becf4de97446fe4accd4",
@@ -939,7 +891,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "108",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/20e0908451c3becf4de97446fe4accd4.png"
   },
   {
@@ -958,8 +909,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "14",
-    "hint": "Use modular arithmetic to keep computations small."
+    "answer": "14"
   },
   {
     "id": "amio-2207a7ef9cb752c2d16de0327484533c",
@@ -977,8 +927,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{3}{8}",
-    "hint": "Count favorable and total outcomes separately before simplifying."
+    "answer": "frac{3}{8}"
   },
   {
     "id": "amio-221f776c1bcf236c1af014a0e07b68e5",
@@ -996,8 +945,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "9",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "9"
   },
   {
     "id": "amio-2236f93ba50d978ff81b47b92b9e45e3",
@@ -1016,7 +964,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "6",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/2236f93ba50d978ff81b47b92b9e45e3.png"
   },
   {
@@ -1035,8 +982,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "1010",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "1010"
   },
   {
     "id": "amio-232276e084901140b445eb5df357bf82",
@@ -1055,7 +1001,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "\\frac{4-\\pi}{\\pi}",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/232276e084901140b445eb5df357bf82.png"
   },
   {
@@ -1074,8 +1019,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "4"
   },
   {
     "id": "amio-24429ed16d078b042e8214200446a1c9",
@@ -1093,8 +1037,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "24",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "24"
   },
   {
     "id": "amio-24bfde7529dba29c74dc7996166640d3",
@@ -1113,7 +1056,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "30",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/24bfde7529dba29c74dc7996166640d3.png"
   },
   {
@@ -1132,8 +1074,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "9",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "9"
   },
   {
     "id": "amio-2569d8831452af98ac921c7165d8298f",
@@ -1151,8 +1092,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "10",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "10"
   },
   {
     "id": "amio-256dd39a0bcc17e2d1e6145633d54067",
@@ -1170,8 +1110,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "80",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "80"
   },
   {
     "id": "amio-25a5373d5ded79b44f2954a5bf65ab8d",
@@ -1189,8 +1128,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "40",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "40"
   },
   {
     "id": "amio-25df8895c30f4e06855b3631b2f15d6a",
@@ -1208,8 +1146,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "0",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "0"
   },
   {
     "id": "amio-260e1c0cc2b81e013cf0141bedfa2aca",
@@ -1227,8 +1164,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "26",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "26"
   },
   {
     "id": "amio-268a7294c8e8efd1fb144336dc85ea04",
@@ -1246,8 +1182,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "17",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "17"
   },
   {
     "id": "amio-2712ccb2747c6dfc092a1d71c420178f",
@@ -1265,8 +1200,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "75\\%",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "75\\%"
   },
   {
     "id": "amio-27316f96e067163949d5c3f51279a4b7",
@@ -1284,8 +1218,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "190",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "190"
   },
   {
     "id": "amio-2868e8bd804e329e05b39812102caf30",
@@ -1304,7 +1237,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "1",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/2868e8bd804e329e05b39812102caf30.png"
   },
   {
@@ -1323,8 +1255,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "mbox{ }32",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "mbox{ }32"
   },
   {
     "id": "amio-2a7e17e4bcec10c67eb73241e3c34073",
@@ -1342,8 +1273,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "55",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "55"
   },
   {
     "id": "amio-2a7e8708ed4a45a5c53ea289159e908b",
@@ -1361,8 +1291,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "3.50",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "3.50"
   },
   {
     "id": "amio-2aa7758f7737912b480a34eb0bcbe2d6",
@@ -1381,7 +1310,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "9",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/2aa7758f7737912b480a34eb0bcbe2d6.png"
   },
   {
@@ -1401,7 +1329,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "20",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/2b3374033e644b27bfd9c80b0de7e04d.png"
   },
   {
@@ -1421,7 +1348,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "7500",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/2b38ea4e1e03c94e3ad0ae67db976727.png"
   },
   {
@@ -1441,7 +1367,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "34",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/2cdac7351b3957e82b2a1726f7a4c29a.png"
   },
   {
@@ -1460,8 +1385,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "30",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "30"
   },
   {
     "id": "amio-2e06cde8177c0e20f737f75264c2361a",
@@ -1479,8 +1403,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "4",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "4"
   },
   {
     "id": "amio-2e3c2ab37f9a080cbed5a4b83fae3169",
@@ -1498,8 +1421,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "7",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "7"
   },
   {
     "id": "amio-3109fefdad39c0a8f05201810e713677",
@@ -1517,8 +1439,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-311067f9ebcb05380dbbd3e0579c50a1",
@@ -1536,8 +1457,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "700",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "700"
   },
   {
     "id": "amio-3184321ccb4d4599dfd39a679be83279",
@@ -1555,8 +1475,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "18",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "18"
   },
   {
     "id": "amio-31ae8961d2b1a41d4e67ffccb4d552df",
@@ -1574,8 +1493,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-10",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "-10"
   },
   {
     "id": "amio-32a315ea06bb54e38873b83b439afaef",
@@ -1593,8 +1511,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "155",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "155"
   },
   {
     "id": "amio-333f6568c77b3eb090f5d04390b77e0f",
@@ -1612,8 +1529,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "11^\\text{th}",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "11^\\text{th}"
   },
   {
     "id": "amio-339fd06b73c9ff733aadf69424662313",
@@ -1632,7 +1548,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "64 \\pi",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/339fd06b73c9ff733aadf69424662313.png"
   },
   {
@@ -1651,8 +1566,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "7",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "7"
   },
   {
     "id": "amio-3411ecc20c66c7104fe881ee2fbc011a",
@@ -1670,8 +1584,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~4",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "~4"
   },
   {
     "id": "amio-341d345fdda6d30ac8049a7ddb094bdf",
@@ -1689,8 +1602,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "42",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "42"
   },
   {
     "id": "amio-3434dedfdf83f4f86eba9ddb8bdecaf4",
@@ -1708,8 +1620,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "33",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "33"
   },
   {
     "id": "amio-345b9c00b1b35bb7bdcf1719a4401cf1",
@@ -1728,7 +1639,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "20",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/345b9c00b1b35bb7bdcf1719a4401cf1.png"
   },
   {
@@ -1748,7 +1658,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "4.36",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/34f26b2cea34e49c9d3cb59812cea591.png"
   },
   {
@@ -1767,8 +1676,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "84",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "84"
   },
   {
     "id": "amio-36c0d44f67c9e001aec4904f92c442d9",
@@ -1786,8 +1694,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "600",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "600"
   },
   {
     "id": "amio-38576a45f32904c22ec98fbb5fccfff4",
@@ -1806,7 +1713,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "11",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/38576a45f32904c22ec98fbb5fccfff4.png"
   },
   {
@@ -1826,7 +1732,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "189",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/39ca63cab5fbe12c72438d8baa973c15.png"
   },
   {
@@ -1846,7 +1751,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "12",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/3a0816a028efddcc524a06386d8f9f08.png"
   },
   {
@@ -1865,8 +1769,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "75",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "75"
   },
   {
     "id": "amio-3c213972c62727e3a07cb66562bf5f51",
@@ -1884,8 +1787,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "6",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "6"
   },
   {
     "id": "amio-3c8232032694b6d42ee1c7f347b985b4",
@@ -1903,8 +1805,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "12",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "12"
   },
   {
     "id": "amio-3d9cc0d3d225ada73236208cce16a336",
@@ -1922,8 +1823,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "frac23",
-    "hint": "Count favorable and total outcomes separately before simplifying."
+    "answer": "frac23"
   },
   {
     "id": "amio-3e030bf775c0f9a91e5f21ec86c353e7",
@@ -1942,7 +1842,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "15",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/3e030bf775c0f9a91e5f21ec86c353e7.png"
   },
   {
@@ -1962,7 +1861,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "15",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/3e181217a6b1cf3b680e0860595e489d.png"
   },
   {
@@ -1981,8 +1879,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "2",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "2"
   },
   {
     "id": "amio-3e94cf68f58acb9f613e715d6221875f",
@@ -2001,7 +1898,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "14",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/3e94cf68f58acb9f613e715d6221875f.png"
   },
   {
@@ -2020,8 +1916,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "55",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "55"
   },
   {
     "id": "amio-3fbc19723e11bd84ebda8802cd496c04",
@@ -2039,8 +1934,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "54",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "54"
   },
   {
     "id": "amio-405d510a81d8226f5b9c8fb0b4e6f48b",
@@ -2058,8 +1952,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "10",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "10"
   },
   {
     "id": "amio-40fdc756f0eaf527a5889f4d219b455d",
@@ -2078,7 +1971,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "15",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/40fdc756f0eaf527a5889f4d219b455d.png"
   },
   {
@@ -2097,8 +1989,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "88",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "88"
   },
   {
     "id": "amio-41ad650f95f61b83b6093f526ba34ee2",
@@ -2116,8 +2007,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "1500",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "1500"
   },
   {
     "id": "amio-41ed59ffe8fbffbeeb5a4f0b7e5951bf",
@@ -2135,8 +2025,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "10",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "10"
   },
   {
     "id": "amio-4224582c41851015fef8d4c98d535969",
@@ -2154,8 +2043,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "361",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "361"
   },
   {
     "id": "amio-422c97304a9b0722546465f890e2d703",
@@ -2173,8 +2061,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "12",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "12"
   },
   {
     "id": "amio-43b0bf5b758b18c9b631f7261691be8b",
@@ -2192,8 +2079,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "75",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "75"
   },
   {
     "id": "amio-43cf73749c5588419c66678a4963937a",
@@ -2212,7 +2098,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "25",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/43cf73749c5588419c66678a4963937a.png"
   },
   {
@@ -2232,7 +2117,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "651",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/43e8027d92dff63978a8a8ae52f14c53.png"
   },
   {
@@ -2251,8 +2135,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "4",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "4"
   },
   {
     "id": "amio-4693961df8f8e7298d7ff82c5388dbcf",
@@ -2270,8 +2153,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "139",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "139"
   },
   {
     "id": "amio-47ba2fdb5d1a9483226af18c158907c6",
@@ -2289,8 +2171,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "3",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "3"
   },
   {
     "id": "amio-47c3ea3fdcf88a901d746a48f3794189",
@@ -2308,8 +2189,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "1504",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "1504"
   },
   {
     "id": "amio-4888e09eb151f913d36b00881364aa3d",
@@ -2327,8 +2207,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "1920",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "1920"
   },
   {
     "id": "amio-490166888ed539ce6bcaa517b65b14c7",
@@ -2346,8 +2225,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "12",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "12"
   },
   {
     "id": "amio-495a4af421111de74d8f677b30308977",
@@ -2366,7 +2244,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "20",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/495a4af421111de74d8f677b30308977.png"
   },
   {
@@ -2385,8 +2262,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "69",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "69"
   },
   {
     "id": "amio-49e4281f994175e4845197157f1f18c8",
@@ -2404,8 +2280,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "25",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "25"
   },
   {
     "id": "amio-4a2206ca319731f043d8fab93cde14f2",
@@ -2423,8 +2298,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "4"
   },
   {
     "id": "amio-4b6bcda048abc7f2713aa52eaac555bb",
@@ -2442,8 +2316,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "400",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "400"
   },
   {
     "id": "amio-4ba30954e5f3ca72748b3e145f45b705",
@@ -2461,8 +2334,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "2",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "2"
   },
   {
     "id": "amio-4bdb2280bdb001022502d6706be0b7af",
@@ -2480,8 +2352,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "12",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "12"
   },
   {
     "id": "amio-4c18dde81f3c229dca49f4e9795e36f0",
@@ -2500,7 +2371,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "750",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/4c18dde81f3c229dca49f4e9795e36f0.png"
   },
   {
@@ -2519,8 +2389,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "40",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "40"
   },
   {
     "id": "amio-4c757b1760aba59edc146b933c5c0edd",
@@ -2539,7 +2408,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "frac{5}{7}",
-    "hint": "Count favorable and total outcomes separately before simplifying.",
     "diagramPng": "assets/diagrams/4c757b1760aba59edc146b933c5c0edd.png"
   },
   {
@@ -2558,8 +2426,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "6",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "6"
   },
   {
     "id": "amio-4d2d8379e6a4cddff0b67c3ff9bf7334",
@@ -2578,7 +2445,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "30",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/4d2d8379e6a4cddff0b67c3ff9bf7334.png"
   },
   {
@@ -2597,8 +2463,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "8",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "8"
   },
   {
     "id": "amio-4e328ddf1c01a97f7f5563df43d1c71d",
@@ -2616,8 +2481,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "6",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "6"
   },
   {
     "id": "amio-4f920158d12a12c0f92c9e068a227c6a",
@@ -2635,8 +2499,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "48",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "48"
   },
   {
     "id": "amio-51e56ddf93bce8450ef0fd68c6eb40c4",
@@ -2654,8 +2517,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "40",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "40"
   },
   {
     "id": "amio-525e5eabec8d5e9991072b6423d0ce87",
@@ -2673,8 +2535,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "3",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "3"
   },
   {
     "id": "amio-52ba8bba39d615839fa584fa106bc56e",
@@ -2692,8 +2553,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "1003",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "1003"
   },
   {
     "id": "amio-532daeff417a9da4c9f95a569845f046",
@@ -2711,8 +2571,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "8",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "8"
   },
   {
     "id": "amio-533d6a318769e6044f336615a28da965",
@@ -2730,8 +2589,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "25",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "25"
   },
   {
     "id": "amio-55c7d272c74789656815fe398947f891",
@@ -2749,8 +2607,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "40",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "40"
   },
   {
     "id": "amio-55ccf4688843e354cc85e6dd31f4d979",
@@ -2769,7 +2626,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "1",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/55ccf4688843e354cc85e6dd31f4d979.png"
   },
   {
@@ -2788,8 +2644,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "84",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "84"
   },
   {
     "id": "amio-56a18605a539f3d9b5d89f89a66aba05",
@@ -2807,8 +2662,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{1}{6}",
-    "hint": "Count favorable and total outcomes separately before simplifying."
+    "answer": "frac{1}{6}"
   },
   {
     "id": "amio-56d8dd9b6af035ae9c4ab4eee90c7666",
@@ -2826,8 +2680,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "420",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "420"
   },
   {
     "id": "amio-56f3d969f109ae5e6ecfe97389907037",
@@ -2835,7 +2688,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Niki usually leaves her cell phone on. If her cell phone is on but she is not actually using it, the battery will last for $24$ hours. If she is using it constantly, the battery will last for only $3$ hours. Since the last recharge, her phone has been on $9$ hours, and during that time she has used it for $60$ minutes. If she doesn\u2019t use it any more but leaves the phone on, how many more hours will the battery last?",
+    "prompt": "Niki usually leaves her cell phone on. If her cell phone is on but she is not actually using it, the battery will last for $24$ hours. If she is using it constantly, the battery will last for only $3$ hours. Since the last recharge, her phone has been on $9$ hours, and during that time she has used it for $60$ minutes. If she doesn’t use it any more but leaves the phone on, how many more hours will the battery last?",
     "choices": [
       "7",
       "8",
@@ -2845,8 +2698,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "8",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "8"
   },
   {
     "id": "amio-56f3dfc4a77a4a538b7fea152fdd17bf",
@@ -2864,8 +2716,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "72",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "72"
   },
   {
     "id": "amio-584e1dd975757e63e1726d97cc073340",
@@ -2883,8 +2734,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "15",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "15"
   },
   {
     "id": "amio-5a6bbf8591ca4c85cf5880f1fd28a18e",
@@ -2902,8 +2752,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "6",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "6"
   },
   {
     "id": "amio-5ae0e5f2a55483523dd12add31424d16",
@@ -2921,8 +2770,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "3",
-    "hint": "Use modular arithmetic to keep computations small."
+    "answer": "3"
   },
   {
     "id": "amio-5b9156da5bbdd897db4341bdb83b8f44",
@@ -2941,7 +2789,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "18",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/5b9156da5bbdd897db4341bdb83b8f44.png"
   },
   {
@@ -2960,8 +2807,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "8",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "8"
   },
   {
     "id": "amio-5cb202a7ae468acc61c370a9559e49dc",
@@ -2980,7 +2826,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "39",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/5cb202a7ae468acc61c370a9559e49dc.png"
   },
   {
@@ -2999,8 +2844,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "9",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "9"
   },
   {
     "id": "amio-5d77f13b2b5103309b57cf5acd9c9aac",
@@ -3018,8 +2862,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "89",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "89"
   },
   {
     "id": "amio-60811600c81436d8b436a59165b7c6ad",
@@ -3038,7 +2881,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "21",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/60811600c81436d8b436a59165b7c6ad.png"
   },
   {
@@ -3057,8 +2899,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "96",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "96"
   },
   {
     "id": "amio-60fc5e9801861e2017a5d8ae36544b67",
@@ -3076,8 +2917,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "39",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "39"
   },
   {
     "id": "amio-6177e3170484f63c2664a34e1e3e29fe",
@@ -3095,8 +2935,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-617e810cecf970a2a3b5c7feb5a1340a",
@@ -3114,8 +2953,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "150",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "150"
   },
   {
     "id": "amio-61fda9fb244c94efa274c5e045298e33",
@@ -3133,8 +2971,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "26",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "26"
   },
   {
     "id": "amio-625caf0edef34f8dfbe7954922d7b628",
@@ -3152,8 +2989,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "8",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "8"
   },
   {
     "id": "amio-62cb29586bfdbde93bc574b853bc4c35",
@@ -3171,8 +3007,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "4"
   },
   {
     "id": "amio-638ba319ae4d206dcfa52dfe6631a5cc",
@@ -3190,8 +3025,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "414",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "414"
   },
   {
     "id": "amio-63cd78186fdb28dc1c3a7441e31c14b1",
@@ -3210,7 +3044,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "24",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/63cd78186fdb28dc1c3a7441e31c14b1.png"
   },
   {
@@ -3229,8 +3062,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "84",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "84"
   },
   {
     "id": "amio-6482e313c16dc63509616e4bba60d81c",
@@ -3248,8 +3080,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "1000",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "1000"
   },
   {
     "id": "amio-64b4e5991b0af939fc08f77bfed9ae2d",
@@ -3267,8 +3098,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "10",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "10"
   },
   {
     "id": "amio-6550a90f21f2323e2280b862e97afd45",
@@ -3286,8 +3116,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "7",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "7"
   },
   {
     "id": "amio-659a2b3dfeb170e3502fa44d5ad9db71",
@@ -3305,8 +3134,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-6628d90c726ae341fcf05bc91def445f",
@@ -3324,8 +3152,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "28",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "28"
   },
   {
     "id": "amio-666a73c164a4d2db7a14a01c66ab44fa",
@@ -3343,8 +3170,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "mbox{ }424",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "mbox{ }424"
   },
   {
     "id": "amio-66b1a6836e23259827844f631cb5c8ff",
@@ -3362,8 +3188,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "40",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "40"
   },
   {
     "id": "amio-66b802ec7a9f111f4e0278d124d353e3",
@@ -3381,8 +3206,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "9",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "9"
   },
   {
     "id": "amio-66edcf89e2632e38344afcac62a21521",
@@ -3400,8 +3224,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "160",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "160"
   },
   {
     "id": "amio-6742a5d76df66846c00aba92af7755d1",
@@ -3419,8 +3242,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "12",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "12"
   },
   {
     "id": "amio-67cc61a598c6a6501421a7aae08c6e0d",
@@ -3438,8 +3260,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "6",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "6"
   },
   {
     "id": "amio-699f13be205dc2747b58726ff68b654e",
@@ -3457,8 +3278,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "40",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "40"
   },
   {
     "id": "amio-69cc946117a2a70fd0f3ae3e5f81143d",
@@ -3476,8 +3296,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "4",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "4"
   },
   {
     "id": "amio-69ce73d9baaee669cab8796b67d3ff0d",
@@ -3495,8 +3314,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "50",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "50"
   },
   {
     "id": "amio-6a0fcdbae0233f9585412de1189ec1c0",
@@ -3514,8 +3332,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "6",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "6"
   },
   {
     "id": "amio-6ad9edf661be5bfc54af9e2bd6686167",
@@ -3533,8 +3350,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "9",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "9"
   },
   {
     "id": "amio-6b1c7d226d6e32eb22916acb6d818b3f",
@@ -3552,8 +3368,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "4"
   },
   {
     "id": "amio-6b35272ddb34481e91612079fa6304a6",
@@ -3571,8 +3386,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "87431",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "87431"
   },
   {
     "id": "amio-6b89b1018464aca0872af1641b5ef845",
@@ -3590,8 +3404,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "11",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "11"
   },
   {
     "id": "amio-6be8fd1f43809f8b09bec0db863c2448",
@@ -3609,8 +3422,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "0",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "0"
   },
   {
     "id": "amio-6c7c3f5178897fb6544a4ed0c21d4b76",
@@ -3628,8 +3440,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "7.5",
-    "hint": "Use modular arithmetic to keep computations small."
+    "answer": "7.5"
   },
   {
     "id": "amio-6c94adfb918975f0c18cd8a9036e544b",
@@ -3647,8 +3458,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "44",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "44"
   },
   {
     "id": "amio-6d130716848b6e6023a3f41e10318bdb",
@@ -3666,8 +3476,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "1120",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "1120"
   },
   {
     "id": "amio-6df015041df83d1c11145d491cd6e302",
@@ -3686,7 +3495,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "8",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/6df015041df83d1c11145d491cd6e302.png"
   },
   {
@@ -3705,8 +3513,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "17",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "17"
   },
   {
     "id": "amio-709dc22c33080a7a2e641c528a9b038e",
@@ -3724,8 +3531,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-7210f5fc431832e4261f573a36cb5c8e",
@@ -3743,8 +3549,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "27\\%",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "27\\%"
   },
   {
     "id": "amio-72795227200120a57748765bcd9d790b",
@@ -3762,8 +3567,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "21",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "21"
   },
   {
     "id": "amio-7354fe1cabf14d20a7a671438b21e2b5",
@@ -3782,7 +3586,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "31",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/7354fe1cabf14d20a7a671438b21e2b5.png"
   },
   {
@@ -3801,8 +3604,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "4",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "4"
   },
   {
     "id": "amio-75d5a9e42bc7c3b35b54d0e096c0a354",
@@ -3820,8 +3622,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "5",
-    "hint": "Use modular arithmetic to keep computations small."
+    "answer": "5"
   },
   {
     "id": "amio-75ed687cff410b3de5800b0b7a8cca90",
@@ -3839,8 +3640,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "2",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "2"
   },
   {
     "id": "amio-774ea68b4309ab5ddd17e91218b14bcc",
@@ -3858,8 +3658,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "8",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "8"
   },
   {
     "id": "amio-777c5b5fb07eb4b9e773ea7b63e03929",
@@ -3877,8 +3676,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "187",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "187"
   },
   {
     "id": "amio-77b98baa408e3746fbfccd42b1b560ac",
@@ -3896,8 +3694,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "37",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "37"
   },
   {
     "id": "amio-78319c29f0e646bee09e421742aa9127",
@@ -3915,8 +3712,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "95000",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "95000"
   },
   {
     "id": "amio-78b1c4ecdf6f1f553bcd235b6e6288e9",
@@ -3934,8 +3730,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "39.60",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "39.60"
   },
   {
     "id": "amio-78ee51586d19fe102dcbd59359daa3cc",
@@ -3953,8 +3748,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "8",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "8"
   },
   {
     "id": "amio-79a4ab72d07510cff6b4f762be595a81",
@@ -3972,8 +3766,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "1",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "1"
   },
   {
     "id": "amio-79d50274a631563b346307994de06ac3",
@@ -3991,8 +3784,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "20",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "20"
   },
   {
     "id": "amio-79e4ea64a269320b08715b6e5eb4751f",
@@ -4010,8 +3802,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "15",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "15"
   },
   {
     "id": "amio-7a2a427174a05c8e0f7ccdf1decfc7b4",
@@ -4030,7 +3821,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "30",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/7a2a427174a05c8e0f7ccdf1decfc7b4.png"
   },
   {
@@ -4049,8 +3839,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "28",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "28"
   },
   {
     "id": "amio-7ab783235b0faa804f6b17f01f74e44f",
@@ -4058,7 +3847,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The number $N$ is a two-digit number. \u2022 When $N$ is divided by $9$, the remainder is $1$ \u2022 When $N$ is divided by $10$, the remainder is $3$ What is the remainder when $N$ is divided by $11$",
+    "prompt": "The number $N$ is a two-digit number. • When $N$ is divided by $9$, the remainder is $1$ • When $N$ is divided by $10$, the remainder is $3$ What is the remainder when $N$ is divided by $11$",
     "choices": [
       "0",
       "2",
@@ -4068,8 +3857,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "7",
-    "hint": "Use modular arithmetic to keep computations small."
+    "answer": "7"
   },
   {
     "id": "amio-7ac6ba05b6a53f53f296906619287770",
@@ -4087,8 +3875,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "40",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "40"
   },
   {
     "id": "amio-7b71c770e26b596f6166c35d485a1c81",
@@ -4106,8 +3893,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "704",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "704"
   },
   {
     "id": "amio-7be54399bfbdd9ae6e5aec44c54d589b",
@@ -4125,8 +3911,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "4",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "4"
   },
   {
     "id": "amio-7bfd03b2ce4f8c5336bc7b345b0e32ea",
@@ -4144,8 +3929,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "35",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "35"
   },
   {
     "id": "amio-7c7d03eba309acae3722263567dc3012",
@@ -4163,8 +3947,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "24.2",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "24.2"
   },
   {
     "id": "amio-7d62e9da6097ce726cc22313d2ad9aa1",
@@ -4182,8 +3965,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "10",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "10"
   },
   {
     "id": "amio-7e4b4fed161314d99827539446d87e7b",
@@ -4201,8 +3983,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "7200",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "7200"
   },
   {
     "id": "amio-7ebb11e2b7b205ca77bbfd3458785374",
@@ -4221,7 +4002,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "8",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/7ebb11e2b7b205ca77bbfd3458785374.png"
   },
   {
@@ -4241,7 +4021,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "5",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/7ecfd37d8e7c802666312ccfadb24496.png"
   },
   {
@@ -4260,8 +4039,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "86",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "86"
   },
   {
     "id": "amio-807b327a91d7f9b39f16db6f4074255a",
@@ -4280,7 +4058,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "120",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/807b327a91d7f9b39f16db6f4074255a.png"
   },
   {
@@ -4299,8 +4076,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-80bf832f3e22e1392ce1190812caa675",
@@ -4319,7 +4095,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "60",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/80bf832f3e22e1392ce1190812caa675.png"
   },
   {
@@ -4338,8 +4113,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{1}{3}",
-    "hint": "Count favorable and total outcomes separately before simplifying."
+    "answer": "frac{1}{3}"
   },
   {
     "id": "amio-8113a433642e1634b3d9adc0881ee51a",
@@ -4357,8 +4131,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "12",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "12"
   },
   {
     "id": "amio-81cbb4b46f8927477d911d2a4d3c2388",
@@ -4376,8 +4149,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "6",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "6"
   },
   {
     "id": "amio-81f4d9963c4245dff18d99703aa5264d",
@@ -4395,8 +4167,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "4.5",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "4.5"
   },
   {
     "id": "amio-82130584ce5276aba428f15f2025d41e",
@@ -4414,8 +4185,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "102",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "102"
   },
   {
     "id": "amio-82dadc6c1d7988b879aa0d7e86078676",
@@ -4434,7 +4204,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "30",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/82dadc6c1d7988b879aa0d7e86078676.png"
   },
   {
@@ -4453,8 +4222,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "280",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "280"
   },
   {
     "id": "amio-849d4729175498880d5f4f368246cc39",
@@ -4472,8 +4240,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "3",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "3"
   },
   {
     "id": "amio-8508aef2c6cf708960b74b7725150b0e",
@@ -4491,8 +4258,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "20",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "20"
   },
   {
     "id": "amio-854a2ebf565fd977456d93a7504b0415",
@@ -4511,7 +4277,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "6",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases.",
     "diagramPng": "assets/diagrams/854a2ebf565fd977456d93a7504b0415.png"
   },
   {
@@ -4531,7 +4296,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "17",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/8774cad6795f4ebd48043dc4258bd9c8.png"
   },
   {
@@ -4550,8 +4314,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "9",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "9"
   },
   {
     "id": "amio-8875fada47f2523313a9ca1eff64a465",
@@ -4570,7 +4333,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "26",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases.",
     "diagramPng": "assets/diagrams/8875fada47f2523313a9ca1eff64a465.png"
   },
   {
@@ -4589,8 +4351,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "5",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "5"
   },
   {
     "id": "amio-8bc20d8ff734f1794c3aa5fdc752cb30",
@@ -4609,7 +4370,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "3",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/8bc20d8ff734f1794c3aa5fdc752cb30.png"
   },
   {
@@ -4629,7 +4389,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "11",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/8c37e25a24a1c1f672acd3912b42ded4.png"
   },
   {
@@ -4648,8 +4407,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "8",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "8"
   },
   {
     "id": "amio-8d51918202f7a6a0c12ccd94dc6192d1",
@@ -4667,8 +4425,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "18",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "18"
   },
   {
     "id": "amio-8d87abcc79e9ddb45e48d1366c6b1f6c",
@@ -4686,8 +4443,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "400",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "400"
   },
   {
     "id": "amio-8db56dc8ff3d7b0101248301d5ae5a23",
@@ -4705,8 +4461,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "110",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "110"
   },
   {
     "id": "amio-8f761c084e7dc0681fc407305ee0321f",
@@ -4724,8 +4479,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "40",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "40"
   },
   {
     "id": "amio-901ecba54db1e3832a2fae79df10cd17",
@@ -4743,8 +4497,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "18",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "18"
   },
   {
     "id": "amio-904b5925faf06c5d9be7a6098ebb10a3",
@@ -4762,8 +4515,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "50",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "50"
   },
   {
     "id": "amio-904d4f9b7ca768cc62644aefebcea21d",
@@ -4781,8 +4533,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "11",
-    "hint": "Use modular arithmetic to keep computations small."
+    "answer": "11"
   },
   {
     "id": "amio-9097088d5eb19609439e4b7723d3f244",
@@ -4801,7 +4552,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "4",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/9097088d5eb19609439e4b7723d3f244.png"
   },
   {
@@ -4820,8 +4570,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "15",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "15"
   },
   {
     "id": "amio-90dba02ecdb2aa188c943e616dce9da0",
@@ -4839,8 +4588,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "9",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "9"
   },
   {
     "id": "amio-920ba6d2072f83664c844629b8e524d3",
@@ -4858,8 +4606,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "4",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "4"
   },
   {
     "id": "amio-9277096b27e0f04586690475ea517d1d",
@@ -4877,8 +4624,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "10",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "10"
   },
   {
     "id": "amio-9311ef16fa730ee69808a20f29fb0c46",
@@ -4896,8 +4642,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "15",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "15"
   },
   {
     "id": "amio-9350186cdfe1647070c903ec8c7a8949",
@@ -4916,7 +4661,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/9350186cdfe1647070c903ec8c7a8949.png"
   },
   {
@@ -4935,8 +4679,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "2",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "2"
   },
   {
     "id": "amio-93ce2746c257aa6756cd4b9f90f08098",
@@ -4954,8 +4697,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "400",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "400"
   },
   {
     "id": "amio-9483c1869b72efaa14b4e7e143bf5321",
@@ -4974,7 +4716,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "50",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/9483c1869b72efaa14b4e7e143bf5321.png"
   },
   {
@@ -4993,8 +4734,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "6",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "6"
   },
   {
     "id": "amio-9594b8df76721b6e2c4911f9677f956a",
@@ -5012,8 +4752,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "6.5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "6.5"
   },
   {
     "id": "amio-9662156b910aaf65dba41e8cd2459bbd",
@@ -5031,8 +4770,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "3",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "3"
   },
   {
     "id": "amio-96e91601abeda7599c49fd63c1fc672d",
@@ -5051,7 +4789,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "108",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/96e91601abeda7599c49fd63c1fc672d.png"
   },
   {
@@ -5070,8 +4807,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-98cfee3e7389abeb56f9bb2197c812e7",
@@ -5089,8 +4825,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "4"
   },
   {
     "id": "amio-98e4df9817d0a5ba7265e204c422a47a",
@@ -5108,8 +4843,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "12",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "12"
   },
   {
     "id": "amio-990e7fe8b23415d94a28c3bb514af8a7",
@@ -5127,8 +4861,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "2400",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "2400"
   },
   {
     "id": "amio-9ac6279fb8677329a07cb23c030d2f15",
@@ -5146,8 +4879,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "11",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "11"
   },
   {
     "id": "amio-9aecc5b4ddf581b36f328110f54eb013",
@@ -5165,8 +4897,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "70",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "70"
   },
   {
     "id": "amio-9d96716d08bb4871032feccc9df4bf79",
@@ -5185,7 +4916,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "8",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases.",
     "diagramPng": "assets/diagrams/9d96716d08bb4871032feccc9df4bf79.png"
   },
   {
@@ -5205,7 +4935,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "26",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/9f39ac719326722c3bd53710e817ef59.png"
   },
   {
@@ -5224,8 +4953,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "4"
   },
   {
     "id": "amio-9fa79832a2b1c62aa46a0a6f59fe4b37",
@@ -5243,8 +4971,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "24",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "24"
   },
   {
     "id": "amio-9fc01ebbd8b8fec933adb21e8cf56331",
@@ -5262,8 +4989,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "48",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "48"
   },
   {
     "id": "amio-a0891fcd63c4c8b72ff77136a6448941",
@@ -5281,8 +5007,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "166",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "166"
   },
   {
     "id": "amio-a0a4e523b0ba57e0314961ba3d468fc3",
@@ -5300,8 +5025,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-a0d07bf57995655f037b7b2f85b92680",
@@ -5319,8 +5043,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "250",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "250"
   },
   {
     "id": "amio-a1f117c233009d82b173a6e1303475c3",
@@ -5338,8 +5061,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "100",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "100"
   },
   {
     "id": "amio-a28676f2f6063238885b3dabf08d0b43",
@@ -5357,8 +5079,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "26",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "26"
   },
   {
     "id": "amio-a29e1f114cc96aea84a25f6fa85bf78d",
@@ -5376,8 +5097,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "3",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "3"
   },
   {
     "id": "amio-a46bf0f51976accb16fff061ecc83bd1",
@@ -5396,7 +5116,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "24",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/a46bf0f51976accb16fff061ecc83bd1.png"
   },
   {
@@ -5415,8 +5134,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "9",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "9"
   },
   {
     "id": "amio-a5ae8fde3653142a8d1c34e82ba0cb28",
@@ -5434,8 +5152,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "15",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "15"
   },
   {
     "id": "amio-a784ecf55d1e454d1667f94ad7fc141c",
@@ -5453,8 +5170,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "8671",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "8671"
   },
   {
     "id": "amio-a8030b076ff05a2e8c53be8f1dd18d2b",
@@ -5473,7 +5189,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "13",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/a8030b076ff05a2e8c53be8f1dd18d2b.png"
   },
   {
@@ -5492,8 +5207,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "44\\%",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "44\\%"
   },
   {
     "id": "amio-a85279659ae9466c58afe1b773cc9c73",
@@ -5511,8 +5225,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac13",
-    "hint": "Count favorable and total outcomes separately before simplifying."
+    "answer": "frac13"
   },
   {
     "id": "amio-a8cab20a7338028ed9a6d1bca92f50f8",
@@ -5530,8 +5243,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "50",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "50"
   },
   {
     "id": "amio-a96b355871277b3f250047be75c7c1e7",
@@ -5550,7 +5262,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "24",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/a96b355871277b3f250047be75c7c1e7.png"
   },
   {
@@ -5570,7 +5281,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "80^\\circ",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/a970a4108aaf1205100810f1093e577e.png"
   },
   {
@@ -5589,8 +5299,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "18",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "18"
   },
   {
     "id": "amio-aad3ac2bba915811d335c7315c6013a2",
@@ -5608,8 +5317,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "8",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "8"
   },
   {
     "id": "amio-ab836a34efd76f55bc85a0fb12249ac8",
@@ -5627,8 +5335,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "79",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "79"
   },
   {
     "id": "amio-abd44e0843793f53652c5cfdd75161d9",
@@ -5646,8 +5353,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "48",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "48"
   },
   {
     "id": "amio-ac1a24b9bcb728d734f04b1193e5266d",
@@ -5655,7 +5361,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Problems 8,9 and 10 use the data found in the accompanying paragraph and table: In dollars and cents, how much did his South American stamps issued before the \u201970s cost him?",
+    "prompt": "Problems 8,9 and 10 use the data found in the accompanying paragraph and table: In dollars and cents, how much did his South American stamps issued before the ’70s cost him?",
     "choices": [
       "0.40",
       "1.06",
@@ -5665,8 +5371,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "1.06",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "1.06"
   },
   {
     "id": "amio-ac4ead35d69de5c71100b4e772ba0132",
@@ -5684,8 +5389,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "7",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "7"
   },
   {
     "id": "amio-acadecfe184db1bd5c1c600851ffa10e",
@@ -5703,8 +5407,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "162",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "162"
   },
   {
     "id": "amio-acb25a3031a50594a799e4fda6aba6e4",
@@ -5722,8 +5425,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "37",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "37"
   },
   {
     "id": "amio-ad4f47d0b81e3f02818803f7c4fa04b2",
@@ -5741,8 +5443,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "23",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "23"
   },
   {
     "id": "amio-ad9959ee3bf4bd73914c282efd0919d4",
@@ -5760,8 +5461,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "4536",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "4536"
   },
   {
     "id": "amio-ae139542a200cb4687c817e01bcfe7bf",
@@ -5769,7 +5469,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Lola, Lolo, Tiya, and Tiyo participated in a ping pong tournament. Each player competed against each of the other three players exactly twice. Shown below are the win-loss records for the players. The numbers $1$ and $0$ represent a win or loss, respectively. For example, Lola won five matches and lost the fourth match. What was Tiyo\u2019s win-loss record? \\[\\begin{array}{c | c} Player & Result \\\\ \\hline Lola & \\texttt{111011}\\\\ Lolo & \\texttt{101010}\\\\ Tiya & \\texttt{010100}\\\\ Tiyo & \\texttt{??????} \\end{array}\\]",
+    "prompt": "Lola, Lolo, Tiya, and Tiyo participated in a ping pong tournament. Each player competed against each of the other three players exactly twice. Shown below are the win-loss records for the players. The numbers $1$ and $0$ represent a win or loss, respectively. For example, Lola won five matches and lost the fourth match. What was Tiyo’s win-loss record? \\[\\begin{array}{c | c} Player & Result \\\\ \\hline Lola & \\texttt{111011}\\\\ Lolo & \\texttt{101010}\\\\ Tiya & \\texttt{010100}\\\\ Tiyo & \\texttt{??????} \\end{array}\\]",
     "choices": [
       "texttt{000101}",
       "texttt{001001}",
@@ -5779,8 +5479,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "texttt{000101}",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "texttt{000101}"
   },
   {
     "id": "amio-ae52d310595f21cd11ae8978ddb5dd15",
@@ -5788,7 +5487,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Ms. Hamilton\u2019s eighth-grade class wants to participate in the annual three-person-team basketball tournament. Lance, Sally, Joy, and Fred are chosen for the team. In how many ways can the three starters be chosen?",
+    "prompt": "Ms. Hamilton’s eighth-grade class wants to participate in the annual three-person-team basketball tournament. Lance, Sally, Joy, and Fred are chosen for the team. In how many ways can the three starters be chosen?",
     "choices": [
       "2",
       "4",
@@ -5798,8 +5497,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "4"
   },
   {
     "id": "amio-ae68554a13742c4a31b4e86783b7c70f",
@@ -5817,8 +5515,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "13",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "13"
   },
   {
     "id": "amio-aeb8f5687f168c5c36475e79919d870f",
@@ -5836,8 +5533,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "5",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "5"
   },
   {
     "id": "amio-af0f1b09251d3dbde61ac767a7ab36e1",
@@ -5855,8 +5551,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "525",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "525"
   },
   {
     "id": "amio-af333970a2858459ea7ef2913e6e4059",
@@ -5874,8 +5569,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "68",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "68"
   },
   {
     "id": "amio-b000b2d39930b61432030f2eeffada0c",
@@ -5894,7 +5588,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "frac{7}{9}",
-    "hint": "Count favorable and total outcomes separately before simplifying.",
     "diagramPng": "assets/diagrams/b000b2d39930b61432030f2eeffada0c.png"
   },
   {
@@ -5913,8 +5606,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "87",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "87"
   },
   {
     "id": "amio-b1103952e2143c3d216f0d3b13466e2b",
@@ -5932,8 +5624,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "146",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "146"
   },
   {
     "id": "amio-b11d9737add2b2a76fccb1d2a11e1b83",
@@ -5951,8 +5642,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "24",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "24"
   },
   {
     "id": "amio-b164f54f17fca6079dbf7a8066cf165a",
@@ -5970,8 +5660,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "6",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "6"
   },
   {
     "id": "amio-b1d9d433caaadbcb8509683149e3d502",
@@ -5989,8 +5678,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-b236974ec921383775db7e63efbfbdd5",
@@ -6008,8 +5696,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "0",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "0"
   },
   {
     "id": "amio-b398bbdad9ef8a73baab5815377d1f23",
@@ -6027,8 +5714,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "1",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "1"
   },
   {
     "id": "amio-b4161fa2595b9caf0fedb65417094192",
@@ -6046,8 +5732,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-280",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "-280"
   },
   {
     "id": "amio-b494dac183ac9d7a645c2e3f31d09d40",
@@ -6065,8 +5750,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "728",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "728"
   },
   {
     "id": "amio-b5d2ca91f976a5d67bafccd86c11f3de",
@@ -6085,7 +5769,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "64",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/b5d2ca91f976a5d67bafccd86c11f3de.png"
   },
   {
@@ -6094,7 +5777,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "NASA\u2019s Perseverance Rover was launched on July $30,$ $2020.$ After traveling $292526838$ miles, it landed on Mars in Jezero Crater about $6.5$ months later. Which of the following is closest to the Rover\u2019s average interplanetary speed in miles per hour?",
+    "prompt": "NASA’s Perseverance Rover was launched on July $30,$ $2020.$ After traveling $292526838$ miles, it landed on Mars in Jezero Crater about $6.5$ months later. Which of the following is closest to the Rover’s average interplanetary speed in miles per hour?",
     "choices": [
       "6000",
       "12000",
@@ -6104,8 +5787,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "60000",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "60000"
   },
   {
     "id": "amio-b77122d66422e1435be10bb4a9cd445b",
@@ -6123,8 +5805,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "6",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "6"
   },
   {
     "id": "amio-b81007ad053def7172abcecdcb564526",
@@ -6142,8 +5823,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "60",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "60"
   },
   {
     "id": "amio-b8bbec1086a1f231bc14b0f354956990",
@@ -6161,8 +5841,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "13",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "13"
   },
   {
     "id": "amio-b8f4ef8926aaf3100e44a06f702f6035",
@@ -6180,8 +5859,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "4",
-    "hint": "Rewrite into a standard algebraic form and solve systematically."
+    "answer": "4"
   },
   {
     "id": "amio-b911f4f6218991b2b9b5b808d6d6029a",
@@ -6199,8 +5877,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "24",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "24"
   },
   {
     "id": "amio-b933f9b6f2d4170c37f408b5370a2dc7",
@@ -6218,8 +5895,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "5",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "5"
   },
   {
     "id": "amio-b9979cb9613ec70e0886881b00e6a7ab",
@@ -6237,8 +5913,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "4.2",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "4.2"
   },
   {
     "id": "amio-bac44cda675e620cf64645a855a86b34",
@@ -6256,8 +5931,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "182",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "182"
   },
   {
     "id": "amio-baf017dc3c030807adeb577effbe8617",
@@ -6275,8 +5949,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "mbox{ }43",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "mbox{ }43"
   },
   {
     "id": "amio-bbbe100197914c04d2f9e1fe6c9d2062",
@@ -6294,8 +5967,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "80",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "80"
   },
   {
     "id": "amio-bbc8b2bcbd811466824eda4c94d2dc46",
@@ -6313,8 +5985,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "132",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "132"
   },
   {
     "id": "amio-bc134ec59dee1110aa99649bd7c062ab",
@@ -6332,8 +6003,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "10",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "10"
   },
   {
     "id": "amio-bc6071e2be1d8a1ef18d884220f682f5",
@@ -6352,7 +6022,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "72^\\circ",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/bc6071e2be1d8a1ef18d884220f682f5.png"
   },
   {
@@ -6371,8 +6040,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "10",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "10"
   },
   {
     "id": "amio-bd4e71861ccdbd57e11f9cb272ecb920",
@@ -6390,8 +6058,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "23",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "23"
   },
   {
     "id": "amio-bde71874de06e99d1d3d1396ed7ae724",
@@ -6410,7 +6077,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "8",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/bde71874de06e99d1d3d1396ed7ae724.png"
   },
   {
@@ -6430,7 +6096,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "353",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/be1cb0eeaa4e8ebbe5db028eae5d532b.png"
   },
   {
@@ -6449,8 +6114,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "9",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "9"
   },
   {
     "id": "amio-c07e0f361226ee2ecaf0cba4194e73f0",
@@ -6469,7 +6133,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "frac{1}2",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/c07e0f361226ee2ecaf0cba4194e73f0.png"
   },
   {
@@ -6488,8 +6151,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "88",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "88"
   },
   {
     "id": "amio-c228c1b86653c3d32d090fa94df348be",
@@ -6507,8 +6169,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-2",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "-2"
   },
   {
     "id": "amio-c2aeffdb227e85d68bc4ca7aee207ad9",
@@ -6526,8 +6187,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "99",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "99"
   },
   {
     "id": "amio-c2ce56e25aa82757ee6d584adc1ba0dd",
@@ -6545,8 +6205,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "330",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "330"
   },
   {
     "id": "amio-c2f0eeb731cfbd64e6dc98fc3180100f",
@@ -6564,8 +6223,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "45",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "45"
   },
   {
     "id": "amio-c300abd6b62ff1ecc72fb85608477b18",
@@ -6583,8 +6241,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "13",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "13"
   },
   {
     "id": "amio-c318ba1d2e4c7920b99eebad8353b3bb",
@@ -6602,8 +6259,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "4.5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "4.5"
   },
   {
     "id": "amio-c37b944e047c68d72f17a349a9d7d86c",
@@ -6622,7 +6278,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "4.0",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/c37b944e047c68d72f17a349a9d7d86c.png"
   },
   {
@@ -6642,7 +6297,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "180",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/c3cd3c5b670be562daaea510a7008b42.png"
   },
   {
@@ -6661,8 +6315,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "18",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "18"
   },
   {
     "id": "amio-c4fc086c5d6207dc123bd84de929c42b",
@@ -6680,8 +6333,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "6",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "6"
   },
   {
     "id": "amio-c5179fa9f4dbee24e8dc213e1fbbc8df",
@@ -6699,8 +6351,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "1979",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "1979"
   },
   {
     "id": "amio-c5664966ee8689960c48494c7e756ab6",
@@ -6719,7 +6370,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "5",
-    "hint": "Prime-factorize key numbers and use exponent logic.",
     "diagramPng": "assets/diagrams/c5664966ee8689960c48494c7e756ab6.png"
   },
   {
@@ -6738,8 +6388,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "15",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "15"
   },
   {
     "id": "amio-c698d30b6ec9548b8dbc79aa9a891c85",
@@ -6758,7 +6407,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "6",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/c698d30b6ec9548b8dbc79aa9a891c85.png"
   },
   {
@@ -6777,8 +6425,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "92",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "92"
   },
   {
     "id": "amio-c785c37af78d511634c62cfc488dca61",
@@ -6796,8 +6443,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "97",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "97"
   },
   {
     "id": "amio-c78d8106011138b0100f9f9a1293bd76",
@@ -6816,7 +6462,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/c78d8106011138b0100f9f9a1293bd76.png"
   },
   {
@@ -6836,7 +6481,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "5.5",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/c7ed94a7ddff865af07062f53fc585e1.png"
   },
   {
@@ -6855,8 +6499,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "3mn",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "3mn"
   },
   {
     "id": "amio-c83417f8cad31f46ba4914676eb57249",
@@ -6874,8 +6517,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "240",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "240"
   },
   {
     "id": "amio-c835ee23fd691d1a813e846a06f122dc",
@@ -6893,8 +6535,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "2",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "2"
   },
   {
     "id": "amio-c9614b6913980d73802c6d63b24149b8",
@@ -6912,8 +6553,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "14.6",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "14.6"
   },
   {
     "id": "amio-c9c1bfde64dd08019d5ead2e3834e536",
@@ -6931,8 +6571,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "24",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "24"
   },
   {
     "id": "amio-ca4dc60e852a9eff0d8c494765f6c938",
@@ -6950,8 +6589,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "40",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "40"
   },
   {
     "id": "amio-cad911729b80c8add923db40434bca12",
@@ -6969,8 +6607,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "13",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "13"
   },
   {
     "id": "amio-caf502d71847dfc7453032584c0a7882",
@@ -6988,8 +6625,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "3",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "3"
   },
   {
     "id": "amio-cba5e4d83ebfe96d7080808a1c7817de",
@@ -7007,8 +6643,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "7",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "7"
   },
   {
     "id": "amio-cc3ede93eb388d1dda4886d1ddb66085",
@@ -7026,8 +6661,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "4"
   },
   {
     "id": "amio-cc749ca8ba96cff82b735668d63408c6",
@@ -7045,8 +6679,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5"
   },
   {
     "id": "amio-ccc50eb537d3c969c90f9a187ddafd36",
@@ -7064,8 +6697,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "1",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "1"
   },
   {
     "id": "amio-cce0028f7e22c23ab472358db6217894",
@@ -7084,7 +6716,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/cce0028f7e22c23ab472358db6217894.png"
   },
   {
@@ -7103,8 +6734,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "42",
-    "hint": "Prime-factorize key numbers and use exponent logic."
+    "answer": "42"
   },
   {
     "id": "amio-cf6642baf3bca2d06469c8b0305a60d6",
@@ -7122,8 +6752,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "3.3",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "3.3"
   },
   {
     "id": "amio-cfabdc2160ceb04a5d1d5c049abae0eb",
@@ -7142,7 +6771,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "27",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/cfabdc2160ceb04a5d1d5c049abae0eb.png"
   },
   {
@@ -7161,8 +6789,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "9",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "9"
   },
   {
     "id": "amio-d040dfae7d62cc064634f92aeb10cee1",
@@ -7180,8 +6807,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "3",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "3"
   },
   {
     "id": "amio-d121538571fa5ab9ec81a162a70ad694",
@@ -7199,8 +6825,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "20\\text{ dollars}",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "20\\text{ dollars}"
   },
   {
     "id": "amio-d1fdfbca4170bee661e145fdb491b6fb",
@@ -7219,7 +6844,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/d1fdfbca4170bee661e145fdb491b6fb.png"
   },
   {
@@ -7238,8 +6862,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "7",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "7"
   },
   {
     "id": "amio-d333d1937f2658257b4297254407ebdd",
@@ -7258,7 +6881,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "6",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/d333d1937f2658257b4297254407ebdd.png"
   },
   {
@@ -7278,7 +6900,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "9",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/d5e66ab7da785cefd5ab72ed0905eb86.png"
   },
   {
@@ -7298,7 +6919,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "frac{2}{7}",
-    "hint": "Count favorable and total outcomes separately before simplifying.",
     "diagramPng": "assets/diagrams/d66f05b0a1b2641cf2e2a46bac7d1759.png"
   },
   {
@@ -7317,8 +6937,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "7",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "7"
   },
   {
     "id": "amio-d7fc7b0dabdd8b7a14413e8ad286fee0",
@@ -7336,8 +6955,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "16",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "16"
   },
   {
     "id": "amio-d91111c6f2e572b284b50dd10fb812d8",
@@ -7355,8 +6973,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "665",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "665"
   },
   {
     "id": "amio-d9847efaec5a1e9d9ae9d3ff6cba47a0",
@@ -7375,7 +6992,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "5",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/d9847efaec5a1e9d9ae9d3ff6cba47a0.png"
   },
   {
@@ -7395,7 +7011,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "6:\\pi",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/da09e5a581bd1a4cbe8ed077f0c5669d.png"
   },
   {
@@ -7415,7 +7030,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "3",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/db320b40ed9600084b98092bae8ee960.png"
   },
   {
@@ -7434,8 +7048,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac38",
-    "hint": "Count favorable and total outcomes separately before simplifying."
+    "answer": "frac38"
   },
   {
     "id": "amio-dc1afd732dd393ab5bab2c2e944412f9",
@@ -7453,8 +7066,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "mbox{ }9990",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "mbox{ }9990"
   },
   {
     "id": "amio-dc5b7f0aa5f81ceaad824ac9900595cb",
@@ -7473,7 +7085,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "240",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/dc5b7f0aa5f81ceaad824ac9900595cb.png"
   },
   {
@@ -7493,7 +7104,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "10",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/dcaa034b0bf2f88fb2af30742e8c32cc.png"
   },
   {
@@ -7512,8 +7122,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "34",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "34"
   },
   {
     "id": "amio-dd6de2492b141430ef9c7b7ca0d0073d",
@@ -7531,8 +7140,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "48",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "48"
   },
   {
     "id": "amio-dd741c514d8ee0ccbf0bbd4dc0dfe360",
@@ -7550,8 +7158,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~192",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "~192"
   },
   {
     "id": "amio-dd83a36aaf2e88f7ee9ac8969310ed49",
@@ -7569,8 +7176,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "100",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "100"
   },
   {
     "id": "amio-dd938fa724a3e05463b56800b7cd7da4",
@@ -7588,8 +7194,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "5760",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5760"
   },
   {
     "id": "amio-de34a6015ed7a4acd2ba9f66451ea740",
@@ -7607,8 +7212,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "28",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "28"
   },
   {
     "id": "amio-decbe96bab84065c6c1907bcf613256d",
@@ -7627,7 +7231,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "4",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/decbe96bab84065c6c1907bcf613256d.png"
   },
   {
@@ -7646,8 +7249,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "24",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "24"
   },
   {
     "id": "amio-df046061239d641158442a2e84eda907",
@@ -7665,8 +7267,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "72",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "72"
   },
   {
     "id": "amio-df09333223832da82acb63ed2d570283",
@@ -7684,8 +7285,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "30",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "30"
   },
   {
     "id": "amio-df852c9b0ef5e601390c549c253f8039",
@@ -7703,8 +7303,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "17",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "17"
   },
   {
     "id": "amio-e01c55a61fe64e3a704ffa77512cac11",
@@ -7723,7 +7322,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "sqrt{13}",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/e01c55a61fe64e3a704ffa77512cac11.png"
   },
   {
@@ -7742,8 +7340,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "6",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "6"
   },
   {
     "id": "amio-e1a7efc63ed315b76c7bf96478920549",
@@ -7762,7 +7359,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "3",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/e1a7efc63ed315b76c7bf96478920549.png"
   },
   {
@@ -7781,8 +7377,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "338",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "338"
   },
   {
     "id": "amio-e1c7c3fe7252edabd7498755469ed2ef",
@@ -7800,8 +7395,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "36",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "36"
   },
   {
     "id": "amio-e257f9bbb8bb5c09e1e0b1816f62fb3b",
@@ -7819,8 +7413,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "2.50",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "2.50"
   },
   {
     "id": "amio-e44247bc94190fdaa650b0e77e875dec",
@@ -7828,7 +7421,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "How many positive integers can fill the blank in the sentence below? \u201cOne positive integer is _____ more than twice another, and the sum of the two numbers is $28$.\u201d",
+    "prompt": "How many positive integers can fill the blank in the sentence below? “One positive integer is _____ more than twice another, and the sum of the two numbers is $28$.”",
     "choices": [
       "6",
       "7",
@@ -7838,8 +7431,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "9",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "9"
   },
   {
     "id": "amio-e4725af41669e8d6a2780b4ad9991c89",
@@ -7857,8 +7449,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{1}{4}",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "frac{1}{4}"
   },
   {
     "id": "amio-e54949986cda7aa74f2fef2cf43d547a",
@@ -7876,8 +7467,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "48",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "48"
   },
   {
     "id": "amio-e5db1f5688b4ad97f27c76bb4f6f834c",
@@ -7895,8 +7485,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "25",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "25"
   },
   {
     "id": "amio-e65442156206126c5b8ecd5a38245cb4",
@@ -7914,8 +7503,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "2",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "2"
   },
   {
     "id": "amio-e694c12f846a101db0e11df782248a36",
@@ -7933,8 +7521,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{4}9",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "frac{4}9"
   },
   {
     "id": "amio-e69a7d3fbd32bdd67a5dd7cb0b6f88b3",
@@ -7952,8 +7539,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "306",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "306"
   },
   {
     "id": "amio-e6b764a0551a3d6018e2e5269c2f1844",
@@ -7971,8 +7557,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "0.25",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "0.25"
   },
   {
     "id": "amio-e76d455a95be02426d92aeb23ac5854b",
@@ -7991,7 +7576,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "11",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/e76d455a95be02426d92aeb23ac5854b.png"
   },
   {
@@ -8010,8 +7594,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "5",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "5"
   },
   {
     "id": "amio-e8051b937cd965c95e341ade8a7ec30b",
@@ -8029,8 +7612,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "11,400",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "11,400"
   },
   {
     "id": "amio-e8a5bfa197fe82e79e8bc90038d3030e",
@@ -8049,7 +7631,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "80",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/e8a5bfa197fe82e79e8bc90038d3030e.png"
   },
   {
@@ -8068,8 +7649,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "frac38",
-    "hint": "Count favorable and total outcomes separately before simplifying."
+    "answer": "frac38"
   },
   {
     "id": "amio-eab82210c19c1cbf121c0699123c0438",
@@ -8087,8 +7667,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "34",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "34"
   },
   {
     "id": "amio-eaf7d3e4623ee9d5f2ae3bc71d450919",
@@ -8106,8 +7685,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "58",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "58"
   },
   {
     "id": "amio-ebf66e6488bc3ba66df0a2ed1f5cae92",
@@ -8126,7 +7704,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "10",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/ebf66e6488bc3ba66df0a2ed1f5cae92.png"
   },
   {
@@ -8145,8 +7722,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac 23",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "frac 23"
   },
   {
     "id": "amio-ec3790c1839d1dd100f3d31fc1f976ce",
@@ -8164,8 +7740,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "28",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "28"
   },
   {
     "id": "amio-ef8ba675f2586cac7629415709ba3b97",
@@ -8183,8 +7758,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "64",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "64"
   },
   {
     "id": "amio-f0f0c19317ba24f140b27a1c83900764",
@@ -8202,8 +7776,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "93",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "93"
   },
   {
     "id": "amio-f1047259d2cc85e238f4556aeb6d5b90",
@@ -8222,7 +7795,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "120",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/f1047259d2cc85e238f4556aeb6d5b90.png"
   },
   {
@@ -8241,8 +7813,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "28",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "28"
   },
   {
     "id": "amio-f22bb94104fb55913f2d1dcb3b03f7c3",
@@ -8260,8 +7831,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "8",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "8"
   },
   {
     "id": "amio-f2cdf5ac85e8111cdb903a3748bd000b",
@@ -8279,8 +7849,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "11",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "11"
   },
   {
     "id": "amio-f329267f513a95634e9a9cd2acd40e36",
@@ -8298,8 +7867,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "32",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "32"
   },
   {
     "id": "amio-f5390005d4c3c15eb668c549a825c8a8",
@@ -8317,8 +7885,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "1107",
-    "hint": "Rewrite into a standard algebraic form and solve systematically."
+    "answer": "1107"
   },
   {
     "id": "amio-f550ac11126d7e92b03135b958094a19",
@@ -8336,8 +7903,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "12",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "12"
   },
   {
     "id": "amio-f5a2930556b34ef57bc7dfef1024f1b3",
@@ -8355,8 +7921,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "100",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "100"
   },
   {
     "id": "amio-f6886b12e08ebe1b17b506a8c487051f",
@@ -8374,8 +7939,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "7425",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "7425"
   },
   {
     "id": "amio-f723f301d3b11e3f7dc13a5fb31af0d4",
@@ -8394,7 +7958,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "5",
-    "hint": "Draw and label a diagram before writing equations.",
     "diagramPng": "assets/diagrams/f723f301d3b11e3f7dc13a5fb31af0d4.png"
   },
   {
@@ -8413,8 +7976,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "5.5 \\text{ cents}",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "5.5 \\text{ cents}"
   },
   {
     "id": "amio-f807402c8b794087eddf48dfc2700f7d",
@@ -8432,8 +7994,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "16",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "16"
   },
   {
     "id": "amio-f9dc3f3febf32227dd066d9b170c1a61",
@@ -8451,8 +8012,7 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "28",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "28"
   },
   {
     "id": "amio-faaccf9259bff468d99045641db8964e",
@@ -8470,8 +8030,7 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "9",
-    "hint": "Use parity/divisibility and place-value constraints to narrow cases."
+    "answer": "9"
   },
   {
     "id": "amio-fbeec93e6cdb064beda4dbf40a463431",
@@ -8489,8 +8048,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "49",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "49"
   },
   {
     "id": "amio-fc25120d671cc21f34f321223eb2eeda",
@@ -8509,7 +8067,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "17",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/fc25120d671cc21f34f321223eb2eeda.png"
   },
   {
@@ -8528,8 +8085,7 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "11",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "11"
   },
   {
     "id": "amio-fcaf5432cd1b168698dc87297e4a8f6e",
@@ -8547,8 +8103,7 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "165",
-    "hint": "Draw and label a diagram before writing equations."
+    "answer": "165"
   },
   {
     "id": "amio-fe18aad6e52038198dd0f9c9c01eecef",
@@ -8567,7 +8122,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "32\\$ ~Diagram by Andrei.martynau",
-    "hint": "Define variables clearly and break the target into smaller computable steps.",
     "diagramPng": "assets/diagrams/fe18aad6e52038198dd0f9c9c01eecef.png"
   },
   {
@@ -8586,8 +8140,7 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "0",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "0"
   },
   {
     "id": "amio-fe5aada0b5e63fbdab4d9f1b13126983",
@@ -8605,7 +8158,6 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "99",
-    "hint": "Define variables clearly and break the target into smaller computable steps."
+    "answer": "99"
   }
 ]

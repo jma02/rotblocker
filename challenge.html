@@ -42,11 +42,7 @@
         <button type="submit">Submit</button>
       </form>
 
-      <div class="hint-row">
-        <button id="hint-btn" class="button-secondary" type="button">Use Hint (0 pts)</button>
-        <button id="skip" class="button-secondary" type="button" style="display:none;">Skip AIME</button>
-      </div>
-      <p id="hint-text" class="hint-text"></p>
+      <button id="skip" class="button-secondary" type="button" style="display:none;">Skip AIME</button>
 
       <div id="choices" class="choices"></div>
 
@@ -60,6 +56,13 @@
   </main>
 
   <script defer src="scoring.js"></script>
+  <script defer src="challenge-modules/constants.js"></script>
+  <script defer src="challenge-modules/dom.js"></script>
+  <script defer src="challenge-modules/math.js"></script>
+  <script defer src="challenge-modules/sync.js"></script>
+  <script defer src="challenge-modules/tutor.js"></script>
   <script defer src="challenge.js"></script>
+  <script defer src="challenge-modules/gameplay.js"></script>
+  <script defer src="challenge-modules/bootstrap.js"></script>
 </body>
 </html>

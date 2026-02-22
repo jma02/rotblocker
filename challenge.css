@@ -266,7 +266,6 @@ body.modal-open {
 }
 
 .problem,
-.hint-text,
 .choice-btn {
   overflow-wrap: normal;
   word-break: normal;
@@ -288,6 +287,14 @@ body.modal-open {
   align-items: center;
   justify-content: center;
   overflow: auto;
+}
+
+.diagram-wrap.diagram-multi {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  justify-items: center;
+  gap: 8px;
 }
 
 .diagram-img {
@@ -360,9 +367,6 @@ button:disabled { opacity: 0.45; cursor: not-allowed; transform: none; filter: n
 
 .button-secondary { background: linear-gradient(120deg, #7a6752, #6a5a48); }
 
-.hint-row { margin-top: 10px; display: flex; gap: 8px; }
-.hint-text { min-height: 1.2em; margin: 8px 0 0; color: #6b5644; font-weight: 600; }
-
 .choices {
   display: grid;
   grid-template-columns: 1fr;
@@ -411,14 +415,12 @@ button:disabled { opacity: 0.45; cursor: not-allowed; transform: none; filter: n
 
 /* MathJax rendering safety: prevent clipping and allow horizontal scroll for display math. */
 .problem mjx-container,
-.choice-btn mjx-container,
-.hint-text mjx-container {
+.choice-btn mjx-container {
   max-width: 100%;
 }
 
 .problem mjx-container[display="true"],
-.choice-btn mjx-container[display="true"],
-.hint-text mjx-container[display="true"] {
+.choice-btn mjx-container[display="true"] {
   display: block;
   overflow-x: auto;
   overflow-y: hidden;
@@ -754,7 +756,6 @@ button:disabled { opacity: 0.45; cursor: not-allowed; transform: none; filter: n
   .live-row { grid-template-columns: 1fr; }
   form,
   .actions,
-  .hint-row,
   .ai-form { grid-template-columns: 1fr; flex-direction: column; display: flex; }
 
   button { width: 100%; }

@@ -16,7 +16,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "3",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "10.10",
@@ -40,7 +39,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "56",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "10.46",
@@ -64,7 +62,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "12.19",
@@ -88,7 +85,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "3",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "12.44",
@@ -112,7 +108,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "13.27",
@@ -136,7 +131,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "13.29",
@@ -160,7 +154,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "5",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "13.32",
@@ -184,7 +177,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "5",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "13.33",
@@ -208,7 +200,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "6",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "16.16",
@@ -232,7 +223,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "100",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "16.25",
@@ -256,7 +246,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "0",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "16.31",
@@ -280,7 +269,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "16.7",
@@ -304,7 +292,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "18.24",
@@ -328,7 +315,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-3",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "19.11",
@@ -352,7 +338,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "7",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "19.17",
@@ -376,7 +361,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "3",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "19.20",
@@ -400,7 +384,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "7",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "19.31",
@@ -424,7 +407,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "5",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "19.45",
@@ -448,7 +430,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "19.47",
@@ -472,7 +453,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "5",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "19.60",
@@ -496,7 +476,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "12",
-    "hint": "Look for a substitution or a standard antiderivative pattern first.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "20.1",
@@ -520,7 +499,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "20.32",
@@ -544,7 +522,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "512/25",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "20.49",
@@ -568,7 +545,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "20.61",
@@ -592,7 +568,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "20.63",
@@ -616,7 +591,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "9",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "20.78",
@@ -640,7 +614,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "21.23",
@@ -664,7 +637,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "21.25",
@@ -688,7 +660,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "8",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "21.27",
@@ -712,7 +683,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "81",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "21.30",
@@ -736,7 +706,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "1",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "21.31",
@@ -760,7 +729,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "4",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "21.32",
@@ -784,7 +752,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "4",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "21.34",
@@ -808,7 +775,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "21.36",
@@ -832,7 +798,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "21.37",
@@ -856,7 +821,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "21.39",
@@ -880,7 +844,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "22.41",
@@ -904,7 +867,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "22.42",
@@ -928,7 +890,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "22.43",
@@ -952,7 +913,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "22.44",
@@ -976,7 +936,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "23.54",
@@ -1000,7 +959,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Isolate terms systematically and check for extraneous solutions.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "23.75",
@@ -1024,7 +982,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "3",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "23.78",
@@ -1048,7 +1005,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "3",
-    "hint": "Isolate terms systematically and check for extraneous solutions.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "24.40",
@@ -1072,7 +1028,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "24.93",
@@ -1096,7 +1051,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "27.61",
@@ -1120,7 +1074,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "0",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "27.62",
@@ -1144,7 +1097,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "1",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "27.81",
@@ -1168,7 +1120,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "1",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "27.82",
@@ -1192,7 +1143,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2931/100",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "29.32",
@@ -1216,7 +1166,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "3",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "29.33",
@@ -1240,7 +1189,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "3.10",
@@ -1264,7 +1212,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "5",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "3.44",
@@ -1288,7 +1235,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "3",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "3.45",
@@ -1312,7 +1258,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "3.5",
@@ -1336,7 +1281,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "3.79",
@@ -1360,7 +1304,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-4",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "3.81",
@@ -1384,7 +1327,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "313/10",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "31.2",
@@ -1408,7 +1350,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "329/10",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "32.54",
@@ -1432,7 +1373,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "1",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "32.55",
@@ -1456,7 +1396,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "32.56",
@@ -1480,7 +1419,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "-1",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "33.33",
@@ -1493,7 +1431,7 @@
     "contest": "calculus",
     "label": "Schaum (3000 Solved Problems) - Calculus",
     "weight": 8,
-    "prompt": "Find A: so that the angle between A = (3,-2) and B = (1, k) is 60\u00b0.",
+    "prompt": "Find A: so that the angle between A = (3,-2) and B = (1, k) is 60°.",
     "choices": [
       "0",
       "-4",
@@ -1504,7 +1442,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "33.35",
@@ -1528,7 +1465,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "3",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "34.22",
@@ -1552,7 +1488,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "5",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "34.28",
@@ -1576,7 +1511,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "34.33",
@@ -1600,7 +1534,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "16",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "34.35",
@@ -1624,7 +1557,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "34.37",
@@ -1648,7 +1580,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "3",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "34.39",
@@ -1672,7 +1603,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "34.84",
@@ -1696,7 +1626,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "898/25",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.107",
@@ -1720,7 +1649,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.109",
@@ -1744,7 +1672,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "-1",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.49",
@@ -1768,7 +1695,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.52",
@@ -1792,7 +1718,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.53",
@@ -1816,7 +1741,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.55",
@@ -1840,7 +1764,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "1",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.56",
@@ -1864,7 +1787,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.57",
@@ -1888,7 +1810,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.59",
@@ -1912,7 +1833,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.61",
@@ -1936,7 +1856,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.63",
@@ -1960,7 +1879,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "3",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.67",
@@ -1984,7 +1902,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "2",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.68",
@@ -2008,7 +1925,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.70",
@@ -2021,7 +1937,7 @@
     "contest": "calculus",
     "label": "Schaum (3000 Solved Problems) - Calculus",
     "weight": 8,
-    "prompt": "Find the area swept out by the equiangular spiral r = e\u00b0 from 9 = 0 to 0 = 2-rr",
+    "prompt": "Find the area swept out by the equiangular spiral r = e° from 9 = 0 to 0 = 2-rr",
     "choices": [
       "2",
       "1",
@@ -2032,7 +1948,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.71",
@@ -2056,7 +1971,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "5",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.76",
@@ -2080,7 +1994,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.77",
@@ -2104,7 +2017,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.79",
@@ -2128,7 +2040,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.80",
@@ -2152,7 +2063,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.83",
@@ -2176,7 +2086,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "3",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.94",
@@ -2200,7 +2109,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.96",
@@ -2224,7 +2132,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-2",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "35.97",
@@ -2248,7 +2155,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "1",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "37.113",
@@ -2272,7 +2178,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "693/1000",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "37.57",
@@ -2296,7 +2201,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "5040",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "37.58",
@@ -2320,7 +2224,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "107813131/500000000",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "37.9",
@@ -2344,7 +2247,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "0",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "38.109",
@@ -2368,7 +2270,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "1",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "38.113",
@@ -2392,7 +2293,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "1",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "38.31",
@@ -2416,7 +2316,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "10",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "4.11",
@@ -2440,7 +2339,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "8",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "4.23",
@@ -2464,7 +2362,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "40.1",
@@ -2488,7 +2385,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "40.39",
@@ -2512,7 +2408,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "40.56",
@@ -2536,7 +2431,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "5",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "40.89",
@@ -2560,7 +2454,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "4091/100",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "40.92",
@@ -2584,7 +2477,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "40.95",
@@ -2597,7 +2489,7 @@
     "contest": "calculus",
     "label": "Schaum (3000 Solved Problems) - Calculus",
     "weight": 8,
-    "prompt": "Find the derivative of f(x, y) = 2xt (1, 2) in the direction of the unit vector u making an angle of 45\u00b0 with the positive ;t-axis.",
+    "prompt": "Find the derivative of f(x, y) = 2xt (1, 2) in the direction of the unit vector u making an angle of 45° with the positive ;t-axis.",
     "choices": [
       "-4",
       "-1",
@@ -2608,7 +2500,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-2",
-    "hint": "Differentiate step-by-step, then plug in any requested point.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "43.3",
@@ -2632,7 +2523,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "43.32",
@@ -2656,7 +2546,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "5",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "43.34",
@@ -2680,7 +2569,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "43.35",
@@ -2704,7 +2592,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "0",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "43.40",
@@ -2728,7 +2615,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "43.42",
@@ -2741,7 +2627,7 @@
     "contest": "calculus",
     "label": "Schaum (3000 Solved Problems) - Calculus",
     "weight": 8,
-    "prompt": "Find the shortest distance between the line \u00abS?",
+    "prompt": "Find the shortest distance between the line «S?",
     "choices": [
       "2",
       "-3",
@@ -2752,7 +2638,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "1",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "43.48",
@@ -2776,7 +2661,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "9",
-    "hint": "Differentiate step-by-step, then plug in any requested point.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "43.5",
@@ -2800,7 +2684,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "43.61",
@@ -2824,7 +2707,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Look for a substitution or a standard antiderivative pattern first.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.1",
@@ -2848,7 +2730,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.12",
@@ -2872,7 +2753,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "4",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.17",
@@ -2896,7 +2776,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "4",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.22",
@@ -2920,7 +2799,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "9",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.23",
@@ -2944,7 +2822,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "512/25",
-    "hint": "Look for a substitution or a standard antiderivative pattern first.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.3",
@@ -2968,7 +2845,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.31",
@@ -2992,7 +2868,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.32",
@@ -3016,7 +2891,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "1",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.36",
@@ -3040,7 +2914,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "4447/100",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.49",
@@ -3064,7 +2937,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "25",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.56",
@@ -3088,7 +2960,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.57",
@@ -3112,7 +2983,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "36",
-    "hint": "Write the geometric formula first, then substitute carefully.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.67",
@@ -3136,7 +3006,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Translate geometry into formulas before simplifying.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.83",
@@ -3160,7 +3029,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "405",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "44.9",
@@ -3184,7 +3052,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "1131/25",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "45.26",
@@ -3208,7 +3075,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "3",
-    "hint": "Isolate terms systematically and check for extraneous solutions.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "46.29",
@@ -3232,7 +3098,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Isolate terms systematically and check for extraneous solutions.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "46.35",
@@ -3256,7 +3121,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Isolate terms systematically and check for extraneous solutions.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "46.36",
@@ -3280,7 +3144,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Isolate terms systematically and check for extraneous solutions.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "46.47",
@@ -3304,7 +3167,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "1",
-    "hint": "Isolate terms systematically and check for extraneous solutions.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "46.59",
@@ -3328,7 +3190,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Isolate terms systematically and check for extraneous solutions.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "46.64",
@@ -3352,7 +3213,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "0",
-    "hint": "Isolate terms systematically and check for extraneous solutions.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "46.65",
@@ -3376,7 +3236,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Compute slope from two points or convert to slope-intercept form.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "46.74",
@@ -3400,7 +3259,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "6.17",
@@ -3424,7 +3282,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "0",
-    "hint": "Define variables clearly and simplify in small, verifiable steps.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "6.19",
@@ -3448,7 +3305,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Differentiate step-by-step, then plug in any requested point.",
     "source": {
       "pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
       "problemKey": "8.27",

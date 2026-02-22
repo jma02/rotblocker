@@ -17,7 +17,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -42,7 +41,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -67,7 +65,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -92,7 +89,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "-40",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -117,7 +113,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -142,7 +137,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{-17}{10}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -167,7 +161,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "30",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -192,7 +185,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -217,7 +209,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "32",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -242,7 +233,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -267,7 +257,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -292,7 +281,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "4",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -317,7 +305,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -342,7 +329,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -367,7 +353,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{-3}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -392,7 +377,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -417,7 +401,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "24",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -442,7 +425,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "-2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -467,7 +449,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -492,7 +473,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-32",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -517,7 +497,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -542,7 +521,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{-9}{10}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -567,7 +545,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "-34",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -592,7 +569,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -617,7 +593,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -642,7 +617,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{-9}{4}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -667,7 +641,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -692,7 +665,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -717,7 +689,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -742,7 +713,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -767,7 +737,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -792,7 +761,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -817,7 +785,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -842,7 +809,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "42",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -867,7 +833,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -892,7 +857,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -917,7 +881,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "107",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -942,7 +905,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{6}{7}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -967,7 +929,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -992,7 +953,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "122",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1017,7 +977,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "109",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1042,7 +1001,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{5}{17}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1067,7 +1025,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1092,7 +1049,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "62",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1117,7 +1073,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1142,7 +1097,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1167,7 +1121,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1192,7 +1145,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1217,7 +1169,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "46",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1242,7 +1193,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "84",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1267,7 +1217,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{6}{17}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1292,7 +1241,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "-1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1317,7 +1265,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "67",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1342,7 +1289,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1367,7 +1313,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "-6",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1392,7 +1337,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{3}{4}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1417,7 +1361,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{2}{5}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1442,7 +1385,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{1}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1467,7 +1409,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1492,7 +1433,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1517,7 +1457,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "-2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1542,7 +1481,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "15",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1567,7 +1505,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "13",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1592,7 +1529,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "91",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1617,7 +1553,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1642,7 +1577,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "123",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1667,7 +1601,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{2}{5}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1692,7 +1625,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{1}{4}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1717,7 +1649,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{1}{4}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1742,7 +1673,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "3",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1767,7 +1697,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{2}{11}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1792,7 +1721,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1817,7 +1745,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1842,7 +1769,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "58",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1867,7 +1793,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "34",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1892,7 +1817,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1917,7 +1841,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{3}{13}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1942,7 +1865,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "98",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1967,7 +1889,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "10",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1992,7 +1913,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{2}{7}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2017,7 +1937,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{58}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2042,7 +1961,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{8}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2067,7 +1985,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{22}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2092,7 +2009,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "63",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2117,7 +2033,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{44}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2142,7 +2057,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "-24",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2167,7 +2081,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "9",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2192,7 +2105,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "34",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2217,7 +2129,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-24",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2242,7 +2153,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{81}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2267,7 +2177,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "36",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2292,7 +2201,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "60",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2317,7 +2225,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "18",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2342,7 +2249,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "16",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2367,7 +2273,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{15}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2392,7 +2297,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{69}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2417,7 +2321,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{93}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2442,7 +2345,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "36",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2467,7 +2369,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{63}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2492,7 +2393,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2517,7 +2417,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2542,7 +2441,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{104}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2567,7 +2465,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "9",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2592,7 +2489,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "20",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2617,7 +2513,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "63",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2642,7 +2537,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{83}{6}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2667,7 +2561,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-32",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2692,7 +2585,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{-2}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2717,7 +2609,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-6",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2742,7 +2633,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{37}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2767,7 +2657,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{26}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2792,7 +2681,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "-35",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2817,7 +2705,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2842,7 +2729,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "16",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2867,7 +2753,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "24",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2892,7 +2777,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "42",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2917,7 +2801,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{50}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2942,7 +2825,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{95}{6}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2967,7 +2849,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "99",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2992,7 +2873,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-64",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3017,7 +2897,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{75}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3042,7 +2921,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "-7",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3067,7 +2945,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{20}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3092,7 +2969,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "-15",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3117,7 +2993,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "30",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3142,7 +3017,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3167,7 +3041,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "14",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3192,7 +3065,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "9",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3217,7 +3089,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{1}{18}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3242,7 +3113,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "20",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3267,7 +3137,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "24",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3292,7 +3161,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "-2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3317,7 +3185,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "5",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3342,7 +3209,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3367,7 +3233,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-18",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3392,7 +3257,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "-8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3417,7 +3281,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3442,7 +3305,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "30",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3467,7 +3329,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "7",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3492,7 +3353,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "3",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3517,7 +3377,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "-38",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3542,7 +3401,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "6",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3567,7 +3425,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "10",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3592,7 +3449,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "22",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3617,7 +3473,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{1}{20}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3642,7 +3497,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "34",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3667,7 +3521,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "16",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3692,7 +3545,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3717,7 +3569,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "18",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3742,7 +3593,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "14",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3767,7 +3617,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "15",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3792,7 +3641,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "16",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3817,7 +3665,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{1}{32}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3842,7 +3689,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "36",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3867,7 +3713,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-26",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3892,7 +3737,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{1}{36}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3917,7 +3761,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "3",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3942,7 +3785,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{1}{16}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3967,7 +3809,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "4",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3992,7 +3833,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "20",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4017,7 +3857,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "18",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4042,7 +3881,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{1}{12}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4067,7 +3905,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4092,7 +3929,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "18",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4117,7 +3953,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{1}{26}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4142,7 +3977,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{1}{24}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4167,7 +4001,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "38",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4192,7 +4025,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{1}{8}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4217,7 +4049,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "180",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4242,7 +4073,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "15",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4267,7 +4097,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-12",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4292,7 +4121,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4317,7 +4145,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "208",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4342,7 +4169,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4367,7 +4193,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "360",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4392,7 +4217,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "12",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4417,7 +4241,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "-8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4442,7 +4265,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "48",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4467,7 +4289,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4492,7 +4313,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "5",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4517,7 +4337,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-36",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4542,7 +4361,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "20",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4567,7 +4385,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "100",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4592,7 +4409,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4617,7 +4433,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "48",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4642,7 +4457,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "6",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4667,7 +4481,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "100",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4692,7 +4505,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4717,7 +4529,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "72",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4742,7 +4553,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "51",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4767,7 +4577,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "16",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4792,7 +4601,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "-8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4817,7 +4625,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-24",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4842,7 +4649,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "640",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4867,7 +4673,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "20",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4892,7 +4697,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "-8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4917,7 +4721,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4942,7 +4745,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "-18",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4967,7 +4769,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "340",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4992,7 +4793,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "63",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5017,7 +4817,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{63}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5042,7 +4841,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "-2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5067,7 +4865,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "100",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5092,7 +4889,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5117,7 +4913,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "6",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5142,7 +4937,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "0",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5167,7 +4961,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "40",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5192,7 +4985,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "4",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5217,7 +5009,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "400",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5242,7 +5033,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "832",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5267,7 +5057,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-48",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5292,7 +5081,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5317,7 +5105,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-12",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5342,7 +5129,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-48",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5367,7 +5153,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5392,7 +5177,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "180",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5417,7 +5201,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "44",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5442,7 +5225,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5467,7 +5249,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "-8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5492,7 +5273,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "-4",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5517,7 +5297,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "25",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5542,7 +5321,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "2",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5567,7 +5345,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "96",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5592,7 +5369,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "16",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5617,7 +5393,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "28",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5642,7 +5417,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{361}{4}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5667,7 +5441,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "56",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5692,7 +5465,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "9",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5717,7 +5489,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "100",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5742,7 +5513,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "144",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5767,7 +5537,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "15",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5792,7 +5561,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "48",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5817,7 +5585,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "40",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5842,7 +5609,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "576",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5867,7 +5633,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "8",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5892,7 +5657,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "19",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5917,7 +5681,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "6",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5942,7 +5705,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{1225}{4}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5967,7 +5729,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{2025}{4}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5992,7 +5753,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "441",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6017,7 +5777,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "36",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6042,7 +5801,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "13",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6067,7 +5825,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "24",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6092,7 +5849,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "12",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6117,7 +5873,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "17",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6142,7 +5897,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "88",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6167,7 +5921,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "84",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6192,7 +5945,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "104",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6217,7 +5969,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "4",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6242,7 +5993,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "256",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6267,7 +6017,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "14",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6292,7 +6041,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "10",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6317,7 +6065,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "12",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6342,7 +6089,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{3}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6367,7 +6113,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "9",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6392,7 +6137,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{27}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6417,7 +6161,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{9}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6442,7 +6185,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{27}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6467,7 +6209,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{9}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6492,7 +6233,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "9",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6517,7 +6257,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "6",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6542,7 +6281,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "24",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6567,7 +6305,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "6",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6592,7 +6329,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "3",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6617,7 +6353,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "18",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6642,7 +6377,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "24",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6667,7 +6401,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{3}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6692,7 +6425,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "9",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6717,7 +6449,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6742,7 +6473,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{5}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6767,7 +6497,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "4",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6792,7 +6521,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "3",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6817,7 +6545,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{25}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6842,7 +6569,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{10}{9}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6867,7 +6593,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6892,7 +6617,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{32}{7}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6917,7 +6641,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{24}{5}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6942,7 +6665,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{20}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6967,7 +6689,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6992,7 +6713,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7017,7 +6737,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{5}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7042,7 +6761,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "6",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7067,7 +6785,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "1",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7092,7 +6809,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "$\\frac{45}{7}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7117,7 +6833,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "5",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7142,7 +6857,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{10}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7167,7 +6881,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{8}{5}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7192,7 +6905,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{35}{4}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7217,7 +6929,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{5}{2}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7242,7 +6953,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{18}{5}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7267,7 +6977,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "4",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7292,7 +7001,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "$\\frac{7}{4}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7317,7 +7025,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{50}{7}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7342,7 +7049,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "$\\frac{25}{3}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7367,7 +7073,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "$\\frac{14}{5}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7392,7 +7097,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "$\\frac{28}{5}$",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7417,7 +7121,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "6",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7442,7 +7145,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "225",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7467,7 +7169,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "7",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7492,7 +7193,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "10",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7517,7 +7217,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "200",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7542,7 +7241,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "720",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7567,7 +7265,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "216",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7592,7 +7289,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "256",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7617,7 +7313,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "216",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7642,7 +7337,6 @@
     "answerIndex": 1,
     "answerKey": "B",
     "answer": "180",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7667,7 +7361,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "7",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7692,7 +7385,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "13",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7717,7 +7409,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "640",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7742,7 +7433,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "243",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7767,7 +7457,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "180",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7792,7 +7481,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "12",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7817,7 +7505,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "10",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7842,7 +7529,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "280",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7867,7 +7553,6 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "7",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7892,7 +7577,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "144",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7917,7 +7601,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "64",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7942,7 +7625,6 @@
     "answerIndex": 3,
     "answerKey": "D",
     "answer": "64",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7967,7 +7649,6 @@
     "answerIndex": 0,
     "answerKey": "A",
     "answer": "7",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7992,7 +7673,6 @@
     "answerIndex": 2,
     "answerKey": "C",
     "answer": "-48",
-    "hint": "Identify the governing formula first, then compute carefully.",
     "source": {
       "dataset": "synthetic_calculus_v2",
       "generator": "scripts/generate_calculus_synthetic.py",

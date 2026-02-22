@@ -56,3 +56,14 @@ test("assistant markdown math path also recovers after MathJax appears", async (
   assert.equal(typesetCalls, 1);
   assert.equal(el.dataset.mathPending, undefined);
 });
+
+test("assistant markdown without math clears any prior pending marker", () => {
+  const fns = loadChallengeFns({ windowMathJax: null });
+  const el = makeEl();
+  el.dataset.mathPending = "1";
+
+  fns.renderAssistantMarkdownText(el, "Use **parity** and *mod arithmetic*.");
+
+  assert.equal(el.dataset.mathPending, undefined);
+  assert.match(el.innerHTML, /<strong>parity<\/strong>/);
+});

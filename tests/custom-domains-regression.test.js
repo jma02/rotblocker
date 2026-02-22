@@ -7,6 +7,19 @@ function readText(relPath) {
   return fs.readFileSync(path.join(process.cwd(), relPath), "utf8");
 }
 
+function readAppSource() {
+  return [
+    "challenge-modules/constants.js",
+    "challenge-modules/dom.js",
+    "challenge-modules/math.js",
+    "challenge-modules/sync.js",
+    "challenge-modules/tutor.js",
+    "challenge.js",
+    "challenge-modules/gameplay.js",
+    "challenge-modules/bootstrap.js"
+  ].map(readText).join("\n");
+}
+
 test("popup includes basic custom-domain settings controls", () => {
   const html = readText("popup.html");
   assert.match(html, /id="tab-settings"/);
@@ -48,7 +61,7 @@ test("challenge stylesheet keeps custom-domain modal hidden until opened", () =>
 });
 
 test("challenge script wires custom-domain message types", () => {
-  const source = readText("challenge.js");
+  const source = readAppSource();
   assert.match(source, /type:\s*"GET_SETTINGS"/);
   assert.match(source, /type:\s*"SET_LOCKOUT_COOLDOWN"/);
   assert.match(source, /type:\s*"GET_SYNC_STATUS"/);

@@ -27,18 +27,46 @@ function assertSourceOrder(source, firstSrc, secondSrc) {
 test("rotblocker entrypoint loads scoring.js before challenge.js", () => {
   const source = readText("rotblocker++/index.html");
   assertDeferredScriptPresent(source, "../scoring.js");
+  assertDeferredScriptPresent(source, "../challenge-modules/constants.js");
+  assertDeferredScriptPresent(source, "../challenge-modules/dom.js");
+  assertDeferredScriptPresent(source, "../challenge-modules/math.js");
+  assertDeferredScriptPresent(source, "../challenge-modules/sync.js");
+  assertDeferredScriptPresent(source, "../challenge-modules/tutor.js");
   assertDeferredScriptPresent(source, "../challenge.js");
+  assertDeferredScriptPresent(source, "../challenge-modules/gameplay.js");
+  assertDeferredScriptPresent(source, "../challenge-modules/bootstrap.js");
   assert.match(source, /<script\s+src="\.\.\/mathjax-config\.js"\s*><\/script>/);
   assertDeferredScriptPresent(source, "../node_modules/mathjax/es5/tex-mml-chtml.js");
   assert.doesNotMatch(source, /<script>\s*window\.MathJax\s*=/);
   assertSourceOrder(source, "../mathjax-config.js", "../node_modules/mathjax/es5/tex-mml-chtml.js");
   assertSourceOrder(source, "../node_modules/mathjax/es5/tex-mml-chtml.js", "../scoring.js");
-  assertSourceOrder(source, "../scoring.js", "../challenge.js");
+  assertSourceOrder(source, "../scoring.js", "../challenge-modules/constants.js");
+  assertSourceOrder(source, "../challenge-modules/constants.js", "../challenge-modules/dom.js");
+  assertSourceOrder(source, "../challenge-modules/dom.js", "../challenge-modules/math.js");
+  assertSourceOrder(source, "../challenge-modules/math.js", "../challenge-modules/sync.js");
+  assertSourceOrder(source, "../challenge-modules/sync.js", "../challenge-modules/tutor.js");
+  assertSourceOrder(source, "../challenge-modules/tutor.js", "../challenge.js");
+  assertSourceOrder(source, "../challenge.js", "../challenge-modules/gameplay.js");
+  assertSourceOrder(source, "../challenge-modules/gameplay.js", "../challenge-modules/bootstrap.js");
 });
 
 test("legacy challenge entrypoint loads scoring.js before challenge.js", () => {
   const source = readText("challenge.html");
   assertDeferredScriptPresent(source, "scoring.js");
+  assertDeferredScriptPresent(source, "challenge-modules/constants.js");
+  assertDeferredScriptPresent(source, "challenge-modules/dom.js");
+  assertDeferredScriptPresent(source, "challenge-modules/math.js");
+  assertDeferredScriptPresent(source, "challenge-modules/sync.js");
+  assertDeferredScriptPresent(source, "challenge-modules/tutor.js");
   assertDeferredScriptPresent(source, "challenge.js");
-  assertSourceOrder(source, "scoring.js", "challenge.js");
+  assertDeferredScriptPresent(source, "challenge-modules/gameplay.js");
+  assertDeferredScriptPresent(source, "challenge-modules/bootstrap.js");
+  assertSourceOrder(source, "scoring.js", "challenge-modules/constants.js");
+  assertSourceOrder(source, "challenge-modules/constants.js", "challenge-modules/dom.js");
+  assertSourceOrder(source, "challenge-modules/dom.js", "challenge-modules/math.js");
+  assertSourceOrder(source, "challenge-modules/math.js", "challenge-modules/sync.js");
+  assertSourceOrder(source, "challenge-modules/sync.js", "challenge-modules/tutor.js");
+  assertSourceOrder(source, "challenge-modules/tutor.js", "challenge.js");
+  assertSourceOrder(source, "challenge.js", "challenge-modules/gameplay.js");
+  assertSourceOrder(source, "challenge-modules/gameplay.js", "challenge-modules/bootstrap.js");
 });

@@ -20,13 +20,14 @@ test("preview mode normalizes %2B path segments in the address bar", () => {
     }
   };
 
-  loadChallengeFns({
+  const { canonicalizeRotblockerPreviewPath } = loadChallengeFns({
     pathname: "/rotblocker%2B%2B/index.html",
     search: "?tab=preview",
     hash: "#math",
     extensionRuntime: false,
     historyOverride
   });
+  canonicalizeRotblockerPreviewPath();
 
   assert.equal(calls.length, 1);
   assert.deepEqual(calls[0], {

@@ -553,17 +553,6 @@ def amc8_weight(_link: str) -> int:
     return 5
 
 
-def make_hint(problem_text: str) -> str:
-    p = clean_text(problem_text).lower()
-    if 'probability' in p: return 'Count favorable and total outcomes separately before simplifying.'
-    if 'remainder' in p or 'mod' in p: return 'Use modular arithmetic to keep computations small.'
-    if 'factor' in p or 'divisor' in p: return 'Prime-factorize key numbers and use exponent logic.'
-    if 'triangle' in p or 'circle' in p or 'area' in p or 'perimeter' in p: return 'Draw and label a diagram before writing equations.'
-    if 'equation' in p or 'root' in p: return 'Rewrite into a standard algebraic form and solve systematically.'
-    if 'digit' in p or 'integer' in p: return 'Use parity/divisibility and place-value constraints to narrow cases.'
-    return 'Define variables clearly and break the target into smaller computable steps.'
-
-
 # Group rows by problem id and keep first non-empty values
 by_pid = {}
 with SRC.open(newline='', encoding='utf-8') as f:
@@ -613,8 +602,7 @@ for pid, row in by_pid.items():
             'choices': choices,
             'answerIndex': answer_index,
             'answerKey': 'ABCDE'[answer_index],
-            'answer': choices[answer_index],
-            'hint': make_hint(row['problem'])
+            'answer': choices[answer_index]
         }
         if diagram_assets.get('png'):
             obj['diagramPng'] = diagram_assets['png']
@@ -640,8 +628,7 @@ for pid, row in by_pid.items():
             'label': label,
             'weight': weight,
             'prompt': prompt,
-            'answer': answer,
-            'hint': make_hint(row['problem'])
+            'answer': answer
         }
         if diagram_assets.get('png'):
             obj['diagramPng'] = diagram_assets['png']

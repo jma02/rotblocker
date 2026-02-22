@@ -142,7 +142,6 @@ def clean_row(item: dict[str, Any]) -> dict[str, Any]:
     out["prompt"] = normalize_text(out.get("prompt", ""))
     out["choices"] = [normalize_text(c) for c in out.get("choices", [])]
     out["answer"] = normalize_text(out.get("answer", ""))
-    out["hint"] = normalize_text(out.get("hint", ""))
     return out
 
 

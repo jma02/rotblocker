@@ -59,7 +59,10 @@ test("scoring browser global is RotBlockerScoring", () => {
 });
 
 test("challenge code prefers renamed scoring symbol with safe compatibility fallback", () => {
-  const source = fs.readFileSync(path.join(process.cwd(), "challenge.js"), "utf8");
+  const source = [
+    fs.readFileSync(path.join(process.cwd(), "challenge.js"), "utf8"),
+    fs.readFileSync(path.join(process.cwd(), "challenge-modules/gameplay.js"), "utf8")
+  ].join("\n");
   assert.match(source, /\bresolveScoringApi\b/);
   assert.match(source, /\bRotBlockerScoring\b/);
   assert.match(source, /\bscoringApi\.(?:guessMultiplier|decayedBasePoints|pointsIfCorrectNow)\b/);

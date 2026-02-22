@@ -7,24 +7,6 @@ from pathlib import Path
 SRC = Path('third_party/kaggle_aime/AIME_Dataset_1983_2024.csv')
 DST = Path('data/aime.json')
 
-def make_hint(question: str) -> str:
-    q = question.lower()
-    if 'probability' in q:
-        return 'Count favorable outcomes and total outcomes separately before simplifying the ratio.'
-    if 'remainder' in q or 'mod' in q:
-        return 'Use modular arithmetic to reduce large expressions before computing.'
-    if 'gcd' in q or 'lcm' in q:
-        return 'Prime-factorize each number first, then compare prime powers carefully.'
-    if 'triangle' in q or 'circle' in q or 'perimeter' in q or 'area' in q:
-        return 'Draw a diagram and label known quantities before writing equations.'
-    if 'root' in q or 'equation' in q:
-        return 'Rewrite the condition into a standard algebraic form, then solve systematically.'
-    if 'sequence' in q or 'series' in q:
-        return 'Look for a pattern in the first few terms and express it algebraically.'
-    if 'digit' in q or 'integer' in q:
-        return 'Use place value constraints and parity/divisibility to narrow possibilities.'
-    return 'Identify the target quantity, define variables clearly, and break the problem into smaller claims.'
-
 rows = []
 with SRC.open(newline='', encoding='utf-8') as f:
     reader = csv.DictReader(f)
@@ -61,8 +43,7 @@ with SRC.open(newline='', encoding='utf-8') as f:
             'label': label,
             'weight': 60,
             'prompt': prompt,
-            'answer': answer,
-            'hint': make_hint(q)
+            'answer': answer
         }
         if accepted:
             item['acceptableAnswers'] = accepted

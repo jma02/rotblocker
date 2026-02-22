@@ -271,27 +271,6 @@ def build_choices(ans: Fraction, rng: random.Random) -> Optional[tuple[list[str]
     return choices, answer_index
 
 
-def make_hint(prompt: str) -> str:
-    p = (prompt or "").lower()
-    if "derivative" in p:
-        return "Differentiate step-by-step, then plug in any requested point."
-    if "integral" in p:
-        return "Look for a substitution or a standard antiderivative pattern first."
-    if "limit" in p:
-        return "Try algebraic simplification before applying limit laws."
-    if "slope" in p or "line" in p:
-        return "Compute slope from two points or convert to slope-intercept form."
-    if "distance" in p or "radius" in p:
-        return "Translate geometry into formulas before simplifying."
-    if "area" in p or "volume" in p:
-        return "Write the geometric formula first, then substitute carefully."
-    if "rate" in p or "how fast" in p:
-        return "Relate variables with an equation, then differentiate with respect to time."
-    if "solve" in p:
-        return "Isolate terms systematically and check for extraneous solutions."
-    return "Define variables clearly and simplify in small, verifiable steps."
-
-
 def build_dataset(segments: Iterable[Segment]) -> tuple[list[dict], dict]:
     rng = random.Random(SEED)
     out: list[dict] = []
@@ -337,7 +316,6 @@ def build_dataset(segments: Iterable[Segment]) -> tuple[list[dict], dict]:
                 "answerIndex": answer_index,
                 "answerKey": "ABCDE"[answer_index],
                 "answer": choices[answer_index],
-                "hint": make_hint(prompt),
                 "source": {
                     "pdf": str(SRC),
                     "problemKey": seg.key,

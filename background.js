@@ -283,6 +283,33 @@ async function syncCustomDomainRules(locked) {
   return domains;
 }
 
+function arraysEqual(left, right) {
+  const a = Array.isArray(left) ? left : [];
+  const b = Array.isArray(right) ? right : [];
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i += 1) {
+    if (a[i] !== b[i]) return false;
+  }
+  return true;
+}
+
+function syncPayloadEquals(leftPayload, rightPayload) {
+  const left = leftPayload && typeof leftPayload === "object" ? leftPayload : {};
+  const right = rightPayload && typeof rightPayload === "object" ? rightPayload : {};
+  const leftUnlocked = Number.isFinite(Number(left.unlockedUntil)) ? Math.floor(Number(left.unlockedUntil)) : null;
+  const rightUnlocked = Number.isFinite(Number(right.unlockedUntil)) ? Math.floor(Number(right.unlockedUntil)) : null;
+  return (
+    Number(left.score) === Number(right.score)
+    && Number(left.xp) === Number(right.xp)
+    && Math.floor(Number(left.prestige) || 0) === Math.floor(Number(right.prestige) || 0)
+    && leftUnlocked === rightUnlocked
+    && Number(left[LOCKOUT_COOLDOWN_KEY]) === Number(right[LOCKOUT_COOLDOWN_KEY])
+    && Math.floor(Number(left.stateUpdatedAt) || 0) === Math.floor(Number(right.stateUpdatedAt) || 0)
+    && arraysEqual(left[CUSTOM_DOMAINS_KEY], right[CUSTOM_DOMAINS_KEY])
+    && Math.floor(Number(left[CUSTOM_DOMAINS_UPDATED_AT_KEY]) || 0) === Math.floor(Number(right[CUSTOM_DOMAINS_UPDATED_AT_KEY]) || 0)
+  );
+}
+
 async function reconcileLocalWithChromeSync() {
   if (!supportsSyncStorage()) return;
 
@@ -307,13 +334,13 @@ async function reconcileLocalWithChromeSync() {
 
   const localPayload = syncPayloadFromState(localRaw);
   const mergedPayload = syncPayloadFromState(merged);
-  const localDiffers = JSON.stringify(localPayload) !== JSON.stringify(mergedPayload);
+  const localDiffers = !syncPayloadEquals(localPayload, mergedPayload);
   if (localDiffers) {
     await setStorage(mergedPayload);
   }
 
   const remotePayload = syncPayloadFromState(syncRaw);
-  const remoteDiffers = JSON.stringify(remotePayload) !== JSON.stringify(mergedPayload);
+  const remoteDiffers = !syncPayloadEquals(remotePayload, mergedPayload);
   if (remoteDiffers) {
     await setSyncStorage(mergedPayload);
   }

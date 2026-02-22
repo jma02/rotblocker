@@ -30,6 +30,16 @@
       }
     ]
   },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "rotblocker++/index.html"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
   "icons": {
     "16": "assets/logo/icon16.png",
     "32": "assets/logo/icon32.png",

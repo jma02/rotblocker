@@ -1,93 +1,12 @@
 {
-  "rewrittenAt": "2026-02-21T14:47:30.734Z",
-  "inputCount": 103,
-  "keptCount": 84,
-  "droppedCount": 19,
-  "droppedReasons": {
-    "scan_page_suffix": 11,
-    "ambiguous_math_tokenization": 7,
-    "ocr_wording": 1
-  },
+  "rewrittenAt": "2026-02-22T01:36:10.030Z",
+  "inputCount": 44,
+  "keptCount": 44,
+  "droppedCount": 0,
+  "droppedReasons": {},
   "keptBySource": {
-    "GREBootcamp": 64,
-    "GREpractice": 20
+    "GREBootcamp": 33,
+    "GREpractice": 11
   },
-  "droppedExamples": [
-    {
-      "id": "upper-gre-grebootcamp-s1-q6-860d4e3d",
-      "reason": "ambiguous_math_tokenization"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q1-ea2fb6c4",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q10-45a01523",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q2-9e6b8e8b",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q2-fff62759",
-      "reason": "ambiguous_math_tokenization"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q3-2f442fce",
-      "reason": "ambiguous_math_tokenization"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q3-3c8feaf0",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q4-4c0797b8",
-      "reason": "ambiguous_math_tokenization"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q4-91f81ca8",
-      "reason": "ocr_wording"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q5-9e40c738",
-      "reason": "ambiguous_math_tokenization"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q6-0911c637",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s10-q6-ec560e68",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s5-q8-380d7003",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s7-q9-b6aa6a01",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grebootcamp-s8-q3-ddd6dcea",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grepractice-s-q27-bed1e8aa",
-      "reason": "ambiguous_math_tokenization"
-    },
-    {
-      "id": "upper-gre-grepractice-s-q35-14448605",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grepractice-s-q44-274fad66",
-      "reason": "scan_page_suffix"
-    },
-    {
-      "id": "upper-gre-grepractice-s-q45-554fabfb",
-      "reason": "ambiguous_math_tokenization"
-    }
-  ]
+  "droppedExamples": []
 }

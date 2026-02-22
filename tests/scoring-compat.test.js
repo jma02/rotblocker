@@ -46,7 +46,6 @@ test("resolveScoringApi provides internal fallback when no global is present", (
     baseWeight: 10,
     elapsedMs: 0,
     durationMs: 1000,
-    hintUsed: false,
     isMcq: true,
     wrongGuesses: 1,
     multipliers: [1, 0.1]

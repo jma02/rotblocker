@@ -16,6 +16,7 @@ from typing import Callable
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / "data" / "calculus_mcq_synthetic.json"
 DEFAULT_REPORT = ROOT / "data" / "calculus_mcq_synthetic_report.json"
+DATASET_NAME = "synthetic_calculus_v3"
 
 
 def frac_to_tex(value: Fraction) -> str:
@@ -111,13 +112,109 @@ def make_mcq(
         "answerIndex": answer_index,
         "answerKey": "ABCDE"[answer_index],
         "answer": choices[answer_index],
-        "hint": "Identify the governing formula first, then compute carefully.",
         "source": {
-            "dataset": "synthetic_calculus_v2",
+            "dataset": DATASET_NAME,
             "generator": "scripts/generate_calculus_synthetic.py",
             "topic": topic,
         },
     }
+
+
+def make_text_mcq(
+    *,
+    pid: str,
+    topic: str,
+    prompt: str,
+    choices: list[str],
+    answer_index: int,
+    rng: random.Random,
+) -> dict:
+    if len(choices) != 5:
+        raise ValueError("text MCQ must have exactly 5 choices")
+    ordered = list(choices)
+    correct = ordered[answer_index]
+    rng.shuffle(ordered)
+    answer_index = ordered.index(correct)
+    return {
+        "id": pid,
+        "type": "mcq",
+        "contest": "calculus",
+        "label": "Synthetic Calculus MCQ",
+        "topic": topic,
+        "weight": 5,
+        "prompt": prompt,
+        "choices": ordered,
+        "answerIndex": answer_index,
+        "answerKey": "ABCDE"[answer_index],
+        "answer": ordered[answer_index],
+        "source": {
+            "dataset": DATASET_NAME,
+            "generator": "scripts/generate_calculus_synthetic.py",
+            "topic": topic,
+        },
+    }
+
+
+def normalize_for_key(text: str) -> str:
+    return " ".join(str(text or "").strip().lower().split())
+
+
+def row_dedupe_key(row: dict) -> str:
+    prompt = normalize_for_key(row.get("prompt", ""))
+    topic = normalize_for_key(row.get("topic", ""))
+    choices = [normalize_for_key(c) for c in row.get("choices", [])]
+    choice_sig = "|".join(sorted(choices))
+    return f"{topic}::{prompt}::{choice_sig}"
+
+
+def svg_escape(text: str) -> str:
+    return (
+        str(text or "")
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
+
+
+def make_plot_svg(points: list[tuple[float, float]], title: str) -> str:
+    width, height = 520, 280
+    margin = 24
+    xs = [p[0] for p in points]
+    ys = [p[1] for p in points]
+    x_min, x_max = min(xs), max(xs)
+    y_min, y_max = min(ys), max(ys)
+    x_span = max(1e-6, x_max - x_min)
+    y_span = max(1e-6, y_max - y_min)
+    x_pad = 0.08 * x_span
+    y_pad = 0.15 * y_span
+    x0, x1 = x_min - x_pad, x_max + x_pad
+    y0, y1 = y_min - y_pad, y_max + y_pad
+
+    def sx(xv: float) -> float:
+        return margin + (xv - x0) * (width - 2 * margin) / (x1 - x0)
+
+    def sy(yv: float) -> float:
+        return height - margin - (yv - y0) * (height - 2 * margin) / (y1 - y0)
+
+    axis_x = sy(0.0)
+    axis_y = sx(0.0)
+    axis_x = max(margin, min(height - margin, axis_x))
+    axis_y = max(margin, min(width - margin, axis_y))
+
+    poly = " ".join(f"{sx(px):.2f},{sy(py):.2f}" for px, py in points)
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" role="img" aria-label="{svg_escape(title)}">'
+        f'<rect x="0" y="0" width="{width}" height="{height}" fill="#ffffff"/>'
+        f'<line x1="{margin}" y1="{axis_x:.2f}" x2="{width-margin}" y2="{axis_x:.2f}" '
+        f'stroke="#7f7f7f" stroke-width="1"/>'
+        f'<line x1="{axis_y:.2f}" y1="{margin}" x2="{axis_y:.2f}" y2="{height-margin}" '
+        f'stroke="#7f7f7f" stroke-width="1"/>'
+        f'<polyline points="{poly}" fill="none" stroke="#1f4f95" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>'
+        f'<text x="{margin}" y="{margin-6}" font-size="12" fill="#444">{svg_escape(title)}</text>'
+        '</svg>'
+    )
 
 
 def gen_poly_derivative(idx: int, rng: random.Random) -> dict:
@@ -213,6 +310,116 @@ def gen_def_integral_quad(idx: int, rng: random.Random) -> dict:
         prompt=prompt,
         correct=ans,
         distractor_pool=pool,
+        rng=rng,
+    )
+
+
+def gen_def_integral_trig(idx: int, rng: random.Random) -> dict:
+    a = rng.choice([1, 2, 3, 4, 5, 6])
+    b = rng.choice([-4, -3, -2, -1, 1, 2, 3, 4])
+    ans = Fraction(2 * a, 1)
+    trig = join_terms([mul_term(a, "\\sin x"), mul_term(b, "\\cos x")])
+    prompt = f"Compute $\\int_0^\\pi ({trig})\\,dx$."
+    pool = [Fraction(0, 1), Fraction(a, 1), Fraction(2 * b, 1), ans + 1, ans - 1]
+    return make_mcq(
+        pid=f"calcv2-int-trig-{idx}",
+        topic="integration",
+        prompt=prompt,
+        correct=ans,
+        distractor_pool=pool,
+        rng=rng,
+    )
+
+
+def gen_def_integral_abs(idx: int, rng: random.Random) -> dict:
+    a = rng.choice([1, 2, 3, 4, 5, 6, 8, 10])
+    ans = Fraction(a * a, 1)
+    prompt = f"Compute $\\int_{{-{a}}}^{{{a}}} |x|\\,dx$."
+    pool = [Fraction(2 * a, 1), Fraction(a * a // 2, 1), Fraction(2 * a * a, 1), ans + 1, ans - 1]
+    return make_mcq(
+        pid=f"calcv2-int-abs-{idx}",
+        topic="integration",
+        prompt=prompt,
+        correct=ans,
+        distractor_pool=pool,
+        rng=rng,
+    )
+
+
+def join_terms(terms: list[str]) -> str:
+    out = ""
+    for t in terms:
+        if not t:
+            continue
+        if not out:
+            out = t
+            continue
+        if t.startswith("-"):
+            out += t
+        else:
+            out += f"+{t}"
+    return out or "0"
+
+
+def mul_term(coef: int, body: str) -> str:
+    if coef == 0:
+        return ""
+    if coef == 1:
+        return body
+    if coef == -1:
+        return f"-{body}"
+    return f"{coef}{body}"
+
+
+def gen_indef_integral_poly(idx: int, rng: random.Random) -> dict:
+    a = rng.choice([-9, -6, -3, 3, 6, 9])
+    b = rng.choice([-8, -6, -4, -2, 2, 4, 6, 8])
+    c = rng.choice([-7, -5, -3, -1, 1, 2, 3, 5, 7])
+    integrand = fmt_poly([(a, "x", 2), (b, "x", 1), (c, "", 0)])
+    true_expr = join_terms(
+        [
+            mul_term(a // 3, "x^3"),
+            mul_term(b // 2, "x^2"),
+            mul_term(c, "x"),
+            "C",
+        ]
+    )
+    choices = [
+        f"${true_expr}$",
+        f"${join_terms([mul_term(a, 'x^3'), mul_term(b, 'x^2'), mul_term(c, 'x'), 'C'])}$",
+        f"${join_terms([mul_term(a // 3, 'x^3'), mul_term(b, 'x^2'), mul_term(c, 'x'), 'C'])}$",
+        f"${join_terms([mul_term(a // 3, 'x^3'), mul_term(b // 2, 'x^2'), mul_term(-c, 'x'), 'C'])}$",
+        f"${join_terms([mul_term(a // 3, 'x^3'), mul_term(b // 2, 'x^2'), mul_term(c, 'x^2'), 'C'])}$",
+    ]
+    prompt = f"Which expression is an antiderivative of $f(x)={integrand}$?"
+    return make_text_mcq(
+        pid=f"calcv2-int-indef-poly-{idx}",
+        topic="integration",
+        prompt=prompt,
+        choices=choices,
+        answer_index=0,
+        rng=rng,
+    )
+
+
+def gen_indef_integral_trig(idx: int, rng: random.Random) -> dict:
+    m = rng.choice([1, 2, 3, 4, 5, 6])
+    t = rng.choice([1, 2, 3, 4])
+    a = rng.choice([-1, 1]) * m * t
+    b = rng.choice([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5])
+    trig_part = join_terms([mul_term(a, f"\\sin({m}x)"), mul_term(b, "\\sec^2(x)")])
+    true_expr = join_terms([mul_term(-(a // m), f"\\cos({m}x)"), mul_term(b, "\\tan(x)"), "C"])
+    wrong_1 = join_terms([mul_term(a // m, f"\\cos({m}x)"), mul_term(b, "\\tan(x)"), "C"])
+    wrong_2 = join_terms([mul_term(-(a // m), f"\\sin({m}x)"), mul_term(b, "\\tan(x)"), "C"])
+    wrong_3 = join_terms([mul_term(-(a // m), f"\\cos({m}x)"), mul_term(-b, "\\tan(x)"), "C"])
+    wrong_4 = join_terms([mul_term(-(a // m), f"\\cos({m}x)"), mul_term(b, "\\sec^2(x)"), "C"])
+    prompt = f"Which expression is an antiderivative of $f(x)={trig_part}$?"
+    return make_text_mcq(
+        pid=f"calcv2-int-indef-trig-{idx}",
+        topic="integration",
+        prompt=prompt,
+        choices=[f"${true_expr}$", f"${wrong_1}$", f"${wrong_2}$", f"${wrong_3}$", f"${wrong_4}$"],
+        answer_index=0,
         rng=rng,
     )
 
@@ -705,6 +912,72 @@ def gen_log_derivative(idx: int, rng: random.Random) -> dict:
     )
 
 
+def gen_plot_parabola_fact(idx: int, rng: random.Random) -> dict:
+    h = rng.choice([-4, -3, -2, -1, 0, 1, 2, 3, 4])
+    k = rng.choice([1, 2, 3, 4, 5])
+    xs = [h + Fraction(i, 2) for i in range(-10, 11)]
+    points = [(float(x), float((x - h) * (x - h) + k)) for x in xs]
+    title = f"Plot of f(x) = (x-{h})^2 + {k}"
+    prompt = "Based on the plotted graph, which statement is true?"
+    choices = [
+        f"$f({h})={k}$, $f'({h})=0$, and $f$ has a local minimum at $x={h}$.",
+        f"$f$ is decreasing on $({h},\\infty)$.",
+        "$f''(x)<0$ for all real $x$.",
+        "$f$ has exactly two $x$-intercepts.",
+        f"$f({h}+1)<f({h})$.",
+    ]
+    row = make_text_mcq(
+        pid=f"calcv2-plot-parabola-{idx}",
+        topic="plot_interpretation",
+        prompt=prompt,
+        choices=choices,
+        answer_index=0,
+        rng=rng,
+    )
+    row["_diagramSvgName"] = f"calcv3-plot-parabola-{idx}.svg"
+    row["_diagramSvgContent"] = make_plot_svg(points, title)
+    row["source"]["diagram"] = "generated_svg"
+    return row
+
+
+def gen_plot_odd_fact(idx: int, rng: random.Random) -> dict:
+    left = rng.choice([-4, -3, -2])
+    right = -left
+    high = rng.choice([3, 4, 5, 6])
+    low = rng.choice([1, 2, 3])
+    if low >= high:
+        low = high - 1
+    inner = rng.choice([1, 2])
+    points = [
+        (float(left), float(high)),
+        (float(-inner), float(low)),
+        (0.0, 0.0),
+        (float(inner), float(-low)),
+        (float(right), float(-high)),
+    ]
+    title = "Odd-symmetric piecewise linear plot"
+    prompt = "Based on the plotted graph, which statement must be true?"
+    choices = [
+        f"$f$ is odd, so $\\int_{{{left}}}^{{{right}}} f(x)\\,dx = 0$.",
+        "$f$ is even.",
+        f"$f({inner})={low}$.",
+        f"$f({-inner})={-low}$.",
+        f"$f$ is increasing on $[{left},{right}]$.",
+    ]
+    row = make_text_mcq(
+        pid=f"calcv2-plot-odd-{idx}",
+        topic="plot_interpretation",
+        prompt=prompt,
+        choices=choices,
+        answer_index=0,
+        rng=rng,
+    )
+    row["_diagramSvgName"] = f"calcv3-plot-odd-{idx}.svg"
+    row["_diagramSvgContent"] = make_plot_svg(points, title)
+    row["source"]["diagram"] = "generated_svg"
+    return row
+
+
 TEMPLATES: list[tuple[str, Callable[[int, random.Random], dict]]] = [
     ("derivatives", gen_poly_derivative),
     ("derivatives", gen_log_derivative),
@@ -715,6 +988,10 @@ TEMPLATES: list[tuple[str, Callable[[int, random.Random], dict]]] = [
     ("limits", gen_limit_exp),
     ("integration", gen_def_integral_linear),
     ("integration", gen_def_integral_quad),
+    ("integration", gen_def_integral_trig),
+    ("integration", gen_def_integral_abs),
+    ("integration", gen_indef_integral_poly),
+    ("integration", gen_indef_integral_trig),
     ("optimization", gen_opt_rectangle),
     ("optimization", gen_opt_fixed_area),
     ("optimization", gen_opt_open_box),
@@ -734,6 +1011,8 @@ TEMPLATES: list[tuple[str, Callable[[int, random.Random], dict]]] = [
     ("continuity_graphing", gen_graph_vertex_x),
     ("continuity_graphing", gen_graph_abs_nondiff),
     ("continuity_graphing", gen_graph_critical_count),
+    ("plot_interpretation", gen_plot_parabola_fact),
+    ("plot_interpretation", gen_plot_odd_fact),
 ]
 
 
@@ -748,15 +1027,16 @@ def build_dataset(total: int, seed: int) -> tuple[list[dict], dict]:
         templates_by_topic.setdefault(topic, []).append(fn)
 
     topic_order = [
-        ("derivatives", 44),
-        ("limits", 44),
-        ("integration", 44),
-        ("optimization", 32),
-        ("multivariable", 52),
-        ("series", 28),
-        ("parametric", 16),
+        ("derivatives", 40),
+        ("limits", 38),
+        ("integration", 70),
+        ("optimization", 28),
+        ("multivariable", 46),
+        ("series", 24),
+        ("parametric", 18),
         ("vector_calculus", 24),
-        ("continuity_graphing", 36),
+        ("continuity_graphing", 26),
+        ("plot_interpretation", 36),
     ]
     base_quota = sum(count for _, count in topic_order)
     scale = total / base_quota
@@ -786,7 +1066,7 @@ def build_dataset(total: int, seed: int) -> tuple[list[dict], dict]:
             global_index += 1
             fn = rng.choice(template_fns)
             row = fn(global_index, rng)
-            key = row["prompt"].strip().lower()
+            key = row_dedupe_key(row)
             if key in seen_prompts:
                 continue
             seen_prompts.add(key)
@@ -804,7 +1084,7 @@ def build_dataset(total: int, seed: int) -> tuple[list[dict], dict]:
         global_index += 1
         topic, fn = rng.choice(TEMPLATES)
         row = fn(global_index, rng)
-        key = row["prompt"].strip().lower()
+        key = row_dedupe_key(row)
         if key in seen_prompts:
             continue
         seen_prompts.add(key)
@@ -821,7 +1101,7 @@ def build_dataset(total: int, seed: int) -> tuple[list[dict], dict]:
         assert row["answer"] == row["choices"][row["answerIndex"]]
 
     report = {
-        "dataset": "synthetic_calculus_v2",
+        "dataset": DATASET_NAME,
         "count": len(rows),
         "seed": seed,
         "attempts": attempts,
@@ -842,9 +1122,29 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def persist_generated_plot_svgs(rows: list[dict]) -> int:
+    diagram_dir = ROOT / "assets" / "diagrams"
+    diagram_dir.mkdir(parents=True, exist_ok=True)
+    for stale in diagram_dir.glob("calcv3-plot-*.svg"):
+        stale.unlink()
+
+    written = 0
+    for row in rows:
+        name = row.pop("_diagramSvgName", None)
+        svg = row.pop("_diagramSvgContent", None)
+        if not name or not svg:
+            continue
+        path = diagram_dir / name
+        path.write_text(str(svg), encoding="utf-8")
+        row["diagramSvg"] = f"assets/diagrams/{name}"
+        written += 1
+    return written
+
+
 def main() -> None:
     args = parse_args()
     rows, report = build_dataset(total=max(50, int(args.count)), seed=int(args.seed))
+    report["diagram_svg_count"] = persist_generated_plot_svgs(rows)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(rows, indent=2) + "\n", encoding="utf-8")
     args.report.parent.mkdir(parents=True, exist_ok=True)

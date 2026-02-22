@@ -3,7 +3,12 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const { loadChallengeFns } = require("./challenge-harness");
 
-const { sanitizeForMathJax, normalizeChoiceMath, hasRenderableMathSyntax } = loadChallengeFns();
+const {
+  sanitizeForMathJax,
+  normalizeChoiceMath,
+  hasRenderableMathSyntax,
+  problemLooksRenderable
+} = loadChallengeFns();
 
 test("sanitizer rule coverage: wrappers/macros/currency/layout", () => {
   const cases = [
@@ -175,6 +180,8 @@ test("normalizeChoiceMath enforces inline-safe choice rendering", () => {
   assert.equal(normalizeChoiceMath("1 3"), "$\\frac{1}{3}$");
   assert.equal(normalizeChoiceMath("e 2"), "$e^2$");
   assert.equal(normalizeChoiceMath("\\pi 2"), "$\\frac{\\pi}{2}$");
+  assert.equal(normalizeChoiceMath("e y/x =cx"), "$e^{y/x}=cx$");
+  assert.equal(normalizeChoiceMath("e-x/y =cx"), "$e^{-x/y}=cx$");
 });
 
 test("hasRenderableMathSyntax detects math-bearing text", () => {
@@ -196,4 +203,127 @@ test("dataset guardrails: no empty script marker artifacts remain", () => {
     });
     assert.equal(Boolean(broken), false, `${file} contains empty script marker artifacts`);
   }
+});
+
+test("sanitizer wraps bare TeX spans in mixed prose/math prompts", () => {
+  const input = "If f'(x)$\\ge$g'(x) for all x\\in [0,1], which statement must hold?";
+  const out = sanitizeForMathJax(input);
+  assert.match(out, /\$x\\in \[0,1\]\$/);
+  assert.equal(
+    problemLooksRenderable({
+      type: "mcq",
+      prompt: out,
+      choices: ["$f(0)\\ge g(0)$", "$f(1)\\ge g(1)$", "$f(0)=g(0)$", "$f(1)=g(1)$", "$f=g$"]
+    }),
+    true
+  );
+});
+
+test("GRE OCR-garbled fused tokens are rejected as non-renderable", () => {
+  const prompt = "Let n be an integer greater than 1. Which of the following guarantee that the equation xn =\\sum n-1 i= 0aixihasatleastonerootintheinterval(0, 1)?";
+  assert.equal(
+    problemLooksRenderable({
+      type: "mcq",
+      prompt,
+      choices: ["None", "I only", "II only", "III only", "I and III only"]
+    }),
+    false
+  );
+});
+
+test("GRE malformed group-order prompt with fused choices is rejected", () => {
+  const prompt = "Let G be a group of order 9, and let e denote the identity of G. Which one of the statements about G cannot be true:";
+  assert.equal(
+    problemLooksRenderable({
+      type: "mcq",
+      prompt,
+      choices: [
+        "There exists an element x in G such that x̸=e and x-1 =x",
+        "ThereexistsanelementxinGsuchthatx,y̸=eand⟨x⟩∩⟨y⟩={e}",
+        "Thereexistsanelementx∈Gsuchthat⟨x⟩hasorder3",
+        "G is cyclic",
+        "G is Abelian"
+      ]
+    }),
+    false
+  );
+});
+
+test("GRE malformed vector-angle prompt with inxyz-space artifact is rejected", () => {
+  const prompt = "What is the measure of the angle between u =⟨2, 0, 2⟩ and v =⟨3 √2,-6 √3, 3 √2⟩inxyz-space?";
+  assert.equal(
+    problemLooksRenderable({
+      type: "mcq",
+      contest: "upper_level_mcq",
+      prompt,
+      choices: ["0°", "30°", "45°", "60°", "90°"]
+    }),
+    false
+  );
+});
+
+test("GRE malformed ODE options with C1et-style OCR tokens are rejected", () => {
+  assert.equal(
+    problemLooksRenderable({
+      type: "mcq",
+      contest: "upper_level_mcq",
+      prompt: "What is the general solution to the differential equation: y''- 2y' +y =tet",
+      choices: [
+        "C1et +C2t2et",
+        "C1et +C2tet",
+        "C1et +C2tet +t3et",
+        "C1et +C2tet + t 2et",
+        "C1et +C2tet + t^2 2et"
+      ]
+    }),
+    false
+  );
+});
+
+test("GRE malformed radius-of-convergence OCR form is rejected", () => {
+  assert.equal(
+    problemLooksRenderable({
+      type: "mcq",
+      contest: "upper_level_mcq",
+      prompt: "The radius of convergence of the series ∞ ∑n = 0(nx)n2· 4· 6· ... · 2n is",
+      choices: ["0", "2e^2", "2e", "e^2", "∞"]
+    }),
+    false
+  );
+});
+
+test("truncated input prompts ending in connector words are rejected", () => {
+  assert.equal(
+    problemLooksRenderable({
+      type: "input",
+      contest: "aime",
+      prompt: "Find the positive solution to",
+      answer: 13
+    }),
+    false
+  );
+});
+
+test("truncated input prompts ending in find-the-value-of are rejected", () => {
+  assert.equal(
+    problemLooksRenderable({
+      type: "input",
+      contest: "aime",
+      prompt: "The equation has 10 complex roots where the bar denotes conjugation. Find the value of",
+      answer: 850
+    }),
+    false
+  );
+});
+
+test("truncated input prompts ending in colon are rejected", () => {
+  assert.equal(
+    problemLooksRenderable({
+      type: "input",
+      contest: "aime",
+      prompt: "Find A^2, where A is the sum of roots of the following equation:",
+      answer: 383
+    }),
+    false
+  );
 });

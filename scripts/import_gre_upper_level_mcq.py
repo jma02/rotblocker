@@ -476,20 +476,6 @@ def classify_topic(prompt: str) -> str:
     return "other_upper_level"
 
 
-def make_hint(topic: str) -> str:
-    if topic == "analysis":
-        return "Start from the relevant theorem and track hypotheses carefully before computing."
-    if topic == "linalg":
-        return "Translate the question into matrix/subspace language first, then use structure."
-    if topic == "algebra":
-        return "Identify the algebraic object and use the right invariant (order, ideal, factorization)."
-    if topic == "complex_analysis":
-        return "Choose a representation (polar/analytic) that makes the target theorem directly applicable."
-    if topic == "topology":
-        return "Reduce the claim to definitions of open/closed/compact/connected and test edge cases."
-    return "Break the problem into definitions, structure, and a targeted computation."
-
-
 def build_item(source: str, set_no: Optional[int], q: ParsedQuestion, answer_key: str, idx: int) -> dict:
     topic = classify_topic(q.prompt)
     prompt = mathjax_sanitize(q.prompt)
@@ -506,7 +492,6 @@ def build_item(source: str, set_no: Optional[int], q: ParsedQuestion, answer_key
         "answerIndex": idx,
         "answerKey": answer_key,
         "answer": choices[idx],
-        "hint": make_hint(topic or "analysis"),
         "source": {
             "dataset": source,
             "problemSet": set_no,

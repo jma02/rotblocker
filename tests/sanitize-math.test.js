@@ -57,11 +57,46 @@ test("punctuation spacing is normalized in prose/math joins", () => {
 test("GRE OCR lim and scan-noise fragments are normalized", () => {
   const input = "Evaluate: limx→0+ (sinx x )1/x^2. 25";
   const out = sanitizeForMathJax(input);
-  assert.equal(out, "Evaluate: \\lim_{x\\to 0+} (\\frac{\\sin x}{x})1/x^2.");
+  assert.equal(out, "Evaluate: $\\lim_{x\\to 0+} (\\frac{\\sin x}{x})1/x^2.$");
 });
 
 test("scan footer labels are stripped from noisy choice strings", () => {
   const input = "ST +TS is the identity map of V Linear Algebra #2";
   const out = sanitizeForMathJax(input);
   assert.equal(out, "ST +TS is the identity map of V");
+});
+
+test("GRE continuity notation with OCR minus/degree/complement artifacts is repaired", () => {
+  const input = "Which are equivalent to continuity? (I) f-1(Ao) = (f-1(A))o where So denotes interior of S (III) f-1(Ac) = (f-1(A))c";
+  const out = sanitizeForMathJax(input);
+  assert.match(out, /f\^\{-1\}\(A\^\\circ\)/);
+  assert.match(out, /\(.*f\^\{-1\}\(A\).*\)\^\\circ/);
+  assert.match(out, /f\^\{-1\}\(A\^c\)/);
+  assert.doesNotMatch(out, /\bf-1\(/);
+});
+
+test("inverse-function notation in prose is normalized", () => {
+  const input = "Suppose X is compact and Y is Hausdorff. (III) f-1 is continuous.";
+  const out = sanitizeForMathJax(input);
+  assert.match(out, /\$f\^\{-1\}\$\s+is continuous\b/);
+  assert.doesNotMatch(out, /\bf-1\s+is continuous\b/);
+});
+
+test("GRE footer leakage in options is removed", () => {
+  const input = "I, II, and III STOP If you finished before time is called, you may check your work on this test";
+  const out = sanitizeForMathJax(input);
+  assert.equal(out, "I, II, and III");
+});
+
+test("GRE differential-equation OCR splits are normalized", () => {
+  const input = "Find the general solution of the differential equation: dy dx = x +y x";
+  const out = sanitizeForMathJax(input);
+  assert.match(out, /\\frac\{dy\}\{dx\}/);
+  assert.match(out, /x\s*\+\s*\\frac\{y\}\{x\}/);
+});
+
+test("embedded source image filenames are stripped from prompts", () => {
+  const input = "Find the product abc if a+b+c=43 and d=3 1988 AIME-12.png";
+  const out = sanitizeForMathJax(input);
+  assert.equal(out, "Find the product abc if a+b+c=43 and d=3");
 });

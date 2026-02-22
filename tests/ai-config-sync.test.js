@@ -7,8 +7,21 @@ function readText(relPath) {
   return fs.readFileSync(path.join(process.cwd(), relPath), "utf8");
 }
 
+function readAppSource() {
+  return [
+    "challenge-modules/constants.js",
+    "challenge-modules/dom.js",
+    "challenge-modules/math.js",
+    "challenge-modules/sync.js",
+    "challenge-modules/tutor.js",
+    "challenge.js",
+    "challenge-modules/gameplay.js",
+    "challenge-modules/bootstrap.js"
+  ].map(readText).join("\n");
+}
+
 test("AI config loads from chrome profile sync and saves back to sync", () => {
-  const source = readText("challenge.js");
+  const source = readAppSource();
   assert.match(source, /\bfunction getSync\(keys\)/);
   assert.match(source, /\bfunction setSync\(values\)/);
   assert.match(source, /await setSync\(\{\s*ai_config:\s*payload\s*\}\)/);

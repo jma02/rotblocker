@@ -34,13 +34,10 @@
       baseWeight,
       elapsedMs,
       durationMs,
-      hintUsed,
       isMcq,
       wrongGuesses,
       multipliers,
     } = args;
-
-    if (hintUsed) return 0;
 
     const base = decayedBasePoints(baseWeight, elapsedMs, durationMs);
     if (!isMcq) return base;

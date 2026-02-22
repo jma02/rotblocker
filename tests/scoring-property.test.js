@@ -33,7 +33,6 @@ test("scoring fallback in challenge matches scoring.js across randomized inputs"
       baseWeight: maybe(rng, randBetween(rng, -40, 80), "bad"),
       elapsedMs: maybe(rng, randBetween(rng, -2000, 200000), null),
       durationMs: rng() < 0.1 ? Infinity : maybe(rng, randBetween(rng, -2000, 200000), undefined),
-      hintUsed: rng() < 0.25,
       isMcq: rng() < 0.5,
       wrongGuesses: maybe(rng, Math.floor(randBetween(rng, -2, 9)), "bad"),
       multipliers
@@ -60,16 +59,16 @@ test("scoring invariants hold under randomized input", () => {
     assert.ok(Number.isFinite(decayed));
     assert.ok(decayed >= 0, `decayed must be non-negative: ${decayed}`);
 
-    const withHint = scoring.pointsIfCorrectNow({
+    const scoreNow = scoring.pointsIfCorrectNow({
       baseWeight,
       elapsedMs: elapsed,
       durationMs: duration,
-      hintUsed: true,
       isMcq: rng() < 0.5,
       wrongGuesses,
       multipliers: [1, 0.5, 0.25, 0.1, 0]
     });
-    assert.equal(withHint, 0);
+    assert.ok(Number.isFinite(scoreNow));
+    assert.ok(scoreNow >= 0, `score must be non-negative: ${scoreNow}`);
 
     const g = scoring.guessMultiplier(wrongGuesses + 1, [1, 0.5, 0.25, 0.1, 0]);
     assert.ok(g >= 0 && g <= 1, `guess multiplier out of bounds: ${g}`);

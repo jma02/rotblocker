@@ -188,8 +188,6 @@ def clean_mcq_row(
     item["answerKey"] = "ABCDE"[answer_index]
     item["answer"] = item["choices"][answer_index]
 
-    item["hint"] = normalize_text(item.get("hint", "")) or "Break it down into manageable steps and verify each one."
-
     prompt_reason = validate_math_text(item["prompt"])
     if prompt_reason:
         return None, f"prompt_{prompt_reason}"
