@@ -360,6 +360,29 @@ async function loadAiConfig() {
   }
 }
 
+function getTutorProblemEvent() {
+  const root = globalThis.RB || {};
+  const value = typeof root.tutorProblemEvent === "string" ? root.tutorProblemEvent : "";
+  return value.trim().slice(0, 280);
+}
+
+function buildTutorUserPrompt(userText) {
+  const context = typeof buildProblemContext === "function"
+    ? buildProblemContext()
+    : "No active problem yet.";
+  const event = getTutorProblemEvent() || "No recent problem transition.";
+  const prompt = String(userText || "").trim();
+  return [
+    "CURRENT PROBLEM:",
+    context,
+    "",
+    `RECENT STATE: ${event}`,
+    "",
+    "USER PROMPT:",
+    prompt || "(empty)"
+  ].join("\n");
+}
+
 async function callTutor(userText, signal = undefined) {
   const cfg = getApiConfig();
   if (!cfg || !cfg.token || !cfg.model) {
@@ -369,11 +392,11 @@ async function callTutor(userText, signal = undefined) {
   const providerMeta = resolveAiProviderMeta(cfg.provider);
   const url = providerMeta.chatUrl;
 
+  const contextualizedUserPrompt = buildTutorUserPrompt(userText);
   const messages = [
     { role: "system", content: DEFAULT_SYSTEM_PROMPT },
-    { role: "system", content: `Current problem context:\n${buildProblemContext()}` },
     ...aiHistory.slice(-8),
-    { role: "user", content: userText }
+    { role: "user", content: contextualizedUserPrompt }
   ];
 
   const headers = {
@@ -588,6 +611,8 @@ RB_TUTOR_ROOT.tutor = {
   getApiConfig,
   modelCacheKey,
   setModelOptions,
+  getTutorProblemEvent,
+  buildTutorUserPrompt,
   fetchAndCacheModels,
   saveAiConfig,
   loadAiConfig,

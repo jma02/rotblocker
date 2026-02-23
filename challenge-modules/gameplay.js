@@ -16,6 +16,11 @@ function weightedPick(weighted) {
   return weighted[weighted.length - 1].value;
 }
 
+function setTutorProblemEvent(note) {
+  const root = globalThis.RB || (globalThis.RB = {});
+  root.tutorProblemEvent = String(note || "").trim().slice(0, 280);
+}
+
 /** @param {Problem | null | undefined} problem */
 function getSanitizedPrompt(problem) {
   if (problem && typeof problem.__sanitizedPrompt === "string") {
@@ -507,14 +512,17 @@ async function loadBanks() {
   return { failed };
 }
 
-function nextProblem() {
+function nextProblem(eventNote = null) {
   currentProblem = buildNextProblemCandidate();
 
   if (!currentProblem) {
+    setTutorProblemEvent("No enabled problem pools with data.");
     setFeedback("No enabled problem pools with data.", false);
     return;
   }
 
+  setTutorProblemEvent(eventNote || "Loaded a new problem.");
+  aiHistory = [];
   problemStartMs = Date.now();
   mcqWrongGuesses = 0;
   usedChoices = new Set();
@@ -728,7 +736,7 @@ async function refreshState() {
 async function awardPointsAndAdvance(points) {
   if (points <= 0) {
     setFeedback("Correct, but this question is worth +0 due to timer/guess penalties.", false);
-    nextProblem();
+    nextProblem("Previous problem was answered correctly, but earned +0 points due to penalties.");
     render();
     return;
   }
@@ -744,7 +752,7 @@ async function awardPointsAndAdvance(points) {
   prestige = Number(res.prestige || prestige);
   stateUpdatedAt = Math.floor(Number(res.stateUpdatedAt) || stateUpdatedAt || Date.now());
   setFeedback(`Correct. +${points.toFixed(2)} points.`, true);
-  nextProblem();
+  nextProblem(`Previous problem was answered correctly (+${points.toFixed(2)} points).`);
   render();
   syncApi.scheduleCloudSync?.();
 }

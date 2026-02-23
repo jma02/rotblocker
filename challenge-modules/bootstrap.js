@@ -12,7 +12,7 @@ if (formEl) {
 
     if (!isInputAnswerCorrect(submitted, currentProblem)) {
       setFeedback("Incorrect. Next question.", false);
-      nextProblem();
+      nextProblem("Previous problem was answered incorrectly. Loaded a new problem.");
       render();
       return;
     }
@@ -31,7 +31,7 @@ if (rerollBtnEl) {
     if (Date.now() < rerollLockedUntil) return;
     rerollLockedUntil = Date.now() + 350;
     rerollBtnEl.disabled = true;
-    nextProblem();
+    nextProblem("User rerolled the problem. Loaded a new problem.");
     setFeedback("Rerolled. No score change.", true);
     setTimeout(() => {
       rerollBtnEl.disabled = false;
@@ -101,7 +101,7 @@ if (relockBtn) {
     score = 0;
     stateUpdatedAt = Math.floor(Number(res.stateUpdatedAt) || stateUpdatedAt || Date.now());
     setFeedback("Sites locked again.", true);
-    nextProblem();
+    nextProblem("Challenge was relocked. Loaded a new problem.");
     render();
     syncApi.scheduleCloudSync?.();
   });
@@ -133,7 +133,7 @@ handleVisibilityPerformanceMode();
   initDomainSettingsUi();
   await refreshState();
   perfMark("init:first_problem_start");
-  nextProblem();
+  nextProblem("Challenge started. Loaded a new problem.");
   perfMark("init:first_problem_end");
   perfMeasure("init:first_problem_render_ms", "init:first_problem_start", "init:first_problem_end");
   tutorApi.runWhenIdle(async () => {
