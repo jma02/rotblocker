@@ -28,5 +28,5 @@ test("problem transitions annotate tutor context and reset stale tutor history",
   assert.match(gameplay, /answered correctly/);
 
   assert.match(bootstrap, /User rerolled the problem\. Loaded a new problem\./);
-  assert.match(bootstrap, /answered incorrectly\. Loaded a new problem\./);
+  assert.match(gameplay, /answered incorrectly\. Loaded a new problem\./);
 });

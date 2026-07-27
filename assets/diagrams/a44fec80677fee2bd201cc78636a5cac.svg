@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360" role="img" aria-labelledby="title">
+  <title id="title">Rhombus ABCD with perpendicular BP and AP equal to 3</title>
+  <g fill="none" stroke="#111" stroke-width="3" stroke-linejoin="round">
+    <path d="M45 295L195 45H486L336 295Z"/>
+    <path d="M195 45V295"/>
+    <path d="M195 276H214V295"/>
+  </g>
+  <g fill="#111" font-family="serif" font-size="24" font-style="italic">
+    <text x="20" y="325">A</text><text x="180" y="35">B</text><text x="473" y="35">C</text><text x="330" y="325">D</text><text x="184" y="330">P</text>
+  </g>
+</svg>

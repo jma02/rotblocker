@@ -39,11 +39,22 @@ jobs:
           node-version: "20"
           cache: npm
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Install dependencies
         run: npm ci
 
       - name: Run full test suite
         run: npm test
+
+      - name: Run data normalizer unit tests
+        run: npm run test:data-python
+
+      - name: Audit shipped problem data
+        run: npm run audit:problems
 
   build-artifact:
     name: Build Release Zips

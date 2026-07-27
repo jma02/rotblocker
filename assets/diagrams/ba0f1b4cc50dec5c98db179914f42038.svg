@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 310" role="img" aria-labelledby="title">
+  <title id="title">Zigzag path across a rectangular field</title>
+  <g fill="none" stroke="#111" stroke-width="3" stroke-linejoin="round">
+    <rect x="80" y="55" width="600" height="180"/>
+    <path d="M80 235L245 55L410 235L575 55L680 170"/>
+  </g>
+  <g fill="#111">
+    <circle cx="80" cy="55" r="5"/><circle cx="80" cy="235" r="5"/><circle cx="680" cy="55" r="5"/><circle cx="680" cy="235" r="5"/>
+    <circle cx="245" cy="55" r="5"/><circle cx="410" cy="235" r="5"/><circle cx="575" cy="55" r="5"/><circle cx="680" cy="170" r="5"/>
+  </g>
+  <g fill="#111" font-family="serif" font-size="24" font-style="italic">
+    <text x="45" y="61">D</text><text x="45" y="245">A</text><text x="692" y="61">C</text><text x="692" y="245">B</text>
+    <text x="231" y="38">P</text><text x="398" y="270">Q</text><text x="563" y="38">R</text><text x="692" y="178">S</text>
+  </g>
+  <g fill="#111" font-family="serif" font-size="22" font-style="italic">
+    <text x="114" y="215">θ</text><text x="268" y="80">θ</text><text x="440" y="215">θ</text><text x="595" y="80">θ</text>
+  </g>
+</svg>

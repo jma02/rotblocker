@@ -32,9 +32,10 @@ test("tutor request flow supports abort and cancel handling", () => {
   assert.match(source, /\bfunction isAbortError\b/);
   assert.match(source, /aiSubmitEl\.classList\.toggle\("is-cancel", isLoading\)/);
   assert.match(source, /<span class=\\"ai-submit-text\\">Cancel<\/span>/);
-  assert.match(source, /if \(aiBusy\) \{\s*if \(!aiAbortController\) return;/);
-  assert.match(source, /aiAbortController\.abort\(\)/);
-  assert.match(source, /callTutor\(text, aiAbortController\?\.signal\)/);
+  assert.match(source, /\bfunction cancelTutorRequest\(\{ focus = true, announce = false \} = \{\}\)/);
+  assert.match(source, /tutorRequestRevision \+= 1/);
+  assert.match(source, /controller\.abort\(\)/);
+  assert.match(source, /callTutor\(text, controller\?\.signal\)/);
   assert.match(source, /if \(isAbortError\(err\)\)/);
   assert.match(source, /appendChat\("system", "Request canceled\."\)/);
 });

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -30 350 350" role="img" aria-labelledby="title">
+  <title id="title">Alternating black and white nested circles</title>
+  <g stroke="#111" stroke-width="2">
+    <circle cx="145" cy="105" r="132" fill="#fff"/>
+    <circle cx="162" cy="119" r="110" fill="#111"/>
+    <circle cx="179" cy="133" r="88" fill="#fff"/>
+    <circle cx="196" cy="147" r="66" fill="#111"/>
+    <circle cx="212" cy="162" r="44" fill="#fff"/>
+    <circle cx="229" cy="176" r="22" fill="#111"/>
+  </g>
+</svg>

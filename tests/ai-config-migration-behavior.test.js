@@ -139,3 +139,47 @@ test("loadAiConfig migrates local-only config into sync storage", async () => {
   assert.deepEqual(chromeMock.syncStore.ai_config, localCfg);
   assert.equal(chromeMock.syncSetCalls.length, 1);
 });
+
+test("a config edit invalidates a held startup load before migration or UI apply", async () => {
+  const staleCfg = { provider: "openai", model: "stale-model", token: "stale-token" };
+  const chromeMock = createChromeMock({
+    localSeed: { ai_config: staleCfg },
+    syncSeed: {}
+  });
+  let releaseLocalGet;
+  chromeMock.chrome.storage.local.get = (keys, callback) => {
+    releaseLocalGet = () => callback(pickKeys(chromeMock.localStore, keys));
+  };
+  const fetchCalls = [];
+  const fns = loadChallengeFns({
+    chromeOverride: chromeMock.chrome,
+    fetchImpl: async (url) => {
+      fetchCalls.push(String(url));
+      return {
+        ok: true,
+        json: async () => ({ data: [{ id: "stale-model" }] })
+      };
+    }
+  });
+
+  fns.initTutorUi();
+  assert.equal(typeof releaseLocalGet, "function");
+  const refs = fns.__sandbox.RB.dom.refs;
+  refs.aiProviderEl.value = "openrouter";
+  refs.aiProviderEl.dispatchEvent({ type: "change" });
+  refs.aiTokenEl.value = "new-token";
+  refs.aiTokenEl.dispatchEvent({ type: "input" });
+  refs.aiModelEl.value = "new-model";
+  refs.aiModelEl.dispatchEvent({ type: "change" });
+
+  releaseLocalGet();
+  await new Promise((resolve) => setImmediate(resolve));
+  await Promise.resolve();
+
+  assert.equal(refs.aiProviderEl.value, "openrouter");
+  assert.equal(refs.aiTokenEl.value, "new-token");
+  assert.equal(refs.aiModelEl.value, "new-model");
+  assert.equal(chromeMock.localSetCalls.length, 0);
+  assert.equal(chromeMock.syncSetCalls.length, 0);
+  assert.equal(fetchCalls.length, 0);
+});

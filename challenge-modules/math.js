@@ -16,38 +16,254 @@ function clearMathPending(el) {
   delete el.dataset.mathPending;
 }
 
-function queueMathTypeset(el) {
+const mathRenderRevisions = new WeakMap();
+const mathQueuedRevisions = new WeakMap();
+const mathCommitCallbacks = new WeakMap();
+let mathQueueDepth = 0;
+let mathOperationsActive = 0;
+let mathDomMutationDepth = 0;
+
+function nextMathRevision(el) {
+  const next = (mathRenderRevisions.get(el) || 0) + 1;
+  mathRenderRevisions.set(el, next);
+  if (el?.dataset) el.dataset.mathRevision = String(next);
+  return next;
+}
+
+function currentMathRevision(el) {
+  return mathRenderRevisions.get(el) || 0;
+}
+
+function addMathCommitCallback(el, revision, callback) {
+  if (!el || typeof callback !== "function") return;
+  const current = mathCommitCallbacks.get(el);
+  if (current?.revision === revision) {
+    current.callbacks.push(callback);
+    return;
+  }
+  mathCommitCallbacks.set(el, { revision, callbacks: [callback] });
+}
+
+function notifyMathRenderCommitted(el, revision) {
+  const pending = mathCommitCallbacks.get(el);
+  if (
+    !pending
+    || pending.revision !== revision
+    || currentMathRevision(el) !== revision
+    || isDetachedMathNode(el)
+  ) {
+    return;
+  }
+  mathCommitCallbacks.delete(el);
+  pending.callbacks.forEach((callback) => callback());
+}
+
+function isDetachedMathNode(el) {
+  // HTMLElement#isConnected is authoritative in the browser. Test doubles and
+  // host objects without that property are deliberately treated as usable.
+  return Boolean(el && typeof el.isConnected === "boolean" && !el.isConnected);
+}
+
+function clearRegisteredMath(el, mj = window?.MathJax) {
+  if (!el || !mj || typeof mj.typesetClear !== "function") return;
+  try {
+    mj.typesetClear([el]);
+  } catch (_err) {
+    // Clearing stale MathItems is best-effort. A broken clear must not strand
+    // the replacement DOM or its readiness callback.
+  }
+}
+
+function enqueueMathOperation(operation) {
+  mathQueueDepth += 1;
+  mathTypesetQueue = mathTypesetQueue
+    .then(async () => {
+      mathOperationsActive += 1;
+      try {
+        return await operation();
+      } finally {
+        mathOperationsActive = Math.max(0, mathOperationsActive - 1);
+      }
+    })
+    .catch(() => {})
+    .finally(() => {
+      mathQueueDepth = Math.max(0, mathQueueDepth - 1);
+    });
+  return mathTypesetQueue;
+}
+
+function markMathTypesetComplete(el, revision) {
+  if (!el || currentMathRevision(el) !== revision) return;
+  clearMathPending(el);
+  if (el.dataset) el.dataset.mathTypeset = "1";
+}
+
+function markMathTypesetFailed(el, revision) {
+  if (!el || currentMathRevision(el) !== revision) return;
+  markMathPending(el);
+  if (el.dataset) delete el.dataset.mathTypeset;
+}
+
+function runTypesetForRevision(el, revision, { clearFirst = true } = {}) {
+  const mj = window?.MathJax;
+  if (!mj || typeof mj.typesetPromise !== "function") {
+    markMathTypesetFailed(el, revision);
+    return Promise.resolve();
+  }
+  if (clearFirst) clearRegisteredMath(el, mj);
+  if (currentMathRevision(el) !== revision || isDetachedMathNode(el)) {
+    return Promise.resolve();
+  }
+  return Promise.resolve()
+    .then(() => mj.typesetPromise([el]))
+    .then(() => {
+      markMathTypesetComplete(el, revision);
+    })
+    .catch(() => {
+      markMathTypesetFailed(el, revision);
+    })
+    .finally(() => {
+      notifyMathRenderCommitted(el, revision);
+    });
+}
+
+function enqueueMathRevision(el, revision, operation) {
+  if (mathQueuedRevisions.get(el) === revision) return false;
+  mathQueuedRevisions.set(el, revision);
+  enqueueMathOperation(async () => {
+    try {
+      await operation();
+    } finally {
+      if (mathQueuedRevisions.get(el) === revision) {
+        mathQueuedRevisions.delete(el);
+      }
+    }
+  });
+  return true;
+}
+
+function queueMathTypeset(el, options = {}) {
   if (!el || typeof window === "undefined") return false;
   const mj = window.MathJax;
   if (!mj || typeof mj.typesetPromise !== "function") {
     markMathPending(el);
     return false;
   }
-  mathTypesetQueue = mathTypesetQueue
-    .then(() => {
-      if (typeof mj.typesetClear === "function") {
-        mj.typesetClear([el]);
-      }
-      return mj.typesetPromise([el]);
-    })
-    .then(() => {
-      clearMathPending(el);
-    })
-    .catch(() => {
-      markMathPending(el);
-    });
+  const revision = Number.isInteger(options.revision)
+    ? options.revision
+    : (currentMathRevision(el) || nextMathRevision(el));
+  markMathPending(el);
+  enqueueMathRevision(el, revision, () => runTypesetForRevision(el, revision, {
+    clearFirst: options.clearFirst !== false
+  }));
   return true;
+}
+
+function scheduleMathRender(el, updateDom, shouldTypeset, onCommitted = null) {
+  const revision = nextMathRevision(el);
+  if (shouldTypeset) addMathCommitCallback(el, revision, onCommitted);
+  if (el?.dataset) delete el.dataset.mathTypeset;
+  if (shouldTypeset) markMathPending(el);
+  else clearMathPending(el);
+
+  const applyAndMaybeTypeset = (clearFirst) => {
+    const mj = window?.MathJax;
+    if (clearFirst) clearRegisteredMath(el, mj);
+    if (currentMathRevision(el) !== revision || isDetachedMathNode(el)) {
+      return Promise.resolve();
+    }
+    updateDom();
+    if (!shouldTypeset) {
+      if (typeof onCommitted === "function") onCommitted();
+      return Promise.resolve();
+    }
+    return runTypesetForRevision(el, revision, { clearFirst: false });
+  };
+
+  // Preserve the synchronous DOM behavior used throughout the UI when there is
+  // no MathJax operation in flight. Once a typeset has started, both clearing
+  // old MathItems and replacing their source DOM are serialized behind it.
+  if (mathOperationsActive === 0 || mathDomMutationDepth > 0) {
+    clearRegisteredMath(el);
+    // Populate newly created nodes synchronously even before their parent
+    // appends them (the tutor follows this pattern). The queued typeset still
+    // verifies connectivity, so nodes removed after rendering are skipped.
+    if (currentMathRevision(el) === revision) {
+      updateDom();
+      if (!shouldTypeset && typeof onCommitted === "function") onCommitted();
+    }
+    if (shouldTypeset) {
+      if (!hasMathTypesetter()) {
+        markMathTypesetFailed(el, revision);
+        return false;
+      }
+      enqueueMathRevision(el, revision, () => runTypesetForRevision(el, revision, {
+        clearFirst: false
+      }));
+    }
+    return true;
+  }
+
+  enqueueMathRevision(el, revision, () => applyAndMaybeTypeset(true));
+  return true;
+}
+
+function invalidateMathTree(root) {
+  if (!root) return;
+  const nodes = [root];
+  if (typeof root.querySelectorAll === "function") {
+    nodes.push(...Array.from(root.querySelectorAll("[data-math-revision], mjx-container")));
+  } else if (Array.isArray(root.children)) {
+    nodes.push(...root.children);
+  }
+  nodes.forEach((node) => {
+    if (!node || typeof node !== "object") return;
+    nextMathRevision(node);
+    clearMathPending(node);
+    if (node.dataset) delete node.dataset.mathTypeset;
+  });
+}
+
+function replaceMathContainer(root, updateDom) {
+  if (!root || typeof updateDom !== "function") return Promise.resolve();
+  invalidateMathTree(root);
+  const revision = currentMathRevision(root);
+  const replace = () => {
+    clearRegisteredMath(root);
+    if (currentMathRevision(root) !== revision || isDetachedMathNode(root)) return;
+    mathDomMutationDepth += 1;
+    try {
+      updateDom();
+    } finally {
+      mathDomMutationDepth = Math.max(0, mathDomMutationDepth - 1);
+    }
+  };
+  if (mathOperationsActive === 0) {
+    replace();
+    return Promise.resolve();
+  }
+  return enqueueMathOperation(replace);
 }
 
 async function flushPendingMathTypeset(elements = null) {
   const list = Array.isArray(elements)
     ? elements
     : Array.from(document.querySelectorAll("[data-math-pending='1']"));
-  if (list.length === 0) return;
   for (const el of list) {
+    if (isDetachedMathNode(el)) {
+      clearMathPending(el);
+      continue;
+    }
     queueMathTypeset(el);
   }
-  await mathTypesetQueue;
+  // A queued operation can append more work while it runs (for example, a
+  // container replacement that creates and schedules five choice buttons).
+  // Keep draining until the queue tail itself is stable.
+  let tail;
+  do {
+    tail = mathTypesetQueue;
+    await tail;
+  } while (tail !== mathTypesetQueue);
 }
 
 function schedulePendingMathRetry() {
@@ -79,7 +295,7 @@ function bindMathJaxReadyRetry() {
 
 function hasRenderableMathSyntax(text) {
   const s = String(text || "");
-  return /(?<!\\)\$|\\\(|\\\[|\\[A-Za-z]+|[_^{}]/.test(s);
+  return /(?<!\\)\$|\\\(|\\\[|\\[A-Za-z]+|[_^]|(?<!\\)[{}]/.test(s);
 }
 
 function hasAssistantMarkdownSyntax(text) {
@@ -87,11 +303,63 @@ function hasAssistantMarkdownSyntax(text) {
   return /(^|\n)\s{0,3}#{1,6}\s+\S/.test(s) || /\*\*[^*\n]+?\*\*/.test(s) || /(^|[^*])\*[^*\n]+?\*(?!\*)/.test(s);
 }
 
-function stabilizePunctuationWrapping(text) {
+const PROBLEM_DIAGRAM_FIELDS = ["diagramPng", "diagramSvg", "diagramPngs", "diagramSvgs"];
+const PROBLEM_DIAGRAM_MENTION_RE =
+  /\b(?:(?:in|from|using|use|shown in|according to|based on)\s+(?:the\s+)?(?:figure|diagram|graph|grid|chart|table)|(?:figure|diagram|graph|grid|chart|table)\s+(?:shown|below|above|provided|supplied|shows?|depicts?|on\s+(?:the\s+)?(?:left|right))|(?:see|refer to)\s+(?:the\s+)?(?:figure|diagram|graph|grid|chart|table)|accompanying\s+(?:(?:paragraph|text)\s+and\s+)?(?:figure|diagram|graph|grid|chart|table)|grid\s+shown|positions?\s+shown|pictured\s+(?:below|above|on\s+(?:the\s+)?(?:left|right)))\b/i;
+const PROBLEM_AS_SHOWN_RE =
+  /\b(?:as shown(?:\s+(?:below|above))?(?=\s*(?:[,.;:)]|$)|\s+in\b)|shown\s+(?:(?:on\s+(?:the\s+)?(?:left|right))|below|above))\b/i;
+const PROBLEM_PASSIVE_SHOWN_RE =
+  /\b(?:is|are|was|were)\s+shown(?!\s+(?:that|to)\b)(?:\s+(?:below|above))?\b/i;
+const PROBLEM_EMBEDDED_VISUAL_RE =
+  /\\begin\{(?:array|matrix|pmatrix|bmatrix|Bmatrix|vmatrix|Vmatrix|cases|aligned|gathered)\}/;
+
+function problemHasDiagramReference(problem) {
+  return PROBLEM_DIAGRAM_FIELDS.some((field) => {
+    const value = problem?.[field];
+    if (Array.isArray(value)) return value.length > 0;
+    return value !== undefined && value !== null && value !== "";
+  });
+}
+
+function problemRequiresExternalVisual(problem) {
+  if (!problem || problemHasDiagramReference(problem)) return false;
+  const prompt = String(problem.prompt || "");
+  if (PROBLEM_EMBEDDED_VISUAL_RE.test(prompt)) return false;
+  return (
+    PROBLEM_DIAGRAM_MENTION_RE.test(prompt)
+    || PROBLEM_AS_SHOWN_RE.test(prompt)
+    || PROBLEM_PASSIVE_SHOWN_RE.test(prompt)
+  );
+}
+
+function stabilizePlainPunctuation(text) {
   // Keep punctuation visually attached to the preceding token when wrapping.
   // \u2060 is WORD JOINER (zero-width, non-breaking).
   // Never inject between TeX escapes like "\," (that breaks MathJax parsing).
-  return String(text || "").replace(/([^\\\s])([,.;:!?])/g, "$1\u2060$2");
+  return String(text || "").replace(
+    /([^\\\s])([,.;:!?])/g,
+    (match, previous, punctuation, offset, source) => {
+      const next = String(source || "")[Number(offset) + String(match).length] || "";
+      // Decimal points and thousands separators are part of the number, not
+      // prose punctuation. Keep copied currency values byte-for-byte clean.
+      if (
+        (punctuation === "." || punctuation === ",")
+        && /\d/.test(previous)
+        && /\d/.test(next)
+      ) {
+        return match;
+      }
+      return `${previous}\u2060${punctuation}`;
+    }
+  );
+}
+
+function stabilizePunctuationWrapping(text) {
+  return splitMathSegments(text)
+    .map((part) => (
+      part.kind === "math" ? part.value : stabilizePlainPunctuation(part.value)
+    ))
+    .join("");
 }
 
 function escapeHtml(text) {
@@ -103,20 +371,62 @@ function escapeHtml(text) {
 
 function splitMathSegments(text) {
   const source = String(text || "");
-  const pattern = /\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$\$[\s\S]*?\$\$|\$(?:\\.|[^\\$\n])+\$/g;
   const parts = [];
-  let index = 0;
-  let match;
-  while ((match = pattern.exec(source)) !== null) {
-    if (match.index > index) {
-      parts.push({ kind: "plain", value: source.slice(index, match.index) });
+  const isEscaped = (index) => {
+    let slashes = 0;
+    for (let i = index - 1; i >= 0 && source[i] === "\\"; i -= 1) {
+      slashes += 1;
     }
-    parts.push({ kind: "math", value: match[0] });
-    index = match.index + match[0].length;
+    return slashes % 2 === 1;
+  };
+  const pushPlain = (start, end) => {
+    if (end > start) parts.push({ kind: "plain", value: source.slice(start, end) });
+  };
+
+  let plainStart = 0;
+  let index = 0;
+  while (index < source.length) {
+    let closeToken = "";
+    let openLength = 0;
+    if (
+      source[index] === "$"
+      && !isEscaped(index)
+      && source[index + 1] === "$"
+      && !isEscaped(index + 1)
+    ) {
+      closeToken = "$$";
+      openLength = 2;
+    } else if (source[index] === "$" && !isEscaped(index)) {
+      closeToken = "$";
+      openLength = 1;
+    } else if (
+      source[index] === "\\"
+      && !isEscaped(index)
+      && (source[index + 1] === "(" || source[index + 1] === "[")
+    ) {
+      closeToken = source[index + 1] === "(" ? "\\)" : "\\]";
+      openLength = 2;
+    } else {
+      index += 1;
+      continue;
+    }
+
+    let close = index + openLength;
+    while (close < source.length) {
+      if (source.startsWith(closeToken, close) && !isEscaped(close)) break;
+      close += 1;
+    }
+    if (close >= source.length) {
+      index += openLength;
+      continue;
+    }
+    pushPlain(plainStart, index);
+    const end = close + closeToken.length;
+    parts.push({ kind: "math", value: source.slice(index, end) });
+    index = end;
+    plainStart = end;
   }
-  if (index < source.length) {
-    parts.push({ kind: "plain", value: source.slice(index) });
-  }
+  pushPlain(plainStart, source.length);
   return parts;
 }
 
@@ -134,9 +444,69 @@ function hasUndelimitedMathSyntax(text) {
   );
 }
 
+function isEscapedAt(source, index) {
+  let slashes = 0;
+  for (let i = index - 1; i >= 0 && source[i] === "\\"; i -= 1) slashes += 1;
+  return slashes % 2 === 1;
+}
+
+function hasMalformedMathSyntax(text) {
+  const source = String(text || "");
+  const delimiters = [];
+  let braceDepth = 0;
+
+  for (let i = 0; i < source.length; i += 1) {
+    if (source[i] === "$" && !isEscapedAt(source, i)) {
+      const token = source[i + 1] === "$" && !isEscapedAt(source, i + 1)
+        ? "$$"
+        : "$";
+      if (token === "$$") i += 1;
+      const top = delimiters[delimiters.length - 1];
+      if (top === token) delimiters.pop();
+      else if (top) return true;
+      else delimiters.push(token);
+      continue;
+    }
+    if (source[i] === "\\" && !isEscapedAt(source, i)) {
+      const token = source.slice(i, i + 2);
+      if (token === "\\(" || token === "\\[") {
+        if (delimiters.length) return true;
+        delimiters.push(token);
+        i += 1;
+        continue;
+      }
+      if (token === "\\)" || token === "\\]") {
+        const expected = token === "\\)" ? "\\(" : "\\[";
+        if (delimiters.pop() !== expected) return true;
+        i += 1;
+        continue;
+      }
+    }
+    if ((source[i] === "{" || source[i] === "}") && !isEscapedAt(source, i)) {
+      braceDepth += source[i] === "{" ? 1 : -1;
+      if (braceDepth < 0) return true;
+    }
+  }
+  if (delimiters.length || braceDepth !== 0) return true;
+
+  const environments = [];
+  const environmentPattern = /\\(begin|end)\{([^{}]+)\}/g;
+  let match;
+  while ((match = environmentPattern.exec(source)) !== null) {
+    if (match[1] === "begin") {
+      environments.push(match[2]);
+    } else if (environments.pop() !== match[2]) {
+      return true;
+    }
+  }
+  if (environments.length) return true;
+
+  return /(?:\^|_)\s*(?=(?:\$|\\\)|\\\]|[}\])]|$))/.test(source);
+}
+
 function renderInlineMarkdownHtml(text) {
   const safeToken = "__CHAT_ESCAPED_ASTERISK__";
-  let out = escapeHtml(stabilizePunctuationWrapping(text)).replace(/\\\*/g, safeToken);
+  let out = escapeHtml(stabilizePlainPunctuation(text)).replace(/\\\*/g, safeToken);
   out = out.replace(/\*\*([^*\n]+?)\*\*/g, "<strong>$1</strong>");
   out = out.replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, "$1<em>$2</em>");
   out = out.replace(new RegExp(safeToken, "g"), "*");
@@ -149,7 +519,7 @@ function renderAssistantMarkdownLineHtml(line) {
   const text = headingMatch ? headingMatch[2] : String(line || "");
   const segments = splitMathSegments(text);
   const inner = segments.map((part) => {
-    if (part.kind === "math") return escapeHtml(stabilizePunctuationWrapping(part.value));
+    if (part.kind === "math") return escapeHtml(part.value);
     return renderInlineMarkdownHtml(part.value);
   }).join("");
   if (level > 0) {
@@ -160,37 +530,57 @@ function renderAssistantMarkdownLineHtml(line) {
 
 function renderAssistantMarkdownText(el, text) {
   if (!el) return;
-  const sanitized = sanitizeForMathJax(String(text || ""));
+  // Tutor output is already authored mathematical prose. Avoid contest OCR
+  // guesses here (T/2 -> pi/2, f-1 -> inverse notation) and preserve newlines.
+  const sanitized = normalizeUnsupportedLatexEnvironments(String(text || ""));
   const renderKey = `m::${sanitized}`;
   if (el.dataset.renderKey === renderKey) return;
-  const html = sanitized.split(/\r?\n/).map((line) => renderAssistantMarkdownLineHtml(line)).join("<br>");
-  el.innerHTML = html;
+  const html = splitMathSegments(sanitized).map((part) => {
+    if (part.kind === "math") return escapeHtml(part.value);
+    return part.value
+      .split(/\r?\n/)
+      .map((line) => renderAssistantMarkdownLineHtml(line))
+      .join("<br>");
+  }).join("");
   el.dataset.renderKey = renderKey;
-  if (hasRenderableMathSyntax(sanitized)) {
-    if (!queueMathTypeset(el)) {
-      schedulePendingMathRetry();
-    }
-  } else {
-    clearMathPending(el);
+  const hasMath = hasRenderableMathSyntax(sanitized);
+  const scheduled = scheduleMathRender(el, () => {
+    el.innerHTML = html;
+  }, hasMath);
+  if (hasMath && (!scheduled || !hasMathTypesetter())) {
+    schedulePendingMathRetry();
   }
 }
 
 function renderMathText(el, text, options = {}) {
   const inlineOnly = Boolean(options.inlineOnly);
   const force = Boolean(options.force);
+  const onCommitted = typeof options.onCommitted === "function"
+    ? options.onCommitted
+    : null;
   if (!el) return;
-  const nextText = text || "";
+  let nextText = text || "";
+  if (inlineOnly) {
+    nextText = String(nextText)
+      .replace(/\$\$([\s\S]*?)\$\$/g, (_m, inner) => `$${inner}$`)
+      .replace(/\\\[([\s\S]*?)\\\]/g, (_m, inner) => `\\(${inner}\\)`);
+  }
   const displayText = stabilizePunctuationWrapping(nextText);
   const renderKey = `${inlineOnly ? "i" : "b"}::${nextText}`;
-  if (!force && el.dataset.renderKey === renderKey) return;
-  const renderPlain = !hasRenderableMathSyntax(nextText);
-  el.textContent = renderPlain ? displayText.replace(/\\\$/g, "$") : displayText;
-  el.dataset.renderKey = renderKey;
-  if (renderPlain) {
-    clearMathPending(el);
+  if (!force && el.dataset.renderKey === renderKey) {
+    if (el.dataset.mathPending === "1") {
+      addMathCommitCallback(el, currentMathRevision(el), onCommitted);
+    } else {
+      onCommitted?.();
+    }
     return;
   }
-  if (!queueMathTypeset(el)) {
+  const renderPlain = !hasRenderableMathSyntax(nextText);
+  el.dataset.renderKey = renderKey;
+  const scheduled = scheduleMathRender(el, () => {
+    el.textContent = renderPlain ? displayText.replace(/\\\$/g, "$") : displayText;
+  }, !renderPlain, onCommitted);
+  if (!renderPlain && (!scheduled || !hasMathTypesetter())) {
     schedulePendingMathRetry();
   }
 }
@@ -239,9 +629,25 @@ function normalizeChoiceMath(text) {
   if (!raw) return raw;
 
   // Display math inside buttons causes layout/cropping issues; force inline.
-  const inline = raw
+  let inline = raw
+    .replace(/\$\$([\s\S]*?)\$\$/g, (_m, inner) => `$${inner}$`)
     .replace(/\\\[/g, "\\(")
     .replace(/\\\]/g, "\\)");
+
+  // Choices that are entirely mathematical are more robust as one TeX
+  // segment than a mixture such as "pi+$\sqrt{2}$" or "[729,$\infty$)".
+  const exactParenMath = /^\\\([\s\S]*\\\)$/.test(inline);
+  const unwrapped = inline
+    .replace(/\$([^$\n]+)\$/g, "$1")
+    .replace(/\\\(([\s\S]*?)\\\)/g, "$1")
+    .trim();
+  if (
+    !exactParenMath
+    && /\\[A-Za-z]+|[_^{}]/.test(unwrapped)
+    && !/[A-Za-z]{2,}\s+[A-Za-z]{2,}/.test(unwrapped.replace(/\\[A-Za-z]+/g, ""))
+  ) {
+    inline = `$${unwrapped}$`;
+  }
 
   const hasDelimiters = /\$|\\\(|\\\[/.test(inline);
   const looksLikeLatex = /\\[a-zA-Z]+|[_^{}]/.test(inline);
@@ -315,11 +721,16 @@ function normalizeUnicodeMathTokens(text) {
     .replace(/\bT(?=\s*\/\s*\d)/g, "π")
     .replace(/\bI(?=\s*\/\s*\d)/g, "1")
     // Normalize bare sqrt followed by a token into MathJax-safe form.
+    .replace(/(?<!\\)\bsqrt\s*\{([^{}]+)\}/gi, "\\sqrt{$1}")
     .replace(/(?<!\\)\bsqrt\s*\(?\s*([A-Za-z0-9][A-Za-z0-9^_+\-*/.]*)\)?/gi, "\\sqrt{$1}")
+    .replace(/(?<!\\)\bpi\b/g, "\\pi")
     .replace(/√\s*([^,;:!?]+)/g, (_m, inner) => `\\sqrt{${String(inner || "").trim()}}`)
     // Some OCR exports use modifier circumflex as a faux integral sign.
     .replace(/\u02c6(?=\s*\d|\s*[A-Za-z])/g, "\\int ")
-    .replace(/(?<!\\)\b(arcsin|arccos|arctan|sin|cos|tan|sec|csc|cot|log|ln)\b/gi, (_m, fn) => `\\${String(fn || "").toLowerCase()}`);
+    .replace(
+      /(?<!\\)\b(arcsin|arccos|arctan|sin|cos|tan|sec|csc|cot|log|ln)\b(?!\s+denotes?\b)/gi,
+      (_m, fn) => `\\${String(fn || "").toLowerCase()}`
+    );
   return out;
 }
 
@@ -363,6 +774,11 @@ function wrapBareLatexSpans(text) {
 
 function stripScanNoise(text) {
   let out = String(text || "")
+    .replace(
+      /\s*\\?\$\s*\(NOTE:\s*THE FOLLOWING DIAGRAM WAS NOT SHOWN DURING THE ACTUAL EXAM,[\s\S]*?PICTURING THE PROBLEM\)\s*$/gi,
+      " "
+    )
+    .replace(/\s*\\?\$\s*[~_]?Diagram by [^_\n]+_?\s*$/gi, " ")
     .replace(/\b(?:GO ON TO THE NEXT P ?AGE\.?|SCRATCH WORK|ANSWER KEY)\b.*$/gi, " ")
     .replace(/\bSTOP If you finished before time is called,\s*you may check your work on this test\b.*$/gi, " ")
     // Remove leaked source image filenames embedded in prompt text.
@@ -374,12 +790,6 @@ function stripScanNoise(text) {
     .replace(/\bReferences?\s*:?\s*\d*\s*$/gi, " ")
     .replace(/\s+/g, " ")
     .trim();
-  out = out.replace(/\s+\d{1,2}\s*$/g, (suffix, offset, full) => {
-    const head = full.slice(0, Number(offset)).trimEnd();
-    // Trim likely page-number tails only when the preceding tail is prose-ish.
-    if (/[A-Za-z]{4,}\s*$/.test(head)) return " ";
-    return suffix;
-  });
   return out.trim();
 }
 
@@ -396,7 +806,7 @@ function normalizeOcrMathPatterns(text) {
       "$1^{-1}"
     )
     .replace(/\)\s*o\b/g, ")^\\circ")
-    .replace(/\b([A-Z])o\b/g, "$1^\\circ")
+    .replace(/\b([A-Z])o(?=\s*(?:[),=]|denotes?\s+(?:the\s+)?interior\b))/g, "$1^\\circ")
     .replace(/\)\s*c\b/g, ")^c")
     .replace(/\b([A-Z])c\b/g, "$1^c")
     .replace(/\b([A-Z])n\s*=\s*Id\b/g, "$1^n = Id")
@@ -420,10 +830,11 @@ function normalizeOcrMathPatterns(text) {
       const safeFn = String(fn || "").startsWith("\\") ? String(fn) : `\\${String(fn || "").toLowerCase()}`;
       return `(\\frac{${safeFn} ${a}}{${b}})`;
     })
-    .replace(/(^|[^A-Za-z])([A-Za-z])\s+([23])(?=[\s),.;:!?]|$)/g, "$1$2^$3")
+    // Only infer a lost exponent for a standalone OCR variable. In particular,
+    // TeX script operands such as \log_x 3 mean "log base x of 3", not x^3.
+    .replace(/(?<![A-Za-z_^\\])([A-Za-z])\s+([23])(?=[\s),.;:!?]|$)/g, "$1^$2")
     .replace(/√\s*([0-9A-Za-z]+)/g, "\\sqrt{$1}")
     .replace(/\s+/g, " ");
-  out = out.replace(/([.?!])\s+\d{1,2}\s*$/, "$1");
   return out.trim();
 }
 
@@ -464,7 +875,49 @@ function normalizeUnsupportedLatexEnvironments(text) {
       .replace(/\\(dfrac|tfrac|frac)\s*([A-Za-z0-9])\s*([A-Za-z0-9])(?![A-Za-z0-9])/g, "\\$1{$2}{$3}");
     return out;
   };
-  const normalized = String(text || "")
+  const normalizeDisplayEnvironments = (value) => {
+    const source = String(value || "");
+    const isInsideExplicitMath = (offset) => {
+      let active = "";
+      for (let i = 0; i < offset; i += 1) {
+        if (source[i] === "$" && !isEscapedAt(source, i)) {
+          const token = source[i + 1] === "$" && !isEscapedAt(source, i + 1)
+            ? "$$"
+            : "$";
+          if (token === "$$") i += 1;
+          if (!active) active = token;
+          else if (active === token) active = "";
+          continue;
+        }
+        if (source[i] !== "\\" || isEscapedAt(source, i)) continue;
+        const token = source.slice(i, i + 2);
+        if (token === "\\[" || token === "\\(") {
+          if (!active) active = token;
+          i += 1;
+        } else if (
+          (token === "\\]" && active === "\\[")
+          || (token === "\\)" && active === "\\(")
+        ) {
+          active = "";
+          i += 1;
+        }
+      }
+      return Boolean(active);
+    };
+    return source.replace(
+      /\\begin\{(align\*?|eqnarray\*?|aligned|array)\}([\s\S]*?)\\end\{\1\}/g,
+      (full, env, body, offset) => {
+        const mapped = /^(?:align|eqnarray)/.test(env) ? "aligned" : env;
+        const cleanBody = String(body || "")
+          .replace(/(?<!\\)\$\$?/g, "")
+          .trim();
+        const replacement = `\\begin{${mapped}}${cleanBody}\\end{${mapped}}`;
+        if (isInsideExplicitMath(Number(offset))) return replacement;
+        return `\\[${replacement}\\]`;
+      }
+    );
+  };
+  const normalized = normalizeDisplayEnvironments(String(text || ""))
     // MathJax support for \multicolumn in imported table fragments is inconsistent.
     // Keep only the cell payload.
     .replace(/\\multicolumn\s*\{[^{}]*\}\s*\{[^{}]*\}\s*\{((?:[^{}]|\{[^{}]*\})*)\}/g, "$1")
@@ -484,6 +937,12 @@ function normalizeUnsupportedLatexEnvironments(text) {
     .replace(/\\end\{tabular\}/g, "\\end{array}")
     // Normalize currency-ish macros and malformed wrappers.
     .replace(/\\textdollars?/g, "\\$")
+    // Imported choices sometimes wrap a signed currency value as TeX even
+    // though the dollar sign itself is literal: $-\$ 1.06$ -> -\$1.06.
+    .replace(
+      /(?<!\\)\$\s*([+-])\s*\\\$\s*(\d+(?:,\d{3})*(?:\.\d+)?)\s*\$/g,
+      (_full, sign, amount) => `${sign}\\$${amount}`
+    )
     .replace(/(?<!\S)\$\s*\\\$\s*([^$]+?)\s*\$/g, normalizeInnerEscapedCurrency)
     .replace(/(?<!\S)\$\$(\d+(?:,\d{3})*(?:\.\d+)?)(?=[\s,.;:!?)]|$)/g, toEscapedCurrency)
     .replace(/(?<!\S)\$\s*\$(\d+(?:,\d{3})*(?:\.\d+)?)\$/g, toEscapedCurrency)
@@ -562,6 +1021,7 @@ function escapeLikelyCurrencyDollars(text) {
 }
 
 function repairBrokenDollarEscapes(text) {
+  const escapedCurrencyToken = "__RB_ESCAPED_CURRENCY_DOLLAR__";
   const classify = (segment) => {
     const s = String(segment || "").trim();
     if (!s) return false;
@@ -573,25 +1033,27 @@ function repairBrokenDollarEscapes(text) {
     return /\d/.test(s) && /(?:^|[\s,;])[A-Za-z](?:$|[\s,;])/.test(s);
   };
 
-  let fixed = String(text || "").replace(/(?<!\$)\\\$(.+?)(?<!\\)\$/g, (_m, seg) => {
-    const s = String(seg || "").trim();
-    // If there is another unescaped '$' inside the span, this match crossed
-    // multiple math regions and should be left unchanged.
-    if (/(?<!\\)\$/.test(s)) {
-      return _m;
-    }
-    if (classify(s)) {
-      // Restore true inline math.
-      return `$${s}$`;
-    }
-    // If this span includes prose, the consumed trailing '$' is likely
-    // the start of the next math fragment (e.g., "... gave Sammy $t$ ...").
-    if (/\s+[A-Za-z]{3,}/.test(s)) {
-      return `\\$${s}$`;
-    }
-    // Treat as currency/amount text.
-    return `\\$${s}`;
-  });
+  let fixed = String(text || "")
+    .replace(/\\\$(?=\d)/g, escapedCurrencyToken)
+    .replace(/(?<!\$)\\\$(.+?)(?<!\\)\$/g, (_m, seg) => {
+      const s = String(seg || "").trim();
+      // If there is another unescaped '$' inside the span, this match crossed
+      // multiple math regions and should be left unchanged.
+      if (/(?<!\\)\$/.test(s)) {
+        return _m;
+      }
+      if (classify(s)) {
+        // Restore true inline math.
+        return `$${s}$`;
+      }
+      // If this span includes prose, the consumed trailing '$' is likely
+      // the start of the next math fragment (e.g., "... gave Sammy $t$ ...").
+      if (/\s+[A-Za-z]{3,}/.test(s)) {
+        return `\\$${s}$`;
+      }
+      // Treat as currency/amount text.
+      return `\\$${s}`;
+    });
   fixed = fixed.replace(/(?<!\\)\$(.+?)\\\$/g, (_m, seg) => {
     const s = String(seg || "").trim();
     // If there is another unescaped '$' inside the span, this match crossed
@@ -604,7 +1066,7 @@ function repairBrokenDollarEscapes(text) {
     }
     return `\\$${s}\\$`;
   });
-  return fixed;
+  return fixed.replace(new RegExp(escapedCurrencyToken, "g"), "\\$");
 }
 
 function escapeDanglingDollarDelimiter(text) {
@@ -621,17 +1083,10 @@ function escapeDanglingDollarDelimiter(text) {
 }
 
 function simplifyTrivialInlineMath(text) {
-  const source = String(text || "");
-  // If the prompt contains explicit LaTeX commands, keep inline delimiters
-  // so MathJax can format mixed symbolic content consistently.
-  if (/\\[A-Za-z]+/.test(source)) return source;
-  return source.replace(/(?<!\\)\$([^$]+?)(?<!\\)\$/g, (full, inner) => {
-    const token = String(inner || "").trim();
-    if (!token) return full;
-    if (/^[+-]?\d+(?:,\d{3})*(?:\.\d+)?$/.test(token)) return token;
-    if (/^[A-Za-z](?:\d+)?$/.test(token)) return token;
-    return full;
-  });
+  // Keep even simple numeric/symbolic spans delimited. Besides preserving
+  // author intent, this makes sanitization idempotent and prevents a second
+  // pass from mistaking a formerly delimited trailing number for scan noise.
+  return String(text || "");
 }
 
 function sanitizeForMathJax(text) {
@@ -734,15 +1189,20 @@ RB_MATH_ROOT.math = {
   markMathPending,
   clearMathPending,
   queueMathTypeset,
+  replaceMathContainer,
+  invalidateMathTree,
   flushPendingMathTypeset,
   schedulePendingMathRetry,
   bindMathJaxReadyRetry,
   hasRenderableMathSyntax,
   hasAssistantMarkdownSyntax,
+  problemHasDiagramReference,
+  problemRequiresExternalVisual,
   stabilizePunctuationWrapping,
   escapeHtml,
   splitMathSegments,
   hasUndelimitedMathSyntax,
+  hasMalformedMathSyntax,
   renderInlineMarkdownHtml,
   renderAssistantMarkdownLineHtml,
   renderAssistantMarkdownText,

@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 from collections import Counter
 from copy import deepcopy
@@ -23,6 +24,8 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 ARTIFACTS_DIR = ROOT / "artifacts"
+CURRENT_ARTIFACT_VERSION = "v3"
+ARTIFACT_VERSION_RE = re.compile(r"^v[0-9A-Za-z][0-9A-Za-z._-]*$")
 
 CALC_INPUT = DATA_DIR / "calculus_mcq_synthetic.json"
 GRE_INPUT = DATA_DIR / "upper_level_mcq.json"
@@ -49,6 +52,15 @@ def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
 
+def parse_artifact_version(value: str) -> str:
+    version = str(value or "")
+    if not ARTIFACT_VERSION_RE.fullmatch(version):
+        raise argparse.ArgumentTypeError(
+            "version must match ^v[0-9A-Za-z][0-9A-Za-z._-]*$"
+        )
+    return version
+
+
 def display_path(path: Path) -> str:
     try:
         return str(path.relative_to(ROOT))
@@ -69,6 +81,44 @@ def sha256_file(path: Path) -> str:
                 break
             h.update(chunk)
     return h.hexdigest()
+
+
+def manifest_without_timestamp(manifest: dict[str, Any]) -> dict[str, Any]:
+    stable = deepcopy(manifest)
+    stable.pop("generated_at_utc", None)
+    return stable
+
+
+def source_date_epoch_timestamp() -> str | None:
+    raw = os.environ.get("SOURCE_DATE_EPOCH")
+    if raw is None or not raw.strip():
+        return None
+    try:
+        epoch = int(raw)
+    except ValueError as error:
+        raise ValueError("SOURCE_DATE_EPOCH must be an integer number of seconds") from error
+    return datetime.fromtimestamp(epoch, timezone.utc).isoformat()
+
+
+def resolve_manifest_timestamp(
+    manifest_path: Path,
+    manifest: dict[str, Any],
+) -> str:
+    reproducible = source_date_epoch_timestamp()
+    if reproducible is not None:
+        return reproducible
+
+    try:
+        previous = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        previous = None
+    if (
+        isinstance(previous, dict)
+        and isinstance(previous.get("generated_at_utc"), str)
+        and manifest_without_timestamp(previous) == manifest_without_timestamp(manifest)
+    ):
+        return previous["generated_at_utc"]
+    return datetime.now(timezone.utc).isoformat()
 
 
 def normalize_text(text: Any) -> str:
@@ -285,6 +335,10 @@ def generate(version: str, gre_source_policy: str, calculus_input: Path) -> None
     gre_path = ARTIFACTS_DIR / gre_name
     manifest_path = ARTIFACTS_DIR / manifest_name
     rejects_path = ARTIFACTS_DIR / rejects_name
+    expected_parent = ARTIFACTS_DIR.resolve()
+    for target in (calc_path, gre_path, manifest_path, rejects_path):
+        if target.resolve().parent != expected_parent:
+            raise ValueError(f"Artifact target escaped artifacts/: {target}")
 
     write_json(calc_path, calc_final)
     write_json(gre_path, gre_final)
@@ -307,7 +361,7 @@ def generate(version: str, gre_source_policy: str, calculus_input: Path) -> None
     manifest = {
         "schema_version": 1,
         "artifact_version": version,
-        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "generated_at_utc": "",
         "inputs": {
             "calculus": {
                 "path": display_path(calculus_input),
@@ -351,6 +405,10 @@ def generate(version: str, gre_source_policy: str, calculus_input: Path) -> None
             ],
         },
     }
+    manifest["generated_at_utc"] = resolve_manifest_timestamp(
+        manifest_path,
+        manifest,
+    )
     write_json(manifest_path, manifest)
 
     print(f"Wrote {calc_path.relative_to(ROOT)} ({len(calc_final)} rows)")
@@ -363,8 +421,14 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate frozen calculus and GRE artifacts.")
     parser.add_argument(
         "--version",
-        default="v1",
-        help="Artifact version suffix (default: v1).",
+        required=True,
+        type=parse_artifact_version,
+        help="Artifact version suffix (for example, v3).",
+    )
+    parser.add_argument(
+        "--allow-historical-overwrite",
+        action="store_true",
+        help="Allow replacing an existing artifact version other than current v3.",
     )
     parser.add_argument(
         "--gre-source-policy",
@@ -383,6 +447,20 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    if args.version != CURRENT_ARTIFACT_VERSION and not args.allow_historical_overwrite:
+        historical_targets = [
+            ARTIFACTS_DIR / f"calculus_mcq_{args.version}.json",
+            ARTIFACTS_DIR / f"gre_math_mcq_{args.version}.json",
+            ARTIFACTS_DIR / f"manifest_{args.version}.json",
+            ARTIFACTS_DIR / f"rejects_{args.version}.json",
+        ]
+        existing = [path for path in historical_targets if path.exists()]
+        if existing:
+            paths = ", ".join(display_path(path) for path in existing)
+            raise SystemExit(
+                "Refusing to overwrite a historical artifact version without "
+                f"--allow-historical-overwrite: {paths}"
+            )
     calculus_input = args.calculus_input
     if not calculus_input.is_absolute():
         calculus_input = (ROOT / calculus_input).resolve()

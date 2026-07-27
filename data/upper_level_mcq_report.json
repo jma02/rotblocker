@@ -1,4 +1,5 @@
 {
+  "pipeline_stage": "raw_import_pre_quality_rewrite",
   "source_blocked_note": "mathematicsgre.com/viewtopic.php?t=4577 was Cloudflare-blocked (403); used public GRE-math practice PDFs.",
   "practice_parsed": 63,
   "practice_matched": 61,

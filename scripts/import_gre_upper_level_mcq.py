@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """
-Build an upper-level GRE Mathematics MCQ dataset from public practice PDFs.
+Extract an unverified upper-level GRE Mathematics staging dataset.
 
 Outputs:
-  - data/upper_level_mcq.json
-  - data/upper_level_mcq_report.json
+  - data/upper_level_mcq_unverified.json
+  - data/upper_level_mcq_unverified_report.json
+
+The curated production bank is maintained separately. This importer may emit
+OCR-damaged or duplicate rows and cannot overwrite the active bank.
 
 Topic labels (requested):
   - analysis
@@ -51,12 +54,28 @@ RUTGERS_PAIRS = [
     (6, RUTGERS / "math06.pdf", RUTGERS / "math06e.pdf"),
 ]
 
-OUT = ROOT / "data" / "upper_level_mcq.json"
-REPORT = ROOT / "data" / "upper_level_mcq_report.json"
+OUT = ROOT / "data" / "upper_level_mcq_unverified.json"
+REPORT = ROOT / "data" / "upper_level_mcq_unverified_report.json"
 
 Q_START_RE = re.compile(r"(?m)^\s*(\d{1,3})\.\s+")
 CHOICE_MARK_RE = re.compile(r"\(([A-Ea-e])\)")
 SET_RE = re.compile(r"Problem Set #\s*(\d+)", re.I)
+BOOTCAMP_SECTION_RE = re.compile(
+    r"(?mi)^[ \t]*("
+    r"Problem Set #[ \t]*\d+|"
+    r"Linear Algebra #1|"
+    r"Linear Algebra #2|"
+    r"Abstract Algebra|"
+    r"Number Theory|"
+    r"Real Analysis and Advanced Calculus|"
+    r"Topology|"
+    r"Combinatorics|"
+    r"Probability|"
+    r"Complex Analysis|"
+    r"Multivariable Calculus|"
+    r"Differential Equations"
+    r")[ \t]*$"
+)
 RUT_Q_START_RE = re.compile(r"(?m)^\s*(\d{1,2}|[IiLl])[.,]\s+")
 RUT_CHOICE_RE = re.compile(r"[\(\[\{]\s*([A-Ea-e])\s*[\)\]\}]")
 RUT_CHOICE_LINE_RE = re.compile(r"(?m)^\s*([A-Ea-e])[\)\].]\s+")
@@ -98,6 +117,210 @@ TOPIC_KEYWORDS = {
 
 TOPIC_PRIORITY = ["complex_analysis", "linalg", "algebra", "topology", "analysis"]
 
+# Topic sections followed Problem Set #10 in both Bootcamp PDFs.  The legacy
+# importer treated all of them as part of set 10, so answer-key entries with
+# repeated question numbers silently overwrote one another.  These stable keys
+# keep questions and answers in the same source section.
+BOOTCAMP_TOPIC_SECTION_KEYS = {
+    "linear algebra #1": "linear_algebra_1",
+    "linear algebra #2": "linear_algebra_2",
+    "abstract algebra": "abstract_algebra",
+    "number theory": "number_theory",
+    "real analysis and advanced calculus": "real_analysis",
+    "topology": "topology",
+    "combinatorics": "combinatorics",
+    "probability": "probability",
+    "complex analysis": "complex_analysis",
+    "multivariable calculus": "multivariable_calculus",
+    "differential equations": "differential_equations",
+}
+
+# The Solutions PDF does not include Multivariable Calculus or Differential
+# Equations.  It also gives C for Problem Set #9 question 1, although the
+# Hessian has eigenvalues 5 and -1 and therefore the point is a saddle (D).
+# Keep only the already-curated unkeyed questions and record their independently
+# verified answers here.
+BOOTCAMP_VERIFIED_ANSWER_OVERRIDES = {
+    ("problem_set_9", 1): "D",
+    ("multivariable_calculus", 1): "C",
+    ("differential_equations", 4): "A",
+    ("differential_equations", 5): "C",
+}
+
+# PyPDF flattens the two-dimensional exponent tower in practice question 48.
+# Preserve the exact source transcription before quality filtering.
+PRACTICE_VERIFIED_ITEM_OVERRIDES = {
+    48: {
+        "prompt": (
+            "Suppose today is Wednesday. What day of the week will it be "
+            r"$10^{10^{10}}$ days from now?"
+        ),
+    },
+}
+
+# PyPDF preserves the prose but loses two-dimensional fraction/exponent layout
+# in these rows.  Apply exact transcriptions after generic sanitization so a
+# future import cannot reintroduce the same malformed TeX or page-footer text.
+BOOTCAMP_VERIFIED_ITEM_OVERRIDES = {
+    ("multivariable_calculus", 1): {
+        "prompt": (
+            r"The plane $y=1$ slices the surface "
+            r"$z=\arctan\left(\frac{x+y}{1-xy}\right)$ in a curve $C$. "
+            r"Find the slope of the tangent line to $C$ at the point where "
+            r"$x=2$."
+        ),
+        "choices": [
+            "$-3$",
+            "$-1$",
+            r"$\frac{1}{5}$",
+            r"$\frac{1}{3}$",
+            r"$\frac{1}{2}$",
+        ],
+    },
+    ("linear_algebra_1", 2): {
+        "prompt": (
+            r"If $A$ is a square matrix of order $n\ge 4$, and "
+            r"$a_{ij}=i+j$ represents the entry in row $i$ and column $j$, "
+            r"then the rank of $A$ is always:"
+        ),
+        "choices": ["1", "2", r"$n-2$", r"$n-1$", r"$n$"],
+    },
+    ("problem_set_10", 2): {
+        "prompt": (
+            r"Let $A$ be a real $2\times2$ matrix. Which of the following "
+            r"statements must be true? (I) All entries of $A^2$ are "
+            r"nonnegative. (II) The determinant of $A^2$ is nonnegative. "
+            r"(III) If $A$ has two distinct eigenvalues, then $A^2$ has two "
+            r"distinct eigenvalues."
+        ),
+    },
+    ("differential_equations", 4): {
+        "prompt": (
+            r"Find the general solution of the differential equation "
+            r"$\frac{dy}{dx}=\frac{x+y}{x}$."
+        ),
+        "choices": [
+            r"$e^{y/x}=cx$",
+            r"$e^{y/x}=cy$",
+            r"$e^{x/y}=cx$",
+            r"$e^{x/y}=cy$",
+            r"$e^{-x/y}=cx$",
+        ],
+    },
+    ("differential_equations", 5): {
+        "prompt": (
+            r"What is the general solution to the differential equation "
+            r"$y''-2y'+y=te^t$?"
+        ),
+        "choices": [
+            r"$C_1e^t+C_2t^2e^t$",
+            r"$C_1e^t+C_2te^t$",
+            r"$C_1e^t+C_2te^t+\frac{1}{6}t^3e^t$",
+            r"$C_1e^t+C_2te^t+\frac{t}{2}e^t$",
+            r"$C_1e^t+C_2te^t+\frac{t^2}{2}e^t$",
+        ],
+    },
+    ("combinatorics", 5): {
+        "choices": [
+            r"$5\cdot 7$",
+            r"$\frac{7!}{5!}$",
+            r"$\frac{12!}{7!5!}$",
+            r"$2^{12}$",
+            r"$7!5!$",
+        ],
+    },
+    ("problem_set_10", 6): {
+        "prompt": (
+            r"Consider a hemisphere of radius $R$. What is the surface area "
+            r"of the portion of the sphere that lies at height $h$ or more "
+            r"above its center?"
+        ),
+        "choices": [
+            r"$2\pi R^{1/2}(R-h)^{3/2}$",
+            r"$2\pi R(R-h)$",
+            r"$2\pi R(R^2-h^2)^{1/2}$",
+            r"$3\pi Rh$",
+            r"$\pi R(R-h)$",
+        ],
+    },
+    ("problem_set_2", 3): {
+        "prompt": (
+            r"Let $S$ be a set with $|S|\ge 3$. How many non-surjective "
+            r"functions from $S$ to $\{1,2,3\}$ are there?"
+        ),
+        "choices": [
+            r"$3\cdot 2^{|S|}$",
+            r"$3\cdot 2^{|S|}-3$",
+            r"$3^{|S|}-3$",
+            r"$|S|^3$",
+            r"$2|S|^2-3$",
+        ],
+    },
+    ("problem_set_2", 5): {
+        "prompt": (
+            r"Which of the following exist? (I) "
+            r"$f_1:[0,1]\to(0,1)$ continuous and surjective. (II) "
+            r"$f_2:(0,1)\to[0,1]$ continuous and surjective. (III) "
+            r"$f_3:(0,1)\to[0,1]$ continuous and bijective."
+        ),
+    },
+    ("problem_set_4", 2): {
+        "prompt": (
+            r"Let $(x(t),y(t))$ be a parametric curve in $\mathbb{R}^2$ "
+            r"given by $x(t)=e^t$ and $y(t)=\sin(t)$. What is "
+            r"$\frac{d^2y}{dx^2}$ as a function of $t$?"
+        ),
+        "choices": [
+            r"$-\frac{\sin t}{e^t}$",
+            r"$\frac{\cos t-e^t\sin t}{e^t}$",
+            r"$\frac{-\sin t-\cos t}{e^t}$",
+            r"$\frac{\sin t+\cos t}{e^{2t}}$",
+            r"$\frac{-\sin t-\cos t}{e^{2t}}$",
+        ],
+    },
+    ("problem_set_5", 6): {
+        "prompt": (
+            "A basketball player practices free throws and stops as soon as "
+            "he has made 20 free throws (not necessarily consecutively). If "
+            "his free-throw percentage is 80%, what is the probability that "
+            "he needs exactly 50 attempts?"
+        ),
+        "choices": [
+            r"$\binom{50}{20}(0.8)^{20}(0.2)^{30}$",
+            r"$(0.8)^{20}(0.2)^{30}$",
+            r"$\binom{50}{20}(20\cdot 0.8)(30\cdot 0.2)$",
+            r"$\binom{49}{19}(0.8)^{20}(0.2)^{30}$",
+            r"$(20\cdot 0.8)(30\cdot 0.2)$",
+        ],
+    },
+    ("problem_set_6", 5): {
+        "prompt": (
+            "There are two cards: one is black on both sides, and the other "
+            "is black on one side and orange on the other. A card and then "
+            "one of its sides are chosen uniformly at random. Given that the "
+            "chosen side is black, what is the probability that the other "
+            "side is orange?"
+        ),
+    },
+    ("problem_set_7", 2): {
+        "prompt": (
+            "Suppose you wish to make a bouquet of 10 flowers. You go to the "
+            "flower store and there are 4 types of flowers you can use. How "
+            "many bouquets can you make using only these flowers?"
+        ),
+        "choices": [
+            r"$4^{10}$",
+            "40",
+            r"$\binom{9}{4}^{10}$",
+            r"$\binom{13}{3}$",
+            r"$\binom{13}{9}$",
+        ],
+    },
+    ("problem_set_9", 1): {
+        "prompt": r"The function $f(x,y)=x^2+3xy+y^2+y^4$:",
+    },
+}
+
 
 @dataclass
 class ParsedQuestion:
@@ -114,6 +337,13 @@ def read_pdf_text(path: Path) -> str:
 def normalize_text(s: str) -> str:
     s = s.replace("\r", "\n")
     s = re.sub(r"\u00a0", " ", s)
+    s = (
+        s.replace("\ufb00", "ff")
+        .replace("\ufb01", "fi")
+        .replace("\ufb02", "fl")
+        .replace("\ufb03", "ffi")
+        .replace("\ufb04", "ffl")
+    )
     s = re.sub(r"[ \t]+", " ", s)
     s = re.sub(r"\n{3,}", "\n\n", s)
     return s
@@ -368,6 +598,43 @@ def split_by_problem_set(text: str) -> dict[int, str]:
     return out
 
 
+def bootcamp_section_key(heading: str) -> str:
+    normalized = " ".join(normalize_text(heading).casefold().split())
+    problem_set = re.fullmatch(r"problem set #\s*(\d+)", normalized)
+    if problem_set:
+        return f"problem_set_{int(problem_set.group(1))}"
+    try:
+        return BOOTCAMP_TOPIC_SECTION_KEYS[normalized]
+    except KeyError as exc:
+        raise ValueError(f"Unknown Bootcamp section heading: {heading!r}") from exc
+
+
+def split_bootcamp_sections(text: str) -> dict[str, str]:
+    """Split a Bootcamp PDF extraction without merging repeated q numbers."""
+
+    text = normalize_text(text)
+    out: dict[str, str] = {}
+    matches = list(BOOTCAMP_SECTION_RE.finditer(text))
+    for i, match in enumerate(matches):
+        section = bootcamp_section_key(match.group(1))
+        start = match.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        out[section] = text[start:end]
+    return out
+
+
+def bootcamp_legacy_problem_set(section: str) -> int:
+    """Return legacy metadata used by stable IDs in the curated output."""
+
+    problem_set = re.fullmatch(r"problem_set_(\d+)", section)
+    if problem_set:
+        return int(problem_set.group(1))
+    # The old parser grouped every topical section under Problem Set #10.
+    # Preserve that source field so clean_advanced_datasets.py regenerates the
+    # same stable ID prefixes; source.section now supplies the missing identity.
+    return 10
+
+
 def parse_mcq_blocks_ocr(text: str) -> list[ParsedQuestion]:
     text = normalize_ocr_text(text)
     blocks: list[ParsedQuestion] = []
@@ -476,10 +743,28 @@ def classify_topic(prompt: str) -> str:
     return "other_upper_level"
 
 
-def build_item(source: str, set_no: Optional[int], q: ParsedQuestion, answer_key: str, idx: int) -> dict:
+def build_item(
+    source: str,
+    set_no: Optional[int],
+    q: ParsedQuestion,
+    answer_key: str,
+    idx: int,
+    section: Optional[str] = None,
+) -> dict:
     topic = classify_topic(q.prompt)
     prompt = mathjax_sanitize(q.prompt)
     choices = [mathjax_sanitize(c) for c in q.choices]
+    source_metadata = {
+        "dataset": source,
+        "problemSet": set_no,
+        "question": q.qnum,
+    }
+    if section:
+        source_metadata["section"] = section
+        if not section.startswith("problem_set_"):
+            source_metadata["legacyProblemSet"] = source_metadata.pop(
+                "problemSet"
+            )
     return {
         "id": f"upper-gre-{source.lower()}-{f's{set_no}-' if set_no else ''}q{q.qnum}",
         "type": "mcq",
@@ -492,12 +777,42 @@ def build_item(source: str, set_no: Optional[int], q: ParsedQuestion, answer_key
         "answerIndex": idx,
         "answerKey": answer_key,
         "answer": choices[idx],
-        "source": {
-            "dataset": source,
-            "problemSet": set_no,
-            "question": q.qnum,
-        },
+        "source": source_metadata,
     }
+
+
+def apply_bootcamp_item_override(
+    item: dict,
+    section: str,
+    question: int,
+) -> dict:
+    patch = BOOTCAMP_VERIFIED_ITEM_OVERRIDES.get((section, question))
+    if not patch:
+        return item
+    out = dict(item)
+    if "prompt" in patch:
+        out["prompt"] = patch["prompt"]
+    if "choices" in patch:
+        out["choices"] = list(patch["choices"])
+    answer_index = out["answerIndex"]
+    out["answerKey"] = "ABCDE"[answer_index]
+    out["answer"] = out["choices"][answer_index]
+    return out
+
+
+def apply_practice_item_override(item: dict, question: int) -> dict:
+    patch = PRACTICE_VERIFIED_ITEM_OVERRIDES.get(question)
+    if not patch:
+        return item
+    out = dict(item)
+    if "prompt" in patch:
+        out["prompt"] = patch["prompt"]
+    if "choices" in patch:
+        out["choices"] = list(patch["choices"])
+    answer_index = out["answerIndex"]
+    out["answerKey"] = "ABCDE"[answer_index]
+    out["answer"] = out["choices"][answer_index]
+    return out
 
 
 def main() -> None:
@@ -507,10 +822,12 @@ def main() -> None:
 
     items: list[dict] = []
     stats = {
+        "pipeline_stage": "raw_import_pre_quality_rewrite",
         "source_blocked_note": "mathematicsgre.com/viewtopic.php?t=4577 was Cloudflare-blocked (403); used public GRE-math practice PDFs.",
         "practice_parsed": 0,
         "practice_matched": 0,
         "boot_sets_parsed": 0,
+        "boot_sections_parsed": 0,
         "boot_matched": 0,
         "rutgers_sets_processed": 0,
         "rutgers_q_parsed": 0,
@@ -536,6 +853,7 @@ def main() -> None:
         if idx < 0 or idx >= len(q.choices):
             continue
         item = build_item("GREpractice", None, q, ans, idx)
+        item = apply_practice_item_override(item, q.qnum)
         if not is_quality_item(item):
             stats["quality_dropped_total"] += 1
             stats["quality_dropped_nonrutgers"] += 1
@@ -545,20 +863,40 @@ def main() -> None:
         stats["topic_counts"][item["topic"]] += 1
 
     # Bootcamp sets + keyed solutions
-    boot_q_sets = split_by_problem_set(read_pdf_text(BOOT_Q))
-    boot_a_sets = split_by_problem_set(read_pdf_text(BOOT_A))
-    stats["boot_sets_parsed"] = len(boot_q_sets)
-    for set_no, q_text in boot_q_sets.items():
+    boot_q_sections = split_bootcamp_sections(read_pdf_text(BOOT_Q))
+    boot_a_sections = split_bootcamp_sections(read_pdf_text(BOOT_A))
+    stats["boot_sets_parsed"] = sum(
+        section.startswith("problem_set_")
+        for section in boot_q_sections
+    )
+    stats["boot_sections_parsed"] = len(boot_q_sections)
+    for section, q_text in boot_q_sections.items():
+        set_no = bootcamp_legacy_problem_set(section)
         qs = parse_mcq_blocks(q_text)
-        key = parse_answer_key_simple(boot_a_sets.get(set_no, ""))
+        key = parse_answer_key_simple(boot_a_sections.get(section, ""))
         for q in qs:
-            ans = key.get(q.qnum)
+            ans = BOOTCAMP_VERIFIED_ANSWER_OVERRIDES.get(
+                (section, q.qnum),
+                key.get(q.qnum),
+            )
             if not ans:
                 continue
             idx = ord(ans) - ord("A")
             if idx < 0 or idx >= len(q.choices):
                 continue
-            item = build_item("GREBootcamp", set_no, q, ans, idx)
+            item = build_item(
+                "GREBootcamp",
+                set_no,
+                q,
+                ans,
+                idx,
+                section=section,
+            )
+            item = apply_bootcamp_item_override(
+                item,
+                section,
+                q.qnum,
+            )
             if not is_quality_item(item):
                 stats["quality_dropped_total"] += 1
                 stats["quality_dropped_nonrutgers"] += 1

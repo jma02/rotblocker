@@ -1,3 +1,12 @@
 .DS_Store
 dist/
 node_modules/
+__pycache__/
+*.py[cod]
+data/*_unverified.json
+data/*_unverified_report.json
+data/amio_unverified/
+data/amio_unverified_assets/
+data/*_synthetic_preview.json
+data/*_rewrite_preview.json
+data/*_rewrite_preview_report.json

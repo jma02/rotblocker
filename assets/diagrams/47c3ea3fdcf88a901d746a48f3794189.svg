@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 270" role="img" aria-labelledby="title">
+  <title id="title">Overlapping sets A and B with intersection 1001</title>
+  <g fill="none" stroke="#111" stroke-width="3">
+    <circle cx="160" cy="145" r="100"/><circle cx="260" cy="145" r="100"/>
+  </g>
+  <g fill="#111" font-family="serif" font-size="25">
+    <text x="145" y="32" font-style="italic">A</text>
+    <text x="250" y="32" font-style="italic">B</text>
+    <text x="179" y="153">1001</text>
+  </g>
+</svg>

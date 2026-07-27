@@ -1,0 +1,2580 @@
+{
+  "baselineRef": "8f5ceb3151b2975ff591a5c277ff2981ef477947",
+  "normalizationChanges": {
+    "answer_sync": 286,
+    "broken_diagram_override": 1,
+    "choice_layout_noise": 368,
+    "choice_math_wrapper": 1426,
+    "currency_choice_wrapper": 2,
+    "display_math": 12,
+    "existing_diagram_link": 51,
+    "fraction_commands": 518,
+    "leading_tex_command": 28,
+    "malformed_set_choice_override": 1,
+    "mathjax_command_compatibility": 3,
+    "media_noise": 8,
+    "missing_choice_command": 26,
+    "mixed_choice_delimiter_override": 2,
+    "official_answer_override": 1,
+    "official_source_override": 3,
+    "prompt_spacing": 122,
+    "source_attribution_noise": 1,
+    "source_backed_answer_override": 1,
+    "source_backed_gre_override": 19,
+    "source_section_disambiguation": 33,
+    "source_typo_override": 1,
+    "sqrt_commands": 94,
+    "trailing_empty_phantom": 1,
+    "triple_brace_choice": 30,
+    "truncated_parenthetical_override": 7,
+    "verified_choice_override": 2,
+    "verified_prompt_override": 6,
+    "verified_prompt_text_override": 60,
+    "verified_shared_diagram_link": 13
+  },
+  "changedFiles": [
+    "data/aime.json",
+    "data/amc10.json",
+    "data/amc12.json",
+    "data/amc8.json",
+    "data/calculus_mcq.json",
+    "data/calculus_mcq_synthetic.json",
+    "data/upper_level_mcq.json"
+  ],
+  "latestNormalizationChanges": {},
+  "latestChangedFiles": [],
+  "datasetCounts": {
+    "data/aime.json": 243,
+    "data/amc8.json": 448,
+    "data/amc10.json": 757,
+    "data/amc12.json": 682,
+    "data/calculus_mcq.json": 0,
+    "data/calculus_mcq_synthetic.json": 320,
+    "data/upper_level_mcq.json": 44
+  },
+  "issueCounts": {},
+  "issueExamples": {},
+  "exactDuplicateGroupCount": 328,
+  "exactDuplicateGroups": [
+    {
+      "normalizedPrompt": "based on the plotted graph which statement must be true",
+      "members": [
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0289"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0293"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0296"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0299"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0300"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0301"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0303"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0305"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0308"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0310"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0311"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0312"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0313"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0316"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0317"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0319"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "based on the plotted graph which statement is true",
+      "members": [
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0290"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0291"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0292"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0294"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0295"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0297"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0298"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0302"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0304"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0306"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0307"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0309"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0314"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0315"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0318"
+        },
+        {
+          "file": "data/calculus_mcq_synthetic.json",
+          "id": "calcv2-plot_interpretation-0320"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "doug and dave shared a pizza with 8 equally sized slices doug wanted a plain pizza but dave wanted anchovies on half the pizza the cost of a plain pizza was 8 dollars and there was an additional cost of 2 dollars for putting anchovies on on",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-00a67d27f3f850289722347f2027bee1"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-c182a24dc15c7b8f0891178f7449e8c3"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a quadrilateral is inscribed in a circle of radius 200 2 three of the sides of this quadrilateral have length 200 what is the length of the fourth side",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-026f196b9b8ea005ebfc988e15ba8397"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-b7066cfe85c79dde1652e7df58145906"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "in the eight term sequence a b c d e f g h the value of c is 5 and the sum of any three consecutive terms is 30 what is a h",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0309f8e2dd512b605b428e5741d9c00b"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-aee3d3b69245b0fd1ab4eac5ea6c961c"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "for how many values of the constant k will the polynomial x 2 kx 36 have two distinct integer roots",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-03b882a2e3ed85af172d72f2dc4d0e4a"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-ff5ae5744ccfcb23c53c9a377ad934ae"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a scout troop buys 1000 candy bars at a price of five for 2 dollars they sell all the candy bars at the price of two for 1 dollar what was their profit in dollars",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0497a084b3c6c9285a3680d4c98854b9"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-dddb5ca3f68507e8e9d61fc5f6558fa4"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "the players on a basketball team made some three point shots some two point shots and some one point free throws they scored as many points with two point shots as with three point shots their number of successful free throws was one more t",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-059381fdfca715f4d0b8c878bb77442f"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-435b20e4f88609c611aa8c2f8d071007"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "alice refuses to sit next to either bob or carla derek refuses to sit next to eric how many ways are there for the five of them to sit in a row of 5 chairs under these conditions",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-05c9f66d5524610e20b9110501cf3f02"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-0c89fe769516cc2eea1cb8f9ae9424aa"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a group of 12 pirates agree to divide a treasure chest of gold coins among themselves as follows the k th pirate to take a share takes frac k 12 of the coins that remain in the chest the number of coins initially in the chest is the smalles",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-09c47b96e58ba8159dbd4799e6f2e766"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-7b93826b436587f2b9c6024c63afbc28"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "when a student multiplied the number 66 by the repeating decimal 1 a b a b 1 a b where a and b are digits he did not notice the notation and just multiplied 66 times 1 a b later he found that his answer is 0 5 less than the correct answer w",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-09f982d83272a8ff7390516849306bb3"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-c3b42ef478e5e167c2dfab3fcfa0f733"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "how many sets of two or more consecutive positive integers have a sum of 15",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0a1e95295793f5bd5857101f243d31b5"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-940a07645680df250a0bbdb8859062b0"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "what is the area of the region in the coordinate plane defined by x 1 y 1 1",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0a76a3623b55af072cd12401ed9e7721"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-a620abdbf00b013c87a60f545ad1fe3b"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a driver travels for 2 hours at 60 miles per hour during which her car gets 30 miles per gallon of gasoline she is paid 0 50 per mile and her only expense is gasoline at 2 00 per gallon what is her net rate of pay in dollars per hour after ",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0abc4ab743b94eebaf4c89a5e03ba9ed"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-c0b72835a4e2b4946bf6e4a4ac6eb1e8"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "the sum of two nonzero real numbers is 4 times their product what is the sum of the reciprocals of the two numbers",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0afb084c04bec3904c940ffec987abce"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-be2553f5dbfcfc794f633e1c6fd6a5c3"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "one dimension of a cube is increased by 1 another is decreased by 1 and the third is left unchanged the volume of the new rectangular solid is 5 less than that of the cube what was the volume of the cube",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0b14472d35113590a637810028af0665"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-db98b290300af081b5336dbccaf944a5"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "moe uses a mower to cut his rectangular 90 foot by 150 foot lawn the swath he cuts is 28 inches wide but he overlaps each cut by 4 inches to make sure that no grass is missed he walks at the rate of 5000 feet per hour while pushing the mowe",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0b809126b6db7e31a42b056d7b62a102"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-a7daf3b4a9cfb62d052477cd13633c61"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "what is the largest integer that is a divisor of n 1 n 3 n 5 n 7 n 9 for all positive even integers n",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0c07a5ca8005605495a7794df53fef07"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-b29fbe18dd7e13b841bb6c816a281bff"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "jamal wants to save 30 files onto disks each with 1 44 mb space 3 of the files take up 0 8 mb 12 of the files take up 0 7 mb and the rest take up 0 4 mb it is not possible to split a file onto 2 different disks what is the smallest number o",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0c29b978688281fcd37e0b151cca03b1"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-f475ad6696c0cf4d95091c274532a1bc"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "let s be the set of circles in the coordinate plane that are tangent to each of the three circles with equations x 2 y 2 4 x 2 y 2 64 and x 5 2 y 2 3 what is the sum of the areas of all circles in s",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0c5fd1b20828ca337921505ebaf54bc3"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-1fb19062aa608361f75d6736ba701ce8"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "suppose that s is a finite set of positive integers if the greatest integer in s is removed from s then the average value arithmetic mean of the integers remaining is 32 if the least integer in s is also removed then the average value of th",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0d72b274cc03a643f28139c6efc2fcf0"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-34c190f83e3201271249ab07f2bc7656"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "integers a b c and d not necessarily distinct are chosen independently and at random from 0 to 2007 inclusive what is the probability that ad bc is even",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0e77c0e705a98bcb37125278fe0a7194"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-11404e601c27b039d000554fd1d20078"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a digital watch displays hours and minutes with am and pm what is the largest possible sum of the digits in the display",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-0f0763a1eecf81fe1fb11ad22d6a5b82"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-1e437341ecbbe116dfee862e045be5b8"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "let n be a positive multiple of 5 one red ball and n green balls are arranged in a line in random order let p n be the probability that at least frac 3 5 of the green balls are on the same side of the red ball observe that p 5 1 and that p ",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-10595b3197aedf1fde50cfcac9dd084c"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-9c5b924f7e4a5c96dde0bfadef645041"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "for how many integers n between 1 and 50 inclusive is frac n 2 1 n n an integer recall that 0 1",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-1089d9ee0315d5ff1da9961066260cc8"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-911a858e726fd0e0dc391dfa08bfcbf2"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "call a fraction frac a b not necessarily in the simplest form special if a and b are positive integers whose sum is 15 how many distinct integers can be written as the sum of two not necessarily different special fractions",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-10d915822e18482f89f720175a2110ce"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-7ca872a6d79c380c12540e05837735b5"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "each vertex of convex pentagon abcde is to be assigned a color there are 6 colors to choose from and the ends of each diagonal must have different colors how many different colorings are possible",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-11a0b8251608f423ddf1af38e7cbcfad"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-97b249f1a3d8dee31ff3520bb4ff8dad"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "for how many ordered pairs b c of positive integers does neither x 2 bx c 0 nor x 2 cx b 0 have two distinct real solutions",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-11bdfcdb95089785de4e92c43fdaa913"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-bf367cf5b05c1c8b21b7ede034ecd6e8"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "how many 4 digit positive integers that is integers between 1000 and 9999 inclusive having only even digits are divisible by 5",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-12029877d9f3f90d24f177f850e5b4de"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-a2bc61907813361e77c1a7009a3fdc72"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "for certain real numbers a b and c the polynomial g x x 3 ax 2 x 10 has three distinct roots and each root of g x is also a root of the polynomial f x x 4 x 3 bx 2 100x c what is f 1",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-12da7c46dcc398f0d21c4c03ab49a91e"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-a91a4d5f4ab36ee43189c02f60aa3ba2"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "triangle abc with ab 50 and ac 10 has area 120 let d be the midpoint of ab and let e be the midpoint of ac the angle bisector of bac intersects de and bc at f and g respectively what is the area of quadrilateral fdbg",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-1436c17f162684edae17701340d27906"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-01640cf4d657c4bdc824687aba883bf7"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a particular 12 hour digital clock displays the hour and minute of a day unfortunately whenever it is supposed to display a 1 it mistakenly displays a 9 for example when it is 1 16 pm the clock incorrectly shows 9 96 pm what fraction of the",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-14b1f6481b0c8d91340b5b79cb1734ec"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-9b8aaeef58cf16d673c11473dcfdaeb3"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "four distinct circles are drawn in a plane what is the maximum number of points where at least two of the circles intersect",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-15bb34fe69f2f1bd9fb6c9cf0e38db42"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-2ac41de2e0944529e28a1d9ea6d56754"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "how many ways can a student schedule 3 mathematics courses algebra geometry and number theory in a 6 period day if no two mathematics courses can be taken in consecutive periods what courses the student takes during the other 3 periods is o",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-16b29df09fb7c766cd6e1013f180ee2f"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-52cc7f92e9be49162871792ee84324a0"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "quadrilateral abcd satisfies abc acd 90 ac 20 and cd 30 diagonals ac and bd intersect at point e and ae 5 what is the area of quadrilateral abcd",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-1745104b4d24b9d50c148fb40caa5d53"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-83cbe96e1f28e8817a16e0501ed91b88"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a binary operation has the properties that a b c a b c and that a a 1 for all nonzero real numbers a b and c here represents multiplication the solution to the equation 2016 6 x 100 can be written as frac p q where p and q are relatively pr",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-1787618c91fb9d5209db93104c08f05e"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-93af4cac5a67157833d27feb7ade1fa9"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a school has 100 students and 5 teachers in the first period each student is taking one class and each teacher is teaching one class the enrollments in the classes are 50 20 20 5 and 5 let t be the average value obtained if a teacher is pic",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-1861eee8004af280f1e0eb084bd24822"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-cfeafd9b994368a4ef91c0b8fb49f314"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "when the roots of the polynomial p x x 1 1 x 2 2 x 3 3 x 10 10 are removed from the number line what remains is the union of 11 disjoint open intervals on how many of these intervals is p x positive",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-1a673bc4502d9757d0f7da2139cd1735"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-f94ac51df8f5609c071ea4cd49f11383"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "how many non congruent triangles with perimeter 7 have integer side lengths",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-1aa53818bfeba873bbaf1ffe4a2c3a9c"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-faedc2419bb889f494bddd75322b5a7d"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "mrs jones is pouring orange juice into four identical glasses for her four sons she fills the first three glasses completely but runs out of juice when the fourth glass is only frac 1 3 full what fraction of a glass must mrs jones pour from",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-1b7e9694d7e0081fbda560f8e8e478b9"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-8542a65522a2590dd85224c3708cc2f8"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "according to the standard convention for exponentiation 2 2 2 2 2 2 2 2 2 16 65536 if the order in which the exponentiations are performed is changed how many other values are possible",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-1f2c907bdd7353805fcf044529c2d1ca"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-76a119fb12551b324a1a993bc1c44b32"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a company sells peanut butter in cylindrical jars marketing research suggests that using wider jars will increase sales if the diameter of the jars is increased by 25 without altering the volume by what percent must the height be decreased",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-2393dce2ca11fb3d451c14d27465d347"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-852571302fb9cd8f2fde66fe520b9e48"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "as shown in the figure below point e lies on the opposite half plane determined by line cd from point a so that cde 110 point f lies on ad so that de df and abcd is a square what is the degree measure of afe",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-23fa4cd719d8194472b2b513366a4ce5"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-a92018d93b169b9a6b82489bc54a53a4"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "for k 0 let i k 10 064 where there are k zeros between the 1 and the 6 let n k be the number of factors of 2 in the prime factorization of i k what is the maximum value of n k",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-25001bffec3a1fdfd42805261c3a6fd2"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-a823f5901c7f29ed65a79368b4ea36eb"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "for a set of four distinct lines in a plane there are exactly n distinct points that lie on two or more of the lines what is the sum of all possible values of n",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-276bd8eea6352b67e2a1a359f300470f"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-2f8efa6f69cbec136bb123420190c6eb"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "the entries in a 3 3 array include all the digits from 1 through 9 arranged so that the entries in every row and column are in increasing order how many such arrays are there",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-29876adbd9aa586bb7e1727913e40199"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-24ccd3907db8a4f96a778e879dc66a2f"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "the 8 18 rectangle abcd is cut into two congruent hexagons as shown in such a way that the two hexagons can be repositioned without overlap to form a square what is y",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-29eefa683717b1a890f8f6e5655b231a"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-2d757b0ec9f99f513c86f8d780bc7461"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "how many strings of length 5 formed from the digits 0 1 2 3 4 are there such that for each j 1 2 3 4 at least j of the digits are less than j for example 02214 satisfies this condition because it contains at least 1 digit less than 1 at lea",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-2b185240be5f2762ce05eaec3b1b2489"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-be7b0ba93d2022d618d8dcc167740e52"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "mr patrick teaches math to 15 students he was grading tests and found that when he graded everyone s test except payton s the average grade for the class was 80 after he graded payton s test the test average became 81 what was payton s scor",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-2bde84a7af0af40495ba32dd0ba29cfb"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-8e2a2516d416f1a341693d2b0dea3b9c"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "at the beginning of the school year lisa s goal was to earn an a on at least 80 of her 50 quizzes for the year she earned an a on 22 of the first 30 quizzes if she is to achieve her goal on at most how many of the remaining quizzes can she ",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-2c4d690318e6d06c7080bf2ecdd4d375"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-7063bbb7bf2c1f63109516cd99a8ca7e"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "sandwiches at joe s fast food cost 3 each and sodas cost 2 each how many dollars will it cost to purchase 5 sandwiches and 8 sodas",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-2e80d0c28902e256af27aa3005603609"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-138d8679cdb4abb8b19933844d32166e"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "the number 2013 is expressed in the form 2013 frac a 1 a 2 a m b 1 b 2 b n where a 1 a 2 a m and b 1 b 2 b n are positive integers and a 1 b 1 is as small as possible what is a 1 b 1",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-2ee242ba369a1d8d1bd942a67d943d40"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-f947d416ed5e04489c729d7003bd1fe9"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "as shown in the figure line segment ad is trisected by points b and c so that ab bc cd 2 three semicircles of radius 1 aeb bfc and cgd have their diameters on ad and are tangent to line eg at e f and g respectively a circle of radius 2 has ",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-304afbe1618e4ddfe9aeaa03e775ed66"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-9f73c3b623378fb5c5d99ffc4f61679c"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "it takes anna 30 minutes to walk uphill 1 km from her home to school but it takes her only 10 minutes to walk from school to her home along the same route what is her average speed in km hr for the round trip",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-30c7684e166a7b23c83c35f7a1be36f3"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-b79f694a655150ff2c02f8884cb4d317"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "consider the statement if n is not prime then n 2 is prime which of the following values of n is a counterexample to this statement",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-310586d0fb516362d45b80497fd5e504"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-b466309ecc2d95ae7e7053ca2baa14ff"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "samia set off on her bicycle to visit her friend traveling at an average speed of 17 kilometers per hour when she had gone half the distance to her friend s house a tire went flat and she walked the rest of the way at 5 kilometers per hour ",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-31231826acbe22d0c29c5f5d1682f984"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-e788fbbd316a1a798ef1bfc26fd893e8"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "amy beth and jo listen to four different songs and discuss which ones they like no song is liked by all three furthermore for each of the three pairs of the girls there is at least one song liked by those two girls but disliked by the third",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-3185d1ecbd11fdca0592859ba9d9a0e4"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-e75074ad4e52a7433b02b479607f620f"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "in triangle abc ab 13 bc 14 and ca 15 distinct points d e and f lie on segments bc ca and de respectively such that ad bc de ac and af bf the length of segment df can be written as frac m n where m and n are relatively prime positive intege",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-328ae7ab8a0b8397dd61219a55966a3b"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-359db4c425d3de5bd0d82e85d75bd845"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "how many ways are there to split the integers 1 through 14 into 7 pairs such that in each pair the greater number is at least 2 times the lesser number",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-32b78ca89eab905f8b4bb9861baab0f1"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-15422b10cd2f7a57f4d8a412de7ac36b"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a majority of the 30 students in ms demeanor s class bought pencils at the school bookstore each of these students bought the same number of pencils and this number was greater than 1 the cost of a pencil in cents was greater than the numbe",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-33a6a4fef9a51e8ed5b526bc71121b74"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-d1730fe7b09e9798011f01658d910776"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "in a triangle with integer side lengths one side is three times as long as a second side and the length of the third side is 15 what is the greatest possible perimeter of the triangle",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-353deab22c46abd630b8350cb6ed1a47"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-2f42bda307d9d3aadc0a044194c4153c"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "all three vertices of abc lie on the parabola defined by y x 2 with a at the origin and bc parallel to the x axis the area of the triangle is 64 what is the length of bc",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-359798c6a9b6e3dca1b7bc061d971493"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-b46ce22b01c7e2b5682b64bb8e2cfb2a"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "palindrome such as 83438 is a number that remains the same when its digits are reversed the numbers x and x 32 are three digit and four digit palindromes respectively what is the sum of the digits of x",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-37dc2f3c18e482162b685ea7d956527b"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-6a17851c60976cb4c43295323e2e06cb"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "what is the value of 1234 2341 3412 4123",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-38b6550b85e0ad6e3d2e5d4d538f4d1a"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-b3853573b6037e5ed2d211252b4aa53d"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "menkara has a 4 6 index card if she shortens the length of one side of this card by 1 inch the card would have area 18 square inches what would the area of the card be in square inches if instead she shortens the length of the other side by",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-3962c6da4f1b20773d38e6411fe7f176"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-68f4bdf36bb281a18b07cb14ad293484"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "let k 2008 2 2 2008 what is the units digit of k 2 2 k",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-39fc02e1caebc1612c0b90dbe5f2ade5"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-bc927c4a3cda140b72dab6758a55fa39"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "paula the painter and her two helpers each paint at constant but different rates they always start at 8 00 am and all three always take the same amount of time to eat lunch on monday the three of them painted 50 of a house quitting at 4 00 ",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-3a2dae084a67dc79424402e051e84849"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-5d34571583a698d4f5ebcb679250324f"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "each vertex of a cube is to be labeled with an integer 1 through 8 with each integer being used once in such a way that the sum of the four numbers on the vertices of a face is the same for each face arrangements that can be obtained from e",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-3c288b5d6747970212327a628ab58158"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-678b5671dc839abe5ea18f5c4fb7fc61"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "all the roots of the polynomial z 6 10z 5 az 4 bz 3 cz 2 dz 16 are positive integers possibly repeated what is the value of b",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-3d2419b00c582f984e8c960eff7065fb"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-e1d7d878b90c220299a523c9534ea595"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "let p n and s n denote the product and the sum respectively of the digits of the integer n for example p 23 6 and s 23 5 suppose n is a two digit number such that n p n s n what is the units digit of n",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-3dc50ddfbe989a9fc21f84fad0a2f600"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-cea5126fa4c42a5f46672a0e63785daf"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "define a sequence recursively by x 0 5 and x n 1 frac x n 2 5x n 4 x n 6 for all nonnegative integers n let m be the least positive integer such that x m 4 frac 1 2 20 in which of the following intervals does m lie",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-3f5acd22634c13e3368e843162ff982f"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-7638b8d19159e6b7d6d136dd85888b20"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a function f is defined recursively by f 1 f 2 1 and f n f n 1 f n 2 n for all integers n 3 what is f 2018",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-3fed054befaf2a2b720d94b28fc07d89"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-22d9e6a96530383d5e77eb73d3675613"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "the sum of an infinite geometric series is a positive number s and the second term in the series is 1 what is the smallest possible value of s",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-401f08d599db85464c4422e600481e68"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-3c180d92f3cd6e1f58dc450d4ac342a0"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "all the numbers 2 3 4 5 6 7 are assigned to the six faces of a cube one number to each face for each of the eight vertices of the cube a product of three numbers is computed where the three numbers are the numbers assigned to the three face",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-404b5cf21fd5ca316bacf19511345972"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-da97c32daee19ef6f973a98bae425e09"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "sam drove 96 miles in 90 minutes his average speed during the first 30 minutes was 60 mph miles per hour and his average speed during the second 30 minutes was 65 mph what was his average speed in mph during the last 30 minutes",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-41b2b51666f0a144a144e86359a6da2e"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-c6c24bcfa89160471b0a5f853341e43d"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "for how many real values of x is 120 x an integer",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-420116e9c489fd04bb00887a13398584"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-e02ee415de88f118a922259c01c63af1"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "three equally spaced parallel lines intersect a circle creating three chords of lengths 38 38 and 34 what is the distance between two adjacent parallel lines",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-4258c79f8131051481eacc756d986a1b"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-3f08137e1122f9a259950754e838a3f4"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "4 4 block of calendar dates is shown first the order of the numbers in the second and the fourth rows are reversed then the numbers on each diagonal are added what will be the positive difference between the two diagonal sums array c c c c ",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-43b2c056b96a9474e34431445277d923"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-6753ba46f9d601e2ab9d44d31e7b1c0e"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a solid box is 15 cm by 10 cm by 8 cm a new solid is formed by removing a cube 3 cm on a side from each corner of this box what percent of the original volume is removed",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-43f0f6a96efd66e45ff13a8a9da84dfd"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-0bb62a753335aa41cea883511f7543f3"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "let s be a set of 6 integers taken from 1 2 12 with the property that if a and b are elements of s with a b then b is not a multiple of a what is the least possible value of an element in s",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-44fc3dfa0490bd9465fbd97761c30c96"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-97669f36366d95230733fa7aa46906e8"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a class collects 50 dollars to buy flowers for a classmate who is in the hospital roses cost 3 dollars each and carnations cost 2 dollars each no other flowers are to be used how many different bouquets could be purchased for exactly 50 dol",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-454ad69a0a48c14359d39e22fdb27ea4"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-45b6cf80fd8fd1b9b231f2984a8f2aa8"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "ms blackwell gives an exam to two classes the mean of the scores of the students in the morning class is 84 and the afternoon class s mean score is 70 the ratio of the number of students in the morning class to the number of students in the",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-4572c0044f3f835d660400ecc5928044"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-303f5df0855b3b99bdc741445d6b729f"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "a bug crawls along a number line starting at 2 it crawls to 6 then turns around and crawls to 5 how many units does the bug crawl altogether",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-45ba8e3ff5e8aef19422fd5534c264a3"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-2b90cde9731072c96e3e17b9a3ada5d2"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "the figure is constructed from 11 line segments each of which has length 2 the area of pentagon abcde can be written as m n where m and n are positive integers what is m n",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-4693b8f76efa4eac7ea2286add2491ed"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-492ec255e7d781fd7dcb6287741b51dc"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "the arithmetic mean of the nine numbers in the set 9 99 999 9999 999999999 is a 9 digit number m all of whose digits are distinct the number m doesn t contain the digit",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-48d9b2f212fa7ee52c3f21ed0b7fb05f"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-fac31f66242c1aa4d81bc6e05334b315"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "by inserting parentheses it is possible to give the expression 2 3 4 5 several values how many different values can be obtained",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-49dd282ebb988acbca41ff09f1fc8ea7"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-8cbf83bd8aa914782c54332e467f5ded"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "all of the triangles in the diagram below are similar to isosceles triangle abc in which ab ac each of the 7 smallest triangles has area 1 and abc has area 40 what is the area of trapezoid dbce",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-4ad14908eac6d5080d7018bcc5a98d67"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-6b7eea1057b60e9c2e79ed9d0adf9827"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "trapezoid abcd has ab cd bc cd 43 and ad bd let o be the intersection of the diagonals ac and bd and let p be the midpoint of bd given that op 11 the length of ad can be written in the form m n where m and n are positive integers and n is n",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-4e2ddae52b64e4c35028c9275c6b89c9"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-6a7dc78217c1416fec1c5e58a1be3729"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "in how many ways can 345 be written as the sum of an increasing sequence of two or more consecutive positive integers",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-4e4698e524481f0f12fae08fbd93c713"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-21cb2702105d88e2f4a4bb31f1485960"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "each piece of candy in a store costs a whole number of cents casper has exactly enough money to buy either 12 pieces of red candy 14 pieces of green candy 15 pieces of blue candy or n pieces of purple candy a piece of purple candy costs 20 ",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-4f1b1b10f32b6f6ee34e7f408e6a4e02"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-d623a36ca4900dd839c7f5e63fcae3a2"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "ray s car averages 40 miles per gallon of gasoline and tom s car averages 10 miles per gallon of gasoline ray and tom each drive the same number of miles what is the cars combined rate of miles per gallon of gasoline",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-4fc50c472c74d7db59d5096c95358f14"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-caf827e233080ed25f992b7c1311b098"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "in the overlapping triangles abc and abe sharing common side ab eab and abc are right angles ab 4 bc 6 ae 8 and ac and be intersect at d what is the difference between the areas of ade and bdc",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-4fdca0ad68e25e359c10aadb7f68f6d6"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-5c45505d0b0e0790a63ea9078745b57a"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "each of the small circles in the figure has radius one the innermost circle is tangent to the six circles that surround it and each of those circles is tangent to the large circle and to its small circle neighbors find the area of the shade",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-5224566ce602732d3c1883654e518b72"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-e0ac70db00646afc0cf27788525faaab"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "the base nine representation of the number n is 27006000052 nine what is the remainder when n is divided by 5",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-5307591cc7f7910c19f7e9a8083b54d2"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-16df3b2436a617f88fda34fbfadf7f88"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "equiangular hexagon abcdef has side lengths ab cd ef 1 and bc de fa r the area of ace is 70 of the area of the hexagon what is the sum of all possible values of r",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-537cc91911af1b37ae36ff42709011c6"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-0ede648a30b3c2737eb84a81d7224433"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "logan is constructing a scaled model of his town the city s water tower stands 40 meters high and the top portion is a sphere that holds 100 000 liters of water logan s miniature water tower holds 0 1 liters how tall in meters should logan ",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-544b11f701e934157fde5fc265ad689f"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-804fb11c881c59bcf411a8c5a71cb6ed"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "in a certain year the price of gasoline rose by 20 during january fell by 20 during february rose by 25 during march and fell by x during april the price of gasoline at the end of april was the same as it had been at the beginning of januar",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-546ef2ca53c5b856e6bc7861ce60090d"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-901d16ede48414f811cd396e5d1231bc"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "the polygon enclosed by the solid lines in the figure consists of 4 congruent squares joined edge to edge one more congruent square is attached to an edge at one of the nine positions indicated how many of the nine resulting polygons can be",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-54ac4707af6243ce09f349d87255573f"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-380451ea9c7157f1bfe54b094b8a92b9"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "on halloween 31 children walked into the principal s office asking for candy they can be classified into three types some always lie some always tell the truth and some alternately lie and tell the truth the alternaters arbitrarily choose t",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-5555ebfd218fffae74e29ec6a1ad6f81"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-591e95d2b1d2b47c854d366a8684f9e5"
+        }
+      ]
+    },
+    {
+      "normalizedPrompt": "how many sequences of 0 s and 1 s of length 19 are there that begin with a 0 end with a 0 contain no two consecutive 0 s and contain no three consecutive 1 s",
+      "members": [
+        {
+          "file": "data/amc10.json",
+          "id": "amio-55e35597abdd3e492e726722d84536aa"
+        },
+        {
+          "file": "data/amc12.json",
+          "id": "amio-64e4a7bb65c8e7dc01d927411dd55b65"
+        }
+      ]
+    }
+  ],
+  "nearDuplicatePairCount": 199,
+  "nearDuplicatePairs": [
+    {
+      "similarity": 0.9975,
+      "left": {
+        "file": "data/amc10.json",
+        "id": "amio-e1ff8c26f989ccfc068aa6e2b8eee099"
+      },
+      "right": {
+        "file": "data/amc12.json",
+        "id": "amio-e4b1803693ee9c457ae08b7be36fbf6b"
+      }
+    },
+    {
+      "similarity": 0.9971,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0143"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0158"
+      }
+    },
+    {
+      "similarity": 0.9968,
+      "left": {
+        "file": "data/amc10.json",
+        "id": "amio-ae8df8b123c60bffe91ada4884128292"
+      },
+      "right": {
+        "file": "data/amc12.json",
+        "id": "amio-00221e4849d84b8c4864993b05a7ff0a"
+      }
+    },
+    {
+      "similarity": 0.9957,
+      "left": {
+        "file": "data/amc10.json",
+        "id": "amio-efb7a968e717346fe35f1abc02524379"
+      },
+      "right": {
+        "file": "data/amc12.json",
+        "id": "amio-aa2e2d2448a5ca2de318d97c9b62f9b9"
+      }
+    },
+    {
+      "similarity": 0.9941,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0141"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0153"
+      }
+    },
+    {
+      "similarity": 0.9941,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0141"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0155"
+      }
+    },
+    {
+      "similarity": 0.9941,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0141"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0156"
+      }
+    },
+    {
+      "similarity": 0.9941,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0143"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0153"
+      }
+    },
+    {
+      "similarity": 0.9941,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0143"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0155"
+      }
+    },
+    {
+      "similarity": 0.9941,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0143"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0156"
+      }
+    },
+    {
+      "similarity": 0.9941,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0153"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0155"
+      }
+    },
+    {
+      "similarity": 0.9919,
+      "left": {
+        "file": "data/amc10.json",
+        "id": "amio-3cc2a3bada1a38fd1489ffd8a4d08574"
+      },
+      "right": {
+        "file": "data/amc12.json",
+        "id": "amio-f7fe5848711c7b7cad5dd6540551e1f3"
+      }
+    },
+    {
+      "similarity": 0.9912,
+      "left": {
+        "file": "data/amc10.json",
+        "id": "amio-d0e8308d0ecbb1c3045995f0ca7f7b98"
+      },
+      "right": {
+        "file": "data/amc12.json",
+        "id": "amio-49adab1316f6b30f131672abd47326f9"
+      }
+    },
+    {
+      "similarity": 0.9912,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0138"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0141"
+      }
+    },
+    {
+      "similarity": 0.9912,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0138"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0143"
+      }
+    },
+    {
+      "similarity": 0.9912,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0138"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0153"
+      }
+    },
+    {
+      "similarity": 0.9912,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0138"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0155"
+      }
+    },
+    {
+      "similarity": 0.9912,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0138"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0156"
+      }
+    },
+    {
+      "similarity": 0.9912,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0139"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0158"
+      }
+    },
+    {
+      "similarity": 0.9912,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0153"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0158"
+      }
+    },
+    {
+      "similarity": 0.9912,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0155"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0158"
+      }
+    },
+    {
+      "similarity": 0.9912,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0156"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0158"
+      }
+    },
+    {
+      "similarity": 0.9897,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0252"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0263"
+      }
+    },
+    {
+      "similarity": 0.9883,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0138"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0158"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0139"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0140"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0139"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0141"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0139"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0143"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0139"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0153"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0139"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0155"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0139"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0156"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0140"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0141"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0140"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0143"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0140"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0153"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0140"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0155"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0140"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0156"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0141"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0143"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0153"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0156"
+      }
+    },
+    {
+      "similarity": 0.9882,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0155"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0156"
+      }
+    },
+    {
+      "similarity": 0.9876,
+      "left": {
+        "file": "data/amc10.json",
+        "id": "amio-0fffe96650ab0fe344aaffc699abae7e"
+      },
+      "right": {
+        "file": "data/amc12.json",
+        "id": "amio-570dd09f58269b2d15763cd36be8c14f"
+      }
+    },
+    {
+      "similarity": 0.9875,
+      "left": {
+        "file": "data/amc10.json",
+        "id": "amio-58304d1662f2cefaa5c879f993887488"
+      },
+      "right": {
+        "file": "data/amc12.json",
+        "id": "amio-90eacb0e5f16eca5c500aaa9b4e26fb6"
+      }
+    },
+    {
+      "similarity": 0.9863,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-multivariable-0167"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-multivariable-0181"
+      }
+    },
+    {
+      "similarity": 0.9859,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0160"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0162"
+      }
+    },
+    {
+      "similarity": 0.9853,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0138"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0139"
+      }
+    },
+    {
+      "similarity": 0.9853,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0138"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0140"
+      }
+    },
+    {
+      "similarity": 0.9853,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0140"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0158"
+      }
+    },
+    {
+      "similarity": 0.9853,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0141"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0158"
+      }
+    },
+    {
+      "similarity": 0.9848,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-continuity_graphing-0276"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-continuity_graphing-0288"
+      }
+    },
+    {
+      "similarity": 0.9846,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0252"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0255"
+      }
+    },
+    {
+      "similarity": 0.9846,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0252"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0261"
+      }
+    },
+    {
+      "similarity": 0.9841,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-multivariable-0174"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-multivariable-0201"
+      }
+    },
+    {
+      "similarity": 0.9841,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0205"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0212"
+      }
+    },
+    {
+      "similarity": 0.9841,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0205"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0218"
+      }
+    },
+    {
+      "similarity": 0.9841,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0205"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0224"
+      }
+    },
+    {
+      "similarity": 0.9841,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0212"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0218"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0206"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0226"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0208"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0223"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0208"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0226"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0210"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0211"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0210"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0216"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0210"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0220"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0211"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0216"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0211"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0220"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0213"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0225"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0215"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0219"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0215"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0223"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0216"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0220"
+      }
+    },
+    {
+      "similarity": 0.9839,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0223"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-series-0226"
+      }
+    },
+    {
+      "similarity": 0.9836,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-multivariable-0170"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-multivariable-0202"
+      }
+    },
+    {
+      "similarity": 0.9818,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0094"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0105"
+      }
+    },
+    {
+      "similarity": 0.9818,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0105"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0115"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0073"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0079"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0077"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0098"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0077"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0134"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0085"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0136"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0096"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0104"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0096"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0107"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0096"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0136"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0098"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0101"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0098"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0134"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0104"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0116"
+      }
+    },
+    {
+      "similarity": 0.9815,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0107"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0136"
+      }
+    },
+    {
+      "similarity": 0.9811,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0077"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0100"
+      }
+    },
+    {
+      "similarity": 0.9811,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0087"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0134"
+      }
+    },
+    {
+      "similarity": 0.9811,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0098"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0131"
+      }
+    },
+    {
+      "similarity": 0.9811,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0101"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0131"
+      }
+    },
+    {
+      "similarity": 0.9811,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-limits-0045"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-limits-0047"
+      }
+    },
+    {
+      "similarity": 0.9808,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0087"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0100"
+      }
+    },
+    {
+      "similarity": 0.9808,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0087"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0131"
+      }
+    },
+    {
+      "similarity": 0.9808,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0100"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-integration-0131"
+      }
+    },
+    {
+      "similarity": 0.9804,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-continuity_graphing-0272"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-continuity_graphing-0283"
+      }
+    },
+    {
+      "similarity": 0.9804,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-limits-0047"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-limits-0059"
+      }
+    },
+    {
+      "similarity": 0.9804,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-limits-0051"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-limits-0059"
+      }
+    },
+    {
+      "similarity": 0.9804,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-limits-0059"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-limits-0062"
+      }
+    },
+    {
+      "similarity": 0.9798,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0255"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0261"
+      }
+    },
+    {
+      "similarity": 0.9794,
+      "left": {
+        "file": "data/amc10.json",
+        "id": "amio-2dd7298d0c1630d5895f6d28ac47eab2"
+      },
+      "right": {
+        "file": "data/amc12.json",
+        "id": "amio-219c15fc97a359e1068d1d662ccff137"
+      }
+    },
+    {
+      "similarity": 0.9794,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0252"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0260"
+      }
+    },
+    {
+      "similarity": 0.9787,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0144"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0148"
+      }
+    },
+    {
+      "similarity": 0.9787,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0144"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-optimization-0149"
+      }
+    },
+    {
+      "similarity": 0.9783,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0245"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0249"
+      }
+    },
+    {
+      "similarity": 0.9783,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0245"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv2-vector_calculus-0257"
+      }
+    }
+  ],
+  "metadataFilesChanged": [
+    "data/calculus_mcq_quality_report.json",
+    "data/upper_level_mcq_quality_report.json"
+  ],
+  "latestMetadataFilesChanged": []
+}

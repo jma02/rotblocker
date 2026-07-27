@@ -139,6 +139,10 @@ fi
 mkdir -p "$STAGE_DIR/node_modules/mathjax"
 cp -R "$ROOT_DIR/node_modules/mathjax/es5" "$STAGE_DIR/node_modules/mathjax/es5"
 
+REFERENCED_DIAGRAMS="$(
+  node "$ROOT_DIR/scripts/list_referenced_diagrams.js" "$ROOT_DIR" "${DATA_FILES[@]}"
+)"
+
 while IFS= read -r rel; do
   [[ -z "$rel" ]] && continue
   if [[ ! -f "$ROOT_DIR/$rel" ]]; then
@@ -146,39 +150,18 @@ while IFS= read -r rel; do
     exit 1
   fi
   copy_into_stage "$rel"
-done < <(
-  node - "$ROOT_DIR" "${DATA_FILES[@]}" <<'NODE'
-const fs = require("node:fs");
-const path = require("node:path");
+done <<< "$REFERENCED_DIAGRAMS"
 
-const root = process.argv[2];
-const files = process.argv.slice(3);
-const out = new Set();
-
-for (const rel of files) {
-  const full = path.join(root, rel);
-  const rows = JSON.parse(fs.readFileSync(full, "utf8"));
-  if (!Array.isArray(rows)) continue;
-  for (const row of rows) {
-    if (!row || typeof row !== "object") continue;
-    for (const key of ["diagramPng", "diagramSvg"]) {
-      const value = row[key];
-      if (typeof value !== "string") continue;
-      const clean = value.trim();
-      if (clean.startsWith("assets/diagrams/")) out.add(clean);
-    }
-  }
-}
-
-for (const rel of Array.from(out).sort()) {
-  process.stdout.write(`${rel}\n`);
-}
-NODE
-)
+find "$STAGE_DIR" -exec touch -t 200001010000 {} +
 
 (
   cd "$STAGE_DIR"
-  zip -r "$ZIP_PATH" . -x "*.DS_Store" "assets/diagrams/*.asy"
+  find . -type f \
+    ! -name "*.DS_Store" \
+    ! -path "./assets/diagrams/*.asy" \
+    -print \
+    | LC_ALL=C sort \
+    | zip -X -q "$ZIP_PATH" -@
 )
 
 echo "Created $ZIP_PATH"

@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 SRC = Path('third_party/kaggle_aime/AIME_Dataset_1983_2024.csv')
-DST = Path('data/aime.json')
+DST = Path('data/aime_kaggle_unverified.json')
 
 rows = []
 with SRC.open(newline='', encoding='utf-8') as f:
@@ -50,5 +50,6 @@ with SRC.open(newline='', encoding='utf-8') as f:
 
         rows.append(item)
 
+DST.parent.mkdir(parents=True, exist_ok=True)
 DST.write_text(json.dumps(rows, indent=2) + '\n', encoding='utf-8')
 print(f'Wrote {len(rows)} AIME problems to {DST}')

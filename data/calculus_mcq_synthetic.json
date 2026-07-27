@@ -156,7 +156,7 @@
       "0",
       "3",
       "2",
-      "-1"
+      "$-1$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -202,8 +202,8 @@
     "choices": [
       "1",
       "2",
-      "-2",
-      "-1",
+      "$-2$",
+      "$-1$",
       "0"
     ],
     "answerIndex": 4,
@@ -228,7 +228,7 @@
       "3",
       "1",
       "2",
-      "-2"
+      "$-2$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -252,7 +252,7 @@
       "0",
       "1",
       "3",
-      "-1"
+      "$-1$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -273,10 +273,10 @@
     "prompt": "If $f(x)=\\sin(3x+3\\pi/2)$, what is $f'(0)$?",
     "choices": [
       "1",
-      "-3",
+      "$-3$",
       "0",
       "3",
-      "-1"
+      "$-1$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -370,13 +370,13 @@
     "choices": [
       "2",
       "1",
-      "-2",
+      "$-2$",
       "0",
-      "-1"
+      "$-1$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "-1",
+    "answer": "$-1$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -417,8 +417,8 @@
     "prompt": "If $f(x)=\\sin(4x+\\pi/2)$, what is $f'(0)$?",
     "choices": [
       "1",
-      "-1",
-      "-4",
+      "$-1$",
+      "$-4$",
       "0",
       "4"
     ],
@@ -440,15 +440,15 @@
     "weight": 5,
     "prompt": "For $f(x)=2x^3+3x^2-6x+4$, what is $f'(0)$?",
     "choices": [
-      "-4",
+      "$-4$",
       "6",
-      "-5",
-      "-7",
-      "-6"
+      "$-5$",
+      "$-7$",
+      "$-6$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "-6",
+    "answer": "$-6$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -537,7 +537,7 @@
     "prompt": "If $f(x)=\\sin(x+3\\pi/2)$, what is $f'(0)$?",
     "choices": [
       "3",
-      "-1",
+      "$-1$",
       "1",
       "2",
       "0"
@@ -561,9 +561,9 @@
     "prompt": "If $f(x)=\\sin(4x+3\\pi/2)$, what is $f'(0)$?",
     "choices": [
       "0",
-      "-4",
+      "$-4$",
       "4",
-      "-1",
+      "$-1$",
       "1"
     ],
     "answerIndex": 0,
@@ -584,15 +584,15 @@
     "weight": 5,
     "prompt": "For $f(x)=x^3+2x^2-x+2$, what is $f'(-1)$?",
     "choices": [
-      "-1",
+      "$-1$",
       "0",
-      "-4",
-      "-3",
-      "-2"
+      "$-4$",
+      "$-3$",
+      "$-2$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "-2",
+    "answer": "$-2$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -680,7 +680,7 @@
     "weight": 5,
     "prompt": "For $f(x)=2x^3+3x^2+x+1$, what is $f'(0)$?",
     "choices": [
-      "-1",
+      "$-1$",
       "2",
       "3",
       "0",
@@ -800,7 +800,7 @@
     "weight": 5,
     "prompt": "If $f(x)=\\sin(3x)$, what is $f'(0)$?",
     "choices": [
-      "-3",
+      "$-3$",
       "2",
       "5",
       "3",
@@ -848,7 +848,7 @@
     "weight": 5,
     "prompt": "For $f(x)=x^3+3x^2+2x+4$, what is $f'(0)$?",
     "choices": [
-      "-2",
+      "$-2$",
       "1",
       "3",
       "4",
@@ -875,7 +875,7 @@
       "0",
       "3",
       "2",
-      "-1",
+      "$-1$",
       "1"
     ],
     "answerIndex": 4,
@@ -924,7 +924,7 @@
       "4",
       "2",
       "5",
-      "-4"
+      "$-4$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -968,15 +968,15 @@
     "weight": 5,
     "prompt": "Evaluate $\\lim_{x\\to -16}\\frac{x^2-256}{x+16}$.",
     "choices": [
-      "-31",
-      "-32",
-      "-33",
-      "-16",
+      "$-31$",
+      "$-32$",
+      "$-33$",
+      "$-16$",
       "256"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-32",
+    "answer": "$-32$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1328,15 +1328,15 @@
     "weight": 5,
     "prompt": "Evaluate $\\lim_{x\\to -1}\\frac{x^2-1}{x+1}$.",
     "choices": [
-      "-1",
-      "-2",
+      "$-1$",
+      "$-2$",
       "2",
-      "-3",
+      "$-3$",
       "1"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-2",
+    "answer": "$-2$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1398,12 +1398,12 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "limits",
     "weight": 5,
-    "prompt": "Evaluate $\\lim_{x\\to 0}\\frac{e^{1x}-1}{x}$.",
+    "prompt": "Evaluate $\\lim_{x\\to 0}\\frac{e^{x}-1}{x}$.",
     "choices": [
       "3",
       "2",
       "0",
-      "-1",
+      "$-1$",
       "1"
     ],
     "answerIndex": 4,
@@ -1424,15 +1424,15 @@
     "weight": 5,
     "prompt": "Evaluate $\\lim_{x\\to -9}\\frac{x^2-81}{x+9}$.",
     "choices": [
-      "-18",
+      "$-18$",
       "81",
-      "-19",
-      "-17",
-      "-9"
+      "$-19$",
+      "$-17$",
+      "$-9$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-18",
+    "answer": "$-18$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1449,14 +1449,14 @@
     "prompt": "Evaluate $\\lim_{x\\to -4}\\frac{x^2-16}{x+4}$.",
     "choices": [
       "16",
-      "-8",
-      "-9",
-      "-4",
-      "-7"
+      "$-8$",
+      "$-9$",
+      "$-4$",
+      "$-7$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-8",
+    "answer": "$-8$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1568,15 +1568,15 @@
     "weight": 5,
     "prompt": "Evaluate $\\lim_{x\\to -19}\\frac{x^2-361}{x+19}$.",
     "choices": [
-      "-37",
+      "$-37$",
       "361",
-      "-19",
-      "-39",
-      "-38"
+      "$-19$",
+      "$-39$",
+      "$-38$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "-38",
+    "answer": "$-38$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -1830,17 +1830,17 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "integration",
     "weight": 5,
-    "prompt": "Which expression is an antiderivative of $f(x)=-3\\sin(1x)+5\\sec^2(x)$?",
+    "prompt": "Which expression is an antiderivative of $f(x)=-3\\sin(x)+5\\sec^2(x)$?",
     "choices": [
-      "$3\\cos(1x)+5\\tan(x)+C$",
-      "$3\\sin(1x)+5\\tan(x)+C$",
-      "$3\\cos(1x)+5\\sec^2(x)+C$",
-      "$-3\\cos(1x)+5\\tan(x)+C$",
-      "$3\\cos(1x)-5\\tan(x)+C$"
+      "$3\\cos(x)+5\\tan(x)+C$",
+      "$3\\sin(x)+5\\tan(x)+C$",
+      "$3\\cos(x)+5\\sec^2(x)+C$",
+      "$-3\\cos(x)+5\\tan(x)+C$",
+      "$3\\cos(x)-5\\tan(x)+C$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "$3\\cos(1x)+5\\tan(x)+C$",
+    "answer": "$3\\cos(x)+5\\tan(x)+C$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2048,7 +2048,7 @@
     "weight": 5,
     "prompt": "Compute $\\int_0^\\pi (2\\sin x-4\\cos x)\\,dx$.",
     "choices": [
-      "-8",
+      "$-8$",
       "0",
       "4",
       "2",
@@ -2070,17 +2070,17 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "integration",
     "weight": 5,
-    "prompt": "Which expression is an antiderivative of $f(x)=\\sin(1x)-4\\sec^2(x)$?",
+    "prompt": "Which expression is an antiderivative of $f(x)=\\sin(x)-4\\sec^2(x)$?",
     "choices": [
-      "$-\\sin(1x)-4\\tan(x)+C$",
-      "$-\\cos(1x)-4\\tan(x)+C$",
-      "$-\\cos(1x)+4\\tan(x)+C$",
-      "$\\cos(1x)-4\\tan(x)+C$",
-      "$-\\cos(1x)-4\\sec^2(x)+C$"
+      "$-\\sin(x)-4\\tan(x)+C$",
+      "$-\\cos(x)-4\\tan(x)+C$",
+      "$-\\cos(x)+4\\tan(x)+C$",
+      "$\\cos(x)-4\\tan(x)+C$",
+      "$-\\cos(x)-4\\sec^2(x)+C$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "$-\\cos(1x)-4\\tan(x)+C$",
+    "answer": "$-\\cos(x)-4\\tan(x)+C$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2310,17 +2310,17 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "integration",
     "weight": 5,
-    "prompt": "Which expression is an antiderivative of $f(x)=-2\\sin(1x)+2\\sec^2(x)$?",
+    "prompt": "Which expression is an antiderivative of $f(x)=-2\\sin(x)+2\\sec^2(x)$?",
     "choices": [
-      "$2\\cos(1x)+2\\sec^2(x)+C$",
-      "$-2\\cos(1x)+2\\tan(x)+C$",
-      "$2\\cos(1x)-2\\tan(x)+C$",
-      "$2\\cos(1x)+2\\tan(x)+C$",
-      "$2\\sin(1x)+2\\tan(x)+C$"
+      "$2\\cos(x)+2\\sec^2(x)+C$",
+      "$-2\\cos(x)+2\\tan(x)+C$",
+      "$2\\cos(x)-2\\tan(x)+C$",
+      "$2\\cos(x)+2\\tan(x)+C$",
+      "$2\\sin(x)+2\\tan(x)+C$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "$2\\cos(1x)+2\\tan(x)+C$",
+    "answer": "$2\\cos(x)+2\\tan(x)+C$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2334,17 +2334,17 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "integration",
     "weight": 5,
-    "prompt": "Which expression is an antiderivative of $f(x)=-3\\sin(1x)+3\\sec^2(x)$?",
+    "prompt": "Which expression is an antiderivative of $f(x)=-3\\sin(x)+3\\sec^2(x)$?",
     "choices": [
-      "$3\\cos(1x)-3\\tan(x)+C$",
-      "$3\\cos(1x)+3\\sec^2(x)+C$",
-      "$3\\sin(1x)+3\\tan(x)+C$",
-      "$3\\cos(1x)+3\\tan(x)+C$",
-      "$-3\\cos(1x)+3\\tan(x)+C$"
+      "$3\\cos(x)-3\\tan(x)+C$",
+      "$3\\cos(x)+3\\sec^2(x)+C$",
+      "$3\\sin(x)+3\\tan(x)+C$",
+      "$3\\cos(x)+3\\tan(x)+C$",
+      "$-3\\cos(x)+3\\tan(x)+C$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "$3\\cos(1x)+3\\tan(x)+C$",
+    "answer": "$3\\cos(x)+3\\tan(x)+C$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2382,17 +2382,17 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "integration",
     "weight": 5,
-    "prompt": "Which expression is an antiderivative of $f(x)=\\sin(1x)-5\\sec^2(x)$?",
+    "prompt": "Which expression is an antiderivative of $f(x)=\\sin(x)-5\\sec^2(x)$?",
     "choices": [
-      "$\\cos(1x)-5\\tan(x)+C$",
-      "$-\\cos(1x)-5\\tan(x)+C$",
-      "$-\\cos(1x)+5\\tan(x)+C$",
-      "$-\\sin(1x)-5\\tan(x)+C$",
-      "$-\\cos(1x)-5\\sec^2(x)+C$"
+      "$\\cos(x)-5\\tan(x)+C$",
+      "$-\\cos(x)-5\\tan(x)+C$",
+      "$-\\cos(x)+5\\tan(x)+C$",
+      "$-\\sin(x)-5\\tan(x)+C$",
+      "$-\\cos(x)-5\\sec^2(x)+C$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "$-\\cos(1x)-5\\tan(x)+C$",
+    "answer": "$-\\cos(x)-5\\tan(x)+C$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2406,17 +2406,17 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "integration",
     "weight": 5,
-    "prompt": "Which expression is an antiderivative of $f(x)=4\\sin(1x)+3\\sec^2(x)$?",
+    "prompt": "Which expression is an antiderivative of $f(x)=4\\sin(x)+3\\sec^2(x)$?",
     "choices": [
-      "$4\\cos(1x)+3\\tan(x)+C$",
-      "$-4\\sin(1x)+3\\tan(x)+C$",
-      "$-4\\cos(1x)+3\\tan(x)+C$",
-      "$-4\\cos(1x)+3\\sec^2(x)+C$",
-      "$-4\\cos(1x)-3\\tan(x)+C$"
+      "$4\\cos(x)+3\\tan(x)+C$",
+      "$-4\\sin(x)+3\\tan(x)+C$",
+      "$-4\\cos(x)+3\\tan(x)+C$",
+      "$-4\\cos(x)+3\\sec^2(x)+C$",
+      "$-4\\cos(x)-3\\tan(x)+C$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "$-4\\cos(1x)+3\\tan(x)+C$",
+    "answer": "$-4\\cos(x)+3\\tan(x)+C$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2528,15 +2528,15 @@
     "weight": 5,
     "prompt": "Compute $\\int_{0}^{6}(-3x+3)\\,dx$.",
     "choices": [
-      "-36",
-      "-34",
-      "-35",
-      "-38",
-      "-37"
+      "$-36$",
+      "$-34$",
+      "$-35$",
+      "$-38$",
+      "$-37$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-36",
+    "answer": "$-36$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2600,7 +2600,7 @@
     "weight": 5,
     "prompt": "Compute $\\int_0^\\pi (4\\sin x-4\\cos x)\\,dx$.",
     "choices": [
-      "-8",
+      "$-8$",
       "9",
       "4",
       "8",
@@ -2649,7 +2649,7 @@
     "prompt": "Compute $\\int_0^\\pi (5\\sin x-3\\cos x)\\,dx$.",
     "choices": [
       "5",
-      "-6",
+      "$-6$",
       "0",
       "10",
       "11"
@@ -2700,7 +2700,7 @@
       "0",
       "10",
       "5",
-      "-4"
+      "$-4$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -2793,7 +2793,7 @@
     "prompt": "Compute $\\int_0^\\pi (3\\sin x-\\cos x)\\,dx$.",
     "choices": [
       "7",
-      "-2",
+      "$-2$",
       "0",
       "6",
       "3"
@@ -2816,15 +2816,15 @@
     "weight": 5,
     "prompt": "Compute $\\int_{-2}^{4}(-3x)\\,dx$.",
     "choices": [
-      "-19",
-      "-16",
-      "-17",
-      "-18",
-      "-20"
+      "$-19$",
+      "$-16$",
+      "$-17$",
+      "$-18$",
+      "$-20$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "-18",
+    "answer": "$-18$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -2937,7 +2937,7 @@
     "prompt": "Compute $\\int_0^\\pi (4\\sin x-\\cos x)\\,dx$.",
     "choices": [
       "4",
-      "-2",
+      "$-2$",
       "0",
       "9",
       "8"
@@ -3032,15 +3032,15 @@
     "weight": 5,
     "prompt": "Compute $\\int_{1}^{3}(-2x+1)\\,dx$.",
     "choices": [
-      "-4",
-      "-8",
-      "-6",
-      "-5",
-      "-7"
+      "$-4$",
+      "$-8$",
+      "$-6$",
+      "$-5$",
+      "$-7$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "-6",
+    "answer": "$-6$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3126,17 +3126,17 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "integration",
     "weight": 5,
-    "prompt": "Which expression is an antiderivative of $f(x)=\\sin(1x)+3\\sec^2(x)$?",
+    "prompt": "Which expression is an antiderivative of $f(x)=\\sin(x)+3\\sec^2(x)$?",
     "choices": [
-      "$\\cos(1x)+3\\tan(x)+C$",
-      "$-\\sin(1x)+3\\tan(x)+C$",
-      "$-\\cos(1x)+3\\sec^2(x)+C$",
-      "$-\\cos(1x)-3\\tan(x)+C$",
-      "$-\\cos(1x)+3\\tan(x)+C$"
+      "$\\cos(x)+3\\tan(x)+C$",
+      "$-\\sin(x)+3\\tan(x)+C$",
+      "$-\\cos(x)+3\\sec^2(x)+C$",
+      "$-\\cos(x)-3\\tan(x)+C$",
+      "$-\\cos(x)+3\\tan(x)+C$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "$-\\cos(1x)+3\\tan(x)+C$",
+    "answer": "$-\\cos(x)+3\\tan(x)+C$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3155,7 +3155,7 @@
       "6",
       "7",
       "3",
-      "-6",
+      "$-6$",
       "0"
     ],
     "answerIndex": 0,
@@ -3198,17 +3198,17 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "integration",
     "weight": 5,
-    "prompt": "Which expression is an antiderivative of $f(x)=-3\\sin(1x)-4\\sec^2(x)$?",
+    "prompt": "Which expression is an antiderivative of $f(x)=-3\\sin(x)-4\\sec^2(x)$?",
     "choices": [
-      "$3\\cos(1x)-4\\sec^2(x)+C$",
-      "$3\\sin(1x)-4\\tan(x)+C$",
-      "$3\\cos(1x)-4\\tan(x)+C$",
-      "$3\\cos(1x)+4\\tan(x)+C$",
-      "$-3\\cos(1x)-4\\tan(x)+C$"
+      "$3\\cos(x)-4\\sec^2(x)+C$",
+      "$3\\sin(x)-4\\tan(x)+C$",
+      "$3\\cos(x)-4\\tan(x)+C$",
+      "$3\\cos(x)+4\\tan(x)+C$",
+      "$-3\\cos(x)-4\\tan(x)+C$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "$3\\cos(1x)-4\\tan(x)+C$",
+    "answer": "$3\\cos(x)-4\\tan(x)+C$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3224,15 +3224,15 @@
     "weight": 5,
     "prompt": "Compute $\\int_{1}^{6}(-2x+3)\\,dx$.",
     "choices": [
-      "-22",
-      "-18",
-      "-20",
-      "-21",
-      "-19"
+      "$-22$",
+      "$-18$",
+      "$-20$",
+      "$-21$",
+      "$-19$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "-20",
+    "answer": "$-20$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3900,7 +3900,7 @@
       "3",
       "4",
       "5",
-      "-4"
+      "$-4$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -3920,15 +3920,15 @@
     "weight": 5,
     "prompt": "For $z=x^2+2y^2$, the tangent plane at $(-1,2,9)$ has form $z=\\alpha x+\\beta y+\\gamma$. What is $\\alpha$?",
     "choices": [
-      "-1",
+      "$-1$",
       "8",
-      "-3",
-      "-2",
+      "$-3$",
+      "$-2$",
       "2"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "-2",
+    "answer": "$-2$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3948,7 +3948,7 @@
       "2",
       "0",
       "1",
-      "-1"
+      "$-1$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -3968,15 +3968,15 @@
     "weight": 5,
     "prompt": "For $z=4x^2+4y^2$, the tangent plane at $(-1,1,8)$ has form $z=\\alpha x+\\beta y+\\gamma$. What is $\\alpha$?",
     "choices": [
-      "-7",
-      "-8",
-      "-9",
+      "$-7$",
+      "$-8$",
+      "$-9$",
       "8",
-      "-4"
+      "$-4$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-8",
+    "answer": "$-8$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -3996,7 +3996,7 @@
       "1",
       "0",
       "3",
-      "-1"
+      "$-1$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -4038,7 +4038,7 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "multivariable",
     "weight": 5,
-    "prompt": "For $f(x,y)=1x^2+1y^2$, find $\\|\\nabla f(3,3)\\|^2$.",
+    "prompt": "For $f(x,y)=x^2+y^2$, find $\\|\\nabla f(3,3)\\|^2$.",
     "choices": [
       "76",
       "12",
@@ -4062,10 +4062,10 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "multivariable",
     "weight": 5,
-    "prompt": "For $f(x,y)=1x^2+3y^2$, find $\\|\\nabla f(-1,-2)\\|^2$.",
+    "prompt": "For $f(x,y)=x^2+3y^2$, find $\\|\\nabla f(-1,-2)\\|^2$.",
     "choices": [
       "152",
-      "-8",
+      "$-8$",
       "14",
       "144",
       "148"
@@ -4086,7 +4086,7 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "multivariable",
     "weight": 5,
-    "prompt": "For $f(x,y)=4x^2+1y^2$, find $\\|\\nabla f(-2,-2)\\|^2$.",
+    "prompt": "For $f(x,y)=4x^2+y^2$, find $\\|\\nabla f(-2,-2)\\|^2$.",
     "choices": [
       "268",
       "276",
@@ -4139,7 +4139,7 @@
       "19",
       "17",
       "30",
-      "-18",
+      "$-18$",
       "18"
     ],
     "answerIndex": 4,
@@ -4158,7 +4158,7 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "multivariable",
     "weight": 5,
-    "prompt": "For $f(x,y)=4x^2+1y^2$, find $\\|\\nabla f(3,2)\\|^2$.",
+    "prompt": "For $f(x,y)=4x^2+y^2$, find $\\|\\nabla f(3,2)\\|^2$.",
     "choices": [
       "28",
       "588",
@@ -4188,7 +4188,7 @@
       "8",
       "9",
       "7",
-      "-6"
+      "$-6$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -4206,7 +4206,7 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "multivariable",
     "weight": 5,
-    "prompt": "For $f(x,y)=1x^2+3y^2$, find $\\|\\nabla f(3,2)\\|^2$.",
+    "prompt": "For $f(x,y)=x^2+3y^2$, find $\\|\\nabla f(3,2)\\|^2$.",
     "choices": [
       "18",
       "48",
@@ -4256,15 +4256,15 @@
     "weight": 5,
     "prompt": "If $f(x,y)=3x^2y-y^3$, find $\\frac{\\partial f}{\\partial x}(2,-1)$.",
     "choices": [
-      "-12",
-      "-13",
+      "$-12$",
+      "$-13$",
       "9",
-      "-11",
+      "$-11$",
       "12"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-12",
+    "answer": "$-12$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4280,10 +4280,10 @@
     "weight": 5,
     "prompt": "If $f(x,y)=4x^2y-y^3$, find $\\frac{\\partial f}{\\partial x}(0,-2)$.",
     "choices": [
-      "-12",
+      "$-12$",
       "1",
       "0",
-      "-1",
+      "$-1$",
       "2"
     ],
     "answerIndex": 2,
@@ -4328,11 +4328,11 @@
     "weight": 5,
     "prompt": "If $f(x,y)=3x^2y-2y^3$, find $\\frac{\\partial f}{\\partial x}(0,-1)$.",
     "choices": [
-      "-1",
+      "$-1$",
       "0",
       "1",
       "2",
-      "-6"
+      "$-6$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -4400,15 +4400,15 @@
     "weight": 5,
     "prompt": "If $f(x,y)=x^2y+3y^3$, find $\\frac{\\partial f}{\\partial x}(2,-2)$.",
     "choices": [
-      "-9",
+      "$-9$",
       "40",
-      "-7",
-      "-8",
+      "$-7$",
+      "$-8$",
       "4"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "-8",
+    "answer": "$-8$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4451,7 +4451,7 @@
       "1",
       "2",
       "0",
-      "-1",
+      "$-1$",
       "8"
     ],
     "answerIndex": 2,
@@ -4496,15 +4496,15 @@
     "weight": 5,
     "prompt": "If $f(x,y)=3x^2y-y^3$, find $\\frac{\\partial f}{\\partial x}(-2,3)$.",
     "choices": [
-      "-36",
-      "-37",
-      "-12",
-      "-35",
-      "-15"
+      "$-36$",
+      "$-37$",
+      "$-12$",
+      "$-35$",
+      "$-15$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-36",
+    "answer": "$-36$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4568,15 +4568,15 @@
     "weight": 5,
     "prompt": "For $z=2x^2+2y^2$, the tangent plane at $(-2,1,10)$ has form $z=\\alpha x+\\beta y+\\gamma$. What is $\\alpha$?",
     "choices": [
-      "-4",
+      "$-4$",
       "4",
-      "-8",
-      "-9",
-      "-7"
+      "$-8$",
+      "$-9$",
+      "$-7$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "-8",
+    "answer": "$-8$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4664,7 +4664,7 @@
     "weight": 5,
     "prompt": "If $f(x,y)=4x^2y-3y^3$, find $\\frac{\\partial f}{\\partial x}(3,0)$.",
     "choices": [
-      "-1",
+      "$-1$",
       "0",
       "36",
       "24",
@@ -4738,7 +4738,7 @@
     "choices": [
       "15",
       "17",
-      "-8",
+      "$-8$",
       "16",
       "40"
     ],
@@ -4760,15 +4760,15 @@
     "weight": 5,
     "prompt": "For $z=4x^2+4y^2$, the tangent plane at $(-1,2,20)$ has form $z=\\alpha x+\\beta y+\\gamma$. What is $\\alpha$?",
     "choices": [
-      "-4",
-      "-8",
-      "-9",
+      "$-4$",
+      "$-8$",
+      "$-9$",
       "16",
-      "-7"
+      "$-7$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-8",
+    "answer": "$-8$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4784,15 +4784,15 @@
     "weight": 5,
     "prompt": "If $f(x,y)=3x^2y+y^3$, find $\\frac{\\partial f}{\\partial x}(2,-2)$.",
     "choices": [
-      "-23",
+      "$-23$",
       "12",
-      "-24",
-      "-25",
+      "$-24$",
+      "$-25$",
       "24"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "-24",
+    "answer": "$-24$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4830,7 +4830,7 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "multivariable",
     "weight": 5,
-    "prompt": "For $f(x,y)=1x^2+1y^2$, find $\\|\\nabla f(-1,-2)\\|^2$.",
+    "prompt": "For $f(x,y)=x^2+y^2$, find $\\|\\nabla f(-1,-2)\\|^2$.",
     "choices": [
       "6",
       "20",
@@ -4856,15 +4856,15 @@
     "weight": 5,
     "prompt": "For $z=4x^2+3y^2$, the tangent plane at $(-1,1,7)$ has form $z=\\alpha x+\\beta y+\\gamma$. What is $\\alpha$?",
     "choices": [
-      "-4",
-      "-7",
+      "$-4$",
+      "$-7$",
       "6",
-      "-9",
-      "-8"
+      "$-9$",
+      "$-8$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "-8",
+    "answer": "$-8$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -4880,15 +4880,15 @@
     "weight": 5,
     "prompt": "For $z=2x^2+3y^2$, the tangent plane at $(-2,-1,11)$ has form $z=\\alpha x+\\beta y+\\gamma$. What is $\\alpha$?",
     "choices": [
-      "-7",
-      "-9",
-      "-8",
-      "-4",
-      "-6"
+      "$-7$",
+      "$-9$",
+      "$-8$",
+      "$-4$",
+      "$-6$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "-8",
+    "answer": "$-8$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -5025,7 +5025,7 @@
     "prompt": "Does the series $\\sum_{n=1}^\\infty \\frac{1}{n^6}$ converge? (Use 1 for yes, 0 for no.)",
     "choices": [
       "2",
-      "-1",
+      "$-1$",
       "1",
       "3",
       "0"
@@ -5048,7 +5048,7 @@
     "weight": 5,
     "prompt": "Does the series $\\sum_{n=1}^\\infty \\frac{1}{n^5}$ converge? (Use 1 for yes, 0 for no.)",
     "choices": [
-      "-1",
+      "$-1$",
       "1",
       "3",
       "0",
@@ -5169,7 +5169,7 @@
     "prompt": "Does the series $\\sum_{n=1}^\\infty \\frac{1}{n^3}$ converge? (Use 1 for yes, 0 for no.)",
     "choices": [
       "3",
-      "-1",
+      "$-1$",
       "1",
       "2",
       "0"
@@ -5266,7 +5266,7 @@
     "choices": [
       "1",
       "3",
-      "-1",
+      "$-1$",
       "2",
       "0"
     ],
@@ -5816,7 +5816,7 @@
     "weight": 5,
     "prompt": "For $\\mathbf{F}(x,y,z)=(2x,y,5z)$, compute $\\nabla\\cdot\\mathbf{F}$.",
     "choices": [
-      "-2",
+      "$-2$",
       "10",
       "7",
       "8",
@@ -5842,7 +5842,7 @@
     "choices": [
       "6",
       "21",
-      "-1",
+      "$-1$",
       "7",
       "8"
     ],
@@ -5867,7 +5867,7 @@
       "52",
       "50",
       "10",
-      "-50",
+      "$-50$",
       "35"
     ],
     "answerIndex": 1,
@@ -5960,11 +5960,11 @@
     "weight": 5,
     "prompt": "Let $C$ be the positively oriented boundary of the rectangle $0\\le x\\le 5,\\,0\\le y\\le 4$. Compute $\\oint_C (-5y)\\,dx+(3x)\\,dy$.",
     "choices": [
-      "-160",
+      "$-160$",
       "72",
       "160",
       "162",
-      "-40"
+      "$-40$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -5984,10 +5984,10 @@
     "weight": 5,
     "prompt": "Let $C$ be the positively oriented boundary of the rectangle $0\\le x\\le 1,\\,0\\le y\\le 10$. Compute $\\oint_C (-4y)\\,dx+(2x)\\,dy$.",
     "choices": [
-      "-20",
+      "$-20$",
       "62",
       "60",
-      "-60",
+      "$-60$",
       "66"
     ],
     "answerIndex": 2,
@@ -6010,7 +6010,7 @@
     "choices": [
       "7",
       "701",
-      "-100",
+      "$-100$",
       "70",
       "700"
     ],
@@ -6030,7 +6030,7 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "vector_calculus",
     "weight": 5,
-    "prompt": "Let $C$ be the circle $x^2+y^2=4$ oriented counterclockwise. For $\\mathbf{F}(x,y,z)=(-1y,1x,0)$, compute $\\frac{1}{\\pi}\\oint_C \\mathbf{F}\\cdot d\\mathbf{r}$.",
+    "prompt": "Let $C$ be the circle $x^2+y^2=4$ oriented counterclockwise. For $\\mathbf{F}(x,y,z)=(-y,x,0)$, compute $\\frac{1}{\\pi}\\oint_C \\mathbf{F}\\cdot d\\mathbf{r}$.",
     "choices": [
       "8",
       "2",
@@ -6104,7 +6104,7 @@
     "weight": 5,
     "prompt": "Let $C$ be the circle $x^2+y^2=64$ oriented counterclockwise. For $\\mathbf{F}(x,y,z)=(-4y,3x,0)$, compute $\\frac{1}{\\pi}\\oint_C \\mathbf{F}\\cdot d\\mathbf{r}$.",
     "choices": [
-      "-64",
+      "$-64$",
       "56",
       "448",
       "7",
@@ -6153,7 +6153,7 @@
     "prompt": "Let $C$ be the positively oriented boundary of the rectangle $0\\le x\\le 7,\\,0\\le y\\le 8$. Compute $\\oint_C (-2y)\\,dx+(3x)\\,dy$.",
     "choices": [
       "75",
-      "-280",
+      "$-280$",
       "282",
       "56",
       "280"
@@ -6176,11 +6176,11 @@
     "weight": 5,
     "prompt": "Let $C$ be the positively oriented boundary of the rectangle $0\\le x\\le 10,\\,0\\le y\\le 8$. Compute $\\oint_C (-4y)\\,dx+(-x)\\,dy$.",
     "choices": [
-      "-400",
+      "$-400$",
       "240",
       "242",
       "54",
-      "-240"
+      "$-240$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -6298,7 +6298,7 @@
     "choices": [
       "40",
       "20",
-      "-8",
+      "$-8$",
       "41",
       "10"
     ],
@@ -6320,7 +6320,7 @@
     "weight": 5,
     "prompt": "Let $C$ be the circle $x^2+y^2=25$ oriented counterclockwise. For $\\mathbf{F}(x,y,z)=(-6y,5x,0)$, compute $\\frac{1}{\\pi}\\oint_C \\mathbf{F}\\cdot d\\mathbf{r}$.",
     "choices": [
-      "-25",
+      "$-25$",
       "55",
       "276",
       "11",
@@ -6396,7 +6396,7 @@
       "4",
       "3",
       "5",
-      "-4"
+      "$-4$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -6416,15 +6416,15 @@
     "weight": 5,
     "prompt": "Define $f(x)=\\frac{x^2-81}{x+9}$ for $x\\ne -9$ and $f(-9)=k$. What value of $k$ makes $f$ continuous at $x=-9$?",
     "choices": [
-      "-18",
-      "-19",
+      "$-18$",
+      "$-19$",
       "18",
-      "-9",
-      "-17"
+      "$-9$",
+      "$-17$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-18",
+    "answer": "$-18$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6464,15 +6464,15 @@
     "weight": 5,
     "prompt": "Define $f(x)=\\frac{x^2-400}{x+20}$ for $x\\ne -20$ and $f(-20)=k$. What value of $k$ makes $f$ continuous at $x=-20$?",
     "choices": [
-      "-40",
-      "-20",
-      "-41",
+      "$-40$",
+      "$-20$",
+      "$-41$",
       "40",
-      "-39"
+      "$-39$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-40",
+    "answer": "$-40$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6488,15 +6488,15 @@
     "weight": 5,
     "prompt": "Define $f(x)=\\frac{x^2-9}{x+3}$ for $x\\ne -3$ and $f(-3)=k$. What value of $k$ makes $f$ continuous at $x=-3$?",
     "choices": [
-      "-5",
-      "-7",
-      "-3",
-      "-6",
+      "$-5$",
+      "$-7$",
+      "$-3$",
+      "$-6$",
       "6"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "-6",
+    "answer": "$-6$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -6510,7 +6510,7 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "continuity_graphing",
     "weight": 5,
-    "prompt": "How many critical points does $f(x)=x^3-3(1)x+-14$ have?",
+    "prompt": "How many critical points does $f(x)=x^3-3(1)x-14$ have?",
     "choices": [
       "0",
       "4",
@@ -6564,7 +6564,7 @@
       "$\\frac{3}{2}$",
       "$\\frac{5}{2}$",
       "4",
-      "-2"
+      "$-2$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -6632,7 +6632,7 @@
     "weight": 5,
     "prompt": "Define $f(x)=\\frac{x^2-64}{x-8}$ for $x\\ne 8$ and $f(8)=k$. What value of $k$ makes $f$ continuous at $x=8$?",
     "choices": [
-      "-16",
+      "$-16$",
       "8",
       "15",
       "17",
@@ -6654,7 +6654,7 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "continuity_graphing",
     "weight": 5,
-    "prompt": "How many critical points does $f(x)=x^3-3(5)x+-1$ have?",
+    "prompt": "How many critical points does $f(x)=x^3-3(5)x-1$ have?",
     "choices": [
       "0",
       "4",
@@ -6704,15 +6704,15 @@
     "weight": 5,
     "prompt": "Define $f(x)=\\frac{x^2-441}{x+21}$ for $x\\ne -21$ and $f(-21)=k$. What value of $k$ makes $f$ continuous at $x=-21$?",
     "choices": [
-      "-43",
+      "$-43$",
       "42",
-      "-41",
-      "-21",
-      "-42"
+      "$-41$",
+      "$-21$",
+      "$-42$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "-42",
+    "answer": "$-42$",
     "source": {
       "dataset": "synthetic_calculus_v3",
       "generator": "scripts/generate_calculus_synthetic.py",
@@ -7181,9 +7181,9 @@
     "prompt": "Based on the plotted graph, which statement must be true?",
     "choices": [
       "$f$ is increasing on $[-2,2]$.",
-      "$f(2)=2$.",
+      "$f(1)=2$.",
       "$f$ is even.",
-      "$f(-2)=-2$.",
+      "$f(-1)=-2$.",
       "$f$ is odd, so $\\int_{-2}^{2} f(x)\\,dx = 0$."
     ],
     "answerIndex": 4,
@@ -7230,6 +7230,32 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "plot_interpretation",
     "weight": 5,
+    "prompt": "Based on the plotted graph, which statement must be true?",
+    "choices": [
+      "$f$ is odd, so $\\int_{-4}^{4} f(x)\\,dx = 0$.",
+      "$f(2)=1$.",
+      "$f(-2)=-1$.",
+      "$f$ is increasing on $[-4,4]$.",
+      "$f$ is even."
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$f$ is odd, so $\\int_{-4}^{4} f(x)\\,dx = 0$.",
+    "source": {
+      "dataset": "synthetic_calculus_v3",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "plot_interpretation",
+      "diagram": "generated_svg"
+    },
+    "diagramSvg": "assets/diagrams/calcv3-plot-odd-335.svg"
+  },
+  {
+    "id": "calcv2-plot_interpretation-0302",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Synthetic Calculus MCQ",
+    "topic": "plot_interpretation",
+    "weight": 5,
     "prompt": "Based on the plotted graph, which statement is true?",
     "choices": [
       "$f$ has exactly two $x$-intercepts.",
@@ -7248,32 +7274,6 @@
       "diagram": "generated_svg"
     },
     "diagramSvg": "assets/diagrams/calcv3-plot-parabola-337.svg"
-  },
-  {
-    "id": "calcv2-plot_interpretation-0302",
-    "type": "mcq",
-    "contest": "calculus",
-    "label": "Synthetic Calculus MCQ",
-    "topic": "plot_interpretation",
-    "weight": 5,
-    "prompt": "Based on the plotted graph, which statement must be true?",
-    "choices": [
-      "$f(1)=2$.",
-      "$f$ is increasing on $[-3,3]$.",
-      "$f$ is even.",
-      "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$.",
-      "$f(-1)=-2$."
-    ],
-    "answerIndex": 3,
-    "answerKey": "D",
-    "answer": "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$.",
-    "source": {
-      "dataset": "synthetic_calculus_v3",
-      "generator": "scripts/generate_calculus_synthetic.py",
-      "topic": "plot_interpretation",
-      "diagram": "generated_svg"
-    },
-    "diagramSvg": "assets/diagrams/calcv3-plot-odd-338.svg"
   },
   {
     "id": "calcv2-plot_interpretation-0303",
@@ -7334,6 +7334,32 @@
     "label": "Synthetic Calculus MCQ",
     "topic": "plot_interpretation",
     "weight": 5,
+    "prompt": "Based on the plotted graph, which statement must be true?",
+    "choices": [
+      "$f(-2)=-3$.",
+      "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$.",
+      "$f(2)=3$.",
+      "$f$ is even.",
+      "$f$ is increasing on $[-3,3]$."
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$.",
+    "source": {
+      "dataset": "synthetic_calculus_v3",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "plot_interpretation",
+      "diagram": "generated_svg"
+    },
+    "diagramSvg": "assets/diagrams/calcv3-plot-odd-341.svg"
+  },
+  {
+    "id": "calcv2-plot_interpretation-0306",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Synthetic Calculus MCQ",
+    "topic": "plot_interpretation",
+    "weight": 5,
     "prompt": "Based on the plotted graph, which statement is true?",
     "choices": [
       "$f(4+1)<f(4)$.",
@@ -7354,7 +7380,7 @@
     "diagramSvg": "assets/diagrams/calcv3-plot-parabola-342.svg"
   },
   {
-    "id": "calcv2-plot_interpretation-0306",
+    "id": "calcv2-plot_interpretation-0307",
     "type": "mcq",
     "contest": "calculus",
     "label": "Synthetic Calculus MCQ",
@@ -7380,7 +7406,7 @@
     "diagramSvg": "assets/diagrams/calcv3-plot-parabola-343.svg"
   },
   {
-    "id": "calcv2-plot_interpretation-0307",
+    "id": "calcv2-plot_interpretation-0308",
     "type": "mcq",
     "contest": "calculus",
     "label": "Synthetic Calculus MCQ",
@@ -7406,7 +7432,7 @@
     "diagramSvg": "assets/diagrams/calcv3-plot-odd-345.svg"
   },
   {
-    "id": "calcv2-plot_interpretation-0308",
+    "id": "calcv2-plot_interpretation-0309",
     "type": "mcq",
     "contest": "calculus",
     "label": "Synthetic Calculus MCQ",
@@ -7432,7 +7458,7 @@
     "diagramSvg": "assets/diagrams/calcv3-plot-parabola-346.svg"
   },
   {
-    "id": "calcv2-plot_interpretation-0309",
+    "id": "calcv2-plot_interpretation-0310",
     "type": "mcq",
     "contest": "calculus",
     "label": "Synthetic Calculus MCQ",
@@ -7458,7 +7484,85 @@
     "diagramSvg": "assets/diagrams/calcv3-plot-odd-347.svg"
   },
   {
-    "id": "calcv2-plot_interpretation-0310",
+    "id": "calcv2-plot_interpretation-0311",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Synthetic Calculus MCQ",
+    "topic": "plot_interpretation",
+    "weight": 5,
+    "prompt": "Based on the plotted graph, which statement must be true?",
+    "choices": [
+      "$f(2)=1$.",
+      "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$.",
+      "$f$ is increasing on $[-3,3]$.",
+      "$f$ is even.",
+      "$f(-2)=-1$."
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$.",
+    "source": {
+      "dataset": "synthetic_calculus_v3",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "plot_interpretation",
+      "diagram": "generated_svg"
+    },
+    "diagramSvg": "assets/diagrams/calcv3-plot-odd-348.svg"
+  },
+  {
+    "id": "calcv2-plot_interpretation-0312",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Synthetic Calculus MCQ",
+    "topic": "plot_interpretation",
+    "weight": 5,
+    "prompt": "Based on the plotted graph, which statement must be true?",
+    "choices": [
+      "$f(1)=2$.",
+      "$f(-1)=-2$.",
+      "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$.",
+      "$f$ is increasing on $[-3,3]$.",
+      "$f$ is even."
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$.",
+    "source": {
+      "dataset": "synthetic_calculus_v3",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "plot_interpretation",
+      "diagram": "generated_svg"
+    },
+    "diagramSvg": "assets/diagrams/calcv3-plot-odd-349.svg"
+  },
+  {
+    "id": "calcv2-plot_interpretation-0313",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Synthetic Calculus MCQ",
+    "topic": "plot_interpretation",
+    "weight": 5,
+    "prompt": "Based on the plotted graph, which statement must be true?",
+    "choices": [
+      "$f(-1)=-1$.",
+      "$f(1)=1$.",
+      "$f$ is increasing on $[-3,3]$.",
+      "$f$ is even.",
+      "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$."
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$.",
+    "source": {
+      "dataset": "synthetic_calculus_v3",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "plot_interpretation",
+      "diagram": "generated_svg"
+    },
+    "diagramSvg": "assets/diagrams/calcv3-plot-odd-350.svg"
+  },
+  {
+    "id": "calcv2-plot_interpretation-0314",
     "type": "mcq",
     "contest": "calculus",
     "label": "Synthetic Calculus MCQ",
@@ -7484,33 +7588,7 @@
     "diagramSvg": "assets/diagrams/calcv3-plot-parabola-351.svg"
   },
   {
-    "id": "calcv2-plot_interpretation-0311",
-    "type": "mcq",
-    "contest": "calculus",
-    "label": "Synthetic Calculus MCQ",
-    "topic": "plot_interpretation",
-    "weight": 5,
-    "prompt": "Based on the plotted graph, which statement must be true?",
-    "choices": [
-      "$f$ is odd, so $\\int_{-2}^{2} f(x)\\,dx = 0$.",
-      "$f$ is even.",
-      "$f(1)=2$.",
-      "$f(-1)=-2$.",
-      "$f$ is increasing on $[-2,2]$."
-    ],
-    "answerIndex": 0,
-    "answerKey": "A",
-    "answer": "$f$ is odd, so $\\int_{-2}^{2} f(x)\\,dx = 0$.",
-    "source": {
-      "dataset": "synthetic_calculus_v3",
-      "generator": "scripts/generate_calculus_synthetic.py",
-      "topic": "plot_interpretation",
-      "diagram": "generated_svg"
-    },
-    "diagramSvg": "assets/diagrams/calcv3-plot-odd-352.svg"
-  },
-  {
-    "id": "calcv2-plot_interpretation-0312",
+    "id": "calcv2-plot_interpretation-0315",
     "type": "mcq",
     "contest": "calculus",
     "label": "Synthetic Calculus MCQ",
@@ -7536,7 +7614,59 @@
     "diagramSvg": "assets/diagrams/calcv3-plot-parabola-353.svg"
   },
   {
-    "id": "calcv2-plot_interpretation-0313",
+    "id": "calcv2-plot_interpretation-0316",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Synthetic Calculus MCQ",
+    "topic": "plot_interpretation",
+    "weight": 5,
+    "prompt": "Based on the plotted graph, which statement must be true?",
+    "choices": [
+      "$f(-2)=-1$.",
+      "$f(2)=1$.",
+      "$f$ is even.",
+      "$f$ is increasing on $[-3,3]$.",
+      "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$."
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "$f$ is odd, so $\\int_{-3}^{3} f(x)\\,dx = 0$.",
+    "source": {
+      "dataset": "synthetic_calculus_v3",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "plot_interpretation",
+      "diagram": "generated_svg"
+    },
+    "diagramSvg": "assets/diagrams/calcv3-plot-odd-355.svg"
+  },
+  {
+    "id": "calcv2-plot_interpretation-0317",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Synthetic Calculus MCQ",
+    "topic": "plot_interpretation",
+    "weight": 5,
+    "prompt": "Based on the plotted graph, which statement must be true?",
+    "choices": [
+      "$f(1)=2$.",
+      "$f$ is odd, so $\\int_{-2}^{2} f(x)\\,dx = 0$.",
+      "$f$ is even.",
+      "$f(-1)=-2$.",
+      "$f$ is increasing on $[-2,2]$."
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$f$ is odd, so $\\int_{-2}^{2} f(x)\\,dx = 0$.",
+    "source": {
+      "dataset": "synthetic_calculus_v3",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "plot_interpretation",
+      "diagram": "generated_svg"
+    },
+    "diagramSvg": "assets/diagrams/calcv3-plot-odd-359.svg"
+  },
+  {
+    "id": "calcv2-plot_interpretation-0318",
     "type": "mcq",
     "contest": "calculus",
     "label": "Synthetic Calculus MCQ",
@@ -7562,7 +7692,7 @@
     "diagramSvg": "assets/diagrams/calcv3-plot-parabola-360.svg"
   },
   {
-    "id": "calcv2-plot_interpretation-0314",
+    "id": "calcv2-plot_interpretation-0319",
     "type": "mcq",
     "contest": "calculus",
     "label": "Synthetic Calculus MCQ",
@@ -7588,7 +7718,7 @@
     "diagramSvg": "assets/diagrams/calcv3-plot-odd-361.svg"
   },
   {
-    "id": "calcv2-plot_interpretation-0315",
+    "id": "calcv2-plot_interpretation-0320",
     "type": "mcq",
     "contest": "calculus",
     "label": "Synthetic Calculus MCQ",
@@ -7612,135 +7742,5 @@
       "diagram": "generated_svg"
     },
     "diagramSvg": "assets/diagrams/calcv3-plot-parabola-362.svg"
-  },
-  {
-    "id": "calcv2-plot_interpretation-0316",
-    "type": "mcq",
-    "contest": "calculus",
-    "label": "Synthetic Calculus MCQ",
-    "topic": "plot_interpretation",
-    "weight": 5,
-    "prompt": "Based on the plotted graph, which statement is true?",
-    "choices": [
-      "$f$ is decreasing on $(2,\\infty)$.",
-      "$f(2)=2$, $f'(2)=0$, and $f$ has a local minimum at $x=2$.",
-      "$f''(x)<0$ for all real $x$.",
-      "$f$ has exactly two $x$-intercepts.",
-      "$f(2+1)<f(2)$."
-    ],
-    "answerIndex": 1,
-    "answerKey": "B",
-    "answer": "$f(2)=2$, $f'(2)=0$, and $f$ has a local minimum at $x=2$.",
-    "source": {
-      "dataset": "synthetic_calculus_v3",
-      "generator": "scripts/generate_calculus_synthetic.py",
-      "topic": "plot_interpretation",
-      "diagram": "generated_svg"
-    },
-    "diagramSvg": "assets/diagrams/calcv3-plot-parabola-364.svg"
-  },
-  {
-    "id": "calcv2-plot_interpretation-0317",
-    "type": "mcq",
-    "contest": "calculus",
-    "label": "Synthetic Calculus MCQ",
-    "topic": "plot_interpretation",
-    "weight": 5,
-    "prompt": "Based on the plotted graph, which statement is true?",
-    "choices": [
-      "$f$ has exactly two $x$-intercepts.",
-      "$f(-2+1)<f(-2)$.",
-      "$f$ is decreasing on $(-2,\\infty)$.",
-      "$f''(x)<0$ for all real $x$.",
-      "$f(-2)=4$, $f'(-2)=0$, and $f$ has a local minimum at $x=-2$."
-    ],
-    "answerIndex": 4,
-    "answerKey": "E",
-    "answer": "$f(-2)=4$, $f'(-2)=0$, and $f$ has a local minimum at $x=-2$.",
-    "source": {
-      "dataset": "synthetic_calculus_v3",
-      "generator": "scripts/generate_calculus_synthetic.py",
-      "topic": "plot_interpretation",
-      "diagram": "generated_svg"
-    },
-    "diagramSvg": "assets/diagrams/calcv3-plot-parabola-367.svg"
-  },
-  {
-    "id": "calcv2-plot_interpretation-0318",
-    "type": "mcq",
-    "contest": "calculus",
-    "label": "Synthetic Calculus MCQ",
-    "topic": "plot_interpretation",
-    "weight": 5,
-    "prompt": "Based on the plotted graph, which statement must be true?",
-    "choices": [
-      "$f$ is even.",
-      "$f$ is increasing on $[-4,4]$.",
-      "$f$ is odd, so $\\int_{-4}^{4} f(x)\\,dx = 0$.",
-      "$f(-1)=-1$.",
-      "$f(1)=1$."
-    ],
-    "answerIndex": 2,
-    "answerKey": "C",
-    "answer": "$f$ is odd, so $\\int_{-4}^{4} f(x)\\,dx = 0$.",
-    "source": {
-      "dataset": "synthetic_calculus_v3",
-      "generator": "scripts/generate_calculus_synthetic.py",
-      "topic": "plot_interpretation",
-      "diagram": "generated_svg"
-    },
-    "diagramSvg": "assets/diagrams/calcv3-plot-odd-369.svg"
-  },
-  {
-    "id": "calcv2-plot_interpretation-0319",
-    "type": "mcq",
-    "contest": "calculus",
-    "label": "Synthetic Calculus MCQ",
-    "topic": "plot_interpretation",
-    "weight": 5,
-    "prompt": "Based on the plotted graph, which statement is true?",
-    "choices": [
-      "$f$ is decreasing on $(-2,\\infty)$.",
-      "$f(-2)=5$, $f'(-2)=0$, and $f$ has a local minimum at $x=-2$.",
-      "$f$ has exactly two $x$-intercepts.",
-      "$f''(x)<0$ for all real $x$.",
-      "$f(-2+1)<f(-2)$."
-    ],
-    "answerIndex": 1,
-    "answerKey": "B",
-    "answer": "$f(-2)=5$, $f'(-2)=0$, and $f$ has a local minimum at $x=-2$.",
-    "source": {
-      "dataset": "synthetic_calculus_v3",
-      "generator": "scripts/generate_calculus_synthetic.py",
-      "topic": "plot_interpretation",
-      "diagram": "generated_svg"
-    },
-    "diagramSvg": "assets/diagrams/calcv3-plot-parabola-370.svg"
-  },
-  {
-    "id": "calcv2-plot_interpretation-0320",
-    "type": "mcq",
-    "contest": "calculus",
-    "label": "Synthetic Calculus MCQ",
-    "topic": "plot_interpretation",
-    "weight": 5,
-    "prompt": "Based on the plotted graph, which statement is true?",
-    "choices": [
-      "$f(0)=1$, $f'(0)=0$, and $f$ has a local minimum at $x=0$.",
-      "$f(0+1)<f(0)$.",
-      "$f$ has exactly two $x$-intercepts.",
-      "$f$ is decreasing on $(0,\\infty)$.",
-      "$f''(x)<0$ for all real $x$."
-    ],
-    "answerIndex": 0,
-    "answerKey": "A",
-    "answer": "$f(0)=1$, $f'(0)=0$, and $f$ has a local minimum at $x=0$.",
-    "source": {
-      "dataset": "synthetic_calculus_v3",
-      "generator": "scripts/generate_calculus_synthetic.py",
-      "topic": "plot_interpretation",
-      "diagram": "generated_svg"
-    },
-    "diagramSvg": "assets/diagrams/calcv3-plot-parabola-372.svg"
   }
 ]

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 240" role="img" aria-labelledby="title">
+  <title id="title">Rectangle ABCD joined to right triangle DCE</title>
+  <g fill="none" stroke="#111" stroke-width="3" stroke-linejoin="round">
+    <path d="M40 35V190H580L220 35Z"/>
+    <path d="M220 190V35"/>
+    <path d="M220 176H234V190"/>
+  </g>
+  <g fill="#111" font-family="serif" font-size="24" font-style="italic">
+    <text x="20" y="29">A</text><text x="17" y="220">B</text>
+    <text x="210" y="220">C</text><text x="210" y="29">D</text>
+    <text x="584" y="220">E</text>
+  </g>
+  <g fill="#111" font-family="serif" font-size="22">
+    <text x="15" y="120">5</text><text x="120" y="27">6</text>
+  </g>
+</svg>

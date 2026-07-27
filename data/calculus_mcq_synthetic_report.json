@@ -2,7 +2,7 @@
   "dataset": "synthetic_calculus_v3",
   "count": 320,
   "seed": 20260221,
-  "attempts": 372,
+  "attempts": 362,
   "requested_total": 320,
   "target_quotas": {
     "derivatives": 37,
@@ -61,8 +61,8 @@
     "gen_continuity_piecewise": 6,
     "gen_graph_critical_count": 4,
     "gen_graph_abs_nondiff": 2,
-    "gen_plot_odd_fact": 12,
-    "gen_plot_parabola_fact": 20
+    "gen_plot_odd_fact": 16,
+    "gen_plot_parabola_fact": 16
   },
   "diagram_svg_count": 32
 }

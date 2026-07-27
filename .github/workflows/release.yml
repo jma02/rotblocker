@@ -6,17 +6,8 @@ on:
       - "v*"
   workflow_dispatch:
     inputs:
-      bump:
-        description: "Auto-increment level when tag_name is empty"
-        required: false
-        default: patch
-        type: choice
-        options:
-          - patch
-          - minor
-          - major
       tag_name:
-        description: "Optional explicit release tag (example: v1.2.3). Leave empty to auto-increment."
+        description: "Optional release tag (example: v1.2.3). Defaults to the version in manifest.json."
         required: false
         default: ""
         type: string
@@ -68,11 +59,22 @@ jobs:
           node-version: "20"
           cache: npm
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Install dependencies
         run: npm ci
 
       - name: Run tests
         run: npm test
+
+      - name: Run data normalizer unit tests
+        run: npm run test:data-python
+
+      - name: Audit shipped problem data
+        run: npm run audit:problems
 
       - name: Build release artifacts
         run: |
@@ -102,77 +104,67 @@ jobs:
       - name: Resolve release metadata
         id: release_meta
         shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_TAG_NAME: ${{ github.event.inputs.tag_name }}
+          DISPATCH_PRERELEASE: ${{ github.event.inputs.prerelease }}
+          DISPATCH_GENERATE_NOTES: ${{ github.event.inputs.generate_notes }}
         run: |
           TAG="${GITHUB_REF_NAME}"
           CREATE_TAG="false"
+          PRERELEASE="false"
+          GENERATE_NOTES="true"
 
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            INPUT_TAG="${{ github.event.inputs.tag_name }}"
-            BUMP_KIND="${{ github.event.inputs.bump }}"
+          if [[ "${EVENT_NAME}" == "workflow_dispatch" ]]; then
             CREATE_TAG="true"
 
-            if [[ -n "${INPUT_TAG}" ]]; then
-              TAG="${INPUT_TAG}"
+            if [[ -n "${DISPATCH_TAG_NAME}" ]]; then
+              TAG="${DISPATCH_TAG_NAME}"
             else
-              git fetch --tags --force
-              LAST_SEMVER_TAG="$(git tag --list 'v*' --sort=-v:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | head -n 1 || true)"
+              MANIFEST_VERSION="$(node -p "require('./manifest.json').version")"
+              TAG="v${MANIFEST_VERSION}"
+            fi
 
-              if [[ -z "${LAST_SEMVER_TAG}" ]]; then
-                MAJOR=0
-                MINOR=1
-                PATCH=0
-              else
-                if [[ ! "${LAST_SEMVER_TAG}" =~ ^v([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
-                  echo "::error::Latest SemVer tag is malformed: ${LAST_SEMVER_TAG}"
-                  exit 1
-                fi
-                MAJOR="${BASH_REMATCH[1]}"
-                MINOR="${BASH_REMATCH[2]}"
-                PATCH="${BASH_REMATCH[3]}"
-              fi
-
-              case "${BUMP_KIND}" in
-                major)
-                  MAJOR=$((10#${MAJOR} + 1))
-                  MINOR=0
-                  PATCH=0
-                  ;;
-                minor)
-                  MINOR=$((10#${MINOR} + 1))
-                  PATCH=0
-                  ;;
-                patch|*)
-                  PATCH=$((10#${PATCH} + 1))
-                  ;;
-              esac
-              TAG="v${MAJOR}.${MINOR}.${PATCH}"
+            if [[ "${DISPATCH_PRERELEASE}" == "true" ]]; then
+              PRERELEASE="true"
+            fi
+            if [[ "${DISPATCH_GENERATE_NOTES}" == "false" ]]; then
+              GENERATE_NOTES="false"
             fi
           fi
 
           if [[ -z "${TAG}" ]]; then
-            echo "::error::No release tag available. Provide workflow_dispatch tag_name or use auto bump."
+            echo "::error::No release tag available."
+            exit 1
+          fi
+          if [[ "${TAG}" == *$'\n'* || "${TAG}" == *$'\r'* ]]; then
+            echo "::error::Release tags cannot contain line breaks."
             exit 1
           fi
 
-          echo "tag_name=${TAG}" >> "$GITHUB_OUTPUT"
-          echo "create_tag=${CREATE_TAG}" >> "$GITHUB_OUTPUT"
+          printf 'tag_name=%s\n' "${TAG}" >> "$GITHUB_OUTPUT"
+          printf 'create_tag=%s\n' "${CREATE_TAG}" >> "$GITHUB_OUTPUT"
+          printf 'prerelease=%s\n' "${PRERELEASE}" >> "$GITHUB_OUTPUT"
+          printf 'generate_notes=%s\n' "${GENERATE_NOTES}" >> "$GITHUB_OUTPUT"
 
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            echo "prerelease=${{ github.event.inputs.prerelease == 'true' }}" >> "$GITHUB_OUTPUT"
-            echo "generate_notes=${{ github.event.inputs.generate_notes != 'false' }}" >> "$GITHUB_OUTPUT"
-          else
-            echo "prerelease=false" >> "$GITHUB_OUTPUT"
-            echo "generate_notes=true" >> "$GITHUB_OUTPUT"
-          fi
+      - name: Verify release tag matches extension version
+        env:
+          RELEASE_TAG: ${{ steps.release_meta.outputs.tag_name }}
+        run: |
+          node scripts/validate_release_tag.js \
+            "${RELEASE_TAG}" \
+            manifest.json
 
       - name: Create and push release tag
         if: ${{ steps.release_meta.outputs.create_tag == 'true' }}
         shell: bash
+        env:
+          RELEASE_TAG: ${{ steps.release_meta.outputs.tag_name }}
         run: |
-          TAG="${{ steps.release_meta.outputs.tag_name }}"
+          TAG="${RELEASE_TAG}"
           git fetch --tags --force
           if git rev-parse -q --verify "refs/tags/${TAG}" >/dev/null; then
-            echo "Tag ${TAG} already exists."
+            bash scripts/verify_release_tag_target.sh "${TAG}" "${GITHUB_SHA}"
             exit 0
           fi
           git config user.name "github-actions[bot]"

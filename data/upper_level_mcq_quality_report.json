@@ -1,5 +1,5 @@
 {
-  "source": "/Users/jma2/site-blocker++/data/upper_level_mcq.json",
+  "source": "data/upper_level_mcq.json",
   "input_count": 222,
   "kept_count": 175,
   "dropped_count": 47,
@@ -50,5 +50,6 @@
     "upper-gre-grepractice-q49",
     "upper-gre-grepractice-q5"
   ],
-  "id_collisions_after_reid": 0
+  "id_collisions_after_reid": 0,
+  "pipeline_stage": "pre_rewrite_quality_filter"
 }

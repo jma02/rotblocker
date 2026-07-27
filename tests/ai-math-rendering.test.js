@@ -29,7 +29,8 @@ test("AI system prompt asks for MathJax-compatible delimiters", () => {
 
 test("assistant chat messages render LaTeX through math renderer", () => {
   const source = readAppSource();
-  assert.match(source, /role === "assistant"/);
   assert.match(source, /bodyEl\.className = "chat-message-body"/);
-  assert.match(source, /renderMathText\(bodyEl, sanitizeForMathJax\(content\)\)/);
+  assert.match(source, /if \(role === "assistant"\)/);
+  assert.match(source, /renderAssistantMarkdownText\(bodyEl, content\)/);
+  assert.match(source, /const scheduled = scheduleMathRender\(el, \(\) =>/);
 });

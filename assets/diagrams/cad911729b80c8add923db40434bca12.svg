@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -15 560 205" role="img" aria-labelledby="title">
+  <title id="title">One by one, two by two, and three by three tiled squares</title>
+  <g fill="none" stroke="#111" stroke-width="3">
+    <rect x="20" y="110" width="60" height="60"/>
+    <path d="M190 50H310V170H190ZM250 50V170M190 110H310"/>
+    <path d="M370 -10H550V170H370ZM430 -10V170M490 -10V170M370 50H550M370 110H550"/>
+  </g>
+</svg>

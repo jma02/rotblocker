@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 310" role="img" aria-labelledby="title">
+  <title id="title">Map of twelve cities connected by seventeen roads</title>
+  <g fill="none" stroke="#111" stroke-width="3">
+    <path d="M70 55H400M70 155H400M70 255H400"/>
+    <path d="M70 55V255M180 55V255M290 55V255M400 55V255"/>
+  </g>
+  <g fill="#111">
+    <circle cx="70" cy="55" r="6"/><circle cx="180" cy="55" r="6"/><circle cx="290" cy="55" r="6"/><circle cx="400" cy="55" r="6"/>
+    <circle cx="70" cy="155" r="6"/><circle cx="180" cy="155" r="6"/><circle cx="290" cy="155" r="6"/><circle cx="400" cy="155" r="6"/>
+    <circle cx="70" cy="255" r="6"/><circle cx="180" cy="255" r="6"/><circle cx="290" cy="255" r="6"/><circle cx="400" cy="255" r="6"/>
+  </g>
+  <g fill="#111" font-family="serif" font-size="26" font-style="italic">
+    <text x="34" y="64">A</text><text x="414" y="264">L</text>
+  </g>
+</svg>

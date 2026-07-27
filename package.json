@@ -4,15 +4,17 @@
   "version": "1.1.0",
   "scripts": {
     "test": "node --test",
+    "test:data-python": "python3 -B -m unittest discover -s tests -p 'test_*.py'",
     "build:chrome": "bash scripts/build-release.sh --target chrome",
     "build:firefox": "bash scripts/build-release.sh --target firefox",
     "build:release": "npm run build:chrome && npm run build:firefox",
     "audit:problems": "node scripts/audit_problem_markup.js",
+    "audit:problems:strict": "node scripts/audit_problem_markup.js --strict-warnings",
     "preview": "python3 -m http.server 4173",
     "backfill:aime-diagrams": "python3 scripts/backfill_aime_diagrams.py",
     "rewrite:gre": "node scripts/rewrite_upper_level_mcq_offline.js",
     "generate:calculus": "python3 scripts/generate_calculus_synthetic.py --count 320 --seed 20260221",
-    "build:artifacts": "npm run generate:calculus && python3 scripts/generate_artifacts.py --version v3 --gre-source-policy all"
+    "build:artifacts": "npm run generate:calculus && python3 scripts/normalize_problem_data.py --write && python3 scripts/generate_artifacts.py --version v3 --gre-source-policy all"
   },
   "dependencies": {
     "mathjax": "^3.2.2"

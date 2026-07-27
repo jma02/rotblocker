@@ -21,6 +21,138 @@ function setTutorProblemEvent(note) {
   root.tutorProblemEvent = String(note || "").trim().slice(0, 280);
 }
 
+let problemRenderRevision = 0;
+let readyProblemRenderRevision = 0;
+let claimedProblemRenderRevision = 0;
+let scoreResponseGeneration = 0;
+let scoreRequestSequence = 0;
+let latestAppliedScoreRequestSequence = 0;
+let problemStateMutationDepth = 0;
+let poolIntentRevision = 0;
+let problemTimerProblem = null;
+let problemElapsedBeforeActiveMs = 0;
+let problemActiveSinceMs = null;
+
+function isChallengeLocked() {
+  return !unlockedUntil || unlockedUntil <= Date.now();
+}
+
+function isProblemStateMutationInFlight() {
+  return problemStateMutationDepth > 0;
+}
+
+function resetProblemTimer(problem) {
+  problemTimerProblem = problem || null;
+  problemElapsedBeforeActiveMs = 0;
+  problemActiveSinceMs = null;
+  problemStartMs = 0;
+}
+
+function pauseProblemTimer(problem = currentProblem) {
+  if (
+    !problem
+    || problemTimerProblem !== problem
+    || problemActiveSinceMs === null
+  ) {
+    return;
+  }
+  problemElapsedBeforeActiveMs += Math.max(0, Date.now() - problemActiveSinceMs);
+  problemActiveSinceMs = null;
+  problemStartMs = Date.now() - problemElapsedBeforeActiveMs;
+}
+
+function resumeProblemTimer(problem = currentProblem) {
+  if (!problem) return;
+  if (problemTimerProblem !== problem) resetProblemTimer(problem);
+  if (problemActiveSinceMs !== null) return;
+  problemActiveSinceMs = Date.now();
+  problemStartMs = problemActiveSinceMs - problemElapsedBeforeActiveMs;
+}
+
+function problemElapsedMsNow(problem = currentProblem) {
+  if (!problem || problemTimerProblem !== problem) return 0;
+  const active = problemActiveSinceMs === null
+    ? 0
+    : Math.max(0, Date.now() - problemActiveSinceMs);
+  return Math.max(0, problemElapsedBeforeActiveMs + active);
+}
+
+function currentAnswerSubmitButton() {
+  return formEl && typeof formEl.querySelector === "function"
+    ? formEl.querySelector('button[type="submit"]')
+    : null;
+}
+
+function blockProblemInteractions() {
+  if (metaEl) {
+    metaEl.style.visibility = "hidden";
+    metaEl.setAttribute?.("aria-busy", "true");
+  }
+  if (problemEl) {
+    problemEl.style.visibility = "hidden";
+    problemEl.setAttribute?.("aria-busy", "true");
+  }
+  if (choicesEl) {
+    choicesEl.style.display = "none";
+    choicesEl.style.pointerEvents = "none";
+    choicesEl.setAttribute?.("aria-busy", "true");
+    choicesEl.inert = true;
+    if (typeof choicesEl.querySelectorAll === "function") {
+      Array.from(choicesEl.querySelectorAll(".choice-btn")).forEach((button) => {
+        button.disabled = true;
+      });
+    }
+  }
+  if (formEl) {
+    formEl.style.display = "none";
+    formEl.style.pointerEvents = "none";
+    formEl.setAttribute?.("aria-busy", "true");
+    formEl.inert = true;
+  }
+  if (answerEl) answerEl.disabled = true;
+  const submit = currentAnswerSubmitButton();
+  if (submit) submit.disabled = true;
+}
+
+function isProblemInteractionReady(
+  expectedProblem = currentProblem,
+  expectedRevision = problemRenderRevision
+) {
+  return Boolean(
+    expectedProblem
+    && currentProblem === expectedProblem
+    && expectedRevision === problemRenderRevision
+    && readyProblemRenderRevision === expectedRevision
+    && claimedProblemRenderRevision !== expectedRevision
+    && isChallengeLocked()
+    && !isProblemStateMutationInFlight()
+  );
+}
+
+function claimProblemInteraction(expectedProblem, expectedRevision) {
+  if (!isProblemInteractionReady(expectedProblem, expectedRevision)) return false;
+  claimedProblemRenderRevision = expectedRevision;
+  pauseProblemTimer(expectedProblem);
+  blockProblemInteractions();
+  return true;
+}
+
+function suspendProblemInteractionsForStateMutation() {
+  problemStateMutationDepth += 1;
+  poolIntentRevision += 1;
+  scoreResponseGeneration += 1;
+  pauseProblemTimer(currentProblem);
+  readyProblemRenderRevision = 0;
+  problemRenderRevision += 1;
+  claimedProblemRenderRevision = problemRenderRevision;
+  blockProblemInteractions();
+  return scoreResponseGeneration;
+}
+
+function finishProblemStateMutation() {
+  problemStateMutationDepth = Math.max(0, problemStateMutationDepth - 1);
+}
+
 /** @param {Problem | null | undefined} problem */
 function getSanitizedPrompt(problem) {
   if (problem && typeof problem.__sanitizedPrompt === "string") {
@@ -61,21 +193,14 @@ function prepareProblemForBank(problem) {
 /** @param {Problem | null | undefined} problem */
 function problemLooksRenderable(problem) {
   if (!problem) return false;
+  if (problemRequiresExternalVisual(problem)) return false;
   const hasOddUnescapedDollar = (value) => {
     let count = 0;
     const source = String(value || "");
     for (let i = 0; i < source.length; i += 1) {
-      if (source[i] === "$" && source[i - 1] !== "\\") count += 1;
+      if (source[i] === "$" && !isEscapedAt(source, i)) count += 1;
     }
     return count % 2 === 1;
-  };
-  const hasBalancedDelimiters = (value) => {
-    const source = String(value || "");
-    return (
-      (source.match(/\(/g) || []).length === (source.match(/\)/g) || []).length
-      && (source.match(/\[/g) || []).length === (source.match(/\]/g) || []).length
-      && (source.match(/\{/g) || []).length === (source.match(/\}/g) || []).length
-    );
   };
   const hasSevereOcrNoise = (value) => /[]|(?:WARNING:)|(?:\blimx\b)|(?:\bidenity\b)|(?:\bEuqal\b)|(?:hasatleastoneroot)|(?:oaixi)|(?:aixi)/i.test(String(value || ""));
   const looksTruncatedPrompt = (value) => {
@@ -93,22 +218,21 @@ function problemLooksRenderable(problem) {
   if (!prompt) return false;
   if (
     hasOddUnescapedDollar(prompt)
-    || !hasBalancedDelimiters(prompt)
+    || hasMalformedMathSyntax(prompt)
     || hasSevereOcrNoise(prompt)
     || (problem.type === "input" && looksTruncatedPrompt(prompt))
-    || hasUndelimitedMathSyntax(prompt)
   ) return false;
   if (problem.type === "mcq") {
     if (!Array.isArray(problem.choices) || problem.choices.length !== 5) return false;
     const sanitizedChoices = getSanitizedChoices(problem);
+    const normalizedChoices = getNormalizedChoices(problem);
     if (sanitizedChoices.some((c) => !c)) return false;
     if (
-      sanitizedChoices.some(
+      normalizedChoices.some(
         (c) =>
           hasOddUnescapedDollar(c)
-          || !hasBalancedDelimiters(c)
+          || hasMalformedMathSyntax(c)
           || hasSevereOcrNoise(c)
-          || hasUndelimitedMathSyntax(c)
       )
     ) return false;
     if (contestKey(problem) === "upper_level_mcq") {
@@ -173,8 +297,10 @@ function initPoolChips() {
   poolChipEls.forEach((el) => {
     el.addEventListener("click", () => {
       void (async () => {
+        if (isProblemStateMutationInFlight()) return;
         const key = String(el.dataset.pool || "");
         if (!Object.prototype.hasOwnProperty.call(poolEnabled, key)) return;
+        const intentRevision = ++poolIntentRevision;
 
         const currentlyOn = Boolean(poolEnabled[key]);
         if (currentlyOn) {
@@ -194,7 +320,14 @@ function initPoolChips() {
           el.disabled = true;
           const available = await loadPoolBank(key);
           syncPoolChipUi();
+          if (
+            intentRevision !== poolIntentRevision
+            || isProblemStateMutationInFlight()
+          ) {
+            return;
+          }
           if (!available) {
+            poolEnabled[key] = false;
             setFeedback(`${poolDisplayName(key)} dataset unavailable in this build.`, false);
             render();
             return;
@@ -287,7 +420,7 @@ function decayedBaseNow() {
   if (contestKey(currentProblem) === "aime") return baseWeightNow();
   return scoringApi.decayedBasePoints(
     baseWeightNow(),
-    Date.now() - problemStartMs,
+    problemElapsedMsNow(),
     decayDurationNow()
   );
 }
@@ -297,7 +430,7 @@ function pointsIfCorrectNow() {
   const isAime = contestKey(currentProblem) === "aime";
   return scoringApi.pointsIfCorrectNow({
     baseWeight: baseWeightNow(),
-    elapsedMs: isAime ? 0 : Date.now() - problemStartMs,
+    elapsedMs: isAime ? 0 : problemElapsedMsNow(),
     durationMs: decayDurationNow(),
     isMcq: currentProblem.type === "mcq",
     wrongGuesses: mcqWrongGuesses,
@@ -409,7 +542,7 @@ function renderLiveStats() {
     if (contestKey(currentProblem) === "aime") {
       timerEl.textContent = "Decay: none (AIME)";
     } else {
-      const remainingMs = Math.max(0, decayDurationNow() - (Date.now() - problemStartMs));
+      const remainingMs = Math.max(0, decayDurationNow() - problemElapsedMsNow());
       const seconds = Math.ceil(remainingMs / 1000);
       timerEl.textContent = `Decay Timer: ${seconds}s`;
     }
@@ -442,6 +575,8 @@ async function fetchDataJson(name) {
   throw new Error(`Failed to load ${name}.json`);
 }
 
+const poolLoadPromises = new Map();
+
 async function loadPoolBank(poolKey) {
   if (!Object.prototype.hasOwnProperty.call(POOL_FILE_BY_KEY, poolKey)) {
     return false;
@@ -449,34 +584,44 @@ async function loadPoolBank(poolKey) {
   if (poolLoaded[poolKey]) {
     return Boolean(poolAvailable[poolKey]);
   }
+  if (poolLoadPromises.has(poolKey)) {
+    return poolLoadPromises.get(poolKey);
+  }
 
-  const fileKey = POOL_FILE_BY_KEY[poolKey];
-  try {
-    const loaded = await fetchDataJson(fileKey);
-    const rows = Array.isArray(loaded) ? loaded : [];
-    const seen = new Set();
-    const filtered = [];
-    for (const row of rows) {
-      const prepared = prepareProblemForBank(row);
-      if (!prepared) continue;
-      if (!problemLooksRenderable(prepared)) continue;
-      const dedupeKey = String(prepared.id || prepared.__sanitizedPrompt.toLowerCase());
-      if (!dedupeKey || seen.has(dedupeKey)) continue;
-      seen.add(dedupeKey);
-      filtered.push(prepared);
+  const request = (async () => {
+    const fileKey = POOL_FILE_BY_KEY[poolKey];
+    try {
+      const loaded = await fetchDataJson(fileKey);
+      const rows = Array.isArray(loaded) ? loaded : [];
+      const seen = new Set();
+      const filtered = [];
+      for (const row of rows) {
+        const prepared = prepareProblemForBank(row);
+        if (!prepared) continue;
+        if (!problemLooksRenderable(prepared)) continue;
+        const dedupeKey = String(prepared.id || prepared.__sanitizedPrompt.toLowerCase());
+        if (!dedupeKey || seen.has(dedupeKey)) continue;
+        seen.add(dedupeKey);
+        filtered.push(prepared);
+      }
+      banks[poolKey] = filtered;
+      poolAvailable[poolKey] = banks[poolKey].length > 0;
+    } catch (_err) {
+      banks[poolKey] = [];
+      poolAvailable[poolKey] = false;
     }
-    banks[poolKey] = filtered;
-    poolAvailable[poolKey] = banks[poolKey].length > 0;
-  } catch (_err) {
-    banks[poolKey] = [];
-    poolAvailable[poolKey] = false;
-  }
 
-  poolLoaded[poolKey] = true;
-  if (!poolAvailable[poolKey]) {
-    poolEnabled[poolKey] = false;
+    poolLoaded[poolKey] = true;
+    return Boolean(poolAvailable[poolKey]);
+  })();
+  poolLoadPromises.set(poolKey, request);
+  try {
+    return await request;
+  } finally {
+    if (poolLoadPromises.get(poolKey) === request) {
+      poolLoadPromises.delete(poolKey);
+    }
   }
-  return Boolean(poolAvailable[poolKey]);
 }
 
 async function loadBanks() {
@@ -485,6 +630,7 @@ async function loadBanks() {
   await Promise.all(initialKeys.map(async (poolKey) => {
     const available = await loadPoolBank(poolKey);
     if (!available) {
+      poolEnabled[poolKey] = false;
       failed.push(poolDisplayName(poolKey));
     }
   }));
@@ -513,17 +659,19 @@ async function loadBanks() {
 }
 
 function nextProblem(eventNote = null) {
-  currentProblem = buildNextProblemCandidate();
+  const candidate = buildNextProblemCandidate();
 
-  if (!currentProblem) {
+  if (!candidate) {
     setTutorProblemEvent("No enabled problem pools with data.");
     setFeedback("No enabled problem pools with data.", false);
-    return;
+    return false;
   }
 
+  tutorApi.cancelTutorForProblemTransition?.();
+  currentProblem = candidate;
+  resetProblemTimer(currentProblem);
   setTutorProblemEvent(eventNote || "Loaded a new problem.");
   aiHistory = [];
-  problemStartMs = Date.now();
   mcqWrongGuesses = 0;
   usedChoices = new Set();
   if (currentProblem.id) {
@@ -533,6 +681,7 @@ function nextProblem(eventNote = null) {
     }
   }
   renderProblem();
+  return true;
 }
 
 function buildNextProblemCandidate() {
@@ -565,8 +714,80 @@ function setFeedback(text, ok) {
 function renderProblem() {
   if (!currentProblem) return;
 
-  if (metaEl) metaEl.textContent = `${currentProblem.label} • Base ${baseWeightNow()} points`;
-  renderMathText(problemEl, getSanitizedPrompt(currentProblem));
+  const renderedProblem = currentProblem;
+  const renderRevision = ++problemRenderRevision;
+  const usedChoicesSnapshot = new Set(usedChoices);
+  let promptCommitted = false;
+  let controlsCommitted = false;
+
+  readyProblemRenderRevision = 0;
+  pauseProblemTimer(renderedProblem);
+  blockProblemInteractions();
+  if (answerEl) answerEl.value = "";
+
+  const enableInteractionsIfReady = () => {
+    if (
+      !promptCommitted
+      || !controlsCommitted
+      || currentProblem !== renderedProblem
+      || problemRenderRevision !== renderRevision
+      || !isChallengeLocked()
+      || isProblemStateMutationInFlight()
+    ) {
+      return;
+    }
+
+    if (renderedProblem.type === "input") {
+      if (formEl) {
+        formEl.style.display = "flex";
+        formEl.style.pointerEvents = "";
+        formEl.removeAttribute?.("aria-busy");
+        formEl.inert = false;
+      }
+      if (answerEl) answerEl.disabled = false;
+      const submit = currentAnswerSubmitButton();
+      if (submit) submit.disabled = false;
+      answerEl?.focus();
+    } else if (choicesEl) {
+      choicesEl.style.display = "grid";
+      choicesEl.style.pointerEvents = "";
+      choicesEl.removeAttribute?.("aria-busy");
+      choicesEl.inert = false;
+      if (typeof choicesEl.querySelectorAll === "function") {
+        Array.from(choicesEl.querySelectorAll(".choice-btn")).forEach((button) => {
+          const index = Number(button.dataset?.choiceIndex);
+          button.disabled = usedChoicesSnapshot.has(index);
+        });
+      }
+    }
+    readyProblemRenderRevision = renderRevision;
+    resumeProblemTimer(renderedProblem);
+    if (metaEl) {
+      metaEl.style.visibility = "visible";
+      metaEl.removeAttribute?.("aria-busy");
+    }
+  };
+
+  if (metaEl) metaEl.textContent = `${renderedProblem.label} • Base ${baseWeightNow()} points`;
+  if (problemEl) {
+    renderMathText(problemEl, getSanitizedPrompt(renderedProblem), {
+      force: true,
+      onCommitted: () => {
+        if (
+          currentProblem !== renderedProblem
+          || problemRenderRevision !== renderRevision
+        ) {
+          return;
+        }
+        problemEl.style.visibility = "visible";
+        problemEl.removeAttribute?.("aria-busy");
+        promptCommitted = true;
+        enableInteractionsIfReady();
+      }
+    });
+  } else {
+    promptCommitted = true;
+  }
   if (diagramWrapEl && diagramImgEl) {
     const extraImgs = Array.from(diagramWrapEl.querySelectorAll(".diagram-img-extra"));
     extraImgs.forEach((el) => el.remove());
@@ -575,7 +796,7 @@ function renderProblem() {
     diagramImgEl.onerror = null;
     diagramImgEl.onload = null;
 
-    const multiSources = resolveDiagramMultiSources(currentProblem);
+    const multiSources = resolveDiagramMultiSources(renderedProblem);
     if (multiSources.length > 0) {
       const createImg = (src, isPrimary) => {
         const img = isPrimary ? diagramImgEl : document.createElement("img");
@@ -597,7 +818,7 @@ function renderProblem() {
       diagramWrapEl.style.display = "block";
       multiSources.forEach((src, idx) => createImg(src, idx === 0));
     } else {
-      const fallbackSources = resolveDiagramFallbackSources(currentProblem);
+      const fallbackSources = resolveDiagramFallbackSources(renderedProblem);
       if (fallbackSources.length > 0) {
         let srcIndex = 0;
         const setSource = () => {
@@ -627,36 +848,71 @@ function renderProblem() {
       }
     }
   }
-  if (currentProblem.type === "input") {
-    if (formEl) formEl.style.display = "flex";
+  if (renderedProblem.type === "input") {
     if (choicesEl) {
-      choicesEl.style.display = "none";
-      choicesEl.innerHTML = "";
-    }
-    if (answerEl) {
-      answerEl.value = "";
-      answerEl.focus();
+      void replaceMathContainer(choicesEl, () => {
+        choicesEl.style.display = "none";
+        choicesEl.innerHTML = "";
+        controlsCommitted = true;
+        enableInteractionsIfReady();
+      });
+    } else {
+      controlsCommitted = true;
+      enableInteractionsIfReady();
     }
   } else {
-    if (formEl) formEl.style.display = "none";
+    const normalizedChoices = getNormalizedChoices(renderedProblem);
     if (choicesEl) {
-      choicesEl.style.display = "grid";
-      choicesEl.innerHTML = "";
-    }
-
-    const normalizedChoices = getNormalizedChoices(currentProblem);
-    normalizedChoices.forEach((normalizedChoice, index) => {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "choice-btn";
-      const label = String.fromCharCode(65 + index);
-      renderMathText(btn, `${label}. ${normalizedChoice}`, { inlineOnly: true });
-      btn.disabled = usedChoices.has(index);
-      btn.addEventListener("click", () => {
-        void handleMcqChoice(index);
+      void replaceMathContainer(choicesEl, () => {
+        choicesEl.innerHTML = "";
+        let pendingChoiceRenders = normalizedChoices.length;
+        const commitChoiceRender = () => {
+          if (
+            currentProblem !== renderedProblem
+            || problemRenderRevision !== renderRevision
+          ) {
+            return;
+          }
+          pendingChoiceRenders = Math.max(0, pendingChoiceRenders - 1);
+          if (pendingChoiceRenders === 0) {
+            controlsCommitted = true;
+            enableInteractionsIfReady();
+          }
+        };
+        normalizedChoices.forEach((normalizedChoice, index) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "choice-btn";
+          btn.dataset.choiceIndex = String(index);
+          btn.disabled = true;
+          const label = String.fromCharCode(65 + index);
+          // Attach before scheduling MathJax so HTMLElement#isConnected can
+          // distinguish this live button from a stale button removed by a
+          // subsequent problem render.
+          choicesEl.appendChild(btn);
+          renderMathText(btn, `${label}. ${normalizedChoice}`, {
+            inlineOnly: true,
+            onCommitted: commitChoiceRender
+          });
+          btn.addEventListener("click", () => {
+            if (
+              currentProblem !== renderedProblem
+              || problemRenderRevision !== renderRevision
+            ) {
+              return;
+            }
+            void handleMcqChoice(index, renderedProblem, renderRevision);
+          });
+        });
+        if (pendingChoiceRenders === 0) {
+          controlsCommitted = true;
+          enableInteractionsIfReady();
+        }
       });
-      if (choicesEl) choicesEl.appendChild(btn);
-    });
+    } else {
+      controlsCommitted = true;
+      enableInteractionsIfReady();
+    }
   }
 
   renderLiveStats();
@@ -664,8 +920,18 @@ function renderProblem() {
 }
 
 function render() {
-  const locked = !unlockedUntil || unlockedUntil <= Date.now();
+  const locked = isChallengeLocked();
+  const becameLocked = locked && lastLockState === false;
   lastLockState = locked;
+  if (relockBtn) {
+    relockBtn.hidden = locked;
+    relockBtn.disabled = locked || isProblemStateMutationInFlight();
+  }
+
+  if (becameLocked) {
+    const advanced = nextProblem("Challenge became locked. Loaded a new problem.");
+    if (!advanced && currentProblem) renderProblem();
+  }
 
   if (locked) {
     if (statusEl) statusEl.textContent = `Score: ${score.toFixed(2)}/${requiredScore}`;
@@ -675,6 +941,8 @@ function render() {
       unlockBtn.textContent = "Unlock Sites";
     }
   } else {
+    pauseProblemTimer(currentProblem);
+    blockProblemInteractions();
     if (statusEl) statusEl.textContent = `Unlocked for ${formatClock(unlockDurationMs)} total.`;
     if (quizEl) quizEl.style.display = "none";
     if (unlockBtn) {
@@ -687,7 +955,7 @@ function render() {
 }
 
 function tickUi() {
-  const locked = !unlockedUntil || unlockedUntil <= Date.now();
+  const locked = isChallengeLocked();
   if (lastLockState === null || locked !== lastLockState) {
     render();
     return;
@@ -733,38 +1001,146 @@ async function refreshState() {
   renderLevelUi();
 }
 
-async function awardPointsAndAdvance(points) {
+function isSameProblemRender(expectedProblem, expectedRevision) {
+  return Boolean(
+    expectedProblem
+    && currentProblem === expectedProblem
+    && problemRenderRevision === expectedRevision
+  );
+}
+
+function applyAuthoritativeScoreResponse(response, requestSequence) {
+  if (!response || !response.ok) return false;
+  if (
+    Number.isInteger(requestSequence)
+    && requestSequence < latestAppliedScoreRequestSequence
+  ) {
+    return false;
+  }
+  const incomingUpdatedAt = Math.floor(Number(response.stateUpdatedAt));
+  if (
+    Number.isFinite(incomingUpdatedAt)
+    && incomingUpdatedAt > 0
+    && Number.isFinite(Number(stateUpdatedAt))
+    && incomingUpdatedAt < Number(stateUpdatedAt)
+  ) {
+    return false;
+  }
+  if (Object.prototype.hasOwnProperty.call(response, "score")) {
+    const nextScore = Number(response.score);
+    if (Number.isFinite(nextScore)) score = nextScore;
+  }
+  if (Object.prototype.hasOwnProperty.call(response, "xp")) {
+    const nextXp = Number(response.xp);
+    if (Number.isFinite(nextXp)) xp = nextXp;
+  }
+  if (Object.prototype.hasOwnProperty.call(response, "prestige")) {
+    const nextPrestige = Number(response.prestige);
+    if (Number.isFinite(nextPrestige)) prestige = nextPrestige;
+  }
+  stateUpdatedAt = Number.isFinite(incomingUpdatedAt) && incomingUpdatedAt > 0
+    ? incomingUpdatedAt
+    : (stateUpdatedAt || Date.now());
+  if (Number.isInteger(requestSequence)) {
+    latestAppliedScoreRequestSequence = Math.max(
+      latestAppliedScoreRequestSequence,
+      requestSequence
+    );
+  }
+  return true;
+}
+
+async function sendScoreMutation(points) {
+  try {
+    return await sendMessage({ type: "ADD_SCORE", points });
+  } catch (error) {
+    return {
+      ok: false,
+      error: String(error?.message || error || "Could not record score.")
+    };
+  }
+}
+
+async function awardPointsAndAdvance(
+  points,
+  expectedProblem = currentProblem,
+  expectedRevision = problemRenderRevision,
+  expectedScoreGeneration = scoreResponseGeneration
+) {
+  if (
+    !isSameProblemRender(expectedProblem, expectedRevision)
+    || expectedScoreGeneration !== scoreResponseGeneration
+    || !isChallengeLocked()
+  ) {
+    return false;
+  }
   if (points <= 0) {
+    if (
+      !isSameProblemRender(expectedProblem, expectedRevision)
+      || expectedScoreGeneration !== scoreResponseGeneration
+      || !isChallengeLocked()
+    ) {
+      return false;
+    }
     setFeedback("Correct, but this question is worth +0 due to timer/guess penalties.", false);
     nextProblem("Previous problem was answered correctly, but earned +0 points due to penalties.");
     render();
-    return;
+    return true;
   }
 
-  const res = await sendMessage({ type: "ADD_SCORE", points });
-  if (!res || !res.ok) {
+  const requestSequence = ++scoreRequestSequence;
+  const res = await sendScoreMutation(points);
+  const scoreResponseStillValid =
+    expectedScoreGeneration === scoreResponseGeneration
+    && isChallengeLocked();
+  const applied = scoreResponseStillValid
+    ? applyAuthoritativeScoreResponse(res, requestSequence)
+    : false;
+  if (
+    !scoreResponseStillValid
+    || !isSameProblemRender(expectedProblem, expectedRevision)
+  ) {
+    if (applied) {
+      render();
+      renderLevelUi();
+      syncApi.scheduleCloudSync?.();
+    }
+    return false;
+  }
+  if (!res || !res.ok || !applied) {
     setFeedback("Could not record score.", false);
-    return;
+    renderProblem();
+    render();
+    return false;
   }
 
-  score = Number(res.score || 0);
-  xp = Number(res.xp || xp);
-  prestige = Number(res.prestige || prestige);
-  stateUpdatedAt = Math.floor(Number(res.stateUpdatedAt) || stateUpdatedAt || Date.now());
   setFeedback(`Correct. +${points.toFixed(2)} points.`, true);
   nextProblem(`Previous problem was answered correctly (+${points.toFixed(2)} points).`);
   render();
   syncApi.scheduleCloudSync?.();
+  return true;
 }
 
-async function handleMcqChoice(index) {
-  if (!currentProblem || currentProblem.type !== "mcq") return;
-  if (usedChoices.has(index)) return;
+async function handleMcqChoice(
+  index,
+  expectedProblem = currentProblem,
+  expectedRevision = problemRenderRevision
+) {
+  if (!expectedProblem || expectedProblem.type !== "mcq") return false;
+  if (!isProblemInteractionReady(expectedProblem, expectedRevision)) return false;
+  if (usedChoices.has(index)) return false;
+  if (!claimProblemInteraction(expectedProblem, expectedRevision)) return false;
 
-  const isCorrect = index === currentProblem.answerIndex;
+  const isCorrect = index === expectedProblem.answerIndex;
+  const expectedScoreGeneration = scoreResponseGeneration;
   if (isCorrect) {
-    await awardPointsAndAdvance(pointsIfCorrectNow());
-    return;
+    await awardPointsAndAdvance(
+      pointsIfCorrectNow(),
+      expectedProblem,
+      expectedRevision,
+      expectedScoreGeneration
+    );
+    return true;
   }
 
   usedChoices.add(index);
@@ -772,12 +1148,26 @@ async function handleMcqChoice(index) {
 
   const penalty = WRONG_GUESS_PENALTIES[mcqWrongGuesses] || 0;
   if (penalty > 0) {
-    const res = await sendMessage({ type: "ADD_SCORE", points: -penalty });
+    const requestSequence = ++scoreRequestSequence;
+    const res = await sendScoreMutation(-penalty);
+    const scoreResponseStillValid =
+      expectedScoreGeneration === scoreResponseGeneration
+      && isChallengeLocked();
+    const applied = scoreResponseStillValid
+      ? applyAuthoritativeScoreResponse(res, requestSequence)
+      : false;
+    if (
+      !scoreResponseStillValid
+      || !isSameProblemRender(expectedProblem, expectedRevision)
+    ) {
+      if (applied) {
+        render();
+        renderLevelUi();
+        syncApi.scheduleCloudSync?.();
+      }
+      return false;
+    }
     if (res && res.ok) {
-      score = Number(res.score || score);
-      xp = Number(res.xp || xp);
-      prestige = Number(res.prestige || prestige);
-      stateUpdatedAt = Math.floor(Number(res.stateUpdatedAt) || stateUpdatedAt || Date.now());
       setFeedback(
         `Incorrect. -${penalty.toFixed(2)} points. Next correct guess multiplier: x${guessMultiplierNow()}.`,
         false
@@ -789,8 +1179,47 @@ async function handleMcqChoice(index) {
   } else {
     setFeedback(`Incorrect. Next correct guess multiplier: x${guessMultiplierNow()}.`, false);
   }
+  if (!isSameProblemRender(expectedProblem, expectedRevision)) return false;
   renderProblem();
   render();
+  return true;
+}
+
+async function handleInputAnswer(
+  rawValue,
+  expectedProblem = currentProblem,
+  expectedRevision = problemRenderRevision
+) {
+  if (!expectedProblem || expectedProblem.type !== "input") return false;
+  if (!isProblemInteractionReady(expectedProblem, expectedRevision)) return false;
+
+  const raw = String(rawValue ?? "").trim();
+  if (!raw) {
+    setFeedback("Enter a valid number.", false);
+    return false;
+  }
+  const submitted = Number(raw);
+  if (!Number.isFinite(submitted)) {
+    setFeedback("Enter a valid number.", false);
+    return false;
+  }
+  if (!claimProblemInteraction(expectedProblem, expectedRevision)) return false;
+
+  if (!isInputAnswerCorrect(submitted, expectedProblem)) {
+    if (!isSameProblemRender(expectedProblem, expectedRevision)) return false;
+    setFeedback("Incorrect. Next question.", false);
+    nextProblem("Previous problem was answered incorrectly. Loaded a new problem.");
+    render();
+    return true;
+  }
+
+  await awardPointsAndAdvance(
+    pointsIfCorrectNow(),
+    expectedProblem,
+    expectedRevision,
+    scoreResponseGeneration
+  );
+  return true;
 }
 
 /** @returns {string} */
@@ -871,6 +1300,13 @@ RB_GAMEPLAY_ROOT.gameplay = {
   refreshState,
   awardPointsAndAdvance,
   handleMcqChoice,
+  handleInputAnswer,
+  isProblemInteractionReady,
+  isChallengeLocked,
+  isProblemStateMutationInFlight,
+  suspendProblemInteractionsForStateMutation,
+  finishProblemStateMutation,
+  problemElapsedMsNow,
   buildProblemContext,
   isInputAnswerCorrect
 };

@@ -8,6 +8,15 @@ const SUPPORTED_AI_PROVIDERS = RB_TUTOR_CONSTANTS.SUPPORTED_AI_PROVIDERS || new 
   AI_PROVIDER_OPENAI,
   AI_PROVIDER_OPENROUTER
 ]);
+let tutorRequestRevision = 0;
+let modelRequestRevision = 0;
+let aiConfigEditRevision = 0;
+
+function markAiConfigEdited() {
+  aiConfigEditRevision += 1;
+  modelRequestRevision += 1;
+  return aiConfigEditRevision;
+}
 
 function normalizeAiProvider(provider) {
   const normalized = String(provider || "").trim().toLowerCase();
@@ -47,14 +56,10 @@ function appendChat(role, text) {
 
   const bodyEl = document.createElement("span");
   bodyEl.className = "chat-message-body";
-  const shouldRenderMarkdown = role === "assistant" && hasAssistantMarkdownSyntax(content);
-  const shouldRenderMath =
-    role === "assistant" &&
-    /(?<!\\)\$|\\\(|\\\[|\\(?:frac|sqrt|cdot|times|otimes|sum|int|theta|alpha|beta|gamma|pi|leq|geq|left|right|begin|end|boxed|overline|underline)/.test(content);
-  if (shouldRenderMarkdown) {
+  if (role === "assistant") {
+    // Assistant output is authored text, not scanned contest data. Keep its
+    // symbols lossless instead of applying OCR guesses such as T/2 -> pi/2.
     renderAssistantMarkdownText(bodyEl, content);
-  } else if (shouldRenderMath) {
-    renderMathText(bodyEl, sanitizeForMathJax(content));
   } else {
     bodyEl.textContent = content;
   }
@@ -249,6 +254,44 @@ function setModelOptions(models, selectedModel) {
   aiModelEl.value = usable.includes(selectedModel) ? selectedModel : usable[0];
 }
 
+function isModelRequestCurrent(requestRevision, provider, token) {
+  const cfg = getApiConfig();
+  return Boolean(
+    requestRevision === modelRequestRevision
+    && cfg
+    && cfg.provider === normalizeAiProvider(provider)
+    && cfg.token === String(token || "")
+  );
+}
+
+async function updateModelOptionsForConfig(
+  provider,
+  token,
+  selectedModel,
+  force = false
+) {
+  const normalizedProvider = normalizeAiProvider(provider);
+  const normalizedToken = String(token || "");
+  const requestRevision = ++modelRequestRevision;
+  try {
+    const models = await fetchAndCacheModels(
+      normalizedProvider,
+      normalizedToken,
+      force
+    );
+    if (!isModelRequestCurrent(requestRevision, normalizedProvider, normalizedToken)) {
+      return null;
+    }
+    setModelOptions(models, selectedModel);
+    return models;
+  } catch (error) {
+    if (!isModelRequestCurrent(requestRevision, normalizedProvider, normalizedToken)) {
+      return null;
+    }
+    throw error;
+  }
+}
+
 async function fetchAndCacheModels(provider, token, force = false) {
   if (!provider || !token) {
     return ["gpt-4o-mini"];
@@ -305,6 +348,7 @@ async function fetchAndCacheModels(provider, token, force = false) {
 }
 
 async function saveAiConfig() {
+  markAiConfigEdited();
   const cfg = getApiConfig();
   if (!cfg) return;
   const payload = {
@@ -325,10 +369,12 @@ async function saveAiConfig() {
 
 async function loadAiConfig() {
   if (!aiProviderEl || !aiModelEl || !aiTokenEl) return;
+  const initialConfigRevision = aiConfigEditRevision;
   const [syncOut, localOut] = await Promise.all([
     getSync(["ai_config"]),
     getLocal(["ai_config"])
   ]);
+  if (initialConfigRevision !== aiConfigEditRevision) return;
   const syncCfg = syncOut?.ai_config;
   const localCfg = localOut?.ai_config;
   const cfg = (syncCfg && typeof syncCfg === "object")
@@ -338,12 +384,15 @@ async function loadAiConfig() {
   if (cfg && typeof cfg === "object") {
     // Keep local storage warm for extension startup and local preview mode.
     await setLocal({ ai_config: cfg });
+    if (initialConfigRevision !== aiConfigEditRevision) return;
     // One-time migration for existing local-only tokens into synced profile storage.
     if (!syncCfg) {
       await setSync({ ai_config: cfg });
+      if (initialConfigRevision !== aiConfigEditRevision) return;
     }
   }
 
+  if (initialConfigRevision !== aiConfigEditRevision) return;
   let preferredModel = "gpt-4o-mini";
   if (cfg && typeof cfg === "object") {
     const provider = normalizeAiProvider(cfg.provider || AI_PROVIDER_OPENAI);
@@ -353,8 +402,12 @@ async function loadAiConfig() {
   }
 
   try {
-    const models = await fetchAndCacheModels(aiProviderEl.value, aiTokenEl.value, false);
-    setModelOptions(models, preferredModel);
+    await updateModelOptionsForConfig(
+      aiProviderEl.value,
+      aiTokenEl.value,
+      preferredModel,
+      false
+    );
   } catch (_err) {
     setModelOptions(["gpt-4o-mini"], preferredModel);
   }
@@ -433,6 +486,88 @@ async function callTutor(userText, signal = undefined) {
   return String(content);
 }
 
+function isTutorRequestCurrent(requestRevision, expectedProblem) {
+  return (
+    requestRevision === tutorRequestRevision
+    && currentProblem === expectedProblem
+  );
+}
+
+function resetTutorRequestUi({ focus = true } = {}) {
+  removeChatLoading();
+  aiAbortController = null;
+  aiBusy = false;
+  if (aiInputEl) {
+    aiInputEl.disabled = false;
+    if (focus) aiInputEl.focus();
+  }
+  setTutorSubmitLoading(false);
+}
+
+function cancelTutorRequest({ focus = true, announce = false } = {}) {
+  const wasActive = Boolean(aiBusy || aiAbortController || aiLoadingMessageEl);
+  tutorRequestRevision += 1;
+  if (!wasActive) return false;
+  const controller = aiAbortController;
+  resetTutorRequestUi({ focus });
+  if (controller) {
+    try {
+      controller.abort();
+    } catch (_err) {
+      // A generation check also discards responses from noncompliant fetches.
+    }
+  }
+  if (announce) appendChat("system", "Request canceled.");
+  return true;
+}
+
+function cancelTutorForProblemTransition() {
+  return cancelTutorRequest({ focus: false, announce: false });
+}
+
+async function submitTutorPrompt(userText) {
+  const text = String(userText || "").trim();
+  if (!text || aiBusy) return false;
+
+  const expectedProblem = currentProblem;
+  const requestRevision = ++tutorRequestRevision;
+
+  appendChat("user", text);
+  aiBusy = true;
+  if (aiInputEl) aiInputEl.disabled = true;
+  setTutorSubmitLoading(true);
+  appendChatLoading();
+  const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+  aiAbortController = controller;
+
+  try {
+    const answer = await callTutor(text, controller?.signal);
+    if (!isTutorRequestCurrent(requestRevision, expectedProblem)) {
+      return false;
+    }
+    aiHistory.push({ role: "user", content: text });
+    aiHistory.push({ role: "assistant", content: answer });
+    removeChatLoading();
+    appendChat("assistant", answer);
+    return true;
+  } catch (err) {
+    if (!isTutorRequestCurrent(requestRevision, expectedProblem)) {
+      return false;
+    }
+    removeChatLoading();
+    if (isAbortError(err)) {
+      appendChat("system", "Request canceled.");
+    } else {
+      appendChatError(err, "chat");
+    }
+    return false;
+  } finally {
+    if (requestRevision === tutorRequestRevision) {
+      resetTutorRequestUi();
+    }
+  }
+}
+
 async function applyTheme(theme) {
   const isDark = theme === "dark";
   document.body.classList.toggle("theme-dark", isDark);
@@ -479,8 +614,12 @@ function initTutorUi() {
         try {
           const cfg = getApiConfig();
           if (cfg?.token) {
-            const models = await fetchAndCacheModels(cfg.provider, cfg.token, false);
-            setModelOptions(models, cfg.model);
+            await updateModelOptionsForConfig(
+              cfg.provider,
+              cfg.token,
+              cfg.model,
+              false
+            );
           }
           await saveAiConfig();
         } catch (err) {
@@ -499,9 +638,15 @@ function initTutorUi() {
           return;
         }
         try {
-          const models = await fetchAndCacheModels(cfg.provider, cfg.token, true);
-          setModelOptions(models, cfg.model);
-          appendChat("system", `Loaded ${models.length} models from ${cfg.provider}.`);
+          const models = await updateModelOptionsForConfig(
+            cfg.provider,
+            cfg.token,
+            cfg.model,
+            true
+          );
+          if (models) {
+            appendChat("system", `Loaded ${models.length} models from ${cfg.provider}.`);
+          }
         } catch (err) {
           appendChatError(err, "models");
         }
@@ -511,6 +656,7 @@ function initTutorUi() {
 
   if (aiProviderEl) {
     aiProviderEl.addEventListener("change", () => {
+      markAiConfigEdited();
       void (async () => {
         const cfg = getApiConfig();
         if (!cfg?.token) {
@@ -518,8 +664,12 @@ function initTutorUi() {
           return;
         }
         try {
-          const models = await fetchAndCacheModels(cfg.provider, cfg.token, false);
-          setModelOptions(models, cfg.model);
+          await updateModelOptionsForConfig(
+            cfg.provider,
+            cfg.token,
+            cfg.model,
+            false
+          );
         } catch (err) {
           appendChatError(err, "models");
           setModelOptions(["gpt-4o-mini"], cfg.model);
@@ -527,16 +677,17 @@ function initTutorUi() {
       })();
     });
   }
+  if (aiTokenEl) {
+    aiTokenEl.addEventListener("input", markAiConfigEdited);
+  }
+  if (aiModelEl) {
+    aiModelEl.addEventListener("change", markAiConfigEdited);
+  }
 
   aiFormEl.addEventListener("submit", (event) => {
     event.preventDefault();
     if (aiBusy) {
-      if (!aiAbortController) return;
-      try {
-        aiAbortController.abort();
-      } catch (_err) {
-        // Ignore abort errors from non-standard runtimes.
-      }
+      cancelTutorRequest({ focus: true, announce: true });
       return;
     }
 
@@ -544,37 +695,7 @@ function initTutorUi() {
     if (!text) return;
 
     aiInputEl.value = "";
-    appendChat("user", text);
-
-    aiBusy = true;
-    aiInputEl.disabled = true;
-    setTutorSubmitLoading(true);
-    appendChatLoading();
-    aiAbortController = typeof AbortController !== "undefined" ? new AbortController() : null;
-
-    void (async () => {
-      try {
-        const answer = await callTutor(text, aiAbortController?.signal);
-        aiHistory.push({ role: "user", content: text });
-        aiHistory.push({ role: "assistant", content: answer });
-        removeChatLoading();
-        appendChat("assistant", answer);
-      } catch (err) {
-        removeChatLoading();
-        if (isAbortError(err)) {
-          appendChat("system", "Request canceled.");
-        } else {
-          appendChatError(err, "chat");
-        }
-      } finally {
-        removeChatLoading();
-        aiAbortController = null;
-        aiBusy = false;
-        aiInputEl.disabled = false;
-        setTutorSubmitLoading(false);
-        aiInputEl.focus();
-      }
-    })();
+    void submitTutorPrompt(text);
   });
 }
 
@@ -611,12 +732,18 @@ RB_TUTOR_ROOT.tutor = {
   getApiConfig,
   modelCacheKey,
   setModelOptions,
+  isModelRequestCurrent,
+  updateModelOptionsForConfig,
   getTutorProblemEvent,
   buildTutorUserPrompt,
   fetchAndCacheModels,
   saveAiConfig,
   loadAiConfig,
   callTutor,
+  submitTutorPrompt,
+  cancelTutorRequest,
+  cancelTutorForProblemTransition,
+  isTutorRequestCurrent,
   applyTheme,
   initTheme,
   initTutorUi,

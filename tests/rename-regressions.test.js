@@ -56,8 +56,9 @@ test("release workflow provides an explicit tag to action-gh-release", () => {
   const source = fs.readFileSync(path.join(process.cwd(), ".github/workflows/release.yml"), "utf8");
   assert.match(source, /workflow_dispatch:/);
   assert.match(source, /inputs:/);
-  assert.match(source, /\n\s+bump:/);
   assert.match(source, /\n\s+tag_name:/);
+  assert.match(source, /MANIFEST_VERSION=.*manifest\.json/);
+  assert.match(source, /Verify release tag matches extension version/);
   assert.match(source, /Initialize submodules \(if configured\)/);
   assert.match(source, /npm run build:chrome/);
   assert.match(source, /npm run build:firefox/);

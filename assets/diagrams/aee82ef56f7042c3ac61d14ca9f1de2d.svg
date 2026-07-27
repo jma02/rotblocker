@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+  <title id="title">Five congruent squares inside a unit square</title>
+  <desc id="desc">Four shaded squares occupy the corners of a unit square. A fifth congruent shaded square is rotated forty-five degrees at the center, with each midpoint touching a corner of an outer square.</desc>
+  <rect width="480" height="480" fill="#ffffff"/>
+  <g fill="#777777" stroke="#202020" stroke-width="3" stroke-linejoin="round">
+    <rect x="24" y="24" width="159.58" height="159.58"/>
+    <rect x="296.42" y="24" width="159.58" height="159.58"/>
+    <rect x="24" y="296.42" width="159.58" height="159.58"/>
+    <rect x="296.42" y="296.42" width="159.58" height="159.58"/>
+    <path d="M240 127.16 L352.84 240 L240 352.84 L127.16 240 Z"/>
+  </g>
+  <rect x="24" y="24" width="432" height="432" fill="none" stroke="#202020" stroke-width="4"/>
+</svg>

@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 """
-Clean and validate advanced datasets used by RotBlock++:
-  - data/calculus_mcq.json
-  - data/upper_level_mcq.json
+Quarantine the retired calculus import used by RotBlock++.
 
-This script enforces structural integrity, removes clearly malformed OCR rows,
-normalizes text, and emits cleanup reports.
+The curated upper-level GRE bank is validated without rewriting rows, IDs, or
+its historical pre-rewrite quality report.
 """
 
 from __future__ import annotations
 
-import hashlib
 import json
 import re
 from collections import Counter
@@ -146,86 +143,57 @@ def clean_row(item: dict[str, Any]) -> dict[str, Any]:
 
 
 def clean_calculus(rows: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    kept: list[dict[str, Any]] = []
-    drops: Counter[str] = Counter()
-    dropped_ids: list[str] = []
+    """Quarantine every row from the retired solved-problem-book extractor."""
 
-    for row in rows:
-        reason = drop_reason_calculus(row)
-        if reason:
-            drops[reason] += 1
-            dropped_ids.append(str(row.get("id", "")))
-            continue
-        kept.append(clean_row(row))
-
-    kept.sort(key=lambda x: str(x.get("id", "")))
+    dropped_ids = [str(row.get("id", "")) for row in rows]
     report = {
-        "source": str(CALC_PATH),
+        "source": "data/calculus_mcq.json",
+        "source_pdf": "third_party/calculus_bank/3000_solved_problems_in_calculus.pdf",
+        "pipeline_stage": "retired_untrusted_import",
         "input_count": len(rows),
-        "kept_count": len(kept),
-        "dropped_count": len(rows) - len(kept),
-        "drop_reasons": dict(drops),
+        "kept_count": 0,
+        "dropped_count": len(rows),
+        "drop_reasons": {"unverified_synthetic_choices": len(rows)} if rows else {},
         "dropped_id_sample": dropped_ids[:40],
+        "notes": [
+            "The source is a solved-problem book with no multiple-choice options.",
+            "The retired importer synthesized every distractor and could mistake OCR intermediate values for answers.",
+            "Use data/calculus_mcq_synthetic.json for the shipped calculus bank.",
+        ],
     }
-    return kept, report
+    return [], report
 
 
 def clean_upper(rows: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    kept: list[dict[str, Any]] = []
-    drops: Counter[str] = Counter()
-    dropped_ids: list[str] = []
+    """Validate the curated bank without applying an obsolete import filter."""
 
-    for row in rows:
-        reason = drop_reason_upper(row)
-        if reason:
-            drops[reason] += 1
-            dropped_ids.append(str(row.get("id", "")))
-            continue
-        kept.append(clean_row(row))
+    invalid = [
+        {
+            "id": str(row.get("id", "")),
+            "reason": structurally_valid(row),
+        }
+        for row in rows
+        if structurally_valid(row) is not None
+    ]
+    ids = [str(row.get("id", "")) for row in rows]
+    if len(ids) != len(set(ids)):
+        invalid.append({"id": "", "reason": "duplicate_id"})
+    if invalid:
+        sample = ", ".join(
+            f"{item['id'] or '<unknown>'}:{item['reason']}"
+            for item in invalid[:10]
+        )
+        raise ValueError(f"Curated upper-level bank failed validation: {sample}")
 
-    # Ensure deterministic, unique IDs even when imported source IDs collide.
-    dedup_prompt: set[str] = set()
-    final_rows: list[dict[str, Any]] = []
-    id_collisions = 0
-    for row in kept:
-        prompt_key = row["prompt"].lower()
-        if prompt_key in dedup_prompt:
-            drops["duplicate_prompt"] += 1
-            continue
-        dedup_prompt.add(prompt_key)
-
-        source = row.get("source", {}) if isinstance(row.get("source"), dict) else {}
-        dataset = normalize_text(source.get("dataset", "upper"))
-        set_no = normalize_text(source.get("problemSet", "na"))
-        q_no = normalize_text(source.get("question", "na"))
-        digest = hashlib.sha1(row["prompt"].encode("utf-8")).hexdigest()[:8]
-        new_id = f"upper-gre-{dataset.lower()}-s{set_no}-q{q_no}-{digest}"
-        row["id"] = new_id
-        final_rows.append(row)
-
-    id_counts = Counter(str(r["id"]) for r in final_rows)
-    if any(v > 1 for v in id_counts.values()):
-        # Extremely unlikely after hash; keep first if collision happens.
-        unique: dict[str, dict[str, Any]] = {}
-        for row in final_rows:
-            rid = str(row["id"])
-            if rid in unique:
-                id_collisions += 1
-                continue
-            unique[rid] = row
-        final_rows = list(unique.values())
-
-    final_rows.sort(key=lambda x: str(x.get("id", "")))
     report = {
-        "source": str(UPPER_PATH),
+        "source": "data/upper_level_mcq.json",
+        "pipeline_stage": "curated_validation_only",
         "input_count": len(rows),
-        "kept_count": len(final_rows),
-        "dropped_count": len(rows) - len(final_rows),
-        "drop_reasons": dict(drops),
-        "dropped_id_sample": dropped_ids[:40],
-        "id_collisions_after_reid": id_collisions,
+        "kept_count": len(rows),
+        "dropped_count": 0,
+        "drop_reasons": {},
     }
-    return final_rows, report
+    return rows, report
 
 
 def main() -> None:
@@ -236,12 +204,15 @@ def main() -> None:
     upper_clean, upper_report = clean_upper(upper_rows)
 
     write_json(CALC_PATH, calc_clean)
-    write_json(UPPER_PATH, upper_clean)
-    write_json(CALC_REPORT, calc_report)
-    write_json(UPPER_REPORT, upper_report)
+    if upper_clean != upper_rows:
+        raise RuntimeError("Upper-level validation attempted to rewrite curated rows")
+    # Preserve the historical retirement report once the active placeholder is
+    # empty; re-running the cleaner must not erase how many rows were removed.
+    if calc_rows or not CALC_REPORT.exists():
+        write_json(CALC_REPORT, calc_report)
 
     print("calculus:", calc_report["input_count"], "->", calc_report["kept_count"])
-    print("upper:", upper_report["input_count"], "->", upper_report["kept_count"])
+    print("upper:", upper_report["kept_count"], "validated, unchanged")
 
 
 if __name__ == "__main__":
