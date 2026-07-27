@@ -91,6 +91,7 @@ Be sure to *enable Developer Mode*.
 ### Install
 ```bash
 npm install
+python3 -m pip install -r requirements.txt
 ```
 
 ### Run Tests
