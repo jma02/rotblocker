@@ -10,7 +10,6 @@ function makeElementStub(tagName = "div") {
     dataset: {},
     style: {},
     textContent: "",
-    innerHTML: "",
     value: "",
     children: [],
     parentNode: null,
@@ -71,8 +70,29 @@ function makeElementStub(tagName = "div") {
       }
       return null;
     },
-    querySelectorAll() {
-      return [];
+    querySelectorAll(selector) {
+      const matches = [];
+      const visit = (node) => {
+        for (const child of node.children || []) {
+          if (
+            selector === "[data-math-revision], mjx-container"
+            && (
+              child.tagName === "MJX-CONTAINER"
+              || Boolean(child.dataset?.mathRevision)
+            )
+          ) {
+            matches.push(child);
+          } else if (
+            String(selector || "").startsWith(".")
+            && child.classList?.contains(String(selector).slice(1))
+          ) {
+            matches.push(child);
+          }
+          visit(child);
+        }
+      };
+      visit(element);
+      return matches;
     },
     appendChild(child) {
       if (!child || typeof child !== "object") return child;
@@ -127,22 +147,42 @@ function makeElementStub(tagName = "div") {
       String(next || "").split(/\s+/).filter(Boolean).forEach((token) => classNames.add(token));
     }
   });
+  let innerHtml = "";
+  Object.defineProperty(element, "innerHTML", {
+    get() {
+      return innerHtml;
+    },
+    set(next) {
+      innerHtml = String(next || "");
+      if (innerHtml === "") {
+        for (const child of element.children) {
+          if (child && typeof child === "object") child.parentNode = null;
+        }
+        element.children = [];
+      }
+    }
+  });
 
   return element;
 }
 
-function createDocumentStub(visibilityState = "visible") {
+function createDocumentStub(visibilityState = "visible", poolKeys = []) {
   const listeners = {};
   const elementsById = new Map();
+  const poolChips = Array.from(poolKeys || [], (poolKey) => {
+    const chip = makeElementStub("button");
+    chip.dataset.pool = String(poolKey || "");
+    return chip;
+  });
 
   function getOrCreateById(id) {
     const key = String(id || "");
     if (!elementsById.has(key)) {
       const el = makeElementStub("div");
-      if (key === "ai-form") {
+      if (key === "ai-form" || key === "answer-form") {
         const submitBtn = makeElementStub("button");
         submitBtn.type = "submit";
-        submitBtn.textContent = "Ask Tutor";
+        submitBtn.textContent = key === "ai-form" ? "Ask Tutor" : "Submit";
         el.__submitButton = submitBtn;
       }
       elementsById.set(key, el);
@@ -154,6 +194,7 @@ function createDocumentStub(visibilityState = "visible") {
     visibilityState,
     body: makeElementStub("body"),
     __elementsById: elementsById,
+    __poolChips: poolChips,
     getElementById(id) {
       return getOrCreateById(id);
     },
@@ -161,8 +202,8 @@ function createDocumentStub(visibilityState = "visible") {
       if (selector === ".xp-avatar") return makeElementStub("div");
       return makeElementStub("div");
     },
-    querySelectorAll() {
-      return [];
+    querySelectorAll(selector) {
+      return selector === ".pool-chip" ? poolChips : [];
     },
     addEventListener(type, handler) {
       const key = String(type || "");
@@ -201,7 +242,8 @@ function loadChallengeFns(options = {}) {
     clearTimeoutImpl = clearTimeout,
     setIntervalImpl = () => 0,
     clearIntervalImpl = () => {},
-    DateOverride = undefined
+    DateOverride = undefined,
+    poolKeys = []
   } = options;
   const parts = [
     fs.readFileSync("challenge-modules/constants.js", "utf8"),
@@ -216,7 +258,7 @@ function loadChallengeFns(options = {}) {
     parts.push(fs.readFileSync("challenge-modules/bootstrap.js", "utf8"));
   }
   const source = parts.join("\n");
-  const document = documentOverride || createDocumentStub(visibilityState);
+  const document = documentOverride || createDocumentStub(visibilityState, poolKeys);
   const window = {
     location: { pathname, search, hash },
     history: historyOverride || { state: null, replaceState() {} },
@@ -257,7 +299,14 @@ function loadChallengeFns(options = {}) {
   sanitizeForMathJax,
   normalizeChoiceMath,
   hasRenderableMathSyntax,
+  hasMalformedMathSyntax,
   hasAssistantMarkdownSyntax,
+  problemRequiresExternalVisual,
+  splitMathSegments,
+  prepareProblemForBank,
+  getSanitizedPrompt,
+  getSanitizedChoices,
+  getNormalizedChoices,
   problemLooksRenderable,
   levelFromXp,
   avatarTierFromLevel,
@@ -265,9 +314,86 @@ function loadChallengeFns(options = {}) {
   resolveScoringApi,
   renderMathText,
   renderAssistantMarkdownText,
+  renderProblem,
+  render,
   queueMathTypeset,
+  replaceMathContainer,
   flushPendingMathTypeset,
   bindMathJaxReadyRetry,
+  handleMcqChoice,
+  handleInputAnswer,
+  isProblemInteractionReady,
+  isProblemStateMutationInFlight,
+  suspendProblemInteractionsForStateMutation,
+  finishProblemStateMutation,
+  problemElapsedMsNow,
+  tickUi,
+  appendChat,
+  submitTutorPrompt,
+  cancelTutorRequest,
+  cancelTutorForProblemTransition,
+  initTutorUi,
+  initPoolChips,
+  updateModelOptionsForConfig,
+  __setGameplayStateForTest(next = {}) {
+    if (Object.prototype.hasOwnProperty.call(next, "currentProblem")) currentProblem = next.currentProblem;
+    if (Object.prototype.hasOwnProperty.call(next, "mcqWrongGuesses")) mcqWrongGuesses = Number(next.mcqWrongGuesses) || 0;
+    if (Object.prototype.hasOwnProperty.call(next, "usedChoices")) usedChoices = new Set(next.usedChoices || []);
+    if (Object.prototype.hasOwnProperty.call(next, "score")) score = Number(next.score) || 0;
+    if (Object.prototype.hasOwnProperty.call(next, "xp")) xp = Number(next.xp) || 0;
+    if (Object.prototype.hasOwnProperty.call(next, "prestige")) prestige = Number(next.prestige) || 0;
+    if (Object.prototype.hasOwnProperty.call(next, "unlockedUntil")) unlockedUntil = next.unlockedUntil;
+    if (Object.prototype.hasOwnProperty.call(next, "stateUpdatedAt")) stateUpdatedAt = Number(next.stateUpdatedAt) || 0;
+    if (Object.prototype.hasOwnProperty.call(next, "aiHistory")) aiHistory = Array.from(next.aiHistory || []);
+  },
+  __transitionProblemForTest(problem, note = "Test problem transition.") {
+    tutorApi.cancelTutorForProblemTransition?.();
+    currentProblem = problem;
+    resetProblemTimer(currentProblem);
+    aiHistory = [];
+    mcqWrongGuesses = 0;
+    usedChoices = new Set();
+    setTutorProblemEvent(note);
+    renderProblem();
+  },
+  __setProblemBankForTest(poolKey, rows) {
+    Object.keys(poolEnabled).forEach((key) => {
+      poolEnabled[key] = false;
+    });
+    const key = String(poolKey || "amc8");
+    banks[key] = Array.from(rows || []);
+    poolLoaded[key] = true;
+    poolAvailable[key] = banks[key].length > 0;
+    poolEnabled[key] = poolAvailable[key];
+  },
+  __getGameplayStateForTest() {
+    return {
+      currentProblem,
+      problemRenderRevision,
+      readyProblemRenderRevision,
+      claimedProblemRenderRevision,
+      mcqWrongGuesses,
+      usedChoices: Array.from(usedChoices),
+      score,
+      xp,
+      prestige,
+      unlockedUntil,
+      stateUpdatedAt,
+      aiHistory: Array.from(aiHistory),
+      aiBusy,
+      tutorRequestRevision,
+      scoreResponseGeneration,
+      scoreRequestSequence,
+      latestAppliedScoreRequestSequence,
+      problemStateMutationDepth,
+      poolIntentRevision,
+      poolEnabled: { ...poolEnabled },
+      poolLoaded: { ...poolLoaded },
+      poolAvailable: { ...poolAvailable },
+      elapsedMs: problemElapsedMsNow(),
+      tutorProblemEvent: globalThis.RB?.tutorProblemEvent || ""
+    };
+  },
   canonicalizeRotblockerPreviewPath,
   desiredSyncDiagnosticsIntervalMs: typeof desiredSyncDiagnosticsIntervalMs === "function" ? desiredSyncDiagnosticsIntervalMs : undefined,
   restartSyncDiagnosticsPolling: typeof restartSyncDiagnosticsPolling === "function" ? restartSyncDiagnosticsPolling : undefined,
@@ -288,7 +414,8 @@ function loadChallengeFns(options = {}) {
   return {
     ...sandbox.__challengeFns,
     __sandbox: sandbox,
-    __elementsById: document.__elementsById || null
+    __elementsById: document.__elementsById || null,
+    __poolChips: document.__poolChips || []
   };
 }
 

@@ -3,9 +3,13 @@ window.MathJax = {
     inlineMath: [["$", "$"], ["\\(", "\\)"]],
     displayMath: [["$$", "$$"], ["\\[", "\\]"]],
     processEscapes: true,
+    processEnvironments: true,
     macros: {
       overarc: ["\\overset{\\frown}{#1}", 1]
     }
+  },
+  startup: {
+    typeset: false
   },
   chtml: {
     displayAlign: "left",

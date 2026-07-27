@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 340" role="img" aria-labelledby="title">
+  <title id="title">Five by four grid with three shaded unit squares</title>
+  <g fill="#aaa">
+    <rect x="90" y="30" width="60" height="60"/>
+    <rect x="150" y="150" width="60" height="60"/>
+    <rect x="270" y="210" width="60" height="60"/>
+  </g>
+  <g fill="none" stroke="#111" stroke-width="3">
+    <path d="M30 30H330V270H30ZM90 30V270M150 30V270M210 30V270M270 30V270M30 90H330M30 150H330M30 210H330"/>
+  </g>
+</svg>

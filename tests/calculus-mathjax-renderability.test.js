@@ -50,7 +50,11 @@ function compileTextWithMathJax(text, mathjaxApi, adaptor) {
     } catch (_err) {
       return { ok: false, reason: "mathjax_throw", segment };
     }
-    if (/data-mjx-error|mjx-merror/i.test(html)) {
+    if (
+      /data-mjx-error|mjx-merror|data-mml-node="mtext"[^>]*(?:fill|stroke)="red"/i.test(
+        html
+      )
+    ) {
       return { ok: false, reason: "mathjax_merror", segment };
     }
   }

@@ -29,11 +29,11 @@
       "500500",
       "505000",
       "1001000",
-      "1010000 \\qquad"
+      "1010000"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "1010000 \\qquad"
+    "answer": "1010000"
   },
   {
     "id": "amio-0127c836a9a9e73402799dba5e2121f1",
@@ -65,7 +65,7 @@
       "65",
       "70",
       "75",
-      "80 \\qquad"
+      "80"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -132,7 +132,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The five solutions to the equation \\[(z-1)(z^2+2z+4)(z^2+4z+6)=0\\] may be written in the form $x_k+y_ki$ for $1\\le k\\le 5,$ where $x_k$ and $y_k$ are real. Let $\\mathcal E$ be the unique ellipse that passes through the points $(x_1,y_1),(x_2,y_2),(x_3,y_3),(x_4,y_4),$ and $(x_5,y_5)$. The eccentricity of $\\mathcal E$ can be written in the form $\\sqrt{\\frac mn}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$? (Recall that the eccentricity of an ellipse $\\mathcal E$ is the ratio $\\frac ca$, where $2a$ is the length of the major axis of $\\mathcal E$ and $2c$ is the is the distance between its two foci.)",
+    "prompt": "The five solutions to the equation \\[(z-1)(z^2+2z+4)(z^2+4z+6)=0\\] may be written in the form $x_k+y_ki$ for $1\\le k\\le 5,$ where $x_k$ and $y_k$ are real. Let $\\mathcal E$ be the unique ellipse that passes through the points $(x_1,y_1),(x_2,y_2),(x_3,y_3),(x_4,y_4),$ and $(x_5,y_5)$. The eccentricity of $\\mathcal E$ can be written in the form $\\sqrt{\\frac{m}{n}}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$? (Recall that the eccentricity of an ellipse $\\mathcal E$ is the ratio $\\frac{c}{a}$, where $2a$ is the length of the major axis of $\\mathcal E$ and $2c$ is the is the distance between its two foci.)",
     "choices": [
       "7",
       "9",
@@ -150,17 +150,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Which of the following describes the set of values of $a$ for which the curves $x^2+y^2=a^2$ and $y=x^2-a$ in the real $xy$ -plane intersect at exactly $3$ points?",
+    "prompt": "Which of the following describes the set of values of $a$ for which the curves $x^2+y^2=a^2$ and $y=x^2-a$ in the real $xy$-plane intersect at exactly $3$ points?",
     "choices": [
-      "a=\\frac14",
-      "frac14 < a < \\frac12",
-      "a>\\frac14",
-      "a=\\frac12",
-      "a>\\frac12 \\qquad"
+      "$a=\\frac{1}{4}$",
+      "$\\frac{1}{4} < a < \\frac{1}{2}$",
+      "$a>\\frac{1}{4}$",
+      "$a=\\frac{1}{2}$",
+      "$a>\\frac{1}{2}$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "a>\\frac12 \\qquad"
+    "answer": "$a>\\frac{1}{2}$"
   },
   {
     "id": "amio-02fb05f82ebbf821344834fff2dea62c",
@@ -204,7 +204,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Jerry starts at $0$ on the real number line. He tosses a fair coin $8$ times. When he gets heads, he moves $1$ unit in the positive direction; when he gets tails, he moves $1$ unit in the negative direction. The probability that he reaches $4$ at some time during this process $\\frac{a}{b},$ where $a$ and $b$ are relatively prime positive integers. What is $a + b?$ (For example, he succeeds if his sequence of tosses is $HTHHHHHH.$",
+    "prompt": "Jerry starts at $0$ on the real number line. He tosses a fair coin $8$ times. When he gets heads, he moves $1$ unit in the positive direction; when he gets tails, he moves $1$ unit in the negative direction. The probability that he reaches $4$ at some time during this process $\\frac{a}{b},$ where $a$ and $b$ are relatively prime positive integers. What is $a + b?$ (For example, he succeeds if his sequence of tosses is $HTHHHHHH.$)",
     "choices": [
       "69",
       "151",
@@ -224,10 +224,10 @@
     "weight": 12,
     "prompt": "Quadrilateral $ABCD$ is inscribed in a circle with $\\angle BAC=70^{\\circ}, \\angle ADB=40^{\\circ}, AD=4,$ and $BC=6$. What is $AC$",
     "choices": [
-      "3+\\sqrt{5}",
+      "$3+\\sqrt{5}$",
       "6",
-      "\\dfrac{9}{2}\\sqrt{2}",
-      "8-\\sqrt{2}",
+      "$\\dfrac{9}{2}\\sqrt{2}$",
+      "$8-\\sqrt{2}$",
       "7"
     ],
     "answerIndex": 1,
@@ -242,10 +242,10 @@
     "weight": 12,
     "prompt": "An insect lives on the surface of a regular tetrahedron with edges of length 1. It wishes to travel on the surface of the tetrahedron from the midpoint of one edge to the midpoint of the opposite edge. What is the length of the shortest such trip? (Note: Two edges of a tetrahedron are opposite if they have no common endpoint.)",
     "choices": [
-      "frac{1}{2} \\sqrt{3}",
+      "$\\frac{1}{2} \\sqrt{3}$",
       "1",
-      "sqrt{2}",
-      "frac{3}{2}",
+      "$\\sqrt{2}$",
+      "$\\frac{3}{2}$",
       "2"
     ],
     "answerIndex": 1,
@@ -260,15 +260,15 @@
     "weight": 12,
     "prompt": "Which of the following describes the largest subset of values of $y$ within the closed interval $[0,\\pi]$ for which \\[\\sin(x+y)\\leq \\sin(x)+\\sin(y)\\] for every $x$ between $0$ and $\\pi$, inclusive?",
     "choices": [
-      "y=0",
-      "0\\leq y\\leq \\frac{\\pi}{4}",
-      "0\\leq y\\leq \\frac{\\pi}{2}",
-      "0\\leq y\\leq \\frac{3\\pi}{4}",
-      "0\\leq y\\leq \\pi"
+      "$y=0$",
+      "$0\\leq y\\leq \\frac{\\pi}{4}$",
+      "$0\\leq y\\leq \\frac{\\pi}{2}$",
+      "$0\\leq y\\leq \\frac{3\\pi}{4}$",
+      "$0\\leq y\\leq \\pi$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "0\\leq y\\leq \\pi"
+    "answer": "$0\\leq y\\leq \\pi$"
   },
   {
     "id": "amio-052f45c5e4652078947cacaf8feb7b35",
@@ -318,7 +318,7 @@
       "8",
       "10",
       "12",
-      "14\\$ ~ pi_is_3.14"
+      "14"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -369,15 +369,15 @@
     "weight": 12,
     "prompt": "Four regular hexagons surround a square with side length 1, each one sharing an edge with the square, as shown in the figure below. The area of the resulting 12-sided outer nonconvex polygon can be written as $m \\sqrt{n} + p$, where $m$ $n$, and $p$ are integers and $n$ is not divisible by the square of any prime. What is $m+n+p$",
     "choices": [
-      "-12",
-      "-4",
+      "$-12$",
+      "$-4$",
       "4",
       "24",
       "32"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-4",
+    "answer": "$-4$",
     "diagramPng": "assets/diagrams/06890cc553605954a960222d8469999a.png"
   },
   {
@@ -388,15 +388,15 @@
     "weight": 12,
     "prompt": "Three numbers in the interval $\\left[0,1\\right]$ are chosen independently and at random. What is the probability that the chosen numbers are the side lengths of a triangle with positive area?",
     "choices": [
-      "frac16",
-      "frac13",
-      "frac12",
-      "frac23",
-      "frac56"
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{5}{6}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "frac12"
+    "answer": "$\\frac{1}{2}$"
   },
   {
     "id": "amio-0729f0c94b88d88f4d4f6f99e514fbd0",
@@ -406,15 +406,15 @@
     "weight": 12,
     "prompt": "Suppose that $a$ $b$ $c$ and $d$ are positive integers satisfying all of the following relations. \\[abcd=2^6\\cdot 3^9\\cdot 5^7\\] \\[\\text{lcm}(a,b)=2^3\\cdot 3^2\\cdot 5^3\\] \\[\\text{lcm}(a,c)=2^3\\cdot 3^3\\cdot 5^3\\] \\[\\text{lcm}(a,d)=2^3\\cdot 3^3\\cdot 5^3\\] \\[\\text{lcm}(b,c)=2^1\\cdot 3^3\\cdot 5^2\\] \\[\\text{lcm}(b,d)=2^2\\cdot 3^3\\cdot 5^2\\] \\[\\text{lcm}(c,d)=2^2\\cdot 3^3\\cdot 5^2\\] What is $\\text{gcd}(a,b,c,d)$",
     "choices": [
-      "~30",
-      "~45",
-      "~3",
-      "~15",
-      "~6"
+      "30",
+      "45",
+      "3",
+      "15",
+      "6"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~3"
+    "answer": "3"
   },
   {
     "id": "amio-087b7c1747585a6ebaf360bb5e7f7e8a",
@@ -461,9 +461,9 @@
     "prompt": "Let $a + ar_1 + ar_1^2 + ar_1^3 + \\cdots$ and $a + ar_2 + ar_2^2 + ar_2^3 + \\cdots$ be two different infinite geometric series of positive numbers with the same first term. The sum of the first series is $r_1$, and the sum of the second series is $r_2$. What is $r_1 + r_2$",
     "choices": [
       "0",
-      "frac{1}{2}",
+      "$\\frac{1}{2}$",
       "1",
-      "frac{1 + \\sqrt{5}}{2}",
+      "$\\frac{1 + \\sqrt{5}}{2}$",
       "2"
     ],
     "answerIndex": 2,
@@ -482,7 +482,7 @@
       "6",
       "10",
       "12",
-      "16\\qquad"
+      "16"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -568,15 +568,15 @@
     "weight": 12,
     "prompt": "For every composite positive integer $n$, define $r(n)$ to be the sum of the factors in the prime factorization of $n$. For example, $r(50) = 12$ because the prime factorization of $50$ is $2 \\times 5^{2}$, and $2 + 5 + 5 = 12$. What is the range of the function $r$ $\\{r(n): n \\text{ is a composite positive integer}\\}$",
     "choices": [
-      "\\text{the set of positive integers} \\\\",
-      "\\text{the set of composite positive integers} \\\\",
-      "\\text{the set of even positive integers} \\\\",
-      "\\text{the set of integers greater than 3} \\\\",
-      "\\text{the set of integers greater than 4}"
+      "$\\text{the set of positive integers}$",
+      "$\\text{the set of composite positive integers}$",
+      "$\\text{the set of even positive integers}$",
+      "$\\text{the set of integers greater than 3}$",
+      "$\\text{the set of integers greater than 4}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "\\text{the set of integers greater than 3} \\\\"
+    "answer": "$\\text{the set of integers greater than 3}$"
   },
   {
     "id": "amio-0c89fe769516cc2eea1cb8f9ae9424aa",
@@ -676,10 +676,10 @@
     "weight": 12,
     "prompt": "Equiangular hexagon $ABCDEF$ has side lengths $AB=CD=EF=1$ and $BC=DE=FA=r$. The area of $\\triangle ACE$ is $70\\%$ of the area of the hexagon. What is the sum of all possible values of $r$",
     "choices": [
-      "frac{4\\sqrt{3}}{3}",
-      "frac{10}{3}",
+      "$\\frac{4\\sqrt{3}}{3}$",
+      "$\\frac{10}{3}$",
       "4",
-      "frac{17}{4}",
+      "$\\frac{17}{4}$",
       "6"
     ],
     "answerIndex": 4,
@@ -712,15 +712,15 @@
     "weight": 12,
     "prompt": "An urn contains one red ball and one blue ball. A box of extra red and blue balls lies nearby. George performs the following operation four times: he draws a ball from the urn at random and then takes a ball of the same color from the box and returns those two matching balls to the urn. After the four iterations the urn contains six balls. What is the probability that the urn contains three balls of each color?",
     "choices": [
-      "frac16",
-      "frac15",
-      "frac14",
-      "frac13",
-      "frac12"
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac15"
+    "answer": "$\\frac{1}{5}$"
   },
   {
     "id": "amio-0f312a868ce3a8d148b1fff2605e1349",
@@ -746,7 +746,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "How many odd positive $3$ -digit integers are divisible by $3$ but do not contain the digit $3$",
+    "prompt": "How many odd positive $3$-digit integers are divisible by $3$ but do not contain the digit $3$",
     "choices": [
       "96",
       "97",
@@ -824,7 +824,7 @@
       "2220",
       "3000",
       "3120",
-      "3125\\qquad"
+      "3125"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -841,8 +841,8 @@
       "89",
       "90",
       "120",
-      "2^{10}",
-      "2^2 3^8"
+      "$2^{10}$",
+      "$2^2 3^8$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -856,15 +856,15 @@
     "weight": 12,
     "prompt": "Integers $a, b, c,$ and $d$, not necessarily distinct, are chosen independently and at random from 0 to 2007, inclusive. What is the probability that $ad-bc$ is even",
     "choices": [
-      "frac 38",
-      "frac 7{16}",
-      "frac 12",
-      "frac 9{16}",
-      "frac 58"
+      "$\\frac{3}{8}$",
+      "$\\frac{7}{16}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{9}{16}$",
+      "$\\frac{5}{8}$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "frac 58"
+    "answer": "$\\frac{5}{8}$"
   },
   {
     "id": "amio-11ad48262799ab79b3355f99f362f899",
@@ -878,11 +878,11 @@
       "4",
       "6",
       "8",
-      "9 \\qquad"
+      "9"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "9 \\qquad"
+    "answer": "9"
   },
   {
     "id": "amio-11ef784f91df87ea60a6e161f67d0f9e",
@@ -890,7 +890,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Makarla attended two meetings during her $9$ -hour work day. The first meeting took $45$ minutes and the second meeting took twice as long. What percent of her work day was spent attending meetings?",
+    "prompt": "Makarla attended two meetings during her $9$-hour work day. The first meeting took $45$ minutes and the second meeting took twice as long. What percent of her work day was spent attending meetings?",
     "choices": [
       "15",
       "20",
@@ -946,7 +946,7 @@
     "weight": 12,
     "prompt": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$",
     "choices": [
-      "-2",
+      "$-2$",
       "0",
       "2",
       "3",
@@ -1090,15 +1090,15 @@
     "weight": 12,
     "prompt": "Suppose that $\\triangle{ABC}$ is an equilateral triangle of side length $s$, with the property that there is a unique point $P$ inside the triangle such that $AP=1$ $BP=\\sqrt{3}$, and $CP=2$. What is $s$",
     "choices": [
-      "1+\\sqrt{2}",
-      "sqrt{7}",
-      "frac{8}{3}",
-      "sqrt{5+\\sqrt{5}}",
-      "2\\sqrt{2}"
+      "$1+\\sqrt{2}$",
+      "$\\sqrt{7}$",
+      "$\\frac{8}{3}$",
+      "$\\sqrt{5+\\sqrt{5}}$",
+      "$2\\sqrt{2}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "sqrt{7}"
+    "answer": "$\\sqrt{7}$"
   },
   {
     "id": "amio-16abafd4e82e6fff95db809cfdfa2481",
@@ -1108,15 +1108,15 @@
     "weight": 12,
     "prompt": "A frog sitting at the point $(1, 2)$ begins a sequence of jumps, where each jump is parallel to one of the coordinate axes and has length $1$, and the direction of each jump (up, down, right, or left) is chosen independently at random. The sequence ends when the frog reaches a side of the square with vertices $(0,0), (0,4), (4,4),$ and $(4,0)$. What is the probability that the sequence of jumps ends on a vertical side of the square?",
     "choices": [
-      "frac12",
-      "frac 58",
-      "frac 23",
-      "frac34",
-      "frac 78"
+      "$\\frac{1}{2}$",
+      "$\\frac{5}{8}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{7}{8}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac 58"
+    "answer": "$\\frac{5}{8}$"
   },
   {
     "id": "amio-16df3b2436a617f88fda34fbfadf7f88",
@@ -1164,13 +1164,13 @@
     "choices": [
       "0",
       "1",
-      "-1",
+      "$-1$",
       "2",
-      "-2"
+      "$-2$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "-2"
+    "answer": "$-2$"
   },
   {
     "id": "amio-198c83a8aae2415bd0e7046faef3a4aa",
@@ -1198,15 +1198,15 @@
     "weight": 12,
     "prompt": "How many digits are in the base-ten representation of $8^5 \\cdot 5^{10} \\cdot 15^5$",
     "choices": [
-      "~14",
-      "~15",
-      "~16",
-      "~17",
-      "~18\\qquad"
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "~18\\qquad"
+    "answer": "18"
   },
   {
     "id": "amio-1a29198c9a6038d7c16c7c18fc5b1065",
@@ -1286,7 +1286,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Consider the following $100$ sets of $10$ elements each: \\begin{align*} &\\{1,2,3,\\ldots,10\\}, \\\\ &\\{11,12,13,\\ldots,20\\},\\\\ &\\{21,22,23,\\ldots,30\\},\\\\ &\\vdots\\\\ &\\{991,992,993,\\ldots,1000\\}. \\end{align*} How many of these sets contain exactly two multiples of $7$",
+    "prompt": "Consider the following $100$ sets of $10$ elements each: \\[\\begin{aligned} &\\{1,2,3,\\ldots,10\\}, \\\\ &\\{11,12,13,\\ldots,20\\},\\\\ &\\{21,22,23,\\ldots,30\\},\\\\ &\\vdots\\\\ &\\{991,992,993,\\ldots,1000\\}. \\end{aligned}\\] How many of these sets contain exactly two multiples of $7$",
     "choices": [
       "40",
       "42",
@@ -1340,7 +1340,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $p(x) = x^3 + ax^2 + bx + c$, where $a$ $b$, and $c$ are complex numbers. Suppose that What is the number of nonreal zeros of $x^{12} + ax^8 + bx^4 + c$",
+    "prompt": "Let $p(x)=x^3+ax^2+bx+c$, where $a$, $b$, and $c$ are complex numbers. Suppose that \\[p(2009+9002\\pi i)=p(2009)=p(9002)=0.\\] What is the number of nonreal zeros of $x^{12}+ax^8+bx^4+c$?",
     "choices": [
       "4",
       "6",
@@ -1412,7 +1412,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $K$ be the number of sequences $A_1$ $A_2$ $\\dots$ $A_n$ such that $n$ is a positive integer less than or equal to $10$, each $A_i$ is a subset of $\\{1, 2, 3, \\dots, 10\\}$, and $A_{i-1}$ is a subset of $A_i$ for each $i$ between $2$ and $n$, inclusive. For example, $\\{\\}$ $\\{5, 7\\}$ $\\{2, 5, 7\\}$ $\\{2, 5, 7\\}$ $\\{2, 5, 6, 7, 9\\}$ is one such sequence, with $n = 5$.What is the remainder when $K$ is divided by $10$",
+    "prompt": "Let $K$ be the number of sequences $A_1$ $A_2$ $\\dots$ $A_n$ such that $n$ is a positive integer less than or equal to $10$, each $A_i$ is a subset of $\\{1, 2, 3, \\dots, 10\\}$, and $A_{i-1}$ is a subset of $A_i$ for each $i$ between $2$ and $n$, inclusive. For example, $\\{\\}$ $\\{5, 7\\}$ $\\{2, 5, 7\\}$ $\\{2, 5, 7\\}$ $\\{2, 5, 6, 7, 9\\}$ is one such sequence, with $n = 5$. What is the remainder when $K$ is divided by $10$",
     "choices": [
       "1",
       "3",
@@ -1450,15 +1450,15 @@
     "weight": 12,
     "prompt": "Let $S$ be the set of circles in the coordinate plane that are tangent to each of the three circles with equations $x^{2}+y^{2}=4$ $x^{2}+y^{2}=64$, and $(x-5)^{2}+y^{2}=3$. What is the sum of the areas of all circles in $S$",
     "choices": [
-      "~48\\pi",
-      "~68\\pi",
-      "~96\\pi",
-      "~102\\pi",
-      "~136\\pi\\qquad"
+      "$48\\pi$",
+      "$68\\pi$",
+      "$96\\pi$",
+      "$102\\pi$",
+      "$136\\pi$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "~136\\pi\\qquad"
+    "answer": "$136\\pi$"
   },
   {
     "id": "amio-1ff64818e741a3ec60d426c57af671a2",
@@ -1520,7 +1520,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $S$ be a square of side length 1. Two points are chosen independently at random on the sides of $S$. The probability that the straight-line distance between the points is at least $\\frac12$ is $\\frac{a-b\\pi}{c}$, where $a,b,$ and $c$ are positive integers and $\\text{gcd}(a,b,c) = 1$. What is $a+b+c$",
+    "prompt": "Let $S$ be a square of side length 1. Two points are chosen independently at random on the sides of $S$. The probability that the straight-line distance between the points is at least $\\frac{1}{2}$ is $\\frac{a-b\\pi}{c}$, where $a,b,$ and $c$ are positive integers and $\\text{gcd}(a,b,c) = 1$. What is $a+b+c$",
     "choices": [
       "59",
       "60",
@@ -1648,15 +1648,15 @@
     "weight": 12,
     "prompt": "The function $f$ has the property that for each real number $x$ in its domain, $1/x$ is also in its domain and $f(x)+f\\left(\\frac{1}{x}\\right)=x$ What is the largest set of real numbers that can be in the domain of $f$",
     "choices": [
-      "{x|x\\ne 0\\}",
-      "{x|x<0\\}",
-      "{x|x>0\\}",
-      "{x|x\\ne -1\\;\\rm{and}\\; x\\ne 0\\;\\rm{and}\\; x\\ne 1\\}",
-      "{-1,1\\}"
+      "$\\{x\\mid x\\ne 0\\}$",
+      "$\\{x\\mid x<0\\}$",
+      "$\\{x\\mid x>0\\}$",
+      "$\\{x\\mid x\\ne -1,\\ x\\ne 0,\\ x\\ne 1\\}$",
+      "$\\{-1,1\\}$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "{-1,1\\}"
+    "answer": "$\\{-1,1\\}$"
   },
   {
     "id": "amio-249babb1866b3889dc7f73643531d32b",
@@ -1718,7 +1718,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The data set $[6, 19, 33, 33, 39, 41, 41, 43, 51, 57]$ has median $Q_2 = 40$, first quartile $Q_1 = 33$, and third quartile $Q_3 = 43$. An outlier in a data set is a value that is more than $1.5$ times the interquartile range below the first quartle ( $Q_1$ ) or more than $1.5$ times the interquartile range above the third quartile ( $Q_3$ ), where the interquartile range is defined as $Q_3 - Q_1$. How many outliers does this data set have?",
+    "prompt": "The data set $[6, 19, 33, 33, 39, 41, 41, 43, 51, 57]$ has median $Q_2 = 40$, first quartile $Q_1 = 33$, and third quartile $Q_3 = 43$. An outlier in a data set is a value that is more than $1.5$ times the interquartile range below the first quartile ( $Q_1$ ) or more than $1.5$ times the interquartile range above the third quartile ( $Q_3$ ), where the interquartile range is defined as $Q_3 - Q_1$. How many outliers does this data set have?",
     "choices": [
       "0",
       "1",
@@ -1754,7 +1754,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "All the students in an algebra class took a $100$ -point test. Five students scored $100$, each student scored at least $60$, and the mean score was $76$. What is the smallest possible number of students in the class?",
+    "prompt": "All the students in an algebra class took a $100$-point test. Five students scored $100$, each student scored at least $60$, and the mean score was $76$. What is the smallest possible number of students in the class?",
     "choices": [
       "10",
       "11",
@@ -1775,10 +1775,10 @@
     "prompt": "Let \\[z=\\frac{1+i}{\\sqrt{2}}.\\] What is \\[\\left(z^{1^2}+z^{2^2}+z^{3^2}+\\dots+z^{{12}^2}\\right) \\cdot \\left(\\frac{1}{z^{1^2}}+\\frac{1}{z^{2^2}}+\\frac{1}{z^{3^2}}+\\dots+\\frac{1}{z^{{12}^2}}\\right)?\\]",
     "choices": [
       "18",
-      "72-36\\sqrt2",
+      "$72-36\\sqrt{2}$",
       "36",
       "72",
-      "72+36\\sqrt2"
+      "$72+36\\sqrt{2}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -1810,15 +1810,15 @@
     "weight": 12,
     "prompt": "Brianna is using part of the money she earned on her weekend job to buy several equally-priced CDs. She used one fifth of her money to buy one third of the CDs. What fraction of her money will she have left after she buys all the CDs?",
     "choices": [
-      "frac15",
-      "frac13",
-      "frac25",
-      "frac23",
-      "frac45"
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{4}{5}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "frac25"
+    "answer": "$\\frac{2}{5}$"
   },
   {
     "id": "amio-2796e0d8f44e93263bea627acbb348b5",
@@ -1828,15 +1828,15 @@
     "weight": 12,
     "prompt": "Suppose that $P = 2^m$ and $Q = 3^n$. Which of the following is equal to $12^{mn}$ for every pair of integers $(m,n)$",
     "choices": [
-      "P^2Q",
-      "P^nQ^m",
-      "P^nQ^{2m}",
-      "P^{2m}Q^n",
-      "P^{2n}Q^m"
+      "$P^2Q$",
+      "$P^nQ^m$",
+      "$P^nQ^{2m}$",
+      "$P^{2m}Q^n$",
+      "$P^{2n}Q^m$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "P^{2n}Q^m"
+    "answer": "$P^{2n}Q^m$"
   },
   {
     "id": "amio-27d1e4e024c6dcc8508a71e8f00d4f68",
@@ -1846,11 +1846,11 @@
     "weight": 12,
     "prompt": "If $x,y,$ and $z$ are positive numbers satisfying \\[x + \\frac{1}{y} = 4,\\qquad y + \\frac{1}{z} = 1, \\qquad \\text{and} \\qquad z + \\frac{1}{x} = \\frac{7}{3}\\] Then what is the value of $xyz$",
     "choices": [
-      "frac{2}{3}",
+      "$\\frac{2}{3}$",
       "1",
-      "frac{4}{3}",
+      "$\\frac{4}{3}$",
       "2",
-      "frac{7}{3}"
+      "$\\frac{7}{3}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -1886,11 +1886,11 @@
       "12",
       "24",
       "48",
-      "78\\qquad"
+      "78"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "78\\qquad"
+    "answer": "78"
   },
   {
     "id": "amio-2917ea745fb0cb9dde5e13f4f3da1cd9",
@@ -1898,7 +1898,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$ -th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is",
+    "prompt": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is",
     "choices": [
       "1992",
       "1999",
@@ -1936,15 +1936,15 @@
     "weight": 12,
     "prompt": "Define $x\\diamond y$ to be $|x-y|$ for all real numbers $x$ and $y.$ What is the value of \\[(1\\diamond(2\\diamond3))-((1\\diamond2)\\diamond3)?\\]",
     "choices": [
-      "{-}2",
-      "{-}1",
+      "${-}2$",
+      "${-}1$",
       "0",
       "1",
       "2"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "{-}2"
+    "answer": "${-}2$"
   },
   {
     "id": "amio-2a3916001883c2095a301590d24a4b63",
@@ -1952,7 +1952,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Circles $\\omega$ and $\\gamma$, both centered at $O$, have radii $20$ and $17$, respectively. Equilateral triangle $ABC$, whose interior lies in the interior of $\\omega$ but in the exterior of $\\gamma$, has vertex $A$ on $\\omega$, and the line containing side $\\overline{BC}$ is tangent to $\\gamma$. Segments $\\overline{AO}$ and $\\overline{BC}$ intersect at $P$, and $\\dfrac{BP}{CP} = 3$. Then $AB$ can be written in the form $\\dfrac{m}{\\sqrt{n}} - \\dfrac{p}{\\sqrt{q}}$ for positive integers $m$ $n$ $p$ $q$ with $\\text{gcd}(m,n) = \\text{gcd}(p,q) = 1$. What is $m+n+p+q$ $\\phantom{}$",
+    "prompt": "Circles $\\omega$ and $\\gamma$, both centered at $O$, have radii $20$ and $17$, respectively. Equilateral triangle $ABC$, whose interior lies in the interior of $\\omega$ but in the exterior of $\\gamma$, has vertex $A$ on $\\omega$, and the line containing side $\\overline{BC}$ is tangent to $\\gamma$. Segments $\\overline{AO}$ and $\\overline{BC}$ intersect at $P$, and $\\dfrac{BP}{CP} = 3$. Then $AB$ can be written in the form $\\dfrac{m}{\\sqrt{n}} - \\dfrac{p}{\\sqrt{q}}$ for positive integers $m$ $n$ $p$ $q$ with $\\text{gcd}(m,n) = \\text{gcd}(p,q) = 1$. What is $m+n+p+q$",
     "choices": [
       "42",
       "86",
@@ -2042,7 +2042,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "How many polynomials of the form $x^5 + ax^4 + bx^3 + cx^2 + dx + 2020$, where $a$ $b$ $c$, and $d$ are real numbers, have the property that whenever $r$ is a root, so is $\\frac{-1+i\\sqrt{3}}{2} \\cdot r$? (Note that $i=\\sqrt{-1}$",
+    "prompt": "How many polynomials of the form $x^5 + ax^4 + bx^3 + cx^2 + dx + 2020$, where $a$ $b$ $c$, and $d$ are real numbers, have the property that whenever $r$ is a root, so is $\\frac{-1+i\\sqrt{3}}{2} \\cdot r$? (Note that $i=\\sqrt{-1}$)",
     "choices": [
       "0",
       "1",
@@ -2066,7 +2066,7 @@
       "17",
       "18",
       "19",
-      "20 \\qquad"
+      "20"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -2080,8 +2080,8 @@
     "weight": 12,
     "prompt": "In the sequence $2001$ $2002$ $2003$ $\\ldots$, each term after the third is found by subtracting the previous term from the sum of the two terms that precede that term. For example, the fourth term is $2001 + 2002 - 2003 = 2000$. What is the $2004^\\textrm{th}$ term in this sequence?",
     "choices": [
-      "-2004",
-      "-2",
+      "$-2004$",
+      "$-2$",
       "0",
       "4003",
       "6007"
@@ -2225,10 +2225,10 @@
     "weight": 12,
     "prompt": "Let $f(n) = \\left( \\frac{-1+i\\sqrt{3}}{2} \\right)^n + \\left( \\frac{-1-i\\sqrt{3}}{2} \\right)^n$, where $i = \\sqrt{-1}$. What is $f(2022)$",
     "choices": [
-      "-2",
-      "-1",
+      "$-2$",
+      "$-1$",
       "0",
-      "sqrt{3}",
+      "$\\sqrt{3}$",
       "2"
     ],
     "answerIndex": 4,
@@ -2297,15 +2297,15 @@
     "weight": 12,
     "prompt": "Ms. Blackwell gives an exam to two classes. The mean of the scores of the students in the morning class is $84$, and the afternoon class's mean score is $70$. The ratio of the number of students in the morning class to the number of students in the afternoon class is $\\frac{3}{4}$. What is the mean of the scores of all the students?",
     "choices": [
-      "~74",
-      "~75",
-      "~76",
-      "~77",
-      "~78"
+      "74",
+      "75",
+      "76",
+      "77",
+      "78"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~76"
+    "answer": "76"
   },
   {
     "id": "amio-306ad56644222e4293d34fe57f1b9ca3",
@@ -2367,7 +2367,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "For a positive integer $n$ and nonzero digits $a$ $b$, and $c$, let $A_n$ be the $n$ -digit integer each of whose digits is equal to $a$; let $B_n$ be the $n$ -digit integer each of whose digits is equal to $b$, and let $C_n$ be the $2n$ -digit (not $n$ -digit) integer each of whose digits is equal to $c$. What is the greatest possible value of $a + b + c$ for which there are at least two values of $n$ such that $C_n - B_n = A_n^2$",
+    "prompt": "For a positive integer $n$ and nonzero digits $a$ $b$, and $c$, let $A_n$ be the $n$-digit integer each of whose digits is equal to $a$; let $B_n$ be the $n$-digit integer each of whose digits is equal to $b$, and let $C_n$ be the $2n$-digit (not $n$-digit) integer each of whose digits is equal to $c$. What is the greatest possible value of $a + b + c$ for which there are at least two values of $n$ such that $C_n - B_n = A_n^2$",
     "choices": [
       "12",
       "14",
@@ -2550,8 +2550,8 @@
     "prompt": "What is the value of \\[\\left(\\sum_{k=1}^{20} \\log_{5^k} 3^{k^2}\\right)\\cdot\\left(\\sum_{k=1}^{100} \\log_{9^k} 25^k\\right)?\\]",
     "choices": [
       "21",
-      "100\\log_5 3",
-      "200\\log_3 5",
+      "$100\\log_5 3$",
+      "$200\\log_3 5$",
       "2200",
       "21000"
     ],
@@ -2621,8 +2621,8 @@
     "weight": 12,
     "prompt": "Let $m\\ge 5$ be an odd integer, and let $D(m)$ denote the number of quadruples $(a_1, a_2, a_3, a_4)$ of distinct integers with $1\\le a_i \\le m$ for all $i$ such that $m$ divides $a_1+a_2+a_3+a_4$. There is a polynomial \\[q(x) = c_3x^3+c_2x^2+c_1x+c_0\\] such that $D(m) = q(m)$ for all odd integers $m\\ge 5$. What is $c_1?$",
     "choices": [
-      "{-}6",
-      "{-}1",
+      "${-}6$",
+      "${-}1$",
       "4",
       "6",
       "11"
@@ -2694,10 +2694,10 @@
     "prompt": "In $\\triangle ABC$, we have $AC=BC=7$ and $AB=2$. Suppose that $D$ is a point on line $AB$ such that $B$ lies between $A$ and $D$ and $CD=8$. What is $BD$",
     "choices": [
       "3",
-      "2\\sqrt{3}",
+      "$2\\sqrt{3}$",
       "4",
       "5",
-      "4\\sqrt{2}"
+      "$4\\sqrt{2}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -2745,7 +2745,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The polygon enclosed by the solid lines in the figure consists of 4 congruent squares joined edge -to-edge. One more congruent square is attached to an edge at one of the nine positions indicated. How many of the nine resulting polygons can be folded to form a cube with one face missing? 2003amc10a10.gif",
+    "prompt": "The polygon enclosed by the solid lines in the figure consists of 4 congruent squares joined edge -to-edge. One more congruent square is attached to an edge at one of the nine positions indicated. How many of the nine resulting polygons can be folded to form a cube with one face missing?",
     "choices": [
       "2",
       "3",
@@ -2755,7 +2755,8 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "6"
+    "answer": "6",
+    "diagramPng": "assets/diagrams/54ac4707af6243ce09f349d87255573f.png"
   },
   {
     "id": "amio-3899010a341759a057dd346753c42009",
@@ -2781,17 +2782,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "A digital display shows the current date as an $8$ -digit integer consisting of a $4$ -digit year, followed by a $2$ -digit month, followed by a $2$ -digit date within the month. For example, Arbor Day this year is displayed as 20230428. For how many dates in $2023$ will each digit appear an even number of times in the 8-digital display for that date?",
+    "prompt": "A digital display shows the current date as an $8$-digit integer consisting of a $4$-digit year, followed by a $2$-digit month, followed by a $2$-digit date within the month. For example, Arbor Day this year is displayed as 20230428. For how many dates in $2023$ will each digit appear an even number of times in the 8-digit display for that date?",
     "choices": [
-      "~5",
-      "~6",
-      "~7",
-      "~8",
-      "~9"
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "~9"
+    "answer": "9"
   },
   {
     "id": "amio-38f42e292b2c0fc1ea5cbaa56af12a87",
@@ -2838,14 +2839,15 @@
     "prompt": "Four congruent rectangles are placed as shown. The area of the outer square is $4$ times that of the inner square. What is the ratio of the length of the longer side of each rectangle to the length of its shorter side?",
     "choices": [
       "3",
-      "sqrt{10}",
-      "2 + \\sqrt2",
-      "2\\sqrt3",
+      "$\\sqrt{10}$",
+      "$2 + \\sqrt{2}$",
+      "$2\\sqrt{3}$",
       "4"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "3"
+    "answer": "3",
+    "diagramPng": "assets/diagrams/569e37555efc7af96b67e8a7e4f73300.png"
   },
   {
     "id": "amio-398074003d8a1f9a0f08dcc621734d79",
@@ -2891,15 +2893,15 @@
     "weight": 12,
     "prompt": "In $\\triangle ABC$, we have $AB = 1$ and $AC = 2$. Side $\\overline{BC}$ and the median from $A$ to $\\overline{BC}$ have the same length. What is $BC$",
     "choices": [
-      "frac{1+\\sqrt{2}}{2}",
-      "frac{1+\\sqrt{3}}2",
-      "sqrt{2}",
-      "frac 32",
-      "sqrt{3}"
+      "$\\frac{1+\\sqrt{2}}{2}$",
+      "$\\frac{1+\\sqrt{3}}{2}$",
+      "$\\sqrt{2}$",
+      "$\\frac{3}{2}$",
+      "$\\sqrt{3}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "sqrt{2}"
+    "answer": "$\\sqrt{2}$"
   },
   {
     "id": "amio-39dd8bce5448ecf372ef6cf13a7e12bd",
@@ -2913,7 +2915,7 @@
       "44",
       "110",
       "143",
-      "155\\qquad"
+      "155"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -2944,7 +2946,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Semicircle $\\Gamma$ has diameter $\\overline{AB}$ of length $14$. Circle $\\Omega$ lies tangent to $\\overline{AB}$ at a point $P$ and intersects $\\Gamma$ at points $Q$ and $R$. If $QR=3\\sqrt3$ and $\\angle QPR=60^\\circ$, then the area of $\\triangle PQR$ equals $\\tfrac{a\\sqrt{b}}{c}$, where $a$ and $c$ are relatively prime positive integers, and $b$ is a positive integer not divisible by the square of any prime. What is $a+b+c$",
+    "prompt": "Semicircle $\\Gamma$ has diameter $\\overline{AB}$ of length $14$. Circle $\\Omega$ lies tangent to $\\overline{AB}$ at a point $P$ and intersects $\\Gamma$ at points $Q$ and $R$. If $QR=3\\sqrt{3}$ and $\\angle QPR=60^\\circ$, then the area of $\\triangle PQR$ equals $\\tfrac{a\\sqrt{b}}{c}$, where $a$ and $c$ are relatively prime positive integers, and $b$ is a positive integer not divisible by the square of any prime. What is $a+b+c$",
     "choices": [
       "110",
       "114",
@@ -2964,9 +2966,9 @@
     "weight": 12,
     "prompt": "The sum of an infinite geometric series is a positive number $S$, and the second term in the series is $1$. What is the smallest possible value of $S?$",
     "choices": [
-      "frac{1+\\sqrt{5}}{2}",
+      "$\\frac{1+\\sqrt{5}}{2}$",
       "2",
-      "sqrt{5}",
+      "$\\sqrt{5}$",
       "3",
       "4"
     ],
@@ -3019,7 +3021,7 @@
     "prompt": "What is the value of \\[\\log_37\\cdot\\log_59\\cdot\\log_711\\cdot\\log_913\\cdots\\log_{21}25\\cdot\\log_{23}27?\\]",
     "choices": [
       "3",
-      "3\\log_{7}23",
+      "$3\\log_{7}23$",
       "6",
       "9",
       "10"
@@ -3072,15 +3074,15 @@
     "weight": 12,
     "prompt": "Flora the frog starts at 0 on the number line and makes a sequence of jumps to the right. In any one jump, independent of previous jumps, Flora leaps a positive integer distance $m$ with probability $\\frac{1}{2^m}$ What is the probability that Flora will eventually land at 10?",
     "choices": [
-      "~\\frac{5}{512}",
-      "~\\frac{45}{1024}",
-      "~\\frac{127}{1024}",
-      "~\\frac{511}{1024}",
-      "~\\frac{1}{2}"
+      "$\\frac{5}{512}$",
+      "$\\frac{45}{1024}$",
+      "$\\frac{127}{1024}$",
+      "$\\frac{511}{1024}$",
+      "$\\frac{1}{2}$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "~\\frac{1}{2}"
+    "answer": "$\\frac{1}{2}$"
   },
   {
     "id": "amio-3e783ea1c0ddad231f9842c2e782af79",
@@ -3090,15 +3092,15 @@
     "weight": 12,
     "prompt": "For all positive integers $n$, let $f(n)=\\log_{2002} n^2$. Let $N=f(11)+f(13)+f(14)$. Which of the following relations is true?",
     "choices": [
-      "N<1",
-      "N=1",
-      "1<N<2",
-      "N=2",
-      "N>2"
+      "$N<1$",
+      "$N=1$",
+      "$1<N<2$",
+      "$N=2$",
+      "$N>2$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "N=2"
+    "answer": "$N=2$"
   },
   {
     "id": "amio-3f08137e1122f9a259950754e838a3f4",
@@ -3108,11 +3110,11 @@
     "weight": 12,
     "prompt": "Three equally spaced parallel lines intersect a circle, creating three chords of lengths $38,38,$ and $34$. What is the distance between two adjacent parallel lines?",
     "choices": [
-      "5\\frac12",
+      "$5\\frac{1}{2}$",
       "6",
-      "6\\frac12",
+      "$6\\frac{1}{2}$",
       "7",
-      "7\\frac12"
+      "$7\\frac{1}{2}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -3196,7 +3198,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Azar and Carl play a game of tic-tac-toe. Azar places an in $X$ one of the boxes in a $3$ -by- $3$ array of boxes, then Carl places an $O$ in one of the remaining boxes. After that, Azar places an $X$ in one of the remaining boxes, and so on until all boxes are filled or one of the players has of their symbols in a row—horizontal, vertical, or diagonal—whichever comes first, in which case that player wins the game. Suppose the players make their moves at random, rather than trying to follow a rational strategy, and that Carl wins the game when he places his third $O$. How many ways can the board look after the game is over?",
+    "prompt": "Azar and Carl play a game of tic-tac-toe. Azar places an in $X$ one of the boxes in a $3$-by- $3$ array of boxes, then Carl places an $O$ in one of the remaining boxes. After that, Azar places an $X$ in one of the remaining boxes, and so on until all boxes are filled or one of the players has of their symbols in a row—horizontal, vertical, or diagonal—whichever comes first, in which case that player wins the game. Suppose the players make their moves at random, rather than trying to follow a rational strategy, and that Carl wins the game when he places his third $O$. How many ways can the board look after the game is over?",
     "choices": [
       "36",
       "112",
@@ -3305,7 +3307,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Three balls are randomly and independantly tossed into bins numbered with the positive integers so that for each ball, the probability that it is tossed into bin $i$ is $2^{-i}$ for $i=1,2,3,....$ More than one ball is allowed in each bin. The probability that the balls end up evenly spaced in distinct bins is $\\frac pq,$ where $p$ and $q$ are relatively prime positive integers. (For example, the balls are evenly spaced if they are tossed into bins $3,17,$ and $10.$ ) What is $p+q?$",
+    "prompt": "Three balls are randomly and independantly tossed into bins numbered with the positive integers so that for each ball, the probability that it is tossed into bin $i$ is $2^{-i}$ for $i=1,2,3,....$ More than one ball is allowed in each bin. The probability that the balls end up evenly spaced in distinct bins is $\\frac{p}{q},$ where $p$ and $q$ are relatively prime positive integers. (For example, the balls are evenly spaced if they are tossed into bins $3,17,$ and $10.$ ) What is $p+q?$",
     "choices": [
       "55",
       "56",
@@ -3325,7 +3327,7 @@
     "weight": 12,
     "prompt": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$",
     "choices": [
-      "-1",
+      "$-1$",
       "0",
       "1",
       "2",
@@ -3433,15 +3435,15 @@
     "weight": 12,
     "prompt": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$",
     "choices": [
-      "-\\frac 12",
+      "$-\\frac{1}{2}$",
       "0",
-      "frac 12",
-      "frac 35",
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{5}$",
       "1"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "frac 35"
+    "answer": "$\\frac{3}{5}$"
   },
   {
     "id": "amio-465ea13425e3f27d0f90aa401d7bbc58",
@@ -3449,7 +3451,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Kate bakes a $20$ -inch by $18$ -inch pan of cornbread. The cornbread is cut into pieces that measure $2$ inches by $2$ inches. How many pieces of cornbread does the pan contain?",
+    "prompt": "Kate bakes a $20$-inch by $18$-inch pan of cornbread. The cornbread is cut into pieces that measure $2$ inches by $2$ inches. How many pieces of cornbread does the pan contain?",
     "choices": [
       "90",
       "100",
@@ -3485,7 +3487,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "How many perfect squares are divisors of the product $1! \\cdot 2! \\cdot 3! \\cdot \\hdots \\cdot 9!$",
+    "prompt": "How many perfect squares are divisors of the product $1! \\cdot 2! \\cdot 3! \\cdot \\cdots \\cdot 9!$",
     "choices": [
       "504",
       "672",
@@ -3503,7 +3505,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "A circle with center $C$ is tangent to the positive $x$ and $y$ -axes and externally tangent to the circle centered at $(3,0)$ with radius $1$. What is the sum of all possible radii of the circle with center $C$",
+    "prompt": "A circle with center $C$ is tangent to the positive $x$ and $y$-axes and externally tangent to the circle centered at $(3,0)$ with radius $1$. What is the sum of all possible radii of the circle with center $C$",
     "choices": [
       "3",
       "4",
@@ -3523,15 +3525,15 @@
     "weight": 12,
     "prompt": "You are playing a game. A $2 \\times 1$ rectangle covers two adjacent squares (oriented either horizontally or vertically) of a $3 \\times 3$ grid of squares, but you are not told which two squares are covered. Your goal is to find at least one square that is covered by the rectangle. A \"turn\" consists of you guessing a square, after which you are told whether that square is covered by the hidden rectangle. What is the minimum number of turns you need to ensure that at least one of your guessed squares is covered by the rectangle?",
     "choices": [
-      "~3",
-      "~5",
-      "~4",
-      "~8",
-      "~6"
+      "3",
+      "5",
+      "4",
+      "8",
+      "6"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~4"
+    "answer": "4"
   },
   {
     "id": "amio-492ec255e7d781fd7dcb6287741b51dc",
@@ -3541,15 +3543,15 @@
     "weight": 12,
     "prompt": "The figure is constructed from $11$ line segments, each of which has length $2$. The area of pentagon $ABCDE$ can be written as $\\sqrt{m} + \\sqrt{n}$, where $m$ and $n$ are positive integers. What is $m + n?$",
     "choices": [
-      "~20",
-      "~21",
-      "~22",
-      "~23",
-      "~24"
+      "20",
+      "21",
+      "22",
+      "23",
+      "24"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "~23",
+    "answer": "23",
     "diagramPng": "assets/diagrams/492ec255e7d781fd7dcb6287741b51dc.png"
   },
   {
@@ -3630,7 +3632,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $n$ be a $5$ -digit number, and let $q$ and $r$ be the quotient and the remainder, respectively, when $n$ is divided by $100$. For how many values of $n$ is $q+r$ divisible by $11$",
+    "prompt": "Let $n$ be a $5$-digit number, and let $q$ and $r$ be the quotient and the remainder, respectively, when $n$ is divided by $100$. For how many values of $n$ is $q+r$ divisible by $11$",
     "choices": [
       "8180",
       "8181",
@@ -3650,15 +3652,15 @@
     "weight": 12,
     "prompt": "Triangle $ABC$ has $AB=2 \\cdot AC$. Let $D$ and $E$ be on $\\overline{AB}$ and $\\overline{BC}$, respectively, such that $\\angle BAE = \\angle ACD$. Let $F$ be the intersection of segments $AE$ and $CD$, and suppose that $\\triangle CFE$ is equilateral. What is $\\angle ACB$",
     "choices": [
-      "60^\\circ",
-      "75^\\circ",
-      "90^\\circ",
-      "105^\\circ",
-      "120^\\circ"
+      "$60^\\circ$",
+      "$75^\\circ$",
+      "$90^\\circ$",
+      "$105^\\circ$",
+      "$120^\\circ$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "90^\\circ"
+    "answer": "$90^\\circ$"
   },
   {
     "id": "amio-4ca1c65710560352d1d328fc76889f51",
@@ -3666,7 +3668,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "A deck of cards has only red cards and black cards. The probability of a randomly chosen card being red is $\\frac13$. When $4$ black cards are added to the deck, the probability of choosing red becomes $\\frac14$. How many cards were in the deck originally?",
+    "prompt": "A deck of cards has only red cards and black cards. The probability of a randomly chosen card being red is $\\frac{1}{3}$. When $4$ black cards are added to the deck, the probability of choosing red becomes $\\frac{1}{4}$. How many cards were in the deck originally?",
     "choices": [
       "6",
       "9",
@@ -3686,8 +3688,8 @@
     "weight": 12,
     "prompt": "If $f(x) = ax+b$ and $f^{-1}(x) = bx+a$ with $a$ and $b$ real, what is the value of $a+b$",
     "choices": [
-      "-2",
-      "-1",
+      "$-2$",
+      "$-1$",
       "0",
       "1",
       "2"
@@ -3704,15 +3706,16 @@
     "weight": 12,
     "prompt": "An annulus is the region between two concentric circles. The concentric circles in the figure have radii $b$ and $c$, with $b>c$. Let $OX$ be a radius of the larger circle, let $XZ$ be tangent to the smaller circle at $Z$, and let $OY$ be the radius of the larger circle that contains $Z$. Let $a=XZ$ $d=YZ$, and $e=XY$. What is the area of the annulus?",
     "choices": [
-      "pi a^2",
-      "pi b^2",
-      "pi c^2",
-      "pi d^2",
-      "pi e^2"
+      "$\\pi a^2$",
+      "$\\pi b^2$",
+      "$\\pi c^2$",
+      "$\\pi d^2$",
+      "$\\pi e^2$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "pi a^2"
+    "answer": "$\\pi a^2$",
+    "diagramPng": "assets/diagrams/bee906e6bda2dcf788b96ab15973292e.png"
   },
   {
     "id": "amio-4e7242b4d6af59ae21c1718730c1a624",
@@ -3852,7 +3855,7 @@
       "52",
       "56",
       "60",
-      "72\\qquad"
+      "72"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -3939,10 +3942,10 @@
     "prompt": "What is the value of the following expression? \\[\\frac{100^2-7^2}{70^2-11^2} \\cdot \\frac{(70-11)(70+11)}{(100-7)(100+7)}\\]",
     "choices": [
       "1",
-      "frac{9951}{9950}",
-      "frac{4780}{4779}",
-      "frac{108}{107}",
-      "frac{81}{80}"
+      "$\\frac{9951}{9950}$",
+      "$\\frac{4780}{4779}$",
+      "$\\frac{108}{107}$",
+      "$\\frac{81}{80}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -3954,7 +3957,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Two fair dice, each with at least $6$ faces are rolled. On each face of each die is printed a distinct integer from $1$ to the number of faces on that die, inclusive. The probability of rolling a sum of $7$ is $\\frac34$ of the probability of rolling a sum of $10,$ and the probability of rolling a sum of $12$ is $\\frac{1}{12}$. What is the least possible number of faces on the two dice combined?",
+    "prompt": "Two fair dice, each with at least $6$ faces are rolled. On each face of each die is printed a distinct integer from $1$ to the number of faces on that die, inclusive. The probability of rolling a sum of $7$ is $\\frac{3}{4}$ of the probability of rolling a sum of $10,$ and the probability of rolling a sum of $12$ is $\\frac{1}{12}$. What is the least possible number of faces on the two dice combined?",
     "choices": [
       "16",
       "17",
@@ -3992,15 +3995,15 @@
     "weight": 12,
     "prompt": "At a math contest, $57$ students are wearing blue shirts, and another $75$ students are wearing yellow shirts. The $132$ students are assigned into $66$ pairs. In exactly $23$ of these pairs, both students are wearing blue shirts. In how many pairs are both students wearing yellow shirts?",
     "choices": [
-      "~23",
-      "~32",
-      "~37",
-      "~41",
-      "~64"
+      "23",
+      "32",
+      "37",
+      "41",
+      "64"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "~32"
+    "answer": "32"
   },
   {
     "id": "amio-52cc7f92e9be49162871792ee84324a0",
@@ -4008,7 +4011,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "How many ways can a student schedule $3$ mathematics courses -- algebra, geometry, and number theory -- in a $6$ -period day if no two mathematics courses can be taken in consecutive periods? (What courses the student takes during the other $3$ periods is of no concern here.)",
+    "prompt": "How many ways can a student schedule $3$ mathematics courses -- algebra, geometry, and number theory -- in a $6$-period day if no two mathematics courses can be taken in consecutive periods? (What courses the student takes during the other $3$ periods is of no concern here.)",
     "choices": [
       "3",
       "6",
@@ -4026,7 +4029,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "How many ordered pairs of real numbers $(x,y)$ satisfy the following system of equations? \\begin{align*} x+3y&=3 \\\\ \\big||x|-|y|\\big|&=1 \\end{align*}",
+    "prompt": "How many ordered pairs of real numbers $(x,y)$ satisfy the following system of equations? \\[\\begin{aligned} x+3y&=3 \\\\ \\big||x|-|y|\\big|&=1 \\end{aligned}\\]",
     "choices": [
       "1",
       "2",
@@ -4064,14 +4067,14 @@
     "weight": 12,
     "prompt": "For how many integers $n$ does the expression \\[\\sqrt{\\frac{\\log (n^2) - (\\log n)^2}{\\log n - 3}}\\] represent a real number, where log denotes the base $10$ logarithm?",
     "choices": [
+      "2",
+      "3",
       "900",
-      "2",
-      "902",
-      "2",
-      "901"
+      "901",
+      "902"
     ],
-    "answerIndex": 4,
-    "answerKey": "E",
+    "answerIndex": 3,
+    "answerKey": "D",
     "answer": "901"
   },
   {
@@ -4100,15 +4103,15 @@
     "weight": 12,
     "prompt": "What is the product of all solutions to the equation \\[\\log_{7x}2023\\cdot \\log_{289x}2023=\\log_{2023x}2023\\]",
     "choices": [
-      "~(\\log_{2023}7\\cdot \\log_{2023}289)^2",
-      "~\\log_{2023}7\\cdot \\log_{2023}289",
-      "~1",
-      "~\\log_{7}2023\\cdot \\log_{289}2023",
-      "~(\\log_7 2023\\cdot\\log_{289} 2023)^2"
+      "$(\\log_{2023}7\\cdot \\log_{2023}289)^2$",
+      "$\\log_{2023}7\\cdot \\log_{2023}289$",
+      "1",
+      "$\\log_{7}2023\\cdot \\log_{289}2023$",
+      "$(\\log_7 2023\\cdot\\log_{289} 2023)^2$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~1"
+    "answer": "1"
   },
   {
     "id": "amio-553504b8886643993fa1386ac1143080",
@@ -4154,9 +4157,9 @@
     "weight": 12,
     "prompt": "Positive real numbers $x \\neq 1$ and $y \\neq 1$ satisfy $\\log_2{x} = \\log_y{16}$ and $xy = 64$. What is $(\\log_2{\\tfrac{x}{y}})^2$",
     "choices": [
-      "frac{25}{2}",
+      "$\\frac{25}{2}$",
       "20",
-      "frac{45}{2}",
+      "$\\frac{45}{2}$",
       "25",
       "32"
     ],
@@ -4190,15 +4193,15 @@
     "weight": 12,
     "prompt": "Keiko walks once around a track at the same constant speed every day. The sides of the track are straight, and the ends are semicircles. The track has a width of $6$ meters, and it takes her $36$ seconds longer to walk around the outside edge of the track than around the inside edge. What is Keiko's speed in meters per second?",
     "choices": [
-      "frac{\\pi}{3}",
-      "frac{2\\pi}{3}",
-      "pi",
-      "frac{4\\pi}{3}",
-      "frac{5\\pi}{3}"
+      "$\\frac{\\pi}{3}$",
+      "$\\frac{2\\pi}{3}$",
+      "$\\pi$",
+      "$\\frac{4\\pi}{3}$",
+      "$\\frac{5\\pi}{3}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "frac{\\pi}{3}"
+    "answer": "$\\frac{\\pi}{3}$"
   },
   {
     "id": "amio-57e6d869df3b6543a05b55028f6fab78",
@@ -4296,7 +4299,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Each square in a $5 \\times 5$ grid is either filled or empty, and has up to eight adjacent neighboring squares, where neighboring squares share either a side or a corner. The grid is transformed by the following rules: A sample transformation is shown in the figure below. Suppose the $5 \\times 5$ grid has a border of empty squares surrounding a $3 \\times 3$ subgrid. How many initial configurations will lead to a transformed grid consisting of a single filled square in the center after a single transformation? (Rotations and reflections of the same configuration are considered different.)",
+    "prompt": "Each square in a $5 \\times 5$ grid is either filled or empty, and has up to eight adjacent neighboring squares, where neighboring squares share either a side or a corner. The grid is transformed by the following rules: (1) Any filled square with two or three filled neighbors remains filled. (2) Any empty square with exactly three filled neighbors becomes a filled square. (3) All other squares remain empty or become empty. A sample transformation is shown in the figure below. Suppose the $5 \\times 5$ grid has a border of empty squares surrounding a $3 \\times 3$ subgrid. How many initial configurations will lead to a transformed grid consisting of a single filled square in the center after a single transformation? (Rotations and reflections of the same configuration are considered different.)",
     "choices": [
       "14",
       "18",
@@ -4335,15 +4338,15 @@
     "weight": 12,
     "prompt": "Let $f$ be the unique function defined on the positive integers such that \\[\\sum_{d\\mid n}d\\cdot f\\left(\\frac{n}{d}\\right)=1\\] for all positive integers $n$. What is $f(2023)$",
     "choices": [
-      "~-1536",
-      "~96",
-      "~108",
-      "~116",
-      "~144"
+      "$-1536$",
+      "96",
+      "108",
+      "116",
+      "144"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "~96"
+    "answer": "96"
   },
   {
     "id": "amio-5b44a5786fef655c77453d0524bb1f83",
@@ -4353,7 +4356,7 @@
     "weight": 12,
     "prompt": "Let $s_k$ denote the sum of the $\\textit{k}$ th powers of the roots of the polynomial $x^3-5x^2+8x-13$. In particular, $s_0=3$ $s_1=5$, and $s_2=9$. Let $a$ $b$, and $c$ be real numbers such that $s_{k+1} = a \\, s_k + b \\, s_{k-1} + c \\, s_{k-2}$ for $k = 2$ $3$ $....$ What is $a+b+c$",
     "choices": [
-      "-6",
+      "$-6$",
       "0",
       "6",
       "10",
@@ -4369,17 +4372,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Triangle $ABC$, with sides of length $5$ $6$, and $7$, has one vertex on the positive $x$ -axis, one on the positive $y$ -axis, and one on the positive $z$ -axis. Let $O$ be the origin. What is the volume of tetrahedron $OABC$",
+    "prompt": "Triangle $ABC$, with sides of length $5$ $6$, and $7$, has one vertex on the positive $x$-axis, one on the positive $y$-axis, and one on the positive $z$-axis. Let $O$ be the origin. What is the volume of tetrahedron $OABC$",
     "choices": [
-      "sqrt{85}",
-      "sqrt{90}",
-      "sqrt{95}",
+      "$\\sqrt{85}$",
+      "$\\sqrt{90}$",
+      "$\\sqrt{95}$",
       "10",
-      "sqrt{105}"
+      "$\\sqrt{105}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "sqrt{95}"
+    "answer": "$\\sqrt{95}$"
   },
   {
     "id": "amio-5c45505d0b0e0790a63ea9078745b57a",
@@ -4393,11 +4396,12 @@
       "4",
       "5",
       "8",
-      "9 \\qquad"
+      "9"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "4"
+    "answer": "4",
+    "diagramPng": "assets/diagrams/4fdca0ad68e25e359c10aadb7f68f6d6.png"
   },
   {
     "id": "amio-5c9681b34835ae8697a1cfa43b3c4b6a",
@@ -4443,11 +4447,11 @@
     "weight": 12,
     "prompt": "In rectangle $ABCD$, points $F$ and $G$ lie on $AB$ so that $AF=FG=GB$ and $E$ is the midpoint of $\\overline{DC}$. Also, $\\overline{AC}$ intersects $\\overline{EF}$ at $H$ and $\\overline{EG}$ at $J$. The area of the rectangle $ABCD$ is $70$. Find the area of triangle $EHJ$",
     "choices": [
-      "frac{5}{2}",
-      "frac{35}{12}",
+      "$\\frac{5}{2}$",
+      "$\\frac{35}{12}$",
       "3",
-      "frac{7}{2}",
-      "frac{35}{8}"
+      "$\\frac{7}{2}$",
+      "$\\frac{35}{8}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -4477,7 +4481,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The $25$ integers from $-10$ to $14,$ inclusive, can be arranged to form a $5$ -by- $5$ square in which the sum of the numbers in each row, the sum of the numbers in each column, and the sum of the numbers along each of the main diagonals are all the same. What is the value of this common sum?",
+    "prompt": "The $25$ integers from $-10$ to $14,$ inclusive, can be arranged to form a $5$-by- $5$ square in which the sum of the numbers in each row, the sum of the numbers in each column, and the sum of the numbers along each of the main diagonals are all the same. What is the value of this common sum?",
     "choices": [
       "2",
       "5",
@@ -4533,15 +4537,15 @@
     "weight": 12,
     "prompt": "Let $f_{1}(x)=\\sqrt{1-x}$, and for integers $n \\geq 2$, let $f_{n}(x)=f_{n-1}(\\sqrt{n^2 - x})$. If $N$ is the largest value of $n$ for which the domain of $f_{n}$ is nonempty, the domain of $f_{N}$ is $[c]$. What is $N+c$",
     "choices": [
-      "-226",
-      "-144",
-      "-20",
+      "$-226$",
+      "$-144$",
+      "$-20$",
       "20",
       "144"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-226"
+    "answer": "$-226$"
   },
   {
     "id": "amio-5e0e2c2f600767a848a6cd25582dae8b",
@@ -4567,7 +4571,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "A 16-step path is to go from $(-4,-4)$ to $(4,4)$ with each step increasing either the $x$ -coordinate or the $y$ -coordinate by 1. How many such paths stay outside or on the boundary of the square $-2 \\le x \\le 2$ $-2 \\le y \\le 2$ at each step?",
+    "prompt": "A 16-step path is to go from $(-4,-4)$ to $(4,4)$ with each step increasing either the $x$-coordinate or the $y$-coordinate by 1. How many such paths stay outside or on the boundary of the square $-2 \\le x \\le 2$ $-2 \\le y \\le 2$ at each step?",
     "choices": [
       "92",
       "144",
@@ -4585,7 +4589,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "While exploring a cave, Carl comes across a collection of $5$ -pound rocks worth \\$14 each,$4$ -pound rocks worth \\$11 each, and $1$ -pound rocks worth \\$2 each. There are at least $20$ of each size. He can carry at most $18$ pounds. What is the maximum value, in dollars, of the rocks he can carry out of the cave?",
+    "prompt": "While exploring a cave, Carl comes across a collection of $5$-pound rocks worth \\$14 each,$4$-pound rocks worth \\$11 each, and $1$-pound rocks worth \\$2 each. There are at least $20$ of each size. He can carry at most $18$ pounds. What is the maximum value, in dollars, of the rocks he can carry out of the cave?",
     "choices": [
       "48",
       "49",
@@ -4623,15 +4627,15 @@
     "weight": 12,
     "prompt": "In $\\triangle ABC$ $\\angle ABC=45^\\circ$. Point $D$ is on $\\overline{BC}$ so that $2\\cdot BD=CD$ and $\\angle DAB=15^\\circ$. Find $\\angle ACB.$",
     "choices": [
-      "54^\\circ",
-      "60^\\circ",
-      "72^\\circ",
-      "75^\\circ",
-      "90^\\circ"
+      "$54^\\circ$",
+      "$60^\\circ$",
+      "$72^\\circ$",
+      "$75^\\circ$",
+      "$90^\\circ$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "75^\\circ"
+    "answer": "$75^\\circ$"
   },
   {
     "id": "amio-604dadb1759f1b1c452462891feac98f",
@@ -4659,11 +4663,11 @@
     "weight": 12,
     "prompt": "The point $(-1, -2)$ is rotated $270^{\\circ}$ counterclockwise about the point $(3, 1)$. What are the coordinates of its new position?",
     "choices": [
-      "(-3, -4)",
+      "$(-3, -4)$",
       "(0,5)",
-      "(2,-1)",
+      "$(2,-1)$",
       "(4,3)",
-      "(6,-3)"
+      "$(6,-3)$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -4675,17 +4679,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "All three vertices of an equilateral triangle are on the parabola $y = x^2$, and one of its sides has a slope of $2$. The $x$ -coordinates of the three vertices have a sum of $m/n$, where $m$ and $n$ are relatively prime positive integers. What is the value of $m + n$",
+    "prompt": "All three vertices of an equilateral triangle are on the parabola $y = x^2$, and one of its sides has a slope of $2$. The $x$-coordinates of the three vertices have a sum of $m/n$, where $m$ and $n$ are relatively prime positive integers. What is the value of $m + n$",
     "choices": [
-      "{{{14}}}",
-      "{{{15}}}",
-      "{{{16}}}",
-      "{{{17}}}",
-      "{{{18}}}"
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "{{{14}}}"
+    "answer": "14"
   },
   {
     "id": "amio-60fdd8c29f7849c6d0a601395c9aee7b",
@@ -4721,7 +4725,8 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "4"
+    "answer": "4",
+    "diagramSvg": "assets/diagrams/612fcc7b9efaacd652de8f70c6dc8f0a.svg"
   },
   {
     "id": "amio-614e723e5f64ed464c336ca976221e26",
@@ -4731,15 +4736,15 @@
     "weight": 12,
     "prompt": "Yan is somewhere between his home and the stadium. To get to the stadium he can walk directly to the stadium, or else he can walk home and then ride his bicycle to the stadium. He rides 7 times as fast as he walks, and both choices require the same amount of time. What is the ratio of Yan's distance from his home to his distance from the stadium?",
     "choices": [
-      "frac 23",
-      "frac 34",
-      "frac 45",
-      "frac 56",
-      "frac 78"
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{4}{5}$",
+      "$\\frac{5}{6}$",
+      "$\\frac{7}{8}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac 34"
+    "answer": "$\\frac{3}{4}$"
   },
   {
     "id": "amio-64e4a7bb65c8e7dc01d927411dd55b65",
@@ -4783,7 +4788,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $T_k$ be the transformation of the coordinate plane that first rotates the plane $k$ degrees counterclockwise around the origin and then reflects the plane across the $y$ -axis. What is the least positive integer $n$ such that performing the sequence of transformations $T_1, T_2, T_3, \\cdots, T_n$ returns the point $(1,0)$ back to itself?",
+    "prompt": "Let $T_k$ be the transformation of the coordinate plane that first rotates the plane $k$ degrees counterclockwise around the origin and then reflects the plane across the $y$-axis. What is the least positive integer $n$ such that performing the sequence of transformations $T_1, T_2, T_3, \\cdots, T_n$ returns the point $(1,0)$ back to itself?",
     "choices": [
       "359",
       "360",
@@ -4801,7 +4806,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "How many solutions does the equation $\\sin \\left( \\frac{\\pi}2 \\cos x\\right)=\\cos \\left( \\frac{\\pi}2 \\sin x\\right)$ have in the closed interval $[0,\\pi]$",
+    "prompt": "How many solutions does the equation $\\sin \\left( \\frac{\\pi}{2} \\cos x\\right)=\\cos \\left( \\frac{\\pi}{2} \\sin x\\right)$ have in the closed interval $[0,\\pi]$",
     "choices": [
       "0",
       "1",
@@ -4893,15 +4898,15 @@
     "weight": 12,
     "prompt": "Each of $2023$ balls is randomly placed into one of $3$ bins. Which of the following is closest to the probability that each of the bins will contain an odd number of balls?",
     "choices": [
-      "frac{2}{3}",
-      "frac{3}{10}",
-      "frac{1}{2}",
-      "frac{1}{3}",
-      "frac{1}{4}"
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{10}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{4}$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "frac{1}{4}"
+    "answer": "$\\frac{1}{4}$"
   },
   {
     "id": "amio-66fd25d8999545ab571225a44dff3263",
@@ -4929,15 +4934,15 @@
     "weight": 12,
     "prompt": "A circle has a chord of length $10$, and the distance from the center of the circle to the chord is $5$. What is the area of the circle?",
     "choices": [
-      "25\\pi",
-      "50\\pi",
-      "75\\pi",
-      "100\\pi",
-      "125\\pi \\qquad"
+      "$25\\pi$",
+      "$50\\pi$",
+      "$75\\pi$",
+      "$100\\pi$",
+      "$125\\pi$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "50\\pi"
+    "answer": "$50\\pi$"
   },
   {
     "id": "amio-672eaf84f366f95023b522fae340d0a9",
@@ -5240,7 +5245,7 @@
       "40",
       "42",
       "44",
-      "46\\qquad"
+      "46"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -5254,9 +5259,9 @@
     "weight": 12,
     "prompt": "The roots of the polynomial $10x^3 - 39x^2 + 29x - 6$ are the height, length, and width of a rectangular box (right rectangular prism). A new rectangular box is formed by lengthening each edge of the original box by $2$ units. What is the volume of the new box?",
     "choices": [
-      "frac{24}{5}",
-      "frac{42}{5}",
-      "frac{81}{5}",
+      "$\\frac{24}{5}$",
+      "$\\frac{42}{5}$",
+      "$\\frac{81}{5}$",
       "30",
       "48"
     ],
@@ -5309,7 +5314,7 @@
     "prompt": "Suppose $a$ is $150\\%$ of $b$. What percent of $a$ is $3b$",
     "choices": [
       "50",
-      "66+\\frac{2}{3}",
+      "$66+\\frac{2}{3}$",
       "150",
       "200",
       "450"
@@ -5326,15 +5331,15 @@
     "weight": 12,
     "prompt": "How many complex numbers satisfy the equation $z^5=\\overline{z}$, where $\\overline{z}$ is the conjugate of the complex number $z$",
     "choices": [
-      "~2",
-      "~3",
-      "~5",
-      "~6",
-      "~7"
+      "2",
+      "3",
+      "5",
+      "6",
+      "7"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "~7"
+    "answer": "7"
   },
   {
     "id": "amio-7174c2f8c284dbabed00a6cf6e9cd5f7",
@@ -5416,15 +5421,15 @@
     "weight": 12,
     "prompt": "Convex quadrilateral $ABCD$ has $AB = 9$ and $CD = 12$. Diagonals $AC$ and $BD$ intersect at $E$ $AC = 14$, and $\\triangle AED$ and $\\triangle BEC$ have equal areas. What is $AE$",
     "choices": [
-      "frac{9}{2}",
-      "frac{50}{11}",
-      "frac{21}{4}",
-      "frac{17}{3}",
+      "$\\frac{9}{2}$",
+      "$\\frac{50}{11}$",
+      "$\\frac{21}{4}$",
+      "$\\frac{17}{3}$",
       "6"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "frac{9}{2}"
+    "answer": "$\\frac{9}{2}$"
   },
   {
     "id": "amio-731fbc455875635f207169d822fa7463",
@@ -5434,15 +5439,15 @@
     "weight": 12,
     "prompt": "The equations $2x + 7 = 3$ and $bx - 10 = - 2$ have the same solution. What is the value of $b$",
     "choices": [
-      "-8",
-      "-4",
+      "$-8$",
+      "$-4$",
       "2",
       "4",
       "8"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-4"
+    "answer": "$-4$"
   },
   {
     "id": "amio-7389b4de6b4f373153da1e20b1c9ea63",
@@ -5488,15 +5493,15 @@
     "weight": 12,
     "prompt": "The infinite product \\[\\sqrt[3]{10} \\cdot \\sqrt[3]{\\sqrt[3]{10}} \\cdot \\sqrt[3]{\\sqrt[3]{\\sqrt[3]{10}}} \\cdots\\] evaluates to a real number. What is that number?",
     "choices": [
-      "sqrt{10}",
-      "sqrt[3]{100}",
-      "sqrt[4]{1000}",
+      "$\\sqrt{10}$",
+      "$\\sqrt[3]{100}$",
+      "$\\sqrt[4]{1000}$",
       "10",
-      "10\\sqrt[3]{10}"
+      "$10\\sqrt[3]{10}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "sqrt{10}"
+    "answer": "$\\sqrt{10}$"
   },
   {
     "id": "amio-740ac59ad788c55278e0795e3c58b96f",
@@ -5525,10 +5530,10 @@
     "prompt": "Triangle $ABC$ has side lengths $AB = 11, BC=24$, and $CA = 20$. The bisector of $\\angle{BAC}$ intersects $\\overline{BC}$ in point $D$, and intersects the circumcircle of $\\triangle{ABC}$ in point $E \\ne A$. The circumcircle of $\\triangle{BED}$ intersects the line $AB$ in points $B$ and $F \\ne B$. What is $CF$",
     "choices": [
       "28",
-      "20\\sqrt{2}",
+      "$20\\sqrt{2}$",
       "30",
       "32",
-      "20\\sqrt{3}"
+      "$20\\sqrt{3}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -5560,15 +5565,15 @@
     "weight": 12,
     "prompt": "Triangle $ABC$ has $\\angle BAC = 60^{\\circ}$ $\\angle CBA \\leq 90^{\\circ}$ $BC=1$, and $AC \\geq AB$. Let $H$ $I$, and $O$ be the orthocenter, incenter, and circumcenter of $\\triangle ABC$, respectively. Assume that the area of pentagon $BCOIH$ is the maximum possible. What is $\\angle CBA$",
     "choices": [
-      "60^{\\circ}",
-      "72^{\\circ}",
-      "75^{\\circ}",
-      "80^{\\circ}",
-      "90^{\\circ}"
+      "$60^{\\circ}$",
+      "$72^{\\circ}$",
+      "$75^{\\circ}$",
+      "$80^{\\circ}$",
+      "$90^{\\circ}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "80^{\\circ}"
+    "answer": "$80^{\\circ}$"
   },
   {
     "id": "amio-7517c9c7cf5fc507e7a647ab382b2bbb",
@@ -5614,15 +5619,15 @@
     "weight": 12,
     "prompt": "There is a unique sequence of integers $a_1, a_2, \\cdots a_{2023}$ such that \\[\\tan2023x = \\frac{a_1 \\tan x + a_3 \\tan^3 x + a_5 \\tan^5 x + \\cdots + a_{2023} \\tan^{2023} x}{1 + a_2 \\tan^2 x + a_4 \\tan^4 x \\cdots + a_{2022} \\tan^{2022} x}\\] whenever $\\tan 2023x$ is defined. What is $a_{2023}?$",
     "choices": [
-      "-2023",
-      "-2022",
-      "-1",
+      "$-2023$",
+      "$-2022$",
+      "$-1$",
       "1",
       "2023"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "-1"
+    "answer": "$-1$"
   },
   {
     "id": "amio-7638b8d19159e6b7d6d136dd85888b20",
@@ -5636,7 +5641,7 @@
       "[27,80]",
       "[81,242]",
       "[243,728]",
-      "[729,\\infty)"
+      "$[729,\\infty)$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -5704,15 +5709,15 @@
     "weight": 12,
     "prompt": "In $\\triangle{ABC}$ with side lengths $AB = 13$ $AC = 12$, and $BC = 5$, let $O$ and $I$ denote the circumcenter and incenter, respectively. A circle with center $M$ is tangent to the legs $AC$ and $BC$ and to the circumcircle of $\\triangle{ABC}$. What is the area of $\\triangle{MOI}$",
     "choices": [
-      "frac52",
-      "frac{11}{4}",
+      "$\\frac{5}{2}$",
+      "$\\frac{11}{4}$",
       "3",
-      "frac{13}{4}",
-      "frac72"
+      "$\\frac{13}{4}$",
+      "$\\frac{7}{2}$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "frac72"
+    "answer": "$\\frac{7}{2}$"
   },
   {
     "id": "amio-773e5f6a995c8c85da6847bcaf18d904",
@@ -5756,7 +5761,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Two years ago Pete was three times as old as his cousin Claire. Two years before that, Pete was four times as old as Claire. In how many years will the ratio of their ages be $2$ $1$",
+    "prompt": "Two years ago Pete was three times as old as his cousin Claire. Two years before that, Pete was four times as old as Claire. In how many years will the ratio of their ages be $2:1$",
     "choices": [
       "2",
       "4",
@@ -5774,7 +5779,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Line $l$ in the coordinate plane has equation $3x-5y+40=0$. This line is rotated $45^{\\circ}$ counterclockwise about the point $(20,20)$ to obtain line $k$. What is the $x$ -coordinate of the $x$ -intercept of line $k?$",
+    "prompt": "Line $l$ in the coordinate plane has equation $3x-5y+40=0$. This line is rotated $45^{\\circ}$ counterclockwise about the point $(20,20)$ to obtain line $k$. What is the $x$-coordinate of the $x$-intercept of line $k?$",
     "choices": [
       "10",
       "15",
@@ -5810,7 +5815,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The vertices of a quadrilateral lie on the graph of $y=\\ln{x}$, and the $x$ -coordinates of these vertices are consecutive positive integers. The area of the quadrilateral is $\\ln{\\frac{91}{90}}$. What is the $x$ -coordinate of the leftmost vertex?",
+    "prompt": "The vertices of a quadrilateral lie on the graph of $y=\\ln{x}$, and the $x$-coordinates of these vertices are consecutive positive integers. The area of the quadrilateral is $\\ln{\\frac{91}{90}}$. What is the $x$-coordinate of the leftmost vertex?",
     "choices": [
       "6",
       "7",
@@ -5903,10 +5908,10 @@
     "prompt": "A truncated cone has horizontal bases with radii $18$ and $2$. A sphere is tangent to the top, bottom, and lateral surface of the truncated cone. What is the radius of the sphere?",
     "choices": [
       "6",
-      "4\\sqrt{5}",
+      "$4\\sqrt{5}$",
       "9",
       "10",
-      "6\\sqrt{3}"
+      "$6\\sqrt{3}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -5958,7 +5963,7 @@
     "choices": [
       "1",
       "2",
-      "frac{5}{2}",
+      "$\\frac{5}{2}$",
       "10",
       "20"
     ],
@@ -6028,15 +6033,15 @@
     "weight": 12,
     "prompt": "How many integer values of $x$ satisfy $|x|<3\\pi$",
     "choices": [
-      "~9",
-      "~10",
-      "~18",
-      "~19",
-      "~20"
+      "9",
+      "10",
+      "18",
+      "19",
+      "20"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "~19"
+    "answer": "19"
   },
   {
     "id": "amio-7f035960235766a9df7c38da312eb7f2",
@@ -6065,10 +6070,10 @@
     "prompt": "What is the value in simplest form of the following expression? \\[\\sqrt{1} + \\sqrt{1+3} + \\sqrt{1+3+5} + \\sqrt{1+3+5+7}\\]",
     "choices": [
       "5",
-      "4 + \\sqrt{7} + \\sqrt{10}",
+      "$4 + \\sqrt{7} + \\sqrt{10}$",
       "10",
       "15",
-      "4 + 3\\sqrt{3} + 2\\sqrt{5} + \\sqrt{7}"
+      "$4 + 3\\sqrt{3} + 2\\sqrt{5} + \\sqrt{7}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -6082,15 +6087,15 @@
     "weight": 12,
     "prompt": "Let $M$ be the midpoint of $\\overline{AB}$ in regular tetrahedron $ABCD$. What is $\\cos(\\angle CMD)$",
     "choices": [
-      "frac14",
-      "frac13",
-      "frac25",
-      "frac12",
-      "frac{\\sqrt{3}}{2}"
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{\\sqrt{3}}{2}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac13"
+    "answer": "$\\frac{1}{3}$"
   },
   {
     "id": "amio-7f7ffaeb5358384574e1d713e6c4f944",
@@ -6098,7 +6103,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $a$ $b$, and $c$ be positive integers with $a\\ge$ $b\\ge$ $c$ such that $a^2-b^2-c^2+ab=2011$ and $a^2+3b^2+3c^2-3ab-2ac-2bc=-1997$ What is $a$",
+    "prompt": "Let $a$ $b$, and $c$ be positive integers with $a\\ge b\\ge c$ such that $a^2-b^2-c^2+ab=2011$ and $a^2+3b^2+3c^2-3ab-2ac-2bc=-1997$ What is $a$",
     "choices": [
       "249",
       "250",
@@ -6137,9 +6142,9 @@
     "prompt": "Logan is constructing a scaled model of his town. The city's water tower stands 40 meters high, and the top portion is a sphere that holds 100,000 liters of water. Logan's miniature water tower holds 0.1 liters. How tall, in meters, should Logan make his tower?",
     "choices": [
       "0.04",
-      "frac{0.4}{\\pi}",
+      "$\\frac{0.4}{\\pi}$",
       "0.4",
-      "frac{4}{\\pi}",
+      "$\\frac{4}{\\pi}$",
       "4"
     ],
     "answerIndex": 2,
@@ -6154,11 +6159,11 @@
     "weight": 12,
     "prompt": "Square $ABCD$ has side length $30$. Point $P$ lies inside the square so that $AP = 12$ and $BP = 26$. The centroids of $\\triangle{ABP}$ $\\triangle{BCP}$ $\\triangle{CDP}$, and $\\triangle{DAP}$ are the vertices of a convex quadrilateral. What is the area of that quadrilateral?",
     "choices": [
-      "100\\sqrt{2}",
-      "100\\sqrt{3}",
+      "$100\\sqrt{2}$",
+      "$100\\sqrt{3}$",
       "200",
-      "200\\sqrt{2}",
-      "200\\sqrt{3}"
+      "$200\\sqrt{2}$",
+      "$200\\sqrt{3}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -6226,7 +6231,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "A set $S$ of points in the $xy$ -plane is symmetric about the origin, both coordinate axes, and the line $y=x$. If $(2,3)$ is in $S$, what is the smallest number of points in $S$",
+    "prompt": "A set $S$ of points in the $xy$-plane is symmetric about the origin, both coordinate axes, and the line $y=x$. If $(2,3)$ is in $S$, what is the smallest number of points in $S$",
     "choices": [
       "1",
       "2",
@@ -6265,10 +6270,10 @@
     "prompt": "Triangle $ABC$ has $AB=27$ $AC=26$, and $BC=25$. Let $I$ be the intersection of the internal angle bisectors of $\\triangle ABC$. What is $BI$",
     "choices": [
       "15",
-      "5+\\sqrt{26}+3\\sqrt{3}",
-      "3\\sqrt{26}",
-      "frac{2}{3}\\sqrt{546}",
-      "9\\sqrt{3}"
+      "$5+\\sqrt{26}+3\\sqrt{3}$",
+      "$3\\sqrt{26}$",
+      "$\\frac{2}{3}\\sqrt{546}$",
+      "$9\\sqrt{3}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -6300,15 +6305,15 @@
     "weight": 12,
     "prompt": "An inverted cone with base radius $12 \\mathrm{cm}$ and height $18 \\mathrm{cm}$ is full of water. The water is poured into a tall cylinder whose horizontal base has radius of $24 \\mathrm{cm}$. What is the height in centimeters of the water in the cylinder?",
     "choices": [
-      "~1.5",
-      "~3",
-      "~4",
-      "~4.5",
-      "~6"
+      "1.5",
+      "3",
+      "4",
+      "4.5",
+      "6"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "~1.5"
+    "answer": "1.5"
   },
   {
     "id": "amio-844a686676a431172327f38cf209d205",
@@ -6354,15 +6359,15 @@
     "weight": 12,
     "prompt": "Mrs. Jones is pouring orange juice into four identical glasses for her four sons. She fills the first three glasses completely but runs out of juice when the fourth glass is only $\\frac{1}{3}$ full. What fraction of a glass must Mrs. Jones pour from each of the first three glasses into the fourth glass so that all four glasses will have the same amount of juice?",
     "choices": [
-      "frac{1}{12}",
-      "frac{1}{4}",
-      "frac{1}{6}",
-      "frac{1}{8}",
-      "frac{2}{9}"
+      "$\\frac{1}{12}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{8}$",
+      "$\\frac{2}{9}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "frac{1}{6}"
+    "answer": "$\\frac{1}{6}$"
   },
   {
     "id": "amio-8547f5e8bbc32e4d9fba8ac6b9686c2e",
@@ -6427,15 +6432,15 @@
     "weight": 12,
     "prompt": "A triangle has area $30$, one side of length $10$, and the median to that side of length $9$. Let $\\theta$ be the acute angle formed by that side and the median. What is $\\sin{\\theta}$",
     "choices": [
-      "frac{3}{10}",
-      "frac{1}{3}",
-      "frac{9}{20}",
-      "frac{2}{3}",
-      "frac{9}{10}"
+      "$\\frac{3}{10}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{9}{20}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{9}{10}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "frac{2}{3}"
+    "answer": "$\\frac{2}{3}$"
   },
   {
     "id": "amio-872e48f7d607d28a5ee88ab4bfc8852f",
@@ -6461,7 +6466,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "For every positive integer $n$, let $\\text{mod}_5 (n)$ be the remainder obtained when $n$ is divided by 5. Define a function $f: \\{0,1,2,3,\\dots\\} \\times \\{0,1,2,3,4\\} \\to \\{0,1,2,3,4\\}$ recursively as follows: \\[f(i,j) = \\begin{cases}\\text{mod}_5 (j+1) & \\text{ if } i = 0 \\text{ and } 0 \\le j \\le 4 \\text\\\\ f(i-1,1) & \\text{ if } i \\ge 1 \\text{ and } j = 0 \\text{, and} \\\\ f(i-1, f(i,j-1)) & \\text{ if } i \\ge 1 \\text{ and } 1 \\le j \\le 4. \\end{cases}\\] What is $f(2015,2)$",
+    "prompt": "For every positive integer $n$, let $\\text{mod}_5 (n)$ be the remainder obtained when $n$ is divided by 5. Define a function $f: \\{0,1,2,3,\\dots\\} \\times \\{0,1,2,3,4\\} \\to \\{0,1,2,3,4\\}$ recursively as follows: \\[f(i,j) = \\begin{cases}\\text{mod}_5 (j+1) & \\text{ if } i = 0 \\text{ and } 0 \\le j \\le 4 \\text{,}\\\\ f(i-1,1) & \\text{ if } i \\ge 1 \\text{ and } j = 0 \\text{, and} \\\\ f(i-1, f(i,j-1)) & \\text{ if } i \\ge 1 \\text{ and } 1 \\le j \\le 4. \\end{cases}\\] What is $f(2015,2)$",
     "choices": [
       "0",
       "1",
@@ -6497,7 +6502,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $A_0=(0,0)$. Distinct points $A_1,A_2,\\dots$ lie on the $x$ -axis, and distinct points $B_1,B_2,\\dots$ lie on the graph of $y=\\sqrt{x}$. For every positive integer $n,\\ A_{n-1}B_nA_n$ is an equilateral triangle. What is the least $n$ for which the length $A_0A_n\\geq100$",
+    "prompt": "Let $A_0=(0,0)$. Distinct points $A_1,A_2,\\dots$ lie on the $x$-axis, and distinct points $B_1,B_2,\\dots$ lie on the graph of $y=\\sqrt{x}$. For every positive integer $n,\\ A_{n-1}B_nA_n$ is an equilateral triangle. What is the least $n$ for which the length $A_0A_n\\geq100$",
     "choices": [
       "13",
       "15",
@@ -6521,7 +6526,7 @@
       "(4,5)",
       "(4,6)",
       "(5,6)",
-      "(5,\\infty)"
+      "$(5,\\infty)$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -6554,10 +6559,10 @@
     "prompt": "A circle has center $(-10, -4)$ and has radius $13$. Another circle has center $(3, 9)$ and radius $\\sqrt{65}$. The line passing through the two points of intersection of the two circles has equation $x+y=c$. What is $c$",
     "choices": [
       "3",
-      "3\\sqrt{3}",
-      "4\\sqrt{2}",
+      "$3\\sqrt{3}$",
+      "$4\\sqrt{2}$",
       "6",
-      "frac{13}{2}"
+      "$\\frac{13}{2}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -6661,15 +6666,15 @@
     "weight": 12,
     "prompt": "The quadratic equation $x^2+mx+n$ has roots twice those of $x^2+px+m$, and none of $m,n,$ and $p$ is zero. What is the value of $n/p$",
     "choices": [
-      "{{{1}}}",
-      "{{{2}}}",
-      "{{{4}}}",
-      "{{{8}}}",
-      "{{{16}}}"
+      "1",
+      "2",
+      "4",
+      "8",
+      "16"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "{{{8}}}"
+    "answer": "8"
   },
   {
     "id": "amio-8b248ddb0af71e69fe45a34ff1cd3f52",
@@ -6713,10 +6718,10 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Supposed that $x$ and $y$ are nonzero real numbers such that $\\frac{3x+y}{x-3y}=-2$. What is the value of $\\frac{x+3y}{3x-y}$",
+    "prompt": "Suppose that $x$ and $y$ are nonzero real numbers such that $\\frac{3x+y}{x-3y}=-2$. What is the value of $\\frac{x+3y}{3x-y}$",
     "choices": [
-      "-3",
-      "-1",
+      "$-3$",
+      "$-1$",
       "1",
       "2",
       "3"
@@ -6731,12 +6736,12 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $\\overline{AB}$ be a diameter in a circle of radius $5\\sqrt2.$ Let $\\overline{CD}$ be a chord in the circle that intersects $\\overline{AB}$ at a point $E$ such that $BE=2\\sqrt5$ and $\\angle AEC = 45^{\\circ}.$ What is $CE^2+DE^2?$",
+    "prompt": "Let $\\overline{AB}$ be a diameter in a circle of radius $5\\sqrt{2}.$ Let $\\overline{CD}$ be a chord in the circle that intersects $\\overline{AB}$ at a point $E$ such that $BE=2\\sqrt{5}$ and $\\angle AEC = 45^{\\circ}.$ What is $CE^2+DE^2?$",
     "choices": [
       "96",
       "98",
-      "44\\sqrt5",
-      "70\\sqrt2",
+      "$44\\sqrt{5}$",
+      "$70\\sqrt{2}$",
       "100"
     ],
     "answerIndex": 4,
@@ -6749,7 +6754,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The parabola $y=ax^2+bx+c$ has vertex $(p,p)$ and $y$ -intercept $(0,-p)$, where $p\\ne 0$. What is $b$",
+    "prompt": "The parabola $y=ax^2+bx+c$ has vertex $(p,p)$ and $y$-intercept $(0,-p)$, where $p\\ne 0$. What is $b$",
     "choices": [
       "-p",
       "0",
@@ -6803,17 +6808,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The point $P(a,b)$ in the $xy$ -plane is first rotated counterclockwise by $90^\\circ$ around the point $(1,5)$ and then reflected about the line $y = -x$. The image of $P$ after these two transformations is at $(-6,3)$. What is $b - a?$",
+    "prompt": "The point $P(a,b)$ in the $xy$-plane is first rotated counterclockwise by $90^\\circ$ around the point $(1,5)$ and then reflected about the line $y = -x$. The image of $P$ after these two transformations is at $(-6,3)$. What is $b - a?$",
     "choices": [
-      "~1",
-      "~3",
-      "~5",
-      "~7",
-      "~9"
+      "1",
+      "3",
+      "5",
+      "7",
+      "9"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "~7"
+    "answer": "7"
   },
   {
     "id": "amio-8d5e57b70012fddc625c9329ec8bda77",
@@ -6839,7 +6844,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Many television screens are rectangles that are measured by the length of their diagonals. The ratio of the horizontal length to the height in a standard television screen is $4:3$. The horizontal length of a \" $27$ -inch\" television screen is closest, in inches, to which of the following?",
+    "prompt": "Many television screens are rectangles that are measured by the length of their diagonals. The ratio of the horizontal length to the height in a standard television screen is $4:3$. The horizontal length of a \" $27$-inch\" television screen is closest, in inches, to which of the following?",
     "choices": [
       "20",
       "20.5",
@@ -6899,7 +6904,7 @@
       "10",
       "11",
       "12",
-      "13 \\qquad"
+      "13"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -6950,15 +6955,15 @@
     "weight": 12,
     "prompt": "Consider the set of complex numbers $z$ satisfying $|1+z+z^{2}|=4$. The maximum value of the imaginary part of $z$ can be written in the form $\\tfrac{\\sqrt{m}}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$",
     "choices": [
-      "~20",
-      "~21",
-      "~22",
-      "~23",
-      "~24"
+      "20",
+      "21",
+      "22",
+      "23",
+      "24"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "~21"
+    "answer": "21"
   },
   {
     "id": "amio-909fcd06640d729a1ebbf5b7c34b11a2",
@@ -7030,7 +7035,8 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "6"
+    "answer": "6",
+    "diagramSvg": "assets/diagrams/956b2a5e0eee881d65bbc50986453fce.svg"
   },
   {
     "id": "amio-91e8013016ba83d97f7f2f792683efb5",
@@ -7041,10 +7047,10 @@
     "prompt": "Let $ABCDE$ be an equiangular convex pentagon of perimeter $1$. The pairwise intersections of the lines that extend the sides of the pentagon determine a five-pointed star polygon. Let $s$ be the perimeter of this star. What is the difference between the maximum and the minimum possible values of $s$",
     "choices": [
       "0",
-      "frac{1}{2}",
-      "frac{\\sqrt{5}-1}{2}",
-      "frac{\\sqrt{5}+1}{2}",
-      "sqrt{5}"
+      "$\\frac{1}{2}$",
+      "$\\frac{\\sqrt{5}-1}{2}$",
+      "$\\frac{\\sqrt{5}+1}{2}$",
+      "$\\sqrt{5}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -7147,17 +7153,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $n$ be a positive integer such that $\\frac 12 + \\frac 13 + \\frac 17 + \\frac 1n$ is an integer. Which of the following statements is not true",
+    "prompt": "Let $n$ be a positive integer such that $\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{7} + \\frac{1}{n}$ is an integer. Which of the following statements is not true",
     "choices": [
-      "2\\ \\text{divides\\ }n",
-      "3\\ \\text{divides\\ }n",
-      "\\ 6\\ \\text{divides\\ }n",
-      "7\\ \\text{divides\\ }n",
-      "n > 84"
+      "$2\\ \\text{divides\\ }n$",
+      "$3\\ \\text{divides\\ }n$",
+      "$\\ 6\\ \\text{divides\\ }n$",
+      "$7\\ \\text{divides\\ }n$",
+      "$n > 84$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "n > 84"
+    "answer": "$n > 84$"
   },
   {
     "id": "amio-97669f36366d95230733fa7aa46906e8",
@@ -7207,11 +7213,12 @@
       "173",
       "182",
       "188",
-      "210\\qquad"
+      "210"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "173"
+    "answer": "173",
+    "diagramPng": "assets/diagrams/f61b38cd82dd6149e6ce4021a24a88b1.png"
   },
   {
     "id": "amio-981a0a5502eeca4ccbec8d1aac663c99",
@@ -7301,7 +7308,8 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "7"
+    "answer": "7",
+    "diagramSvg": "assets/diagrams/99163f150d5628b44fc0129a1ac54ba4.svg"
   },
   {
     "id": "amio-9958192892d058ab3cbc1ba71c827ac6",
@@ -7317,9 +7325,9 @@
       "380",
       "382"
     ],
-    "answerIndex": 3,
-    "answerKey": "D",
-    "answer": "380"
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "382"
   },
   {
     "id": "amio-99c5ba211cb755dde9eda00c6ce9e509",
@@ -7337,7 +7345,8 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "12"
+    "answer": "12",
+    "diagramPng": "assets/diagrams/89af124d6c36b7a8c3fcc57e408ad926.png"
   },
   {
     "id": "amio-99f1a5e777fb4e658191be6b727d6070",
@@ -7347,15 +7356,15 @@
     "weight": 12,
     "prompt": "Triangle $ABC$ is equilateral with side length $6$. Suppose that $O$ is the center of the inscribed circle of this triangle. What is the area of the circle passing through $A$ $O$, and $C$",
     "choices": [
-      "9\\pi",
-      "12\\pi",
-      "18\\pi",
-      "24\\pi",
-      "27\\pi"
+      "$9\\pi$",
+      "$12\\pi$",
+      "$18\\pi$",
+      "$24\\pi$",
+      "$27\\pi$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "12\\pi"
+    "answer": "$12\\pi$"
   },
   {
     "id": "amio-9a3294873b76f92e707d11dd5f9f787a",
@@ -7365,11 +7374,11 @@
     "weight": 12,
     "prompt": "Given that $x$ and $y$ are distinct nonzero real numbers such that $x+\\tfrac{2}{x} = y + \\tfrac{2}{y}$, what is $xy$",
     "choices": [
-      "frac{1}{4}",
-      "frac{1}{2}",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{2}$",
       "1",
       "2",
-      "4\\qquad"
+      "4"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -7417,17 +7426,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "A particular $12$ -hour digital clock displays the hour and minute of a day. Unfortunately, whenever it is supposed to display a $1$, it mistakenly displays a $9$. For example, when it is 1:16 PM the clock incorrectly shows 9:96 PM. What fraction of the day will the clock show the correct time?",
+    "prompt": "A particular $12$-hour digital clock displays the hour and minute of a day. Unfortunately, whenever it is supposed to display a $1$, it mistakenly displays a $9$. For example, when it is 1:16 PM the clock incorrectly shows 9:96 PM. What fraction of the day will the clock show the correct time?",
     "choices": [
-      "frac 12",
-      "frac 58",
-      "frac 34",
-      "frac 56",
-      "frac{9}{10}"
+      "$\\frac{1}{2}$",
+      "$\\frac{5}{8}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{5}{6}$",
+      "$\\frac{9}{10}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "frac 12"
+    "answer": "$\\frac{1}{2}$"
   },
   {
     "id": "amio-9ba1dec09d7a7ea393bd9f3ce6f88ff8",
@@ -7435,7 +7444,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "For how many integers $n$ is $\\dfrac n{20-n}$ the square of an integer?",
+    "prompt": "For how many integers $n$ is $\\dfrac{n}{20-n}$ the square of an integer?",
     "choices": [
       "1",
       "2",
@@ -7491,15 +7500,15 @@
     "weight": 12,
     "prompt": "Sarah places four ounces of coffee into an eight-ounce cup and four ounces of cream into a second cup of the same size. She then pours half the coffee from the first cup to the second and, after stirring thoroughly, pours half the liquid in the second cup back to the first. What fraction of the liquid in the first cup is now cream?",
     "choices": [
-      "frac{1}{4}",
-      "frac13",
-      "frac38",
-      "frac25",
-      "frac12"
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{1}{2}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "frac25"
+    "answer": "$\\frac{2}{5}$"
   },
   {
     "id": "amio-9c3199ffa6b211a15073593263ff4782",
@@ -7507,7 +7516,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The solutions to the equations $z^2=4+4\\sqrt{15}i$ and $z^2=2+2\\sqrt 3i,$ where $i=\\sqrt{-1},$ form the vertices of a parallelogram in the complex plane. The area of this parallelogram can be written in the form $p\\sqrt q-r\\sqrt s,$ where $p,$ $q,$ $r,$ and $s$ are positive integers and neither $q$ nor $s$ is divisible by the square of any prime number. What is $p+q+r+s?$",
+    "prompt": "The solutions to the equations $z^2=4+4\\sqrt{15}i$ and $z^2=2+2\\sqrt{3}i,$ where $i=\\sqrt{-1},$ form the vertices of a parallelogram in the complex plane. The area of this parallelogram can be written in the form $p\\sqrt{q}-r\\sqrt{s},$ where $p,$ $q,$ $r,$ and $s$ are positive integers and neither $q$ nor $s$ is divisible by the square of any prime number. What is $p+q+r+s?$",
     "choices": [
       "20",
       "21",
@@ -7563,9 +7572,9 @@
     "weight": 12,
     "prompt": "The point $(-3,2)$ is rotated $90^\\circ$ clockwise around the origin to point $B$. Point $B$ is then reflected over the line $x=y$ to point $C$. What are the coordinates of $C$",
     "choices": [
-      "(-3,-2)",
-      "(-2,-3)",
-      "(2,-3)",
+      "$(-3,-2)$",
+      "$(-2,-3)$",
+      "$(2,-3)$",
       "(2,3)",
       "(3,2)"
     ],
@@ -7579,7 +7588,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $P$ be the parabola with equation $y=x^2$ and let $Q = (20, 14)$. There are real numbers $r$ and $s$ such that the line through $Q$ with slope $m$ does not intersect $P$ if and only if $r$ $m$ $s$. What is $r + s$",
+    "prompt": "Let $P$ be the parabola with equation $y=x^2$ and let $Q=(20,14)$. There are real numbers $r$ and $s$ such that the line through $Q$ with slope $m$ does not intersect $P$ if and only if $r<m<s$. What is $r+s$?",
     "choices": [
       "1",
       "26",
@@ -7599,15 +7608,15 @@
     "weight": 12,
     "prompt": "Of the following complex numbers $z$, which one has the property that $z^5$ has the greatest real part?",
     "choices": [
-      "{-}2",
-      "{-}\\sqrt3+i",
-      "{-}\\sqrt2+\\sqrt2 i",
-      "{-}1+\\sqrt3 i",
+      "${-}2$",
+      "${-}\\sqrt{3}+i$",
+      "${-}\\sqrt{2}+\\sqrt{2} i$",
+      "${-}1+\\sqrt{3} i$",
       "2i"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "{-}\\sqrt3+i"
+    "answer": "${-}\\sqrt{3}+i$"
   },
   {
     "id": "amio-9dcf01d8d6c1525e04d0a0db33c3b5bd",
@@ -7653,15 +7662,15 @@
     "weight": 12,
     "prompt": "For all integers $n$ greater than $1$, define $a_n = \\frac{1}{\\log_n 2002}$. Let $b = a_2 + a_3 + a_4 + a_5$ and $c = a_{10} + a_{11} + a_{12} + a_{13} + a_{14}$. Then $b- c$ equals",
     "choices": [
-      "-2",
-      "-1",
-      "frac{1}{2002}",
-      "frac{1}{1001}",
-      "frac 12"
+      "$-2$",
+      "$-1$",
+      "$\\frac{1}{2002}$",
+      "$\\frac{1}{1001}$",
+      "$\\frac{1}{2}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-1"
+    "answer": "$-1$"
   },
   {
     "id": "amio-9de985a76df7ff6e3a65b23a0f9e6b68",
@@ -7669,7 +7678,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "In $\\triangle{ABC}$ medians $\\overline{AD}$ and $\\overline{BE}$ intersect at $G$ and $\\triangle{AGE}$ is equilateral. Then $\\cos(C)$ can be written as $\\frac{m\\sqrt p}n$, where $m$ and $n$ are relatively prime positive integers and $p$ is a positive integer not divisible by the square of any prime. What is $m+n+p?$",
+    "prompt": "In $\\triangle{ABC}$ medians $\\overline{AD}$ and $\\overline{BE}$ intersect at $G$ and $\\triangle{AGE}$ is equilateral. Then $\\cos(C)$ can be written as $\\frac{m\\sqrt{p}}{n}$, where $m$ and $n$ are relatively prime positive integers and $p$ is a positive integer not divisible by the square of any prime. What is $m+n+p?$",
     "choices": [
       "44",
       "48",
@@ -7780,15 +7789,15 @@
     "weight": 12,
     "prompt": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$",
     "choices": [
-      "~0",
-      "~\\frac{1}{4}",
-      "~\\frac{1}{2}",
-      "~1",
-      "~2"
+      "0",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{2}$",
+      "1",
+      "2"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "~1"
+    "answer": "1"
   },
   {
     "id": "amio-a0fcbe800fc7653b7a55b5e1d462cd1a",
@@ -7832,7 +7841,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "How many $4$ -digit positive integers (that is, integers between $1000$ and $9999$, inclusive) having only even digits are divisible by $5?$",
+    "prompt": "How many $4$-digit positive integers (that is, integers between $1000$ and $9999$, inclusive) having only even digits are divisible by $5?$",
     "choices": [
       "80",
       "100",
@@ -7850,17 +7859,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "A region $S$ in the complex plane is defined by \\[S = \\{x + iy: - 1\\le x\\le1, - 1\\le y\\le1\\}.\\] A complex number $z = x + iy$ is chosen uniformly at random from $S$. What is the probability that $\\left(\\frac34 + \\frac34i\\right)z$ is also in $S$",
+    "prompt": "A region $S$ in the complex plane is defined by \\[S = \\{x + iy: - 1\\le x\\le1, - 1\\le y\\le1\\}.\\] A complex number $z = x + iy$ is chosen uniformly at random from $S$. What is the probability that $\\left(\\frac{3}{4} + \\frac{3}{4}i\\right)z$ is also in $S$",
     "choices": [
-      "frac12",
-      "frac23",
-      "frac34",
-      "frac79",
-      "frac78"
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{7}{9}$",
+      "$\\frac{7}{8}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "frac79"
+    "answer": "$\\frac{7}{9}$"
   },
   {
     "id": "amio-a45d852737dffc94a54a569e683ccb11",
@@ -7940,7 +7949,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Penniless Pete's piggy bank has no pennies in it, but it has 100 coins, all nickels,dimes, and quarters, whose total value is \\$8.35. It does not necessarily contain coins of all three types. What is the difference between the largest and smallest number of dimes that could be in the bank?",
+    "prompt": "Penniless Pete's piggy bank has no pennies in it, but it has 100 coins, all nickels, dimes, and quarters, whose total value is \\$8.35. It does not necessarily contain coins of all three types. What is the difference between the largest and smallest number of dimes that could be in the bank?",
     "choices": [
       "0",
       "13",
@@ -7994,17 +8003,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Two nonhorizontal, non vertical lines in the $xy$ -coordinate plane intersect to form a $45^{\\circ}$ angle. One line has slope equal to $6$ times the slope of the other line. What is the greatest possible value of the product of the slopes of the two lines?",
+    "prompt": "Two nonhorizontal, non vertical lines in the $xy$-coordinate plane intersect to form a $45^{\\circ}$ angle. One line has slope equal to $6$ times the slope of the other line. What is the greatest possible value of the product of the slopes of the two lines?",
     "choices": [
-      "frac16",
-      "frac23",
-      "frac32",
+      "$\\frac{1}{6}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{2}$",
       "3",
       "6"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "frac32"
+    "answer": "$\\frac{3}{2}$"
   },
   {
     "id": "amio-a6e29b4f7509f0eb4835f3d47d561fef",
@@ -8030,13 +8039,13 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The domain of the function $f(x)=\\log_{\\frac12}(\\log_4(\\log_{\\frac14}(\\log_{16}(\\log_{\\frac1{16}}x))))$ is an interval of length $\\tfrac mn$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$",
+    "prompt": "The domain of the function $f(x)=\\log_{\\frac{1}{2}}(\\log_4(\\log_{\\frac{1}{4}}(\\log_{16}(\\log_{\\frac{1}{16}}x))))$ is an interval of length $\\tfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$",
     "choices": [
       "19",
       "31",
       "271",
       "319",
-      "511\\qquad"
+      "511"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -8086,15 +8095,15 @@
     "weight": 12,
     "prompt": "A circle with integer radius $r$ is centered at $(r, r)$. Distinct line segments of length $c_i$ connect points $(0, a_i)$ to $(b_i, 0)$ for $1 \\le i \\le 14$ and are tangent to the circle, where $a_i$ $b_i$, and $c_i$ are all positive integers and $c_1 \\le c_2 \\le \\cdots \\le c_{14}$. What is the ratio $\\frac{c_{14}}{c_1}$ for the least possible value of $r$",
     "choices": [
-      "~\\frac{21}{5}",
-      "~\\frac{85}{13}",
-      "~7",
-      "~\\frac{39}{5}",
-      "~17"
+      "$\\frac{21}{5}$",
+      "$\\frac{85}{13}$",
+      "7",
+      "$\\frac{39}{5}$",
+      "17"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "~17"
+    "answer": "17"
   },
   {
     "id": "amio-a7daf3b4a9cfb62d052477cd13633c61",
@@ -8102,7 +8111,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Moe uses a mower to cut his rectangular $90$ -foot by $150$ -foot lawn. The swath he cuts is $28$ inches wide, but he overlaps each cut by $4$ inches to make sure that no grass is missed. He walks at the rate of $5000$ feet per hour while pushing the mower. Which of the following is closest to the number of hours it will take Moe to mow the lawn?",
+    "prompt": "Moe uses a mower to cut his rectangular $90$-foot by $150$-foot lawn. The swath he cuts is $28$ inches wide, but he overlaps each cut by $4$ inches to make sure that no grass is missed. He walks at the rate of $5000$ feet per hour while pushing the mower. Which of the following is closest to the number of hours it will take Moe to mow the lawn?",
     "choices": [
       "0.75",
       "0.8",
@@ -8176,15 +8185,15 @@
     "weight": 12,
     "prompt": "For certain real numbers $a$ $b$, and $c$, the polynomial \\[g(x) = x^3 + ax^2 + x + 10\\] has three distinct roots, and each root of $g(x)$ is also a root of the polynomial \\[f(x) = x^4 + x^3 + bx^2 + 100x + c.\\] What is $f(1)$",
     "choices": [
-      "-9009",
-      "-8008",
-      "-7007",
-      "-6006",
-      "-5005"
+      "$-9009$",
+      "$-8008$",
+      "$-7007$",
+      "$-6006$",
+      "$-5005$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "-7007"
+    "answer": "$-7007$"
   },
   {
     "id": "amio-a92018d93b169b9a6b82489bc54a53a4",
@@ -8231,15 +8240,15 @@
     "weight": 12,
     "prompt": "Define $x \\heartsuit y$ to be $|x-y|$ for all real numbers $x$ and $y$. Which of the following statements is not true?",
     "choices": [
-      "x \\heartsuit y = y \\heartsuit x$ for all $x$ and $y",
-      "2(x \\heartsuit y) = (2x) \\heartsuit (2y)$ for all $x$ and $y",
-      "x \\heartsuit 0 = x$ for all $x",
-      "x \\heartsuit x = 0$ for all $x",
-      "x \\heartsuit y > 0$ if $x \\neq y"
+      "$x \\heartsuit y = y \\heartsuit x$ for all $x$ and $y$",
+      "$2(x \\heartsuit y) = (2x) \\heartsuit (2y)$ for all $x$ and $y$",
+      "$x \\heartsuit 0 = x$ for all $x$",
+      "$x \\heartsuit x = 0$ for all $x$",
+      "$x \\heartsuit y > 0 \\text{ if } x \\neq y$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "x \\heartsuit 0 = x$ for all $x"
+    "answer": "$x \\heartsuit 0 = x$ for all $x$"
   },
   {
     "id": "amio-aa0bf97e09cfb906b9adb4f3d576633b",
@@ -8265,13 +8274,13 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The fraction \\[\\dfrac1{99^2}=0.\\overline{b_{n-1}b_{n-2}\\ldots b_2b_1b_0},\\] where $n$ is the length of the period of the repeating decimal expansion. What is the sum $b_0+b_1+\\cdots+b_{n-1}$",
+    "prompt": "The fraction \\[\\dfrac{1}{99^2}=0.\\overline{b_{n-1}b_{n-2}\\ldots b_2b_1b_0},\\] where $n$ is the length of the period of the repeating decimal expansion. What is the sum $b_0+b_1+\\cdots+b_{n-1}$",
     "choices": [
       "874",
       "883",
       "887",
       "891",
-      "892\\qquad"
+      "892"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -8394,15 +8403,15 @@
     "weight": 12,
     "prompt": "Monic quadratic polynomial $P(x)$ and $Q(x)$ have the property that $P(Q(x))$ has zeros at $x=-23, -21, -17,$ and $-15$, and $Q(P(x))$ has zeros at $x=-59,-57,-51$ and $-49$. What is the sum of the minimum values of $P(x)$ and $Q(x)$",
     "choices": [
-      "-100",
-      "-82",
-      "-73",
-      "-64",
+      "$-100$",
+      "$-82$",
+      "$-73$",
+      "$-64$",
       "0"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-100"
+    "answer": "$-100$"
   },
   {
     "id": "amio-aee3d3b69245b0fd1ab4eac5ea6c961c",
@@ -8439,7 +8448,7 @@
     "answerIndex": 4,
     "answerKey": "E",
     "answer": "11",
-    "diagramPng": "assets/diagrams/aee82ef56f7042c3ac61d14ca9f1de2d.png"
+    "diagramSvg": "assets/diagrams/aee82ef56f7042c3ac61d14ca9f1de2d.svg"
   },
   {
     "id": "amio-af9f3c034996fb864753d8f08af0d35c",
@@ -8449,15 +8458,15 @@
     "weight": 12,
     "prompt": "Suppose $S$ cans of soda can be purchased from a vending machine for $Q$ quarters. Which of the following expressions describes the number of cans of soda that can be purchased for $D$ dollars, where $1$ dollar is worth $4$ quarters?",
     "choices": [
-      "frac{4DQ}{S}",
-      "frac{4DS}{Q}",
-      "frac{4Q}{DS}",
-      "frac{DQ}{4S}",
-      "frac{DS}{4Q}"
+      "$\\frac{4DQ}{S}$",
+      "$\\frac{4DS}{Q}$",
+      "$\\frac{4Q}{DS}$",
+      "$\\frac{DQ}{4S}$",
+      "$\\frac{DS}{4Q}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{4DS}{Q}"
+    "answer": "$\\frac{4DS}{Q}$"
   },
   {
     "id": "amio-afd2b0ede1265c5f8ec3481828f63aed",
@@ -8577,13 +8586,13 @@
     "choices": [
       "1",
       "2",
-      "sqrt 5",
-      "sqrt 6",
+      "$\\sqrt{5}$",
+      "$\\sqrt{6}$",
       "3"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "sqrt 5"
+    "answer": "$\\sqrt{5}$"
   },
   {
     "id": "amio-b430429b8155131e340e49534a88abf4",
@@ -8591,7 +8600,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The figure below depicts a regular $7$ -gon inscribed in a unit circle. What is the sum of the $4$ th powers of the lengths of all $21$ of its edges and diagonals?",
+    "prompt": "The figure below depicts a regular $7$-gon inscribed in a unit circle. What is the sum of the $4$ th powers of the lengths of all $21$ of its edges and diagonals?",
     "choices": [
       "49",
       "98",
@@ -8628,7 +8637,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "All three vertices of $\\bigtriangleup ABC$ lie on the parabola defined by $y=x^2$, with $A$ at the origin and $\\overline{BC}$ parallel to the $x$ -axis. The area of the triangle is $64$. What is the length of $BC$",
+    "prompt": "All three vertices of $\\bigtriangleup ABC$ lie on the parabola defined by $y=x^2$, with $A$ at the origin and $\\overline{BC}$ parallel to the $x$-axis. The area of the triangle is $64$. What is the length of $BC$",
     "choices": [
       "4",
       "6",
@@ -8682,7 +8691,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The graphs of $y=\\log_3 x, y=\\log_x 3, y=\\log_\\frac{1}{3} x,$ and $y=\\log_x \\dfrac{1}{3}$ are plotted on the same set of axes. How many points in the plane with positive $x$ -coordinates lie on two or more of the graphs?",
+    "prompt": "The graphs of $y=\\log_{3} x, y=\\log_{x} 3, y=\\log_{\\frac{1}{3}} x,$ and $y=\\log_{x} \\dfrac{1}{3}$ are plotted on the same set of axes. How many points in the plane with positive $x$-coordinates lie on two or more of the graphs?",
     "choices": [
       "2",
       "3",
@@ -8775,9 +8784,9 @@
     "prompt": "A quadrilateral is inscribed in a circle of radius $200\\sqrt{2}$. Three of the sides of this quadrilateral have length $200$. What is the length of the fourth side?",
     "choices": [
       "200",
-      "200\\sqrt{2}",
-      "200\\sqrt{3}",
-      "300\\sqrt{2}",
+      "$200\\sqrt{2}$",
+      "$200\\sqrt{3}$",
+      "$300\\sqrt{2}$",
       "500"
     ],
     "answerIndex": 4,
@@ -8880,7 +8889,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "A bug travels in the coordinate plane, moving only along the lines that are parallel to the $x$ -axis or $y$ -axis. Let $A = (-3, 2)$ and $B = (3, -2)$. Consider all possible paths of the bug from $A$ to $B$ of length at most $20$. How many points with integer coordinates lie on at least one of these paths?",
+    "prompt": "A bug travels in the coordinate plane, moving only along the lines that are parallel to the $x$-axis or $y$-axis. Let $A = (-3, 2)$ and $B = (3, -2)$. Consider all possible paths of the bug from $A$ to $B$ of length at most $20$. How many points with integer coordinates lie on at least one of these paths?",
     "choices": [
       "161",
       "185",
@@ -8898,7 +8907,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $R$ be a unit square region and $n \\geq 4$ an integer. A point $X$ in the interior of $R$ is called n-ray partitional if there are $n$ rays emanating from $X$ that divide $R$ into $n$ triangles of equal area. How many points are $100$ -ray partitional but not $60$ -ray partitional?",
+    "prompt": "Let $R$ be a unit square region and $n \\geq 4$ an integer. A point $X$ in the interior of $R$ is called n-ray partitional if there are $n$ rays emanating from $X$ that divide $R$ into $n$ triangles of equal area. How many points are $100$-ray partitional but not $60$-ray partitional?",
     "choices": [
       "1500",
       "1560",
@@ -8916,17 +8925,18 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Usain is walking for exercise by zigzagging across a $100$ -meter by $30$ -meter rectangular field, beginning at point $A$ and ending on the segment $\\overline{BC}$. He wants to increase the distance walked by zigzagging as shown in the figure below $(APQRS)$. What angle $\\theta = \\angle PAB=\\angle QPC=\\angle RQB=\\cdots$ will produce in a length that is $120$ meters? (This figure is not drawn to scale. Do not assume that he zigzag path has exactly four segments as shown; there could be more or fewer.)",
+    "prompt": "Usain is walking for exercise by zigzagging across a $100$-meter by $30$-meter rectangular field, beginning at point $A$ and ending on the segment $\\overline{BC}$. He wants to increase the distance walked by zigzagging as shown in the figure below $(APQRS)$. What angle $\\theta = \\angle PAB=\\angle QPC=\\angle RQB=\\cdots$ will produce in a length that is $120$ meters? (This figure is not drawn to scale. Do not assume that he zigzag path has exactly four segments as shown; there could be more or fewer.)",
     "choices": [
-      "~\\arccos\\frac{5}{6}",
-      "~\\arccos\\frac{4}{5}",
-      "~\\arccos\\frac{3}{10}",
-      "~\\arcsin\\frac{4}{5}",
-      "~\\arcsin\\frac{5}{6}"
+      "$\\arccos\\frac{5}{6}$",
+      "$\\arccos\\frac{4}{5}$",
+      "$\\arccos\\frac{3}{10}$",
+      "$\\arcsin\\frac{4}{5}$",
+      "$\\arcsin\\frac{5}{6}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "~\\arccos\\frac{5}{6}"
+    "answer": "$\\arccos\\frac{5}{6}$",
+    "diagramSvg": "assets/diagrams/ba0f1b4cc50dec5c98db179914f42038.svg"
   },
   {
     "id": "amio-baccbbd5eaedb7e9503476add77eca2a",
@@ -8973,10 +8983,10 @@
     "weight": 12,
     "prompt": "Let $c = \\frac{2\\pi}{11}.$ What is the value of \\[\\frac{\\sin 3c \\cdot \\sin 6c \\cdot \\sin 9c \\cdot \\sin 12c \\cdot \\sin 15c}{\\sin c \\cdot \\sin 2c \\cdot \\sin 3c \\cdot \\sin 4c \\cdot \\sin 5c}?\\]",
     "choices": [
-      "{-}1",
-      "{-}\\frac{\\sqrt{11}}{5}",
-      "frac{\\sqrt{11}}{5}",
-      "frac{10}{11}",
+      "${-}1$",
+      "${-}\\frac{\\sqrt{11}}{5}$",
+      "$\\frac{\\sqrt{11}}{5}$",
+      "$\\frac{10}{11}$",
       "1"
     ],
     "answerIndex": 4,
@@ -9007,17 +9017,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $S$ be the set of lattice points in the coordinate plane, both of whose coordinates are integers between $1$ and $30,$ inclusive. Exactly $300$ points in $S$ lie on or below a line with equation $y=mx.$ The possible values of $m$ lie in an interval of length $\\frac ab,$ where $a$ and $b$ are relatively prime positive integers. What is $a+b?$",
+    "prompt": "Let $S$ be the set of lattice points in the coordinate plane, both of whose coordinates are integers between $1$ and $30,$ inclusive. Exactly $300$ points in $S$ lie on or below a line with equation $y=mx.$ The possible values of $m$ lie in an interval of length $\\frac{a}{b},$ where $a$ and $b$ are relatively prime positive integers. What is $a+b?$",
     "choices": [
-      "~31",
-      "~47",
-      "~62",
-      "~72",
-      "~85"
+      "31",
+      "47",
+      "62",
+      "72",
+      "85"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "~85"
+    "answer": "85"
   },
   {
     "id": "amio-bd666a589736ea3ad22ec6ec2cd8af9b",
@@ -9122,7 +9132,7 @@
       "6",
       "8",
       "12",
-      "16 \\qquad"
+      "16"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -9155,10 +9165,10 @@
     "prompt": "Ajay is standing at point $A$ near Pontianak, Indonesia, $0^\\circ$ latitude and $110^\\circ \\text{ E}$ longitude. Billy is standing at point $B$ near Big Baldy Mountain, Idaho, USA, $45^\\circ \\text{ N}$ latitude and $115^\\circ \\text{ W}$ longitude. Assume that Earth is a perfect sphere with center $C.$ What is the degree measure of $\\angle ACB?$",
     "choices": [
       "105",
-      "112\\frac{1}{2}",
+      "$112\\frac{1}{2}$",
       "120",
       "135",
-      "150 \\qquad"
+      "150"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -9170,7 +9180,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $ABCD$ be a parallelogram with area $15$. Points $P$ and $Q$ are the projections of $A$ and $C,$ respectively, onto the line $BD;$ and points $R$ and $S$ are the projections of $B$ and $D,$ respectively, onto the line $AC.$ See the figure, which also shows the relative locations of these points. Suppose $PQ=6$ and $RS=8,$ and let $d$ denote the length of $\\overline{BD},$ the longer diagonal of $ABCD.$ Then $d^2$ can be written in the form $m+n\\sqrt p,$ where $m,n,$ and $p$ are positive integers and $p$ is not divisible by the square of any prime. What is $m+n+p?$",
+    "prompt": "Let $ABCD$ be a parallelogram with area $15$. Points $P$ and $Q$ are the projections of $A$ and $C,$ respectively, onto the line $BD;$ and points $R$ and $S$ are the projections of $B$ and $D,$ respectively, onto the line $AC.$ See the figure, which also shows the relative locations of these points. Suppose $PQ=6$ and $RS=8,$ and let $d$ denote the length of $\\overline{BD},$ the longer diagonal of $ABCD.$ Then $d^2$ can be written in the form $m+n\\sqrt{p},$ where $m,n,$ and $p$ are positive integers and $p$ is not divisible by the square of any prime. What is $m+n+p?$",
     "choices": [
       "81",
       "89",
@@ -9245,15 +9255,15 @@
     "weight": 12,
     "prompt": "A positive integer $n$ has $60$ divisors and $7n$ has $80$ divisors. What is the greatest integer $k$ such that $7^k$ divides $n$",
     "choices": [
-      "{{{0}}}",
-      "{{{1}}}",
-      "{{{2}}}",
-      "{{{3}}}",
-      "{{{4}}}"
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "{{{2}}}"
+    "answer": "2"
   },
   {
     "id": "amio-c0474014457c19560ee5ee7b9e70ed3b",
@@ -9315,7 +9325,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Mary chose an even $4$ -digit number $n$. She wrote down all the divisors of $n$ in increasing order from left to right: $1,2,\\ldots,\\dfrac{n}{2},n$. At some moment Mary wrote $323$ as a divisor of $n$. What is the smallest possible value of the next divisor written to the right of $323$",
+    "prompt": "Mary chose an even $4$-digit number $n$. She wrote down all the divisors of $n$ in increasing order from left to right: $1,2,\\ldots,\\dfrac{n}{2},n$. At some moment Mary wrote $323$ as a divisor of $n$. What is the smallest possible value of the next divisor written to the right of $323$",
     "choices": [
       "324",
       "330",
@@ -9357,11 +9367,11 @@
       "8",
       "9",
       "10",
-      "11 \\qquad"
+      "11"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "11 \\qquad"
+    "answer": "11"
   },
   {
     "id": "amio-c17fd2d74a62e11ae945fa8c7c30ffab",
@@ -9426,15 +9436,15 @@
     "weight": 12,
     "prompt": "What is the degree measure of the acute angle formed by lines with slopes $2$ and $\\frac{1}{3}$",
     "choices": [
-      "~30",
-      "~37.5",
-      "~45",
-      "~52.5",
-      "~60"
+      "30",
+      "37.5",
+      "45",
+      "52.5",
+      "60"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~45"
+    "answer": "45"
   },
   {
     "id": "amio-c28769e2404d38804480e95aebe85628",
@@ -9514,7 +9524,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "When a student multiplied the number $66$ by the repeating decimal, \\[\\underline{1}.\\underline{a} \\ \\underline{b} \\ \\underline{a} \\ \\underline{b}\\ldots=\\underline{1}.\\overline{\\underline{a} \\ \\underline{b}},\\] where $a$ and $b$ are digits, he did not notice the notation and just multiplied $66$ times $\\underline{1}.\\underline{a} \\ \\underline{b}.$ Later he found that his answer is $0.5$ less than the correct answer. What is the $2$ -digit number $\\underline{a} \\ \\underline{b}?$",
+    "prompt": "When a student multiplied the number $66$ by the repeating decimal, \\[\\underline{1}.\\underline{a} \\ \\underline{b} \\ \\underline{a} \\ \\underline{b}\\ldots=\\underline{1}.\\overline{\\underline{a} \\ \\underline{b}},\\] where $a$ and $b$ are digits, he did not notice the notation and just multiplied $66$ times $\\underline{1}.\\underline{a} \\ \\underline{b}.$ Later he found that his answer is $0.5$ less than the correct answer. What is the $2$-digit number $\\underline{a} \\ \\underline{b}?$",
     "choices": [
       "15",
       "30",
@@ -9570,15 +9580,15 @@
     "weight": 12,
     "prompt": "Let $g(x)$ be a polynomial with leading coefficient $1,$ whose three roots are the reciprocals of the three roots of $f(x)=x^3+ax^2+bx+c,$ where $1<a<b<c.$ What is $g(1)$ in terms of $a,b,$ and $c?$",
     "choices": [
-      "frac{1+a+b+c}c",
+      "$\\frac{1+a+b+c}{c}$",
       "1+a+b+c",
-      "frac{1+a+b+c}{c^2}",
-      "frac{a+b+c}{c^2}",
-      "frac{1+a+b+c}{a+b+c}"
+      "$\\frac{1+a+b+c}{c^2}$",
+      "$\\frac{a+b+c}{c^2}$",
+      "$\\frac{1+a+b+c}{a+b+c}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "frac{1+a+b+c}c"
+    "answer": "$\\frac{1+a+b+c}{c}$"
   },
   {
     "id": "amio-c48431a644779b9d3cdd97f283ea46f8",
@@ -9610,7 +9620,7 @@
       "18",
       "27",
       "36",
-      "45\\qquad"
+      "45"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -9660,15 +9670,15 @@
     "weight": 12,
     "prompt": "The sum of two natural numbers is $17402$. One of the two numbers is divisible by $10$. If the units digit of that number is erased, the other number is obtained. What is the difference of these two numbers?",
     "choices": [
-      "~10272",
-      "~11700",
-      "~13362",
-      "~14238",
-      "~15426"
+      "10272",
+      "11700",
+      "13362",
+      "14238",
+      "15426"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "~14238"
+    "answer": "14238"
   },
   {
     "id": "amio-c5dda01b87db98a0a7b8bbf46fa76e77",
@@ -9730,7 +9740,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "For every integer $n\\ge2$, let $\\text{pow}(n)$ be the largest power of the largest prime that divides $n$. For example $\\text{pow}(144)=\\text{pow}(2^4\\cdot3^2)=3^2$. What is the largest integer $m$ such that $2010^m$ divides",
+    "prompt": "For every integer $n\\ge2$, let $\\operatorname{pow}(n)$ be the largest power of the largest prime that divides $n$. For example, $\\operatorname{pow}(144)=\\operatorname{pow}(2^4\\cdot3^2)=3^2$. What is the largest integer $m$ such that $2010^m$ divides \\[\\prod_{n=2}^{5300}\\operatorname{pow}(n)\\]?",
     "choices": [
       "74",
       "75",
@@ -9748,7 +9758,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $a > 0$, and let $P(x)$ be a polynomial with integer coefficients such that What is the smallest possible value of $a$",
+    "prompt": "Let $a>0$, and let $P(x)$ be a polynomial with integer coefficients such that \\[P(1)=P(3)=P(5)=P(7)=a,\\qquad P(2)=P(4)=P(6)=P(8)=-a.\\] What is the smallest possible value of $a$?",
     "choices": [
       "105",
       "315",
@@ -9820,17 +9830,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Part of the graph of $f(x) = ax^3 + bx^2 + cx + d$ is shown. What is $b$ 2003 12B AMC-20.png",
+    "prompt": "Part of the graph of $f(x) = ax^3 + bx^2 + cx + d$ is shown. What is $b$",
     "choices": [
-      "-4",
-      "-2",
+      "$-4$",
+      "$-2$",
       "0",
       "2",
       "4"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-2"
+    "answer": "$-2$"
   },
   {
     "id": "amio-ca97a2f1cc81d50844c65c3f15cabd5b",
@@ -9838,7 +9848,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "A line with slope $2$ intersects a line with slope $6$ at the point $(40,30)$. What is the distance between the $x$ -intercepts of these two lines?",
+    "prompt": "A line with slope $2$ intersects a line with slope $6$ at the point $(40,30)$. What is the distance between the $x$-intercepts of these two lines?",
     "choices": [
       "5",
       "10",
@@ -9898,7 +9908,7 @@
       "300",
       "301",
       "302",
-      "303\\qquad"
+      "303"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -9966,15 +9976,15 @@
     "weight": 12,
     "prompt": "When $n$ standard six-sided dice are rolled, the product of the numbers rolled can be any of $936$ possible values. What is $n$",
     "choices": [
-      "~11",
-      "~6",
-      "~8",
-      "~10",
-      "~9"
+      "11",
+      "6",
+      "8",
+      "10",
+      "9"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "~11"
+    "answer": "11"
   },
   {
     "id": "amio-ccd43dfcc52e23c98877f8747815753b",
@@ -9984,15 +9994,15 @@
     "weight": 12,
     "prompt": "An object moves $8$ cm in a straight line from $A$ to $B$, turns at an angle $\\alpha$, measured in radians and chosen at random from the interval $(0,\\pi)$, and moves $5$ cm in a straight line to $C$. What is the probability that $AC < 7$",
     "choices": [
-      "frac{1}{6}",
-      "frac{1}{5}",
-      "frac{1}{4}",
-      "frac{1}{3}",
-      "frac{1}{2}"
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "frac{1}{3}"
+    "answer": "$\\frac{1}{3}$"
   },
   {
     "id": "amio-cd9a557050bee03e7c49e591e9751027",
@@ -10183,15 +10193,15 @@
     "weight": 12,
     "prompt": "A school has $100$ students and $5$ teachers. In the first period, each student is taking one class, and each teacher is teaching one class. The enrollments in the classes are $50, 20, 20, 5,$ and $5$. Let $t$ be the average value obtained if a teacher is picked at random and the number of students in their class is noted. Let $s$ be the average value obtained if a student was picked at random and the number of students in their class, including the student, is noted. What is $t-s$",
     "choices": [
-      "{-}18.5",
-      "{-}13.5",
+      "${-}18.5$",
+      "${-}13.5$",
       "0",
       "13.5",
       "18.5"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "{-}13.5"
+    "answer": "${-}13.5$"
   },
   {
     "id": "amio-d068e227e879cd3127b319bc02deebac",
@@ -10199,7 +10209,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The number of $x$ -intercepts on the graph of $y=\\sin(1/x)$ in the interval $(0.0001,0.001)$ is closest to",
+    "prompt": "The number of $x$-intercepts on the graph of $y=\\sin(1/x)$ in the interval $(0.0001,0.001)$ is closest to",
     "choices": [
       "2900",
       "3000",
@@ -10345,15 +10355,15 @@
     "weight": 12,
     "prompt": "On a particular January day, the high temperature in Lincoln, Nebraska, was $16$ degrees higher than the low temperature, and the average of the high and low temperatures was $3$. In degrees, what was the low temperature in Lincoln that day?",
     "choices": [
-      "-13",
-      "-8",
-      "-5",
-      "-3",
+      "$-13$",
+      "$-8$",
+      "$-5$",
+      "$-3$",
       "11"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "-5"
+    "answer": "$-5$"
   },
   {
     "id": "amio-d320ca53d9952b750fffb7c0851fc650",
@@ -10419,10 +10429,10 @@
     "prompt": "For every real number $x$, let $\\lfloor x\\rfloor$ denote the greatest integer not exceeding $x$, and let \\[f(x)=\\lfloor x\\rfloor(2014^{x-\\lfloor x\\rfloor}-1).\\] The set of all numbers $x$ such that $1\\leq x<2014$ and $f(x)\\leq 1$ is a union of disjoint intervals. What is the sum of the lengths of those intervals?",
     "choices": [
       "1",
-      "dfrac{\\log 2015}{\\log 2014}",
-      "dfrac{\\log 2014}{\\log 2013}",
-      "dfrac{2014}{2013}",
-      "2014^{\\frac1{2014}}\\qquad"
+      "$\\dfrac{\\log 2015}{\\log 2014}$",
+      "$\\dfrac{\\log 2014}{\\log 2013}$",
+      "$\\dfrac{2014}{2013}$",
+      "$2014^{\\frac{1}{2014}}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -10454,15 +10464,15 @@
     "weight": 12,
     "prompt": "In the following list of numbers, the integer $n$ appears $n$ times in the list for $1 \\leq n \\leq 200$ \\[1, 2, 2, 3, 3, 3, 4, 4, 4, 4, \\ldots, 200, 200, \\ldots, 200\\] What is the median of the numbers in this list?",
     "choices": [
-      "~100.5",
-      "~134",
-      "~142",
-      "~150.5",
-      "~167"
+      "100.5",
+      "134",
+      "142",
+      "150.5",
+      "167"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~142"
+    "answer": "142"
   },
   {
     "id": "amio-d5bd7b2c4f883ed89c5c69057a9e66dd",
@@ -10545,14 +10555,14 @@
     "prompt": "Circle $C_1$ has its center $O$ lying on circle $C_2$. The two circles meet at $X$ and $Y$. Point $Z$ in the exterior of $C_1$ lies on circle $C_2$ and $XZ=13$ $OZ=11$, and $YZ=7$. What is the radius of circle $C_1$",
     "choices": [
       "5",
-      "sqrt{26}",
-      "3\\sqrt{3}",
-      "2\\sqrt{7}",
-      "sqrt{30}"
+      "$\\sqrt{26}$",
+      "$3\\sqrt{3}$",
+      "$2\\sqrt{7}$",
+      "$\\sqrt{30}$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "sqrt{30}"
+    "answer": "$\\sqrt{30}$"
   },
   {
     "id": "amio-d7d0d9aafbb7532003e17d4c00ba6178",
@@ -10635,15 +10645,15 @@
     "weight": 12,
     "prompt": "Five unit squares are arranged in the coordinate plane as shown, with the lower left corner at the origin. The slanted line, extending from $(c,0)$ to $(3,3)$, divides the entire region into two regions of equal area. What is $c$",
     "choices": [
-      "frac12",
-      "frac35",
-      "frac23",
-      "frac34",
-      "frac45"
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{5}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{4}{5}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "frac23",
+    "answer": "$\\frac{2}{3}$",
     "diagramPng": "assets/diagrams/d92205045da3b22da4b0bf925e2f4ff1.png"
   },
   {
@@ -10672,15 +10682,16 @@
     "weight": 12,
     "prompt": "In rhombus $ABCD$, point $P$ lies on segment $\\overline{AD}$ so that $\\overline{BP}$ $\\perp$ $\\overline{AD}$ $AP = 3$, and $PD = 2$. What is the area of $ABCD$? (Note: The figure is not drawn to scale.)",
     "choices": [
-      "3\\sqrt 5",
+      "$3\\sqrt{5}$",
       "10",
-      "6\\sqrt 5",
+      "$6\\sqrt{5}$",
       "20",
       "25"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "20"
+    "answer": "20",
+    "diagramSvg": "assets/diagrams/a44fec80677fee2bd201cc78636a5cac.svg"
   },
   {
     "id": "amio-d98886a57fb620435fa86d73f0a6ac15",
@@ -10706,7 +10717,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Positive integers $a,b,$ and $c$ are chosen so that $a<b<c$, and the system of equations has exactly one solution. What is the minimum value of $c$",
+    "prompt": "Positive integers $a$, $b$, and $c$ are chosen so that $a<b<c$, and the system of equations \\[2x+y=2003,\\qquad y=|x-a|+|x-b|+|x-c|\\] has exactly one solution. What is the minimum value of $c$?",
     "choices": [
       "668",
       "669",
@@ -10727,10 +10738,10 @@
     "prompt": "What is the value of $(625^{\\log_5 2015})^{\\frac{1}{4}}$",
     "choices": [
       "5",
-      "\\sqrt[4]{2015}",
+      "$\\sqrt[4]{2015}$",
       "625",
       "2015",
-      "\\sqrt[4]{5^{2015}}"
+      "$\\sqrt[4]{5^{2015}}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -10796,7 +10807,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $N=123456789101112\\dots4344$ be the $79$ -digit number that is formed by writing the integers from $1$ to $44$ in order, one after the other. What is the remainder when $N$ is divided by $45$",
+    "prompt": "Let $N=123456789101112\\dots4344$ be the $79$-digit number that is formed by writing the integers from $1$ to $44$ in order, one after the other. What is the remainder when $N$ is divided by $45$",
     "choices": [
       "1",
       "4",
@@ -10892,7 +10903,7 @@
       "684",
       "1024",
       "1576",
-      "2016\\qquad"
+      "2016"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -10961,14 +10972,14 @@
     "prompt": "For a certain complex number $c$, the polynomial \\[P(x) = (x^2 - 2x + 2)(x^2 - cx + 4)(x^2 - 4x + 8)\\] has exactly 4 distinct roots. What is $|c|$",
     "choices": [
       "2",
-      "sqrt{6}",
-      "2\\sqrt{2}",
+      "$\\sqrt{6}$",
+      "$2\\sqrt{2}$",
       "3",
-      "sqrt{10}"
+      "$\\sqrt{10}$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "sqrt{10}"
+    "answer": "$\\sqrt{10}$"
   },
   {
     "id": "amio-e02ee415de88f118a922259c01c63af1",
@@ -10996,15 +11007,15 @@
     "weight": 12,
     "prompt": "What is the area of the region enclosed by the graph of the equation $x^2+y^2=|x|+|y|?$",
     "choices": [
-      "pi+\\sqrt{2}",
-      "pi+2",
-      "pi+2\\sqrt{2}",
-      "2\\pi+\\sqrt{2}",
-      "2\\pi+2\\sqrt{2}"
+      "$\\pi+\\sqrt{2}$",
+      "$\\pi+2$",
+      "$\\pi+2\\sqrt{2}$",
+      "$2\\pi+\\sqrt{2}$",
+      "$2\\pi+2\\sqrt{2}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "pi+2"
+    "answer": "$\\pi+2$"
   },
   {
     "id": "amio-e079894416dc23df8a285a2dd4276976",
@@ -11050,15 +11061,16 @@
     "weight": 12,
     "prompt": "Each of the small circles in the figure has radius one. The innermost circle is tangent to the six circles that surround it, and each of those circles is tangent to the large circle and to its small-circle neighbors. Find the area of the shaded region",
     "choices": [
-      "pi",
-      "1.5\\pi",
-      "2\\pi",
-      "3\\pi",
-      "3.5\\pi"
+      "$\\pi$",
+      "$1.5\\pi$",
+      "$2\\pi$",
+      "$3\\pi$",
+      "$3.5\\pi$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "2\\pi"
+    "answer": "$2\\pi$",
+    "diagramPng": "assets/diagrams/5224566ce602732d3c1883654e518b72.png"
   },
   {
     "id": "amio-e13c7abfc823d707440a9edbac62f5fb",
@@ -11069,9 +11081,9 @@
     "prompt": "A pyramid has a square base $ABCD$ and vertex $E$. The area of square $ABCD$ is $196$, and the areas of $\\triangle ABE$ and $\\triangle CDE$ are $105$ and $91$, respectively. What is the volume of the pyramid?",
     "choices": [
       "392",
-      "196\\sqrt{6}",
-      "392\\sqrt{2}",
-      "392\\sqrt{3}",
+      "$196\\sqrt{6}$",
+      "$392\\sqrt{2}$",
+      "$392\\sqrt{3}$",
       "784"
     ],
     "answerIndex": 4,
@@ -11086,15 +11098,15 @@
     "weight": 12,
     "prompt": "All the roots of the polynomial $z^6-10z^5+Az^4+Bz^3+Cz^2+Dz+16$ are positive integers, possibly repeated. What is the value of $B$",
     "choices": [
-      "{-}88",
-      "{-}80",
-      "{-}64",
-      "{-}41",
-      "{-}40"
+      "${-}88$",
+      "${-}80$",
+      "${-}64$",
+      "${-}41$",
+      "${-}40$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "{-}88"
+    "answer": "${-}88$"
   },
   {
     "id": "amio-e256412f33446d81ec5cb1420a8ecd98",
@@ -11138,7 +11150,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "How many non- empty subsets $S$ of $\\{1,2,3,\\ldots,15\\}$ have the following two properties? $(1)$ No two consecutive integers belong to $S$ $(2)$ If $S$ contains $k$ elements, then $S$ contains no number less than $k$",
+    "prompt": "How many nonempty subsets $S$ of $\\{1,2,3,\\ldots,15\\}$ have the following two properties? $(1)$ No two consecutive integers belong to $S$ $(2)$ If $S$ contains $k$ elements, then $S$ contains no number less than $k$",
     "choices": [
       "277",
       "311",
@@ -11228,9 +11240,9 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $x=-2016$. What is the value of $\\bigg|$ $||x|-x|-|x|$ $\\bigg|$ $-x$",
+    "prompt": "Let $x=-2016$. What is the value of $\\Bigg\\vert\\Big\\vert |x|-x\\Big\\vert-|x|\\Bigg\\vert-x$?",
     "choices": [
-      "-2016",
+      "$-2016$",
       "0",
       "2016",
       "4032",
@@ -11248,15 +11260,15 @@
     "weight": 12,
     "prompt": "How many ways are there to paint each of the integers $2, 3, \\cdots, 9$ either red, green, or blue so that each number has a different color from each of its proper divisors?",
     "choices": [
-      "~144",
-      "~216",
-      "~256",
-      "~384",
-      "~432"
+      "144",
+      "216",
+      "256",
+      "384",
+      "432"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "~432"
+    "answer": "432"
   },
   {
     "id": "amio-e6d8b9804b11898aa89c2013ed1682bc",
@@ -11374,15 +11386,16 @@
     "weight": 12,
     "prompt": "A rectangular yard contains two flower beds in the shape of congruent isosceles right triangles. The remainder of the yard has a trapezoidal shape, as shown. The parallel sides of the trapezoid have lengths $15$ and $25$ meters. What fraction of the yard is occupied by the flower beds?",
     "choices": [
-      "frac{1}{8}",
-      "frac{1}{6}",
-      "frac{1}{5}",
-      "frac{1}{4}",
-      "frac{1}{3}"
+      "$\\frac{1}{8}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "frac{1}{5}"
+    "answer": "$\\frac{1}{5}$",
+    "diagramPng": "assets/diagrams/beee1f89d8141011a57821601922498b.png"
   },
   {
     "id": "amio-e83c04373ea644ea4877be2197585eef",
@@ -11392,15 +11405,15 @@
     "weight": 12,
     "prompt": "Suppose $a$ is a real number such that the equation \\[a\\cdot(\\sin{x}+\\sin{(2x)}) = \\sin{(3x)}\\] has more than one solution in the interval $(0, \\pi)$. The set of all such $a$ that can be written in the form \\[(p,q) \\cup (q,r),\\] where $p, q,$ and $r$ are real numbers with $p < q< r$. What is $p+q+r$",
     "choices": [
-      "{-}4",
-      "{-}1",
+      "${-}4$",
+      "${-}1$",
       "0",
       "1",
       "4"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "{-}4"
+    "answer": "${-}4$"
   },
   {
     "id": "amio-e97f4e80dcac51a806503d76abc5c4a0",
@@ -11428,7 +11441,7 @@
     "weight": 12,
     "prompt": "What is $\\left(20-\\left(2010-201\\right)\\right)+\\left(2010-\\left(201-20\\right)\\right)$",
     "choices": [
-      "-4020",
+      "$-4020$",
       "0",
       "40",
       "401",
@@ -11444,17 +11457,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $z$ be a complex number satisfying $12|z|^2=2|z+2|^2+|z^2+1|^2+31.$ What is the value of $z+\\frac 6z?$",
+    "prompt": "Let $z$ be a complex number satisfying $12|z|^2=2|z+2|^2+|z^2+1|^2+31.$ What is the value of $z+\\frac{6}{z}?$",
     "choices": [
-      "-2",
-      "-1",
-      "frac12",
+      "$-2$",
+      "$-1$",
+      "$\\frac{1}{2}$",
       "1",
       "4"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-2"
+    "answer": "$-2$"
   },
   {
     "id": "amio-eabdfcd226357b0fa27430d8202a05be",
@@ -11462,7 +11475,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Let $T$ be the triangle in the coordinate plane with vertices $(0,0), (4,0),$ and $(0,3).$ Consider the following five isometries (rigid transformations) of the plane: rotations of $90^{\\circ}, 180^{\\circ},$ and $270^{\\circ}$ counterclockwise around the origin, reflection across the $x$ -axis, and reflection across the $y$ -axis. How many of the $125$ sequences of three of these transformations (not necessarily distinct) will return $T$ to its original position? (For example, a $180^{\\circ}$ rotation, followed by a reflection across the $x$ -axis, followed by a reflection across the $y$ -axis will return $T$ to its original position, but a $90^{\\circ}$ rotation, followed by a reflection across the $x$ -axis, followed by another reflection across the $x$ -axis will not return $T$ to its original position.)",
+    "prompt": "Let $T$ be the triangle in the coordinate plane with vertices $(0,0), (4,0),$ and $(0,3).$ Consider the following five isometries (rigid transformations) of the plane: rotations of $90^{\\circ}, 180^{\\circ},$ and $270^{\\circ}$ counterclockwise around the origin, reflection across the $x$-axis, and reflection across the $y$-axis. How many of the $125$ sequences of three of these transformations (not necessarily distinct) will return $T$ to its original position? (For example, a $180^{\\circ}$ rotation, followed by a reflection across the $x$-axis, followed by a reflection across the $y$-axis will return $T$ to its original position, but a $90^{\\circ}$ rotation, followed by a reflection across the $x$-axis, followed by another reflection across the $x$-axis will not return $T$ to its original position.)",
     "choices": [
       "12",
       "15",
@@ -11500,11 +11513,11 @@
     "weight": 12,
     "prompt": "In $\\triangle BAC$ $\\angle BAC=40^\\circ$ $AB=10$, and $AC=6$. Points $D$ and $E$ lie on $\\overline{AB}$ and $\\overline{AC}$ respectively. What is the minimum possible value of $BE+DE+CD$",
     "choices": [
-      "6\\sqrt 3+3",
-      "dfrac{27}2",
-      "8\\sqrt 3",
+      "$6\\sqrt{3}+3$",
+      "$\\dfrac{27}{2}$",
+      "$8\\sqrt{3}$",
       "14",
-      "3\\sqrt 3+9\\qquad"
+      "$3\\sqrt{3}+9$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -11552,7 +11565,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "A set of $n$ people participate in an online video basketball tournament. Each person may be a member of any number of $5$ -player teams, but no two teams may have exactly the same $5$ members. The site statistics show a curious fact: The average, over all subsets of size $9$ of the set of $n$ participants, of the number of complete teams whose members are among those $9$ people is equal to the reciprocal of the average, over all subsets of size $8$ of the set of $n$ participants, of the number of complete teams whose members are among those $8$ people. How many values $n$ $9\\leq n\\leq 2017$, can be the number of participants?",
+    "prompt": "A set of $n$ people participate in an online video basketball tournament. Each person may be a member of any number of $5$-player teams, but no two teams may have exactly the same $5$ members. The site statistics show a curious fact: The average, over all subsets of size $9$ of the set of $n$ participants, of the number of complete teams whose members are among those $9$ people is equal to the reciprocal of the average, over all subsets of size $8$ of the set of $n$ participants, of the number of complete teams whose members are among those $8$ people. How many values $n$ $9\\leq n\\leq 2017$, can be the number of participants?",
     "choices": [
       "477",
       "482",
@@ -11570,13 +11583,13 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac{1}{\\sqrt3}$. For $n\\ge1$ What is $|a_{2009}|$",
+    "prompt": "The first two terms of a sequence are $a_1=1$ and $a_2=\\frac{1}{\\sqrt{3}}$. For $n\\ge1$, \\[a_{n+2}=\\frac{a_n+a_{n+1}}{1-a_na_{n+1}}.\\] What is $|a_{2009}|$?",
     "choices": [
       "0",
-      "2 - \\sqrt3",
-      "frac{1}{\\sqrt3}",
+      "$2 - \\sqrt{3}$",
+      "$\\frac{1}{\\sqrt{3}}$",
       "1",
-      "2 + \\sqrt3"
+      "$2 + \\sqrt{3}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -11590,15 +11603,15 @@
     "weight": 12,
     "prompt": "Find the sum of all the positive solutions of $2\\cos2x \\left(\\cos2x - \\cos{\\left( \\frac{2014\\pi^2}{x} \\right) } \\right) = \\cos4x - 1$",
     "choices": [
-      "pi",
-      "810\\pi",
-      "1008\\pi",
-      "1080 \\pi",
-      "1800\\pi"
+      "$\\pi$",
+      "$810\\pi$",
+      "$1008\\pi$",
+      "$1080 \\pi$",
+      "$1800\\pi$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "1080 \\pi"
+    "answer": "$1080 \\pi$"
   },
   {
     "id": "amio-f04d2c1d729377f8d4fc33fb05a8dc42",
@@ -11663,9 +11676,9 @@
     "prompt": "Quadrilateral $ABCD$ is inscribed in circle $O$ and has side lengths $AB=3, BC=2, CD=6$, and $DA=8$. Let $X$ and $Y$ be points on $\\overline{BD}$ such that $\\frac{DX}{BD} = \\frac{1}{4}$ and $\\frac{BY}{BD} = \\frac{11}{36}$. Let $E$ be the intersection of line $AX$ and the line through $Y$ parallel to $\\overline{AD}$. Let $F$ be the intersection of line $CX$ and the line through $E$ parallel to $\\overline{AC}$. Let $G$ be the point on circle $O$ other than $C$ that lies on line $CX$. What is $XF\\cdot XG$",
     "choices": [
       "17",
-      "frac{59 - 5\\sqrt{2}}{3}",
-      "frac{91 - 12\\sqrt{3}}{4}",
-      "frac{67 - 10\\sqrt{2}}{3}",
+      "$\\frac{59 - 5\\sqrt{2}}{3}$",
+      "$\\frac{91 - 12\\sqrt{3}}{4}$",
+      "$\\frac{67 - 10\\sqrt{2}}{3}$",
       "18"
     ],
     "answerIndex": 0,
@@ -11753,10 +11766,10 @@
     "prompt": "Two lines with slopes $\\dfrac{1}{2}$ and $2$ intersect at $(2,2)$. What is the area of the triangle enclosed by these two lines and the line $x+y=10?$",
     "choices": [
       "4",
-      "4\\sqrt{2}",
+      "$4\\sqrt{2}$",
       "6",
       "8",
-      "6\\sqrt{2}"
+      "$6\\sqrt{2}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -11789,9 +11802,9 @@
     "prompt": "Let $f(x) = x^{2}(1-x)^{2}$. What is the value of the sum \\[f \\left(\\frac{1}{2019} \\right)-f \\left(\\frac{2}{2019} \\right)+f \\left(\\frac{3}{2019} \\right)-f \\left(\\frac{4}{2019} \\right)+\\cdots + f \\left(\\frac{2017}{2019} \\right) - f \\left(\\frac{2018}{2019} \\right)?\\]",
     "choices": [
       "0",
-      "frac{1}{2019^{4}}",
-      "frac{2018^{2}}{2019^{4}}",
-      "frac{2020^{2}}{2019^{4}}",
+      "$\\frac{1}{2019^{4}}$",
+      "$\\frac{2018^{2}}{2019^{4}}$",
+      "$\\frac{2020^{2}}{2019^{4}}$",
       "1"
     ],
     "answerIndex": 0,
@@ -11878,10 +11891,10 @@
     "weight": 12,
     "prompt": "Six spheres of radius $1$ are positioned so that their centers are at the vertices of a regular hexagon of side length $2$. The six spheres are internally tangent to a larger sphere whose center is the center of the hexagon. An eighth sphere is externally tangent to the six smaller spheres and internally tangent to the larger sphere. What is the radius of this eighth sphere?",
     "choices": [
-      "sqrt{2}",
-      "frac{3}{2}",
-      "frac{5}{3}",
-      "sqrt{3}",
+      "$\\sqrt{2}$",
+      "$\\frac{3}{2}$",
+      "$\\frac{5}{3}$",
+      "$\\sqrt{3}$",
       "2"
     ],
     "answerIndex": 4,
@@ -11894,7 +11907,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The number $2013$ is expressed in the form where $a_1 \\ge a_2 \\ge \\cdots \\ge a_m$ and $b_1 \\ge b_2 \\ge \\cdots \\ge b_n$ are positive integers and $a_1 + b_1$ is as small as possible. What is $|a_1 - b_1|$",
+    "prompt": "The number $2013$ is expressed in the form \\[2013=\\frac{a_1!a_2!\\cdots a_m!}{b_1!b_2!\\cdots b_n!},\\] where $a_1\\ge a_2\\ge\\cdots\\ge a_m$ and $b_1\\ge b_2\\ge\\cdots\\ge b_n$ are positive integers and $a_1+b_1$ is as small as possible. What is $|a_1-b_1|$?",
     "choices": [
       "1",
       "2",
@@ -11912,17 +11925,17 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "When the roots of the polynomial \\[P(x) = (x-1)^1 (x-2)^2 (x-3)^3 \\cdot \\cdot \\cdot (x-10)^{10}\\] are removed from the number line, what remains is the union of $11$ disjoint open intervals. On how many of these intervals is $P(x)$ positive?",
+    "prompt": "When the roots of the polynomial \\[P(x) = (x-1)^1 (x-2)^2 (x-3)^3 \\cdots (x-10)^{10}\\] are removed from the number line, what remains is the union of $11$ disjoint open intervals. On how many of these intervals is $P(x)$ positive?",
     "choices": [
-      "~3",
-      "~7",
-      "~6",
-      "~4",
-      "~5"
+      "3",
+      "7",
+      "6",
+      "4",
+      "5"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~6"
+    "answer": "6"
   },
   {
     "id": "amio-f999f8168fe7984d6323c7b9b9ba05e3",
@@ -11932,15 +11945,15 @@
     "weight": 12,
     "prompt": "LeRoy and Bernardo went on a week-long trip together and agreed to share the costs equally. Over the week, each of them paid for various joint expenses such as gasoline and car rental. At the end of the trip it turned out that LeRoy had paid A dollars and Bernardo had paid B dollars, where $A < B.$ How many dollars must LeRoy give to Bernardo so that they share the costs equally?",
     "choices": [
-      "frac{A+B}{2}",
-      "frac{A-B}{2}",
-      "frac{B-A}{2}",
+      "$\\frac{A+B}{2}$",
+      "$\\frac{A-B}{2}$",
+      "$\\frac{B-A}{2}$",
       "B-A",
       "A+B"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "frac{B-A}{2}"
+    "answer": "$\\frac{B-A}{2}$"
   },
   {
     "id": "amio-fa1db079e293fa498cc49b0f125d1fd1",
@@ -12002,7 +12015,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "The arithmetic mean of the nine numbers in the set $\\{9, 99, 999, 9999, \\ldots, 999999999\\}$ is a $9$ -digit number $M$, all of whose digits are distinct. The number $M$ doesn't contain the digit",
+    "prompt": "The arithmetic mean of the nine numbers in the set $\\{9, 99, 999, 9999, \\ldots, 999999999\\}$ is a $9$-digit number $M$, all of whose digits are distinct. The number $M$ doesn't contain the digit",
     "choices": [
       "0",
       "2",
@@ -12062,7 +12075,7 @@
       "0.15",
       "0.20",
       "0.25",
-      "0.30 \\qquad"
+      "0.30"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -12112,15 +12125,15 @@
     "weight": 12,
     "prompt": "What is the sum of all real numbers $x$ for which the median of the numbers $4,6,8,17,$ and $x$ is equal to the mean of those five numbers?",
     "choices": [
-      "-5",
+      "$-5$",
       "0",
       "5",
-      "frac{15}{4}",
-      "frac{35}{4}"
+      "$\\frac{15}{4}$",
+      "$\\frac{35}{4}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-5"
+    "answer": "$-5$"
   },
   {
     "id": "amio-fd75d1c59c5b9b3e560d7d82aa740ffc",
@@ -12164,7 +12177,7 @@
     "contest": "amc12",
     "label": "AoPS (AMIO) - AMC 12",
     "weight": 12,
-    "prompt": "Each morning of her five-day workweek, Jane bought either a $50$ -cent muffin or a $75$ -cent bagel. Her total cost for the week was a whole number of dollars. How many bagels did she buy?",
+    "prompt": "Each morning of her five-day workweek, Jane bought either a $50$-cent muffin or a $75$-cent bagel. Her total cost for the week was a whole number of dollars. How many bagels did she buy?",
     "choices": [
       "1",
       "2",
@@ -12221,8 +12234,8 @@
     "weight": 12,
     "prompt": "A right rectangular prism whose surface area and volume are numerically equal has edge lengths $\\log_{2}x, \\log_{3}x,$ and $\\log_{4}x.$ What is $x?$",
     "choices": [
-      "2\\sqrt{6}",
-      "6\\sqrt{6}",
+      "$2\\sqrt{6}$",
+      "$6\\sqrt{6}$",
       "24",
       "48",
       "576"
@@ -12257,15 +12270,15 @@
     "weight": 12,
     "prompt": "The sum of two positive numbers is $5$ times their difference. What is the ratio of the larger number to the smaller number?",
     "choices": [
-      "frac{5}{4}",
-      "frac{3}{2}",
-      "frac{9}{5}",
+      "$\\frac{5}{4}$",
+      "$\\frac{3}{2}$",
+      "$\\frac{9}{5}$",
       "2",
-      "frac{5}{2}"
+      "$\\frac{5}{2}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{3}{2}"
+    "answer": "$\\frac{3}{2}$"
   },
   {
     "id": "amio-ff11349fcc61a3a1527f1221e717cb57",

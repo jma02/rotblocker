@@ -23,7 +23,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Jerry cuts a wedge from a $6$ -cm cylinder of bologna as shown by the dashed curve. Which answer choice is closest to the volume of his wedge in cubic centimeters?",
+    "prompt": "Jerry cuts a wedge from a $6$-cm cylinder of bologna as shown by the dashed curve. Which answer choice is closest to the volume of his wedge in cubic centimeters?",
     "choices": [
       "48",
       "75",
@@ -33,7 +33,8 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "151"
+    "answer": "151",
+    "diagramPng": "assets/diagrams/003826ff123b785c14464f1af00c7587.png"
   },
   {
     "id": "amio-00fb409c1a9952651965e1a1ed914303",
@@ -99,7 +100,7 @@
     "weight": 5,
     "prompt": "What is the value of $4 \\cdot (-1+2-3+4-5+6-7+\\cdots+1000)$",
     "choices": [
-      "-10",
+      "$-10$",
       "0",
       "1",
       "500",
@@ -243,7 +244,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "At Central Middle School the $108$ students who take the AMC8 meet in the evening to talk about problems and eat an average of two cookies apiece. Walter and Gretel are baking Bonnie's Best Bar Cookies this year. Their recipe, which makes a pan of $15$ cookies, lists this items: $1\\frac{1}{2}$ cups flour, $2$ eggs, $3$ tablespoons butter, $\\frac{3}{4}$ cups sugar, and $1$ package of chocolate drops. They will make only full recipes, not partial recipes. They learn that a big concert is scheduled for the same night and attendance will be down $25\\%$. How many recipes of cookies should they make for their smaller party?",
+    "prompt": "At Central Middle School the $108$ students who take the AMC8 meet in the evening to talk about problems and eat an average of two cookies apiece. Walter and Gretel are baking Bonnie's Best Bar Cookies this year. Their recipe, which makes a pan of $15$ cookies, lists the following items: $1\\frac{1}{2}$ cups flour, $2$ eggs, $3$ tablespoons butter, $\\frac{3}{4}$ cups sugar, and $1$ package of chocolate drops. They will make only full recipes, not partial recipes. They learn that a big concert is scheduled for the same night and attendance will be down $25\\%$. How many recipes of cookies should they make for their smaller party?",
     "choices": [
       "6",
       "8",
@@ -261,7 +262,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Figure $ABCD$ is a square. Inside this square three smaller squares are drawn with the side lengths as labeled. The area of the shaded $L$ -shaped region is",
+    "prompt": "Figure $ABCD$ is a square. Inside this square three smaller squares are drawn with the side lengths as labeled. The area of the shaded $L$-shaped region is",
     "choices": [
       "7",
       "10",
@@ -298,7 +299,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "When a positive integer $N$ is fed into a machine, the output is a number calculated according to the rule shown below. For example, starting with an input of $N=7,$ the machine will output $3 \\cdot 7 +1 = 22.$ Then if the output is repeatedly inserted into the machine five more times, the final output is $26.$ \\[7 \\to 22 \\to 11 \\to 34 \\to 17 \\to 52 \\to 26\\] When the same $6$ -step process is applied to a different starting value of $N,$ the final output is $1.$ What is the sum of all such integers $N?$ \\[N \\to \\underline{\\phantom{00}} \\to \\underline{\\phantom{00}} \\to \\underline{\\phantom{00}} \\to \\underline{\\phantom{00}} \\to \\underline{\\phantom{00}} \\to 1\\]",
+    "prompt": "When a positive integer $N$ is fed into a machine, the output is a number calculated according to the rule shown below. For example, starting with an input of $N=7,$ the machine will output $3 \\cdot 7 +1 = 22.$ Then if the output is repeatedly inserted into the machine five more times, the final output is $26.$ \\[7 \\to 22 \\to 11 \\to 34 \\to 17 \\to 52 \\to 26\\] When the same $6$-step process is applied to a different starting value of $N,$ the final output is $1.$ What is the sum of all such integers $N?$ \\[N \\to \\underline{\\phantom{00}} \\to \\underline{\\phantom{00}} \\to \\underline{\\phantom{00}} \\to \\underline{\\phantom{00}} \\to \\underline{\\phantom{00}} \\to 1\\]",
     "choices": [
       "73",
       "74",
@@ -400,7 +401,8 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "13"
+    "answer": "13",
+    "diagramSvg": "assets/diagrams/0fbabfbdfa4aea9e5bf719df3c6391da.svg"
   },
   {
     "id": "amio-1012fac17ceea4a2d3ce80fa557cee0c",
@@ -429,15 +431,15 @@
     "weight": 5,
     "prompt": "In $2005$ Tycoon Tammy invested $100$ dollars for two years. During the first year her investment suffered a $15\\%$ loss, but during the second year the remaining investment showed a $20\\%$ gain. Over the two-year period, what was the change in Tammy's investment?",
     "choices": [
-      "5\\%\\text{ loss}",
-      "2\\%\\text{ loss}",
-      "1\\%\\text{ gain}",
-      "2\\% \\text{ gain}",
-      "5\\%\\text{ gain}"
+      "$5\\%\\text{ loss}$",
+      "$2\\%\\text{ loss}$",
+      "$1\\%\\text{ gain}$",
+      "$2\\% \\text{ gain}$",
+      "$5\\%\\text{ gain}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "2\\% \\text{ gain}"
+    "answer": "$2\\% \\text{ gain}$"
   },
   {
     "id": "amio-133105bc570c2300220ff71d55daed12",
@@ -481,7 +483,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "How many $3$ -digit positive integers have digits whose product equals $24$",
+    "prompt": "How many $3$-digit positive integers have digits whose product equals $24$",
     "choices": [
       "12",
       "15",
@@ -571,7 +573,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Problems 8,9 and 10 use the data found in the accompanying paragraph and table: How many of his European stamps were issued in the '80s?",
+    "prompt": "Problems 8,9 and 10 use the data found in the accompanying paragraph and table: Juan organizes the stamps in his collection by country and by the decade in which they were issued. The prices he paid for them at a stamp shop were: Brazil and France, 6 cents each; Peru, 4 cents each; and Spain, 5 cents each. (Brazil and Peru are South American countries, and France and Spain are in Europe.) How many of his European stamps were issued in the '80s?",
     "choices": [
       "9",
       "15",
@@ -581,7 +583,8 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "24"
+    "answer": "24",
+    "diagramPng": "assets/diagrams/16dffb75f3e15c4823f6db7d163398ed.png"
   },
   {
     "id": "amio-174456a04e1d0467eee87d396dfc3d26",
@@ -589,7 +592,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "At Central Middle School the 108 students who take the AMC 8 meet in the evening to talk about problems and eat an average of two cookies apiece. Walter and Gretel are baking Bonnie's Best Bar Cookies this year. Their recipe, which makes a pan of 15 cookies, lists this items: $1\\frac{1}{2}$ cups of flour, $2$ eggs, $3$ tablespoons butter, $\\frac{3}{4}$ cups sugar, and $1$ package of chocolate drops. They will make only full recipes, not partial recipes. Walter can buy eggs by the half-dozen. How many half-dozens should he buy to make enough cookies? (Some eggs and some cookies may be left over.)",
+    "prompt": "At Central Middle School the 108 students who take the AMC 8 meet in the evening to talk about problems and eat an average of two cookies apiece. Walter and Gretel are baking Bonnie's Best Bar Cookies this year. Their recipe, which makes a pan of 15 cookies, lists the following items: $1\\frac{1}{2}$ cups of flour, $2$ eggs, $3$ tablespoons butter, $\\frac{3}{4}$ cups sugar, and $1$ package of chocolate drops. They will make only full recipes, not partial recipes. Walter can buy eggs by the half-dozen. How many half-dozens should he buy to make enough cookies? (Some eggs and some cookies may be left over.)",
     "choices": [
       "1",
       "2",
@@ -773,15 +776,15 @@
     "weight": 5,
     "prompt": "A square with side length 2 and a circle share the same center. The total area of the regions that are inside the circle and outside the square is equal to the total area of the regions that are outside the circle and inside the square. What is the radius of the circle?",
     "choices": [
-      "frac{2}{\\sqrt{\\pi}}",
-      "frac{1+\\sqrt{2}}{2}",
-      "frac{3}{2}",
-      "sqrt{3}",
-      "sqrt{\\pi}"
+      "$\\frac{2}{\\sqrt{\\pi}}$",
+      "$\\frac{1+\\sqrt{2}}{2}$",
+      "$\\frac{3}{2}$",
+      "$\\sqrt{3}$",
+      "$\\sqrt{\\pi}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "frac{2}{\\sqrt{\\pi}}",
+    "answer": "$\\frac{2}{\\sqrt{\\pi}}$",
     "diagramPng": "assets/diagrams/1dcd594dbc0832613d30f8081fb44ff9.png"
   },
   {
@@ -919,15 +922,15 @@
     "weight": 5,
     "prompt": "Keiko tosses one penny and Ephraim tosses two pennies. The probability that Ephraim gets the same number of heads that Keiko gets is",
     "choices": [
-      "frac{1}{4}",
-      "frac{3}{8}",
-      "frac{1}{2}",
-      "frac{2}{3}",
-      "frac{3}{4}"
+      "$\\frac{1}{4}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{3}{8}"
+    "answer": "$\\frac{3}{8}$"
   },
   {
     "id": "amio-221f776c1bcf236c1af014a0e07b68e5",
@@ -974,8 +977,8 @@
     "weight": 5,
     "prompt": "What is the value of $1+3+5+\\cdots+2017+2019-2-4-6-\\cdots-2016-2018$",
     "choices": [
-      "-1010",
-      "-1009",
+      "$-1010$",
+      "$-1009$",
       "1008",
       "1009",
       "1010"
@@ -992,15 +995,15 @@
     "weight": 5,
     "prompt": "A circle of radius $2$ is cut into four congruent arcs. The four arcs are joined to form the star figure shown. What is the ratio of the area of the star figure to the area of the original circle?",
     "choices": [
-      "\\frac{4-\\pi}{\\pi}",
-      "\\frac{1}\\pi",
-      "\\frac{\\sqrt2}{\\pi}",
-      "\\frac{\\pi-1}{\\pi}",
-      "\\frac{3}\\pi"
+      "$\\frac{4-\\pi}{\\pi}$",
+      "$\\frac{1}{\\pi}$",
+      "$\\frac{\\sqrt{2}}{\\pi}$",
+      "$\\frac{\\pi-1}{\\pi}$",
+      "$\\frac{3}{\\pi}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "\\frac{4-\\pi}{\\pi}",
+    "answer": "$\\frac{4-\\pi}{\\pi}$",
     "diagramPng": "assets/diagrams/232276e084901140b445eb5df357bf82.png"
   },
   {
@@ -1045,7 +1048,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "In triangle $\\triangle ABC$, point $D$ divides side $\\overline{AC}$ so that $AD:DC=1:2$. Let $E$ be the midpoint of $\\overline{BD}$ and let $F$ be the point of intersection of line $\\overline{BC}$ and line $\\overline{AE}$. Given that the area of $\\triangle ABC$ is $360$, what is the area of $\\triangle EBF$",
+    "prompt": "In $\\triangle ABC$, point $D$ divides side $\\overline{AC}$ so that $AD:DC=1:2$. Let $E$ be the midpoint of $\\overline{BD}$ and let $F$ be the point of intersection of line $\\overline{BC}$ and line $\\overline{AE}$. Given that the area of $\\triangle ABC$ is $360$, what is the area of $\\triangle EBF$",
     "choices": [
       "24",
       "30",
@@ -1082,7 +1085,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "When the World Wide Web first became popular in the $1990$ s, download speeds reached a maximum of about $56$ kilobits per second. Approximately how many minutes would the download of a $4.2$ -megabyte song have taken at that speed? (Note that there are $8000$ kilobits in a megabyte.)",
+    "prompt": "When the World Wide Web first became popular in the $1990$ s, download speeds reached a maximum of about $56$ kilobits per second. Approximately how many minutes would the download of a $4.2$-megabyte song have taken at that speed? (Note that there are $8000$ kilobits in a megabyte.)",
     "choices": [
       "0.6",
       "10",
@@ -1139,10 +1142,10 @@
     "prompt": "Suppose $a$ $b$, and $c$ are nonzero real numbers, and $a+b+c=0$. What are the possible value(s) for $\\frac{a}{|a|}+\\frac{b}{|b|}+\\frac{c}{|c|}+\\frac{abc}{|abc|}$",
     "choices": [
       "0",
-      "1\\text{ and }-1",
-      "2\\text{ and }-2",
-      "0,2,\\text{ and }-2",
-      "0,1,\\text{ and }-1"
+      "$1\\text{ and }-1$",
+      "$2\\text{ and }-2$",
+      "$0,2,\\text{ and }-2$",
+      "$0,1,\\text{ and }-1$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -1226,7 +1229,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "A rectangle, with sides parallel to the $x$ -axis and $y$ -axis, has opposite vertices located at $(15, 3)$ and $(16, 5)$. A line is drawn through points $A(0, 0)$ and $B(3, 1)$. Another line is drawn through points $C(0, 10)$ and $D(2, 9)$. How many points on the rectangle lie on at least one of the two lines?",
+    "prompt": "A rectangle, with sides parallel to the $x$-axis and $y$-axis, has opposite vertices located at $(15, 3)$ and $(16, 5)$. A line is drawn through points $A(0, 0)$ and $B(3, 1)$. Another line is drawn through points $C(0, 10)$ and $D(2, 9)$. How many points on the rectangle lie on at least one of the two lines?",
     "choices": [
       "0",
       "1",
@@ -1247,15 +1250,15 @@
     "weight": 5,
     "prompt": "What is the largest power of $2$ that is a divisor of $13^4 - 11^4$",
     "choices": [
-      "mbox{ }8",
-      "mbox{ }16",
-      "mbox{ }32",
-      "mbox{ }64",
-      "mbox{ }128"
+      "8",
+      "16",
+      "32",
+      "64",
+      "128"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "mbox{ }32"
+    "answer": "32"
   },
   {
     "id": "amio-2a7e17e4bcec10c67eb73241e3c34073",
@@ -1429,10 +1432,10 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Annie and Bonnie are running laps around a $400$ -meter oval track. They started together, but Annie has pulled ahead, because she runs $25\\%$ faster than Bonnie. How many laps will Annie have run when she first passes Bonnie?",
+    "prompt": "Annie and Bonnie are running laps around a $400$-meter oval track. They started together, but Annie has pulled ahead, because she runs $25\\%$ faster than Bonnie. How many laps will Annie have run when she first passes Bonnie?",
     "choices": [
-      "1\\dfrac{1}{4}",
-      "3\\dfrac{1}{3}",
+      "$1\\dfrac{1}{4}$",
+      "$3\\dfrac{1}{3}$",
       "4",
       "5",
       "25"
@@ -1485,15 +1488,15 @@
     "weight": 5,
     "prompt": "Harry and Terry are each told to calculate $8-(2+5)$. Harry gets the correct answer. Terry ignores the parentheses and calculates $8-2+5$. If Harry's answer is $H$ and Terry's answer is $T$, what is $H-T$",
     "choices": [
-      "-10",
-      "-6",
+      "$-10$",
+      "$-6$",
       "0",
       "6",
       "10"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-10"
+    "answer": "$-10$"
   },
   {
     "id": "amio-32a315ea06bb54e38873b83b439afaef",
@@ -1521,15 +1524,15 @@
     "weight": 5,
     "prompt": "The Incredible Hulk can double the distance he jumps with each succeeding jump. If his first jump is 1 meter, the second jump is 2 meters, the third jump is 4 meters, and so on, then on which jump will he first be able to jump more than 1 kilometer (1,000 meters)?",
     "choices": [
-      "9^\\text{th}",
-      "10^\\text{th}",
-      "11^\\text{th}",
-      "12^\\text{th}",
-      "13^\\text{th}"
+      "$9^\\text{th}$",
+      "$10^\\text{th}$",
+      "$11^\\text{th}$",
+      "$12^\\text{th}$",
+      "$13^\\text{th}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "11^\\text{th}"
+    "answer": "$11^\\text{th}$"
   },
   {
     "id": "amio-339fd06b73c9ff733aadf69424662313",
@@ -1539,15 +1542,15 @@
     "weight": 5,
     "prompt": "The two circles pictured have the same center $C$. Chord $\\overline{AD}$ is tangent to the inner circle at $B$ $AC$ is $10$, and chord $\\overline{AD}$ has length $16$. What is the area between the two circles?",
     "choices": [
-      "36 \\pi",
-      "49 \\pi",
-      "64 \\pi",
-      "81 \\pi",
-      "100 \\pi"
+      "$36 \\pi$",
+      "$49 \\pi$",
+      "$64 \\pi$",
+      "$81 \\pi$",
+      "$100 \\pi$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "64 \\pi",
+    "answer": "$64 \\pi$",
     "diagramPng": "assets/diagrams/339fd06b73c9ff733aadf69424662313.png"
   },
   {
@@ -1556,7 +1559,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "How many positive integer factors of $2020$ have more than $3$ factors? (As an example, $12$ has $6$ factors, namely $1,2,3,4,6,$ and $12.$",
+    "prompt": "How many positive integer factors of $2020$ have more than $3$ factors? (As an example, $12$ has $6$ factors, namely $1,2,3,4,6,$ and $12.$)",
     "choices": [
       "6",
       "7",
@@ -1576,15 +1579,16 @@
     "weight": 5,
     "prompt": "Mr. Ramos gave a test to his class of $20$ students. The dot plot below shows the distribution of test scores. Later Mr. Ramos discovered that there was a scoring error on one of the questions. He regraded the tests, awarding some of the students $5$ extra points, which increased the median test score to $85$. What is the minimum number of students who received extra points? (Note that the median test score equals the average of the $2$ scores in the middle if the $20$ test scores are arranged in increasing order.)",
     "choices": [
-      "~2",
-      "~3",
-      "~4",
-      "~5",
-      "~6\\qquad"
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~4"
+    "answer": "4",
+    "diagramPng": "assets/diagrams/3411ecc20c66c7104fe881ee2fbc011a.png"
   },
   {
     "id": "amio-341d345fdda6d30ac8049a7ddb094bdf",
@@ -1598,11 +1602,12 @@
       "44",
       "45",
       "46",
-      "48\\qquad"
+      "48"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "42"
+    "answer": "42",
+    "diagramSvg": "assets/diagrams/341d345fdda6d30ac8049a7ddb094bdf.svg"
   },
   {
     "id": "amio-3434dedfdf83f4f86eba9ddb8bdecaf4",
@@ -1610,7 +1615,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The average age of $5$ people in a room is $30$ years. An $18$ -year-old person leaves the room. What is the average age of the four remaining people?",
+    "prompt": "The average age of $5$ people in a room is $30$ years. An $18$-year-old person leaves the room. What is the average age of the four remaining people?",
     "choices": [
       "25",
       "26",
@@ -1666,7 +1671,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Ryan got $80\\%$ of the problems correct on a $25$ -problem test, $90\\%$ on a $40$ -problem test, and $70\\%$ on a $10$ -problem test. What percent of all the problems did Ryan answer correctly?",
+    "prompt": "Ryan got $80\\%$ of the problems correct on a $25$-problem test, $90\\%$ on a $40$-problem test, and $70\\%$ on a $10$-problem test. What percent of all the problems did Ryan answer correctly?",
     "choices": [
       "64",
       "75",
@@ -1742,10 +1747,10 @@
     "weight": 5,
     "prompt": "In the given figure, hexagon $ABCDEF$ is equiangular, $ABJI$ and $FEHG$ are squares with areas $18$ and $32$ respectively, $\\triangle JBK$ is equilateral and $FE=BC$. What is the area of $\\triangle KBC$",
     "choices": [
-      "6\\sqrt{2}",
+      "$6\\sqrt{2}$",
       "9",
       "12",
-      "9\\sqrt{2}",
+      "$9\\sqrt{2}$",
       "32"
     ],
     "answerIndex": 2,
@@ -1764,7 +1769,7 @@
       "5",
       "35",
       "75",
-      "133 \\frac13",
+      "$133 \\frac{1}{3}$",
       "300"
     ],
     "answerIndex": 2,
@@ -1815,15 +1820,16 @@
     "weight": 5,
     "prompt": "Spinners $A$ and $B$ are spun. On each spinner, the arrow is equally likely to land on each number. What is the probability that the product of the two spinners' numbers is even?",
     "choices": [
-      "frac14",
-      "frac13",
-      "frac12",
-      "frac23",
-      "frac34"
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "frac23"
+    "answer": "$\\frac{2}{3}$",
+    "diagramPng": "assets/diagrams/3d9cc0d3d225ada73236208cce16a336.png"
   },
   {
     "id": "amio-3e030bf775c0f9a91e5f21ec86c353e7",
@@ -1834,9 +1840,9 @@
     "prompt": "One-inch squares are cut from the corners of this 5 inch square. What is the area in square inches of the largest square that can be fitted into the remaining space?",
     "choices": [
       "9",
-      "12\\frac{1}{2}",
+      "$12\\frac{1}{2}$",
       "15",
-      "15\\frac{1}{2}",
+      "$15\\frac{1}{2}$",
       "17"
     ],
     "answerIndex": 2,
@@ -1906,7 +1912,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Nicolas is planning to send a package to his friend Anton, who is a stamp collector. To pay for the postage, Nicolas would like to cover the package with a large number of stamps. Suppose he has a collection of $5$ -cent, $10$ -cent, and $25$ -cent stamps, with exactly $20$ of each type. What is the greatest number of stamps Nicolas can use to make exactly \\$7.10 in postage? (Note: The amount \\$7.10 corresponds to $7$ dollars and $10$ cents. One dollar is worth $100$ cents.)",
+    "prompt": "Nicolas is planning to send a package to his friend Anton, who is a stamp collector. To pay for the postage, Nicolas would like to cover the package with a large number of stamps. Suppose he has a collection of $5$-cent, $10$-cent, and $25$-cent stamps, with exactly $20$ of each type. What is the greatest number of stamps Nicolas can use to make exactly \\$7.10 in postage? (Note: The amount \\$7.10 corresponds to $7$ dollars and $10$ cents. One dollar is worth $100$ cents.)",
     "choices": [
       "45",
       "46",
@@ -1927,7 +1933,7 @@
     "prompt": "Gilda has a bag of marbles. She gives $20\\%$ of them to her friend Pedro. Then Gilda gives $10\\%$ of what is left to another friend, Ebony. Finally, Gilda gives $25\\%$ of what is now left in the bag to her brother Jimmy. What percentage of her original bag of marbles does Gilda have left for herself?",
     "choices": [
       "20",
-      "33\\frac{1}{3}",
+      "$33\\frac{1}{3}$",
       "38",
       "45",
       "54"
@@ -1944,9 +1950,9 @@
     "weight": 5,
     "prompt": "Suppose that $a * b$ means $3a-b.$ What is the value of $x$ if \\[2 * (5 * x)=1\\]",
     "choices": [
-      "frac{1}{10}",
+      "$\\frac{1}{10}$",
       "2",
-      "frac{10}{3}",
+      "$\\frac{10}{3}$",
       "10",
       "14"
     ],
@@ -2069,7 +2075,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The table shows some of the results of a survey by radiostation KACL. What percentage of the males surveyed listen to the station? $\\begin{array}{|c|c|c|c|}\\hline & Listen & Don't Listen & Total\\\\ \\hline Males &? & 26 &?\\\\ \\hline Females & 58 &? & 96\\\\ \\hline Total & 136 & 64 & 200\\\\ \\hline\\end{array}$",
+    "prompt": "The table shows some of the results of a survey by radio station KACL. What percentage of the males surveyed listen to the station? $\\begin{array}{|c|c|c|c|}\\hline & \\text{Listen} & \\text{Don't Listen} & \\text{Total}\\\\ \\hline \\text{Males} &? & 26 &?\\\\ \\hline \\text{Females} & 58 &? & 96\\\\ \\hline \\text{Total} & 136 & 64 & 200\\\\ \\hline\\end{array}$",
     "choices": [
       "39",
       "48",
@@ -2089,11 +2095,11 @@
     "weight": 5,
     "prompt": "Each of the following four large congruent squares is subdivided into combinations of congruent triangles or rectangles and is partially bolded. What percent of the total area is partially bolded?",
     "choices": [
-      "12\\frac{1}{2}",
+      "$12\\frac{1}{2}$",
       "20",
       "25",
-      "33\\frac{1}{3}",
-      "37\\frac{1}{2}"
+      "$33\\frac{1}{3}$",
+      "$37\\frac{1}{2}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -2189,7 +2195,8 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "1504"
+    "answer": "1504",
+    "diagramSvg": "assets/diagrams/47c3ea3fdcf88a901d746a48f3794189.svg"
   },
   {
     "id": "amio-4888e09eb151f913d36b00881364aa3d",
@@ -2389,7 +2396,8 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "40"
+    "answer": "40",
+    "diagramPng": "assets/diagrams/4c30110e5ed6631eddda7289a3a9a5e3.png"
   },
   {
     "id": "amio-4c757b1760aba59edc146b933c5c0edd",
@@ -2399,15 +2407,15 @@
     "weight": 5,
     "prompt": "From a regular octagon, a triangle is formed by connecting three randomly chosen vertices of the octagon. What is the probability that at least one of the sides of the triangle is also a side of the octagon?",
     "choices": [
-      "frac{2}{7}",
-      "frac{5}{42}",
-      "frac{11}{14}",
-      "frac{5}{7}",
-      "frac{6}{7}"
+      "$\\frac{2}{7}$",
+      "$\\frac{5}{42}$",
+      "$\\frac{11}{14}$",
+      "$\\frac{5}{7}$",
+      "$\\frac{6}{7}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "frac{5}{7}",
+    "answer": "$\\frac{5}{7}$",
     "diagramPng": "assets/diagrams/4c757b1760aba59edc146b933c5c0edd.png"
   },
   {
@@ -2421,8 +2429,8 @@
       "4",
       "5",
       "6",
-      "4\\sqrt3",
-      "6\\sqrt3"
+      "$4\\sqrt{3}$",
+      "$6\\sqrt{3}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -2463,7 +2471,8 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "8"
+    "answer": "8",
+    "diagramPng": "assets/diagrams/4e07ee66366b48a3f4d6408e34c61d80.png"
   },
   {
     "id": "amio-4e328ddf1c01a97f7f5563df43d1c71d",
@@ -2617,11 +2626,11 @@
     "weight": 5,
     "prompt": "In the diagram below, a diameter of each of the two smaller circles is a radius of the larger circle. If the two smaller circles have a combined area of $1$ square unit, then what is the area of the shaded region, in square units?",
     "choices": [
-      "frac{1}{4}",
-      "frac{1}{3}",
-      "frac{1}{2}",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
       "1",
-      "frac{\\pi}{2}"
+      "$\\frac{\\pi}{2}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -2634,7 +2643,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "$\\triangle$ or $\\bigcirc$ is placed in each of the nine squares in a $3$ -by- $3$ grid. Shown below is a sample configuration with three $\\triangle$ s in a line. How many configurations will have three $\\triangle$ s in a line and three $\\bigcirc$ s in a line?",
+    "prompt": "$\\triangle$ or $\\bigcirc$ is placed in each of the nine squares in a $3$-by- $3$ grid. Shown below is a sample configuration with three $\\triangle$ s in a line. How many configurations will have three $\\triangle$ s in a line and three $\\bigcirc$ s in a line?",
     "choices": [
       "39",
       "42",
@@ -2644,7 +2653,8 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "84"
+    "answer": "84",
+    "diagramPng": "assets/diagrams/565b6de5d24de6c9bafd9a37feecd8e4.png"
   },
   {
     "id": "amio-56a18605a539f3d9b5d89f89a66aba05",
@@ -2654,15 +2664,15 @@
     "weight": 5,
     "prompt": "A board game spinner is divided into three regions labeled $A$ $B$ and $C$. The probability of the arrow stopping on region $A$ is $\\frac{1}{3}$ and on region $B$ is $\\frac{1}{2}$. The probability of the arrow stopping on region $C$ is",
     "choices": [
-      "frac{1}{12}",
-      "frac{1}{6}",
-      "frac{1}{5}",
-      "frac{1}{3}",
-      "frac{2}{5}"
+      "$\\frac{1}{12}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{2}{5}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{1}{6}"
+    "answer": "$\\frac{1}{6}$"
   },
   {
     "id": "amio-56d8dd9b6af035ae9c4ab4eee90c7666",
@@ -2760,7 +2770,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The $5$ -digit number $\\underline{2}$ $\\underline{0}$ $\\underline{1}$ $\\underline{8}$ $\\underline{U}$ is divisible by $9$. What is the remainder when this number is divided by $8$",
+    "prompt": "The $5$-digit number $\\underline{2}$ $\\underline{0}$ $\\underline{1}$ $\\underline{8}$ $\\underline{U}$ is divisible by $9$. What is the remainder when this number is divided by $8$",
     "choices": [
       "1",
       "3",
@@ -2837,8 +2847,8 @@
     "prompt": "Rachelle uses 3 pounds of meat to make 8 hamburgers for her family. How many pounds of meat does she need to make 24 hamburgers for a neighbourhood picnic?",
     "choices": [
       "6",
-      "6\\dfrac23",
-      "7\\dfrac12",
+      "$6\\dfrac{2}{3}$",
+      "$7\\dfrac{1}{2}$",
       "8",
       "9"
     ],
@@ -2852,7 +2862,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "A number of students from Fibonacci Middle School are taking part in a community service project. The ratio of $8^\\text{th}$ -graders to $6^\\text{th}$ -graders is $5:3$, and the the ratio of $8^\\text{th}$ -graders to $7^\\text{th}$ -graders is $8:5$. What is the smallest number of students that could be participating in the project?",
+    "prompt": "A number of students from Fibonacci Middle School are taking part in a community service project. The ratio of $8^\\text{th}$-graders to $6^\\text{th}$-graders is $5:3$, and the ratio of $8^\\text{th}$-graders to $7^\\text{th}$-graders is $8:5$. What is the smallest number of students that could be participating in the project?",
     "choices": [
       "16",
       "40",
@@ -2961,7 +2971,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Rohan keeps a total of 90 guppies in 4 fish tanks. How many guppies are in the 4th tank?",
+    "prompt": "Rohan keeps a total of 90 guppies in 4 fish tanks. There is 1 more guppy in the 2nd tank than in the 1st tank. There are 2 more guppies in the 3rd tank than in the 2nd tank. There are 3 more guppies in the 4th tank than in the 3rd tank. How many guppies are in the 4th tank?",
     "choices": [
       "20",
       "21",
@@ -2979,7 +2989,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The product of the two $99$ -digit numbers $303,030,303,...,030,303$ and $505,050,505,...,050,505$ has thousands digit $A$ and units digit $B$. What is the sum of $A$ and $B$",
+    "prompt": "The product of the two $99$-digit numbers $303,030,303,...,030,303$ and $505,050,505,...,050,505$ has thousands digit $A$ and units digit $B$. What is the sum of $A$ and $B$",
     "choices": [
       "3",
       "5",
@@ -3094,7 +3104,7 @@
       "11",
       "12",
       "13",
-      "14\\qquad"
+      "14"
     ],
     "answerIndex": 0,
     "answerKey": "A",
@@ -3162,15 +3172,15 @@
     "weight": 5,
     "prompt": "The sum of $25$ consecutive even integers is $10,000$. What is the largest of these $25$ consecutive integers?",
     "choices": [
-      "mbox{ }360",
-      "mbox{ }388",
-      "mbox{ }412",
-      "mbox{ }416",
-      "mbox{ }424"
+      "360",
+      "388",
+      "412",
+      "416",
+      "424"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "mbox{ }424"
+    "answer": "424"
   },
   {
     "id": "amio-66b1a6836e23259827844f631cb5c8ff",
@@ -3324,11 +3334,11 @@
     "weight": 5,
     "prompt": "There is a list of seven numbers. The average of the first four numbers is $5$, and the average of the last four numbers is $8$. If the average of all seven numbers is $6\\frac{4}{7}$, then the number common to both sets of four numbers is",
     "choices": [
-      "5\\frac{3}{7}",
+      "$5\\frac{3}{7}$",
       "6",
-      "6\\frac{4}{7}",
+      "$6\\frac{4}{7}$",
       "7",
-      "7\\frac{3}{7}"
+      "$7\\frac{3}{7}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -3488,9 +3498,9 @@
     "choices": [
       "6",
       "8",
-      "3\\pi",
+      "$3\\pi$",
       "10",
-      "4\\pi"
+      "$4\\pi$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -3712,7 +3722,8 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "95000"
+    "answer": "95000",
+    "diagramPng": "assets/diagrams/78319c29f0e646bee09e421742aa9127.png"
   },
   {
     "id": "amio-78b1c4ecdf6f1f553bcd235b6e6288e9",
@@ -3937,7 +3948,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "A scientist walking through a forest recorded as integers the heights of $5$ trees standing in a row. She observed that each tree was either twice as tall or half as tall as the one to its right. Unfortunately some of her data was lost when rain fell on her notebook. Her notes are shown below, with blanks indicating the missing numbers. Based on her observations, the scientist was able to reconstruct the lost data. What was the average height of the trees, in meters? \\[ \\begin{array}{|c|c|} \\hline Tree 1 & \\underline{\\phantom{00}} meters \\\\ Tree 2 & 11 meters \\\\ Tree 3 & \\underline{\\phantom{00}} meters \\\\ Tree 4 & \\underline{\\phantom{00}} meters \\\\ Tree 5 & \\underline{\\phantom{00}} meters \\\\ \\hline Average height & \\underline{\\phantom{00}}\\text{.}2 meters \\\\ \\hline \\end{array} \\]",
+    "prompt": "A scientist walking through a forest recorded as integers the heights of $5$ trees standing in a row. She observed that each tree was either twice as tall or half as tall as the one to its right. Unfortunately some of her data was lost when rain fell on her notebook. Her notes are shown below, with blanks indicating the missing numbers. Based on her observations, the scientist was able to reconstruct the lost data. What was the average height of the trees, in meters? \\[ \\begin{array}{|c|c|} \\hline \\text{Tree 1} & \\underline{\\phantom{00}}\\ \\text{meters} \\\\ \\text{Tree 2} & 11\\ \\text{meters} \\\\ \\text{Tree 3} & \\underline{\\phantom{00}}\\ \\text{meters} \\\\ \\text{Tree 4} & \\underline{\\phantom{00}}\\ \\text{meters} \\\\ \\text{Tree 5} & \\underline{\\phantom{00}}\\ \\text{meters} \\\\ \\hline \\text{Average height} & \\underline{\\phantom{00}}\\text{.}2\\ \\text{meters} \\\\ \\hline \\end{array} \\]",
     "choices": [
       "22.2",
       "24.2",
@@ -4014,8 +4025,8 @@
     "choices": [
       "4",
       "5",
-      "4\\sqrt{2}",
-      "5\\sqrt{2}",
+      "$4\\sqrt{2}$",
+      "$5\\sqrt{2}$",
       "6"
     ],
     "answerIndex": 1,
@@ -4105,15 +4116,15 @@
     "weight": 5,
     "prompt": "A three-digit integer contains one of each of the digits $1$ $3$, and $5$. What is the probability that the integer is divisible by $5$",
     "choices": [
-      "frac{1}{6}",
-      "frac{1}{3}",
-      "frac{1}{2}",
-      "frac{2}{3}",
-      "frac{5}{6}"
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{5}{6}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{1}{3}"
+    "answer": "$\\frac{1}{3}$"
   },
   {
     "id": "amio-8113a433642e1634b3d9adc0881ee51a",
@@ -4167,7 +4178,8 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "4.5"
+    "answer": "4.5",
+    "diagramSvg": "assets/diagrams/81f4d9963c4245dff18d99703aa5264d.svg"
   },
   {
     "id": "amio-82130584ce5276aba428f15f2025d41e",
@@ -4175,7 +4187,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "On a map, a $12$ -centimeter length represents $72$ kilometers. How many kilometers does a $17$ -centimeter length represent?",
+    "prompt": "On a map, a $12$-centimeter length represents $72$ kilometers. How many kilometers does a $17$-centimeter length represent?",
     "choices": [
       "6",
       "102",
@@ -4240,7 +4252,8 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "3"
+    "answer": "3",
+    "diagramPng": "assets/diagrams/849d4729175498880d5f4f368246cc39.png"
   },
   {
     "id": "amio-8508aef2c6cf708960b74b7725150b0e",
@@ -4314,7 +4327,8 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "9"
+    "answer": "9",
+    "diagramSvg": "assets/diagrams/87fcb66edee416644da85314ea68e38b.svg"
   },
   {
     "id": "amio-8875fada47f2523313a9ca1eff64a465",
@@ -4362,9 +4376,9 @@
     "prompt": "Rectangle $DEFA$ below is a $3 \\times 4$ rectangle with $DC=CB=BA=1$. The area of the \"bat wings\" (shaded area) is",
     "choices": [
       "2",
-      "2 \\frac{1}{2}",
+      "$2 \\frac{1}{2}$",
       "3",
-      "3 \\frac{1}{2}",
+      "$3 \\frac{1}{2}$",
       "5"
     ],
     "answerIndex": 2,
@@ -4400,9 +4414,9 @@
     "prompt": "What is the value of the expression $\\sqrt{16\\sqrt{8\\sqrt{4}}}$",
     "choices": [
       "4",
-      "4\\sqrt{2}",
+      "$4\\sqrt{2}$",
       "8",
-      "8\\sqrt{2}",
+      "$8\\sqrt{2}$",
       "16"
     ],
     "answerIndex": 2,
@@ -4425,7 +4439,8 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "18"
+    "answer": "18",
+    "diagramSvg": "assets/diagrams/8d51918202f7a6a0c12ccd94dc6192d1.svg"
   },
   {
     "id": "amio-8d87abcc79e9ddb45e48d1366c6b1f6c",
@@ -4632,7 +4647,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Handy Aaron helped a neighbor $1 \\frac14$ hours on Monday, $50$ minutes on Tuesday, from 8:20 to 10:45 on Wednesday morning, and a half-hour on Friday. He is paid \\$3 per hour. How much did he earn for the week?",
+    "prompt": "Handy Aaron helped a neighbor $1 \\frac{1}{4}$ hours on Monday, $50$ minutes on Tuesday, from 8:20 to 10:45 on Wednesday morning, and a half-hour on Friday. He is paid \\$3 per hour. How much did he earn for the week?",
     "choices": [
       "8",
       "9",
@@ -4708,10 +4723,10 @@
     "prompt": "Three circular arcs of radius $5$ units bound the region shown. Arcs $AB$ and $AD$ are quarter-circles, and arc $BCD$ is a semicircle. What is the area, in square units, of the region?",
     "choices": [
       "25",
-      "10+5\\pi",
+      "$10+5\\pi$",
       "50",
-      "50+5\\pi",
-      "25\\pi"
+      "$50+5\\pi$",
+      "$25\\pi$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -4742,7 +4757,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The numbers $-2, 4, 6, 9$ and $12$ are rearranged according to these rules: What is the average of the first and last numbers?",
+    "prompt": "The numbers $-2$, $4$, $6$, $9$, and $12$ are rearranged according to these rules: (1) The largest isn't first, but it is in one of the first three places. (2) The smallest isn't last, but it is in one of the last three places. (3) The median isn't first or last. What is the average of the first and last numbers?",
     "choices": [
       "3.5",
       "5",
@@ -4760,7 +4775,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Eleven members of the Middle School Math Club each paid the same amount for a guest speaker to talk about problem solving at their math club meeting. They paid their guest speaker $\\$\\underline{1} \\underline{A} \\underline{2}$. What is the missing digit $A$ of this $3$ -digit number?",
+    "prompt": "Eleven members of the Middle School Math Club each paid the same amount for a guest speaker to talk about problem solving at their math club meeting. They paid their guest speaker $\\$\\underline{1} \\underline{A} \\underline{2}$. What is the missing digit $A$ of this $3$-digit number?",
     "choices": [
       "0",
       "1",
@@ -4797,7 +4812,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "$3 \\times 7$ rectangle is covered without overlap by 3 shapes of tiles: $2 \\times 2$ $1\\times4$, and $1\\times1$, shown below. What is the minimum possible number of $1\\times1$ tiles used?",
+    "prompt": "A $3 \\times 7$ rectangle is covered without overlap by 3 shapes of tiles: $2 \\times 2$, $1 \\times 4$, and $1 \\times 1$, shown below. What is the minimum possible number of $1 \\times 1$ tiles used?",
     "choices": [
       "1",
       "2",
@@ -4815,7 +4830,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Each principal of Lincoln High School serves exactly one $3$ -year term. What is the maximum number of principals this school could have during an $8$ -year period?",
+    "prompt": "Each principal of Lincoln High School serves exactly one $3$-year term. What is the maximum number of principals this school could have during an $8$-year period?",
     "choices": [
       "2",
       "3",
@@ -4873,8 +4888,8 @@
     "choices": [
       "6",
       "7",
-      "\\frac{419}{51}",
-      "\\frac{158}{17}",
+      "$\\frac{419}{51}$",
+      "$\\frac{158}{17}$",
       "11"
     ],
     "answerIndex": 4,
@@ -4907,11 +4922,11 @@
     "weight": 5,
     "prompt": "The grid below is to be filled with integers in such a way that the sum of the numbers in each row and the sum of the numbers in each column are the same. Four numbers are missing. The number $x$ in the lower left corner is larger than the other three missing numbers. What is the smallest possible value of $x$",
     "choices": [
-      "-1",
+      "$-1$",
       "5",
       "6",
       "8",
-      "9 \\qquad"
+      "9"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -4953,7 +4968,8 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "4"
+    "answer": "4",
+    "diagramSvg": "assets/diagrams/9f499c5720a4c8f148416abf2a43f494.svg"
   },
   {
     "id": "amio-9fa79832a2b1c62aa46a0a6f59fe4b37",
@@ -4989,7 +5005,8 @@
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "48"
+    "answer": "48",
+    "diagramPng": "assets/diagrams/9fc01ebbd8b8fec933adb21e8cf56331.png"
   },
   {
     "id": "amio-a0891fcd63c4c8b72ff77136a6448941",
@@ -5217,15 +5234,15 @@
     "weight": 5,
     "prompt": "Angie, Bridget, Carlos, and Diego are seated at random around a square table, one person to a side. What is the probability that Angie and Carlos are seated opposite each other?",
     "choices": [
-      "frac14",
-      "frac13",
-      "frac12",
-      "frac23",
-      "frac34"
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac13"
+    "answer": "$\\frac{1}{3}$"
   },
   {
     "id": "amio-a8cab20a7338028ed9a6d1bca92f50f8",
@@ -5235,11 +5252,11 @@
     "weight": 5,
     "prompt": "Marla has a large white cube that has an edge of 10 feet. She also has enough green paint to cover 300 square feet. Marla uses all the paint to create a white square centered on each face, surrounded by a green border. What is the area of one of the white squares, in square feet?",
     "choices": [
-      "5\\sqrt2",
+      "$5\\sqrt{2}$",
       "10",
-      "10\\sqrt2",
+      "$10\\sqrt{2}$",
       "50",
-      "50\\sqrt2"
+      "$50\\sqrt{2}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -5272,15 +5289,15 @@
     "weight": 5,
     "prompt": "If $\\angle A = 20^\\circ$ and $\\angle AFG =\\angle AGF$, then $\\angle B+\\angle D =$",
     "choices": [
-      "48^\\circ",
-      "60^\\circ",
-      "72^\\circ",
-      "80^\\circ",
-      "90^\\circ"
+      "$48^\\circ$",
+      "$60^\\circ$",
+      "$72^\\circ$",
+      "$80^\\circ$",
+      "$90^\\circ$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "80^\\circ",
+    "answer": "$80^\\circ$",
     "diagramPng": "assets/diagrams/a970a4108aaf1205100810f1093e577e.png"
   },
   {
@@ -5307,7 +5324,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Fifteen integers $a_1, a_2, a_3, \\dots, a_{15}$ are arranged in order on a number line. The integers are equally spaced and have the property that \\[1 \\le a_1 \\le 10, \\thickspace 13 \\le a_2 \\le 20, \\thickspace \\text{ and } \\thickspace 241 \\le a_{15}\\le 250.\\] What is the sum of digits of $a_{14}?$",
+    "prompt": "Fifteen integers $a_1, a_2, a_3, \\dots, a_{15}$ are arranged in order on a number line. The integers are equally spaced and have the property that \\[1 \\le a_1 \\le 10, \\; 13 \\le a_2 \\le 20, \\; \\text{ and } \\; 241 \\le a_{15}\\le 250.\\] What is the sum of digits of $a_{14}?$",
     "choices": [
       "8",
       "9",
@@ -5361,7 +5378,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Problems 8,9 and 10 use the data found in the accompanying paragraph and table: In dollars and cents, how much did his South American stamps issued before the ’70s cost him?",
+    "prompt": "Problems 8,9 and 10 use the data found in the accompanying paragraph and table: Juan organizes the stamps in his collection by country and by the decade in which they were issued. The prices he paid for them at a stamp shop were: Brazil and France, 6 cents each; Peru, 4 cents each; and Spain, 5 cents each. (Brazil and Peru are South American countries, and France and Spain are in Europe.) In dollars and cents, how much did his South American stamps issued before the ’70s cost him?",
     "choices": [
       "0.40",
       "1.06",
@@ -5371,7 +5388,8 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "1.06"
+    "answer": "1.06",
+    "diagramPng": "assets/diagrams/16dffb75f3e15c4823f6db7d163398ed.png"
   },
   {
     "id": "amio-ac4ead35d69de5c71100b4e772ba0132",
@@ -5381,9 +5399,9 @@
     "weight": 5,
     "prompt": "What is the value of the product \\[\\left(1+\\frac{1}{1}\\right)\\cdot\\left(1+\\frac{1}{2}\\right)\\cdot\\left(1+\\frac{1}{3}\\right)\\cdot\\left(1+\\frac{1}{4}\\right)\\cdot\\left(1+\\frac{1}{5}\\right)\\cdot\\left(1+\\frac{1}{6}\\right)?\\]",
     "choices": [
-      "frac{7}{6}",
-      "frac{4}{3}",
-      "frac{7}{2}",
+      "$\\frac{7}{6}$",
+      "$\\frac{4}{3}$",
+      "$\\frac{7}{2}$",
       "7",
       "8"
     ],
@@ -5443,7 +5461,8 @@
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "23"
+    "answer": "23",
+    "diagramSvg": "assets/diagrams/ad4f47d0b81e3f02818803f7c4fa04b2.svg"
   },
   {
     "id": "amio-ad9959ee3bf4bd73914c282efd0919d4",
@@ -5469,17 +5488,17 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Lola, Lolo, Tiya, and Tiyo participated in a ping pong tournament. Each player competed against each of the other three players exactly twice. Shown below are the win-loss records for the players. The numbers $1$ and $0$ represent a win or loss, respectively. For example, Lola won five matches and lost the fourth match. What was Tiyo’s win-loss record? \\[\\begin{array}{c | c} Player & Result \\\\ \\hline Lola & \\texttt{111011}\\\\ Lolo & \\texttt{101010}\\\\ Tiya & \\texttt{010100}\\\\ Tiyo & \\texttt{??????} \\end{array}\\]",
+    "prompt": "Lola, Lolo, Tiya, and Tiyo participated in a ping pong tournament. Each player competed against each of the other three players exactly twice. Shown below are the win-loss records for the players. The numbers $1$ and $0$ represent a win or loss, respectively. For example, Lola won five matches and lost the fourth match. What was Tiyo’s win-loss record? \\[\\begin{array}{c | c} \\text{Player} & \\text{Result} \\\\ \\hline \\text{Lola} & \\texttt{111011}\\\\ \\text{Lolo} & \\texttt{101010}\\\\ \\text{Tiya} & \\texttt{010100}\\\\ \\text{Tiyo} & \\texttt{??????} \\end{array}\\]",
     "choices": [
-      "texttt{000101}",
-      "texttt{001001}",
-      "texttt{010000}",
-      "texttt{010101}",
-      "texttt{011000}"
+      "$\\texttt{000101}$",
+      "$\\texttt{001001}$",
+      "$\\texttt{010000}$",
+      "$\\texttt{010101}$",
+      "$\\texttt{011000}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "texttt{000101}"
+    "answer": "$\\texttt{000101}$"
   },
   {
     "id": "amio-ae52d310595f21cd11ae8978ddb5dd15",
@@ -5579,15 +5598,15 @@
     "weight": 5,
     "prompt": "The two spinners shown are spun once and each lands on one of the numbered sectors. What is the probability that the sum of the numbers in the two sectors is prime?",
     "choices": [
-      "frac{1}{2}",
-      "frac{2}{3}",
-      "frac{3}{4}",
-      "frac{7}{9}",
-      "frac{5}{6}"
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{7}{9}$",
+      "$\\frac{5}{6}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "frac{7}{9}",
+    "answer": "$\\frac{7}{9}$",
     "diagramPng": "assets/diagrams/b000b2d39930b61432030f2eeffada0c.png"
   },
   {
@@ -5632,7 +5651,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Problems 8, 9 and 10 use the data found in the accompanying paragraph and figures Four friends, Art, Roger, Paul and Trisha, bake cookies, and all cookies have the same thickness. The shapes of the cookies differ, as shown. $\\circ$ Art's cookies are trapezoids: $\\circ$ Roger's cookies are rectangles: $\\circ$ Paul's cookies are parallelograms: $\\circ$ Trisha's cookies are triangles: How many cookies will be in one batch of Trisha's cookies?",
+    "prompt": "Problems 8, 9 and 10 use the data found in the accompanying paragraph and figures Four friends, Art, Roger, Paul and Trisha, bake cookies, and all cookies have the same thickness. The shapes of the cookies differ, as shown. $\\circ$ Art's cookies are trapezoids: $\\circ$ Roger's cookies are rectangles: $\\circ$ Paul's cookies are parallelograms: $\\circ$ Trisha's cookies are triangles: Each friend uses the same amount of dough, and Art makes exactly $12$ cookies. How many cookies will be in one batch of Trisha's cookies?",
     "choices": [
       "10",
       "12",
@@ -5642,7 +5661,8 @@
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "24"
+    "answer": "24",
+    "diagramPng": "assets/diagrams/4c30110e5ed6631eddda7289a3a9a5e3.png"
   },
   {
     "id": "amio-b164f54f17fca6079dbf7a8066cf165a",
@@ -5704,7 +5724,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The $7$ -digit numbers $\\underline{7} \\underline{4} \\underline{A} \\underline{5} \\underline{2} \\underline{B} \\underline{1}$ and $\\underline{3} \\underline{2} \\underline{6} \\underline{A} \\underline{B} \\underline{4} \\underline{C}$ are each multiples of $3$. Which of the following could be the value of $C$",
+    "prompt": "The $7$-digit numbers $\\underline{7} \\underline{4} \\underline{A} \\underline{5} \\underline{2} \\underline{B} \\underline{1}$ and $\\underline{3} \\underline{2} \\underline{6} \\underline{A} \\underline{B} \\underline{4} \\underline{C}$ are each multiples of $3$. Which of the following could be the value of $C$",
     "choices": [
       "1",
       "2",
@@ -5724,15 +5744,15 @@
     "weight": 5,
     "prompt": "What is the minimum possible product of three different numbers of the set $\\{-8,-6,-4,0,3,5,7\\}$",
     "choices": [
-      "-336",
-      "-280",
-      "-210",
-      "-192",
+      "$-336$",
+      "$-280$",
+      "$-210$",
+      "$-192$",
       "0"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "-280"
+    "answer": "$-280$"
   },
   {
     "id": "amio-b494dac183ac9d7a645c2e3f31d09d40",
@@ -5758,7 +5778,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The diagram represents a $7$ -foot-by- $7$ -foot floor that is tiled with $1$ -square-foot black tiles and white tiles. Notice that the corners have white tiles. If a $15$ -foot-by- $15$ -foot floor is to be tiled in the same manner, how many white tiles will be needed?",
+    "prompt": "The diagram represents a $7$-foot-by- $7$-foot floor that is tiled with $1$-square-foot black tiles and white tiles. Notice that the corners have white tiles. If a $15$-foot-by- $15$-foot floor is to be tiled in the same manner, how many white tiles will be needed?",
     "choices": [
       "49",
       "57",
@@ -5805,7 +5825,8 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "6"
+    "answer": "6",
+    "diagramPng": "assets/diagrams/b77122d66422e1435be10bb4a9cd445b.png"
   },
   {
     "id": "amio-b81007ad053def7172abcecdcb564526",
@@ -5909,7 +5930,7 @@
       "4.2",
       "4.5",
       "4.8",
-      "5\\$ (NOTE: THE FOLLOWING DIAGRAM WAS NOT SHOWN DURING THE ACTUAL EXAM, BUT IS NOW HERE TO GUIDE STUDENTS IN PICTURING THE PROBLEM)"
+      "5"
     ],
     "answerIndex": 1,
     "answerKey": "B",
@@ -5941,15 +5962,15 @@
     "weight": 5,
     "prompt": "In an All-Area track meet, $216$ sprinters enter a $100-$ meter dash competition. The track has $6$ lanes, so only $6$ sprinters can compete at a time. At the end of each race, the five non-winners are eliminated, and the winner will compete again in a later race. How many races are needed to determine the champion sprinter?",
     "choices": [
-      "mbox{ }36",
-      "mbox{ }42",
-      "mbox{ }43",
-      "mbox{ }60",
-      "mbox{ }72"
+      "36",
+      "42",
+      "43",
+      "60",
+      "72"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "mbox{ }43"
+    "answer": "43"
   },
   {
     "id": "amio-bbbe100197914c04d2f9e1fe6c9d2062",
@@ -5975,7 +5996,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Ms.Osborne asks each student in her class to draw a rectangle with integer side lengths and a perimeter of $50$ units. All of her students calculate the area of the rectangle they draw. What is the difference between the largest and smallest possible areas of the rectangles?",
+    "prompt": "Ms. Osborne asks each student in her class to draw a rectangle with integer side lengths and a perimeter of $50$ units. All of her students calculate the area of the rectangle they draw. What is the difference between the largest and smallest possible areas of the rectangles?",
     "choices": [
       "76",
       "120",
@@ -5993,7 +6014,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Blake and Jenny each took four $100$ -point tests. Blake averaged $78$ on the four tests. Jenny scored $10$ points higher than Blake on the first test, $10$ points lower than him on the second test, and $20$ points higher on both the third and fourth tests. What is the difference between Jenny's average and Blake's average on these four tests?",
+    "prompt": "Blake and Jenny each took four $100$-point tests. Blake averaged $78$ on the four tests. Jenny scored $10$ points higher than Blake on the first test, $10$ points lower than him on the second test, and $20$ points higher on both the third and fourth tests. What is the difference between Jenny's average and Blake's average on these four tests?",
     "choices": [
       "10",
       "15",
@@ -6013,15 +6034,15 @@
     "weight": 5,
     "prompt": "In triangle $CAT$, we have $\\angle ACT =\\angle ATC$ and $\\angle CAT = 36^\\circ$. If $\\overline{TR}$ bisects $\\angle ATC$, then $\\angle CRT =$",
     "choices": [
-      "36^\\circ",
-      "54^\\circ",
-      "72^\\circ",
-      "90^\\circ",
-      "108^\\circ"
+      "$36^\\circ$",
+      "$54^\\circ$",
+      "$72^\\circ$",
+      "$90^\\circ$",
+      "$108^\\circ$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "72^\\circ",
+    "answer": "$72^\\circ$",
     "diagramPng": "assets/diagrams/bc6071e2be1d8a1ef18d884220f682f5.png"
   },
   {
@@ -6124,15 +6145,15 @@
     "weight": 5,
     "prompt": "A circle with radius $1$ is inscribed in a square and circumscribed about another square as shown. Which fraction is closest to the ratio of the circle's shaded area to the area between the two squares?",
     "choices": [
-      "frac{1}2",
+      "$\\frac{1}{2}$",
       "1",
-      "frac{3}2",
+      "$\\frac{3}{2}$",
       "2",
-      "frac{5}2"
+      "$\\frac{5}{2}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "frac{1}2",
+    "answer": "$\\frac{1}{2}$",
     "diagramPng": "assets/diagrams/c07e0f361226ee2ecaf0cba4194e73f0.png"
   },
   {
@@ -6161,15 +6182,15 @@
     "weight": 5,
     "prompt": "Which of these numbers is less than its reciprocal?",
     "choices": [
-      "-2",
-      "-1",
+      "$-2$",
+      "$-1$",
       "0",
       "1",
       "2"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "-2"
+    "answer": "$-2$"
   },
   {
     "id": "amio-c2aeffdb227e85d68bc4ca7aee207ad9",
@@ -6493,7 +6514,7 @@
     "choices": [
       "m+3n",
       "3m-n",
-      "3m^2 + 3n^2",
+      "$3m^2 + 3n^2$",
       "(nm + 3)^2",
       "3mn"
     ],
@@ -6543,7 +6564,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Isosceles $\\triangle ABC$ has equal side lengths $AB$ and $BC$. In the figure below, segments are drawn parallel to $\\overline{AC}$ so that the shaded portions of $\\triangle ABC$ have the same area. The heights of the two unshaded portions are 11 and 5 units, respectively. What is the height of $h$ of $\\triangle ABC$",
+    "prompt": "Isosceles $\\triangle ABC$ has equal side lengths $AB$ and $BC$. In the figure below, segments are drawn parallel to $\\overline{AC}$ so that the shaded portions of $\\triangle ABC$ have the same area. The heights of the two unshaded portions are 11 and 5 units, respectively. What is the height $h$ of $\\triangle ABC$?",
     "choices": [
       "14.6",
       "14.8",
@@ -6553,7 +6574,8 @@
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "14.6"
+    "answer": "14.6",
+    "diagramPng": "assets/diagrams/c9614b6913980d73802c6d63b24149b8.png"
   },
   {
     "id": "amio-c9c1bfde64dd08019d5ead2e3834e536",
@@ -6607,7 +6629,8 @@
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "13"
+    "answer": "13",
+    "diagramSvg": "assets/diagrams/cad911729b80c8add923db40434bca12.svg"
   },
   {
     "id": "amio-caf502d71847dfc7453032584c0a7882",
@@ -6621,7 +6644,7 @@
       "2",
       "3",
       "4",
-      "~5"
+      "5"
     ],
     "answerIndex": 2,
     "answerKey": "C",
@@ -6669,7 +6692,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Paul owes Paula $35$ cents and has a pocket full of $5$ -cent coins, $10$ -cent coins, and $25$ -cent coins that he can use to pay her. What is the difference between the largest and the smallest number of coins he can use to pay her?",
+    "prompt": "Paul owes Paula $35$ cents and has a pocket full of $5$-cent coins, $10$-cent coins, and $25$-cent coins that he can use to pay her. What is the difference between the largest and the smallest number of coins he can use to pay her?",
     "choices": [
       "1",
       "2",
@@ -6742,7 +6765,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The taxi fare in Gotham City is \\$2.40 for the first $\\frac12$ mile and additional mileage charged at the rate \\$0.20 for each additional 0.1 mile. You plan to give the driver a \\$2 tip. How many miles can you ride for \\$10?",
+    "prompt": "The taxi fare in Gotham City is \\$2.40 for the first $\\frac{1}{2}$ mile and additional mileage charged at the rate \\$0.20 for each additional 0.1 mile. You plan to give the driver a \\$2 tip. How many miles can you ride for \\$10?",
     "choices": [
       "3.0",
       "3.25",
@@ -6817,15 +6840,15 @@
     "weight": 5,
     "prompt": "A collector offers to buy state quarters for 2000% of their face value. At that rate how much will Bryden get for his four state quarters?",
     "choices": [
-      "20\\text{ dollars}",
-      "50\\text{ dollars}",
-      "200\\text{ dollars}",
-      "500\\text{ dollars}",
-      "2000\\text{ dollars}"
+      "$20\\text{ dollars}$",
+      "$50\\text{ dollars}$",
+      "$200\\text{ dollars}$",
+      "$500\\text{ dollars}$",
+      "$2000\\text{ dollars}$"
     ],
     "answerIndex": 0,
     "answerKey": "A",
-    "answer": "20\\text{ dollars}"
+    "answer": "$20\\text{ dollars}$"
   },
   {
     "id": "amio-d1fdfbca4170bee661e145fdb491b6fb",
@@ -6910,15 +6933,15 @@
     "weight": 5,
     "prompt": "Eight points are spaced around at intervals of one unit around a $2 \\times 2$ square, as shown. Two of the $8$ points are chosen at random. What is the probability that the two points are one unit apart?",
     "choices": [
-      "frac{1}{4}",
-      "frac{2}{7}",
-      "frac{4}{11}",
-      "frac{1}{2}",
-      "frac{4}{7}"
+      "$\\frac{1}{4}$",
+      "$\\frac{2}{7}$",
+      "$\\frac{4}{11}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{4}{7}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{2}{7}",
+    "answer": "$\\frac{2}{7}$",
     "diagramPng": "assets/diagrams/d66f05b0a1b2641cf2e2a46bac7d1759.png"
   },
   {
@@ -7004,13 +7027,13 @@
     "choices": [
       "2:3",
       "3:2",
-      "6:\\pi",
-      "9:\\pi",
-      "30:\\pi"
+      "$6:\\pi$",
+      "$9:\\pi$",
+      "$30:\\pi$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "6:\\pi",
+    "answer": "$6:\\pi$",
     "diagramPng": "assets/diagrams/da09e5a581bd1a4cbe8ed077f0c5669d.png"
   },
   {
@@ -7021,11 +7044,11 @@
     "weight": 5,
     "prompt": "The area of triangle $XYZ$ is 8 square inches. Points $A$ and $B$ are midpoints of congruent segments $\\overline{XY}$ and $\\overline{XZ}$. Altitude $\\overline{XC}$ bisects $\\overline{YZ}$. The area (in square inches) of the shaded region is",
     "choices": [
-      "1\\frac{1}2",
+      "$1\\frac{1}{2}$",
       "2",
-      "2\\frac{1}2",
+      "$2\\frac{1}{2}$",
       "3",
-      "3\\frac{1}2"
+      "$3\\frac{1}{2}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
@@ -7038,17 +7061,17 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "At a party there are only single women and married men with their wives. The probability that a randomly selected woman is single is $\\frac25$. What fraction of the people in the room are married men?",
+    "prompt": "At a party there are only single women and married men with their wives. The probability that a randomly selected woman is single is $\\frac{2}{5}$. What fraction of the people in the room are married men?",
     "choices": [
-      "frac13",
-      "frac38",
-      "frac25",
-      "frac{5}{12}",
-      "frac35"
+      "$\\frac{1}{3}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{5}{12}$",
+      "$\\frac{3}{5}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac38"
+    "answer": "$\\frac{3}{8}$"
   },
   {
     "id": "amio-dc1afd732dd393ab5bab2c2e944412f9",
@@ -7058,15 +7081,15 @@
     "weight": 5,
     "prompt": "An ATM password at Fred's Bank is composed of four digits from $0$ to $9$, with repeated digits allowable. If no password may begin with the sequence $9,1,1,$ then how many passwords are possible?",
     "choices": [
-      "mbox{ }30",
-      "mbox{ }7290",
-      "mbox{ }9000",
-      "mbox{ }9990",
-      "mbox{ }9999"
+      "30",
+      "7290",
+      "9000",
+      "9990",
+      "9999"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "mbox{ }9990"
+    "answer": "9990"
   },
   {
     "id": "amio-dc5b7f0aa5f81ceaad824ac9900595cb",
@@ -7150,15 +7173,15 @@
     "weight": 5,
     "prompt": "The figure below shows a polygon $ABCDEFGH$, consisting of rectangles and right triangles. When cut out and folded on the dotted lines, the polygon forms a triangular prism. Suppose that $AH = EF = 8$ and $GH = 14$. What is the volume of the prism?",
     "choices": [
-      "~112",
-      "~128",
-      "~192",
-      "~240",
-      "~288"
+      "112",
+      "128",
+      "192",
+      "240",
+      "288"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "~192"
+    "answer": "192"
   },
   {
     "id": "amio-dd83a36aaf2e88f7ee9ac8969310ed49",
@@ -7239,7 +7262,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Everyday at school, Jo climbs a flight of $6$ stairs. Jo can take the stairs $1$ $2$, or $3$ at a time. For example, Jo could climb $3$, then $1$, then $2$. In how many ways can Jo climb the stairs?",
+    "prompt": "Every day at school, Jo climbs a flight of $6$ stairs. Jo can take the stairs $1$ $2$, or $3$ at a time. For example, Jo could climb $3$, then $1$, then $2$. In how many ways can Jo climb the stairs?",
     "choices": [
       "13",
       "18",
@@ -7313,15 +7336,15 @@
     "weight": 5,
     "prompt": "Square $ABCD$ has sides of length 3. Segments $CM$ and $CN$ divide the square's area into three equal parts. How long is segment $CM$",
     "choices": [
-      "sqrt{10}",
-      "sqrt{12}",
-      "sqrt{13}",
-      "sqrt{14}",
-      "sqrt{15}"
+      "$\\sqrt{10}$",
+      "$\\sqrt{12}$",
+      "$\\sqrt{13}$",
+      "$\\sqrt{14}$",
+      "$\\sqrt{15}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "sqrt{13}",
+    "answer": "$\\sqrt{13}$",
     "diagramPng": "assets/diagrams/e01c55a61fe64e3a704ffa77512cac11.png"
   },
   {
@@ -7441,15 +7464,15 @@
     "weight": 5,
     "prompt": "Loki, Moe, Nick and Ott are good friends. Ott had no money, but the others did. Moe gave Ott one-fifth of his money, Loki gave Ott one-fourth of his money and Nick gave Ott one-third of his money. Each gave Ott the same amount of money. What fractional part of the group's money does Ott now have?",
     "choices": [
-      "frac{1}{10}",
-      "frac{1}{4}",
-      "frac{1}{3}",
-      "frac{2}{5}",
-      "frac{1}{2}"
+      "$\\frac{1}{10}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{1}{2}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{1}{4}"
+    "answer": "$\\frac{1}{4}$"
   },
   {
     "id": "amio-e54949986cda7aa74f2fef2cf43d547a",
@@ -7513,15 +7536,15 @@
     "weight": 5,
     "prompt": "A corner of a tiled floor is shown. If the entire floor is tiled in this way and each of the four corners looks like this one, then what fraction of the tiled floor is made of darker tiles?",
     "choices": [
-      "frac{1}3",
-      "frac{4}9",
-      "frac{1}2",
-      "frac{5}9",
-      "frac{5}8"
+      "$\\frac{1}{3}$",
+      "$\\frac{4}{9}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{5}{9}$",
+      "$\\frac{5}{8}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac{4}9"
+    "answer": "$\\frac{4}{9}$"
   },
   {
     "id": "amio-e69a7d3fbd32bdd67a5dd7cb0b6f88b3",
@@ -7602,7 +7625,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Problems 14, 15 and 16 involve Mrs. Reed's English assignment. A Novel Assignment The students in Mrs. Reed's English class are reading the same $760$ -page novel. Three friends, Alice, Bob and Chandra, are in the class. Alice reads a page in 20 seconds, Bob reads a page in $45$ seconds and Chandra reads a page in $30$ seconds. If Bob and Chandra both read the whole book, Bob will spend how many more seconds reading than Chandra?",
+    "prompt": "Problems 14, 15 and 16 involve Mrs. Reed's English assignment. A Novel Assignment The students in Mrs. Reed's English class are reading the same $760$-page novel. Three friends, Alice, Bob and Chandra, are in the class. Alice reads a page in 20 seconds, Bob reads a page in $45$ seconds and Chandra reads a page in $30$ seconds. If Bob and Chandra both read the whole book, Bob will spend how many more seconds reading than Chandra?",
     "choices": [
       "7,600",
       "11,400",
@@ -7641,15 +7664,15 @@
     "weight": 5,
     "prompt": "Abe holds 1 green and 1 red jelly bean in his hand. Bob holds 1 green, 1 yellow, and 2 red jelly beans in his hand. Each randomly picks a jelly bean to show the other. What is the probability that the colors match?",
     "choices": [
-      "frac14",
-      "frac13",
-      "frac38",
-      "frac12",
-      "frac23"
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "frac38"
+    "answer": "$\\frac{3}{8}$"
   },
   {
     "id": "amio-eab82210c19c1cbf121c0699123c0438",
@@ -7712,17 +7735,17 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Six pepperoni circles will exactly fit across the diameter of a $12$ -inch pizza when placed. If a total of $24$ circles of pepperoni are placed on this pizza without overlap, what fraction of the pizza is covered by pepperoni?",
+    "prompt": "Six pepperoni circles will exactly fit across the diameter of a $12$-inch pizza when placed. If a total of $24$ circles of pepperoni are placed on this pizza without overlap, what fraction of the pizza is covered by pepperoni?",
     "choices": [
-      "frac 12",
-      "frac 23",
-      "frac 34",
-      "frac 56",
-      "frac 78"
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{5}{6}$",
+      "$\\frac{7}{8}$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "frac 23"
+    "answer": "$\\frac{2}{3}$"
   },
   {
     "id": "amio-ec3790c1839d1dd100f3d31fc1f976ce",
@@ -7730,7 +7753,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "A game board consists of $64$ squares that alternate in color between black and white. The figure below shows square $P$ in the bottom row and square $Q$ in the top row. A marker is placed at $P.$ A step consists of moving the marker onto one of the adjoining white squares in the row above. How many $7$ -step paths are there from $P$ to $Q?$ (The figure shows a sample path.)",
+    "prompt": "A game board consists of $64$ squares that alternate in color between black and white. The figure below shows square $P$ in the bottom row and square $Q$ in the top row. A marker is placed at $P.$ A step consists of moving the marker onto one of the adjoining white squares in the row above. How many $7$-step paths are there from $P$ to $Q?$ (The figure shows a sample path.)",
     "choices": [
       "28",
       "30",
@@ -7911,9 +7934,9 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Consider these two operations: \\begin{align*} a \\, \\blacklozenge \\, b &= a^2 - b^2\\\\ a \\, \\bigstar \\, b &= (a - b)^2 \\end{align*} What is the output of $(5 \\, \\blacklozenge \\, 3) \\, \\bigstar \\, 6?$",
+    "prompt": "Consider these two operations: \\[\\begin{aligned} a \\, \\blacklozenge \\, b &= a^2 - b^2\\\\ a \\, \\bigstar \\, b &= (a - b)^2 \\end{aligned}\\] What is the output of $(5 \\, \\blacklozenge \\, 3) \\, \\bigstar \\, 6?$",
     "choices": [
-      "{-}20",
+      "${-}20$",
       "4",
       "16",
       "100",
@@ -7966,17 +7989,18 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "Problems 8,9 and 10 use the data found in the accompanying paragraph and table: The average price of his '70s stamps is closest to",
+    "prompt": "Problems 8,9 and 10 use the data found in the accompanying paragraph and table: Juan organizes the stamps in his collection by country and by the decade in which they were issued. The prices he paid for them at a stamp shop were: Brazil and France, 6 cents each; Peru, 4 cents each; and Spain, 5 cents each. (Brazil and Peru are South American countries, and France and Spain are in Europe.) The average price of his '70s stamps is closest to",
     "choices": [
-      "3.5 \\text{ cents}",
-      "4 \\text{ cents}",
-      "4.5 \\text{ cents}",
-      "5 \\text{ cents}",
-      "5.5 \\text{ cents}"
+      "$3.5 \\text{ cents}$",
+      "$4 \\text{ cents}$",
+      "$4.5 \\text{ cents}$",
+      "$5 \\text{ cents}$",
+      "$5.5 \\text{ cents}$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "5.5 \\text{ cents}"
+    "answer": "$5.5 \\text{ cents}$",
+    "diagramPng": "assets/diagrams/16dffb75f3e15c4823f6db7d163398ed.png"
   },
   {
     "id": "amio-f807402c8b794087eddf48dfc2700f7d",
@@ -8002,7 +8026,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The one-way routes connecting towns $A,M,C,X,Y,$ and $Z$ are shown in the figure below(not drawn to scale).The distances in kilometers along each route are marked. Traveling along these routes, what is the shortest distance from A to Z in kilometers?",
+    "prompt": "The one-way routes connecting towns $A,M,C,X,Y,$ and $Z$ are shown in the figure below (not drawn to scale). The distances in kilometers along each route are marked. Traveling along these routes, what is the shortest distance from A to Z in kilometers?",
     "choices": [
       "28",
       "29",
@@ -8020,7 +8044,7 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "The letters $A$ $B$ $C$ and $D$ represent digits. If $\\begin{array}{ccc}&A&B\\\\ +&C&A\\\\ \\hline &D&A\\end{array}$ and $\\begin{array}{ccc}&A&B\\\\ -&C&A\\\\ \\hline &&A\\end{array}$,what digit does $D$ represent?",
+    "prompt": "The letters $A$ $B$ $C$ and $D$ represent digits. If $\\begin{array}{ccc}&A&B\\\\ +&C&A\\\\ \\hline &D&A\\end{array}$ and $\\begin{array}{ccc}&A&B\\\\ -&C&A\\\\ \\hline &&A\\end{array}$, what digit does $D$ represent?",
     "choices": [
       "5",
       "6",
@@ -8111,17 +8135,17 @@
     "contest": "amc8",
     "label": "AoPS (AMIO) - AMC 8",
     "weight": 5,
-    "prompt": "A chess king is said to attack all the squares one step away from it, horizontally, vertically, or diagonally. For instance, a king on the center square of a $3$ $3$ grid attacks all $8$ other squares, as shown below. Suppose a white king and a black king are placed on different squares of a $3$ $3$ grid so that they do not attack each other. In how many ways can this be done?",
+    "prompt": "A chess king is said to attack all the squares one step away from it, horizontally, vertically, or diagonally. For instance, a king on the center square of a $3\\times3$ grid attacks all $8$ other squares, as shown below. Suppose a white king and a black king are placed on different squares of a $3\\times3$ grid so that they do not attack each other. In how many ways can this be done?",
     "choices": [
       "20",
       "24",
       "27",
       "28",
-      "32\\$ ~Diagram by Andrei.martynau"
+      "32"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "32\\$ ~Diagram by Andrei.martynau",
+    "answer": "32",
     "diagramPng": "assets/diagrams/fe18aad6e52038198dd0f9c9c01eecef.png"
   },
   {
@@ -8132,8 +8156,8 @@
     "weight": 5,
     "prompt": "The sales tax rate in Rubenenkoville is 6%. During a sale at the Bergville Coat Closet, the price of a coat is discounted 20% from its \\$90.00 price. Two clerks, Jack and Jill, calculate the bill independently. Jack rings up \\$90.00 and adds 6% sales tax, then subtracts 20% from this total. Jill rings up \\$90.00, subtracts 20% of the price, then adds 6% of the discounted price for sales tax. What is Jack's total minus Jill's total?",
     "choices": [
-      "-\\$ 1.06",
-      "-\\$ 0.53",
+      "-\\$1.06",
+      "-\\$0.53",
       "0",
       "0.53",
       "1.06"

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 310" role="img" aria-labelledby="title">
+  <title id="title">Right trapezoid ABCD with point E</title>
+  <g fill="none" stroke="#111" stroke-width="3" stroke-linejoin="round">
+    <path d="M55 55H240L425 240H55Z"/><path d="M240 55V240"/>
+    <path d="M55 222H73V240"/>
+  </g>
+  <g fill="#111" font-family="serif" font-size="24" font-style="italic">
+    <text x="30" y="45">A</text><text x="225" y="45">B</text><text x="426" y="270">C</text><text x="28" y="270">D</text><text x="247" y="270">E</text>
+  </g>
+  <g fill="#111" font-family="serif" font-size="22">
+    <text x="25" y="155">3</text><text x="140" y="45">3</text><text x="230" y="300">6</text>
+  </g>
+</svg>

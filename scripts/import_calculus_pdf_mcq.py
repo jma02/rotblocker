@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 """
-Build a high-confidence calculus MCQ bank from:
+Extract an unverified research dataset from:
   third_party/calculus_bank/3000_solved_problems_in_calculus.pdf
 
 Output:
-  data/calculus_mcq.json
-  data/calculus_mcq_report.json
+  data/calculus_mcq_unverified.json
+  data/calculus_mcq_unverified_report.json
 
 Notes:
-- This parser is intentionally strict. It only keeps problems where a
-  scalar numeric answer can be extracted with good confidence.
-- Ambiguous items (proofs, equation-writing prompts, etc.) are filtered out.
+- The source is a solved-problem book, not a multiple-choice bank.
+- Every distractor produced here is synthetic.
+- OCR-derived scalar answers are not reliable enough for production use.
+- Output is deliberately isolated from the shipped calculus bank and requires
+  independent source verification before any row may be promoted.
 """
 
 from __future__ import annotations
@@ -33,8 +35,8 @@ except Exception as exc:  # pragma: no cover
     )
 
 SRC = Path("third_party/calculus_bank/3000_solved_problems_in_calculus.pdf")
-OUT = Path("data/calculus_mcq.json")
-REPORT = Path("data/calculus_mcq_report.json")
+OUT = Path("data/calculus_mcq_unverified.json")
+REPORT = Path("data/calculus_mcq_unverified_report.json")
 SEED = 1729
 
 SEGMENT_RE = re.compile(r"(?m)^\s*(\d{1,2}\.\d{1,3})\s+")
@@ -309,7 +311,8 @@ def build_dataset(segments: Iterable[Segment]) -> tuple[list[dict], dict]:
                 "id": pid,
                 "type": "mcq",
                 "contest": "calculus",
-                "label": "Schaum (3000 Solved Problems) - Calculus",
+                "label": "Unverified Schaum extraction - Calculus",
+                "provenanceStatus": "unverified_synthetic_choices",
                 "weight": 8,
                 "prompt": prompt,
                 "choices": choices,
@@ -330,10 +333,13 @@ def build_dataset(segments: Iterable[Segment]) -> tuple[list[dict], dict]:
         "segments_total": len(list(segments)) if not isinstance(segments, list) else len(segments),
         "mcq_count": len(out),
         "drop_reasons": reasons,
+        "provenance_status": "unverified_synthetic_choices",
         "notes": [
-            "Parser keeps only high-confidence scalar-answer items.",
+            "The source contains worked problems but no multiple-choice options.",
+            "All distractors are synthesized heuristically.",
+            "Extracted scalar answers can be wrong when OCR captures an intermediate value.",
             "Two-column OCR noise in source PDF limits recoverable coverage.",
-            "Generated distractors are heuristic; review before production use.",
+            "Do not promote rows without independent prompt, answer, and choice verification.",
         ],
     }
     return out, report

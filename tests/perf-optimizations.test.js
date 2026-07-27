@@ -51,8 +51,9 @@ test("enabling a disabled pool lazy-loads its dataset", () => {
 
 test("rendering reuses precomputed prompt and choice text", () => {
   const source = readAppSource();
-  assert.match(source, /renderMathText\(problemEl, getSanitizedPrompt\(currentProblem\)\)/);
-  assert.match(source, /const normalizedChoices = getNormalizedChoices\(currentProblem\)/);
+  assert.match(source, /const renderedProblem = currentProblem/);
+  assert.match(source, /renderMathText\(problemEl, getSanitizedPrompt\(renderedProblem\), \{/);
+  assert.match(source, /const normalizedChoices = getNormalizedChoices\(renderedProblem\)/);
   assert.match(source, /const choices = getSanitizedChoices\(currentProblem\)/);
 });
 
@@ -99,8 +100,47 @@ test("diagram image uses lazy loading and async decoding", () => {
 test("release packaging excludes legacy entry html and asy sources", () => {
   const script = readText("scripts/build-release.sh");
   assert.doesNotMatch(script, /\schallenge\.html\s/);
-  assert.match(script, /-x "\*\.DS_Store" "assets\/diagrams\/\*\.asy"/);
+  assert.match(script, /! -name "\*\.DS_Store"/);
+  assert.match(script, /! -path "\.\/assets\/diagrams\/\*\.asy"/);
   assert.doesNotMatch(script, /katex/i);
+});
+
+test("release packaging is deterministic and uses the shared diagram collector", () => {
+  const script = readText("scripts/build-release.sh");
+  assert.match(script, /scripts\/list_referenced_diagrams\.js/);
+  assert.match(script, /find "\$STAGE_DIR" -exec touch -t 200001010000 \{\} \+/);
+  assert.match(script, /\| LC_ALL=C sort/);
+  assert.match(script, /\| zip -X -q "\$ZIP_PATH" -@/);
+});
+
+test("generated parabola diagram titles format negative vertices without double minus", () => {
+  const generator = readText("scripts/generate_calculus_synthetic.py");
+  assert.match(
+    generator,
+    /title = f"Plot of f\(x\) = \(\{fmt_x_minus\(h\)\}\)\^2 \+ \{k\}"/
+  );
+
+  const diagramDir = path.join(process.cwd(), "assets", "diagrams");
+  for (const name of fs.readdirSync(diagramDir)) {
+    if (!/^calcv3-plot-parabola-.*\.svg$/.test(name)) continue;
+    assert.doesNotMatch(
+      fs.readFileSync(path.join(diagramDir, name), "utf8"),
+      /\bx--\d/,
+      `${name} contains a double-minus label`
+    );
+  }
+});
+
+test("artifact publishing normalizes generated data before packaging it", () => {
+  const packageJson = JSON.parse(readText("package.json"));
+  const command = packageJson.scripts["build:artifacts"];
+  const generateAt = command.indexOf("npm run generate:calculus");
+  const normalizeAt = command.indexOf("normalize_problem_data.py --write");
+  const packageAt = command.indexOf("generate_artifacts.py");
+
+  assert.ok(generateAt >= 0, "calculus generation step is missing");
+  assert.ok(normalizeAt > generateAt, "normalization must follow generation");
+  assert.ok(packageAt > normalizeAt, "artifact packaging must follow normalization");
 });
 
 test("release packaging whitelists only runtime data banks", () => {

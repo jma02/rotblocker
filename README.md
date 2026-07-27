@@ -15,7 +15,7 @@ You can also add/remove custom blocked domains from:
 ## Installation Instructions
 I don't plan to add this to the web store as the problems are technically licensed, but the installation is more or less painless.
 
-### 1. Download the latest release: [https://github.com/jma02/rotblocker/releases](here).
+### 1. Download the [latest release](https://github.com/jma02/rotblocker/releases).
 There is a Firefox version of this app that I had Codex build but I think you need to use the Developer distribution of Firefox, which honestly isn't ideal.
 
 ### 2. After unzipping the project, press this button in Chrome:
@@ -91,11 +91,14 @@ Be sure to *enable Developer Mode*.
 ### Install
 ```bash
 npm install
+python3 -m pip install -r requirements.txt
 ```
 
 ### Run Tests
 ```bash
 npm test
+npm run test:data-python
+npm run audit:problems
 ```
 
 ### Local Preview
@@ -108,36 +111,45 @@ Open:
 ## NPM Scripts
 - `npm test`
   - Runs all Node-based tests.
+- `npm run test:data-python`
+  - Runs the Python data-normalizer regression tests.
 - `npm run preview`
   - Starts local static server on port `4173`.
 - `npm run audit:problems`
   - Audits dataset/problem markup quality.
+- `npm run audit:problems:strict`
+  - Treats non-fatal dataset audit warnings as failures.
 - `npm run rewrite:gre`
-  - Rewrites GRE upper-level MCQ data offline.
+  - Writes a non-production GRE cleanup preview without modifying the curated
+    44-row bank.
 - `npm run generate:calculus`
   - Generates synthetic calculus dataset.
 - `npm run build:artifacts`
-  - Runs calculus generation + artifact packaging pipeline.
+  - Regenerates calculus, normalizes all shipped banks, then packages the
+    versioned artifacts.
 
 ## Build And Release
 ### Local Release Zip
 ```bash
-bash scripts/build-release.sh
+npm run build:chrome
+npm run build:firefox
 ```
 Produces:
-- `dist/rotblocker-plusplus-v<version>.zip`
+- `dist/rotblocker-plusplus-chrome-v<version>.zip`
+- `dist/rotblocker-plusplus-firefox-v<version>.zip`
 
 ### GitHub Actions
 - CI workflow: `.github/workflows/ci.yml`
-  - Runs full tests
-  - Builds zip artifact
-  - Uploads zip artifact to workflow run
+  - Runs Node and Python tests plus the problem-data audit
+  - Builds Chrome and Firefox zip artifacts
+  - Uploads both zip artifacts to the workflow run
   - Runs Playwright browser smoke test
 - Release workflow: `.github/workflows/release.yml`
   - Triggered by tag push `v*` (and manual dispatch)
-  - Runs tests
-  - Builds zip
-  - Publishes GitHub Release with attached zip
+  - Requires the resolved `v*` tag to match the version in `manifest.json`
+  - Runs Node and Python tests plus the problem-data audit
+  - Builds reproducible Chrome and Firefox zips
+  - Publishes a GitHub Release with both zips attached
 
 ## Browser Smoke Test Notes
 The smoke test file is:
@@ -151,12 +163,37 @@ node --test tests/browser-smoke.test.js
 ```
 
 ## Data/Artifact Pipeline Notes
+Normalize imported or generated problem banks before committing them:
+```bash
+python3 scripts/normalize_problem_data.py --check
+python3 scripts/normalize_problem_data.py --write
+```
+`--check` is the non-mutating CI check. `--write` applies deterministic
+normalization and refreshes the cleanup report.
+
 `npm run build:artifacts` currently writes generated outputs such as:
 - `data/calculus_mcq_synthetic.json`
 - `artifacts/calculus_mcq_v3.json`
 - `artifacts/gre_math_mcq_v3.json`
 - `artifacts/manifest_v3.json`
 - `artifacts/rejects_v3.json`
+
+Only the validated current v3 artifact set is kept in the repository. Obsolete
+v1/v2/v99/v100 snapshots were removed because they duplicated pre-verification
+GRE rows or the retired untrusted calculus extraction.
+
+### Calculus data integrity
+
+`data/calculus_mcq.json` is an intentionally empty retirement placeholder. Its
+former importer read a solved-problem book that contains no multiple-choice
+options, synthesized every distractor, and could mistake OCR intermediate
+values for final answers. The old 144-row extraction is therefore quarantined
+rather than shipped. `scripts/import_calculus_pdf_mcq.py` now writes only
+explicitly unverified research output and cannot overwrite the active bank.
+
+The supported 320-row calculus bank is
+`data/calculus_mcq_synthetic.json`; the release pipeline publishes its validated
+v3 artifact.
 
 Example strict GRE source policy:
 ```bash
@@ -167,13 +204,15 @@ python3 scripts/generate_artifacts.py --version v3 --gre-source-policy grepracti
 Recommended:
 - ignore `node_modules/`
 - ignore `dist/`
-- usually ignore `artifacts/` (generated outputs)
+- ignore Python bytecode and `__pycache__/`
 
 Keep tracked:
 - `package.json`
 - `package-lock.json`
 - extension/runtime source
 - shipped dataset files under `data/`
+- versioned outputs under `artifacts/` and their generated diagram assets; review
+  these diffs whenever the artifact pipeline is intentionally regenerated
 
 ## Notes
 - Canonical project name is `rotblocker++`.

@@ -162,6 +162,10 @@ def normalize_for_key(text: str) -> str:
 def row_dedupe_key(row: dict) -> str:
     prompt = normalize_for_key(row.get("prompt", ""))
     topic = normalize_for_key(row.get("topic", ""))
+    diagram = str(row.get("_diagramSvgContent", ""))
+    if diagram:
+        answer = normalize_for_key(row.get("answer", ""))
+        return f"{topic}::{prompt}::{answer}::{diagram}"
     choices = [normalize_for_key(c) for c in row.get("choices", [])]
     choice_sig = "|".join(sorted(choices))
     return f"{topic}::{prompt}::{choice_sig}"
@@ -407,12 +411,13 @@ def gen_indef_integral_trig(idx: int, rng: random.Random) -> dict:
     t = rng.choice([1, 2, 3, 4])
     a = rng.choice([-1, 1]) * m * t
     b = rng.choice([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5])
-    trig_part = join_terms([mul_term(a, f"\\sin({m}x)"), mul_term(b, "\\sec^2(x)")])
-    true_expr = join_terms([mul_term(-(a // m), f"\\cos({m}x)"), mul_term(b, "\\tan(x)"), "C"])
-    wrong_1 = join_terms([mul_term(a // m, f"\\cos({m}x)"), mul_term(b, "\\tan(x)"), "C"])
-    wrong_2 = join_terms([mul_term(-(a // m), f"\\sin({m}x)"), mul_term(b, "\\tan(x)"), "C"])
-    wrong_3 = join_terms([mul_term(-(a // m), f"\\cos({m}x)"), mul_term(-b, "\\tan(x)"), "C"])
-    wrong_4 = join_terms([mul_term(-(a // m), f"\\cos({m}x)"), mul_term(b, "\\sec^2(x)"), "C"])
+    argument = fmt_term(m, "x", 1, first=True)
+    trig_part = join_terms([mul_term(a, f"\\sin({argument})"), mul_term(b, "\\sec^2(x)")])
+    true_expr = join_terms([mul_term(-(a // m), f"\\cos({argument})"), mul_term(b, "\\tan(x)"), "C"])
+    wrong_1 = join_terms([mul_term(a // m, f"\\cos({argument})"), mul_term(b, "\\tan(x)"), "C"])
+    wrong_2 = join_terms([mul_term(-(a // m), f"\\sin({argument})"), mul_term(b, "\\tan(x)"), "C"])
+    wrong_3 = join_terms([mul_term(-(a // m), f"\\cos({argument})"), mul_term(-b, "\\tan(x)"), "C"])
+    wrong_4 = join_terms([mul_term(-(a // m), f"\\cos({argument})"), mul_term(b, "\\sec^2(x)"), "C"])
     prompt = f"Which expression is an antiderivative of $f(x)={trig_part}$?"
     return make_text_mcq(
         pid=f"calcv2-int-indef-trig-{idx}",
@@ -515,8 +520,9 @@ def gen_gradient_norm_sq(idx: int, rng: random.Random) -> dict:
     gx = 2 * a * x0
     gy = 2 * b * y0
     ans = Fraction(gx * gx + gy * gy, 1)
+    surface = fmt_poly([(a, "x", 2), (b, "y", 2)])
     prompt = (
-        f"For $f(x,y)={a}x^2+{b}y^2$, find $\\|\\nabla f({x0},{y0})\\|^2$."
+        f"For $f(x,y)={surface}$, find $\\|\\nabla f({x0},{y0})\\|^2$."
     )
     pool = [Fraction(gx * gx + gy, 1), Fraction(abs(gx) + abs(gy), 1), ans + 4, ans - 4, Fraction(gx * gx - gy * gy, 1)]
     return make_mcq(
@@ -594,7 +600,8 @@ def gen_limit_sqrt(idx: int, rng: random.Random) -> dict:
 def gen_limit_exp(idx: int, rng: random.Random) -> dict:
     k = rng.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, 16, 18, 20, 24, 25, 30])
     ans = Fraction(k, 1)
-    prompt = f"Evaluate $\\lim_{{x\\to 0}}\\frac{{e^{{{k}x}}-1}}{{x}}$."
+    exponent = fmt_term(k, "x", 1, first=True)
+    prompt = f"Evaluate $\\lim_{{x\\to 0}}\\frac{{e^{{{exponent}}}-1}}{{x}}$."
     pool = [Fraction(1, k), Fraction(k * k, 1), Fraction(k - 1, 1), Fraction(k + 1, 1), -ans]
     return make_mcq(
         pid=f"calcv2-limit-exp-{idx}",
@@ -698,9 +705,11 @@ def gen_stokes_scaled(idx: int, rng: random.Random) -> dict:
     r = rng.choice([1, 2, 3, 4, 5, 6, 8, 10])
     # F = (-my, nx, 0), C = x^2+y^2=r^2 ccw => integral = (m+n)pi r^2
     ans = Fraction((m + n) * r * r, 1)
+    y_component = fmt_term(m, "y", 1, first=True)
+    x_component = fmt_term(n, "x", 1, first=True)
     prompt = (
         f"Let $C$ be the circle $x^2+y^2={r*r}$ oriented counterclockwise. For "
-        f"$\\mathbf{{F}}(x,y,z)=(-{m}y,{n}x,0)$, compute "
+        f"$\\mathbf{{F}}(x,y,z)=(-{y_component},{x_component},0)$, compute "
         f"$\\frac{{1}}{{\\pi}}\\oint_C \\mathbf{{F}}\\cdot d\\mathbf{{r}}$."
     )
     pool = [
@@ -839,7 +848,8 @@ def gen_graph_critical_count(idx: int, rng: random.Random) -> dict:
     k = rng.choice([0, 1, 2, 3, 4, 5, 6, 7, 8])
     d = rng.choice([x for x in range(-15, 16)])
     ans = Fraction(1 if k == 0 else 2, 1)
-    prompt = f"How many critical points does $f(x)=x^3-3({k})x+{d}$ have?"
+    constant = fmt_term(d, "", 0)
+    prompt = f"How many critical points does $f(x)=x^3-3({k})x{constant}$ have?"
     pool = [Fraction(0, 1), Fraction(1, 1), Fraction(2, 1), Fraction(3, 1), Fraction(4, 1)]
     return make_mcq(
         pid=f"calcv2-graph-critical-{idx}",
@@ -917,7 +927,7 @@ def gen_plot_parabola_fact(idx: int, rng: random.Random) -> dict:
     k = rng.choice([1, 2, 3, 4, 5])
     xs = [h + Fraction(i, 2) for i in range(-10, 11)]
     points = [(float(x), float((x - h) * (x - h) + k)) for x in xs]
-    title = f"Plot of f(x) = (x-{h})^2 + {k}"
+    title = f"Plot of f(x) = ({fmt_x_minus(h)})^2 + {k}"
     prompt = "Based on the plotted graph, which statement is true?"
     choices = [
         f"$f({h})={k}$, $f'({h})=0$, and $f$ has a local minimum at $x={h}$.",
@@ -947,7 +957,7 @@ def gen_plot_odd_fact(idx: int, rng: random.Random) -> dict:
     low = rng.choice([1, 2, 3])
     if low >= high:
         low = high - 1
-    inner = rng.choice([1, 2])
+    inner = rng.choice([x for x in [1, 2] if x < abs(left)])
     points = [
         (float(left), float(high)),
         (float(-inner), float(low)),
@@ -955,7 +965,7 @@ def gen_plot_odd_fact(idx: int, rng: random.Random) -> dict:
         (float(inner), float(-low)),
         (float(right), float(-high)),
     ]
-    title = "Odd-symmetric piecewise linear plot"
+    title = "Piecewise linear graph of f"
     prompt = "Based on the plotted graph, which statement must be true?"
     choices = [
         f"$f$ is odd, so $\\int_{{{left}}}^{{{right}}} f(x)\\,dx = 0$.",

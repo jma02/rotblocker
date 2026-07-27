@@ -590,6 +590,12 @@ button:disabled { opacity: 0.45; cursor: not-allowed; transform: none; filter: n
   color: inherit;
 }
 
+.chat-message-body mjx-container[display="true"] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .chat-md-heading {
   display: block;
   font-weight: 800;

@@ -1,8 +1,15 @@
 const fs = require('fs');
 const path = require('path');
 
+let randomState = Number.parseInt(process.env.ROTBLOCKER_BANK_SEED || "1729", 10) >>> 0;
+
+function seededRandom() {
+  randomState = (Math.imul(randomState, 1664525) + 1013904223) >>> 0;
+  return randomState / 0x100000000;
+}
+
 function randInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(seededRandom() * (max - min + 1)) + min;
 }
 
 function gcd(a, b) {
@@ -286,7 +293,14 @@ const banks = {
 };
 
 for (const [name, items] of Object.entries(banks)) {
-  fs.writeFileSync(path.join(dataDir, `${name}.json`), JSON.stringify(items, null, 2) + '\n', 'utf8');
+  fs.writeFileSync(
+    path.join(dataDir, `${name}_synthetic_preview.json`),
+    JSON.stringify(items, null, 2) + '\n',
+    'utf8'
+  );
 }
 
-console.log('Generated banks:', Object.fromEntries(Object.entries(banks).map(([k, v]) => [k, v.length])));
+console.log(
+  'Generated synthetic preview banks:',
+  Object.fromEntries(Object.entries(banks).map(([k, v]) => [k, v.length]))
+);

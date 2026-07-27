@@ -7,7 +7,8 @@ const vm = require("node:vm");
 
 const ROOT = path.resolve(__dirname, "..");
 const INPUT = path.join(ROOT, "data", "upper_level_mcq.json");
-const REPORT = path.join(ROOT, "data", "upper_level_mcq_rewrite_report.json");
+const OUTPUT = path.join(ROOT, "data", "upper_level_mcq_rewrite_preview.json");
+const REPORT = path.join(ROOT, "data", "upper_level_mcq_rewrite_preview_report.json");
 const ARTIFACT_PATTERNS = [
   /\\\$/,
   /\$\$/,
@@ -44,7 +45,14 @@ function makeElementStub() {
 }
 
 function loadChallengeFns() {
-  const source = fs.readFileSync(path.join(ROOT, "challenge.js"), "utf8");
+  const mathSource = fs.readFileSync(
+    path.join(ROOT, "challenge-modules", "math.js"),
+    "utf8"
+  );
+  const gameplaySource = fs.readFileSync(
+    path.join(ROOT, "challenge-modules", "gameplay.js"),
+    "utf8"
+  );
   const document = {
     getElementById() { return makeElementStub(); },
     querySelector() { return makeElementStub(); },
@@ -79,17 +87,13 @@ function loadChallengeFns() {
     clearInterval() {}
   };
   vm.createContext(sandbox);
-  vm.runInContext(
-    `${source}
-;globalThis.__rewriteFns = {
-  sanitizeForMathJax,
-  normalizeChoiceMath,
-  hasRenderableMathSyntax,
-  problemLooksRenderable
-};`,
-    sandbox
-  );
-  return sandbox.__rewriteFns;
+  vm.runInContext(`${mathSource}\n${gameplaySource}`, sandbox);
+  return {
+    sanitizeForMathJax: sandbox.RB.math.sanitizeForMathJax,
+    normalizeChoiceMath: sandbox.RB.math.normalizeChoiceMath,
+    hasRenderableMathSyntax: sandbox.RB.math.hasRenderableMathSyntax,
+    problemLooksRenderable: sandbox.RB.gameplay.problemLooksRenderable
+  };
 }
 
 function clone(obj) {
@@ -245,7 +249,7 @@ async function main() {
   }
 
   keep.sort((a, b) => String(a.id || "").localeCompare(String(b.id || "")));
-  fs.writeFileSync(INPUT, `${JSON.stringify(keep, null, 2)}\n`, "utf8");
+  fs.writeFileSync(OUTPUT, `${JSON.stringify(keep, null, 2)}\n`, "utf8");
 
   const bySource = {};
   for (const row of keep) {
@@ -254,6 +258,9 @@ async function main() {
   }
 
   const report = {
+    pipelineStage: "rewrite_preview_only",
+    source: path.relative(ROOT, INPUT),
+    output: path.relative(ROOT, OUTPUT),
     rewrittenAt: new Date().toISOString(),
     inputCount: inputRows.length,
     keptCount: keep.length,
@@ -264,12 +271,23 @@ async function main() {
   };
   fs.writeFileSync(REPORT, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 
-  console.log("Rewrote data/upper_level_mcq.json");
+  console.log("Wrote data/upper_level_mcq_rewrite_preview.json");
+  console.log("The curated data/upper_level_mcq.json bank was not modified.");
   console.log(`Kept ${keep.length}/${inputRows.length}`);
   console.log("By source:", bySource);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
+
+module.exports = {
+  INPUT,
+  OUTPUT,
+  REPORT,
+  loadChallengeFns,
+  normalizeRow
+};

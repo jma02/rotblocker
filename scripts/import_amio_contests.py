@@ -9,8 +9,9 @@ import struct
 from pathlib import Path
 
 SRC = Path('third_party/amio_aops/parsed_ArtOfProblemSolving.csv')
-OUT = Path('data')
-DIAGRAMS_DIR = Path('assets/diagrams')
+OUT = Path('data/amio_unverified')
+DIAGRAMS_DIR = Path('data/amio_unverified_assets')
+DIAGRAMS_REF_PREFIX = 'data/amio_unverified_assets'
 ASYMPTOTE_HOME = Path('.asy_home')
 RENDER_ASY = os.environ.get('RENDER_ASY', '0') == '1'
 CURRENCY_WORDS = {
@@ -275,13 +276,23 @@ def repair_broken_dollar_escapes(s: str) -> str:
 def normalize_mcq_fragment(s: str) -> str:
     s = strip_math_wrappers(s)
     s = normalize_latex_fragment(s)
+    s = re.sub(
+        r'\s*\\?\$\s*\(NOTE:\s*THE FOLLOWING DIAGRAM WAS NOT SHOWN DURING '
+        r'THE ACTUAL EXAM,.*?PICTURING THE PROBLEM\)\s*$',
+        '',
+        s,
+        flags=re.I
+    )
+    s = re.sub(r'\s*\\?\$\s*[~_]?[Dd]iagram by [^_\n]+_?\s*$', '', s)
     s = repair_broken_dollar_escapes(s)
     s = escape_likely_currency_dollars(s)
     s = re.sub(r'(?<=[A-Za-z])\\\$', r' \\$', s)
     s = re.sub(r'(?<=[A-Za-z])\$(?=[A-Za-z\\0-9])', r' $', s)
     # Artifacts left from marker wrappers, e.g. "\ } 42" or "} 42".
     s = re.sub(r'^(?:\\\s*)?}\s*', '', s)
-    s = re.sub(r'^(?:\\\s*)+', '', s)
+    # Remove only orphaned leading slashes. A blanket leading-backslash trim
+    # corrupts valid TeX choices such as "\frac{1}{2}" and "\sqrt{2}".
+    s = re.sub(r'^(?:\\(?=\s|\\|})\s*)+', '', s)
     s = re.sub(r'^(\\qquad|\\quad|\\,|\s)+', '', s)
     s = re.sub(r'(\\qquad|\\quad|\s)+$', '', s)
 
@@ -356,9 +367,9 @@ def existing_diagram_assets(problem_id: str):
     png = DIAGRAMS_DIR / f'{problem_id}.png'
     svg = DIAGRAMS_DIR / f'{problem_id}.svg'
     if png.exists():
-        assets['png'] = f'assets/diagrams/{problem_id}.png'
+        assets['png'] = f'{DIAGRAMS_REF_PREFIX}/{problem_id}.png'
     if svg.exists():
-        assets['svg'] = f'assets/diagrams/{problem_id}.svg'
+        assets['svg'] = f'{DIAGRAMS_REF_PREFIX}/{problem_id}.svg'
     return assets
 
 
@@ -450,10 +461,10 @@ def render_asy_assets(problem_id: str, asy_code: str):
 
     svg_file = resolve_asy_output_file(out_stem, 'svg')
     assets = {
-        'png': f'assets/diagrams/{problem_id}.png'
+        'png': f'{DIAGRAMS_REF_PREFIX}/{problem_id}.png'
     }
     if svg_file and svg_file.exists():
-        assets['svg'] = f'assets/diagrams/{problem_id}.svg'
+        assets['svg'] = f'{DIAGRAMS_REF_PREFIX}/{problem_id}.svg'
 
     # Keep .asy files only for failed outputs.
     if best_png.exists():

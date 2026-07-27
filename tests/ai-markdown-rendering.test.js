@@ -75,10 +75,10 @@ test("escaped asterisks remain literal text", () => {
   assert.doesNotMatch(el.innerHTML, /<strong>/);
 });
 
-test("appendChat routes assistant markdown through markdown renderer", () => {
+test("appendChat routes every assistant message through the lossless markdown renderer", () => {
   const source = readAppSource();
-  assert.match(source, /const shouldRenderMarkdown = role === "assistant" && hasAssistantMarkdownSyntax\(content\)/);
-  assert.match(source, /if \(shouldRenderMarkdown\) {\s*renderAssistantMarkdownText\(bodyEl, content\);/);
+  assert.match(source, /if \(role === "assistant"\)/);
+  assert.match(source, /renderAssistantMarkdownText\(bodyEl, content\)/);
 });
 
 test("chat stylesheet includes markdown heading styles", () => {

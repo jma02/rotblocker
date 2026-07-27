@@ -5,7 +5,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Point $B$ is in the exterior of the regular $n$ -sided polygon $A_1A_2\\cdots A_n$, and $A_1A_2B$ is an equilateral triangle. What is the largest value of $n$ for which $A_1$ $A_n$, and $B$ are consecutive vertices of a regular polygon?",
+    "prompt": "Point $B$ is in the exterior of the regular $n$-sided polygon $A_1A_2\\cdots A_n$, and $A_1A_2B$ is an equilateral triangle. What is the largest value of $n$ for which $A_1$ $A_n$, and $B$ are consecutive vertices of a regular polygon?",
     "answer": 42
   },
   {
@@ -32,7 +32,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "An ellipse has foci at $(9,20)$ and $(49,55)$ in the $xy$ -plane and is tangent to the $x$ -axis. What is the length of its major axis",
+    "prompt": "An ellipse has foci at $(9,20)$ and $(49,55)$ in the $xy$-plane and is tangent to the $x$-axis. What is the length of its major axis",
     "answer": 85
   },
   {
@@ -88,7 +88,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Given a positive integer $n\\,$, let $p(n)\\,$ be the product of the non-zero digits of $n\\,$. (If $n\\,$ has only one digits, then $p(n)\\,$ is equal to that digit.) Let What is the largest prime factor of $S\\,$",
+    "prompt": "Given a positive integer $n$, let $p(n)$ be the product of the nonzero digits of $n$. (If $n$ has only one digit, then $p(n)$ is equal to that digit.) Let \\[S=p(1)+p(2)+p(3)+\\cdots+p(999).\\] What is the largest prime factor of $S$?",
     "answer": 103
   },
   {
@@ -115,7 +115,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "A gardener plants three maple trees, four oaks, and five birch trees in a row. He plants them in random order, each arrangement being equally likely. Let $\\frac m n$ in lowest terms be the probability that no two birch trees are next to one another. Find $m+n$",
+    "prompt": "A gardener plants three maple trees, four oaks, and five birch trees in a row. He plants them in random order, each arrangement being equally likely. Let $\\frac{m}{n}$ in lowest terms be the probability that no two birch trees are next to one another. Find $m+n$",
     "answer": 106
   },
   {
@@ -224,7 +224,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Find $x^2+y^2$ if $x$ and $y$ are positive integers such that \\begin{align*} xy+x+y&=71, \\\\ x^2y+xy^2&=880. \\end{align*}",
+    "prompt": "Find $x^2+y^2$ if $x$ and $y$ are positive integers such that \\[\\begin{aligned} xy+x+y&=71, \\\\ x^2y+xy^2&=880. \\end{aligned}\\]",
     "answer": 146
   },
   {
@@ -242,7 +242,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "The numbers $1447$ $1005$ and $1231$ have something in common: each is a $4$ -digit number beginning with $1$ that has exactly two identical digits. How many such numbers are there?",
+    "prompt": "The numbers $1447$ $1005$ and $1231$ have something in common: each is a $4$-digit number beginning with $1$ that has exactly two identical digits. How many such numbers are there?",
     "answer": 432
   },
   {
@@ -404,7 +404,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Given that $(1+\\sin t)(1+\\cos t)=5/4$ and where $k, m,$ and $n$ are positive integers with $m$ and $n$ relatively prime, find $k+m+n.$",
+    "prompt": "Given that $(1+\\sin t)(1+\\cos t)=\\frac{5}{4}$ and $(1-\\sin t)(1-\\cos t)=\\frac{m}{n}-\\sqrt{k}$, where $k$, $m$, and $n$ are positive integers with $m$ and $n$ relatively prime, find $k+m+n$.",
     "answer": 27
   },
   {
@@ -440,7 +440,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Given that $A_k = \\frac{k(k - 1)}2\\cos\\frac{k(k - 1)\\pi}2,$ find $|A_{19} + A_{20} + \\cdots + A_{98}|.$",
+    "prompt": "Given that $A_k = \\frac{k(k - 1)}{2}\\cos\\frac{k(k - 1)\\pi}{2},$ find $|A_{19} + A_{20} + \\cdots + A_{98}|.$",
     "answer": 40
   },
   {
@@ -449,7 +449,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "What is the largest $2$ -digit prime factor of the integer $n = {200\\choose 100}$",
+    "prompt": "What is the largest $2$-digit prime factor of the integer $n = {200\\choose 100}$",
     "answer": 61
   },
   {
@@ -603,7 +603,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Given a positive integer $n$, it can be shown that every complex number of the form $r+si$, where $r$ and $s$ are integers, can be uniquely expressed in the base $-n+i$ using the integers $0,1,2,\\ldots,n^2$ as digits. That is, the equation is true for a unique choice of non-negative integer $m$ and digits $a_0,a_1,\\ldots,a_m$ chosen from the set $\\{0,1,2,\\ldots,n^2\\}$, with $a_m\\ne 0$. We write to denote the base $-n+i$ expansion of $r+si$. There are only finitely many integers $k+0i$ that have four-digit expansions Find the sum of all such $k$",
+    "prompt": "Given a positive integer $n$, it can be shown that every complex number of the form $r+si$, where $r$ and $s$ are integers, can be uniquely expressed in the base $-n+i$ using the integers $0,1,2,\\ldots,n^2$ as digits. That is, the equation \\[r+si=a_m(-n+i)^m+a_{m-1}(-n+i)^{m-1}+\\cdots+a_1(-n+i)+a_0\\] is true for a unique choice of nonnegative integer $m$ and digits $a_0,a_1,\\ldots,a_m$ chosen from $\\{0,1,2,\\ldots,n^2\\}$, with $a_m\\ne0$. We write \\[r+si=(a_ma_{m-1}\\ldots a_1a_0)_{-n+i}\\] to denote the base $-n+i$ expansion of $r+si$. There are only finitely many integers $k+0i$ that have four-digit expansions \\[k=(a_3a_2a_1a_0)_{-3+i},\\quad a_3\\ne0.\\] Find the sum of all such $k$.",
     "answer": 490,
     "diagramPng": "assets/diagrams/4c6b64f3497b40b5afa6131eadff127c.png"
   },
@@ -640,7 +640,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Find $ax^5 + by^5$ if the real numbers $a,b,x,$ and $y$ satisfy the equations \\begin{align*} ax + by &= 3, \\\\ ax^2 + by^2 &= 7, \\\\ ax^3 + by^3 &= 16, \\\\ ax^4 + by^4 &= 42. \\end{align*}",
+    "prompt": "Find $ax^5 + by^5$ if the real numbers $a,b,x,$ and $y$ satisfy the equations \\[\\begin{aligned} ax + by &= 3, \\\\ ax^2 + by^2 &= 7, \\\\ ax^3 + by^3 &= 16, \\\\ ax^4 + by^4 &= 42. \\end{aligned}\\]",
     "answer": 20
   },
   {
@@ -649,7 +649,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Trapezoid $ABCD$ has sides $AB=92$ $BC=50$ $CD=19$, and $AD=70$, with $AB$ parallel to $CD$. A circle with center $P$ on $AB$ is drawn tangent to $BC$ and $AD$. Given that $AP=\\frac mn$, where $m$ and $n$ are relatively prime positive integers, find $m+n$",
+    "prompt": "Trapezoid $ABCD$ has sides $AB=92$ $BC=50$ $CD=19$, and $AD=70$, with $AB$ parallel to $CD$. A circle with center $P$ on $AB$ is drawn tangent to $BC$ and $AD$. Given that $AP=\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers, find $m+n$",
     "answer": 164
   },
   {
@@ -658,7 +658,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Let $w_1, w_2, \\dots, w_n$ be complex numbers. A line $L$ in the complex plane is called a mean line for the points $w_1, w_2, \\dots, w_n$ if $L$ contains points (complex numbers) $z_1, z_2, \\dots, z_n$ such that \\[\\sum_{k = 1}^n (z_k - w_k) = 0.\\] For the numbers $w_1 = 32 + 170i$ $w_2 = - 7 + 64i$ $w_3 = - 9 + 200i$ $w_4 = 1 + 27i$, and $w_5 = - 14 + 43i$, there is a unique mean line with $y$ -intercept 3. Find the slope of this mean line.",
+    "prompt": "Let $w_1, w_2, \\dots, w_n$ be complex numbers. A line $L$ in the complex plane is called a mean line for the points $w_1, w_2, \\dots, w_n$ if $L$ contains points (complex numbers) $z_1, z_2, \\dots, z_n$ such that \\[\\sum_{k = 1}^n (z_k - w_k) = 0.\\] For the numbers $w_1 = 32 + 170i$ $w_2 = - 7 + 64i$ $w_3 = - 9 + 200i$ $w_4 = 1 + 27i$, and $w_5 = - 14 + 43i$, there is a unique mean line with $y$-intercept 3. Find the slope of this mean line.",
     "answer": 163
   },
   {
@@ -667,7 +667,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "The table below displays some of the results of last summer's Frostbite Falls Fishing Festival, showing how many contestants caught $n\\,$ fish for various values of $n\\,$ In the newspaper story covering the event, it was reported that What was the total number of fish caught during the festival?",
+    "prompt": "The table below displays some of the results of last summer's Frostbite Falls Fishing Festival, showing how many contestants caught $n$ fish for various values of $n$. In the newspaper story covering the event, it was reported that (a) the winner caught 15 fish; (b) those who caught 3 or more fish averaged 6 fish each; and (c) those who caught 12 or fewer fish averaged 5 fish each. What was the total number of fish caught during the festival?",
     "answer": 943,
     "diagramPng": "assets/diagrams/53e112d374764867391a4f889396fd50.png"
   },
@@ -936,7 +936,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Let $f(n)$ be the integer closest to $\\sqrt[4]{n}.$ Find $\\sum_{k=1}^{1995}\\frac 1{f(k)}.$",
+    "prompt": "Let $f(n)$ be the integer closest to $\\sqrt[4]{n}.$ Find $\\sum_{k=1}^{1995}\\frac{1}{f(k)}.$",
     "answer": 400
   },
   {
@@ -1137,7 +1137,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "When a certain biased coin is flipped five times, the probability of getting heads exactly once is not equal to $0$ and is the same as that of getting heads exactly twice. Let $\\frac ij$, in lowest terms, be the probability that the coin comes up heads in exactly $3$ out of $5$ flips. Find $i+j$",
+    "prompt": "When a certain biased coin is flipped five times, the probability of getting heads exactly once is not equal to $0$ and is the same as that of getting heads exactly twice. Let $\\frac{i}{j}$, in lowest terms, be the probability that the coin comes up heads in exactly $3$ out of $5$ flips. Find $i+j$",
     "answer": 283
   },
   {
@@ -1182,7 +1182,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Let $S$ be the set of points in the Cartesian plane that satisfy If a model of $S$ were built from wire of negligible thickness, then the total length of wire required would be $a\\sqrt{b}$, where $a$ and $b$ are positive integers and $b$ is not divisible by the square of any prime number. Find $a+b$",
+    "prompt": "Let $S$ be the set of points $(x,y)$ in the Cartesian plane that satisfy \\[\\Big|\\big||x|-2\\big|-1\\Big|+\\Big|\\big||y|-2\\big|-1\\Big|=1.\\] If a model of $S$ were built from wire of negligible thickness, then the total length of wire required would be $a\\sqrt{b}$, where $a$ and $b$ are positive integers and $b$ is not divisible by the square of any prime number. Find $a+b$.",
     "answer": 66
   },
   {
@@ -1248,7 +1248,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Suppose $r$ is a real number for which Find $\\lfloor 100r \\rfloor$. (For real $x$ $\\lfloor x \\rfloor$ is the greatest integer less than or equal to $x$.)",
+    "prompt": "Suppose $r$ is a real number for which \\[\\left\\lfloor r+\\frac{19}{100}\\right\\rfloor+\\left\\lfloor r+\\frac{20}{100}\\right\\rfloor+\\cdots+\\left\\lfloor r+\\frac{91}{100}\\right\\rfloor=546.\\] Find $\\lfloor 100r\\rfloor$. (For real $x$, $\\lfloor x\\rfloor$ is the greatest integer less than or equal to $x$.)",
     "answer": 743
   },
   {
@@ -1293,7 +1293,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "The graphs of the equations are drawn in the coordinate plane for $k=-10,-9,-8,\\ldots,9,10.\\,$ These 63 lines cut part of the plane into equilateral triangles of side length $\\tfrac{2}{\\sqrt{3}}.\\,$ How many such triangles are formed?",
+    "prompt": "The graphs of the equations \\[y=k,\\qquad y=\\sqrt{3}x+2k,\\qquad y=-\\sqrt{3}x+2k\\] are drawn in the coordinate plane for $k=-10,-9,-8,\\ldots,9,10$. These 63 lines cut part of the plane into equilateral triangles of side length $\\frac{2}{\\sqrt{3}}$. How many such triangles are formed?",
     "answer": 660
   },
   {
@@ -1329,7 +1329,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Let $n$ be the number of ordered quadruples $(x_1,x_2,x_3,x_4)$ of positive odd integers that satisfy $\\sum_{i = 1}^4 x_i = 98.$ Find $\\frac n{100}.$",
+    "prompt": "Let $n$ be the number of ordered quadruples $(x_1,x_2,x_3,x_4)$ of positive odd integers that satisfy $\\sum_{i = 1}^4 x_i = 98.$ Find $\\frac{n}{100}.$",
     "answer": 196
   },
   {
@@ -1347,7 +1347,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "For how many ordered pairs of positive integers $(x,y),$ with $y<x\\le 100,$ are both $\\frac xy$ and $\\frac{x+1}{y+1}$ integers?",
+    "prompt": "For how many ordered pairs of positive integers $(x,y),$ with $y<x\\le 100,$ are both $\\frac{x}{y}$ and $\\frac{x+1}{y+1}$ integers?",
     "answer": 85
   },
   {
@@ -1446,7 +1446,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "A right rectangular prism $P$ (i.e., a rectangular parallelpiped) has sides of integral length $a, b, c,$ with $a\\le b\\le c.$ A plane parallel to one of the faces of $P$ cuts $P$ into two prisms, one of which is similar to $P,$ and both of which have nonzero volume. Given that $b=1995,$ for how many ordered triples $(a, b, c)$ does such a plane exist?",
+    "prompt": "A right rectangular prism $P$ (i.e., a rectangular parallelepiped) has sides of integral length $a, b, c,$ with $a\\le b\\le c.$ A plane parallel to one of the faces of $P$ cuts $P$ into two prisms, one of which is similar to $P,$ and both of which have nonzero volume. Given that $b=1995,$ for how many ordered triples $(a, b, c)$ does such a plane exist?",
     "answer": 40
   },
   {
@@ -1474,7 +1474,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "There is a set of 1000 switches, each of which has four positions, called $A, B, C$, and $D$. When the position of any switch changes, it is only from $A$ to $B$, from $B$ to $C$, from $C$ to $D$, or from $D$ to $A$. Initially each switch is in position $A$. The switches are labeled with the 1000 different integers $(2^{x})(3^{y})(5^{z})$, where $x, y$, and $z$ take on the values $0, 1, \\ldots, 9$. At step i of a 1000-step process, the $i$ -th switch is advanced one step, and so are all the other switches whose labels divide the label on the $i$ -th switch. After step 1000 has been completed, how many switches will be in position $A$",
+    "prompt": "There is a set of 1000 switches, each of which has four positions, called $A, B, C$, and $D$. When the position of any switch changes, it is only from $A$ to $B$, from $B$ to $C$, from $C$ to $D$, or from $D$ to $A$. Initially each switch is in position $A$. The switches are labeled with the 1000 different integers $(2^{x})(3^{y})(5^{z})$, where $x, y$, and $z$ take on the values $0, 1, \\ldots, 9$. At step i of a 1000-step process, the $i$-th switch is advanced one step, and so are all the other switches whose labels divide the label on the $i$-th switch. After step 1000 has been completed, how many switches will be in position $A$",
     "answer": 650
   },
   {
@@ -1574,7 +1574,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Suppose that $\\sec x+\\tan x=\\frac{22}7$ and that $\\csc x+\\cot x=\\frac mn,$ where $\\frac mn$ is in lowest terms. Find $m+n.$",
+    "prompt": "Suppose that $\\sec x+\\tan x=\\frac{22}{7}$ and that $\\csc x+\\cot x=\\frac{m}{n},$ where $\\frac{m}{n}$ is in lowest terms. Find $m+n.$",
     "answer": 44
   },
   {
@@ -1601,7 +1601,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Forty teams play a tournament in which every team plays every other team exactly once. No ties occur, and each team has a $50 \\%$ chance of winning any game it plays. The probability that no two teams win the same number of games is $\\frac mn,$ where $m$ and $n$ are relatively prime positive integers. Find $\\log_2 n.$",
+    "prompt": "Forty teams play a tournament in which every team plays every other team exactly once. No ties occur, and each team has a $50 \\%$ chance of winning any game it plays. The probability that no two teams win the same number of games is $\\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $\\log_2 n.$",
     "answer": 742
   },
   {
@@ -1646,7 +1646,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "A small square is constructed inside a square of area 1 by dividing each side of the unit square into $n$ equal parts, and then connecting the vertices to the division points closest to the opposite vertices. Find the value of $n$ if the the area of the small square is exactly $\\frac1{1985}$",
+    "prompt": "A small square is constructed inside a square of area 1 by dividing each side of the unit square into $n$ equal parts, and then connecting the vertices to the division points closest to the opposite vertices. Find the value of $n$ if the area of the small square is exactly $\\frac{1}{1985}$",
     "answer": 32,
     "diagramPng": "assets/diagrams/c16fb0e4349ade90096f16df1c945f10.png"
   },
@@ -1739,7 +1739,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "The function $f$ has the property that, for each real number $x,\\,$ If $f(19)=94,\\,$ what is the remainder when $f(94)\\,$ is divided by $1000$",
+    "prompt": "The function $f$ has the property that, for each real number $x$, \\[f(x)+f(x-1)=x^2.\\] If $f(19)=94$, what is the remainder when $f(94)$ is divided by $1000$?",
     "answer": 561
   },
   {
@@ -1748,7 +1748,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that \\begin{align*} x_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\ 4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\ 9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123. \\end{align*} Find the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$",
+    "prompt": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that \\[\\begin{aligned} x_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\ 4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\ 9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123. \\end{aligned}\\] Find the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$",
     "answer": 334
   },
   {
@@ -1775,7 +1775,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "A car travels due east at $\\frac 23$ mile per minute on a long, straight road. At the same time, a circular storm, whose radius is $51$ miles, moves southeast at $\\frac 12\\sqrt{2}$ mile per minute. At time $t=0$, the center of the storm is $110$ miles due north of the car. At time $t=t_1$ minutes, the car enters the storm circle, and at time $t=t_2$ minutes, the car leaves the storm circle. Find $\\frac 12(t_1+t_2)$",
+    "prompt": "A car travels due east at $\\frac{2}{3}$ mile per minute on a long, straight road. At the same time, a circular storm, whose radius is $51$ miles, moves southeast at $\\frac{1}{2}\\sqrt{2}$ mile per minute. At time $t=0$, the center of the storm is $110$ miles due north of the car. At time $t=t_1$ minutes, the car enters the storm circle, and at time $t=t_2$ minutes, the car leaves the storm circle. Find $\\frac{1}{2}(t_1+t_2)$",
     "answer": 198
   },
   {
@@ -1793,7 +1793,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Given that $\\sum_{k=1}^{35}\\sin 5k=\\tan \\frac mn,$ where angles are measured in degrees, and $m$ and $n$ are relatively prime positive integers that satisfy $\\frac mn<90,$ find $m+n.$",
+    "prompt": "Given that $\\sum_{k=1}^{35}\\sin 5k=\\tan \\frac{m}{n},$ where angles are measured in degrees, and $m$ and $n$ are relatively prime positive integers that satisfy $\\frac{m}{n}<90,$ find $m+n.$",
     "answer": 177
   },
   {
@@ -1901,7 +1901,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Find the positive integer $n\\,$ for which \\[\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\\] (For real $x\\,$ $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$",
+    "prompt": "Find the positive integer $n\\,$ for which \\[\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\\] (For real $x\\,$ $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$)",
     "answer": 312
   },
   {
@@ -1910,7 +1910,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "For certain ordered pairs $(a,b)\\,$ of real numbers, the system of equations has at least one solution, and each solution is an ordered pair $(x,y)\\,$ of integers. How many such ordered pairs $(a,b)\\,$ are there?",
+    "prompt": "For certain ordered pairs $(a,b)$ of real numbers, the system of equations \\[\\begin{aligned} ax+by&=1,\\\\x^2+y^2&=50. \\end{aligned}\\] has at least one solution, and each solution is an ordered pair $(x,y)$ of integers. How many such ordered pairs $(a,b)$ are there?",
     "answer": 72
   },
   {
@@ -1928,7 +1928,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Twelve congruent disks are placed on a circle $C$ of radius 1 in such a way that the twelve disks cover $C$, no two of the disks overlap, and so that each of the twelve disks is tangent to its two neighbors. The resulting arrangement of disks is shown in the figure below. The sum of the areas of the twelve disks can be written in the from $\\pi(a-b\\sqrt{c})$, where $a,b,c$ are positive integers and $c$ is not divisible by the square of any prime. Find $a+b+c$ _Diagram by 1-1 is 3_",
+    "prompt": "Twelve congruent disks are placed on a circle $C$ of radius 1 in such a way that the twelve disks cover $C$, no two of the disks overlap, and so that each of the twelve disks is tangent to its two neighbors. The resulting arrangement of disks is shown in the figure below. The sum of the areas of the twelve disks can be written in the form $\\pi(a-b\\sqrt{c})$, where $a,b,c$ are positive integers and $c$ is not divisible by the square of any prime. Find $a+b+c$",
     "answer": 135,
     "diagramPng": "assets/diagrams/e10df578cd4319b6293bcdd3a01b63e2.png"
   },
@@ -1947,7 +1947,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Circles of radii $5, 5, 8,$ and $\\frac mn$ are mutually externally tangent, where $m$ and $n$ are relatively prime positive integers. Find $m + n.$",
+    "prompt": "Circles of radii $5, 5, 8,$ and $\\frac{m}{n}$ are mutually externally tangent, where $m$ and $n$ are relatively prime positive integers. Find $m + n.$",
     "answer": 17
   },
   {
@@ -1956,7 +1956,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "The number $r$ can be expressed as a four-place decimal $0.abcd,$ where $a, b, c,$ and $d$ represent digits, any of which could be zero. It is desired to approximate $r$ by a fraction whose numerator is 1 or 2 and whose denominator is an integer. The closest such fraction to $r$ is $\\frac 27.$ What is the number of possible values for $r$",
+    "prompt": "The number $r$ can be expressed as a four-place decimal $0.abcd,$ where $a, b, c,$ and $d$ represent digits, any of which could be zero. It is desired to approximate $r$ by a fraction whose numerator is 1 or 2 and whose denominator is an integer. The closest such fraction to $r$ is $\\frac{2}{7}.$ What is the number of possible values for $r$",
     "answer": 417
   },
   {
@@ -1974,7 +1974,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Mary told John her score on the American High School Mathematics Examination (AHSME), which was over $80$. From this, John was able to determine the number of problems Mary solved correctly. If Mary's score had been any lower, but still over $80$, John could not have determined this. What was Mary's score? (Recall that the AHSME consists of $30$ multiple choice problems and that one's score, $s$, is computed by the formula $s=30+4c-w$, where $c$ is the number of correct answers and $w$ is the number of wrong answers. (Students are not penalized for problems left unanswered.)",
+    "prompt": "Mary told John her score on the American High School Mathematics Examination (AHSME), which was over $80$. From this, John was able to determine the number of problems Mary solved correctly. If Mary's score had been any lower, but still over $80$, John could not have determined this. What was Mary's score? (Recall that the AHSME consists of $30$ multiple choice problems and that one's score, $s$, is computed by the formula $s=30+4c-w$, where $c$ is the number of correct answers and $w$ is the number of wrong answers. (Students are not penalized for problems left unanswered.))",
     "answer": 119
   },
   {
@@ -2020,7 +2020,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Find $A^2$, where $A$ is the sum of the absolute values of all roots of the following equation: $$x=\\sqrt{19}+\\frac{91}{\\sqrt{19}+\\frac{91}{\\sqrt{19}+\\frac{91}{\\sqrt{19}+\\frac{91}{\\sqrt{19}+\\frac{91}{x}}}}}$$",
+    "prompt": "Find $A^2$, where $A$ is the sum of the absolute values of all roots of the following equation: \\[x=\\sqrt{19}+\\frac{91}{\\sqrt{19}+\\frac{91}{\\sqrt{19}+\\frac{91}{\\sqrt{19}+\\frac{91}{\\sqrt{19}+\\frac{91}{x}}}}}\\]",
     "answer": 383
   },
   {
@@ -2048,7 +2048,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Let $\\mathcal{T}$ be the set of ordered triples $(x,y,z)$ of nonnegative real numbers that lie in the plane $x+y+z=1.$ Let us say that $(x,y,z)$ supports $(a,b,c)$ when exactly two of the following are true: $x\\ge a, y\\ge b, z\\ge c.$ Let $\\mathcal{S}$ consist of those triples in $\\mathcal{T}$ that support $\\left(\\frac 12,\\frac 13,\\frac 16\\right).$ The area of $\\mathcal{S}$ divided by the area of $\\mathcal{T}$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$",
+    "prompt": "Let $\\mathcal{T}$ be the set of ordered triples $(x,y,z)$ of nonnegative real numbers that lie in the plane $x+y+z=1.$ Let us say that $(x,y,z)$ supports $(a,b,c)$ when exactly two of the following are true: $x\\ge a, y\\ge b, z\\ge c.$ Let $\\mathcal{S}$ consist of those triples in $\\mathcal{T}$ that support $\\left(\\frac{1}{2},\\frac{1}{3},\\frac{1}{6}\\right).$ The area of $\\mathcal{S}$ divided by the area of $\\mathcal{T}$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$",
     "answer": 25
   },
   {
@@ -2057,7 +2057,7 @@
     "contest": "aime",
     "label": "AoPS (AMIO) - AIME",
     "weight": 60,
-    "prompt": "Let $a$ $b$ $c$ be the three sides of a triangle, and let $\\alpha$ $\\beta$ $\\gamma$, be the angles opposite them. If $a^2+b^2=1989c^2$, find",
+    "prompt": "Let $a$, $b$, and $c$ be the three sides of a triangle, and let $\\alpha$, $\\beta$, and $\\gamma$ be the angles opposite them. If $a^2+b^2=1989c^2$, find $\\frac{\\cot\\gamma}{\\cot\\alpha+\\cot\\beta}$.",
     "answer": 994
   },
   {

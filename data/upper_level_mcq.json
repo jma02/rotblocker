@@ -8,19 +8,20 @@
     "weight": 12,
     "prompt": "The plane $y=1$ slices the surface $z=\\arctan\\left(\\frac{x+y}{1-xy}\\right)$ in a curve $C$. Find the slope of the tangent line to $C$ at the point where $x=2$.",
     "choices": [
-      "-3",
-      "-1",
+      "$-3$",
+      "$-1$",
       "$\\frac{1}{5}$",
       "$\\frac{1}{3}$",
       "$\\frac{1}{2}$"
     ],
-    "answerIndex": 4,
-    "answerKey": "E",
-    "answer": "$\\frac{1}{2}$",
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{1}{5}$",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 1
+      "question": 1,
+      "section": "multivariable_calculus",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -38,13 +39,14 @@
       "I and II only",
       "I, II, and III only"
     ],
-    "answerIndex": 4,
-    "answerKey": "E",
-    "answer": "I, II, and III only",
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "I and II only",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 1
+      "question": 1,
+      "section": "real_analysis",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -56,10 +58,10 @@
     "weight": 12,
     "prompt": "4 distinct positive integers are randomly chosen between 1 and 101, inclusive. What is the probability that some pair of these integers has a difference that is a multiple of 3?",
     "choices": [
-      "1/5",
-      "1/4",
-      "1/2",
-      "3/4",
+      "$1/5$",
+      "$1/4$",
+      "$1/2$",
+      "$3/4$",
       "1"
     ],
     "answerIndex": 4,
@@ -67,8 +69,9 @@
     "answer": "1",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 10
+      "question": 10,
+      "section": "combinatorics",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -80,19 +83,20 @@
     "weight": 12,
     "prompt": "If $A$ is a square matrix of order $n\\ge 4$, and $a_{ij}=i+j$ represents the entry in row $i$ and column $j$, then the rank of $A$ is always:",
     "choices": [
-      "$\\frac{1}{26}$",
+      "1",
       "2",
       "$n-2$",
       "$n-1$",
-      "n"
+      "$n$"
     ],
-    "answerIndex": 2,
-    "answerKey": "C",
-    "answer": "$n-2$",
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "2",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 2
+      "question": 2,
+      "section": "linear_algebra_1",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -102,7 +106,7 @@
     "label": "GRE Mathematics Upper-Level MCQ",
     "topic": "linalg",
     "weight": 12,
-    "prompt": "Let A be a real 2$\\times$ 2 matrix. Which of the following statements must be true? (I) All of the entries of $A^2$ are nonnegative (II) The determinant of $A^2$ is nonnegative (III) If A has two distinct eigenvalues, then $A^2$ has two distinct eigenvalues",
+    "prompt": "Let $A$ be a real $2\\times2$ matrix. Which of the following statements must be true? (I) All entries of $A^2$ are nonnegative. (II) The determinant of $A^2$ is nonnegative. (III) If $A$ has two distinct eigenvalues, then $A^2$ has two distinct eigenvalues.",
     "choices": [
       "I, II, and III",
       "II and III only",
@@ -110,13 +114,14 @@
       "II only",
       "I and II only"
     ],
-    "answerIndex": 2,
-    "answerKey": "C",
-    "answer": "III only",
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "II only",
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 10,
-      "question": 2
+      "question": 2,
+      "section": "problem_set_10"
     }
   },
   {
@@ -134,13 +139,14 @@
       "$4x-9y$",
       "$x+y-1$"
     ],
-    "answerIndex": 0,
-    "answerKey": "A",
-    "answer": "$4x+6y$",
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$4x-9y$",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 4
+      "question": 4,
+      "section": "number_theory",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -163,8 +169,9 @@
     "answer": "II and III only",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 4
+      "question": 4,
+      "section": "linear_algebra_2",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -174,7 +181,7 @@
     "label": "GRE Mathematics Upper-Level MCQ",
     "topic": "other_upper_level",
     "weight": 12,
-    "prompt": "Find the general solution of the differential equation $\\frac{dy}{dx}=x+\\frac{y}{x}$.",
+    "prompt": "Find the general solution of the differential equation $\\frac{dy}{dx}=\\frac{x+y}{x}$.",
     "choices": [
       "$e^{y/x}=cx$",
       "$e^{y/x}=cy$",
@@ -187,8 +194,9 @@
     "answer": "$e^{y/x}=cx$",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 4
+      "question": 4,
+      "section": "differential_equations",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -211,8 +219,9 @@
     "answer": "All of them",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 5
+      "question": 5,
+      "section": "topology",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -224,19 +233,20 @@
     "weight": 12,
     "prompt": "What is the general solution to the differential equation $y''-2y'+y=te^t$?",
     "choices": [
-      "$C_1e^t + C_2t^2e^t$",
-      "$C_1e^t + C_2te^t$",
-      "$C_1e^t + C_2te^t + \\frac{1}{6}t^3e^t$",
-      "$C_1e^t + C_2te^t + \\frac{1}{2}t^2e^t$",
-      "$C_1e^t + C_2te^t + t^3e^t$"
+      "$C_1e^t+C_2t^2e^t$",
+      "$C_1e^t+C_2te^t$",
+      "$C_1e^t+C_2te^t+\\frac{1}{6}t^3e^t$",
+      "$C_1e^t+C_2te^t+\\frac{t}{2}e^t$",
+      "$C_1e^t+C_2te^t+\\frac{t^2}{2}e^t$"
     ],
     "answerIndex": 2,
     "answerKey": "C",
-    "answer": "$C_1e^t + C_2te^t + \\frac{1}{6}t^3e^t$",
+    "answer": "$C_1e^t+C_2te^t+\\frac{1}{6}t^3e^t$",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 5
+      "question": 5,
+      "section": "differential_equations",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -248,19 +258,20 @@
     "weight": 12,
     "prompt": "A city has square blocks formed by a grid of north-south and east-west streets. One possible way to get from City Hall to the Main Fire House is first travel 5 blocks east and then 7 blocks north. How many different routes from City Hall to the main firehouse that travel exactly 12 city blocks?",
     "choices": [
-      "5· 7",
-      "7! 5!",
-      "12! 7!5!",
-      "212",
-      "7!5!"
+      "$5\\cdot 7$",
+      "$\\frac{7!}{5!}$",
+      "$\\frac{12!}{7!5!}$",
+      "$2^{12}$",
+      "$7!5!$"
     ],
-    "answerIndex": 4,
-    "answerKey": "E",
-    "answer": "7!5!",
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{12!}{7!5!}$",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 5
+      "question": 5,
+      "section": "combinatorics",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -270,11 +281,11 @@
     "label": "GRE Mathematics Upper-Level MCQ",
     "topic": "other_upper_level",
     "weight": 12,
-    "prompt": "Consider a hemisphere of radius R. Consider the portion of sphere that lies height h above it’s center. What is the surface area of this portion?",
+    "prompt": "Consider a hemisphere of radius $R$. What is the surface area of the portion of the sphere that lies at height $h$ or more above its center?",
     "choices": [
-      "$2\\pi R^1/2(R-h)3/2$",
+      "$2\\pi R^{1/2}(R-h)^{3/2}$",
       "$2\\pi R(R-h)$",
-      "$2\\pi R ( R^2-h^2)1/2$",
+      "$2\\pi R(R^2-h^2)^{1/2}$",
       "$3\\pi Rh$",
       "$\\pi R(R-h)$"
     ],
@@ -284,7 +295,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 10,
-      "question": 6
+      "question": 6,
+      "section": "problem_set_10"
     }
   },
   {
@@ -302,13 +314,14 @@
       "$P_{20}\\cap P_{24}$",
       "$P_5\\cap P_{25}$"
     ],
-    "answerIndex": 1,
-    "answerKey": "B",
-    "answer": "$P_7\\cap P_{21}$",
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$P_{12}\\cap P_{20}$",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 6
+      "question": 6,
+      "section": "number_theory",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -331,8 +344,9 @@
     "answer": "If A is closed, then A = R",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 6
+      "question": 6,
+      "section": "topology",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -350,13 +364,14 @@
       "f is injective",
       "f is bounded"
     ],
-    "answerIndex": 1,
-    "answerKey": "B",
-    "answer": "f is continuous and injective",
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "f is continuous",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 7
+      "question": 7,
+      "section": "topology",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -374,13 +389,14 @@
       "Five",
       "Twenty Four"
     ],
-    "answerIndex": 1,
-    "answerKey": "B",
-    "answer": "One",
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "Five",
     "source": {
       "dataset": "GREBootcamp",
-      "problemSet": 10,
-      "question": 7
+      "question": 7,
+      "section": "number_theory",
+      "legacyProblemSet": 10
     }
   },
   {
@@ -390,21 +406,22 @@
     "label": "GRE Mathematics Upper-Level MCQ",
     "topic": "other_upper_level",
     "weight": 12,
-    "prompt": "Let S be a set with |S|$\\ge$ 3. How many non-surjective functions from S $\\to$ { 1, 2, 3} are there?",
+    "prompt": "Let $S$ be a set with $|S|\\ge 3$. How many non-surjective functions from $S$ to $\\{1,2,3\\}$ are there?",
     "choices": [
-      "3· 2|S|",
-      "3· 2|S|- 3",
-      "3|S|- 3",
-      "|S|3",
-      "2|S|2- 3"
+      "$3\\cdot 2^{|S|}$",
+      "$3\\cdot 2^{|S|}-3$",
+      "$3^{|S|}-3$",
+      "$|S|^3$",
+      "$2|S|^2-3$"
     ],
     "answerIndex": 1,
     "answerKey": "B",
-    "answer": "3· 2|S|- 3",
+    "answer": "$3\\cdot 2^{|S|}-3$",
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 2,
-      "question": 3
+      "question": 3,
+      "section": "problem_set_2"
     }
   },
   {
@@ -428,7 +445,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 2,
-      "question": 4
+      "question": 4,
+      "section": "problem_set_2"
     }
   },
   {
@@ -438,7 +456,7 @@
     "label": "GRE Mathematics Upper-Level MCQ",
     "topic": "analysis",
     "weight": 12,
-    "prompt": "Which of the following exist: (I) $f^1$: [0, 1]$\\to$ (0, 1) continuous and surjective. (II) $f^2$: (0, 1)$\\to$ [0, 1] continuous and surjective (III) $f^3$: (0, 1)$\\to$ [0, 1] continuous and bijective",
+    "prompt": "Which of the following exist? (I) $f_1:[0,1]\\to(0,1)$ continuous and surjective. (II) $f_2:(0,1)\\to[0,1]$ continuous and surjective. (III) $f_3:(0,1)\\to[0,1]$ continuous and bijective.",
     "choices": [
       "I only",
       "II only",
@@ -452,7 +470,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 2,
-      "question": 5
+      "question": 5,
+      "section": "problem_set_2"
     }
   },
   {
@@ -476,7 +495,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 2,
-      "question": 7
+      "question": 7,
+      "section": "problem_set_2"
     }
   },
   {
@@ -500,7 +520,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 3,
-      "question": 3
+      "question": 3,
+      "section": "problem_set_3"
     }
   },
   {
@@ -524,7 +545,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 4,
-      "question": 1
+      "question": 1,
+      "section": "problem_set_4"
     }
   },
   {
@@ -536,19 +558,20 @@
     "weight": 12,
     "prompt": "Let $(x(t),y(t))$ be a parametric curve in $\\mathbb{R}^2$ given by $x(t)=e^t$ and $y(t)=\\sin(t)$. What is $\\frac{d^2y}{dx^2}$ as a function of $t$?",
     "choices": [
-      "$-\\sin t\\,e^t$",
-      "$\\cos t\\,e^{-t}-\\sin t\\,e^t$",
-      "$-\\sin t-\\cos t\\,e^t$",
-      "$\\sin t+\\cos t\\,e^{2t}$",
-      "$-\\sin t-\\cos t\\,e^{2t}$"
+      "$-\\frac{\\sin t}{e^t}$",
+      "$\\frac{\\cos t-e^t\\sin t}{e^t}$",
+      "$\\frac{-\\sin t-\\cos t}{e^t}$",
+      "$\\frac{\\sin t+\\cos t}{e^{2t}}$",
+      "$\\frac{-\\sin t-\\cos t}{e^{2t}}$"
     ],
     "answerIndex": 4,
     "answerKey": "E",
-    "answer": "$-\\sin t-\\cos t\\,e^{2t}$",
+    "answer": "$\\frac{-\\sin t-\\cos t}{e^{2t}}$",
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 4,
-      "question": 2
+      "question": 2,
+      "section": "problem_set_4"
     }
   },
   {
@@ -572,7 +595,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 4,
-      "question": 6
+      "question": 6,
+      "section": "problem_set_4"
     }
   },
   {
@@ -582,21 +606,22 @@
     "label": "GRE Mathematics Upper-Level MCQ",
     "topic": "other_upper_level",
     "weight": 12,
-    "prompt": "A basketball player decides to practice his free throws in a gym by promising to not stop until he makes 20 free throws (not necessarily consecutively). If his free-throw percentage is 80 percent. What’s the probability that he needs exactly 50 tries to complete his goal?",
+    "prompt": "A basketball player practices free throws and stops as soon as he has made 20 free throws (not necessarily consecutively). If his free-throw percentage is 80%, what is the probability that he needs exactly 50 attempts?",
     "choices": [
-      "( 50 20 ) (.8)20(.2)30",
-      "(.8)20(.2)30",
-      "( 50 20 ) (20·.8)(30·.2)",
-      "( 49 19 ) (.8)20(.2)30",
-      "(20·.8)(30·.2)"
+      "$\\binom{50}{20}(0.8)^{20}(0.2)^{30}$",
+      "$(0.8)^{20}(0.2)^{30}$",
+      "$\\binom{50}{20}(20\\cdot 0.8)(30\\cdot 0.2)$",
+      "$\\binom{49}{19}(0.8)^{20}(0.2)^{30}$",
+      "$(20\\cdot 0.8)(30\\cdot 0.2)$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "( 49 19 ) (.8)20(.2)30",
+    "answer": "$\\binom{49}{19}(0.8)^{20}(0.2)^{30}$",
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 5,
-      "question": 6
+      "question": 6,
+      "section": "problem_set_5"
     }
   },
   {
@@ -606,7 +631,7 @@
     "label": "GRE Mathematics Upper-Level MCQ",
     "topic": "other_upper_level",
     "weight": 12,
-    "prompt": "Suppose you have two cards: one is painted black on both sides and the other is painted black on one side and orange on the other You select a card at random and view one side. You notice it is black. What is the probability the other side is orange?",
+    "prompt": "There are two cards: one is black on both sides, and the other is black on one side and orange on the other. A card and then one of its sides are chosen uniformly at random. Given that the chosen side is black, what is the probability that the other side is orange?",
     "choices": [
       "$\\frac{1}{2}$",
       "$\\frac{1}{3}$",
@@ -620,7 +645,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 6,
-      "question": 5
+      "question": 5,
+      "section": "problem_set_6"
     }
   },
   {
@@ -632,19 +658,20 @@
     "weight": 12,
     "prompt": "Suppose you wish to make a bouquet of 10 flowers. You go to the flower store and there are 4 types of flowers you can use. How many bouquets can you make using only these flowers?",
     "choices": [
-      "$\\frac{410}{16}$",
+      "$4^{10}$",
       "40",
-      "( 9 4 )10",
-      "( 13 3 )",
-      "( 13 9 )"
+      "$\\binom{9}{4}^{10}$",
+      "$\\binom{13}{3}$",
+      "$\\binom{13}{9}$"
     ],
     "answerIndex": 3,
     "answerKey": "D",
-    "answer": "( 13 3 )",
+    "answer": "$\\binom{13}{3}$",
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 7,
-      "question": 2
+      "question": 2,
+      "section": "problem_set_7"
     }
   },
   {
@@ -668,7 +695,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 7,
-      "question": 4
+      "question": 4,
+      "section": "problem_set_7"
     }
   },
   {
@@ -692,7 +720,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 7,
-      "question": 5
+      "question": 5,
+      "section": "problem_set_7"
     }
   },
   {
@@ -716,7 +745,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 8,
-      "question": 5
+      "question": 5,
+      "section": "problem_set_8"
     }
   },
   {
@@ -740,7 +770,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 8,
-      "question": 9
+      "question": 9,
+      "section": "problem_set_8"
     }
   },
   {
@@ -750,7 +781,7 @@
     "label": "GRE Mathematics Upper-Level MCQ",
     "topic": "other_upper_level",
     "weight": 12,
-    "prompt": "The function f (x,y ) = $x^2$ + 3xy +$y^2$ +$y^4$:",
+    "prompt": "The function $f(x,y)=x^2+3xy+y^2+y^4$:",
     "choices": [
       "has a global minimum at (0, 0)",
       "has a local minimum at (0, 0), but not a global minimum",
@@ -758,13 +789,14 @@
       "has a saddle at (0, 0)",
       "has countably many local minima"
     ],
-    "answerIndex": 2,
-    "answerKey": "C",
-    "answer": "has a local max at (0, 0)",
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "has a saddle at (0, 0)",
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 9,
-      "question": 1
+      "question": 1,
+      "section": "problem_set_9"
     }
   },
   {
@@ -788,7 +820,8 @@
     "source": {
       "dataset": "GREBootcamp",
       "problemSet": 9,
-      "question": 2
+      "question": 2,
+      "section": "problem_set_9"
     }
   },
   {
@@ -966,7 +999,7 @@
     "label": "GRE Mathematics Upper-Level MCQ",
     "topic": "other_upper_level",
     "weight": 12,
-    "prompt": "Suppose today is Wednesday. What day of the week will it be $10^{1010}$ days from now?",
+    "prompt": "Suppose today is Wednesday. What day of the week will it be $10^{10^{10}}$ days from now?",
     "choices": [
       "Sunday",
       "Monday",
@@ -1043,7 +1076,7 @@
       "(1, 2, 5)",
       "$\\left(\\frac{6}{7},-\\frac{2}{7},\\frac{6}{7}\\right)$",
       "$\\left(\\frac{5}{6},\\frac{4}{3},\\frac{25}{6}\\right)$",
-      "(1,-3,-5)",
+      "$(1,-3,-5)$",
       "$\\left(\\frac{6}{7},-\\frac{4}{7},\\frac{2}{7}\\right)$"
     ],
     "answerIndex": 4,

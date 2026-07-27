@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 370" role="img" aria-labelledby="title">
+  <title id="title">Triangle, square, pentagon, hexagon, heptagon, and octagon construction</title>
+  <g fill="none" stroke="#111" stroke-width="3" stroke-linejoin="round">
+    <path d="M55 200L55 100L105 13L155 100L155 200L186 295L105 354L24 295Z"/>
+    <path d="M55 200H155M55 100H155" stroke-dasharray="9 7"/>
+  </g>
+</svg>

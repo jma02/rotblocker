@@ -21,7 +21,7 @@ test("sanitizer rule coverage: wrappers/macros/currency/layout", () => {
     {
       name: "strips [mathjax] wrappers",
       input: "[mathjax]Area is $9$[/mathjax]",
-      expected: "Area is 9",
+      expected: "Area is $9$",
       trim: true
     },
     {
@@ -127,9 +127,9 @@ test("sanitizer rule coverage: wrappers/macros/currency/layout", () => {
       trim: false
     },
     {
-      name: "trivial numeric inline math flattens to text",
+      name: "trivial numeric inline math remains delimited",
       input: "If $2$ is added to $20$.",
-      expected: "If 2 is added to 20.",
+      expected: "If $2$ is added to $20$.",
       trim: false
     },
     {
@@ -224,6 +224,7 @@ test("GRE OCR-garbled fused tokens are rejected as non-renderable", () => {
   assert.equal(
     problemLooksRenderable({
       type: "mcq",
+      contest: "upper_level_mcq",
       prompt,
       choices: ["None", "I only", "II only", "III only", "I and III only"]
     }),
@@ -236,6 +237,7 @@ test("GRE malformed group-order prompt with fused choices is rejected", () => {
   assert.equal(
     problemLooksRenderable({
       type: "mcq",
+      contest: "upper_level_mcq",
       prompt,
       choices: [
         "There exists an element x in G such that x̸=e and x-1 =x",

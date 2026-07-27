@@ -1,0 +1,33 @@
+{
+  "status": "preserved_but_runtime_excluded",
+  "reason": "The source prompt depends on a diagram that is not present in the imported corpus. The row remains for provenance but is not selectable at runtime.",
+  "ids": [
+    "amio-1fb2fe29e045b8003a0854862002229b",
+    "amio-36c0d44f67c9e001aec4904f92c442d9",
+    "amio-5a6bbf8591ca4c85cf5880f1fd28a18e",
+    "amio-97ed9915cbef9ad8c9136dfb53ee58c0",
+    "amio-9ac6279fb8677329a07cb23c030d2f15",
+    "amio-9aecc5b4ddf581b36f328110f54eb013",
+    "amio-acb25a3031a50594a799e4fda6aba6e4",
+    "amio-c318ba1d2e4c7920b99eebad8353b3bb",
+    "amio-dd741c514d8ee0ccbf0bbd4dc0dfe360",
+    "amio-e694c12f846a101db0e11df782248a36",
+    "amio-ec3790c1839d1dd100f3d31fc1f976ce",
+    "amio-f9dc3f3febf32227dd066d9b170c1a61",
+    "amio-18167852ccabbc147d57d50df08cd523",
+    "amio-3b39d7e0d510dec63756450f5a41acd5",
+    "amio-43e26d28b175dcc401b5c3d81f43f3aa",
+    "amio-4787a0177733cbd1e33350d998204a63",
+    "amio-61c3a0c6dd631693bd198d6c63ea5bb7",
+    "amio-68becc4da20d63d0e807b8ca81985425",
+    "amio-6f45f81a6fea686b8179800df852e4dd",
+    "amio-73fa5c60cbb61fc87d98b9d1b271d7ad",
+    "amio-9617e81145ebd3092d9cb47a53600959",
+    "amio-a6e29b4f7509f0eb4835f3d47d561fef",
+    "amio-bf8152d490bb5752c3e75b85a0e6d7da",
+    "amio-c9764c3b77b5551032c0c0c690fe2115",
+    "amio-e6d8b9804b11898aa89c2013ed1682bc",
+    "amio-ec06ce966ec85c54faca67ddaf9efafa",
+    "amio-ecaab333a1c72b336ec94c930d0a9895"
+  ]
+}
