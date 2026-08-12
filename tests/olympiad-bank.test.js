@@ -8,8 +8,8 @@ const { loadChallengeFns } = require("./challenge-harness");
 const rows = JSON.parse(fs.readFileSync("data/olympiad.json", "utf8"));
 const expectedCountries = ["China", "Poland", "Russia", "United States"];
 
-test("olympiad bank has three verified numeric-response problems per requested country", () => {
-  assert.equal(rows.length, 12);
+test("olympiad bank has ten verified numeric-response problems per requested country", () => {
+  assert.equal(rows.length, 40);
   assert.equal(new Set(rows.map((row) => row.id)).size, rows.length);
 
   const counts = Object.fromEntries(expectedCountries.map((country) => [country, 0]));
@@ -28,10 +28,10 @@ test("olympiad bank has three verified numeric-response problems per requested c
   }
 
   assert.deepEqual(counts, {
-    China: 3,
-    Poland: 3,
-    Russia: 3,
-    "United States": 3
+    China: 10,
+    Poland: 10,
+    Russia: 10,
+    "United States": 10
   });
 });
 

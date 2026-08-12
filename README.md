@@ -31,7 +31,7 @@ Be sure to *enable Developer Mode*.
 ## Core Behavior
 - Locked mode redirects blocked domains to `rotblocker++/index.html`.
 - You earn score by solving problems (AMC8/10/12, AIME, and optional Olympiad pools).
-- The Olympiad pool contains three sourced, translation-reviewed numeric problems each from China, Poland, Russia, and the USAMO.
+- The Olympiad pool contains ten sourced, translation-reviewed numeric problems each from China, Poland, Russia, and the USAMO.
 - Unlock threshold is `30` points.
 - Unlock cooldown defaults to `2 hours` and is configurable in settings.
 - On unlock, score resets to `0`.

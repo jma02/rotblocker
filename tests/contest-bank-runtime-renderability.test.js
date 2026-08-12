@@ -52,7 +52,7 @@ function mathJaxErrors(text, mathjaxApi, adaptor) {
   return failures;
 }
 
-test("runtime compiles 2,479 accepted rows and excludes exactly 27 reviewed missing visuals", async () => {
+test("runtime compiles 2,507 accepted rows and excludes exactly 27 reviewed missing visuals", async () => {
   const mathjaxApi = await mathJaxReady;
   const adaptor = mathjaxApi.startup.adaptor;
   const failures = [];
@@ -108,8 +108,8 @@ test("runtime compiles 2,479 accepted rows and excludes exactly 27 reviewed miss
     );
   }
 
-  assert.equal(totalRows, 2506);
-  assert.equal(totalAccepted, 2479);
+  assert.equal(totalRows, 2534);
+  assert.equal(totalAccepted, 2507);
   assert.equal(runtimeExcludedIds.length, 27);
   for (const id of REVIEWED_MISSING_VISUAL_IDS) {
     assert.ok(runtimeExcludedIds.includes(id), `reviewed missing visual ${id} became selectable`);

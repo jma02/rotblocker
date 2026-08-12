@@ -8,7 +8,7 @@
     "currency_choice_wrapper": 2,
     "display_math": 15,
     "existing_diagram_link": 51,
-    "fraction_commands": 518,
+    "fraction_commands": 519,
     "leading_tex_command": 28,
     "malformed_set_choice_override": 1,
     "mathjax_command_compatibility": 3,
@@ -51,7 +51,7 @@
     "data/amc12.json": 682,
     "data/calculus_mcq.json": 0,
     "data/calculus_mcq_synthetic.json": 320,
-    "data/olympiad.json": 12,
+    "data/olympiad.json": 40,
     "data/upper_level_mcq.json": 44
   },
   "issueCounts": {},

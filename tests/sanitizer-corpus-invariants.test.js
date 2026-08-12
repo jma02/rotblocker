@@ -13,7 +13,7 @@ const BANKS = [
   "calculus_mcq_synthetic"
 ];
 
-test("all 16,012 shipped prompt, choice, and answer strings sanitize idempotently", () => {
+test("all 16,040 shipped prompt, choice, and answer strings sanitize idempotently", () => {
   const fns = loadChallengeFns();
   const failures = [];
   let checked = 0;
@@ -62,6 +62,6 @@ test("all 16,012 shipped prompt, choice, and answer strings sanitize idempotentl
     }
   }
 
-  assert.equal(checked, 16012);
+  assert.equal(checked, 16040);
   assert.deepEqual(failures, []);
 });
