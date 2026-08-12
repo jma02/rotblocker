@@ -1,0 +1,254 @@
+[
+  {
+    "id": "olympiad-cmo-2004-p3",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "Chinese Mathematical Olympiad 2004, Problem 3",
+    "topic": "combinatorial geometry",
+    "weight": 30,
+    "prompt": "Let $M$ be a set of $n$ points in the plane with the following properties. First, seven points of $M$ are the vertices of a convex heptagon. Second, whenever five points of $M$ are the vertices of a convex pentagon, the interior of that pentagon contains another point of $M$. Find the smallest possible value of $n$.",
+    "answer": 11,
+    "source": {
+      "country": "China",
+      "competition": "Chinese Mathematical Olympiad",
+      "year": 2004,
+      "problem": "3",
+      "publication": "Mathematical Olympiad in China: Problems and Solutions",
+      "url": "https://www.worldscientific.com/doi/10.1142/9789812709790_0003",
+      "originalLanguage": "Chinese",
+      "translation": "Wording polished from the published English translation without changing the mathematics.",
+      "answerVerification": "Published solution and independent derivation."
+    }
+  },
+  {
+    "id": "olympiad-cmo-2006-p2",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "Chinese Mathematical Olympiad 2006, Problem 2",
+    "topic": "combinatorics",
+    "weight": 30,
+    "prompt": "Positive integers $a_1,a_2,\\ldots,a_{2006}$, not necessarily distinct, are such that the $2005$ ratios $a_1/a_2,a_2/a_3,\\ldots,a_{2005}/a_{2006}$ are pairwise distinct. What is the least possible number of distinct values among $a_1,a_2,\\ldots,a_{2006}$?",
+    "answer": 46,
+    "source": {
+      "country": "China",
+      "competition": "Chinese Mathematical Olympiad",
+      "year": 2006,
+      "problem": "2",
+      "publication": "Mathematical Olympiad in China: Problems and Solutions",
+      "url": "https://www.worldscientific.com/doi/10.1142/9789812709790_0003",
+      "originalLanguage": "Chinese",
+      "translation": "Wording polished from the published English translation without changing the mathematics.",
+      "answerVerification": "Published solution and independent derivation."
+    }
+  },
+  {
+    "id": "olympiad-cmo-2006-p6",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "Chinese Mathematical Olympiad 2006, Problem 6",
+    "topic": "extremal combinatorics",
+    "weight": 30,
+    "prompt": "Let $X$ be a set with $56$ elements. Find the least positive integer $n$ with the following property: for every collection of $15$ subsets of $X$, if the union of every choice of seven of those subsets contains at least $n$ elements, then some three of the $15$ subsets have nonempty intersection.",
+    "answer": 41,
+    "source": {
+      "country": "China",
+      "competition": "Chinese Mathematical Olympiad",
+      "year": 2006,
+      "problem": "6",
+      "publication": "Mathematical Olympiad in China: Problems and Solutions",
+      "url": "https://www.worldscientific.com/doi/10.1142/9789812709790_0003",
+      "originalLanguage": "Chinese",
+      "translation": "Wording polished from the published English translation without changing the mathematics.",
+      "answerVerification": "Published solution and independent derivation."
+    }
+  },
+  {
+    "id": "olympiad-polish-2009-final-p2",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "Polish Mathematical Olympiad 2009 Final, Problem 2",
+    "topic": "number theory and geometry",
+    "weight": 30,
+    "prompt": "Let $S$ be the set of all points in the plane with integer coordinates. Find the smallest positive integer $k$ for which there is a $60$-point subset $K$ of $S$ such that, for every two distinct points $A,B$ in $K$, there is a point $C$ in $S$ for which triangle $ABC$ has area $k$.",
+    "answer": 210,
+    "source": {
+      "country": "Poland",
+      "competition": "60th Polish Mathematical Olympiad",
+      "season": "2008-2009",
+      "round": "Final, day 1",
+      "problem": "2",
+      "url": "https://om.sem.edu.pl/static/app_main/problems/om60_3r.pdf",
+      "originalLanguage": "Polish",
+      "translation": "Independently translated from the official Polish statement and checked against its official solution.",
+      "answerVerification": "Official solution and independent derivation."
+    }
+  },
+  {
+    "id": "olympiad-polish-2001-round1-p1",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "Polish Mathematical Olympiad 2001 Round 1, Problem 1",
+    "topic": "number theory",
+    "weight": 30,
+    "prompt": "Find all integers $x$ satisfying $x^{2000}+2000^{1999}=x^{1999}+2000^{2000}$.",
+    "answer": 2000,
+    "source": {
+      "country": "Poland",
+      "competition": "52nd Polish Mathematical Olympiad",
+      "season": "2000-2001",
+      "round": "First round",
+      "problem": "1",
+      "url": "https://om.sem.edu.pl/static/app_main/problems/om52_1r.pdf",
+      "originalLanguage": "Polish",
+      "translation": "Independently translated from the official Polish statement and checked against its official solution.",
+      "answerVerification": "Official solution and independent derivation."
+    }
+  },
+  {
+    "id": "olympiad-polish-2001-round1-p3",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "Polish Mathematical Olympiad 2001 Round 1, Problem 3",
+    "topic": "inequalities",
+    "weight": 30,
+    "prompt": "Find all integers $n\\ge 2$ such that \\[\\frac{x_1x_2+x_2x_3+\\cdots+x_{n-1}x_n}{n-1}\\le\\frac{x_1^2+x_2^2+\\cdots+x_n^2}{n}\\] for every choice of positive real numbers $x_1,\\ldots,x_n$.",
+    "answer": 2,
+    "source": {
+      "country": "Poland",
+      "competition": "52nd Polish Mathematical Olympiad",
+      "season": "2000-2001",
+      "round": "First round",
+      "problem": "3",
+      "url": "https://om.sem.edu.pl/static/app_main/problems/om52_1r.pdf",
+      "originalLanguage": "Polish",
+      "translation": "Independently translated from the official Polish statement and checked against its official solution.",
+      "answerVerification": "Official solution and independent derivation."
+    }
+  },
+  {
+    "id": "olympiad-russian-2015-final-9-p1",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "All-Russian Mathematical Olympiad 2015 Final, Grade 9 Problem 1",
+    "topic": "algebra",
+    "weight": 30,
+    "prompt": "Real numbers $a$ and $b$ are such that each of the polynomials $x^2+ax+b$ and $x^2+bx+a$ has two distinct real roots, while their product has exactly three distinct real roots. Find all possible values of the sum of those three roots.",
+    "answer": 0,
+    "source": {
+      "country": "Russia",
+      "competition": "41st All-Russian Mathematical Olympiad",
+      "season": "2014-2015",
+      "round": "Final, day 1, grade 9",
+      "problem": "9.1",
+      "url": "https://olympiads.mccme.ru/vmo/2015/final/day1.pdf",
+      "originalLanguage": "Russian",
+      "translation": "Independently translated from the official Russian statement and checked against its official solution.",
+      "answerVerification": "Official solution and independent derivation."
+    }
+  },
+  {
+    "id": "olympiad-russian-2023-final-9-p5",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "All-Russian Mathematical Olympiad 2023 Final, Grade 9 Problem 5",
+    "topic": "combinatorics",
+    "weight": 30,
+    "prompt": "Several piles of stones are on a table. Say that there are many stones if it is possible to select $50$ piles and number them $1,2,\\ldots,50$ so that pile $i$ contains at least $i$ stones. Initially there are $100$ piles of $100$ stones each. Find the greatest integer $n\\le 10000$ such that, no matter how $n$ stones are removed from the piles, many stones must remain. Removing stones from a pile does not split it into multiple piles.",
+    "answer": 5099,
+    "source": {
+      "country": "Russia",
+      "competition": "49th All-Russian Mathematical Olympiad",
+      "season": "2022-2023",
+      "round": "Final, day 2, grade 9",
+      "problem": "9.5",
+      "url": "https://olympiads.mccme.ru/vmo/2023/final/day2.pdf",
+      "originalLanguage": "Russian",
+      "translation": "Independently translated from the official Russian statement and checked against its official solution.",
+      "answerVerification": "Official solution and independent derivation."
+    }
+  },
+  {
+    "id": "olympiad-russian-2025-final-10-p6",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "All-Russian Mathematical Olympiad 2025 Final, Grade 10 Problem 6",
+    "topic": "polynomials",
+    "weight": 30,
+    "prompt": "Find the smallest integer $k$ such that, for every real polynomial $f(x)$ of degree $100$, there is a real polynomial $g(x)$ of degree at most $k$ whose graph has exactly $100$ points in common with the graph of $f$.",
+    "answer": 98,
+    "source": {
+      "country": "Russia",
+      "competition": "51st All-Russian Mathematical Olympiad",
+      "season": "2024-2025",
+      "round": "Final, day 2, grade 10",
+      "problem": "10.6",
+      "url": "https://olympiads.mccme.ru/vmo/2025/final/sol2.pdf",
+      "originalLanguage": "Russian",
+      "translation": "Independently translated from the official Russian statement and checked against its official solution.",
+      "answerVerification": "Official solution and independent derivation."
+    }
+  },
+  {
+    "id": "olympiad-usamo-1984-p1",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "USAMO 1984, Problem 1",
+    "topic": "algebra",
+    "weight": 30,
+    "prompt": "The product of two roots of the polynomial $x^4-18x^3+kx^2+200x-1984$ is $-32$. Find $k$.",
+    "answer": 86,
+    "source": {
+      "country": "United States",
+      "competition": "United States of America Mathematical Olympiad",
+      "year": 1984,
+      "problem": "1",
+      "archive": "Art of Problem Solving Wiki",
+      "url": "https://artofproblemsolving.com/wiki/index.php/1984_USAMO_Problems/Problem_1",
+      "originalLanguage": "English",
+      "translation": "Original English statement, lightly copyedited without changing the mathematics.",
+      "answerVerification": "Independent derivation checked against the archived solution."
+    }
+  },
+  {
+    "id": "olympiad-usamo-1985-p5",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "USAMO 1985, Problem 5",
+    "topic": "combinatorics",
+    "weight": 30,
+    "prompt": "Let $a_1,a_2,a_3,\\ldots$ be an unbounded, nondecreasing sequence of positive integers. For $m\\ge 1$, define $b_m=\\min\\{n:a_n\\ge m\\}$, so $b_m$ is the least index $n$ for which $a_n\\ge m$. If $a_{19}=85$, find the maximum possible value of \\[a_1+a_2+\\cdots+a_{19}+b_1+b_2+\\cdots+b_{85}\\].",
+    "answer": 1700,
+    "source": {
+      "country": "United States",
+      "competition": "United States of America Mathematical Olympiad",
+      "year": 1985,
+      "problem": "5",
+      "archive": "Art of Problem Solving Wiki",
+      "url": "https://artofproblemsolving.com/wiki/index.php/1985_USAMO_Problems/Problem_5",
+      "originalLanguage": "English",
+      "translation": "Original English statement, lightly copyedited without changing the mathematics.",
+      "answerVerification": "Independent derivation checked against the archived solution."
+    }
+  },
+  {
+    "id": "olympiad-usamo-2014-p1",
+    "type": "input",
+    "contest": "olympiad",
+    "label": "USAMO 2014, Problem 1",
+    "topic": "algebra",
+    "weight": 30,
+    "prompt": "Let $a,b,c,d$ be real numbers such that $b-d\\ge 5$, and suppose all four roots $x_1,x_2,x_3,x_4$ of $P(x)=x^4+ax^3+bx^2+cx+d$ are real. Find the smallest possible value of \\[(x_1^2+1)(x_2^2+1)(x_3^2+1)(x_4^2+1)\\].",
+    "answer": 16,
+    "source": {
+      "country": "United States",
+      "competition": "United States of America Mathematical Olympiad",
+      "year": 2014,
+      "problem": "1",
+      "archive": "Art of Problem Solving Wiki",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2014_USAMO_Problems/Problem_1",
+      "originalLanguage": "English",
+      "translation": "Original English statement, lightly copyedited without changing the mathematics.",
+      "answerVerification": "Independent derivation checked against the archived solution."
+    }
+  }
+]
