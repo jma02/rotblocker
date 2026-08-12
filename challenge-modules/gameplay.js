@@ -270,6 +270,7 @@ function poolDisplayName(key) {
     amc10: "AMC10",
     amc12: "AMC12",
     aime: "AIME",
+    olympiad: "Olympiad",
     gre: "GRE",
     calculus: "Calculus"
   };
@@ -417,7 +418,7 @@ function baseWeightNow() {
 
 function decayedBaseNow() {
   if (!currentProblem) return 0;
-  if (contestKey(currentProblem) === "aime") return baseWeightNow();
+  if (decayDurationNow() === Infinity) return baseWeightNow();
   return scoringApi.decayedBasePoints(
     baseWeightNow(),
     problemElapsedMsNow(),
@@ -427,10 +428,10 @@ function decayedBaseNow() {
 
 function pointsIfCorrectNow() {
   if (!currentProblem) return 0;
-  const isAime = contestKey(currentProblem) === "aime";
+  const hasNoDecay = decayDurationNow() === Infinity;
   return scoringApi.pointsIfCorrectNow({
     baseWeight: baseWeightNow(),
-    elapsedMs: isAime ? 0 : problemElapsedMsNow(),
+    elapsedMs: hasNoDecay ? 0 : problemElapsedMsNow(),
     durationMs: decayDurationNow(),
     isMcq: currentProblem.type === "mcq",
     wrongGuesses: mcqWrongGuesses,
@@ -539,8 +540,8 @@ function renderLiveStats() {
   }
 
   if (timerEl) {
-    if (contestKey(currentProblem) === "aime") {
-      timerEl.textContent = "Decay: none (AIME)";
+    if (decayDurationNow() === Infinity) {
+      timerEl.textContent = `Decay: none (${poolDisplayName(contestKey(currentProblem))})`;
     } else {
       const remainingMs = Math.max(0, decayDurationNow() - problemElapsedMsNow());
       const seconds = Math.ceil(remainingMs / 1000);

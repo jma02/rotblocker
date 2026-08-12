@@ -59,6 +59,7 @@ test("normalizer write reaches a stable, checkable fixed point", (t) => {
     "amc12.json",
     "calculus_mcq.json",
     "calculus_mcq_synthetic.json",
+    "olympiad.json",
     "upper_level_mcq.json"
   ];
   for (const filename of filenames) {

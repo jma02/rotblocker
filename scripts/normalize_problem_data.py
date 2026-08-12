@@ -31,6 +31,7 @@ DATA_FILES = (
     "amc12.json",
     "calculus_mcq.json",
     "calculus_mcq_synthetic.json",
+    "olympiad.json",
     "upper_level_mcq.json",
 )
 DEFAULT_REPORT = ROOT / "data" / "problem_cleanup_report.json"

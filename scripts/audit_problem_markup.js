@@ -15,6 +15,12 @@ const BANKS = [
   { file: "data/amc12.json", scope: "runtime", contest: "amc12", type: "mcq" },
   { file: "data/aime.json", scope: "runtime", contest: "aime", type: "input" },
   {
+    file: "data/olympiad.json",
+    scope: "runtime",
+    contest: "olympiad",
+    type: "input"
+  },
+  {
     file: "data/upper_level_mcq.json",
     scope: "runtime",
     contest: "upper_level_mcq",

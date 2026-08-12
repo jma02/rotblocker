@@ -17,6 +17,7 @@ const RUNTIME_BANKS = [
   "data/amc10.json",
   "data/amc12.json",
   "data/aime.json",
+  "data/olympiad.json",
   "data/upper_level_mcq.json",
   "data/calculus_mcq_synthetic.json"
 ];

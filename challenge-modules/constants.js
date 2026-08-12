@@ -7,6 +7,7 @@
     amc10: 8 * 60 * 1000,
     amc12: 10 * 60 * 1000,
     aime: Infinity,
+    olympiad: Infinity,
     upper_level_mcq: 8 * 60 * 1000,
     calculus: 8 * 60 * 1000
   };
@@ -17,6 +18,7 @@
     amc10: 8,
     amc12: 12,
     aime: 30,
+    olympiad: 30,
     upper_level_mcq: 5,
     calculus: 5
   };
@@ -27,6 +29,7 @@
     amc10: "amc10",
     amc12: "amc12",
     aime: "aime",
+    olympiad: "olympiad",
     gre: "upper_level_mcq",
     calculus: "calculus_mcq_synthetic"
   };
@@ -37,6 +40,7 @@
     amc10: 20,
     amc12: 15,
     aime: 10,
+    olympiad: 10,
     gre: 10,
     calculus: 10
   };

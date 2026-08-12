@@ -150,6 +150,7 @@ test("release packaging whitelists only runtime data banks", () => {
   assert.match(script, /"data\/amc10\.json"/);
   assert.match(script, /"data\/amc12\.json"/);
   assert.match(script, /"data\/aime\.json"/);
+  assert.match(script, /"data\/olympiad\.json"/);
   assert.match(script, /"data\/upper_level_mcq\.json"/);
   assert.match(script, /"data\/calculus_mcq_synthetic\.json"/);
   assert.doesNotMatch(script, /"data"\s*$/m);

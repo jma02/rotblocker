@@ -30,7 +30,8 @@ Be sure to *enable Developer Mode*.
 
 ## Core Behavior
 - Locked mode redirects blocked domains to `rotblocker++/index.html`.
-- You earn score by solving problems (AMC8/10/12 + AIME pools).
+- You earn score by solving problems (AMC8/10/12, AIME, and optional Olympiad pools).
+- The Olympiad pool contains ten sourced, translation-reviewed numeric problems each from China, Poland, Russia, and the USAMO.
 - Unlock threshold is `30` points.
 - Unlock cooldown defaults to `2 hours` and is configurable in settings.
 - On unlock, score resets to `0`.
@@ -43,11 +44,13 @@ Be sure to *enable Developer Mode*.
   - `AMC10`: `8`
   - `AMC12`: `12`
   - `AIME`: `30`
+  - `Olympiad`: `30`
 - Time decay:
   - `AMC8`: 6 min linear decay to `0`
   - `AMC10`: 8 min linear decay to `0`
   - `AMC12`: 10 min linear decay to `0`
   - `AIME`: no decay
+  - `Olympiad`: no decay
 - MCQ guess multipliers: `1.0`, `0.1`, `0.02`, `0`, `0`
 - Wrong-guess penalties:
   - 2nd wrong: `-1.00`
