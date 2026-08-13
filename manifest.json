@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "rotblocker++",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Blocks X/Twitter and LinkedIn until you solve challenge problems.",
   "permissions": [
     "alarms",
