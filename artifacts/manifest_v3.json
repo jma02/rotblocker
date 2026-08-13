@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
   "artifact_version": "v3",
-  "generated_at_utc": "2026-07-27T05:55:58.095157+00:00",
+  "generated_at_utc": "2026-08-13T19:55:23.819682+00:00",
   "inputs": {
     "calculus": {
       "path": "data/calculus_mcq_synthetic.json",
-      "sha256": "5d3e2cf7a5f8d60a5690d5dac30228f653bcde239b24c188b2554e72cc16bd61",
-      "count": 320,
+      "sha256": "b4731d0340f0517c39b4cbde4aefb27bdf9a8a257d1f7b2c2cf283f7ea30bc66",
+      "count": 400,
       "source_credit": "Synthetic original calculus MCQ bank generated locally"
     },
     "upper_level_mcq": {
       "path": "data/upper_level_mcq.json",
-      "sha256": "35d0f16defb4c2b80a3d8afc2bd3fa5960ba10a3c7ce953777a982d65387fc54",
-      "count": 44,
-      "source_credit": "GRE Mathematics practice materials in third_party/gre_math",
+      "sha256": "7404ba9e52d1173ebcee451849a263d4b16036b177520eb0cd2fbefdb2db9696",
+      "count": 80,
+      "source_credit": "Verified GRE Mathematics practice-material transcriptions and original Rotblocker GRE-style questions",
       "source_policy": "all"
     }
   },
   "outputs": {
     "calculus": {
       "path": "artifacts/calculus_mcq_v3.json",
-      "count": 320,
-      "sha256": "0eb2f406776043d2a47dbf73a36a49b8f4209792c486bf06e39ec51519ea1ba7"
+      "count": 400,
+      "sha256": "be21bab35b07275ba9fff356d1cbc7d5633d871038efeb943b5aac96e826d2ec"
     },
     "upper_level_mcq": {
       "path": "artifacts/gre_math_mcq_v3.json",
-      "count": 44,
-      "sha256": "35d0f16defb4c2b80a3d8afc2bd3fa5960ba10a3c7ce953777a982d65387fc54"
+      "count": 80,
+      "sha256": "24c0cebdea16449e8c6f3df6488f13406c695fcdd5599d515bafa82b650e7d62"
     },
     "rejects": {
       "path": "artifacts/rejects_v3.json",

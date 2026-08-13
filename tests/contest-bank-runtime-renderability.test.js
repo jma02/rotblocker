@@ -18,6 +18,10 @@ const BANKS = [
   "upper_level_mcq",
   "calculus_mcq_synthetic"
 ];
+const EXPANDED_BANK_ROW_COUNTS = {
+  upper_level_mcq: 80,
+  calculus_mcq_synthetic: 400
+};
 const REVIEWED_MISSING_VISUAL_IDS = JSON.parse(
   fs.readFileSync("data/reviewed_missing_visuals.json", "utf8")
 ).ids;
@@ -52,7 +56,7 @@ function mathJaxErrors(text, mathjaxApi, adaptor) {
   return failures;
 }
 
-test("runtime compiles 2,507 accepted rows and excludes exactly 27 reviewed missing visuals", async () => {
+test("runtime compiles 2,623 accepted rows and excludes exactly 27 reviewed missing visuals", async () => {
   const mathjaxApi = await mathJaxReady;
   const adaptor = mathjaxApi.startup.adaptor;
   const failures = [];
@@ -62,6 +66,13 @@ test("runtime compiles 2,507 accepted rows and excludes exactly 27 reviewed miss
 
   for (const bank of BANKS) {
     const rows = JSON.parse(fs.readFileSync(`data/${bank}.json`, "utf8"));
+    if (Object.hasOwn(EXPANDED_BANK_ROW_COUNTS, bank)) {
+      assert.equal(
+        rows.length,
+        EXPANDED_BANK_ROW_COUNTS[bank],
+        `${bank} no longer matches its reviewed production count`
+      );
+    }
     totalRows += rows.length;
     let accepted = 0;
     let excluded = 0;
@@ -108,8 +119,8 @@ test("runtime compiles 2,507 accepted rows and excludes exactly 27 reviewed miss
     );
   }
 
-  assert.equal(totalRows, 2534);
-  assert.equal(totalAccepted, 2507);
+  assert.equal(totalRows, 2650);
+  assert.equal(totalAccepted, 2623);
   assert.equal(runtimeExcludedIds.length, 27);
   for (const id of REVIEWED_MISSING_VISUAL_IDS) {
     assert.ok(runtimeExcludedIds.includes(id), `reviewed missing visual ${id} became selectable`);

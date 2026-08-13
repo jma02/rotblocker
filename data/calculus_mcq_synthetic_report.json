@@ -1,9 +1,9 @@
 {
-  "dataset": "synthetic_calculus_v3",
-  "count": 320,
+  "dataset": "synthetic_calculus_v4",
+  "count": 400,
   "seed": 20260221,
   "attempts": 362,
-  "requested_total": 320,
+  "requested_total": 400,
   "target_quotas": {
     "derivatives": 37,
     "limits": 35,
@@ -17,14 +17,14 @@
     "plot_interpretation": 32
   },
   "topic_counts": {
-    "derivatives": 37,
+    "derivatives": 52,
     "limits": 35,
-    "integration": 64,
+    "integration": 84,
     "optimization": 26,
-    "multivariable": 42,
-    "series": 22,
-    "parametric": 16,
-    "vector_calculus": 22,
+    "multivariable": 57,
+    "series": 37,
+    "parametric": 21,
+    "vector_calculus": 32,
     "continuity_graphing": 24,
     "plot_interpretation": 32
   },
@@ -63,6 +63,33 @@
     "gen_graph_abs_nondiff": 2,
     "gen_plot_odd_fact": 16,
     "gen_plot_parabola_fact": 16
+  },
+  "core_dataset": "synthetic_calculus_v3",
+  "core_count": 320,
+  "supplement_dataset": "synthetic_calculus_v4_supplement",
+  "supplement_count": 80,
+  "supplement_family_usage": {
+    "implicit-differentiation": 5,
+    "mean-value-theorem": 5,
+    "improper-p-integral": 5,
+    "taylor-coefficient": 5,
+    "related-rates-sphere": 5,
+    "ftc-chain-rule": 5,
+    "u-substitution": 5,
+    "integration-by-parts": 5,
+    "power-series-radius": 5,
+    "polar-area": 5,
+    "directional-derivative": 5,
+    "jacobian": 5,
+    "limit-comparison": 5,
+    "lagrange-multipliers": 5,
+    "conservative-line-integral": 5,
+    "curl-component": 5
+  },
+  "supplement_difficulty_counts": {
+    "foundational": 20,
+    "standard": 40,
+    "challenging": 20
   },
   "diagram_svg_count": 32
 }

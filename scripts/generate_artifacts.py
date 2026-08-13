@@ -373,7 +373,10 @@ def generate(version: str, gre_source_policy: str, calculus_input: Path) -> None
                 "path": display_path(GRE_INPUT),
                 "sha256": sha256_file(GRE_INPUT),
                 "count": len(gre_rows),
-                "source_credit": "GRE Mathematics practice materials in third_party/gre_math",
+                "source_credit": (
+                    "Verified GRE Mathematics practice-material transcriptions "
+                    "and original Rotblocker GRE-style questions"
+                ),
                 "source_policy": gre_source_policy,
             },
         },

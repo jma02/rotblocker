@@ -158,8 +158,8 @@ class GreUpperLevelImportTests(unittest.TestCase):
             BOOTCAMP_VERIFIED_ITEM_OVERRIDES,
         )
 
-    def test_all_44_retained_rows_match_their_true_source_key(self):
-        self.assertEqual(len(self.rows), 44)
+    def test_imported_rows_match_their_true_source_key(self):
+        self.assertEqual(len(self.rows), 80)
         practice_rows = [
             row
             for row in self.rows
@@ -170,8 +170,31 @@ class GreUpperLevelImportTests(unittest.TestCase):
             for row in self.rows
             if row["source"]["dataset"] == "GREBootcamp"
         ]
+        original_rows = [
+            row
+            for row in self.rows
+            if row["source"]["dataset"] == "rotblocker_original_gre_v1"
+        ]
         self.assertEqual(len(practice_rows), 11)
         self.assertEqual(len(bootcamp_rows), 33)
+        self.assertEqual(len(original_rows), 36)
+
+        for row in original_rows:
+            with self.subTest(row_id=row["id"]):
+                source = row["source"]
+                self.assertEqual(source["authoring"], "original")
+                self.assertIsInstance(source.get("verification"), str)
+                self.assertTrue(source["verification"].strip())
+                self.assertIsInstance(source.get("concept"), str)
+                self.assertTrue(source["concept"].strip())
+                self.assertIn(
+                    source.get("difficulty"),
+                    {"easy", "medium", "hard"},
+                )
+                self.assertEqual(
+                    row["answer"],
+                    row["choices"][row["answerIndex"]],
+                )
 
         practice_key = parse_answer_key_simple(read_pdf_text(PRACTICE_A))
         for row in practice_rows:
