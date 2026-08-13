@@ -17,6 +17,10 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / "data" / "calculus_mcq_synthetic.json"
 DEFAULT_REPORT = ROOT / "data" / "calculus_mcq_synthetic_report.json"
 DATASET_NAME = "synthetic_calculus_v3"
+SUPPLEMENT_DATASET_NAME = "synthetic_calculus_v4_supplement"
+REPORT_DATASET_NAME = "synthetic_calculus_v4"
+CORE_COUNT = 320
+SUPPLEMENT_COUNT = 80
 
 
 def frac_to_tex(value: Fraction) -> str:
@@ -27,6 +31,10 @@ def frac_to_tex(value: Fraction) -> str:
 
 def pretty_num(value: Fraction) -> str:
     if value.denominator == 1:
+        # Preserve the original v3 serialization: negative choices were
+        # MathJax-wrapped even when integral.
+        if value.numerator < 0:
+            return f"${value.numerator}$"
         return str(value.numerator)
     return f"${frac_to_tex(value)}$"
 
@@ -1026,7 +1034,343 @@ TEMPLATES: list[tuple[str, Callable[[int, random.Random], dict]]] = [
 ]
 
 
-def build_dataset(total: int, seed: int) -> tuple[list[dict], dict]:
+def make_supplement_mcq(
+    *,
+    family: str,
+    variant: int,
+    topic: str,
+    concept: str,
+    difficulty: str,
+    verifier: str,
+    prompt: str,
+    correct: Fraction,
+    distractors: list[Fraction],
+    rng: random.Random,
+) -> dict:
+    """Build a v4 row without the v3 generator's fallback distractors."""
+    values = [correct, *distractors]
+    if len(values) != 5 or len(set(values)) != 5:
+        raise ValueError(f"{family} variant {variant} must have five distinct choices")
+    rng.shuffle(values)
+    answer_index = values.index(correct)
+    choices = [pretty_num(value) for value in values]
+    return {
+        "id": f"calcv4-{family}-{variant:02d}",
+        "type": "mcq",
+        "contest": "calculus",
+        "label": "Curated Calculus MCQ",
+        "topic": topic,
+        "weight": 5,
+        "prompt": prompt,
+        "choices": choices,
+        "answerIndex": answer_index,
+        "answerKey": "ABCDE"[answer_index],
+        "answer": choices[answer_index],
+        "source": {
+            "dataset": SUPPLEMENT_DATASET_NAME,
+            "generator": "scripts/generate_calculus_synthetic.py",
+            "topic": topic,
+            "template": family,
+            "concept": concept,
+            "difficulty": difficulty,
+            "verifier": verifier,
+        },
+    }
+
+
+def gen_supp_implicit(variant: int, rng: random.Random) -> dict:
+    x, y = [(3, 4), (5, 12), (8, 15), (7, 24), (20, 21)][variant - 1]
+    answer = Fraction(-x, y)
+    return make_supplement_mcq(
+        family="implicit-differentiation", variant=variant,
+        topic="derivatives", concept="implicit differentiation",
+        difficulty="foundational", verifier="Differentiate x^2+y^2=C: dy/dx=-x/y.",
+        prompt=f"The point $({x},{y})$ lies on $x^2+y^2={x*x+y*y}$. What is $\\frac{{dy}}{{dx}}$ there?",
+        correct=answer,
+        distractors=[Fraction(x, y), Fraction(-y, x), Fraction(y, x), Fraction(0)],
+        rng=rng,
+    )
+
+
+def gen_supp_mvt(variant: int, rng: random.Random) -> dict:
+    a, b, k = [(1, 5, 3), (2, 8, -1), (-3, 5, 4), (4, 10, 2), (-5, 1, -2)][variant - 1]
+    answer = Fraction(a + b, 2)
+    return make_supplement_mcq(
+        family="mean-value-theorem", variant=variant,
+        topic="derivatives", concept="Mean Value Theorem",
+        difficulty="foundational", verifier="For f(x)=x^2+kx, solve 2c+k=(f(b)-f(a))/(b-a)=a+b+k.",
+        prompt=(f"For $f(x)=x^2{fmt_term(k, 'x', 1)}$ on $[{a},{b}]$, the Mean Value Theorem "
+                "guarantees a point $c$ with $f'(c)$ equal to the average rate of change. Find $c$."),
+        correct=answer,
+        distractors=[Fraction(a), Fraction(b), Fraction(a + b), Fraction(b - a)],
+        rng=rng,
+    )
+
+
+def gen_supp_improper(variant: int, rng: random.Random) -> dict:
+    p = [3, 4, 5, 6, 7][variant - 1]
+    answer = Fraction(1, p - 1)
+    return make_supplement_mcq(
+        family="improper-p-integral", variant=variant,
+        topic="integration", concept="improper integrals",
+        difficulty="foundational", verifier="Integral from 1 to infinity of x^(-p) is 1/(p-1) for p>1.",
+        prompt=f"Evaluate the improper integral $\\int_1^\\infty \\frac{{1}}{{x^{p}}}\\,dx$.",
+        correct=answer,
+        distractors=[Fraction(1, p), Fraction(1, p + 1), Fraction(p - 1), Fraction(0)],
+        rng=rng,
+    )
+
+
+def gen_supp_taylor(variant: int, rng: random.Random) -> dict:
+    a, n = [(2, 3), (3, 2), (-2, 4), (4, 3), (-3, 5)][variant - 1]
+    factorial = 1
+    for value in range(2, n + 1):
+        factorial *= value
+    answer = Fraction(a**n, factorial)
+    prior_factorial = factorial // n
+    distractors = [
+        Fraction(a ** (n - 1), prior_factorial),
+        Fraction(a**n, prior_factorial),
+        Fraction(a ** (n - 1), factorial),
+        Fraction((-a) ** n, factorial) if a > 0 and n % 2 else Fraction(-a**n, factorial),
+    ]
+    return make_supplement_mcq(
+        family="taylor-coefficient", variant=variant,
+        topic="series", concept="Taylor series coefficients",
+        difficulty="foundational", verifier="In exp(ax)=sum (a^n/n!)x^n, the x^n coefficient is a^n/n!.",
+        prompt=f"What is the coefficient of $x^{n}$ in the Maclaurin series for $e^{{{a}x}}$?",
+        correct=answer, distractors=distractors, rng=rng,
+    )
+
+
+def gen_supp_related_rates(variant: int, rng: random.Random) -> dict:
+    r, rate = [(2, 3), (5, 2), (6, 3), (7, 2), (8, 3)][variant - 1]
+    answer = Fraction(4 * r * r * rate)
+    return make_supplement_mcq(
+        family="related-rates-sphere", variant=variant,
+        topic="derivatives", concept="related rates",
+        difficulty="standard", verifier="Differentiate V=(4/3)pi r^3: (1/pi)dV/dt=4r^2 dr/dt.",
+        prompt=(f"A sphere's radius is {r} cm and is increasing at {rate} cm/s. "
+                "What is $\\frac{1}{\\pi}\\frac{dV}{dt}$ at that instant?"),
+        correct=answer,
+        distractors=[Fraction(r*r*rate), Fraction(4*r*rate), Fraction(4*r*r), Fraction(4*r**3, 3)],
+        rng=rng,
+    )
+
+
+def gen_supp_ftc_chain(variant: int, rng: random.Random) -> dict:
+    x, c = [(1, 2), (2, 1), (3, 2), (-2, 3), (-3, 1)][variant - 1]
+    answer = Fraction(2 * x * (x*x + c))
+    return make_supplement_mcq(
+        family="ftc-chain-rule", variant=variant,
+        topic="integration", concept="Fundamental Theorem of Calculus with chain rule",
+        difficulty="standard", verifier="If G(x)=integral_0^(x^2)(t+c)dt, then G'(x)=2x(x^2+c).",
+        prompt=f"Let $G(x)=\\int_0^{{x^2}}(t+{c})\\,dt$. Find $G'({x})$.",
+        correct=answer,
+        distractors=[Fraction(x*x+c), Fraction(2*x*(x*x)), Fraction((x*x+c)**2-c*c, 2), Fraction(-2*x*(x*x+c))],
+        rng=rng,
+    )
+
+
+def gen_supp_substitution(variant: int, rng: random.Random) -> dict:
+    b, c = [(1, 1), (2, 1), (1, 2), (2, 2), (3, 1)][variant - 1]
+    top = b*b + c
+    answer = Fraction(top**3 - c**3, 3)
+    return make_supplement_mcq(
+        family="u-substitution", variant=variant,
+        topic="integration", concept="u-substitution",
+        difficulty="standard", verifier="Use u=x^2+c and du=2x dx: integral=(u^3/3)|_c^(b^2+c).",
+        prompt=f"Compute $\\int_0^{{{b}}} 2x(x^2+{c})^2\\,dx$.",
+        correct=answer,
+        distractors=[Fraction(top**3-c**3), Fraction(top**3, 3), Fraction(top**2-c**2, 2), Fraction(top**3+c**3, 3)],
+        rng=rng,
+    )
+
+
+def gen_supp_parts(variant: int, rng: random.Random) -> dict:
+    n = [1, 2, 3, 4, 5][variant - 1]
+    answer = Fraction(1, (n + 1) * (n + 2))
+    return make_supplement_mcq(
+        family="integration-by-parts", variant=variant,
+        topic="integration", concept="integration by parts",
+        difficulty="standard", verifier="Integration by parts gives integral_0^1 x(1-x)^n dx=1/((n+1)(n+2)).",
+        prompt=f"Evaluate $\\int_0^1 x(1-x)^{n}\\,dx$.",
+        correct=answer,
+        distractors=[Fraction(1, n+1), Fraction(1, n+2), Fraction(1, (n+1)**2), Fraction(n, (n+2)*(n+3))],
+        rng=rng,
+    )
+
+
+def gen_supp_radius(variant: int, rng: random.Random) -> dict:
+    m, d, center = [(2, 5, -1), (3, 7, -2), (4, 9, -3), (5, 8, -4), (6, 11, -5)][variant - 1]
+    answer = Fraction(d, m)
+    return make_supplement_mcq(
+        family="power-series-radius", variant=variant,
+        topic="series", concept="radius of convergence",
+        difficulty="standard", verifier="A geometric series in m(x-c)/d converges when |x-c|<d/m, so R=d/m.",
+        prompt=f"Find the radius of convergence of $\\sum_{{n=0}}^\\infty\\left(\\frac{{{m}({fmt_x_minus(center)})}}{{{d}}}\\right)^n$.",
+        correct=answer,
+        distractors=[Fraction(d), Fraction(m, d), Fraction(1, d), Fraction(center)],
+        rng=rng,
+    )
+
+
+def gen_supp_polar_area(variant: int, rng: random.Random) -> dict:
+    a = [3, 4, 5, 6, 7][variant - 1]
+    answer = Fraction(a*a)
+    return make_supplement_mcq(
+        family="polar-area", variant=variant,
+        topic="parametric", concept="area in polar coordinates",
+        difficulty="standard", verifier="r=2a cos(theta) is a circle of radius a, hence area/pi=a^2.",
+        prompt=f"The polar curve $r={2*a}\\cos\\theta$ is a circle. What is its enclosed area divided by $\\pi$?",
+        correct=answer,
+        distractors=[Fraction(2*a*a), Fraction(4*a*a), Fraction(a), Fraction(a*a, 2)],
+        rng=rng,
+    )
+
+
+def gen_supp_directional(variant: int, rng: random.Random) -> dict:
+    a, b, x, y = [(1, 2, 1, 1), (2, 1, 2, -1), (3, 2, -1, 2), (2, 3, 1, -2), (4, 1, -2, 3)][variant - 1]
+    x_part = 6*a*x
+    y_part = 8*b*y
+    answer = Fraction(x_part + y_part, 5)
+    surface = join_terms([
+        fmt_term(a, "x", 2, first=True),
+        fmt_term(b, "y", 2, first=True),
+    ])
+    return make_supplement_mcq(
+        family="directional-derivative", variant=variant,
+        topic="multivariable", concept="directional derivatives",
+        difficulty="standard", verifier="Dot grad(ax^2+by^2)=(2ax,2by) with unit vector (3/5,4/5).",
+        prompt=(f"For $f(x,y)={surface}$, find the directional derivative at $({x},{y})$ "
+                "in the direction $\\mathbf{u}=(3/5,4/5)$."),
+        correct=answer,
+        distractors=[Fraction(x_part-y_part, 5), Fraction(x_part+y_part), Fraction(2*a*x+2*b*y), Fraction(-x_part-y_part, 5)],
+        rng=rng,
+    )
+
+
+def gen_supp_jacobian(variant: int, rng: random.Random) -> dict:
+    a, b, c, d = [(1, 2, 1, 4), (1, 2, 1, 5), (1, 2, 1, 6), (1, 2, 1, 7), (1, 2, 2, 1)][variant - 1]
+    det = a*d-b*c
+    answer = Fraction(abs(det))
+    u = join_terms([fmt_term(a, "x", 1, first=True), fmt_term(b, "y", 1, first=True)])
+    v = join_terms([fmt_term(c, "x", 1, first=True), fmt_term(d, "y", 1, first=True)])
+    return make_supplement_mcq(
+        family="jacobian", variant=variant,
+        topic="multivariable", concept="Jacobian determinant",
+        difficulty="standard", verifier="For u=ax+by and v=cx+dy, |partial(u,v)/partial(x,y)|=|ad-bc|.",
+        prompt=(f"Let $u={u}$ and $v={v}$. "
+                "Find $\\left|\\frac{\\partial(u,v)}{\\partial(x,y)}\\right|$."),
+        correct=answer,
+        distractors=[Fraction(abs(a*d+b*c)), Fraction(abs(a*c-b*d)), Fraction(abs(a+d)), Fraction(abs(det)+1)],
+        rng=rng,
+    )
+
+
+def gen_supp_convergence(variant: int, rng: random.Random) -> dict:
+    a, b, c, d = [(2, 1, 3, 1), (3, 2, 5, 4), (4, 1, 7, 2), (5, 3, 2, 5), (7, 2, 4, 3)][variant - 1]
+    answer = Fraction(a, c)
+    return make_supplement_mcq(
+        family="limit-comparison", variant=variant,
+        topic="series", concept="limit comparison test",
+        difficulty="challenging", verifier="n^2(an+b)/(cn^3+d) tends to a/c, a positive finite limit versus 1/n^2.",
+        prompt=(f"For $a_n=\\frac{{{a}n+{b}}}{{{c}n^3+{d}}}$, compute "
+                "$\\lim_{n\\to\\infty} a_n/(1/n^2)$, the limit used to compare $\\sum a_n$ with $\\sum 1/n^2$."),
+        correct=answer,
+        distractors=[Fraction(c, a), Fraction(a), Fraction(c), Fraction(0)],
+        rng=rng,
+    )
+
+
+def gen_supp_lagrange(variant: int, rng: random.Random) -> dict:
+    r = [2, 3, 4, 5, 6][variant - 1]
+    answer = Fraction(r*r, 2)
+    return make_supplement_mcq(
+        family="lagrange-multipliers", variant=variant,
+        topic="multivariable", concept="Lagrange multipliers",
+        difficulty="challenging", verifier="Under x^2+y^2=r^2, 2xy<=x^2+y^2, so max xy=r^2/2 at x=y=r/sqrt(2).",
+        prompt=f"What is the maximum value of $xy$ subject to $x^2+y^2={r*r}$?",
+        correct=answer,
+        distractors=[Fraction(r*r), Fraction(2*r*r), Fraction(r, 2), Fraction(-r*r, 2)],
+        rng=rng,
+    )
+
+
+def gen_supp_conservative(variant: int, rng: random.Random) -> dict:
+    a, b, c, x1, y1, x2, y2 = [
+        (1, 1, 2, 1, 0, 1, 2), (2, -1, 1, 1, 0, 2, 1),
+        (1, 2, 3, -1, 1, 1, 2), (3, 1, 1, 0, 1, 2, -1),
+        (2, 3, 2, -1, -1, 2, 1),
+    ][variant - 1]
+    phi1 = a*x1*x1+b*x1*y1+c*y1*y1
+    phi2 = a*x2*x2+b*x2*y2+c*y2*y2
+    answer = Fraction(phi2-phi1)
+    potential = join_terms([
+        fmt_term(a, "x", 2, first=True),
+        fmt_term(b, "xy", 1, first=True),
+        fmt_term(c, "y", 2, first=True),
+    ])
+    return make_supplement_mcq(
+        family="conservative-line-integral", variant=variant,
+        topic="vector_calculus", concept="conservative fields and line integrals",
+        difficulty="challenging", verifier="The field is grad(phi); by the fundamental theorem for line integrals, integral=phi(B)-phi(A).",
+        prompt=(f"Let $\\phi(x,y)={potential}$ and "
+                f"$\\mathbf{{F}}=\\nabla\\phi$. Compute $\\int_C\\mathbf{{F}}\\cdot d\\mathbf{{r}}$ "
+                f"from $({x1},{y1})$ to $({x2},{y2})$ along any smooth path $C$."),
+        correct=answer,
+        distractors=[Fraction(-answer), Fraction(phi2), Fraction(phi1), Fraction(phi2+phi1)],
+        rng=rng,
+    )
+
+
+def gen_supp_curl(variant: int, rng: random.Random) -> dict:
+    a, b, c = [(1, 2, 3), (2, 3, 1), (3, 1, 2), (4, 2, 1), (5, 3, 2)][variant - 1]
+    answer = Fraction(a+b+c)
+    field = ",".join([
+        fmt_term(-c, "y", 1, first=True),
+        fmt_term(-a, "z", 1, first=True),
+        fmt_term(-b, "x", 1, first=True),
+    ])
+    return make_supplement_mcq(
+        family="curl-component", variant=variant,
+        topic="vector_calculus", concept="curl",
+        difficulty="challenging",
+        verifier="For F=(-cy,-az,-bx), curl F=(a,b,c), whose dot product with (1,1,1) is a+b+c.",
+        prompt=(f"For $\\mathbf{{F}}(x,y,z)=({field})$, compute "
+                "$(\\nabla\\times\\mathbf{F})\\cdot(1,1,1)$."),
+        correct=answer,
+        distractors=[Fraction(a+b-c), Fraction(a-b+c), Fraction(-a+b+c), Fraction(-(a+b+c))],
+        rng=rng,
+    )
+
+
+SUPPLEMENT_FAMILIES: list[Callable[[int, random.Random], dict]] = [
+    gen_supp_implicit,
+    gen_supp_mvt,
+    gen_supp_improper,
+    gen_supp_taylor,
+    gen_supp_related_rates,
+    gen_supp_ftc_chain,
+    gen_supp_substitution,
+    gen_supp_parts,
+    gen_supp_radius,
+    gen_supp_polar_area,
+    gen_supp_directional,
+    gen_supp_jacobian,
+    gen_supp_convergence,
+    gen_supp_lagrange,
+    gen_supp_conservative,
+    gen_supp_curl,
+]
+
+
+def build_supplement(seed: int) -> list[dict]:
+    rng = random.Random(seed ^ 0xCA1C2026)
+    return [family(variant, rng) for family in SUPPLEMENT_FAMILIES for variant in range(1, 6)]
+
+
+def build_core_dataset(total: int, seed: int) -> tuple[list[dict], dict]:
     rng = random.Random(seed)
     rows: list[dict] = []
     topic_counts: dict[str, int] = {}
@@ -1123,9 +1467,46 @@ def build_dataset(total: int, seed: int) -> tuple[list[dict], dict]:
     return rows, report
 
 
+def build_dataset(total: int, seed: int) -> tuple[list[dict], dict]:
+    """Build the immutable v3 core, followed by up to 80 curated v4 rows."""
+    requested_total = min(max(1, total), CORE_COUNT + SUPPLEMENT_COUNT)
+    core_total = min(requested_total, CORE_COUNT)
+    rows, core_report = build_core_dataset(total=core_total, seed=seed)
+    supplement = build_supplement(seed)[: max(0, requested_total - CORE_COUNT)]
+    rows.extend(supplement)
+
+    topic_counts: dict[str, int] = {}
+    for row in rows:
+        topic = str(row["topic"])
+        topic_counts[topic] = topic_counts.get(topic, 0) + 1
+    family_usage: dict[str, int] = {}
+    difficulty_counts: dict[str, int] = {}
+    for row in supplement:
+        source = row["source"]
+        family = str(source["template"])
+        difficulty = str(source["difficulty"])
+        family_usage[family] = family_usage.get(family, 0) + 1
+        difficulty_counts[difficulty] = difficulty_counts.get(difficulty, 0) + 1
+
+    report = {
+        **core_report,
+        "dataset": REPORT_DATASET_NAME if supplement else DATASET_NAME,
+        "requested_total": total,
+        "count": len(rows),
+        "core_dataset": DATASET_NAME,
+        "core_count": core_total,
+        "supplement_dataset": SUPPLEMENT_DATASET_NAME,
+        "supplement_count": len(supplement),
+        "topic_counts": topic_counts,
+        "supplement_family_usage": family_usage,
+        "supplement_difficulty_counts": difficulty_counts,
+    }
+    return rows, report
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate synthetic calculus MCQ dataset.")
-    parser.add_argument("--count", type=int, default=320, help="Number of MCQs to generate.")
+    parser.add_argument("--count", type=int, default=400, help="Number of MCQs to generate (maximum 400).")
     parser.add_argument("--seed", type=int, default=20260221, help="Random seed.")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT, help="Output JSON path.")
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT, help="Report JSON path.")

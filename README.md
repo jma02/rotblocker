@@ -30,7 +30,8 @@ Be sure to *enable Developer Mode*.
 
 ## Core Behavior
 - Locked mode redirects blocked domains to `rotblocker++/index.html`.
-- You earn score by solving problems (AMC8/10/12, AIME, and optional Olympiad pools).
+- You earn score by solving problems from AMC8/10/12, AIME, and optional
+  Olympiad, Calculus, and GRE Mathematics pools.
 - The Olympiad pool contains ten sourced, translation-reviewed numeric problems each from China, Poland, Russia, and the USAMO.
 - Unlock threshold is `30` points.
 - Unlock cooldown defaults to `2 hours` and is configurable in settings.
@@ -124,9 +125,9 @@ Open:
   - Treats non-fatal dataset audit warnings as failures.
 - `npm run rewrite:gre`
   - Writes a non-production GRE cleanup preview without modifying the curated
-    44-row bank.
+    80-row bank.
 - `npm run generate:calculus`
-  - Generates synthetic calculus dataset.
+  - Deterministically generates the 400-row synthetic calculus dataset.
 - `npm run build:artifacts`
   - Regenerates calculus, normalizes all shipped banks, then packages the
     versioned artifacts.
@@ -194,9 +195,14 @@ values for final answers. The old 144-row extraction is therefore quarantined
 rather than shipped. `scripts/import_calculus_pdf_mcq.py` now writes only
 explicitly unverified research output and cannot overwrite the active bank.
 
-The supported 320-row calculus bank is
+The supported 400-row calculus bank is
 `data/calculus_mcq_synthetic.json`; the release pipeline publishes its validated
 v3 artifact.
+
+The curated GRE Mathematics bank contains 80 render-checked questions: 44
+verified transcriptions retained from the original practice-material import and
+36 locally authored questions with explicit concept, difficulty, and
+verification metadata.
 
 Example strict GRE source policy:
 ```bash

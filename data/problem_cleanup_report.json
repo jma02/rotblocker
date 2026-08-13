@@ -1,14 +1,14 @@
 {
   "baselineRef": "8f5ceb3151b2975ff591a5c277ff2981ef477947",
   "normalizationChanges": {
-    "answer_sync": 286,
+    "answer_sync": 290,
     "broken_diagram_override": 1,
     "choice_layout_noise": 368,
     "choice_math_wrapper": 1426,
     "currency_choice_wrapper": 2,
     "display_math": 15,
     "existing_diagram_link": 51,
-    "fraction_commands": 519,
+    "fraction_commands": 530,
     "leading_tex_command": 28,
     "malformed_set_choice_override": 1,
     "mathjax_command_compatibility": 3,
@@ -20,10 +20,10 @@
     "prompt_spacing": 122,
     "source_attribution_noise": 1,
     "source_backed_answer_override": 1,
-    "source_backed_gre_override": 19,
+    "source_backed_gre_override": 20,
     "source_section_disambiguation": 33,
     "source_typo_override": 1,
-    "sqrt_commands": 94,
+    "sqrt_commands": 95,
     "trailing_empty_phantom": 1,
     "triple_brace_choice": 30,
     "truncated_parenthetical_override": 7,
@@ -50,9 +50,9 @@
     "data/amc10.json": 757,
     "data/amc12.json": 682,
     "data/calculus_mcq.json": 0,
-    "data/calculus_mcq_synthetic.json": 320,
+    "data/calculus_mcq_synthetic.json": 400,
     "data/olympiad.json": 40,
-    "data/upper_level_mcq.json": 44
+    "data/upper_level_mcq.json": 80
   },
   "issueCounts": {},
   "issueExamples": {},
@@ -1471,7 +1471,7 @@
       ]
     }
   ],
-  "nearDuplicatePairCount": 199,
+  "nearDuplicatePairCount": 265,
   "nearDuplicatePairs": [
     {
       "similarity": 0.9975,
@@ -1727,6 +1727,50 @@
       }
     },
     {
+      "similarity": 0.9895,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-related-rates-sphere-01"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-related-rates-sphere-03"
+      }
+    },
+    {
+      "similarity": 0.9895,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-related-rates-sphere-01"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-related-rates-sphere-05"
+      }
+    },
+    {
+      "similarity": 0.9895,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-related-rates-sphere-02"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-related-rates-sphere-04"
+      }
+    },
+    {
+      "similarity": 0.9895,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-related-rates-sphere-03"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-related-rates-sphere-05"
+      }
+    },
+    {
       "similarity": 0.9883,
       "left": {
         "file": "data/calculus_mcq_synthetic.json",
@@ -1914,6 +1958,17 @@
       }
     },
     {
+      "similarity": 0.9872,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-mean-value-theorem-04"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-mean-value-theorem-05"
+      }
+    },
+    {
       "similarity": 0.9863,
       "left": {
         "file": "data/calculus_mcq_synthetic.json",
@@ -2068,6 +2123,39 @@
       }
     },
     {
+      "similarity": 0.9841,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-taylor-coefficient-01"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-taylor-coefficient-03"
+      }
+    },
+    {
+      "similarity": 0.9841,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-taylor-coefficient-01"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-taylor-coefficient-04"
+      }
+    },
+    {
+      "similarity": 0.9841,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-taylor-coefficient-02"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-taylor-coefficient-05"
+      }
+    },
+    {
       "similarity": 0.9839,
       "left": {
         "file": "data/calculus_mcq_synthetic.json",
@@ -2219,6 +2307,17 @@
       "right": {
         "file": "data/calculus_mcq_synthetic.json",
         "id": "calcv2-multivariable-0202"
+      }
+    },
+    {
+      "similarity": 0.9829,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-mean-value-theorem-01"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-mean-value-theorem-03"
       }
     },
     {
@@ -2420,6 +2519,17 @@
       }
     },
     {
+      "similarity": 0.9811,
+      "left": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-lagrange-multipliers-03"
+      },
+      "right": {
+        "file": "data/calculus_mcq_synthetic.json",
+        "id": "calcv4-lagrange-multipliers-05"
+      }
+    },
+    {
       "similarity": 0.9808,
       "left": {
         "file": "data/calculus_mcq_synthetic.json",
@@ -2453,124 +2563,14 @@
       }
     },
     {
-      "similarity": 0.9804,
+      "similarity": 0.9808,
       "left": {
         "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-continuity_graphing-0272"
+        "id": "calcv4-lagrange-multipliers-01"
       },
       "right": {
         "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-continuity_graphing-0283"
-      }
-    },
-    {
-      "similarity": 0.9804,
-      "left": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-limits-0047"
-      },
-      "right": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-limits-0059"
-      }
-    },
-    {
-      "similarity": 0.9804,
-      "left": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-limits-0051"
-      },
-      "right": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-limits-0059"
-      }
-    },
-    {
-      "similarity": 0.9804,
-      "left": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-limits-0059"
-      },
-      "right": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-limits-0062"
-      }
-    },
-    {
-      "similarity": 0.9798,
-      "left": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-vector_calculus-0255"
-      },
-      "right": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-vector_calculus-0261"
-      }
-    },
-    {
-      "similarity": 0.9794,
-      "left": {
-        "file": "data/amc10.json",
-        "id": "amio-2dd7298d0c1630d5895f6d28ac47eab2"
-      },
-      "right": {
-        "file": "data/amc12.json",
-        "id": "amio-219c15fc97a359e1068d1d662ccff137"
-      }
-    },
-    {
-      "similarity": 0.9794,
-      "left": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-vector_calculus-0252"
-      },
-      "right": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-vector_calculus-0260"
-      }
-    },
-    {
-      "similarity": 0.9787,
-      "left": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-optimization-0144"
-      },
-      "right": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-optimization-0148"
-      }
-    },
-    {
-      "similarity": 0.9787,
-      "left": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-optimization-0144"
-      },
-      "right": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-optimization-0149"
-      }
-    },
-    {
-      "similarity": 0.9783,
-      "left": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-vector_calculus-0245"
-      },
-      "right": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-vector_calculus-0249"
-      }
-    },
-    {
-      "similarity": 0.9783,
-      "left": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-vector_calculus-0245"
-      },
-      "right": {
-        "file": "data/calculus_mcq_synthetic.json",
-        "id": "calcv2-vector_calculus-0257"
+        "id": "calcv4-lagrange-multipliers-02"
       }
     }
   ],

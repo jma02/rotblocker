@@ -7742,5 +7742,2245 @@
       "diagram": "generated_svg"
     },
     "diagramSvg": "assets/diagrams/calcv3-plot-parabola-362.svg"
+  },
+  {
+    "id": "calcv4-implicit-differentiation-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "The point $(3,4)$ lies on $x^2+y^2=25$. What is $\\frac{dy}{dx}$ there?",
+    "choices": [
+      "$\\frac{3}{4}$",
+      "$\\frac{-3}{4}$",
+      "$\\frac{-4}{3}$",
+      "$\\frac{4}{3}$",
+      "0"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$\\frac{-3}{4}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "implicit-differentiation",
+      "concept": "implicit differentiation",
+      "difficulty": "foundational",
+      "verifier": "Differentiate x^2+y^2=C: dy/dx=-x/y."
+    }
+  },
+  {
+    "id": "calcv4-implicit-differentiation-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "The point $(5,12)$ lies on $x^2+y^2=169$. What is $\\frac{dy}{dx}$ there?",
+    "choices": [
+      "0",
+      "$\\frac{-12}{5}$",
+      "$\\frac{-5}{12}$",
+      "$\\frac{12}{5}$",
+      "$\\frac{5}{12}$"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{-5}{12}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "implicit-differentiation",
+      "concept": "implicit differentiation",
+      "difficulty": "foundational",
+      "verifier": "Differentiate x^2+y^2=C: dy/dx=-x/y."
+    }
+  },
+  {
+    "id": "calcv4-implicit-differentiation-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "The point $(8,15)$ lies on $x^2+y^2=289$. What is $\\frac{dy}{dx}$ there?",
+    "choices": [
+      "$\\frac{-8}{15}$",
+      "$\\frac{8}{15}$",
+      "$\\frac{15}{8}$",
+      "$\\frac{-15}{8}$",
+      "0"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{-8}{15}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "implicit-differentiation",
+      "concept": "implicit differentiation",
+      "difficulty": "foundational",
+      "verifier": "Differentiate x^2+y^2=C: dy/dx=-x/y."
+    }
+  },
+  {
+    "id": "calcv4-implicit-differentiation-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "The point $(7,24)$ lies on $x^2+y^2=625$. What is $\\frac{dy}{dx}$ there?",
+    "choices": [
+      "$\\frac{7}{24}$",
+      "$\\frac{24}{7}$",
+      "$\\frac{-24}{7}$",
+      "$\\frac{-7}{24}$",
+      "0"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$\\frac{-7}{24}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "implicit-differentiation",
+      "concept": "implicit differentiation",
+      "difficulty": "foundational",
+      "verifier": "Differentiate x^2+y^2=C: dy/dx=-x/y."
+    }
+  },
+  {
+    "id": "calcv4-implicit-differentiation-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "The point $(20,21)$ lies on $x^2+y^2=841$. What is $\\frac{dy}{dx}$ there?",
+    "choices": [
+      "$\\frac{20}{21}$",
+      "0",
+      "$\\frac{-21}{20}$",
+      "$\\frac{-20}{21}$",
+      "$\\frac{21}{20}$"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$\\frac{-20}{21}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "implicit-differentiation",
+      "concept": "implicit differentiation",
+      "difficulty": "foundational",
+      "verifier": "Differentiate x^2+y^2=C: dy/dx=-x/y."
+    }
+  },
+  {
+    "id": "calcv4-mean-value-theorem-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "For $f(x)=x^2+3x$ on $[1,5]$, the Mean Value Theorem guarantees a point $c$ with $f'(c)$ equal to the average rate of change. Find $c$.",
+    "choices": [
+      "6",
+      "5",
+      "4",
+      "3",
+      "1"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "3",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "mean-value-theorem",
+      "concept": "Mean Value Theorem",
+      "difficulty": "foundational",
+      "verifier": "For f(x)=x^2+kx, solve 2c+k=(f(b)-f(a))/(b-a)=a+b+k."
+    }
+  },
+  {
+    "id": "calcv4-mean-value-theorem-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "For $f(x)=x^2-x$ on $[2,8]$, the Mean Value Theorem guarantees a point $c$ with $f'(c)$ equal to the average rate of change. Find $c$.",
+    "choices": [
+      "6",
+      "10",
+      "5",
+      "8",
+      "2"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "5",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "mean-value-theorem",
+      "concept": "Mean Value Theorem",
+      "difficulty": "foundational",
+      "verifier": "For f(x)=x^2+kx, solve 2c+k=(f(b)-f(a))/(b-a)=a+b+k."
+    }
+  },
+  {
+    "id": "calcv4-mean-value-theorem-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "For $f(x)=x^2+4x$ on $[-3,5]$, the Mean Value Theorem guarantees a point $c$ with $f'(c)$ equal to the average rate of change. Find $c$.",
+    "choices": [
+      "5",
+      "2",
+      "8",
+      "$-3$",
+      "1"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "1",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "mean-value-theorem",
+      "concept": "Mean Value Theorem",
+      "difficulty": "foundational",
+      "verifier": "For f(x)=x^2+kx, solve 2c+k=(f(b)-f(a))/(b-a)=a+b+k."
+    }
+  },
+  {
+    "id": "calcv4-mean-value-theorem-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "For $f(x)=x^2+2x$ on $[4,10]$, the Mean Value Theorem guarantees a point $c$ with $f'(c)$ equal to the average rate of change. Find $c$.",
+    "choices": [
+      "7",
+      "10",
+      "14",
+      "4",
+      "6"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "7",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "mean-value-theorem",
+      "concept": "Mean Value Theorem",
+      "difficulty": "foundational",
+      "verifier": "For f(x)=x^2+kx, solve 2c+k=(f(b)-f(a))/(b-a)=a+b+k."
+    }
+  },
+  {
+    "id": "calcv4-mean-value-theorem-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "For $f(x)=x^2-2x$ on $[-5,1]$, the Mean Value Theorem guarantees a point $c$ with $f'(c)$ equal to the average rate of change. Find $c$.",
+    "choices": [
+      "$-5$",
+      "6",
+      "$-4$",
+      "$-2$",
+      "1"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$-2$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "mean-value-theorem",
+      "concept": "Mean Value Theorem",
+      "difficulty": "foundational",
+      "verifier": "For f(x)=x^2+kx, solve 2c+k=(f(b)-f(a))/(b-a)=a+b+k."
+    }
+  },
+  {
+    "id": "calcv4-improper-p-integral-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Evaluate the improper integral $\\int_1^\\infty \\frac{1}{x^3}\\,dx$.",
+    "choices": [
+      "0",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{3}$",
+      "2",
+      "$\\frac{1}{4}$"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$\\frac{1}{2}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "improper-p-integral",
+      "concept": "improper integrals",
+      "difficulty": "foundational",
+      "verifier": "Integral from 1 to infinity of x^(-p) is 1/(p-1) for p>1."
+    }
+  },
+  {
+    "id": "calcv4-improper-p-integral-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Evaluate the improper integral $\\int_1^\\infty \\frac{1}{x^4}\\,dx$.",
+    "choices": [
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{4}$",
+      "3",
+      "0"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{1}{3}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "improper-p-integral",
+      "concept": "improper integrals",
+      "difficulty": "foundational",
+      "verifier": "Integral from 1 to infinity of x^(-p) is 1/(p-1) for p>1."
+    }
+  },
+  {
+    "id": "calcv4-improper-p-integral-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Evaluate the improper integral $\\int_1^\\infty \\frac{1}{x^5}\\,dx$.",
+    "choices": [
+      "4",
+      "0",
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{4}$"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "$\\frac{1}{4}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "improper-p-integral",
+      "concept": "improper integrals",
+      "difficulty": "foundational",
+      "verifier": "Integral from 1 to infinity of x^(-p) is 1/(p-1) for p>1."
+    }
+  },
+  {
+    "id": "calcv4-improper-p-integral-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Evaluate the improper integral $\\int_1^\\infty \\frac{1}{x^6}\\,dx$.",
+    "choices": [
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{7}$",
+      "$\\frac{1}{6}$",
+      "0",
+      "5"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{1}{5}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "improper-p-integral",
+      "concept": "improper integrals",
+      "difficulty": "foundational",
+      "verifier": "Integral from 1 to infinity of x^(-p) is 1/(p-1) for p>1."
+    }
+  },
+  {
+    "id": "calcv4-improper-p-integral-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Evaluate the improper integral $\\int_1^\\infty \\frac{1}{x^7}\\,dx$.",
+    "choices": [
+      "0",
+      "$\\frac{1}{7}$",
+      "6",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{8}$"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$\\frac{1}{6}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "improper-p-integral",
+      "concept": "improper integrals",
+      "difficulty": "foundational",
+      "verifier": "Integral from 1 to infinity of x^(-p) is 1/(p-1) for p>1."
+    }
+  },
+  {
+    "id": "calcv4-taylor-coefficient-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "What is the coefficient of $x^3$ in the Maclaurin series for $e^{2x}$?",
+    "choices": [
+      "$\\frac{-4}{3}$",
+      "2",
+      "$\\frac{4}{3}$",
+      "$\\frac{2}{3}$",
+      "4"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{4}{3}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "taylor-coefficient",
+      "concept": "Taylor series coefficients",
+      "difficulty": "foundational",
+      "verifier": "In exp(ax)=sum (a^n/n!)x^n, the x^n coefficient is a^n/n!."
+    }
+  },
+  {
+    "id": "calcv4-taylor-coefficient-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "What is the coefficient of $x^2$ in the Maclaurin series for $e^{3x}$?",
+    "choices": [
+      "$\\frac{-9}{2}$",
+      "$\\frac{3}{2}$",
+      "$\\frac{9}{2}$",
+      "3",
+      "9"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{9}{2}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "taylor-coefficient",
+      "concept": "Taylor series coefficients",
+      "difficulty": "foundational",
+      "verifier": "In exp(ax)=sum (a^n/n!)x^n, the x^n coefficient is a^n/n!."
+    }
+  },
+  {
+    "id": "calcv4-taylor-coefficient-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "What is the coefficient of $x^4$ in the Maclaurin series for $e^{-2x}$?",
+    "choices": [
+      "$\\frac{-4}{3}$",
+      "$\\frac{-2}{3}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{-1}{3}$",
+      "$\\frac{8}{3}$"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{2}{3}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "taylor-coefficient",
+      "concept": "Taylor series coefficients",
+      "difficulty": "foundational",
+      "verifier": "In exp(ax)=sum (a^n/n!)x^n, the x^n coefficient is a^n/n!."
+    }
+  },
+  {
+    "id": "calcv4-taylor-coefficient-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "What is the coefficient of $x^3$ in the Maclaurin series for $e^{4x}$?",
+    "choices": [
+      "$\\frac{8}{3}$",
+      "8",
+      "$\\frac{-32}{3}$",
+      "$\\frac{32}{3}$",
+      "32"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$\\frac{32}{3}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "taylor-coefficient",
+      "concept": "Taylor series coefficients",
+      "difficulty": "foundational",
+      "verifier": "In exp(ax)=sum (a^n/n!)x^n, the x^n coefficient is a^n/n!."
+    }
+  },
+  {
+    "id": "calcv4-taylor-coefficient-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "What is the coefficient of $x^5$ in the Maclaurin series for $e^{-3x}$?",
+    "choices": [
+      "$\\frac{81}{40}$",
+      "$\\frac{-81}{40}$",
+      "$\\frac{27}{8}$",
+      "$\\frac{27}{40}$",
+      "$\\frac{-81}{8}$"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$\\frac{-81}{40}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "taylor-coefficient",
+      "concept": "Taylor series coefficients",
+      "difficulty": "foundational",
+      "verifier": "In exp(ax)=sum (a^n/n!)x^n, the x^n coefficient is a^n/n!."
+    }
+  },
+  {
+    "id": "calcv4-related-rates-sphere-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "A sphere's radius is 2 cm and is increasing at 3 cm/s. What is $\\frac{1}{\\pi}\\frac{dV}{dt}$ at that instant?",
+    "choices": [
+      "12",
+      "16",
+      "$\\frac{32}{3}$",
+      "48",
+      "24"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "48",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "related-rates-sphere",
+      "concept": "related rates",
+      "difficulty": "standard",
+      "verifier": "Differentiate V=(4/3)pi r^3: (1/pi)dV/dt=4r^2 dr/dt."
+    }
+  },
+  {
+    "id": "calcv4-related-rates-sphere-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "A sphere's radius is 5 cm and is increasing at 2 cm/s. What is $\\frac{1}{\\pi}\\frac{dV}{dt}$ at that instant?",
+    "choices": [
+      "50",
+      "40",
+      "100",
+      "$\\frac{500}{3}$",
+      "200"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "200",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "related-rates-sphere",
+      "concept": "related rates",
+      "difficulty": "standard",
+      "verifier": "Differentiate V=(4/3)pi r^3: (1/pi)dV/dt=4r^2 dr/dt."
+    }
+  },
+  {
+    "id": "calcv4-related-rates-sphere-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "A sphere's radius is 6 cm and is increasing at 3 cm/s. What is $\\frac{1}{\\pi}\\frac{dV}{dt}$ at that instant?",
+    "choices": [
+      "72",
+      "108",
+      "144",
+      "432",
+      "288"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "432",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "related-rates-sphere",
+      "concept": "related rates",
+      "difficulty": "standard",
+      "verifier": "Differentiate V=(4/3)pi r^3: (1/pi)dV/dt=4r^2 dr/dt."
+    }
+  },
+  {
+    "id": "calcv4-related-rates-sphere-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "A sphere's radius is 7 cm and is increasing at 2 cm/s. What is $\\frac{1}{\\pi}\\frac{dV}{dt}$ at that instant?",
+    "choices": [
+      "98",
+      "392",
+      "$\\frac{1372}{3}$",
+      "196",
+      "56"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "392",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "related-rates-sphere",
+      "concept": "related rates",
+      "difficulty": "standard",
+      "verifier": "Differentiate V=(4/3)pi r^3: (1/pi)dV/dt=4r^2 dr/dt."
+    }
+  },
+  {
+    "id": "calcv4-related-rates-sphere-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "derivatives",
+    "weight": 5,
+    "prompt": "A sphere's radius is 8 cm and is increasing at 3 cm/s. What is $\\frac{1}{\\pi}\\frac{dV}{dt}$ at that instant?",
+    "choices": [
+      "768",
+      "192",
+      "256",
+      "$\\frac{2048}{3}$",
+      "96"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "768",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "derivatives",
+      "template": "related-rates-sphere",
+      "concept": "related rates",
+      "difficulty": "standard",
+      "verifier": "Differentiate V=(4/3)pi r^3: (1/pi)dV/dt=4r^2 dr/dt."
+    }
+  },
+  {
+    "id": "calcv4-ftc-chain-rule-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Let $G(x)=\\int_0^{x^2}(t+2)\\,dt$. Find $G'(1)$.",
+    "choices": [
+      "3",
+      "2",
+      "$-6$",
+      "$\\frac{5}{2}$",
+      "6"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "6",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "ftc-chain-rule",
+      "concept": "Fundamental Theorem of Calculus with chain rule",
+      "difficulty": "standard",
+      "verifier": "If G(x)=integral_0^(x^2)(t+c)dt, then G'(x)=2x(x^2+c)."
+    }
+  },
+  {
+    "id": "calcv4-ftc-chain-rule-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Let $G(x)=\\int_0^{x^2}(t+1)\\,dt$. Find $G'(2)$.",
+    "choices": [
+      "20",
+      "5",
+      "$-20$",
+      "16",
+      "12"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "20",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "ftc-chain-rule",
+      "concept": "Fundamental Theorem of Calculus with chain rule",
+      "difficulty": "standard",
+      "verifier": "If G(x)=integral_0^(x^2)(t+c)dt, then G'(x)=2x(x^2+c)."
+    }
+  },
+  {
+    "id": "calcv4-ftc-chain-rule-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Let $G(x)=\\int_0^{x^2}(t+2)\\,dt$. Find $G'(3)$.",
+    "choices": [
+      "54",
+      "11",
+      "66",
+      "$\\frac{117}{2}$",
+      "$-66$"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "66",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "ftc-chain-rule",
+      "concept": "Fundamental Theorem of Calculus with chain rule",
+      "difficulty": "standard",
+      "verifier": "If G(x)=integral_0^(x^2)(t+c)dt, then G'(x)=2x(x^2+c)."
+    }
+  },
+  {
+    "id": "calcv4-ftc-chain-rule-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Let $G(x)=\\int_0^{x^2}(t+3)\\,dt$. Find $G'(-2)$.",
+    "choices": [
+      "20",
+      "$-16$",
+      "$-28$",
+      "7",
+      "28"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$-28$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "ftc-chain-rule",
+      "concept": "Fundamental Theorem of Calculus with chain rule",
+      "difficulty": "standard",
+      "verifier": "If G(x)=integral_0^(x^2)(t+c)dt, then G'(x)=2x(x^2+c)."
+    }
+  },
+  {
+    "id": "calcv4-ftc-chain-rule-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Let $G(x)=\\int_0^{x^2}(t+1)\\,dt$. Find $G'(-3)$.",
+    "choices": [
+      "10",
+      "$\\frac{99}{2}$",
+      "$-54$",
+      "$-60$",
+      "60"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$-60$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "ftc-chain-rule",
+      "concept": "Fundamental Theorem of Calculus with chain rule",
+      "difficulty": "standard",
+      "verifier": "If G(x)=integral_0^(x^2)(t+c)dt, then G'(x)=2x(x^2+c)."
+    }
+  },
+  {
+    "id": "calcv4-u-substitution-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Compute $\\int_0^{1} 2x(x^2+1)^2\\,dx$.",
+    "choices": [
+      "$\\frac{8}{3}$",
+      "$\\frac{3}{2}$",
+      "$\\frac{7}{3}$",
+      "7",
+      "3"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{7}{3}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "u-substitution",
+      "concept": "u-substitution",
+      "difficulty": "standard",
+      "verifier": "Use u=x^2+c and du=2x dx: integral=(u^3/3)|_c^(b^2+c)."
+    }
+  },
+  {
+    "id": "calcv4-u-substitution-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Compute $\\int_0^{2} 2x(x^2+1)^2\\,dx$.",
+    "choices": [
+      "$\\frac{124}{3}$",
+      "$\\frac{125}{3}$",
+      "12",
+      "124",
+      "42"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{124}{3}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "u-substitution",
+      "concept": "u-substitution",
+      "difficulty": "standard",
+      "verifier": "Use u=x^2+c and du=2x dx: integral=(u^3/3)|_c^(b^2+c)."
+    }
+  },
+  {
+    "id": "calcv4-u-substitution-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Compute $\\int_0^{1} 2x(x^2+2)^2\\,dx$.",
+    "choices": [
+      "$\\frac{19}{3}$",
+      "$\\frac{35}{3}$",
+      "9",
+      "$\\frac{5}{2}$",
+      "19"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{19}{3}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "u-substitution",
+      "concept": "u-substitution",
+      "difficulty": "standard",
+      "verifier": "Use u=x^2+c and du=2x dx: integral=(u^3/3)|_c^(b^2+c)."
+    }
+  },
+  {
+    "id": "calcv4-u-substitution-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Compute $\\int_0^{2} 2x(x^2+2)^2\\,dx$.",
+    "choices": [
+      "16",
+      "$\\frac{208}{3}$",
+      "72",
+      "$\\frac{224}{3}$",
+      "208"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$\\frac{208}{3}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "u-substitution",
+      "concept": "u-substitution",
+      "difficulty": "standard",
+      "verifier": "Use u=x^2+c and du=2x dx: integral=(u^3/3)|_c^(b^2+c)."
+    }
+  },
+  {
+    "id": "calcv4-u-substitution-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Compute $\\int_0^{3} 2x(x^2+1)^2\\,dx$.",
+    "choices": [
+      "$\\frac{99}{2}$",
+      "333",
+      "999",
+      "$\\frac{1000}{3}$",
+      "$\\frac{1001}{3}$"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "333",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "u-substitution",
+      "concept": "u-substitution",
+      "difficulty": "standard",
+      "verifier": "Use u=x^2+c and du=2x dx: integral=(u^3/3)|_c^(b^2+c)."
+    }
+  },
+  {
+    "id": "calcv4-integration-by-parts-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Evaluate $\\int_0^1 x(1-x)^1\\,dx$.",
+    "choices": [
+      "$\\frac{1}{12}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{1}{6}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "integration-by-parts",
+      "concept": "integration by parts",
+      "difficulty": "standard",
+      "verifier": "Integration by parts gives integral_0^1 x(1-x)^n dx=1/((n+1)(n+2))."
+    }
+  },
+  {
+    "id": "calcv4-integration-by-parts-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Evaluate $\\int_0^1 x(1-x)^2\\,dx$.",
+    "choices": [
+      "$\\frac{1}{12}$",
+      "$\\frac{1}{10}$",
+      "$\\frac{1}{9}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{4}$"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{1}{12}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "integration-by-parts",
+      "concept": "integration by parts",
+      "difficulty": "standard",
+      "verifier": "Integration by parts gives integral_0^1 x(1-x)^n dx=1/((n+1)(n+2))."
+    }
+  },
+  {
+    "id": "calcv4-integration-by-parts-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Evaluate $\\int_0^1 x(1-x)^3\\,dx$.",
+    "choices": [
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{10}$",
+      "$\\frac{1}{16}$",
+      "$\\frac{1}{20}$",
+      "$\\frac{1}{4}$"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$\\frac{1}{20}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "integration-by-parts",
+      "concept": "integration by parts",
+      "difficulty": "standard",
+      "verifier": "Integration by parts gives integral_0^1 x(1-x)^n dx=1/((n+1)(n+2))."
+    }
+  },
+  {
+    "id": "calcv4-integration-by-parts-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Evaluate $\\int_0^1 x(1-x)^4\\,dx$.",
+    "choices": [
+      "$\\frac{1}{30}$",
+      "$\\frac{1}{25}$",
+      "$\\frac{2}{21}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{5}$"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{1}{30}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "integration-by-parts",
+      "concept": "integration by parts",
+      "difficulty": "standard",
+      "verifier": "Integration by parts gives integral_0^1 x(1-x)^n dx=1/((n+1)(n+2))."
+    }
+  },
+  {
+    "id": "calcv4-integration-by-parts-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "integration",
+    "weight": 5,
+    "prompt": "Evaluate $\\int_0^1 x(1-x)^5\\,dx$.",
+    "choices": [
+      "$\\frac{1}{7}$",
+      "$\\frac{1}{36}$",
+      "$\\frac{5}{56}$",
+      "$\\frac{1}{42}$",
+      "$\\frac{1}{6}$"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$\\frac{1}{42}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "integration",
+      "template": "integration-by-parts",
+      "concept": "integration by parts",
+      "difficulty": "standard",
+      "verifier": "Integration by parts gives integral_0^1 x(1-x)^n dx=1/((n+1)(n+2))."
+    }
+  },
+  {
+    "id": "calcv4-power-series-radius-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "Find the radius of convergence of $\\sum_{n=0}^\\infty\\left(\\frac{2(x+1)}{5}\\right)^n$.",
+    "choices": [
+      "$\\frac{5}{2}$",
+      "5",
+      "$\\frac{2}{5}$",
+      "$-1$",
+      "$\\frac{1}{5}$"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{5}{2}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "power-series-radius",
+      "concept": "radius of convergence",
+      "difficulty": "standard",
+      "verifier": "A geometric series in m(x-c)/d converges when |x-c|<d/m, so R=d/m."
+    }
+  },
+  {
+    "id": "calcv4-power-series-radius-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "Find the radius of convergence of $\\sum_{n=0}^\\infty\\left(\\frac{3(x+2)}{7}\\right)^n$.",
+    "choices": [
+      "$\\frac{7}{3}$",
+      "7",
+      "$\\frac{3}{7}$",
+      "$\\frac{1}{7}$",
+      "$-2$"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{7}{3}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "power-series-radius",
+      "concept": "radius of convergence",
+      "difficulty": "standard",
+      "verifier": "A geometric series in m(x-c)/d converges when |x-c|<d/m, so R=d/m."
+    }
+  },
+  {
+    "id": "calcv4-power-series-radius-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "Find the radius of convergence of $\\sum_{n=0}^\\infty\\left(\\frac{4(x+3)}{9}\\right)^n$.",
+    "choices": [
+      "9",
+      "$\\frac{4}{9}$",
+      "$-3$",
+      "$\\frac{9}{4}$",
+      "$\\frac{1}{9}$"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$\\frac{9}{4}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "power-series-radius",
+      "concept": "radius of convergence",
+      "difficulty": "standard",
+      "verifier": "A geometric series in m(x-c)/d converges when |x-c|<d/m, so R=d/m."
+    }
+  },
+  {
+    "id": "calcv4-power-series-radius-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "Find the radius of convergence of $\\sum_{n=0}^\\infty\\left(\\frac{5(x+4)}{8}\\right)^n$.",
+    "choices": [
+      "$\\frac{1}{8}$",
+      "$-4$",
+      "8",
+      "$\\frac{8}{5}$",
+      "$\\frac{5}{8}$"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$\\frac{8}{5}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "power-series-radius",
+      "concept": "radius of convergence",
+      "difficulty": "standard",
+      "verifier": "A geometric series in m(x-c)/d converges when |x-c|<d/m, so R=d/m."
+    }
+  },
+  {
+    "id": "calcv4-power-series-radius-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "Find the radius of convergence of $\\sum_{n=0}^\\infty\\left(\\frac{6(x+5)}{11}\\right)^n$.",
+    "choices": [
+      "11",
+      "$\\frac{6}{11}$",
+      "$\\frac{1}{11}$",
+      "$-5$",
+      "$\\frac{11}{6}$"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "$\\frac{11}{6}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "power-series-radius",
+      "concept": "radius of convergence",
+      "difficulty": "standard",
+      "verifier": "A geometric series in m(x-c)/d converges when |x-c|<d/m, so R=d/m."
+    }
+  },
+  {
+    "id": "calcv4-polar-area-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "parametric",
+    "weight": 5,
+    "prompt": "The polar curve $r=6\\cos\\theta$ is a circle. What is its enclosed area divided by $\\pi$?",
+    "choices": [
+      "3",
+      "9",
+      "$\\frac{9}{2}$",
+      "36",
+      "18"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "9",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "parametric",
+      "template": "polar-area",
+      "concept": "area in polar coordinates",
+      "difficulty": "standard",
+      "verifier": "r=2a cos(theta) is a circle of radius a, hence area/pi=a^2."
+    }
+  },
+  {
+    "id": "calcv4-polar-area-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "parametric",
+    "weight": 5,
+    "prompt": "The polar curve $r=8\\cos\\theta$ is a circle. What is its enclosed area divided by $\\pi$?",
+    "choices": [
+      "8",
+      "32",
+      "4",
+      "64",
+      "16"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "16",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "parametric",
+      "template": "polar-area",
+      "concept": "area in polar coordinates",
+      "difficulty": "standard",
+      "verifier": "r=2a cos(theta) is a circle of radius a, hence area/pi=a^2."
+    }
+  },
+  {
+    "id": "calcv4-polar-area-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "parametric",
+    "weight": 5,
+    "prompt": "The polar curve $r=10\\cos\\theta$ is a circle. What is its enclosed area divided by $\\pi$?",
+    "choices": [
+      "50",
+      "25",
+      "$\\frac{25}{2}$",
+      "5",
+      "100"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "25",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "parametric",
+      "template": "polar-area",
+      "concept": "area in polar coordinates",
+      "difficulty": "standard",
+      "verifier": "r=2a cos(theta) is a circle of radius a, hence area/pi=a^2."
+    }
+  },
+  {
+    "id": "calcv4-polar-area-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "parametric",
+    "weight": 5,
+    "prompt": "The polar curve $r=12\\cos\\theta$ is a circle. What is its enclosed area divided by $\\pi$?",
+    "choices": [
+      "72",
+      "6",
+      "18",
+      "36",
+      "144"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "36",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "parametric",
+      "template": "polar-area",
+      "concept": "area in polar coordinates",
+      "difficulty": "standard",
+      "verifier": "r=2a cos(theta) is a circle of radius a, hence area/pi=a^2."
+    }
+  },
+  {
+    "id": "calcv4-polar-area-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "parametric",
+    "weight": 5,
+    "prompt": "The polar curve $r=14\\cos\\theta$ is a circle. What is its enclosed area divided by $\\pi$?",
+    "choices": [
+      "196",
+      "7",
+      "98",
+      "$\\frac{49}{2}$",
+      "49"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "49",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "parametric",
+      "template": "polar-area",
+      "concept": "area in polar coordinates",
+      "difficulty": "standard",
+      "verifier": "r=2a cos(theta) is a circle of radius a, hence area/pi=a^2."
+    }
+  },
+  {
+    "id": "calcv4-directional-derivative-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "For $f(x,y)=x^2+2y^2$, find the directional derivative at $(1,1)$ in the direction $\\mathbf{u}=(3/5,4/5)$.",
+    "choices": [
+      "$\\frac{-22}{5}$",
+      "6",
+      "22",
+      "$-2$",
+      "$\\frac{22}{5}$"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "$\\frac{22}{5}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "directional-derivative",
+      "concept": "directional derivatives",
+      "difficulty": "standard",
+      "verifier": "Dot grad(ax^2+by^2)=(2ax,2by) with unit vector (3/5,4/5)."
+    }
+  },
+  {
+    "id": "calcv4-directional-derivative-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "For $f(x,y)=2x^2+y^2$, find the directional derivative at $(2,-1)$ in the direction $\\mathbf{u}=(3/5,4/5)$.",
+    "choices": [
+      "16",
+      "6",
+      "$\\frac{16}{5}$",
+      "$\\frac{-16}{5}$",
+      "$\\frac{32}{5}$"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{16}{5}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "directional-derivative",
+      "concept": "directional derivatives",
+      "difficulty": "standard",
+      "verifier": "Dot grad(ax^2+by^2)=(2ax,2by) with unit vector (3/5,4/5)."
+    }
+  },
+  {
+    "id": "calcv4-directional-derivative-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "For $f(x,y)=3x^2+2y^2$, find the directional derivative at $(-1,2)$ in the direction $\\mathbf{u}=(3/5,4/5)$.",
+    "choices": [
+      "$\\frac{14}{5}$",
+      "2",
+      "$\\frac{-14}{5}$",
+      "$-10$",
+      "14"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{14}{5}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "directional-derivative",
+      "concept": "directional derivatives",
+      "difficulty": "standard",
+      "verifier": "Dot grad(ax^2+by^2)=(2ax,2by) with unit vector (3/5,4/5)."
+    }
+  },
+  {
+    "id": "calcv4-directional-derivative-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "For $f(x,y)=2x^2+3y^2$, find the directional derivative at $(1,-2)$ in the direction $\\mathbf{u}=(3/5,4/5)$.",
+    "choices": [
+      "$-8$",
+      "12",
+      "$\\frac{-36}{5}$",
+      "$\\frac{36}{5}$",
+      "$-36$"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{-36}{5}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "directional-derivative",
+      "concept": "directional derivatives",
+      "difficulty": "standard",
+      "verifier": "Dot grad(ax^2+by^2)=(2ax,2by) with unit vector (3/5,4/5)."
+    }
+  },
+  {
+    "id": "calcv4-directional-derivative-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "For $f(x,y)=4x^2+y^2$, find the directional derivative at $(-2,3)$ in the direction $\\mathbf{u}=(3/5,4/5)$.",
+    "choices": [
+      "$-24$",
+      "$\\frac{-24}{5}$",
+      "$\\frac{24}{5}$",
+      "$-10$",
+      "$\\frac{-72}{5}$"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$\\frac{-24}{5}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "directional-derivative",
+      "concept": "directional derivatives",
+      "difficulty": "standard",
+      "verifier": "Dot grad(ax^2+by^2)=(2ax,2by) with unit vector (3/5,4/5)."
+    }
+  },
+  {
+    "id": "calcv4-jacobian-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "Let $u=x+2y$ and $v=x+4y$. Find $\\left|\\frac{\\partial(u,v)}{\\partial(x,y)}\\right|$.",
+    "choices": [
+      "6",
+      "5",
+      "3",
+      "7",
+      "2"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "2",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "jacobian",
+      "concept": "Jacobian determinant",
+      "difficulty": "standard",
+      "verifier": "For u=ax+by and v=cx+dy, |partial(u,v)/partial(x,y)|=|ad-bc|."
+    }
+  },
+  {
+    "id": "calcv4-jacobian-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "Let $u=x+2y$ and $v=x+5y$. Find $\\left|\\frac{\\partial(u,v)}{\\partial(x,y)}\\right|$.",
+    "choices": [
+      "3",
+      "7",
+      "9",
+      "4",
+      "6"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "3",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "jacobian",
+      "concept": "Jacobian determinant",
+      "difficulty": "standard",
+      "verifier": "For u=ax+by and v=cx+dy, |partial(u,v)/partial(x,y)|=|ad-bc|."
+    }
+  },
+  {
+    "id": "calcv4-jacobian-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "Let $u=x+2y$ and $v=x+6y$. Find $\\left|\\frac{\\partial(u,v)}{\\partial(x,y)}\\right|$.",
+    "choices": [
+      "4",
+      "5",
+      "8",
+      "11",
+      "7"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "4",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "jacobian",
+      "concept": "Jacobian determinant",
+      "difficulty": "standard",
+      "verifier": "For u=ax+by and v=cx+dy, |partial(u,v)/partial(x,y)|=|ad-bc|."
+    }
+  },
+  {
+    "id": "calcv4-jacobian-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "Let $u=x+2y$ and $v=x+7y$. Find $\\left|\\frac{\\partial(u,v)}{\\partial(x,y)}\\right|$.",
+    "choices": [
+      "8",
+      "5",
+      "9",
+      "13",
+      "6"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "5",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "jacobian",
+      "concept": "Jacobian determinant",
+      "difficulty": "standard",
+      "verifier": "For u=ax+by and v=cx+dy, |partial(u,v)/partial(x,y)|=|ad-bc|."
+    }
+  },
+  {
+    "id": "calcv4-jacobian-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "Let $u=x+2y$ and $v=2x+y$. Find $\\left|\\frac{\\partial(u,v)}{\\partial(x,y)}\\right|$.",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "0"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "3",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "jacobian",
+      "concept": "Jacobian determinant",
+      "difficulty": "standard",
+      "verifier": "For u=ax+by and v=cx+dy, |partial(u,v)/partial(x,y)|=|ad-bc|."
+    }
+  },
+  {
+    "id": "calcv4-limit-comparison-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "For $a_n=\\frac{2n+1}{3n^3+1}$, compute $\\lim_{n\\to\\infty} a_n/(1/n^2)$, the limit used to compare $\\sum a_n$ with $\\sum 1/n^2$.",
+    "choices": [
+      "$\\frac{3}{2}$",
+      "$\\frac{2}{3}$",
+      "3",
+      "0",
+      "2"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$\\frac{2}{3}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "limit-comparison",
+      "concept": "limit comparison test",
+      "difficulty": "challenging",
+      "verifier": "n^2(an+b)/(cn^3+d) tends to a/c, a positive finite limit versus 1/n^2."
+    }
+  },
+  {
+    "id": "calcv4-limit-comparison-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "For $a_n=\\frac{3n+2}{5n^3+4}$, compute $\\lim_{n\\to\\infty} a_n/(1/n^2)$, the limit used to compare $\\sum a_n$ with $\\sum 1/n^2$.",
+    "choices": [
+      "3",
+      "5",
+      "$\\frac{3}{5}$",
+      "$\\frac{5}{3}$",
+      "0"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "$\\frac{3}{5}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "limit-comparison",
+      "concept": "limit comparison test",
+      "difficulty": "challenging",
+      "verifier": "n^2(an+b)/(cn^3+d) tends to a/c, a positive finite limit versus 1/n^2."
+    }
+  },
+  {
+    "id": "calcv4-limit-comparison-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "For $a_n=\\frac{4n+1}{7n^3+2}$, compute $\\lim_{n\\to\\infty} a_n/(1/n^2)$, the limit used to compare $\\sum a_n$ with $\\sum 1/n^2$.",
+    "choices": [
+      "4",
+      "0",
+      "7",
+      "$\\frac{7}{4}$",
+      "$\\frac{4}{7}$"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "$\\frac{4}{7}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "limit-comparison",
+      "concept": "limit comparison test",
+      "difficulty": "challenging",
+      "verifier": "n^2(an+b)/(cn^3+d) tends to a/c, a positive finite limit versus 1/n^2."
+    }
+  },
+  {
+    "id": "calcv4-limit-comparison-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "For $a_n=\\frac{5n+3}{2n^3+5}$, compute $\\lim_{n\\to\\infty} a_n/(1/n^2)$, the limit used to compare $\\sum a_n$ with $\\sum 1/n^2$.",
+    "choices": [
+      "$\\frac{5}{2}$",
+      "0",
+      "$\\frac{2}{5}$",
+      "5",
+      "2"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "$\\frac{5}{2}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "limit-comparison",
+      "concept": "limit comparison test",
+      "difficulty": "challenging",
+      "verifier": "n^2(an+b)/(cn^3+d) tends to a/c, a positive finite limit versus 1/n^2."
+    }
+  },
+  {
+    "id": "calcv4-limit-comparison-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "series",
+    "weight": 5,
+    "prompt": "For $a_n=\\frac{7n+2}{4n^3+3}$, compute $\\lim_{n\\to\\infty} a_n/(1/n^2)$, the limit used to compare $\\sum a_n$ with $\\sum 1/n^2$.",
+    "choices": [
+      "4",
+      "$\\frac{7}{4}$",
+      "7",
+      "0",
+      "$\\frac{4}{7}$"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$\\frac{7}{4}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "series",
+      "template": "limit-comparison",
+      "concept": "limit comparison test",
+      "difficulty": "challenging",
+      "verifier": "n^2(an+b)/(cn^3+d) tends to a/c, a positive finite limit versus 1/n^2."
+    }
+  },
+  {
+    "id": "calcv4-lagrange-multipliers-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "What is the maximum value of $xy$ subject to $x^2+y^2=4$?",
+    "choices": [
+      "8",
+      "1",
+      "2",
+      "$-2$",
+      "4"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "2",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "lagrange-multipliers",
+      "concept": "Lagrange multipliers",
+      "difficulty": "challenging",
+      "verifier": "Under x^2+y^2=r^2, 2xy<=x^2+y^2, so max xy=r^2/2 at x=y=r/sqrt(2)."
+    }
+  },
+  {
+    "id": "calcv4-lagrange-multipliers-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "What is the maximum value of $xy$ subject to $x^2+y^2=9$?",
+    "choices": [
+      "18",
+      "$\\frac{-9}{2}$",
+      "$\\frac{3}{2}$",
+      "$\\frac{9}{2}$",
+      "9"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "$\\frac{9}{2}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "lagrange-multipliers",
+      "concept": "Lagrange multipliers",
+      "difficulty": "challenging",
+      "verifier": "Under x^2+y^2=r^2, 2xy<=x^2+y^2, so max xy=r^2/2 at x=y=r/sqrt(2)."
+    }
+  },
+  {
+    "id": "calcv4-lagrange-multipliers-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "What is the maximum value of $xy$ subject to $x^2+y^2=16$?",
+    "choices": [
+      "2",
+      "32",
+      "8",
+      "$-8$",
+      "16"
+    ],
+    "answerIndex": 2,
+    "answerKey": "C",
+    "answer": "8",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "lagrange-multipliers",
+      "concept": "Lagrange multipliers",
+      "difficulty": "challenging",
+      "verifier": "Under x^2+y^2=r^2, 2xy<=x^2+y^2, so max xy=r^2/2 at x=y=r/sqrt(2)."
+    }
+  },
+  {
+    "id": "calcv4-lagrange-multipliers-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "What is the maximum value of $xy$ subject to $x^2+y^2=25$?",
+    "choices": [
+      "$\\frac{5}{2}$",
+      "$\\frac{25}{2}$",
+      "50",
+      "$\\frac{-25}{2}$",
+      "25"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "$\\frac{25}{2}$",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "lagrange-multipliers",
+      "concept": "Lagrange multipliers",
+      "difficulty": "challenging",
+      "verifier": "Under x^2+y^2=r^2, 2xy<=x^2+y^2, so max xy=r^2/2 at x=y=r/sqrt(2)."
+    }
+  },
+  {
+    "id": "calcv4-lagrange-multipliers-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "multivariable",
+    "weight": 5,
+    "prompt": "What is the maximum value of $xy$ subject to $x^2+y^2=36$?",
+    "choices": [
+      "3",
+      "18",
+      "72",
+      "36",
+      "$-18$"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "18",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "multivariable",
+      "template": "lagrange-multipliers",
+      "concept": "Lagrange multipliers",
+      "difficulty": "challenging",
+      "verifier": "Under x^2+y^2=r^2, 2xy<=x^2+y^2, so max xy=r^2/2 at x=y=r/sqrt(2)."
+    }
+  },
+  {
+    "id": "calcv4-conservative-line-integral-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "vector_calculus",
+    "weight": 5,
+    "prompt": "Let $\\phi(x,y)=x^2+xy+2y^2$ and $\\mathbf{F}=\\nabla\\phi$. Compute $\\int_C\\mathbf{F}\\cdot d\\mathbf{r}$ from $(1,0)$ to $(1,2)$ along any smooth path $C$.",
+    "choices": [
+      "1",
+      "11",
+      "12",
+      "10",
+      "$-10$"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "10",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "vector_calculus",
+      "template": "conservative-line-integral",
+      "concept": "conservative fields and line integrals",
+      "difficulty": "challenging",
+      "verifier": "The field is grad(phi); by the fundamental theorem for line integrals, integral=phi(B)-phi(A)."
+    }
+  },
+  {
+    "id": "calcv4-conservative-line-integral-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "vector_calculus",
+    "weight": 5,
+    "prompt": "Let $\\phi(x,y)=2x^2-xy+y^2$ and $\\mathbf{F}=\\nabla\\phi$. Compute $\\int_C\\mathbf{F}\\cdot d\\mathbf{r}$ from $(1,0)$ to $(2,1)$ along any smooth path $C$.",
+    "choices": [
+      "9",
+      "2",
+      "7",
+      "$-5$",
+      "5"
+    ],
+    "answerIndex": 4,
+    "answerKey": "E",
+    "answer": "5",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "vector_calculus",
+      "template": "conservative-line-integral",
+      "concept": "conservative fields and line integrals",
+      "difficulty": "challenging",
+      "verifier": "The field is grad(phi); by the fundamental theorem for line integrals, integral=phi(B)-phi(A)."
+    }
+  },
+  {
+    "id": "calcv4-conservative-line-integral-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "vector_calculus",
+    "weight": 5,
+    "prompt": "Let $\\phi(x,y)=x^2+2xy+3y^2$ and $\\mathbf{F}=\\nabla\\phi$. Compute $\\int_C\\mathbf{F}\\cdot d\\mathbf{r}$ from $(-1,1)$ to $(1,2)$ along any smooth path $C$.",
+    "choices": [
+      "19",
+      "17",
+      "2",
+      "15",
+      "$-15$"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "15",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "vector_calculus",
+      "template": "conservative-line-integral",
+      "concept": "conservative fields and line integrals",
+      "difficulty": "challenging",
+      "verifier": "The field is grad(phi); by the fundamental theorem for line integrals, integral=phi(B)-phi(A)."
+    }
+  },
+  {
+    "id": "calcv4-conservative-line-integral-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "vector_calculus",
+    "weight": 5,
+    "prompt": "Let $\\phi(x,y)=3x^2+xy+y^2$ and $\\mathbf{F}=\\nabla\\phi$. Compute $\\int_C\\mathbf{F}\\cdot d\\mathbf{r}$ from $(0,1)$ to $(2,-1)$ along any smooth path $C$.",
+    "choices": [
+      "1",
+      "11",
+      "12",
+      "10",
+      "$-10$"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "10",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "vector_calculus",
+      "template": "conservative-line-integral",
+      "concept": "conservative fields and line integrals",
+      "difficulty": "challenging",
+      "verifier": "The field is grad(phi); by the fundamental theorem for line integrals, integral=phi(B)-phi(A)."
+    }
+  },
+  {
+    "id": "calcv4-conservative-line-integral-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "vector_calculus",
+    "weight": 5,
+    "prompt": "Let $\\phi(x,y)=2x^2+3xy+2y^2$ and $\\mathbf{F}=\\nabla\\phi$. Compute $\\int_C\\mathbf{F}\\cdot d\\mathbf{r}$ from $(-1,-1)$ to $(2,1)$ along any smooth path $C$.",
+    "choices": [
+      "7",
+      "9",
+      "23",
+      "$-9$",
+      "16"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "9",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "vector_calculus",
+      "template": "conservative-line-integral",
+      "concept": "conservative fields and line integrals",
+      "difficulty": "challenging",
+      "verifier": "The field is grad(phi); by the fundamental theorem for line integrals, integral=phi(B)-phi(A)."
+    }
+  },
+  {
+    "id": "calcv4-curl-component-01",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "vector_calculus",
+    "weight": 5,
+    "prompt": "For $\\mathbf{F}(x,y,z)=(-3y,-z,-2x)$, compute $(\\nabla\\times\\mathbf{F})\\cdot(1,1,1)$.",
+    "choices": [
+      "6",
+      "$-6$",
+      "0",
+      "4",
+      "2"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "6",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "vector_calculus",
+      "template": "curl-component",
+      "concept": "curl",
+      "difficulty": "challenging",
+      "verifier": "For F=(-cy,-az,-bx), curl F=(a,b,c), whose dot product with (1,1,1) is a+b+c."
+    }
+  },
+  {
+    "id": "calcv4-curl-component-02",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "vector_calculus",
+    "weight": 5,
+    "prompt": "For $\\mathbf{F}(x,y,z)=(-y,-2z,-3x)$, compute $(\\nabla\\times\\mathbf{F})\\cdot(1,1,1)$.",
+    "choices": [
+      "4",
+      "0",
+      "2",
+      "6",
+      "$-6$"
+    ],
+    "answerIndex": 3,
+    "answerKey": "D",
+    "answer": "6",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "vector_calculus",
+      "template": "curl-component",
+      "concept": "curl",
+      "difficulty": "challenging",
+      "verifier": "For F=(-cy,-az,-bx), curl F=(a,b,c), whose dot product with (1,1,1) is a+b+c."
+    }
+  },
+  {
+    "id": "calcv4-curl-component-03",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "vector_calculus",
+    "weight": 5,
+    "prompt": "For $\\mathbf{F}(x,y,z)=(-2y,-3z,-x)$, compute $(\\nabla\\times\\mathbf{F})\\cdot(1,1,1)$.",
+    "choices": [
+      "0",
+      "6",
+      "$-6$",
+      "4",
+      "2"
+    ],
+    "answerIndex": 1,
+    "answerKey": "B",
+    "answer": "6",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "vector_calculus",
+      "template": "curl-component",
+      "concept": "curl",
+      "difficulty": "challenging",
+      "verifier": "For F=(-cy,-az,-bx), curl F=(a,b,c), whose dot product with (1,1,1) is a+b+c."
+    }
+  },
+  {
+    "id": "calcv4-curl-component-04",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "vector_calculus",
+    "weight": 5,
+    "prompt": "For $\\mathbf{F}(x,y,z)=(-y,-4z,-2x)$, compute $(\\nabla\\times\\mathbf{F})\\cdot(1,1,1)$.",
+    "choices": [
+      "7",
+      "$-1$",
+      "5",
+      "3",
+      "$-7$"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "7",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "vector_calculus",
+      "template": "curl-component",
+      "concept": "curl",
+      "difficulty": "challenging",
+      "verifier": "For F=(-cy,-az,-bx), curl F=(a,b,c), whose dot product with (1,1,1) is a+b+c."
+    }
+  },
+  {
+    "id": "calcv4-curl-component-05",
+    "type": "mcq",
+    "contest": "calculus",
+    "label": "Curated Calculus MCQ",
+    "topic": "vector_calculus",
+    "weight": 5,
+    "prompt": "For $\\mathbf{F}(x,y,z)=(-2y,-5z,-3x)$, compute $(\\nabla\\times\\mathbf{F})\\cdot(1,1,1)$.",
+    "choices": [
+      "10",
+      "0",
+      "4",
+      "$-10$",
+      "6"
+    ],
+    "answerIndex": 0,
+    "answerKey": "A",
+    "answer": "10",
+    "source": {
+      "dataset": "synthetic_calculus_v4_supplement",
+      "generator": "scripts/generate_calculus_synthetic.py",
+      "topic": "vector_calculus",
+      "template": "curl-component",
+      "concept": "curl",
+      "difficulty": "challenging",
+      "verifier": "For F=(-cy,-az,-bx), curl F=(a,b,c), whose dot product with (1,1,1) is a+b+c."
+    }
   }
 ]

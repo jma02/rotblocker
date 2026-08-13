@@ -78,7 +78,8 @@ class RetiredCalculusImportTests(unittest.TestCase):
         )
         self.assertEqual([row["id"] for row in cleaned], before_ids)
         self.assertEqual(report["pipeline_stage"], "curated_validation_only")
-        self.assertEqual(report["kept_count"], 44)
+        self.assertEqual(report["input_count"], 80)
+        self.assertEqual(report["kept_count"], 80)
         self.assertEqual(report["dropped_count"], 0)
 
 

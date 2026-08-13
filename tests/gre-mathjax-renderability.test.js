@@ -79,6 +79,68 @@ function compileTextWithMathJax(text, mathjaxApi, adaptor) {
   return { ok: true };
 }
 
+test("GRE dataset has curated coverage, provenance, and balanced answers", () => {
+  const rows = JSON.parse(fs.readFileSync("data/upper_level_mcq.json", "utf8"));
+  assert.equal(rows.length, 80, "GRE bank size must remain intentionally curated");
+
+  const ids = new Set();
+  const prompts = new Set();
+  const topicCounts = new Map();
+  const answerCounts = [0, 0, 0, 0, 0];
+
+  for (const row of rows) {
+    assert.equal(row.type, "mcq", `${row.id}: expected mcq type`);
+    assert.equal(row.contest, "upper_level_mcq", `${row.id}: wrong contest`);
+    assert.ok(!ids.has(row.id), `${row.id}: duplicate id`);
+    ids.add(row.id);
+
+    const normalizedPrompt = String(row.prompt || "").replace(/\s+/g, " ").trim().toLowerCase();
+    assert.ok(normalizedPrompt, `${row.id}: empty prompt`);
+    assert.ok(!prompts.has(normalizedPrompt), `${row.id}: duplicate prompt`);
+    prompts.add(normalizedPrompt);
+
+    assert.notEqual(row.topic, "other_upper_level", `${row.id}: topic must be specific`);
+    topicCounts.set(row.topic, (topicCounts.get(row.topic) || 0) + 1);
+    assert.equal(row.choices.length, 5, `${row.id}: expected five choices`);
+    assert.equal(new Set(row.choices.map((choice) => String(choice).trim())).size, 5, `${row.id}: choices must be unique`);
+    assert.ok(Number.isInteger(row.answerIndex) && row.answerIndex >= 0 && row.answerIndex < 5, `${row.id}: invalid answerIndex`);
+    assert.equal(row.answer, row.choices[row.answerIndex], `${row.id}: answer text does not match answerIndex`);
+    assert.equal(row.answerKey, "ABCDE"[row.answerIndex], `${row.id}: answerKey does not match answerIndex`);
+    answerCounts[row.answerIndex] += 1;
+    assert.ok(row.source && row.source.dataset, `${row.id}: missing source dataset`);
+  }
+
+  const requiredTopicMinima = {
+    calculus: 3,
+    multivariable_calculus: 3,
+    real_analysis: 3,
+    complex_analysis: 3,
+    linear_algebra: 3,
+    abstract_algebra: 3,
+    number_theory: 3,
+    topology: 3,
+    combinatorics: 3,
+    probability: 3,
+    foundations: 3
+  };
+  for (const [topic, minimum] of Object.entries(requiredTopicMinima)) {
+    assert.ok((topicCounts.get(topic) || 0) >= minimum, `${topic}: expected at least ${minimum} rows`);
+  }
+
+  const originals = rows.filter((row) => row.source.dataset === "rotblocker_original_gre_v1");
+  assert.equal(originals.length, 36, "expected 36 independently authored GRE-style questions");
+  for (const row of originals) {
+    assert.equal(row.source.authoring, "original", `${row.id}: missing original-authoring marker`);
+    assert.ok(String(row.source.verification || "").trim(), `${row.id}: missing answer verification`);
+    assert.ok(String(row.source.concept || "").trim(), `${row.id}: missing concept metadata`);
+    assert.ok(["easy", "medium", "hard"].includes(row.source.difficulty), `${row.id}: invalid difficulty`);
+  }
+
+  for (let index = 0; index < answerCounts.length; index += 1) {
+    assert.ok(answerCounts[index] >= 12 && answerCounts[index] <= 20, `answer ${"ABCDE"[index]} is over- or under-represented`);
+  }
+});
+
 test("GRE dataset rows are renderable by frontend sanitizer + MathJax", async () => {
   const rows = JSON.parse(fs.readFileSync("data/upper_level_mcq.json", "utf8"));
   const mathjaxApi = await mathJaxReady;
