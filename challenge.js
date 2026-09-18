@@ -319,7 +319,12 @@ const chromeApi = (() => {
     return chrome;
   }
 
-  const mem = {
+  const PREVIEW_STATE_KEY = "rb_preview_state_v1";
+  const PREVIEW_MODEL_CACHE_PREFIX = "ai_models_cache_";
+  const PREVIEW_MAX_MODEL_CACHE_ENTRIES = 8;
+  const PREVIEW_MAX_MODELS_PER_CACHE = 200;
+  const PREVIEW_MAX_CUSTOM_DOMAINS = 200;
+  const defaultMem = {
     score: 0,
     unlockedUntil: null,
     ai_config: null,
@@ -328,6 +333,87 @@ const chromeApi = (() => {
     stateUpdatedAt: Date.now(),
     lockoutCooldownMs: 2 * 60 * 60 * 1000,
     customBlockedDomains: []
+  };
+  function sanitizePreviewAiConfig(raw) {
+    if (!raw || typeof raw !== "object") return null;
+    const provider = String(raw.provider || "").trim().toLowerCase();
+    const model = String(raw.model || "").trim();
+    const token = String(raw.token || "").trim();
+    if (!provider && !model && !token) return null;
+    return {
+      provider: provider || "openai",
+      model: model || "gpt-4o-mini",
+      token
+    };
+  }
+  function sanitizePreviewModelCache(raw) {
+    if (!raw || typeof raw !== "object") return null;
+    const fetchedAt = Math.floor(Number(raw.fetchedAt));
+    if (!Number.isFinite(fetchedAt) || fetchedAt <= 0) return null;
+    const models = Array.isArray(raw.models)
+      ? raw.models.map((m) => String(m || "").trim()).filter(Boolean).slice(0, PREVIEW_MAX_MODELS_PER_CACHE)
+      : [];
+    if (models.length === 0) return null;
+    return { models, fetchedAt };
+  }
+  function sanitizePreviewCustomDomains(raw) {
+    if (!Array.isArray(raw)) return [];
+    const out = [];
+    const seen = new Set();
+    for (const item of raw) {
+      const normalized = normalizeLocalDomainInput(item);
+      if (!normalized || seen.has(normalized)) continue;
+      seen.add(normalized);
+      out.push(normalized);
+      if (out.length >= PREVIEW_MAX_CUSTOM_DOMAINS) break;
+    }
+    return out;
+  }
+  function normalizePreviewState(raw) {
+    const source = raw && typeof raw === "object" ? raw : {};
+    const state = {
+      score: Number.isFinite(Number(source.score)) ? Math.round(Number(source.score) * 100) / 100 : defaultMem.score,
+      unlockedUntil: Number.isFinite(Number(source.unlockedUntil)) && Number(source.unlockedUntil) > 0
+        ? Math.floor(Number(source.unlockedUntil))
+        : defaultMem.unlockedUntil,
+      ai_config: sanitizePreviewAiConfig(source.ai_config),
+      xp: Number.isFinite(Number(source.xp)) ? Math.round(Number(source.xp) * 100) / 100 : defaultMem.xp,
+      prestige: Math.max(0, Math.floor(Number(source.prestige) || 0)),
+      stateUpdatedAt: Number.isFinite(Number(source.stateUpdatedAt))
+        ? Math.floor(Number(source.stateUpdatedAt))
+        : defaultMem.stateUpdatedAt,
+      lockoutCooldownMs: Number.isFinite(Number(source.lockoutCooldownMs))
+        ? Math.floor(Number(source.lockoutCooldownMs))
+        : defaultMem.lockoutCooldownMs,
+      customBlockedDomains: sanitizePreviewCustomDomains(source.customBlockedDomains),
+      ui_theme: source.ui_theme === "dark" || source.ui_theme === "light" ? source.ui_theme : undefined,
+      ai_tutor_hidden: Boolean(source.ai_tutor_hidden),
+      xp_panel_hidden: Boolean(source.xp_panel_hidden)
+    };
+    const cacheEntries = Object.entries(source)
+      .filter(([k]) => k.startsWith(PREVIEW_MODEL_CACHE_PREFIX))
+      .map(([k, v]) => [k, sanitizePreviewModelCache(v)])
+      .filter(([, v]) => Boolean(v))
+      .sort((a, b) => b[1].fetchedAt - a[1].fetchedAt)
+      .slice(0, PREVIEW_MAX_MODEL_CACHE_ENTRIES);
+    cacheEntries.forEach(([key, value]) => {
+      state[key] = value;
+    });
+    return state;
+  }
+  function readPreviewState() {
+    try {
+      if (typeof localStorage === "undefined") return {};
+      const raw = localStorage.getItem(PREVIEW_STATE_KEY);
+      if (!raw) return {};
+      return normalizePreviewState(JSON.parse(raw));
+    } catch (_err) {
+      return {};
+    }
+  }
+  const mem = {
+    ...defaultMem,
+    ...readPreviewState()
   };
   const REQUIRED_SCORE = 30;
   const UNLOCK_DURATION_MS = 2 * 60 * 60 * 1000;
@@ -340,6 +426,21 @@ const chromeApi = (() => {
       return fallback;
     }
     return Math.max(MIN_LOCKOUT_COOLDOWN_MS, Math.min(MAX_LOCKOUT_COOLDOWN_MS, parsed));
+  }
+  function persistPreviewState() {
+    try {
+      if (typeof localStorage === "undefined") return;
+      const normalized = normalizePreviewState(mem);
+      Object.keys(mem).forEach((key) => {
+        if (!Object.prototype.hasOwnProperty.call(normalized, key)) {
+          delete mem[key];
+        }
+      });
+      Object.assign(mem, normalized);
+      localStorage.setItem(PREVIEW_STATE_KEY, JSON.stringify(normalized));
+    } catch (_err) {
+      // Ignore persistence failures in preview fallback mode.
+    }
   }
 
   return {
@@ -377,6 +478,7 @@ const chromeApi = (() => {
             mem.xp = Math.round((mem.xp + points * xpMultiplier) * 100) / 100;
           }
           mem.stateUpdatedAt = Date.now();
+          persistPreviewState();
           callback({
             ok: true,
             score: mem.score,
@@ -398,6 +500,7 @@ const chromeApi = (() => {
           mem.xp = 0;
           mem.score = 0;
           mem.stateUpdatedAt = Date.now();
+          persistPreviewState();
           callback({
             ok: true,
             prestige: mem.prestige,
@@ -417,6 +520,7 @@ const chromeApi = (() => {
           mem.unlockedUntil = Date.now() + mem.lockoutCooldownMs;
           mem.score = 0;
           mem.stateUpdatedAt = Date.now();
+          persistPreviewState();
           callback({
             ok: true,
             unlockedUntil: mem.unlockedUntil,
@@ -430,6 +534,7 @@ const chromeApi = (() => {
           mem.unlockedUntil = null;
           mem.score = 0;
           mem.stateUpdatedAt = Date.now();
+          persistPreviewState();
           callback({ ok: true, stateUpdatedAt: mem.stateUpdatedAt });
           return;
         }
@@ -448,6 +553,7 @@ const chromeApi = (() => {
             return;
           }
           mem.customBlockedDomains = [...mem.customBlockedDomains, domain];
+          persistPreviewState();
           callback({ ok: true, domains: [...mem.customBlockedDomains], added: true, domain });
           return;
         }
@@ -460,6 +566,7 @@ const chromeApi = (() => {
           const next = mem.customBlockedDomains.filter((d) => d !== domain);
           const removed = next.length !== mem.customBlockedDomains.length;
           mem.customBlockedDomains = next;
+          persistPreviewState();
           callback({ ok: true, domains: [...mem.customBlockedDomains], removed, domain });
           return;
         }
@@ -500,6 +607,7 @@ const chromeApi = (() => {
           const incomingUnlock = Math.floor(Number(incoming.unlockedUntil));
           mem.unlockedUntil = Number.isFinite(incomingUnlock) && incomingUnlock > Date.now() ? incomingUnlock : null;
           mem.stateUpdatedAt = incomingUpdatedAt;
+          persistPreviewState();
           const locked = !mem.unlockedUntil || mem.unlockedUntil <= Date.now();
           callback({
             ok: true,
@@ -541,6 +649,7 @@ const chromeApi = (() => {
           }
           mem.lockoutCooldownMs = normalizeLocalLockoutCooldownMs(requestedMs);
           mem.stateUpdatedAt = Date.now();
+          persistPreviewState();
           callback({
             ok: true,
             lockoutCooldownMs: mem.lockoutCooldownMs,
@@ -584,6 +693,7 @@ const chromeApi = (() => {
         },
         set(values, cb) {
           Object.assign(mem, values || {});
+          persistPreviewState();
           cb?.();
         },
         remove(keys, cb) {
@@ -591,6 +701,7 @@ const chromeApi = (() => {
           list.forEach((key) => {
             delete mem[key];
           });
+          persistPreviewState();
           cb?.();
         }
       }

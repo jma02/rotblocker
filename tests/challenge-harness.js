@@ -405,6 +405,8 @@ function loadChallengeFns(options = {}) {
   summarizeTutorHttpError: typeof summarizeTutorHttpError === "function" ? summarizeTutorHttpError : undefined,
   modelCacheKey: typeof modelCacheKey === "function" ? modelCacheKey : undefined,
   fetchAndCacheModels: typeof fetchAndCacheModels === "function" ? fetchAndCacheModels : undefined,
+  sendMessage: typeof sendMessage === "function" ? sendMessage : undefined,
+  saveAiConfig: typeof saveAiConfig === "function" ? saveAiConfig : undefined,
   loadAiConfig: typeof loadAiConfig === "function" ? loadAiConfig : undefined,
   bootstrapChallengeApp: typeof bootstrapChallengeApp === "function" ? bootstrapChallengeApp : undefined,
   runWhenIdle: typeof runWhenIdle === "function" ? runWhenIdle : undefined
